@@ -315,9 +315,24 @@ section {
   line-height: 1.5;
 }
 
+/* 
+  Footer Styles
+*/
+section {
+  padding-bottom: 104px;
+}
+
+#copyright {
+  color: lightgray;
+  font-size: 10pt;
+  padding-bottom: 16px;
+}
+
 /*
   Database Styles
 */
+
+/* Overall Styles */
 #ddb {
   width: 100%;
   font-size: 12pt;
@@ -333,13 +348,16 @@ td, th {
   border-bottom: 1px solid white;
 }
 
-.c-icon {
-  width: 32px;
+.col1 {
+  width: 230px;
 }
 
-.col1 {
-  width: 200px;
-  min-width: 200px;
+.col3 {
+  width: 230px;
+}
+
+.d-icon {
+  height: 30px;
 }
 
 .icon-wrap {
@@ -350,48 +368,15 @@ td, th {
   justify-content: space-evenly;
 }
 
-.card-wrap {
-  width: 240px;
+.sub-hide {
+  display: none;
 }
 
-.double {
-  height: 340px;
-}
-
-.card {
-  width: 240px;
-}
-
-.card:hover {
-  z-index: 2;
-}
-
-.double .card {
-  position: absolute;
-  width: 208px;
-}
-
-.double .first {
-  margin-left: 24px;
-  margin-top: 36px;
-  z-index: 1;
-}
-
-.second {
-}
-
-.first {
+.sub-show {
   
 }
 
-.deck-title span {
-  font-size: 18pt;
-  padding-left: 32px;
-}
-
-.col3 {
-  width: 120px;
-}
+/* Main Row Styles */
 
 .c-false {
   filter: brightness(0%) invert(.4);
@@ -401,20 +386,55 @@ td, th {
   filter: invert(100%) brightness(50%);
 }
 
-section {
-  padding-bottom: 104px;
+.deck-title span {
+  font-size: 16pt;
+  padding-left: 32px;
 }
 
-#copyright {
-  color: lightgray;
-  font-size: 10pt;
-  padding-bottom: 16px;
+/* Sub Row Styles */
+.sub, .card-wrap, .deck-description {
+  height: 330px;
 }
 
-.sub-hide {
-  display: none;
+.card {
+  width: 100%;
 }
 
-.sub-show {
-  
+.card:hover {
+  z-index: 2;
 }
+
+.card2 .card {
+  position: absolute;
+  width: 208px;
+}
+
+.card:nth-child(2) {
+  position: absolute;
+  margin-left: 22px;
+  margin-top: 36px;
+  z-index: 1;
+}
+
+.deck-description {
+  vertical-align: text-top;
+}
+
+.deck-description div {
+  height: 100%;
+  background-color: gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
