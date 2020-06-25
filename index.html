@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>cEDH Test Jekyll</title>
+    <meta content="">
+    <style></style>
+  </head>
+  
+  <body>
+    <div>
+        Text: </br>
+        {{ site.data.test.text }}
+    </div>
+    <div>
+        Number: </br>
+        {{ site.data.test.number }}
+    </div>
+    <div>
+        Array: </br>
+        <ul>
+            {% for val in site.data.test.array %}
+            <li>{{val}}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    
+    
+  </body>
+</html>
