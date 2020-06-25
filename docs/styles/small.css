@@ -1,17 +1,6 @@
 /*
-  Colors
+  Variables
 */
-/* arc dark */
-/*
-:root {
-  --backdrop-color: #383c4a;
-  --canvas-color: #404552;
-  --secondary-color: #4b5162;
-  --accent-color: #8ebbd1;
-}
-*/
-
-/* My Gray */
 :root {
   --backdrop-color: #383c4a;
   --canvas-color: #404552;
