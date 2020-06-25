@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--
+Github Username - AverageDragon
+6/16/2020
+The main page of the cEDH decklist database
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>cEDH Decklist Database</title>
+
+  <!-- Search Engine Optimization -->
+  <meta name="description" content="A collection of Magic: The Gathering (MTG) decks from the Competitive EDH Format." />
+  <meta name="keywords" content="mtg,cedh,edh,magic,decks,decklists,database,competitive"
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/ico" href="img/favicon.ico">
+  <link rel="stylesheet" type="text/css" media="screen and (min-width: 1200px)" href="./styles/main.css" />
+  <link rel="stylesheet" type="text/css" media="screen and (max-width: 1199px)" href="./styles/small.css" />
+
+  <!-- Logo Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap&text=DacestEHklibCompv" rel="stylesheet">
+
+  <!-- Google AdSense -->
+  <!--
+  <script data-ad-client="ca-pub-4373090976253918" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+-->
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="fixed-elems">
+      <nav class="ns">
+        <a id="logo" href="index.html"><img src="./img/phy.png" alt="Competitive EDH Decklist Database"/><h1>Competitive EDH<br/> Decklist Database</h1></a>
+        <div id="m-dropdown" class="mobile" onclick="
+          var shown = document.querySelectorAll('.mshow');
+          var hidden = document.querySelectorAll('.mhide');
+          for (var i = 0; i < shown.length; i++) {
+            shown[i].classList.remove('mshow');
+            shown[i].classList.add('mhide');
+          }
+          for (var i = 0; i < hidden.length; i++) {
+            hidden[i].classList.remove('mhide');
+            hidden[i].classList.add('mshow');
+          }
+          if (this.innerText == 'Show Controls') {
+            this.innerText = 'Hide Controls';
+          } else {
+            this.innerText = 'Show Controls';
+          }
+        ">
+        Show Controls
+        </div>
+          <a class="btn nav-buttons" id="main-link"><span>Mystery Button</span></a>
+          <a class="btn nav-buttons" id="discord-link" target="_blank" href="https://discord.gg/BXPyu2P"><img src="./img/discord-server.png" class="mobile" id="discord-m" alt="Discord icon"><span>Discord Server<span></a>
+          <div id="search" class="mhide">
+            <input id="search-box" type="search" placeholder="Search the database..." name="search" aria-label="search">
+            <a class="btn" id="search-btn">Search</a>
+          </div>
+        </nav>
+        <!-- Don't forget to remove mhide when finished -->
+        <header class="">
+          <span id="motd">
+            This is the message of the day,
+            displayed on a colored bar underneath the navigation element.
+            It looks best with one or two lines of content. This is quite lovely
+            weather that we are having.
+          </span>
+          <span id="motd-close" onclick="
+          this.parentElement.style.display='none';
+          if (window.innerWidth > 1199) {
+            document.getElementById('section').style.paddingTop = '90px';
+            document.getElementById('aside').style.paddingTop = '90px';
+          }
+          ">&times;</span>
+        </header>
+      </div>
+
+
+      <aside id="aside" class="mhide">
+        <!-- Aside, locked in position -->
+        <h2>Filters</h2>
+        <div id="filter-wrap">
+          <div id="color-filters">
+            <img class="icon color-inactive" src="./img/mana/w.png" alt="white"/>
+            <img class="icon color-inactive" src="./img/mana/u.png" alt="blue"/>
+            <img class="icon color-inactive" src="./img/mana/b.png" alt="black"/>
+            <img class="icon color-inactive" src="./img/mana/r.png" alt="red"/>
+            <img class="icon color-inactive" src="./img/mana/g.png" alt="green"/>
+          </div>
+          <ul class="ns">
+            <li class="filter-option filter-active">
+              <img class="icon" src="./img/rec.png" alt="Recommended symbol"/>
+              <span>Recommendations</span>
+            </li>
+            <li class="filter-option filter-inactive">
+              <img class="icon" src="./img/primer.png" alt="Primer symbol"/>
+              <span>Primers</span>
+            </li>
+            <li class="filter-option filter-inactive">
+              <img class="icon" src="./img/discord.png" alt="Discord symbol"/>
+              <span>Discord Servers</span>
+            </li>
+          </ul>
+        </div>
+        <div id="advertisement">Advertisement</div>
+      </aside>
+
+      <section id="section">
+        <!-- Database Container -->
+        <div id="flex-title" class="mhide">
+          <select id="db-select">
+            <option value="main" id="main-db">Competitive Decks</option>
+            <option value="deprecated" id="deprecated-db">Deprecated Decks</option>
+            <option value="meme" id="meme-db">Meme Decks</option>
+          </select>
+          <div id="submit-wrap">
+            <a href="" class="btn" id="submission-link">Submit a Competitive Deck</a>
+          </div>
+        </div>
+        <p id="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+
+        <div id="copyright">
+          The cEDH Decklist Database is unofficial Fan Content permitted under the Fan Content Policy.
+          This site is not approved and/or endorsed by Wizards of the Coast.<br/>
+          Portions of the materials used are property of Wizards of the Coast, ©Wizards of the Coast LLC.
+        </div>
+
+        <table id="ddb">
+          <thead>
+            <tr>
+              <th>Placeholder</th>
+              <th>Placeholder</th>
+              <th>Placeholder</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+          </tbody>
+        </table>
+      </section>
+    </div>
+    <div id="mobile-ad" class="mobile">
+      Advertisement
+    </div>
+  </body>
+  </html>
