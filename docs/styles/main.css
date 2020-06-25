@@ -340,10 +340,6 @@ section {
   border-spacing: 0;
 }
 
-#ddb td {
-  padding: 8px;
-}
-
 td, th {
   border-bottom: 1px solid white;
 }
@@ -357,26 +353,14 @@ td, th {
 }
 
 .d-icon {
-  height: 30px;
-}
-
-.icon-wrap {
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.sub-hide {
-  display: none;
-}
-
-.sub-show {
-  
+  height: 28px;
 }
 
 /* Main Row Styles */
+.main td {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
 
 .c-false {
   filter: brightness(0%) invert(.4);
@@ -386,12 +370,29 @@ td, th {
   filter: invert(100%) brightness(50%);
 }
 
+.deck-tags {
+  text-align: right;
+}
+
+.icon-wrap {
+}
+
 .deck-title span {
   font-size: 16pt;
-  padding-left: 32px;
+  padding-left: 16px;
 }
 
 /* Sub Row Styles */
+.sub td {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.sub-hide {
+  display: none;
+}
+
+
 .sub, .card-wrap, .deck-description {
   height: 330px;
 }
@@ -406,27 +407,54 @@ td, th {
 
 .card2 .card {
   position: absolute;
-  width: 208px;
+  width: 214px;
 }
 
 .card:nth-child(2) {
   position: absolute;
-  margin-left: 22px;
-  margin-top: 36px;
+  margin-left: 16px;
+  margin-top: 34px;
   z-index: 1;
 }
 
-.deck-description {
+.deck-info {
+  height: 100%;
   vertical-align: text-top;
 }
 
-.deck-description div {
+.info-wrap {
   height: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.info-wrap div {
+  margin-left: 16px;
   background-color: gray;
 }
 
+.links {
+  min-width: 300px;
+  width: 300px;
+}
 
+.description {
+  width: 100%;
+}
 
+.d-discord {
+  display: flex;
+  align-items: center;
+  border-radius: 0px;
+  text-align: left;
+  padding: 8px;
+  font-size: 14pt;
+}
+
+.d-discord img {
+  padding-right: 16px;
+}
 
 
 
