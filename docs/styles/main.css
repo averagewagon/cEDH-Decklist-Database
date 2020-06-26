@@ -464,6 +464,10 @@ td {
   height: 26px;
 }
 
+.no-discord {
+  cursor: not-allowed;
+}
+
 .deck-list {
   margin-left: 8px;
   margin-right: 8px;
