@@ -13,6 +13,8 @@
         
       <td class="deck-colors">
         <div class="icon-wrap">
+          {%- assign color-list = d.colors | join: ""}}
+          {%- if d.colors contains "w"
           <img class="d-icon c-{{d.colors[0] | escape }}" src="./img/mana/w.png" alt="white"/>
           <img class="d-icon c-{{d.colors[1] | escape }}" src="./img/mana/u.png" alt="blue"/>
           <img class="d-icon c-{{d.colors[2] | escape }}" src="./img/mana/b.png" alt="black"/>
@@ -35,7 +37,7 @@
           {%- assign plength = {{hasprimer | strip | size | escape }} -%}
         >
           <img class="d-icon t-{{d.recommended | escape }}" src="./img/rec.png" alt="recommended"/>
-          <img class="d-icon t-{%- if plength == 0 -%}false{% endif %}" src="./img/primer.png" alt="primer"/>
+          <img class="d-icon t-{%- unless d.lists['primer'] contains true-%}false{% endunless %}" src="./img/primer.png" alt="primer"/>
           <img class="d-icon t-{% if d.discord-link == "" %}false{% endif %}" src="./img/discord.png" alt="discord server"/>
         </div>
       </td>
@@ -53,7 +55,7 @@
           <div class="links">
             <a class="d-discord btn {% if d.discord-link == "" %}no-discord{% endif %}"
             {% if d.discord-link != "" %}href="{{d.discord-link | escape }}"{% endif %}>
-              <img class="d-icon {% if d.discord-link == "" %}t-false{% endif %}" src="./img/discord-server.png" />
+              <img class="d-icon" src="./img/discord-server.png" />
               {% if d.discord-link == "" %}[No Discord Server]{% endif %}
               {{d.discord-title | escape }}
             </a>
