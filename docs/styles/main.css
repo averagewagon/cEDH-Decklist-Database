@@ -385,6 +385,10 @@ td {
   background-color: var(--lighter);
 }
 
+.sub {
+  transition: 0.3s;
+}
+
 .sub-hide {
   display: none;
 }
