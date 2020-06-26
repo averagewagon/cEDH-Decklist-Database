@@ -404,7 +404,7 @@ td {
 }
 
 .info-wrap {
-  display: flex;
+  display: flex !important;
   flex-direction: column-reverse;
   align-items: stretch;
   justify-content: space-between;
