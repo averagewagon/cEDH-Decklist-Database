@@ -142,10 +142,11 @@ The main page of the cEDH decklist database
               </td>
               <td class="deck-tags">
                 <div class="icon-wrap">
-                  <img class="d-icon t-{% if d.discord-link == "" %}false{% endif %}" src="./img/rec.png" alt="recommended"/>
-                  <img class="d-icon t-
+                  <img class="d-icon t-d.recommended" src="./img/rec.png" alt="recommended"/>
+                  {% assign hasprimer = d.lists | find:"primer", "true" %}
+                  <img class="d-icon t-{{ hasprimer | replace: "nil", "false"}}
                   " src="./img/primer.png" alt="primer"/>
-                  <img class="d-icon t-false" src="./img/discord.png" alt="discord server"/>
+                  <img class="d-icon t-{% if d.discord-link == "" %}false{% endif %}" src="./img/discord.png" alt="discord server"/>
                 </div>
               </td>
             </tr>
