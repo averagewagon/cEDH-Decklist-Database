@@ -151,8 +151,9 @@ The main page of the cEDH decklist database
                   {% endfor %}
                   {% endcapture %}
                   
+                  {%- assign plength = {{hasprimer | length}} -%}
                   {%- capture noprimer -%}
-                  {%- if hasprimer == "" -%}
+                  {%- if plength < 2 -%}
                   false
                   {% endif %}
                   {% endcapture %}
