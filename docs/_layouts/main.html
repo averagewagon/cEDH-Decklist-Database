@@ -141,7 +141,6 @@ The main page of the cEDH decklist database
                 <span>{{d.name}}</span>
               </td>
               <td class="deck-tags">
-                <div class="icon-wrap" 
                   {%- capture hasprimer -%}
                   {%- for x in d.lists -%}
                   {%- if x.primer == true -%}
@@ -150,7 +149,7 @@ The main page of the cEDH decklist database
                   {% endfor %}
                   {% endcapture %}
                   {%- assign plength = {{hasprimer | strip | size}} -%}
-                >
+                <div class="icon-wrap">
                   <img class="d-icon t-{{d.recommended}}" src="./img/rec.png" alt="recommended"/>
                   <img class="d-icon t-{%- if plength == 0 -%}false{% endif %}" src="./img/primer.png" alt="primer"/>
                   <img class="d-icon t-{% if d.discord-link == "" %}false{% endif %}" src="./img/discord.png" alt="discord server"/>
