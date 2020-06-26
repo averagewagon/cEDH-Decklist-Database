@@ -144,8 +144,7 @@ The main page of the cEDH decklist database
                 <div class="icon-wrap">
                   <img class="d-icon t-d.recommended" src="./img/rec.png" alt="recommended"/>
                   {% assign hasprimer = d.lists | find:"primer", "true" %}
-                  <img class="d-icon t-{%- if hasprimer == "nil" -%}false{% endif %}
-                  " src="./img/primer.png" alt="primer"/>
+                  <img class="d-icon t-{{ hasprimer }}" src="./img/primer.png" alt="primer"/>
                   <img class="d-icon t-{% if d.discord-link == "" %}false{% endif %}" src="./img/discord.png" alt="discord server"/>
                 </div>
               </td>
