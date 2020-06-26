@@ -4,13 +4,13 @@
       "id": 1,
       "section": "competitive",
       "updated": "2020-06-22",
-      "name": "Food Chain Prossh",
+      "name": "Food Ch<ain Prossh",
       "colors": [false, false, true, true, true],
       "commander": ["Prossh, Skyraider of Kher"],
       "description": "This is a placeholder description for this deck",
       "recommended": false,
       "discord-title": "Discord Server Title",
-      "discord-link": "https://discord-link.gg/BXPyu2P",
+      "discord-link": "https://discord.gg/BXPyu2P",
       "lists": [
         {"primer": true, "description": "blahblahblah", "link": "https://tappedout.net/mtg-decks/19-07-16-food-chain-prossh/"},
         {"primer": false, "description": "blah2blah2blah", "link": "https://tappedout.net/mtg-decks/19-07-16-food-chain-prossh/"},
@@ -44,7 +44,7 @@
       "description": "This is a placeholder description for this deck",
       "recommended": false,
       "discord-title": "Discord Server Title",
-      "discord-link": "https://discord-link.gg/BXPyu2P",
+      "discord-link": "https://discord.gg/BXPyu2P",
       "lists": [
         {"primer": true, "description": "blahblahblah", "link": "https://tappedout.net/mtg-decks/19-07-16-food-chain-prossh/"},
         {"primer": false, "description": "blah2blah2blah", "link": "https://tappedout.net/mtg-decks/19-07-16-food-chain-prossh/"},
@@ -61,7 +61,7 @@
       "description": "This is a placeholder description for this deck",
       "recommended": true,
       "discord-title": "Discord Server Title",
-      "discord-link": "https://discord-link.gg/BXPyu2P",
+      "discord-link": "https://discord.gg/BXPyu2P",
       "lists": [
         {"primer": false, "description": "blahblahblah", "link": "https://tappedout.net/mtg-decks/19-07-16-food-chain-prossh/"},
         {"primer": true, "description": "blah2blah2blah", "link": "https://tappedout.net/mtg-decks/19-07-16-food-chain-prossh/"},
@@ -78,7 +78,7 @@
       "description": "This is a placeholder description for this deck",
       "recommended": true,
       "discord-title": "Discord Server Title",
-      "discord-link": "https://discord-link.gg/BXPyu2P",
+      "discord-link": "https://discord.gg/BXPyu2P",
       "lists": [
         {"primer": false, "description": "blahblahblah", "link": "https://tappedout.net/mtg-decks/19-07-16-food-chain-prossh/"},
         {"primer": true, "description": "blah2blah2blah", "link": "https://tappedout.net/mtg-decks/19-07-16-food-chain-prossh/"},
@@ -95,7 +95,7 @@
       "description": "This is a placeholder description for this deck",
       "recommended": true,
       "discord-title": "Discord Server Title",
-      "discord-link": "https://discord-link.gg/BXPyu2P",
+      "discord-link": "https://discord.gg/BXPyu2P",
       "lists": [
         {"primer": false, "description": "blahblahblah", "link": "https://tappedout.net/mtg-decks/19-07-16-food-chain-prossh/"},
         {"primer": true, "description": "blah2blah2blah", "link": "https://tappedout.net/mtg-decks/19-07-16-food-chain-prossh/"},
