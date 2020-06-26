@@ -142,8 +142,8 @@ The main page of the cEDH decklist database
               </td>
               <td class="deck-tags">
                 <div class="icon-wrap">
-                  <img class="d-icon t-{%- if d.discord-link | size < 2 -%}false{% endif %}" src="./img/rec.png" alt="recommended"/>
-                  <img class="d-icon t-{%- if {%- for x in d.lists -%}{%- if x.primer -%}primer{% endif %}{% endfor %} | length == 0 -%}false{% endif %}
+                  <img class="d-icon t-" src="./img/rec.png" alt="recommended"/>
+                  <img class="d-icon t-
                   " src="./img/primer.png" alt="primer"/>
                   <img class="d-icon t-false" src="./img/discord.png" alt="discord server"/>
                 </div>
