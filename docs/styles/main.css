@@ -368,7 +368,7 @@ td {
 }
 
 .t-false {
-  filter: invert(100%) brightness(50%);
+  filter: grayscale(100%) invert(100%) brightness(50%);
 }
 
 .deck-tags {
@@ -466,10 +466,6 @@ td {
 
 .no-discord {
   cursor: not-allowed !important;
-}
-
-.no-discord img {
-  filter: grayscale(100%);
 }
 
 .deck-list {
