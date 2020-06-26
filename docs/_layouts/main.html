@@ -150,7 +150,13 @@ The main page of the cEDH decklist database
                   {% endif %}
                   {% endfor %}
                   {% endcapture %}
-                  <img class="d-icon t-{{ hasprimer }}" src="./img/primer.png" alt="primer"/>
+                  
+                  {%- capture noprimer -%}
+                  {%- if hasprimer == "" -%}
+                  false
+                  {% endif %}
+                  {% endcapture %}
+                  <img class="d-icon t-{{ noprimer }}" src="./img/primer.png" alt="primer"/>
                   <img class="d-icon t-{% if d.discord-link == "" %}false{% endif %}" src="./img/discord.png" alt="discord server"/>
                 </div>
               </td>
