@@ -143,7 +143,13 @@ The main page of the cEDH decklist database
               <td class="deck-tags">
                 <div class="icon-wrap">
                   <img class="d-icon t-d.recommended" src="./img/rec.png" alt="recommended"/>
-                  {% assign hasprimer = d.lists | find_exp:"item", "item.primer == true" %}
+                  {% capture hasprimer %}
+                  {% for x in d.lists %}
+                  {% if x.primer == true %}
+                  true
+                  {% endif %}
+                  {% endfor %}
+                  {% endcapture %}
                   <img class="d-icon t-{{ hasprimer }}" src="./img/primer.png" alt="primer"/>
                   <img class="d-icon t-{% if d.discord-link == "" %}false{% endif %}" src="./img/discord.png" alt="discord server"/>
                 </div>
