@@ -8,6 +8,7 @@
   --accent-color: #8ebbd1;
   --darker: #323643;
   --top: 140px;
+   scrollbar-color: #222222 #424242;
 }
 
 /*
@@ -429,18 +430,14 @@ td, th {
   justify-content: space-between;
 }
 
-.info-wrap div {
+.info-wrap > div {
   margin-left: 16px;
-  background-color: gray;
 }
 
 .links {
-  min-width: 300px;
-  width: 300px;
-}
-
-.description {
-  width: 100%;
+  min-width: 380px;
+  position: relative;
+  background-color: #454b58;
 }
 
 .d-discord {
@@ -453,16 +450,53 @@ td, th {
 }
 
 .d-discord img {
-  padding-right: 16px;
+  padding-right: 10px;
+  padding-left: 2px;
+  height: 26px;
 }
 
+.deck-list {
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 4px;
+  overflow: auto;
+  scrollbar-width: thin;
+  height: 240px;
+}
 
+.deck-list li a {
+  display: flex;
+  align-items: center;
+  padding-top: 6px;
+}
 
+.deck-list span {
+  margin-left: 8px;
+  padding-top: 2px;
+  color: skyblue;
+  font-weight: bold;
+  font-size: 12pt;
+  text-decoration: underline;
+}
 
+.desc-wrapper {
+  position: relative;
+}
 
+.description {
+  width: 100%;
+  font-size: 14pt;
+  position: relative;
+  max-height: 300px;
+  overflow: auto;
+}
 
-
-
-
-
-
+.d-date {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: inherit;
+  font-size: 16pt;
+  font-weight: bold;
+  text-align: right;
+}
