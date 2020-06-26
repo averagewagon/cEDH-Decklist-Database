@@ -400,11 +400,11 @@ td {
   padding: 8px;
   padding-left: 0;
   vertical-align: text-top;
-  display: flex;
+  display: flex !important;
 }
 
 .info-wrap {
-  display: flex !important;
+  display: flex;
   flex-direction: column-reverse;
   align-items: stretch;
   justify-content: space-between;
