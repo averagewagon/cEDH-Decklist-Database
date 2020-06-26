@@ -143,9 +143,9 @@ The main page of the cEDH decklist database
               <td class="deck-tags">
                 <div class="icon-wrap">
                   <img class="d-icon t-d.recommended" src="./img/rec.png" alt="recommended"/>
-                  {% capture hasprimer %}
-                  {% for x in d.lists %}
-                  {% if x.primer == true %}
+                  {%- capture hasprimer -%}
+                  {%- for x in d.lists -%}
+                  {%- if x.primer == true -%}
                   true
                   {% endif %}
                   {% endfor %}
