@@ -115,7 +115,11 @@ The main page of the cEDH decklist database
             <a href="" class="btn" id="submission-link">Submit a Competitive Deck</a>
           </div>
         </div>
-        <p id="description">{{ site.data.meta.competitive }}</p>
+        <p id="description">
+          <span id="competitive-desc">{{ site.data.meta.competitive }}</span>
+          <span id="deprecated-desc">{{ site.data.meta.deprecated }}</span>
+          <span id="meme-desc">{{ site.data.meta.meme }}</span>
+        </p>
 
         <table id="ddb">
           <thead>
@@ -128,6 +132,7 @@ The main page of the cEDH decklist database
           <tbody>
             {% for d in site.data.entries.decks %}
               <tr class="main m{{d.id}} {{d.section}}">
+                
               <td class="deck-colors">
                 <div class="icon-wrap">
                   <img class="d-icon c-{{d.colors[0]}}" src="./img/mana/w.png" alt="white"/>
@@ -168,7 +173,7 @@ The main page of the cEDH decklist database
               <td class="deck-info" colspan="2">
                 <div class="info-wrap">
                   <div class="links">
-                    <a class="d-discord btn dis-{% if d.discord-link == "" %}false{% endif %}" href="example.com">
+                    <a class="d-discord btn dis-{% if d.discord-link == "" %}false{% endif %}" href="{{d.discord-link}}">
                       <img class="d-icon" src="./img/discord-server.png" />
                       {% if d.discord-link == "" %}[No Discord Server]{% endif %}
                       {{d.discord-title}}
@@ -206,7 +211,7 @@ The main page of the cEDH decklist database
                   </div>
                   <div class="desc-wrapper">
                     <div class="description">
-                      Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum
+                      {{d,}}
                     </div>
                     <div class="mobile d-commanders">
                       <div><a href="example.com">Prossh, Skyraider of Kher</a></div>
