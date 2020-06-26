@@ -160,6 +160,9 @@ The main page of the cEDH decklist database
             <tr class="sub sub-hidee s{{d.id}} {{d.section}}">
               <td class="deck-commander">
                 <div class="card-wrap card{{d.commander | size}}">
+                  {%- for x in d.commander -%}
+                  <img class="card" src="./img/card.png" alt="{{x}}"/>
+                  {% endfor %}
                 </div>
               </td>
               <td class="deck-info" colspan="2">
