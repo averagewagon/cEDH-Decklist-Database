@@ -8,7 +8,8 @@
       "commander": ["Prossh, Skyraider of Kher"],
       "description": "This is a placeholder description for this deck",
       "recommended": false,
-      "discord": "https://discord.gg/BXPyu2P",
+      "discord-title": "Discord Server Title",
+      "discord-link": "https://discord-link.gg/BXPyu2P",
       "decks": [
         {"primer": true, "description": "blahblahblah", "link": "https://tappedout.net/mtg-decks/19-07-16-food-chain-prossh/"},
         {"primer": false, "description": "blah2blah2blah", "link": "https://tappedout.net/mtg-decks/19-07-16-food-chain-prossh/"},
@@ -23,7 +24,8 @@
       "commander": ["Derevi, Empyrial Tactician"],
       "description": "This is a placeholder description for this deck",
       "recommended": false,
-      "discord": "https://discord.gg/BXPyu2P",
+      "discord-title": "",
+      "discord-link": "",
       "decks": [
         {"primer": false, "description": "blahblahblah", "link": "https://tappedout.net/mtg-decks/19-07-16-food-chain-prossh/"},
         {"primer": false, "description": "blah2blah2blah", "link": "https://tappedout.net/mtg-decks/19-07-16-food-chain-prossh/"},
@@ -38,7 +40,8 @@
       "commander": ["Ruric Thar, the Unbowed"],
       "description": "This is a placeholder description for this deck",
       "recommended": false,
-      "discord": "https://discord.gg/BXPyu2P",
+      "discord-title": "Discord Server Title",
+      "discord-link": "https://discord-link.gg/BXPyu2P",
       "decks": [
         {"primer": true, "description": "blahblahblah", "link": "https://tappedout.net/mtg-decks/19-07-16-food-chain-prossh/"},
         {"primer": false, "description": "blah2blah2blah", "link": "https://tappedout.net/mtg-decks/19-07-16-food-chain-prossh/"},
@@ -53,7 +56,8 @@
       "commander": ["The First Sliver"],
       "description": "This is a placeholder description for this deck",
       "recommended": true,
-      "discord": "https://discord.gg/BXPyu2P",
+      "discord-title": "Discord Server Title",
+      "discord-link": "https://discord-link.gg/BXPyu2P",
       "decks": [
         {"primer": false, "description": "blahblahblah", "link": "https://tappedout.net/mtg-decks/19-07-16-food-chain-prossh/"},
         {"primer": true, "description": "blah2blah2blah", "link": "https://tappedout.net/mtg-decks/19-07-16-food-chain-prossh/"},
@@ -70,7 +74,8 @@
       "commander": ["Derevi, Empyrial Tactician"],
       "description": "This is a placeholder description for this deck",
       "recommended": false,
-      "discord": "https://discord.gg/BXPyu2P",
+      "discord-title": "Discord Server Title",
+      "discord-link": "https://discord-link.gg/BXPyu2P",
       "decks": [
         {"primer": false, "description": "blahblahblah", "link": "https://tappedout.net/mtg-decks/19-07-16-food-chain-prossh/"},
         {"primer": false, "description": "blah2blah2blah", "link": "https://tappedout.net/mtg-decks/19-07-16-food-chain-prossh/"},
@@ -87,7 +92,8 @@
       "commander": ["Derevi, Empyrial Tactician"],
       "description": "This is a placeholder description for this deck",
       "recommended": false,
-      "discord": "https://discord.gg/BXPyu2P",
+      "discord-title": "Discord Server Title",
+      "discord-link": "https://discord-link.gg/BXPyu2P",
       "decks": [
         {"primer": false, "description": "blahblahblah", "link": "https://tappedout.net/mtg-decks/19-07-16-food-chain-prossh/"},
         {"primer": false, "description": "blah2blah2blah", "link": "https://tappedout.net/mtg-decks/19-07-16-food-chain-prossh/"},
