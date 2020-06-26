@@ -363,7 +363,7 @@ td {
   background-color: var(--backdrop-color);
 }
 
-.c-false {
+.c-inactive {
   filter: brightness(0%) invert(.4);
 }
 
