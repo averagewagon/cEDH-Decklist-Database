@@ -7,6 +7,7 @@
   --secondary-color: #4b5162;
   --accent-color: #8ebbd1;
   --darker: #323643;
+  --lighter: #454b58;
   --top: 140px;
    scrollbar-color: #222222 #424242;
 }
@@ -151,7 +152,7 @@ nav h1 {
   MotD Styles
 */
 header {
-  padding: 12px;
+  padding: 8px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -336,17 +337,16 @@ section {
 /* Overall Styles */
 #ddb {
   width: 100%;
-  font-size: 12pt;
   padding-bottom: 32px;
   border-spacing: 0;
 }
 
-td, th {
-  border-bottom: 1px solid white;
+td {
+  border-top: 2px solid var(--darker);
 }
 
 .col1 {
-  width: 230px;
+  width: 240px;
 }
 
 .col3 {
@@ -359,8 +359,8 @@ td, th {
 
 /* Main Row Styles */
 .main td {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding: 8px 16px;
+  background-color: var(--backdrop-color);
 }
 
 .c-false {
@@ -375,9 +375,6 @@ td, th {
   text-align: right;
 }
 
-.icon-wrap {
-}
-
 .deck-title span {
   font-size: 16pt;
   padding-left: 16px;
@@ -385,17 +382,23 @@ td, th {
 
 /* Sub Row Styles */
 .sub td {
-  padding-top: 16px;
-  padding-bottom: 16px;
+  background-color: var(--lighter);
 }
 
 .sub-hide {
   display: none;
 }
 
-
 .sub, .card-wrap, .deck-description {
-  height: 330px;
+  height: 334px;
+  width: 100%;
+}
+
+.card-wrap {
+  padding-top: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 16px;
 }
 
 .card {
@@ -420,6 +423,8 @@ td, th {
 
 .deck-info {
   height: 100%;
+  padding: 16px;
+  padding-left: 0;
   vertical-align: text-top;
 }
 
@@ -437,7 +442,7 @@ td, th {
 .links {
   min-width: 380px;
   position: relative;
-  background-color: #454b58;
+  background-color: var(--canvas-color);
 }
 
 .d-discord {
@@ -461,7 +466,9 @@ td, th {
   margin-top: 4px;
   overflow: auto;
   scrollbar-width: thin;
-  height: 240px;
+  height: 274px;
+  margin-bottom: 0;
+  
 }
 
 .deck-list li a {
@@ -481,21 +488,24 @@ td, th {
 
 .desc-wrapper {
   position: relative;
+  background-color: var(--canvas-color);
+  padding: 16px;
 }
 
 .description {
   width: 100%;
   font-size: 14pt;
   position: relative;
-  max-height: 300px;
+  max-height: 280px;
   overflow: auto;
 }
 
 .d-date {
   position: absolute;
-  bottom: 0;
+  bottom: 8px;
   width: 100%;
-  padding: inherit;
+  padding: 0;
+  right: 16px;
   font-size: 16pt;
   font-weight: bold;
   text-align: right;
