@@ -371,7 +371,7 @@ td {
 }
 
 .t-false {
-  filter: grayscale(100%) invert(100%) brightness(50%);
+  filter: invert(100%) brightness(50%);
 }
 
 .deck-tags {
