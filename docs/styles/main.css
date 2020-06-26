@@ -510,7 +510,13 @@ td {
   width: 100%;
   padding: 0;
   right: 16px;
-  font-size: 16pt;
-  font-weight: bold;
+  font-size: 12pt;
   text-align: right;
+  font-style: italic;
+}
+
+.date {
+  font-weight: bold;
+  font-size: 14pt;
+  font-style: normal;
 }
