@@ -385,7 +385,7 @@ td {
 
 /* Sub Row Styles */
 .sub {
-  display: flex;
+  display: flex !important;
   justify-content: center;
 }
 .sub td {
