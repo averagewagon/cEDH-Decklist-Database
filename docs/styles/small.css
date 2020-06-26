@@ -341,7 +341,6 @@ td {
 
 .deck-colors {
   order: 0;
-  flex-grow: 1;
 }
 
 .icon-wrap {
@@ -352,6 +351,7 @@ td {
 
 .deck-tags {
   order: 1;
+  flex-grow: 1;
 }
 
 .deck-title {
