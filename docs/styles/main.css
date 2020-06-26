@@ -491,6 +491,7 @@ td {
 }
 
 .desc-wrapper {
+  width: 100%;
   position: relative;
   background-color: var(--canvas-color);
   padding: 16px;
