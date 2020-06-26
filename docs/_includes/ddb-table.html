@@ -13,11 +13,16 @@
         
       <td class="deck-colors">
         <div class="icon-wrap">
-          <img class="d-icon c-{{d.colors[0] | escape }}" src="./img/mana/w.png" alt="white"/>
-          <img class="d-icon c-{{d.colors[1] | escape }}" src="./img/mana/u.png" alt="blue"/>
-          <img class="d-icon c-{{d.colors[2] | escape }}" src="./img/mana/b.png" alt="black"/>
-          <img class="d-icon c-{{d.colors[3] | escape }}" src="./img/mana/r.png" alt="red"/>
-          <img class="d-icon c-{{d.colors[4] | escape }}" src="./img/mana/g.png" alt="green"/>
+          <img class="d-icon {%- unless d.colors contains "w" -%}{{c-inactive}}" 
+          src="./img/mana/w.png" alt="white"/>
+          <img class="d-icon {%- unless d.colors contains "u" -%}{{c-inactive}}" 
+          src="./img/mana/u.png" alt="blue"/>
+          <img class="d-icon {%- unless d.colors contains "b" -%}{{c-inactive}}" 
+          src="./img/mana/b.png" alt="black"/>
+          <img class="d-icon {%- unless d.colors contains "r" -%}{{c-inactive}}" 
+          src="./img/mana/r.png" alt="red"/>
+          <img class="d-icon {%- unless d.colors contains "g" -%}{{c-inactive}}" 
+          src="./img/mana/g.png" alt="green"/>
         </div>
       </td>
       <td class="deck-title">
