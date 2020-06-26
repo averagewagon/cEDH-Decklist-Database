@@ -61,7 +61,7 @@ The main page of the cEDH decklist database
         <!-- Don't forget to remove mhide when finished -->
         <header class="">
           <span id="motd">
-            {{ site.data.meta.motd }}
+            {{ site.data.meta.motd  | escape }}
           </span>
           <span id="motd-close" onclick="
           this.parentElement.style.display='none';
@@ -116,9 +116,9 @@ The main page of the cEDH decklist database
           </div>
         </div>
         <p id="description">
-          <span id="competitive-desc">{{ site.data.meta.competitive }}</span>
-          <span id="deprecated-desc">{{ site.data.meta.deprecated }}</span>
-          <span id="meme-desc">{{ site.data.meta.meme }}</span>
+          <span id="competitive-desc">{{ site.data.meta.competitive  | escape }}</span>
+          <span id="deprecated-desc">{{ site.data.meta.deprecated  | escape }}</span>
+          <span id="meme-desc">{{ site.data.meta.meme  | escape }}</span>
         </p>
 
         {% include ddb-table.html %}
