@@ -51,7 +51,8 @@
       <td class="deck-info" colspan="2">
         <div class="info-wrap">
           <div class="links">
-            <a class="d-discord btn" href="{{d.discord-link | escape }}" {% if d.discord-link == "" %}disabled{% endif %}>
+            <a class="d-discord btn {% if d.discord-link == "" %}no-discord{% endif %}"
+            {% if d.discord-link != "" %}href="{{d.discord-link | escape }}{% endif %}">
               <img class="d-icon" src="./img/discord-server.png" />
               {% if d.discord-link == "" %}[No Discord Server]{% endif %}
               {{d.discord-title | escape }}
