@@ -371,7 +371,7 @@ td {
 }
 
 .t-false {
-  filter: invert(100%) brightness(50%);
+  filter: grayscale(100%) invert(100%) brightness(50%);
 }
 
 .deck-tags {
@@ -435,6 +435,10 @@ td {
   padding-right: 10px;
   padding-left: 2px;
   height: 26px;
+}
+
+.no-discord {
+  cursor: not-allowed !important;
 }
 
 .deck-list {
