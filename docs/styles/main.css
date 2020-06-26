@@ -469,7 +469,7 @@ td {
 }
 
 .no-discord img {
-  filter: grayscale(100%) brightness(80%);
+  filter: grayscale(100%) brightness(0%);
 }
 
 .deck-list {
