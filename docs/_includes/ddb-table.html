@@ -92,13 +92,14 @@
               {{d.description}}
             </div>
             <div class="mobile d-commanders">
-              <div><a href="example.com">Prossh, Skyraider of Kher</a></div>
-              <div><a href="example.com">Prossh, Skyraider of Kher</a></div>
+              {%- for x in d.commander -%}
+                <div><a href="">Prossh, Skyraider of Kher</a></div>
+              {% endfor %}
             </div>
             
             <div class="d-date">
               Entry Last Updated — 
-              <span class="date">2020-22-06</span>
+              <span class="date">{{d.updated}}</span>
             </div>
           </div>
         </div>
