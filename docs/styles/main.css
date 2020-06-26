@@ -465,7 +465,11 @@ td {
 }
 
 .no-discord {
-  cursor: not-allowed;
+  cursor: not-allowed !important;
+}
+
+.no-discord img {
+  filter: grayscale(100%);
 }
 
 .deck-list {
