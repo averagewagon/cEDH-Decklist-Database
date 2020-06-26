@@ -366,7 +366,7 @@ td {
   background-color: var(--backdrop-color);
 }
 
-.c-false {
+.c-inactive {
   filter: brightness(0%) invert(.4);
 }
 
@@ -441,6 +441,10 @@ td {
   cursor: not-allowed !important;
 }
 
+.no-discord img {
+  filter: grayscale(100%) brightness(0%);
+}
+
 .deck-list {
   margin-left: 8px;
   margin-right: 8px;
@@ -484,8 +488,12 @@ td {
   padding: 0;
   left: 8px;
   font-size: 16pt;
+}
+
+.date {
   font-weight: bold;
-  text-align: left;
+  font-size: 14pt;
+  font-style: normal;
 }
 
 .d-commanders {
