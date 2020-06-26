@@ -1,7 +1,8 @@
 {
-  "competitive": [
+  "decks": [
     {
       "id": 00001,
+      "section": "competitive",
       "updated": "2020-06-22",
       "name": "Food Chain Prossh",
       "colors": [false, false, true, true, true],
@@ -10,7 +11,7 @@
       "recommended": false,
       "discord-title": "Discord Server Title",
       "discord-link": "https://discord-link.gg/BXPyu2P",
-      "decks": [
+      "lists": [
         {"primer": true, "description": "blahblahblah", "link": "https://tappedout.net/mtg-decks/19-07-16-food-chain-prossh/"},
         {"primer": false, "description": "blah2blah2blah", "link": "https://tappedout.net/mtg-decks/19-07-16-food-chain-prossh/"},
         {"primer": false, "description": "blah3blah3blah", "link": "https://tappedout.net/mtg-decks/19-07-16-food-chain-prossh/"}
@@ -18,6 +19,7 @@
     },
     {
       "id": 00002,
+      "section": "competitive",
       "updated": "2020-06-22",
       "name": "derevi levy",
       "colors": [true, true, false, false, true],
@@ -26,7 +28,7 @@
       "recommended": false,
       "discord-title": "",
       "discord-link": "",
-      "decks": [
+      "lists": [
         {"primer": false, "description": "blahblahblah", "link": "https://tappedout.net/mtg-decks/19-07-16-food-chain-prossh/"},
         {"primer": false, "description": "blah2blah2blah", "link": "https://tappedout.net/mtg-decks/19-07-16-food-chain-prossh/"},
         {"primer": false, "description": "blah3blah3blah", "link": "https://tappedout.net/mtg-decks/19-07-16-food-chain-prossh/"}
@@ -34,6 +36,7 @@
     },
     {
       "id": 00003,
+      "section": "competitive",
       "updated": "2020-06-22",
       "name": "ruric thicc",
       "colors": [false, false, false, true, true],
@@ -42,7 +45,7 @@
       "recommended": false,
       "discord-title": "Discord Server Title",
       "discord-link": "https://discord-link.gg/BXPyu2P",
-      "decks": [
+      "lists": [
         {"primer": true, "description": "blahblahblah", "link": "https://tappedout.net/mtg-decks/19-07-16-food-chain-prossh/"},
         {"primer": false, "description": "blah2blah2blah", "link": "https://tappedout.net/mtg-decks/19-07-16-food-chain-prossh/"},
         {"primer": false, "description": "blah3blah3blah", "link": "https://tappedout.net/mtg-decks/19-07-16-food-chain-prossh/"}
@@ -50,6 +53,7 @@
     },
     {
       "id": 00004,
+      "section": "competitive",
       "updated": "2020-06-22",
       "name": "sliver shiver",
       "colors": [true, true, true, true, true],
@@ -58,45 +62,43 @@
       "recommended": true,
       "discord-title": "Discord Server Title",
       "discord-link": "https://discord-link.gg/BXPyu2P",
-      "decks": [
+      "lists": [
         {"primer": false, "description": "blahblahblah", "link": "https://tappedout.net/mtg-decks/19-07-16-food-chain-prossh/"},
         {"primer": true, "description": "blah2blah2blah", "link": "https://tappedout.net/mtg-decks/19-07-16-food-chain-prossh/"},
         {"primer": false, "description": "blah3blah3blah", "link": "https://tappedout.net/mtg-decks/19-07-16-food-chain-prossh/"}
       ]
-    }
-  ],
-  "deprecated": [
+    },
     {
       "id": 00005,
+      "section": "deprecated",
       "updated": "2020-06-22",
-      "name": "derevi levy",
-      "colors": [true, true, false, false, true],
-      "commander": ["Derevi, Empyrial Tactician"],
+      "name": "sliver shiver",
+      "colors": [true, true, true, true, true],
+      "commander": ["The Second Sliver"],
       "description": "This is a placeholder description for this deck",
-      "recommended": false,
+      "recommended": true,
       "discord-title": "Discord Server Title",
       "discord-link": "https://discord-link.gg/BXPyu2P",
-      "decks": [
+      "lists": [
         {"primer": false, "description": "blahblahblah", "link": "https://tappedout.net/mtg-decks/19-07-16-food-chain-prossh/"},
-        {"primer": false, "description": "blah2blah2blah", "link": "https://tappedout.net/mtg-decks/19-07-16-food-chain-prossh/"},
+        {"primer": true, "description": "blah2blah2blah", "link": "https://tappedout.net/mtg-decks/19-07-16-food-chain-prossh/"},
         {"primer": false, "description": "blah3blah3blah", "link": "https://tappedout.net/mtg-decks/19-07-16-food-chain-prossh/"}
       ]
-    }
-  ],
-  "meme": [
+    },
     {
       "id": 00006,
+      "section": "meme",
       "updated": "2020-06-22",
-      "name": "derevi levy",
-      "colors": [true, true, false, false, true],
-      "commander": ["Derevi, Empyrial Tactician"],
+      "name": "sliver shiver",
+      "colors": [true, false, true, true, true],
+      "commander": ["The Third Sliver"],
       "description": "This is a placeholder description for this deck",
-      "recommended": false,
+      "recommended": true,
       "discord-title": "Discord Server Title",
       "discord-link": "https://discord-link.gg/BXPyu2P",
-      "decks": [
+      "lists": [
         {"primer": false, "description": "blahblahblah", "link": "https://tappedout.net/mtg-decks/19-07-16-food-chain-prossh/"},
-        {"primer": false, "description": "blah2blah2blah", "link": "https://tappedout.net/mtg-decks/19-07-16-food-chain-prossh/"},
+        {"primer": true, "description": "blah2blah2blah", "link": "https://tappedout.net/mtg-decks/19-07-16-food-chain-prossh/"},
         {"primer": false, "description": "blah3blah3blah", "link": "https://tappedout.net/mtg-decks/19-07-16-food-chain-prossh/"}
       ]
     }

@@ -126,28 +126,30 @@ The main page of the cEDH decklist database
             </tr>
           </thead>
           <tbody>
-            <tr class="main">
+            {% for d in site.data.entries.decks %}
+              <tr class="main m{{d.id}} {{d.section}}">
               <td class="deck-colors">
                 <div class="icon-wrap">
-                  <img class="d-icon c-false" src="./img/mana/w.png" alt="white"/>
-                  <img class="d-icon c-false" src="./img/mana/u.png" alt="blue"/>
-                  <img class="d-icon c-true" src="./img/mana/b.png" alt="black"/>
-                  <img class="d-icon c-true" src="./img/mana/r.png" alt="red"/>
-                  <img class="d-icon c-true" src="./img/mana/g.png" alt="green"/>
+                  <img class="d-icon c-{{d.colors[0]}}" src="./img/mana/w.png" alt="white"/>
+                  <img class="d-icon c-{{d.colors[1]}}" src="./img/mana/u.png" alt="blue"/>
+                  <img class="d-icon c-{{d.colors[2]}}" src="./img/mana/b.png" alt="black"/>
+                  <img class="d-icon c-{{d.colors[3]}}" src="./img/mana/r.png" alt="red"/>
+                  <img class="d-icon c-{{d.colors[4]}}" src="./img/mana/g.png" alt="green"/>
                 </div>
               </td>
               <td class="deck-title">
-                <span>Food Chain Prossh</span>
+                <span>{{d.name}}</span>
               </td>
               <td class="deck-tags">
                 <div class="icon-wrap">
-                  <img class="d-icon t-false" src="./img/rec.png" alt="recommended"/>
-                  <img class="d-icon t-true" src="./img/primer.png" alt="primer"/>
+                  <img class="d-icon t-{%- if d.discord-link | size < 2 -%}false{% endif %}" src="./img/rec.png" alt="recommended"/>
+                  <img class="d-icon t-{%- if {%- for x in d.lists -%}{%- if x.primer -%}primer{% endif %}{% endfor %} | length == 0 -%}false{% endif %}
+                  " src="./img/primer.png" alt="primer"/>
                   <img class="d-icon t-false" src="./img/discord.png" alt="discord server"/>
                 </div>
               </td>
             </tr>
-            <tr class="sub sub-hidee">
+            <tr class="sub sub-hidee s{{d.id}} {{d.section}}">
               <td class="deck-commander">
                 <div class="card-wrap card2">
                   <img class="card" src="./img/card.png" />
@@ -209,6 +211,7 @@ The main page of the cEDH decklist database
                 </div>
               </td>
             </tr>
+            {% endfor %}
           </tbody>
         </table>
         
