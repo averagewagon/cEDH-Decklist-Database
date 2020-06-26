@@ -57,34 +57,12 @@
               {{d.discord-title | escape }}
             </a>
             <ul class="deck-list">
-              <li><a href="example.com">
-                <img class="d-icon t-true" src="./img/primer.png" />
-                <span>Example Short Deck</span>
-              </a></li>
-              <li><a href="example.com">
-                <img class="d-icon t-false" src="./img/primer.png" />
-                <span>This is a Longer Deck Name</span>
-              </a></li>
-              <li><a href="example.com">
-                <img class="d-icon t-false" src="./img/primer.png" />
-                <span>WWW WWW WWW WWW WWW</span>
-              </a></li>
-              <li><a href="example.com">
-                <img class="d-icon t-true" src="./img/primer.png" />
-                <span>Another Short Deck</span>
-              </a></li>
-              <li><a href="example.com">
-                <img class="d-icon t-false" src="./img/primer.png" />
-                <span>Close to the Limit</span>
-              </a></li>
-              <li><a href="example.com">
-                <img class="d-icon t-false" src="./img/primer.png" />
-                <span>There is no Limit Anymore</span>
-              </a></li>
-              <li><a href="example.com">
-                <img class="d-icon t-false" src="./img/primer.png" />
-                <span>We Are Limitless</span>
-              </a></li>
+              {%- for x in d.lists -%}
+                <li><a href="{{x.link | escape}}">
+                  <img class="d-icon t-{{x.primer | escape}}" src="./img/primer.png" />
+                  <span>{{x.description | escape}}</span>
+                </a></li>
+              {% endfor %}
             </ul>
           </div>
           <div class="desc-wrapper">
