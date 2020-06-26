@@ -384,6 +384,10 @@ td {
 }
 
 /* Sub Row Styles */
+.sub {
+  display: flex;
+  justify-content: center;
+}
 .sub td {
   background-color: var(--lighter);
 }
@@ -400,7 +404,6 @@ td {
   padding: 8px;
   padding-left: 0;
   vertical-align: text-top;
-  display: flex !important;
 }
 
 .info-wrap {
