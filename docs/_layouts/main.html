@@ -151,12 +151,19 @@ The main page of the cEDH decklist database
                   {% endfor %}
                   {% endcapture %}
                   
+                  {{ hasprimer}}<br/>
+                  
                   {%- assign plength = {{hasprimer | size}} -%}
                   {%- capture noprimer -%}
                   {%- if plength < 2 -%}
                   false
                   {% endif %}
                   {% endcapture %}
+                  
+                  {{ plength }}<br/>
+                  
+                  {{ noprimer }}<br/>
+
                   <img class="d-icon t-{{ noprimer }}" src="./img/primer.png" alt="primer"/>
                   <img class="d-icon t-{% if d.discord-link == "" %}false{% endif %}" src="./img/discord.png" alt="discord server"/>
                 </div>
