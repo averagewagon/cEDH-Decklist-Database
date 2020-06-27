@@ -12,7 +12,7 @@
       <tr class="main m{{d.id | escape }} {{d.section | escape }}">
         
       <td class="deck-colors">
-        <div class="icon-wrap">
+        <div class="icon-wrap" title="{{d.colors | join: "" | escape}}">
           <img class="d-icon {% unless d.colors contains "w" %} c-inactive{% endunless %}" 
           src="./img/mana/w.png" alt="white"/>
           <img class="d-icon {% unless d.colors contains "u" %} c-inactive{% endunless %}" 
@@ -55,7 +55,7 @@
           <div class="links">
             <a class="d-discord btn {% if d.discord-link == "" %}no-discord{% endif %}"
             {% if d.discord-link != "" %}href="{{d.discord-link | escape }}"{% endif %}>
-              <img class="d-icon" src="./img/discord-server.png" />
+              <a <img class="d-icon" src="./img/discord-server.png" />
               {% if d.discord-link == "" %}[No Discord Server]{% endif %}
               {{d.discord-title | escape }}
             </a>
