@@ -55,7 +55,7 @@
           <div class="links">
             <a class="d-discord btn {% if d.discord-link == "" %}no-discord{% endif %}"
             {% if d.discord-link != "" %}href="{{d.discord-link | escape }}"{% endif %}>
-              <a <img class="d-icon" src="./img/discord-server.png" />
+              <img class="d-icon" src="./img/discord-server.png" />
               {% if d.discord-link == "" %}[No Discord Server]{% endif %}
               {{d.discord-title | escape }}
             </a>
