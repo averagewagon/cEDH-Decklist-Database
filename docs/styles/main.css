@@ -355,18 +355,15 @@ td {
 }
 
 /* Main Row Styles */
-.main {
+.main td {
   transition: 0.3s;
   cursor: pointer;
-}
-
-.main td {
   padding: 8px 16px;
   background-color: var(--backdrop-color);
 }
 
-.main:hover {
-  background-color: var(--darker) !important;
+.main td:hover {
+  background-color: var(--darker);
   transition: 0.0s;
 }
 
