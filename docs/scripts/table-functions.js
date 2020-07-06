@@ -20,13 +20,31 @@
     
   }
 
-  //TODO: Hide subrow on click
+  /** Toggles the visibility of a subrow and fetches card images
+   */
+  function toggleSub() {
+    let subClass = ".s" + this.dataset.id;
+    if (!qs(subClass).classList.toggle("sub-hide")) {
+      fetchCommanders(subClass);
+    }
+  }
+  
+  /** Fetches the commanders for a given entry
+   * 
+   */
+  function fetchCommanders(class) {
+    
+  }
   
   //TODO: Helper function to hide entry
   
-  //TODO: Sorting
+  //TODO: Sort function
   
-  //TODO: 
+  //TODO: "Update Rows" function which adds/removes .filtered based on state of filters
+  
+  //TODO: Helper function which takes a row and returns its state relative to filters
+  
+  //TODO: When subrow is revealed, query Scryfall for the card images
   
   /* HELPER FUNCTIONS */
 
