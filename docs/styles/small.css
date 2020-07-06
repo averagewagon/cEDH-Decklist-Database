@@ -437,6 +437,8 @@ td {
 }
 
 .no-discord {
+  background-color: var(--backdrop-color);
+  transition: 0s;
   cursor: not-allowed !important;
 }
 
