@@ -17,7 +17,14 @@
 
   // Initialization function
   function init() {
-    
+    prepareToggles();
+  }
+  
+  function prepareToggles() {
+    let mainRows = qsa(".main");
+    for (let i = 0; i < mainRows.length; i++) {
+      mainRows[i].addEventListener("click", toggleSub);
+    }
   }
 
   /** Toggles the visibility of a subrow and fetches card images
@@ -32,7 +39,7 @@
   /** Fetches the commanders for a given entry
    * 
    */
-  function fetchCommanders(class) {
+  function fetchCommanders(subClass) {
     
   }
   
