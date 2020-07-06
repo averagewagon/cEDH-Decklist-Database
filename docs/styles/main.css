@@ -279,7 +279,7 @@ section {
   margin-bottom: 16px;
 }
 
-#db-select {
+#db-select, #db-sort {
   font-size: 16pt;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -288,26 +288,23 @@ section {
   padding: 12px;
   border: 0;
   border-radius: 2px;
-  width: 350px;
+  width: 300px;
   transition: 0.4s;
 }
 
-#db-select:hover {
+#db-select:hover, #db-sort:hover {
   transition: 0.0s;
   background-color: var(--darker);
 }
 
 #submit-wrap {
-  width: 50%;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
 }
 
 #submit-wrap a {
   font-size: 16pt;
   padding: 12px;
-  margin-left: 16px;
   width: 300px;
 }
 
