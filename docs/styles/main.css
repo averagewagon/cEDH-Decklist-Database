@@ -355,9 +355,19 @@ td {
 }
 
 /* Main Row Styles */
+.main {
+  transition: 0.3s;
+  cursor: pointer;
+}
+
 .main td {
   padding: 8px 16px;
   background-color: var(--backdrop-color);
+}
+
+.main:hover {
+  background-color: var(--darker);
+  transition: 0.0s;
 }
 
 .c-inactive {

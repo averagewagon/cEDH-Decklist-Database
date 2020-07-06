@@ -1,12 +1,33 @@
 (function() {
   "use strict";
 
+  // MTG Color ordering converted to binary
+  const COLOR_ORDER = [
+    0,
+    1,2,4,8,16,
+    3,6,12,24,17,
+    5,10,20,9,18,
+    19,7,14,28,25,
+    13,26,21,11,22,
+    15,23,27,29,30,
+    31
+  ]
+    
   window.addEventListener("load", init);
 
+  // Initialization function
   function init() {
     
   }
 
+  //TODO: Hide subrow on click
+  
+  //TODO: Helper function to hide entry
+  
+  //TODO: Sorting
+  
+  //TODO: 
+  
   /* HELPER FUNCTIONS */
 
   /** Prints and error's content to the webpage
@@ -32,7 +53,6 @@
   function id(idName) {
     return document.getElementById(idName);
   }
-
   /**
   * Returns the first element that matches the given CSS selector.
   * @param {string} query - CSS query selector.
