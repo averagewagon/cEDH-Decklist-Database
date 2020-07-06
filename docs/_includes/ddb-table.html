@@ -9,7 +9,7 @@
   </thead>
   <tbody>
     {% for d in site.data.entries.decks %}
-      <tr class="main m{{d.id | escape }} {{d.section | escape }}" tblinfo="{{d | escape | jsonify}}">
+      <tr class="main m{{d.id | escape }} {{d.section | escape }}" data-info="{{d | jsonify}}">
         
       <td class="deck-colors">
         <div class="icon-wrap" title="{{d.colors | join: "" | escape}}">
