@@ -366,7 +366,7 @@ td {
 }
 
 .main:hover {
-  background-color: var(--darker);
+  background-color: var(--darker) !important;
   transition: 0.0s;
 }
 
