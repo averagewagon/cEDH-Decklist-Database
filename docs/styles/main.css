@@ -269,6 +269,7 @@ section {
   padding-left: 32px;
   padding-right: 32px;
   z-index: 4;
+  overflow: auto;
 }
 
 #flex-title {
