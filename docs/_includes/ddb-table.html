@@ -9,7 +9,18 @@
   </thead>
   <tbody>
     {% for d in site.data.entries.decks %}
-      <tr class="main m{{d.id | escape }} {{d.section | escape }}" data-info="{{d | jsonify}}">
+      <tr class="main m{{d.id | escape }} {{d.section | escape }}"
+        data-id="{{d.id | escape}}"
+        data-section="{{d.section | escape}}"
+        data-updated="{{d.updated | escape}}"
+        data-name="{{d.name | escape}}"
+        data-colors="{{d.colors | jsonify | escape}}"
+        data-commander="{{d.commander | jsonify | escape}}"
+        data-description="{{d.description | escape}}"
+        data-recommended="{{d.recommended | escape}}"
+        data-discord-title="{{d.discord-title | escape}}"
+        data-discord-link="{{d.discord-link | escape}}"
+      >
         
       <td class="deck-colors">
         <div class="icon-wrap" title="{{d.colors | join: "" | escape}}">

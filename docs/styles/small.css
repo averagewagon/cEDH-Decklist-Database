@@ -242,7 +242,7 @@ aside li span {
 */
 #flex-title {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   padding-top: 370px;
@@ -254,7 +254,7 @@ aside li span {
   border-bottom: 3px solid var(--backdrop-color);
 }
 
-#db-select {
+#db-select, #db-sort {
   font-size: 16pt;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -272,7 +272,7 @@ aside li span {
   max-width: 350px;
 }
 
-#db-select:hover {
+#db-select:hover, #db-sort:hover {
   background-color: var(--darker);
 }
 
