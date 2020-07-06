@@ -34,14 +34,7 @@
   * @param {string} info - the error information that should be passed
   */
   function printError(info) {
-    id("entries").innerHTML = "";
-    let error = document.createElement("td");
-    error.innerText = "Sorry, the request to our database failed with the error:\n"
-                      + info;
-    error.colSpan = "4";
-    let row = document.createElement("tr");
-    row.appendChild(error);
-    id("entries").appendChild(row);
+    id("motd").innerText = "Sorry, something went wrong: " + info;
     console.error(info);
   }
 
