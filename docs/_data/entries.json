@@ -3,7 +3,7 @@
     {
       "id": 1,
       "section": "competitive",
-      "updated": "2020-06-22",
+      "updated": "2020-07-01",
       "name": "Food Chain Prossh",
       "colors": ["b", "r", "g"],
       "commander": ["Prossh, Skyraider of Kher"],
@@ -20,7 +20,7 @@
     {
       "id": 2,
       "section": "competitive",
-      "updated": "2020-06-22",
+      "updated": "2020-05-16",
       "name": "derevi levy",
       "colors": ["w", "u", "g"],
       "commander": ["Derevi, Empyrial Tactician"],
@@ -37,7 +37,7 @@
     {
       "id": 3,
       "section": "competitive",
-      "updated": "2020-06-22",
+      "updated": "2020-07-02",
       "name": "ruric thicc",
       "colors": ["r", "g"],
       "commander": ["Ruric Thar, the Unbowed", "Giggle Boy the Big"],
