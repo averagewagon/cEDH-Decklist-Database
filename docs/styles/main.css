@@ -355,16 +355,19 @@ td {
 }
 
 /* Main Row Styles */
-.main td {
+.main {
+  background-color: var(--backdrop-color);
   transition: 0.3s;
   cursor: pointer;
-  padding: 8px 16px;
-  background-color: var(--backdrop-color);
 }
 
-.main td:hover {
+.main:hover {
   background-color: var(--darker);
   transition: 0.0s;
+}
+
+.main td {
+  padding: 8px 16px;
 }
 
 .c-inactive {
