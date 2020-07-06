@@ -10,7 +10,7 @@
   <tbody>
     {% assign decks = (site.data.entries.decks | sort: 'updated') | reverse %}
     {% for d in decks %}
-      <tr class="main m{{d.id | escape }} {{d.section | escape }}"
+      <tr class="main m{{d.id | escape }}"
         data-id="{{d.id | escape}}"
         data-section="{{d.section | escape}}"
         data-updated="{{d.updated | escape}}"
@@ -54,7 +54,7 @@
         </div>
       </td>
     </tr>
-    <tr class="sub sub-hidee s{{d.id | escape }} {{d.section | escape }}">
+    <tr class="sub sub-hide s{{d.id | escape }}">
       <td class="deck-commander">
         <div class="card-wrap card{{d.commander | size | escape }}">
           {%- for x in d.commander -%}
