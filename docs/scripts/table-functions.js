@@ -38,15 +38,6 @@
       mainRows[i].addEventListener("click", toggleSub);
     }
   }
-
-  /** Toggles the visibility of a subrow and fetches card images
-   */
-  function toggleSub() {
-    let entryId = ".s" + this.dataset.id;
-    if (!qs(entryId).classList.toggle("sub-hide")) {
-      //fetchCommanders(entryId);
-    }
-  }
   
   //TODO: "Update Rows" function which adds/removes .filtered based on state of filters
   
@@ -86,13 +77,36 @@
     this.classList.toggle("filter-inactive");
   }
   
+  /** Toggles the visibility of a subrow and fetches card images
+   */
+  function toggleSub() {
+    let entryId = ".s" + this.dataset.id;
+    if (!qs(entryId).classList.toggle("sub-hide")) {
+      //TODO: fetchCommanders(entryId);
+    }
+  }
+  
   /** Determines if a given row should be hidden or shown based on state of the filters
    * @param {string} entryId - The entry which is being inspected
    * @param {Object} filterState - The current state of the filters and searches on the page
    * @returns {boolean} - If true, then the entry should be visible, else false
    */
   function determineFilterCompliance(entryId, filterState) {
+    let show = true;
+    let fs = checkFilterState();
+    let entry = qs(".m" + entryId).dataset;
     
+    if (fs.section != entry.section) {
+      show = false;
+    } else if (fs.rec && !entry.recommended) {
+      show = false;
+    } else if (fs.primer && entry.primer == "noprimer") {
+      show = false;
+    } else if (fs.discord && !entry.discordLink) {
+      show = false;
+    }
+    
+    return show;
   }
   
   /** Returns an object which holds the current state of the filters
@@ -104,7 +118,7 @@
     filterState.primer = id("primer-only").classList.contains("filter-active");
     filterState.discord = id("discord-only").classList.contains("filter-active");
     filterState.search = id("search-box").innerText;
-    filterState.db = id("db-select").value;
+    filterState.section = id("db-select").value;
     
     let colorFilters = qsa(".color-filters img");
     filterState.colors = [];
