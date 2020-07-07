@@ -20,7 +20,14 @@
     prepareToggles();
   }
   
+  /** Adds a click listener for row toggling to each row
+   */
   function prepareToggles() {
+    let colorFilters = qsa(".color-filters img");
+    for (let i = 0; i < colorFilters.length; i++) {
+      colorFilters[i].addEventListener("click", toggleColor);
+    }
+    
     let mainRows = qsa(".main");
     for (let i = 0; i < mainRows.length; i++) {
       mainRows[i].addEventListener("click", toggleSub);
@@ -30,31 +37,74 @@
   /** Toggles the visibility of a subrow and fetches card images
    */
   function toggleSub() {
-    let subClass = ".s" + this.dataset.id;
-    if (!qs(subClass).classList.toggle("sub-hide")) {
-      fetchCommanders(subClass);
+    let entryId = ".s" + this.dataset.id;
+    if (!qs(entryId).classList.toggle("sub-hide")) {
+      //fetchCommanders(entryId);
     }
   }
   
-  /** Fetches the commanders for a given entry
-   * 
-   */
-  function fetchCommanders(subClass) {
-    
+  function toggleColor() {
+    this.classList.toggle("color-inactive");
+    this.classList.toggle("color-active");
   }
   
-  //TODO: Helper function to hide entry
-  
-  //TODO: Sort function
   
   //TODO: "Update Rows" function which adds/removes .filtered based on state of filters
   
   //TODO: Helper function which takes a row and returns its state relative to filters
   
-  //TODO: When subrow is revealed, query Scryfall for the card images
+  //TODO: Sort function
   
   /* HELPER FUNCTIONS */
 
+  /** Hides an entry
+   * @param {string} entryId - The entry ID which is to be hidden
+   */
+  function hideEntry(entryId) {
+    qs(".m" + entryId).classList.add("filtered");
+    qs(".s" + entryId).classList.add("filtered");
+  }
+  
+  /** Shows an entry
+   * @param {string} entryId - The entry ID which is to be shown
+   */
+  function showEntry(entryId) {
+    qs(".m" + entryId).classList.remove("filtered");
+    qs(".s" + entryId).classList.remove("filtered");
+  }
+  
+  /** Determines if a given row should be hidden or shown based on state of the filters
+   * @param {string} entryId - The entry which is being inspected
+   * @param {Object} filterState - The current state of the filters and searches on the page
+   * @returns {boolean} - If true, then the entry should be visible, else false
+   */
+  function determineFilterCompliance(entryId, filterState) {
+    
+  }
+  
+  /** Returns an object which holds the current state of the filters
+   * @returns {Object} filterState - An Object describing the currently-active filters
+   */
+  function checkFilterState() {
+    let filterState = {};
+    filterState.rec = id("rec-only").classList.contains("filter-active");
+    filterState.primer = id("primer-only").classList.contains("filter-active");
+    filterState.discord = id("discord-only").classList.contains("filter-active");
+    filterState.search = id("search-box").innerText;
+    filterState.db = id("db-select").value;
+    
+    let colorFilters = qsa(".color-filters img");
+    filterState.colors = [];
+    for (let i = 0; i < colorFilters.length; i++) {
+      let color = colorFilters[i];
+      if (color.classList.contains("color-active")) {
+        filterState.colors.push(color.alt.charAt(0));
+      }
+    }
+    
+    return filterState;
+  }
+  
   /** Prints and error's content to the webpage
   * @param {string} info - the error information that should be passed
   */

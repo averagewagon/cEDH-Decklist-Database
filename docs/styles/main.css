@@ -75,6 +75,10 @@ ul {
   display: none;
 }
 
+.filtered {
+  display: none;
+}
+
 /*
   Nav Styles
 */
@@ -305,7 +309,7 @@ section {
 #submit-wrap a {
   font-size: 16pt;
   padding: 12px;
-  width: 300px;
+  width: 260px;
 }
 
 #description {
@@ -390,10 +394,6 @@ td {
 /* Sub Row Styles */
 .sub td {
   background-color: var(--lighter);
-}
-
-.sub {
-  transition: 0.3s;
 }
 
 .sub-hide {
