@@ -120,7 +120,7 @@
       show = false;
     } else if (fs.primer && entry.primer == "noprimer") {
       show = false;
-    } else if (fs.discord && entry.discordLink) {
+    } else if (fs.discord && entry.discordLink == "") {
       show = false;
     } else {
       for (let i = 0; i < fs.colors.length; i++) {
