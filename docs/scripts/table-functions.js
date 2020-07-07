@@ -112,26 +112,21 @@
   function determineFilterCompliance(entryId, fs) {
     let show = true;
     let entry = qs(".m" + entryId).dataset;
-      console.log("liftoff");
+    console.log("liftoff");
     
     if (fs.section != entry.section) {
       show = false;
-      console.log(entry.section);
-    } else if (fs.rec && !entry.recommended) {
+    } else if (fs.rec && entry.recommended == "false") {
       show = false;
-      console.log(entry.recommended);
     } else if (fs.primer && entry.primer == "noprimer") {
       show = false;
-      console.log(entry.primer);
-    } else if (fs.discord && !entry.discordLink) {
+    } else if (fs.discord && entry.discordLink) {
       show = false;
-      console.log(entry.discordLink);
     } else {
       for (let i = 0; i < fs.colors.length; i++) {
         let color = fs.colors[i];
         if (!entry.colors.includes(color)) {
           show = false;
-          console.log(color);
           break;
         }
       }
@@ -143,7 +138,6 @@
           + entry.description + " "
           + entry.discordTitle + " "
           + entry.decks;
-          console.log(match);
         if (fs.search && !match.toUpperCase().includes(fs.search)) {
           show = false;
         }
