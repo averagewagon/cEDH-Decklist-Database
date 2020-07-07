@@ -48,6 +48,12 @@
       }
     });
     
+    id("search-box").addEventListener("change", d => {
+      if (id("search-box").value == "") {
+        applyFilters();
+      }
+    });
+    
     id("search-btn").addEventListener("click", applyFilters);
   }
   
@@ -67,8 +73,6 @@
   }
   
   //TODO: Sort function
-  
-  /* HELPER FUNCTIONS */
 
   /** Hides an entry
    * @param {string} entryId - The entry ID which is to be hidden
@@ -176,6 +180,8 @@
     
     return filterState;
   }
+  
+  /* HELPER FUNCTIONS */
   
   /** Prints and error's content to the webpage
   * @param {string} info - the error information that should be passed
