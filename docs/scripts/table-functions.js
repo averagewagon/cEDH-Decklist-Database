@@ -38,6 +38,8 @@
     for (let i = 0; i < mainRows.length; i++) {
       mainRows[i].addEventListener("click", toggleSub);
     }
+    
+    id("db-select").addEventListener("change", applyFilters);
   }
   
   /** Iterates through the table and applies the currently-selected filters
@@ -54,10 +56,6 @@
       }
     }
   }
-  
-  //TODO: "Update Rows" function which adds/removes .filtered based on state of filters
-  
-  //TODO: Helper function which takes a row and returns its state relative to filters
   
   //TODO: Sort function
   
