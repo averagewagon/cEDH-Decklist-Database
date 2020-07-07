@@ -54,14 +54,17 @@ The main page of the cEDH decklist database
         ">
         Show Controls
         </div>
-          <a class="btn nav-buttons" id="main-link"><span>About Us</span></a>
-          <a class="btn nav-buttons" id="discord-link" target="_blank" href="https://discord.gg/BXPyu2P"><img src="./img/discord-server.png" class="mobile" id="discord-m" alt="Discord icon"><span>Discord Server<span></a>
+          <a class="btn nav-buttons" id="main-link" href="about.html"><span>About the DDB</span></a>
+          <a class="btn nav-buttons" id="discord-link" target="_blank" href="https://discord.gg/BXPyu2P">
+            <img src="./img/discord-server.png" class="mobile" id="discord-m" alt="Discord icon">
+            <span>Discord Server<span>
+          </a>
           <div id="search" class="mhide">
             <input id="search-box" type="search" placeholder="Search the database..." name="search" aria-label="search">
             <a class="btn" id="search-btn">Search</a>
           </div>
         </nav>
-        <!-- Don't forget to remove mhide when finished -->
+        
         <header class="">
           <span id="motd">
             {{ site.data.meta.motd  | escape }}
