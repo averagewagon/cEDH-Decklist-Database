@@ -144,11 +144,10 @@
    */
   function switchDescription() {
     let section = id("db-select").value;
-    console.log("." + section + "-desc");
     id("competitive-desc").classList.add("filtered");
     id("deprecated-desc").classList.add("filtered");
     id("meme-desc").classList.add("filtered");
-    qs("." + section.trim() + "-desc").classList.remove("filtered");
+    id(section + "-desc").classList.remove("filtered");
   }
   
   /** Turns a button filter on or off
