@@ -161,8 +161,8 @@
     filterState.rec = id("rec-only").classList.contains("filter-active");
     filterState.primer = id("primer-only").classList.contains("filter-active");
     filterState.discord = id("discord-only").classList.contains("filter-active");
-    filterState.search = id("search-box").innerText;
-    filterState.section = id("db-select").value.trim().toUpperCase();
+    filterState.search = id("search-box").innerText.trim().toUpperCase();
+    filterState.section = id("db-select").value;
     
     let colorFilters = qsa(".color-filters img");
     filterState.colors = [];
