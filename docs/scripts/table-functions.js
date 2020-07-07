@@ -173,6 +173,7 @@
         if (cachedCards[card] != null) {
           cards[i].src = cachedCards[card];
         } else {
+          cards[i].innerText = card;
           let url = SCRYFALL_URL + encodeURI(card);
           
           fetch(url) 
