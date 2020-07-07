@@ -23,9 +23,14 @@
   /** Adds a click listener for row toggling to each row
    */
   function prepareToggles() {
-    let colorFilters = qsa(".color-filters img");
+    let colorFilters = qsa("#color-filters img");
     for (let i = 0; i < colorFilters.length; i++) {
       colorFilters[i].addEventListener("click", toggleColor);
+    }
+    
+    let buttonFilters = qsa(".filter-option");
+    for (let i = 0; i < buttonFilters.length; i++) {
+      buttonFilters[i].addEventListener("click", toggleFilter);
     }
     
     let mainRows = qsa(".main");
@@ -42,12 +47,6 @@
       //fetchCommanders(entryId);
     }
   }
-  
-  function toggleColor() {
-    this.classList.toggle("color-inactive");
-    this.classList.toggle("color-active");
-  }
-  
   
   //TODO: "Update Rows" function which adds/removes .filtered based on state of filters
   
@@ -71,6 +70,20 @@
   function showEntry(entryId) {
     qs(".m" + entryId).classList.remove("filtered");
     qs(".s" + entryId).classList.remove("filtered");
+  }
+  
+  /** Turns a color filter on or off
+   */
+  function toggleColor() {
+    this.classList.toggle("color-inactive");
+    this.classList.toggle("color-active");
+  }
+  
+  /** Turns a button filter on or off
+   */
+  function toggleFilter() {
+    this.classList.toggle("filter-active");
+    this.classList.toggle("filter-inactive");
   }
   
   /** Determines if a given row should be hidden or shown based on state of the filters
