@@ -17,13 +17,13 @@
 
   // Initialization function
   function init() {
-    prepareToggles();
+    prepareListeners();
     applyFilters();
   }
   
-  /** Adds a click listener for row toggling to each row
+  /** Adds a click listener for all the clickable elements
    */
-  function prepareToggles() {
+  function prepareListeners() {
     let colorFilters = qsa("#color-filters img");
     for (let i = 0; i < colorFilters.length; i++) {
       colorFilters[i].addEventListener("click", toggleColor);
@@ -40,6 +40,15 @@
     }
     
     id("db-select").addEventListener("change", applyFilters);
+    
+    id("search-box").addEventListener("keyup", d => {
+      if (d.keyCode === 13) {
+        d.preventDefault();
+        id("search-btn").click();
+      }
+    });
+    
+    id("search-btn").addEventListener("click", applyFilters);
   }
   
   /** Iterates through the table and applies the currently-selected filters
