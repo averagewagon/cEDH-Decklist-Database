@@ -12,6 +12,10 @@
     15,23,27,29,30,
     31
   ]
+  
+  const SCRYFALL_URL = "https://api.scryfall.com/cards/named?format=image&version=normal&fuzzy="
+  
+  const cachedCards = {};
     
   window.addEventListener("load", init);
 
@@ -163,7 +167,20 @@
   function toggleSub() {
     let entryId = ".s" + this.dataset.id;
     if (!qs(entryId).classList.toggle("sub-hide")) {
-      //TODO: fetchCommanders(entryId);
+      let cards = qsa(entryId + " .card");
+      for (let i = 0; i < cards.length; i++) {
+        let card = cards[i].alt;
+        if (cachedCards[card] != null) {
+          card.src = cachedCards[card];
+        } else {
+          let url = SCRYFALL_URL + encodeURI(card);
+          
+          fetch(url) 
+            .then(checkStatus)
+            .then(console.log)
+            .catch(console.error);
+        }
+      }
     }
   }
   
@@ -238,7 +255,6 @@
   * @param {string} info - the error information that should be passed
   */
   function printError(info) {
-    id("motd").innerText = "Sorry, something went wrong: " + info;
     console.error(info);
   }
 
