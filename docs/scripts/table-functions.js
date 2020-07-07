@@ -19,6 +19,9 @@
   function init() {
     prepareListeners();
     applyFilters();
+    if (id("db-sort").value != "date") {
+      sortTable();
+    }
   }
   
   /** Adds a click listener for all the clickable elements
@@ -42,19 +45,14 @@
     id("db-select").addEventListener("change", applyFilters);
     
     id("search-box").addEventListener("keyup", d => {
-      if (d.keyCode === 13) {
-        d.preventDefault();
+      if (d.keyCode === 13 || id("search-box").value === "") {
         id("search-btn").click();
       }
     });
     
-    id("search-box").addEventListener("keyup", d => {
-      if (id("search-box").value == "") {
-        applyFilters();
-      }
-    });
-    
     id("search-btn").addEventListener("click", applyFilters);
+    
+    id("db-sort").addEventListener("change", sortTable);
   }
   
   /** Iterates through the table and applies the currently-selected filters
@@ -72,7 +70,28 @@
     }
   }
   
-  //TODO: Sort function
+  /** Sorts the table depending on the selected sort
+   */
+  function sortTable() {
+    let sort = id("db-sort").value;
+    let mainRows = qsa(".main");
+    let sorted = mainRows.sort((a, b) => {
+      if (sort == "date") {
+        return b.dataset.updated.localeCompare(a.dataset.updated);
+      } else if (sort == "title") {
+        return a.dataset.name.localeCompare(b.dataset.name);
+      } else {
+        return 1;
+      }
+    });
+    
+    for (let i = 0; i < sorted.length; i++) {
+      let entry = sorted[i];
+      let subEntry = qs("s" + entry.dataset.id);
+      qs("tbody").appendChild(sorted[i]);
+      qs("tbody").appendChild(subEntry);
+    }
+  }
 
   /** Hides an entry
    * @param {string} entryId - The entry ID which is to be hidden
@@ -80,6 +99,7 @@
   function hideEntry(entryId) {
     qs(".m" + entryId).classList.add("filtered");
     qs(".s" + entryId).classList.add("filtered");
+    qs(".s" + entryId).classList.add("sub-hide");
   }
   
   /** Shows an entry
@@ -123,7 +143,6 @@
   function determineFilterCompliance(entryId, fs) {
     let show = true;
     let entry = qs(".m" + entryId).dataset;
-    console.log("liftoff");
     
     if (fs.section != entry.section) {
       show = false;

@@ -31,7 +31,7 @@
         data-decks="{{d.decks | escape}}"
       >
         
-      <td class="deck-colors">
+      <td class="deck-colors ns">
         <div class="icon-wrap" title="{{d.colors | join: "" | escape}}">
           <img class="d-icon {% unless d.colors contains "w" %} c-inactive{% endunless %}" 
           src="./img/mana/w.png" alt="white"/>
@@ -48,7 +48,7 @@
       <td class="deck-title">
         <span>{{d.name | escape }}</span>
       </td>
-      <td class="deck-tags">
+      <td class="deck-tags ns">
         <div class="icon-wrap">
           <img class="d-icon t-{{d.recommended | escape }}" src="./img/rec.png" alt="recommended"/>
           <img class="d-icon t-{%- unless primers contains true-%}false{% endunless %}" src="./img/primer.png" alt="primer"/>
@@ -69,14 +69,14 @@
           <div class="links">
             <a class="d-discord btn {% if d.discord-link == "" %}no-discord{% endif %}"
             {% if d.discord-link != "" %}href="{{d.discord-link | escape }}"{% endif %}>
-              <img class="d-icon" src="./img/discord-server.png" />
+              <img class="d-icon ns" src="./img/discord-server.png" />
               {% if d.discord-link == "" %}[No Discord Server]{% endif %}
               {{d.discord-title | escape }}
             </a>
             <ul class="deck-list">
               {%- for x in d.lists -%}
                 <li><a href="{{x.link | escape}}">
-                  <img class="d-icon t-{{x.primer | escape}}" src="./img/primer.png" />
+                  <img class="d-icon t-{{x.primer | escape}} ns" src="./img/primer.png" />
                   <span>{{x.description | escape}}</span>
                 </a></li>
               {% endfor %}
