@@ -323,7 +323,7 @@ aside li span {
   border-spacing: 0;
 }
 
-#ddb tr {
+#ddb .sub {
   display: block;
 }
 
@@ -337,7 +337,7 @@ td {
 
 /* Main Row Styles */
 .main {
-  display: flex !important;
+  display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
