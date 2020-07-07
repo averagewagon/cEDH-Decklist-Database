@@ -401,7 +401,7 @@ td {
 }
 
 .sub, .card-wrap, .deck-description {
-  height: auto;
+  height: 100%;
   width: 100%;
 }
 
@@ -412,7 +412,7 @@ td {
   padding-top: 15px;
   padding-left: 8px;
   padding-right: 8px;
-  padding-bottom: 16px;
+  padding-bottom: 11px;
 }
 
 .card {
