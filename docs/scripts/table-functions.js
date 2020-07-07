@@ -263,6 +263,7 @@
       if (color.classList.contains("color-active")) {
         filterState.colors.push(color.alt.charAt(0));
       }
+      console.log(filterState.colors);
     }
     
     return filterState;
