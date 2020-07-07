@@ -22,6 +22,7 @@
     if (id("db-sort").value != "date") {
       sortTable();
     }
+    switchDescription();
   }
   
   /** Adds a click listener for all the clickable elements
@@ -43,6 +44,7 @@
     }
     
     id("db-select").addEventListener("change", applyFilters);
+    id("db-select").addEventListener("change", switchDescription);
     
     id("search-box").addEventListener("keyup", d => {
       if (d.keyCode === 13 || id("search-box").value === "") {
@@ -136,6 +138,16 @@
     this.classList.toggle("color-inactive");
     this.classList.toggle("color-active");
     applyFilters();
+  }
+  
+  /** Changes the description when the database changes
+   */
+  function switchDescription() {
+    let section = id("db-select").value;
+    id("competitive-desc").classList.add("filtered");
+    id("deprecated-desc").classList.add("filtered");
+    id("deprecated-desc").classList.add("filtered");
+    qs("." + section + "-desc").classList.remove("filtered");
   }
   
   /** Turns a button filter on or off
