@@ -48,7 +48,7 @@
       }
     });
     
-    id("search-box").addEventListener("change", d => {
+    id("search-box").addEventListener("keyup", d => {
       if (id("search-box").value == "") {
         applyFilters();
       }
