@@ -195,7 +195,7 @@
     for (let i = 0; i < images.length; i++) {
       images[i].src = imageSrc;
     }
-    cachedCards[cardName] = imageSrc.;
+    cachedCards[cardName] = imageSrc;
   }
   
   /** Determines if a given row should be hidden or shown based on state of the filters
