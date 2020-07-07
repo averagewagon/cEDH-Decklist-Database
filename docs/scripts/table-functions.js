@@ -86,7 +86,7 @@
       } else if (sort == "title") {
         return a.name.localeCompare(b.name);
       } else {
-        return 1;
+        return convertColor(a.colors) - convertColor(b.colors);
       }
     });
     
@@ -94,10 +94,23 @@
       let entryId = sorted[i].id;
       let mainEntry = qs(".m" + entryId);
       let subEntry = qs(".s" + entryId);
-      console.log(entryId + " main: " + mainEntry);
       qs("tbody").appendChild(mainEntry);
       qs("tbody").appendChild(subEntry);
     }
+  }
+  
+  /** Converts a color string into a number for its priority
+   * @param {string} colors - A string containing the colors for the deck
+   * @returns {int} - The priority by which this color should be sorted
+   */
+  function convertColor(colors) {
+    let val = 0;
+    if (colors.includes("w")) { val += 1 }
+    if (colors.includes("u")) { val += 2 }
+    if (colors.includes("b")) { val += 4 }
+    if (colors.includes("r")) { val += 8 }
+    if (colors.includes("g")) { val += 16 }
+    return COLOR_ORDER.indexOf(val);
   }
 
   /** Hides an entry
