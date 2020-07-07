@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+Github Username - AverageDragon
+07/07/2020
+About Us page for the cDDB
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>cEDH Decklist Database - About Us</title>
+
+  <!-- Search Engine Optimization -->
+  <meta name="description" content="A collection of Magic: The Gathering (MTG) decks from the Competitive EDH Format." />
+  <meta name="keywords" content="mtg,cedh,edh,magic,decks,decklists,database,competitive"
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/ico" href="img/favicon.ico">
+  <link rel="stylesheet" type="text/css" media="screen" href="./styles/about.css" />
+
+  <!-- Logo Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap&text=DacestEHklibCompv" rel="stylesheet">
+  
+  <!-- DDB Scripts -->
+  <script src="scripts/table-functions.js"></script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="fixed-elems">
+      <nav class="ns">
+        <a id="logo" href="index.html">
+          <img src="./img/phy.png" alt="Competitive EDH Decklist Database"/>
+          <h1>Competitive EDH<br/> Decklist Database</h1>
+        </a>
+        <a class="btn nav-buttons" id="main-link" href="about.html"><span>About the DDB</span></a>
+        <a class="btn nav-buttons" id="discord-link" target="_blank" href="https://discord.gg/BXPyu2P">
+          <img src="./img/discord-server.png" class="mobile" id="discord-m" alt="Discord icon">
+          <span>Discord Server<span>
+        </a>
+        <a class="btn nav-buttons" id="submit-link" href=""><span>Submit a Deck</span></a>
+      </nav>
+    </div>
+
+    <section id="section">
+      <header class="">
+        <span id="motd">
+          {{ site.data.meta.motd  | escape }}
+        </span>
+        <span id="motd-close" onclick="this.parentElement.style.display='none';">&times;</span>
+      </header>
+      
+      <div id="about-content">
+        <div id="markdown">
+          {{ content }}
+        </div>
+        <div id="copyright">
+          The cEDH Decklist Database is unofficial Fan Content permitted under the Fan Content Policy.
+          This site is not approved and/or endorsed by Wizards of the Coast.<br/>
+          Portions of the materials used are property of Wizards of the Coast, ©Wizards of the Coast LLC.
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
