@@ -401,7 +401,7 @@ td {
 }
 
 .sub, .card-wrap, .deck-description {
-  height: 354px;
+  height: auto;
   width: 100%;
 }
 
