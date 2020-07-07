@@ -33,7 +33,7 @@ body {
   position: fixed;
   width: 100%;
   max-width: 1600px;
-  z-index: 2;
+  z-index: 3;
   background-color: var(--secondary-color);
 }
 
