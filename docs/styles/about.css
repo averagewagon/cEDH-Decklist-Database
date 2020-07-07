@@ -158,14 +158,7 @@ section {
   margin: 16px;
 }
 
-#markdown {
-  margin-top: 16px;
-  margin-bottom: 32px;
-}
-
 #copyright {
   color: lightgray;
   font-size: 10pt;
-  padding-bottom: 16px;
-  margin: 0 auto;
 }
