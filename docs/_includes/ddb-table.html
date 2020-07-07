@@ -10,6 +10,7 @@
   <tbody>
     {% assign decks = (site.data.entries.decks | sort: 'updated') | reverse %}
     {% for d in decks %}
+    
       <tr class="main m{{d.id | escape }}"
         data-id="{{d.id | escape}}"
         data-section="{{d.section | escape}}"
@@ -19,8 +20,15 @@
         data-commander="{{d.commander | jsonify | escape}}"
         data-description="{{d.description | escape}}"
         data-recommended="{{d.recommended | escape}}"
-        data-discord-title="{{d.discord-title | escape}}"
-        data-discord-link="{{d.discord-link | escape}}"
+        data-discordTitle="{{d.discord-title | escape}}"
+        data-discordLink="{{d.discord-link | escape}}"
+        {%- capture primers -%}
+        {%- for x in d.lists -%}
+        {{x.primer | escape}}
+        {% endfor %}
+        {% endcapture %}
+        data-primer="{%- unless primers contains true-%}noprimer{% endunless %}"
+        data-decks="{{d.decks | escape}}"
       >
         
       <td class="deck-colors">
@@ -41,13 +49,7 @@
         <span>{{d.name | escape }}</span>
       </td>
       <td class="deck-tags">
-        <div class="icon-wrap" 
-          {%- capture primers -%}
-          {%- for x in d.lists -%}
-          {{x.primer | escape}}
-          {% endfor %}
-          {% endcapture %}
-        >
+        <div class="icon-wrap">
           <img class="d-icon t-{{d.recommended | escape }}" src="./img/rec.png" alt="recommended"/>
           <img class="d-icon t-{%- unless primers contains true-%}false{% endunless %}" src="./img/primer.png" alt="primer"/>
           <img class="d-icon t-{% if d.discord-link == "" %}false{% endif %}" src="./img/discord.png" alt="discord server"/>
