@@ -171,7 +171,7 @@
       for (let i = 0; i < cards.length; i++) {
         let card = cards[i].title;
         if (cachedCards[card] != null) {
-          card.src = cachedCards[card];
+          cards[i].src = cachedCards[card];
         } else {
           let url = SCRYFALL_URL + encodeURI(card);
           
