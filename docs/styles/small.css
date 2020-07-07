@@ -62,7 +62,7 @@ nav, aside, #flex-title {
 }
 
 .filtered {
-  display: none;
+  display: none !important;
 }
 
 /*
