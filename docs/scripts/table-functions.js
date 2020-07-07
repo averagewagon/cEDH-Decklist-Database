@@ -18,6 +18,7 @@
   // Initialization function
   function init() {
     prepareToggles();
+    applyFilters();
   }
   
   /** Adds a click listener for row toggling to each row
@@ -36,6 +37,21 @@
     let mainRows = qsa(".main");
     for (let i = 0; i < mainRows.length; i++) {
       mainRows[i].addEventListener("click", toggleSub);
+    }
+  }
+  
+  /** Iterates through the table and applies the currently-selected filters
+   */
+  function applyFilters() {
+    let fs = checkFilterState();
+    let rows = qsa(".main");
+    for (let i = 0; i < rows.length; i++) {
+      let entryId = rows[i].dataset.id;
+      if (determineFilterCompliance(entryId, fs)) {
+        showEntry(entryId);
+      } else {
+        hideEntry(entryId);
+      }
     }
   }
   
@@ -68,6 +84,7 @@
   function toggleColor() {
     this.classList.toggle("color-inactive");
     this.classList.toggle("color-active");
+    applyFilters();
   }
   
   /** Turns a button filter on or off
@@ -75,6 +92,7 @@
   function toggleFilter() {
     this.classList.toggle("filter-active");
     this.classList.toggle("filter-inactive");
+    applyFilters();
   }
   
   /** Toggles the visibility of a subrow and fetches card images
@@ -91,9 +109,8 @@
    * @param {Object} filterState - The current state of the filters and searches on the page
    * @returns {boolean} - If true, then the entry should be visible, else false
    */
-  function determineFilterCompliance(entryId, filterState) {
+  function determineFilterCompliance(entryId, fs) {
     let show = true;
-    let fs = checkFilterState();
     let entry = qs(".m" + entryId).dataset;
     
     if (fs.section != entry.section) {
@@ -104,6 +121,26 @@
       show = false;
     } else if (fs.discord && !entry.discordLink) {
       show = false;
+    } else {
+      for (let i = 0; i < fs.colors.length; i++) {
+        let color = fs.colors[i];
+        if (!entry.colors.includes(color)) {
+          show = false;
+          break;
+        }
+      }
+      
+      if (show) {
+        let match = entry.updated + " " 
+          + entry.name + " "
+          + entry.commander + " "
+          + entry.description + " "
+          + entry.discordTitle + " "
+          + entry.decks;
+        if (fs.search && !match.toUpperCase().includes(fs.search)) {
+          show = false;
+        }
+      }
     }
     
     return show;
@@ -118,7 +155,7 @@
     filterState.primer = id("primer-only").classList.contains("filter-active");
     filterState.discord = id("discord-only").classList.contains("filter-active");
     filterState.search = id("search-box").innerText;
-    filterState.section = id("db-select").value;
+    filterState.section = id("db-select").value.trim().toUpperCase();
     
     let colorFilters = qsa(".color-filters img");
     filterState.colors = [];
