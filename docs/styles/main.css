@@ -227,11 +227,11 @@ aside li span {
 
 .color-inactive, .color-active {
   cursor: pointer;
-  transition: 0.4s;
 }
 
 .color-inactive {
   opacity: 0.3;
+  transition: 0.4s;
 }
 
 .color-inactive:hover {
