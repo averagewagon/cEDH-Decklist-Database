@@ -60,7 +60,7 @@
       <td class="deck-commander">
         <div class="card-wrap card{{d.commander | size | escape }}">
           {%- for x in d.commander -%}
-          <img class="card" src="./img/card.png" alt="{{x | escape }}"/>
+          <img class="card" src="./img/card.png" alt="{{x | escape }}" title="{{x | escape }}"/>
           {% endfor %}
         </div>
       </td>
