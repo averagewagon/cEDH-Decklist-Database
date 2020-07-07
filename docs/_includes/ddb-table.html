@@ -28,7 +28,7 @@
         {% endfor %}
         {% endcapture %}
         data-primer="{%- unless primers contains true-%}noprimer{% endunless %}"
-        data-decks="{{d.decks | escape}}"
+        data-decks="{{d.lists | escape}}"
       >
         
       <td class="deck-colors ns">
