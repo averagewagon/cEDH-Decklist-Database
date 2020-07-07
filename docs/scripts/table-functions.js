@@ -256,14 +256,13 @@
     filterState.search = id("search-box").value.trim().toUpperCase();
     filterState.section = id("db-select").value;
     
-    let colorFilters = qsa(".color-filters img");
+    let colorFilters = qsa("#color-filters img");
     filterState.colors = [];
     for (let i = 0; i < colorFilters.length; i++) {
       let color = colorFilters[i];
       if (color.classList.contains("color-active")) {
         filterState.colors.push(color.alt.charAt(0));
       }
-      console.log(filterState.colors);
     }
     
     return filterState;
