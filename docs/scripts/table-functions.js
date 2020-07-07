@@ -112,6 +112,7 @@
   function determineFilterCompliance(entryId, fs) {
     let show = true;
     let entry = qs(".m" + entryId).dataset;
+      console.log("liftoff");
     
     if (fs.section != entry.section) {
       show = false;
