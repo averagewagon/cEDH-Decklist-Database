@@ -16,7 +16,7 @@
         data-section="{{d.section | escape}}"
         data-updated="{{d.updated | escape}}"
         data-name="{{d.name | escape}}"
-        data-colors="{{d.colors | jsonify | escape}}"
+        data-colors="{{d.colors | join: "" | escape}}"
         data-commander="{{d.commander | jsonify | escape}}"
         data-description="{{d.description | escape}}"
         data-recommended="{{d.recommended | escape}}"
@@ -32,7 +32,7 @@
       >
         
       <td class="deck-colors ns">
-        <div class="icon-wrap" title="{{d.colors | join: "" | escape}}">
+        <div class="icon-wrap">
           <img class="d-icon {% unless d.colors contains "w" %} c-inactive{% endunless %}" 
           src="./img/mana/w.png" alt="white"/>
           <img class="d-icon {% unless d.colors contains "u" %} c-inactive{% endunless %}" 
