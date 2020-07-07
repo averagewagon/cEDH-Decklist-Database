@@ -431,8 +431,8 @@ td {
 
 .card:nth-child(2) {
   position: absolute;
-  margin-left: 16px;
-  margin-top: 34px;
+  margin-left: 18px;
+  margin-top: 35px;
   z-index: 1;
 }
 
