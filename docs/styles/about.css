@@ -10,6 +10,7 @@
   --lighter: #454b58;
   --top: 92px;
    scrollbar-color: #222222 #424242;
+   height: 100%;
 }
 
 /*
@@ -17,6 +18,7 @@
 */
 
 body {
+  height: 100%;
   width: 100%;
   max-width: 1600px;
   margin: 0 auto;
@@ -27,6 +29,7 @@ body {
 
 #wrapper {
   background-color: var(--canvas-color);
+  height: 100%;
 }
 
 #fixed-elems {
@@ -148,6 +151,7 @@ header {
   Section Styles
 */
 section {
+  overflow: auto;
 }
 
 #about-content {
