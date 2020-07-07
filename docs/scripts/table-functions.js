@@ -169,7 +169,7 @@
     if (!qs(entryId).classList.toggle("sub-hide")) {
       let cards = qsa(entryId + " .card");
       for (let i = 0; i < cards.length; i++) {
-        let card = cards[i].alt;
+        let card = cards[i].title;
         if (cachedCards[card] != null) {
           card.src = cachedCards[card];
         } else {
@@ -191,7 +191,7 @@
   function setCardSources(cardInfo) {
     let cardName = cardInfo.name;
     let imageSrc = cardInfo.image_uris.normal;
-    let images = qsa(".card-wrap [alt=" + cardName + "]");
+    let images = qsa(".card-wrap [title=\"" + cardName + "\"]");
     for (let i = 0; i < images.length; i++) {
       images[i].src = imageSrc;
     }
