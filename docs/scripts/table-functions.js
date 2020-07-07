@@ -75,20 +75,26 @@
   function sortTable() {
     let sort = id("db-sort").value;
     let mainRows = qsa(".main");
-    let sorted = mainRows.sort((a, b) => {
+    let entries = [];
+    for (let i = 0; i < mainRows.length; i++) {
+      entries.push(mainRows[i].dataset);
+    }
+    
+    let sorted = entries.sort((a, b) => {
       if (sort == "date") {
-        return b.dataset.updated.localeCompare(a.dataset.updated);
+        return b.updated.localeCompare(a.updated);
       } else if (sort == "title") {
-        return a.dataset.name.localeCompare(b.dataset.name);
+        return a.name.localeCompare(b.name);
       } else {
         return 1;
       }
     });
     
     for (let i = 0; i < sorted.length; i++) {
-      let entry = sorted[i];
-      let subEntry = qs("s" + entry.dataset.id);
-      qs("tbody").appendChild(sorted[i]);
+      let entryId = sorted[i].id;
+      let mainEntry = qs("m" + entryId);
+      let subEntry = qs("s" + entryId);
+      qs("tbody").appendChild(mainEntry);
       qs("tbody").appendChild(subEntry);
     }
   }
