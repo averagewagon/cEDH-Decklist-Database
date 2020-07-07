@@ -18,7 +18,7 @@
 
 body {
   width: 100%;
-  max-width: 1500px;
+  max-width: 1600px;
   margin: 0 auto;
   font-family: sans-serif;
   background-color: var(--backdrop-color);
@@ -30,9 +30,6 @@ body {
 }
 
 #fixed-elems {
-  position: fixed;
-  width: 100%;
-  max-width: 1500px;
   z-index: 3;
   background-color: var(--secondary-color);
 }
@@ -151,7 +148,6 @@ header {
   Section Styles
 */
 section {
-  padding-top: var(--top);
 }
 
 #about-content {
