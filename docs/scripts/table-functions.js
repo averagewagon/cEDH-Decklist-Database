@@ -120,7 +120,7 @@
       show = false;
     } else if (fs.primer && entry.primer == "noprimer") {
       show = false;
-    } else if (fs.discord && entry.discordLink == "") {
+    } else if (fs.discord && entry.discord_link == "") {
       show = false;
     } else {
       for (let i = 0; i < fs.colors.length; i++) {
@@ -136,7 +136,7 @@
           + entry.name + " "
           + entry.commander + " "
           + entry.description + " "
-          + entry.discordTitle + " "
+          + entry.discord_title + " "
           + entry.decks;
         if (fs.search && !match.toUpperCase().includes(fs.search)) {
           show = false;

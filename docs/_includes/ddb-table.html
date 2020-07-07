@@ -20,8 +20,8 @@
         data-commander="{{d.commander | jsonify | escape}}"
         data-description="{{d.description | escape}}"
         data-recommended="{{d.recommended | escape}}"
-        data-discordTitle="{{d.discord-title | escape}}"
-        data-discordLink="{{d.discord-link | escape}}"
+        data-discord_title="{{d.discord-title | escape}}"
+        data-discord_link="{{d.discord-link | escape}}"
         {%- capture primers -%}
         {%- for x in d.lists -%}
         {{x.primer | escape}}
