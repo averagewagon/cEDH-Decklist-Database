@@ -166,7 +166,7 @@
    */
   function toggleSub() {
     let entryId = ".s" + this.dataset.id;
-    if (!qs(entryId).classList.toggle("sub-hide") && window.innerWidth > 1199) {
+    if (!qs(entryId).classList.toggle("sub-hide")) {
       let cards = qsa(entryId + " .card");
       for (let i = 0; i < cards.length; i++) {
         let card = cards[i].title;
@@ -194,6 +194,11 @@
     let images = qsa(".card-wrap [title=\"" + cardName + "\"]");
     for (let i = 0; i < images.length; i++) {
       images[i].src = imageSrc;
+    }
+    
+    let mobileNames = qsa(".d-commanders [title=\"" + cardName + "\"]");
+    for (let i = 0; i < mobileNames.length; i++) {
+      mobileNames[i].href = cardInfo.scryfall_uri;
     }
     cachedCards[cardName] = imageSrc;
   }
