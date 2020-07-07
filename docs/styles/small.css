@@ -61,6 +61,10 @@ nav, aside, #flex-title {
   z-index: 150;
 }
 
+.filtered {
+  display: none;
+}
+
 /*
   Nav Styles
 */
