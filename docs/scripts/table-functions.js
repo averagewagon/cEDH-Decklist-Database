@@ -13,7 +13,7 @@
     31
   ]
   
-  const SCRYFALL_URL = "https://api.scryfall.com/cards/named?format=image&version=normal&fuzzy="
+  const SCRYFALL_URL = "https://api.scryfall.com/cards/named?fuzzy="
   
   const cachedCards = {};
     
@@ -177,11 +177,25 @@
           
           fetch(url) 
             .then(checkStatus)
-            .then(console.log)
+            .then(JSON.parse)
+            .then(setCardSources)
             .catch(console.error);
         }
       }
     }
+  }
+  
+  /** Sets the src of all the given cards to the Scryfall image URI
+   * @param {Object} cardInfo - The Scryfall object which holds all card info
+   */
+  function setCardSources(cardInfo) {
+    let cardName = cardInfo.name;
+    let imageSrc = cardInfo.image_uris.normal;
+    let images = qsa(".card-wrap [alt=" + cardName + "]");
+    for (let i = 0; i < images.length; i++) {
+      images[i].src = imageSrc;
+    }
+    cachedCards[cardName] = imageSrc.;
   }
   
   /** Determines if a given row should be hidden or shown based on state of the filters
