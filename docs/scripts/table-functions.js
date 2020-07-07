@@ -92,8 +92,8 @@
     
     for (let i = 0; i < sorted.length; i++) {
       let entryId = sorted[i].id;
-      let mainEntry = qs("m" + entryId);
-      let subEntry = qs("s" + entryId);
+      let mainEntry = qs(".m" + entryId);
+      let subEntry = qs(".s" + entryId);
       console.log(entryId + " main: " + mainEntry);
       qs("tbody").appendChild(mainEntry);
       qs("tbody").appendChild(subEntry);
