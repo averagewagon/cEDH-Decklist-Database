@@ -401,7 +401,7 @@ td {
 }
 
 .sub, .card-wrap, .deck-description {
-  height: 334px;
+  height: 354px;
   width: 100%;
 }
 
@@ -423,7 +423,7 @@ td {
 
 .card2 .card {
   position: absolute;
-  width: 218px;
+  width: 226px;
 }
 
 .card:nth-child(2) {
