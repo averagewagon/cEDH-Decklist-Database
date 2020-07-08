@@ -52,65 +52,102 @@ Submission page for the cDDB
           {{ content }}
         </aside>
         <div id="content">
-          <button type="button">Log in to submit a deck.</button>
           <form>
-            <label for="table-select">Submit this deck to:</label>
-            <select id="table-select">
-              <option value="competitive">Competitive</option>
-              <option value="Deprecated">Deprecated</option>
-              <option value="Meme">Meme</option>
-            </select>
-            <input type="submit" id="submit-button" value="Submit"></input>
-            
-            <label for="color-select">Select Colors</label>
-            <div id="color-select">
-              <img class="icon color-inactive" src="./img/mana/w.png" alt="w - white"/>
-              <img class="icon color-inactive" src="./img/mana/u.png" alt="u - blue"/>
-              <img class="icon color-inactive" src="./img/mana/b.png" alt="b - black"/>
-              <img class="icon color-inactive" src="./img/mana/r.png" alt="r - red"/>
-              <img class="icon color-inactive" src="./img/mana/g.png" alt="g - green"/>
+            <div class="flex">
+              <div class="flex-column" id="title-wrap">
+                <label for="deck-title">Deck Title</label>
+                <input type="text" id="deck-title" placeholder="Enter the deck's name"/>
+              </div>
+              <div class="flex-column">
+                <label for="color-select">Select Colors</label>
+                <div id="color-select flex ns">
+                  <img class="icon color-inactive" src="./img/mana/w.png" alt="w - white"/>
+                  <img class="icon color-inactive" src="./img/mana/u.png" alt="u - blue"/>
+                  <img class="icon color-inactive" src="./img/mana/b.png" alt="b - black"/>
+                  <img class="icon color-inactive" src="./img/mana/r.png" alt="r - red"/>
+                  <img class="icon color-inactive" src="./img/mana/g.png" alt="g - green"/>
+                </div>
+              </div>
             </div>
             
-            <label for="deck-title">Deck Title</label>
-            <input type="text" id="deck-title" placeholder="Enter a deck name (max x characters)"></input>
-            
-            <label for="commander-wrap">Commander(s)</label>
-            <input type="checkbox" id="two-commanders">This deck has 2 commanders</input>
-            <div id="commander-wrap">
-              <input type="text" id="commander" placeholder="Enter the full name of the deck's commander"></input>
-              <input type="text" id="commander2" placeholder="Enter the full name of the deck's second commander"></input>
+            <div>
+              <div class="flex" id="two-wrap">
+                <label for="commander-wrap">Commander(s)</label>
+                <div>
+                  <input type="checkbox" id="two-commanders"/>
+                  <label for="two-commanders">This deck has 2 commanders<label>
+                </div>
+              </div>
+              <div id="commander-wrap" class="flex">
+                <input type="text" id="commander" placeholder="Enter the commander's full name"/>
+                <input type="text" id="commander2" class="" placeholder="Enter the second commander's full name"/>
+              </div>
             </div>
             
-            <input type="checkbox" id="has-discord"></input>
-            <label for="has-discord">This deck has a Discord server</label>
-            <input type="text" id="discord-link" placeholder="Discord Link"></input>
-            <input type="text" id="discord-title" placeholder="Discord Server Title"></input>
+            <div>
+              <input type="checkbox" id="has-discord"/>
+              <label for="has-discord">This deck has a Discord server</label>
+            </div>
+            <div class="flex" id="discord-info">
+              <input type="text" id="discord-link" placeholder="Discord Link"/>
+              <input type="text" id="discord-title" placeholder="Discord Server Title"/>
+            </div>
             
-            <label for="description">Write a description for the deck (minimum 150 characters)</label>
-            <textarea id="description" placeholder="Enter your description here." rows="4"></textarea>
+            <div class="flex-column">
+              <label for="description">Write a description for the deck (minimum 150 characters)</label>
+              <textarea id="description" placeholder="Enter your description here." rows="4"></textarea>
+            </div>
+              
+            <div>
+              <button type="button" class="btn" id="add-deck">+ Add a Deck List</button>
+              <ul>
+                <li class="list-entry">
+                  <div class="flex">
+                    <span class="delete-list ns">&times;</span>
+                    <input type="text" class="list-title" placeholder="List title"/>
+                    <input type="text" class="list-link" placeholder="Link to list"/>
+                    <div class="flex">
+                      <input type="checkbox" class="has-primer"/>
+                      <label>Has Primer</label>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-entry">
+                  <div class="flex">
+                    <span class="delete-list ns">&times;</span>
+                    <input type="text" class="list-title" placeholder="List title"/>
+                    <input type="text" class="list-link" placeholder="Link to list"/>
+                    <div class="flex">
+                      <input type="checkbox" class="has-primer"/>
+                      <label>Has Primer</label>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-entry">
+                  <div class="flex">
+                    <span class="delete-list ns">&times;</span>
+                    <input type="text" class="list-title" placeholder="List title"/>
+                    <input type="text" class="list-link" placeholder="Link to list"/>
+                    <div class="flex">
+                      <input type="checkbox" class="has-primer"/>
+                      <label>Has Primer</label>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
             
-            <label for="link-table">Deck Links</label>
-            <button type="button">Add a Deck</button>
-            <table>
-              <tr class="list-entry">
-                <td><span class="delete-list">&times;</span></td>
-                <td><input type="text" class="list-title" placeholder="List title"></input></td>
-                <td><input type="text" class="list-link" placeholder="Link to list"></input></td>
-                <td><input type="checkbox" class="has-primer"></input><label>Has Primer</label></td>
-              </tr>
-              <tr class="list-entry">
-                <td><span class="delete-list">&times;</span></td>
-                <td><input type="text" class="list-title" placeholder="List title"></input></td>
-                <td><input type="text" class="list-link" placeholder="Link to list"></input></td>
-                <td><input type="checkbox" class="has-primer"></input><label>Has Primer</label></td>
-              </tr>
-              <tr class="unused">
-                <td><span class="delete-list">&times;</span></td>
-                <td><input type="text" class="list-title" placeholder="List title"></input></td>
-                <td><input type="text" class="list-link" placeholder="Link to list"></input></td>
-                <td><input type="checkbox" class="has-primer"></input><label>Has Primer</label></td>
-              </tr>
-            </table>
+            <div class="flex">
+              <div>
+                <label for="table-select">Submit this deck to:</label>
+                <select id="table-select">
+                  <option value="competitive">Competitive</option>
+                  <option value="Deprecated">Deprecated</option>
+                  <option value="Meme">Meme</option>
+                </select>
+              </div>
+              <input type="submit" id="submit-button" value="Authenticate and Submit"/>
+            </div>
           </form>
           <div id="copyright">
             The cEDH Decklist Database is unofficial Fan Content permitted under the Fan Content Policy.

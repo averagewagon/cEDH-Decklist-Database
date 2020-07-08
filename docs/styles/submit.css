@@ -17,6 +17,10 @@
   Global Styles
 */
 
+.hidden {
+  display: none;
+}
+
 body {
   height: 100%;
   width: 100%;
@@ -133,7 +137,7 @@ header {
   line-height: 1.5;
 }
 
-#motd-close, .delete-list {
+#motd-close {
   cursor: pointer;
   transition: 0.3s;
   margin-left: 16px;
@@ -143,7 +147,7 @@ header {
   color: black;
 }
 
-#motd-close:hover, .delete-list:hover {
+#motd-close:hover {
   transition: 0s;
   color: red;
 }
@@ -151,8 +155,6 @@ header {
 /*
   Section Styles
 */
-section {
-}
 
 #content-wrap {
   display: flex;
@@ -162,17 +164,155 @@ section {
 
 aside {
   min-width: 300px;
-  width: 29%;
-  border: 1px solid white;
+  background-color: var(--secondary-color);
+  flex-grow: 1;
+  margin-right: 16px;
+  padding: 16px;
 }
 
 #content {
-  min-width: 600px;
-  width: 70%;
-  border: 1px solid white;
+  width: 900px;
+  padding-top: 16px;
+  padding-right: 16px;
 }
 
 #copyright {
   color: lightgray;
   font-size: 10pt;
 }
+
+
+/*
+  Form Styles
+*/
+
+form {
+  font-size: 16pt;
+}
+
+form > div {
+  margin-bottom: 16px;
+}
+
+form label {
+  margin-bottom: 4px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#title-wrap input {
+  width: 90%;
+}
+
+#title-wrap, #commander-wrap input, #discord-info input {
+  flex-grow: 1;
+}
+
+#commander-wrap input:last-child, #discord-info input:last-child {
+  margin-left: 16px;
+}
+
+
+form ul {
+  margin: 0;
+  margin-top: 8px;
+  padding: 0;
+}
+
+form li {
+  list-style-type: none;
+  margin-bottom: 8px;
+}
+
+.list-title, .list-link {
+  margin-right: 16px;
+}
+
+form button {
+  font-size: 16pt;
+  color: white;
+}
+
+::placeholder {
+  opacity: .75;
+  font-style: italic;
+  color: white;
+}
+
+form input {
+  background-color: var(--darker);
+  color: white;
+}
+
+form [type="submit"] {
+  font-size: 18pt;
+}
+
+form li div > input {
+  flex-grow: 1;
+}
+
+.delete-list {
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 26pt;
+  line-height: 16px;
+  margin-right: 8px;
+  color: red;
+}
+
+form [type="text"] {
+  font-size: 14pt;
+  padding: 8px;
+}
+
+textarea {
+  font-size: 12pt;
+  font-family: sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
