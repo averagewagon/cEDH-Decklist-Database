@@ -160,10 +160,12 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  background-color: var(--canvas-color);
 }
 
 aside {
   min-width: 300px;
+  width: 30%;
   background-color: var(--secondary-color);
   flex-grow: 1;
   margin-right: 16px;
