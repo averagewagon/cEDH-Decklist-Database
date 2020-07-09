@@ -284,6 +284,19 @@ textarea {
   font-family: sans-serif;
 }
 
+.color-inactive, .color-active {
+  cursor: pointer;
+}
+
+.color-inactive {
+  opacity: 0.3;
+  transition: 0.4s;
+}
+
+.color-inactive:hover {
+transition: 0.0s;
+  opacity: 0.6;
+}
 
 
 
