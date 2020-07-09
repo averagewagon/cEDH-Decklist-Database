@@ -232,6 +232,15 @@ form ul {
   padding: 0;
 }
 
+#list-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+#add-deck {
+  margin-top: 8px;
+}
+
 form li {
   list-style-type: none;
   margin-bottom: 8px;
@@ -297,7 +306,6 @@ textarea {
 transition: 0.0s;
   opacity: 0.6;
 }
-
 
 
 
