@@ -87,12 +87,14 @@ Submission page for the cDDB
             </div>
             
             <div>
-              <input type="checkbox" id="has-discord"/>
-              <label for="has-discord">This deck has a Discord server</label>
-            </div>
-            <div class="flex" id="discord-info">
-              <input type="text" id="discord-link" placeholder="Discord Link"/>
-              <input type="text" id="discord-title" placeholder="Discord Server Title"/>
+              <div id="discord-wrap">
+                <input type="checkbox" id="has-discord"/>
+                <label for="has-discord">This deck has a Discord server</label>
+              </div>
+              <div class="flex" id="discord-info">
+                <input type="text" id="discord-link" placeholder="Discord Link"/>
+                <input type="text" id="discord-title" placeholder="Discord Server Title"/>
+              </div>
             </div>
             
             <div class="flex-column">
@@ -145,7 +147,7 @@ Submission page for the cDDB
               <button type="button" class="btn" id="add-deck">+ Add a Deck List</button>
             </div>
             
-            <div class="flex">
+            <div class="flex" id="submit-wrap">
               <div>
                 <label for="table-select">Submit this deck to:</label>
                 <select id="table-select">
