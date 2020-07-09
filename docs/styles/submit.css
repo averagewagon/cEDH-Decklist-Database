@@ -252,7 +252,7 @@ form button {
   color: white;
 }
 
-form input {
+form input, textarea {
   background-color: var(--darker);
   color: white;
 }
