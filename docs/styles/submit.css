@@ -262,7 +262,7 @@ form button {
   color: white;
 }
 
-form input, textarea {
+form input, form textarea, form select {
   background-color: var(--darker);
   color: white;
 }
@@ -282,6 +282,10 @@ form li div > input {
   line-height: 16px;
   margin-right: 8px;
   color: red;
+}
+form select {
+  font-size: 18pt;
+  padding: 4px;
 }
 
 form [type="text"] {
@@ -308,35 +312,6 @@ transition: 0.0s;
   opacity: 0.6;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#discord-wrap {
+  margin-bottom: 4px;
+}
