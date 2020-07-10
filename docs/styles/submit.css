@@ -240,7 +240,7 @@ form label {
 }
 
 #title-wrap input {
-  width: 90%;
+  margin-right: 16px;
 }
 
 #title-wrap, #commander-wrap input, #discord-info input {
@@ -265,6 +265,7 @@ form ul {
 
 #add-deck {
   margin-top: 8px;
+  padding: 12px;
 }
 
 form li {
@@ -287,9 +288,10 @@ form input::placeholder, form textarea::placeholder {
   color: white;
 }
 
-form input, form textarea, form select {
+form input, form textarea, form select, form button {
   background-color: var(--darker);
   color: white;
+  border: none;
 }
 
 form li div > input {
@@ -307,7 +309,7 @@ form li div > input {
 
 form select {
   font-size: 18pt;
-  padding: 4px;
+  padding: 8px 16px;
 }
 
 form [type="text"] {
@@ -318,6 +320,7 @@ form [type="text"] {
 textarea {
   font-size: 12pt;
   font-family: sans-serif;
+  padding: 8px;
 }
 
 .color-inactive, .color-active {
@@ -350,7 +353,8 @@ transition: 0.0s;
 
 #submit-wrap input {
   font-size: 18pt;
-  padding: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
   background-color: var(--accent-color);
   color: black;
 }
