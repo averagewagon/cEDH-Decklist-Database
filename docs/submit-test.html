@@ -58,7 +58,7 @@ Submission page for the cDDB
         </aside>
         <div id="content">
           <a id="login-msg" class="ns hidden">Log in or Create an Account to submit.</a>
-          <form class="not-readonly">
+          <form class="not-readonly" method="get">
             <div>
               <select id="table-select">
                 <option value="competitive">Submitting a Competitive Deck</option>
@@ -74,7 +74,8 @@ Submission page for the cDDB
               </div>
               <div class="flex-column">
                 <label for="color-select">Choose Colors</label>
-                <div id="color-select flex ns">
+                <div id="colorselect2"
+                <div id="color-select" class="ns">
                   <img class="icon color-inactive" src="./img/mana/w.png" alt="w - white"/>
                   <img class="icon color-inactive" src="./img/mana/u.png" alt="u - blue"/>
                   <img class="icon color-inactive" src="./img/mana/b.png" alt="b - black"/>
@@ -119,8 +120,8 @@ Submission page for the cDDB
                 <li class="list-entry">
                   <div class="flex">
                     <span class="delete-list ns">&times;</span>
-                    <input type="text" class="list-title" placeholder="List title"/>
-                    <input type="text" class="list-link" placeholder="Link to list"/>
+                    <input type="text" class="list-title" placeholder="Decklist title"/>
+                    <input type="text" class="list-link" placeholder="Link to decklist"/>
                     <div class="flex">
                       <label>
                         <input type="checkbox" class="has-primer"/>
@@ -132,8 +133,8 @@ Submission page for the cDDB
                 <li class="list-entry">
                   <div class="flex">
                     <span class="delete-list ns">&times;</span>
-                    <input type="text" class="list-title" placeholder="List title"/>
-                    <input type="text" class="list-link" placeholder="Link to list"/>
+                    <input type="text" class="list-title" placeholder="Decklist title"/>
+                    <input type="text" class="list-link" placeholder="Link to decklist"/>
                     <div class="flex">
                       <label>
                         <input type="checkbox" class="has-primer"/>
@@ -145,8 +146,8 @@ Submission page for the cDDB
                 <li class="list-entry">
                   <div class="flex">
                     <span class="delete-list ns">&times;</span>
-                    <input type="text" class="list-title" placeholder="List title"/>
-                    <input type="text" class="list-link" placeholder="Link to list"/>
+                    <input type="text" class="list-title" placeholder="Decklist title"/>
+                    <input type="text" class="list-link" placeholder="Link to decklist"/>
                     <div class="flex">
                       <label>
                         <input type="checkbox" class="has-primer"/>
@@ -156,7 +157,7 @@ Submission page for the cDDB
                   </div>
                 </li>
               </ul>
-              <button type="button" class="btn" id="add-deck">+ Add a Deck List</button>
+              <button type="button" class="btn" id="add-deck">+ Add a Decklist</button>
             </div>
             
             <div id="submit-wrap">
