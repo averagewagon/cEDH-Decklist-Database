@@ -79,9 +79,8 @@ a {
 */
 nav {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
   padding-left: 16px;
   padding-right: 16px;
   font-size: 14pt;
@@ -114,10 +113,19 @@ nav h1 {
   margin: 8px;
 }
 
+#main-link {
+  margin-left: 16px;
+}
+
 .nav-buttons {
   width: 20%;
   min-width: 210px;
   margin-right: 16px;
+  padding: 12px;
+}
+
+#account-btn {
+  flex-grow: 1;
   padding: 12px;
 }
 
@@ -176,6 +184,7 @@ aside {
   width: 900px;
   padding-top: 16px;
   padding-right: 16px;
+  position: relative;
 }
 
 #copyright {
@@ -184,13 +193,28 @@ aside {
   padding-bottom: 16px;
 }
 
+#login-msg {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 12px;
+  z-index: 1;
+  font-size: 16pt;
+  background-color: var(--accent-color);
+  color: black;
+}
 
 /*
   Form Styles
 */
-
 form {
   font-size: 16pt;
+}
+
+.readonly {
+  pointer-events: none;
+  filter: grayscale(100%) opacity(40%);
 }
 
 form > div {
@@ -256,7 +280,7 @@ form button {
   color: white;
 }
 
-::placeholder {
+form input::placeholder, form textarea::placeholder {
   opacity: .75;
   font-style: italic;
   color: white;
@@ -265,10 +289,6 @@ form button {
 form input, form textarea, form select {
   background-color: var(--darker);
   color: white;
-}
-
-form [type="submit"] {
-  font-size: 18pt;
 }
 
 form li div > input {
@@ -283,6 +303,7 @@ form li div > input {
   margin-right: 8px;
   color: red;
 }
+
 form select {
   font-size: 18pt;
   padding: 4px;
@@ -314,4 +335,22 @@ transition: 0.0s;
 
 #discord-wrap {
   margin-bottom: 4px;
+}
+
+#list-wrap ul li:first-child .delete-list {
+  visibility: hidden;
+}
+
+#submit-wrap {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#submit-wrap input {
+  width: 20%;
+  font-size: 18pt;
+  padding: 12px;
+  background-color: var(--accent-color);
+  color: black;
 }
