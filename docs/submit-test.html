@@ -7,7 +7,7 @@ Submission page for the cDDB
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>cEDH Decklist Database - Submit a Deck</title>
+  <title>Submit a Deck - cEDH Decklist Database</title>
 
   <!-- Search Engine Optimization -->
   <meta name="description" content="A collection of Magic: The Gathering (MTG) decks from the Competitive EDH Format." />
@@ -35,7 +35,7 @@ Submission page for the cDDB
           <img src="./img/discord-server.png" class="mobile" id="discord-m" alt="Discord icon">
           <span>Discord Server<span>
         </a>
-        <a class="btn nav-buttons" id="submit-link" href="submit.html"><span>Submit a Deck</span></a>
+        <a class="btn" id="account-btn">Create Account or Log In</a>
       </nav>
     </div>
 
@@ -54,7 +54,16 @@ Submission page for the cDDB
           </div>
         </aside>
         <div id="content">
-          <form>
+          <a id="login-msg" class="ns hidden">Log in or Create an Account to submit.</a>
+          <form class="not-readonly">
+            <div>
+              <select id="table-select">
+                <option value="competitive">Submitting a Competitive Deck</option>
+                <option value="Deprecated">Submitting a Deprecated Deck</option>
+                <option value="Meme">Submitting a Meme Deck</option>
+              </select>
+            </div>
+              
             <div class="flex">
               <div class="flex-column" id="title-wrap">
                 <label for="deck-title">Deck Title</label>
@@ -147,16 +156,8 @@ Submission page for the cDDB
               <button type="button" class="btn" id="add-deck">+ Add a Deck List</button>
             </div>
             
-            <div class="flex" id="submit-wrap">
-              <div>
-                <label for="table-select">Submit this deck to:</label>
-                <select id="table-select">
-                  <option value="competitive">Competitive</option>
-                  <option value="Deprecated">Deprecated</option>
-                  <option value="Meme">Meme</option>
-                </select>
-              </div>
-              <input type="submit" id="submit-button" value="Authenticate and Submit"/>
+            <div id="submit-wrap">
+              <input type="submit" id="submit-button" value="Submit Deck"/>
             </div>
           </form>
           <div id="copyright">

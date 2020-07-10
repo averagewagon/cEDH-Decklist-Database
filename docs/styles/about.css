@@ -75,9 +75,8 @@ a {
 */
 nav {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
   padding-left: 16px;
   padding-right: 16px;
   font-size: 14pt;
@@ -110,10 +109,19 @@ nav h1 {
   margin: 8px;
 }
 
+#main-link {
+  margin-left: 16px;
+}
+
 .nav-buttons {
   width: 20%;
   min-width: 210px;
   margin-right: 16px;
+  padding: 12px;
+}
+
+#account-btn {
+  flex-grow: 1;
   padding: 12px;
 }
 
