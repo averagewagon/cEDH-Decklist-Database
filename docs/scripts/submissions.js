@@ -85,6 +85,7 @@
   /** Gets the result from Firebase and puts it on the site
    */
   function showResults(result) {
+    console.log(result);
     alert(result);
   }
   
