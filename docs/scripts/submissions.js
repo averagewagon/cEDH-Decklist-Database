@@ -27,7 +27,7 @@
   /** Makes sure the reCaptcha is checked
    */
   function checkCaptcha(event) {
-    if (grecaptcha.getResponse()) {
+    if (!grecaptcha.getResponse()) {
       event.preventDefault();
       alert("Please complete the reCaptcha.");
     } else {
