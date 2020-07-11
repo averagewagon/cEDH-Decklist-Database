@@ -22,7 +22,14 @@ Submission page for the cDDB
   
   <!-- ReCaptcha -->
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
+  <script>
+    function refreshCaptcha() {
+      grecaptcha.reset();
+    }
+  </script>
+  
+  <!-- DDB Scripts -->
+  <script src="scripts/submissions.js"></script>
 </head>
 
 <body>
@@ -34,7 +41,7 @@ Submission page for the cDDB
           <h1>Competitive EDH<br/> Decklist Database</h1>
         </a>
         <a class="btn nav-buttons" id="main-link" href="about.html"><span>About the DDB</span></a>
-        <a class="btn nav-buttons" id="discord-link" target="_blank" href="https://discord.gg/BXPyu2P">
+        <a class="btn nav-buttons" id="discord-nav" target="_blank" href="https://discord.gg/BXPyu2P">
           <img src="./img/discord-server.png" class="mobile" id="discord-m" alt="Discord icon">
           <span>Discord Server<span>
         </a>
@@ -58,29 +65,43 @@ Submission page for the cDDB
         </aside>
         <div id="content">
           <a id="login-msg" class="ns hidden">Log in or Create an Account to submit.</a>
-          <form class="not-readonly" method="get">
+          <form method="get">
             <div>
-              <select id="table-select">
+              <select id="table-select" name="table">
                 <option value="competitive">Submitting a Competitive Deck</option>
-                <option value="Deprecated">Submitting a Deprecated Deck</option>
-                <option value="Meme">Submitting a Meme Deck</option>
+                <option value="deprecated">Submitting a Deprecated Deck</option>
+                <option value="meme">Submitting a Meme Deck</option>
               </select>
             </div>
               
             <div class="flex">
               <div class="flex-column" id="title-wrap">
                 <label for="deck-title">Deck Title</label>
-                <input type="text" id="deck-title" placeholder="Enter the deck's name"/>
+                <input type="text" required name="title" id="deck-title" placeholder="Enter the deck's name"/>
               </div>
               <div class="flex-column">
                 <label for="color-select">Choose Colors</label>
-                <div id="colorselect2"
                 <div id="color-select" class="ns">
-                  <img class="icon color-inactive" src="./img/mana/w.png" alt="w - white"/>
-                  <img class="icon color-inactive" src="./img/mana/u.png" alt="u - blue"/>
-                  <img class="icon color-inactive" src="./img/mana/b.png" alt="b - black"/>
-                  <img class="icon color-inactive" src="./img/mana/r.png" alt="r - red"/>
-                  <img class="icon color-inactive" src="./img/mana/g.png" alt="g - green"/>
+                  <label for="color-w">
+                    <input type="checkbox" name="color-w" id="color-w" class="hidden"></input>
+                    <img class="icon" src="./img/mana/w.png" alt="white"/>
+                  </label>
+                  <label for="color-u">
+                    <input type="checkbox" name="color-u" id="color-u" class="hidden"></input>
+                    <img class="icon" src="./img/mana/u.png" alt="blue"/>
+                  </label>
+                  <label for="color-b">
+                    <input type="checkbox" name="color-b" id="color-b" class="hidden"></input>
+                    <img class="icon" src="./img/mana/b.png" alt="black"/>
+                  </label>
+                  <label for="color-r">
+                    <input type="checkbox" name="color-r" id="color-r" class="hidden"></input>
+                    <img class="icon" src="./img/mana/r.png" alt="red"/>
+                  </label>
+                  <label for="color-g">
+                    <input type="checkbox" name="color-g" id="color-g" class="hidden"></input>
+                    <img class="icon" src="./img/mana/g.png" alt="green"/>
+                  </label>
                 </div>
               </div>
             </div>
@@ -94,9 +115,14 @@ Submission page for the cDDB
                 </div>
               </div>
               <div id="commander-wrap" class="flex">
-                <input type="text" id="commander" placeholder="Enter the commander's full name"/>
-                <input type="text" id="commander2" class="" placeholder="Enter the second commander's full name"/>
+                <input required type="text" id="commander" name="commander" placeholder="Enter the commander's full name"/>
+                <input  type="text" id="commander2" name="commander2" class="hidden" placeholder="Enter the second commander's full name"/>
               </div>
+            </div>
+            
+            <div class="flex-column">
+              <label for="description">Write a description for the deck</label>
+              <textarea id="description" required name="description" placeholder="Enter your description here." rows="4"></textarea>
             </div>
             
             <div>
@@ -104,15 +130,10 @@ Submission page for the cDDB
                 <input type="checkbox" id="has-discord"/>
                 <label for="has-discord">This deck has a Discord server</label>
               </div>
-              <div class="flex" id="discord-info">
-                <input type="text" id="discord-link" placeholder="Discord Link"/>
-                <input type="text" id="discord-title" placeholder="Discord Server Title"/>
+              <div class="flex hidden" id="discord-info">
+                <input type="text" id="discord-link" name="discord-link" placeholder="Discord Link"/>
+                <input type="text" id="discord-title" name="discord-title" placeholder="Discord Server Title"/>
               </div>
-            </div>
-            
-            <div class="flex-column">
-              <label for="description">Write a description for the deck (minimum 150 characters)</label>
-              <textarea id="description" placeholder="Enter your description here." rows="4"></textarea>
             </div>
               
             <div id="list-wrap">
@@ -120,37 +141,11 @@ Submission page for the cDDB
                 <li class="list-entry">
                   <div class="flex">
                     <span class="delete-list ns">&times;</span>
-                    <input type="text" class="list-title" placeholder="Decklist title"/>
-                    <input type="text" class="list-link" placeholder="Link to decklist"/>
+                    <input type="text" class="list-title" name="list-title0" placeholder="Decklist title"/>
+                    <input type="text" class="list-link" name="list-link0" placeholder="Link to decklist"/>
                     <div class="flex">
                       <label>
-                        <input type="checkbox" class="has-primer"/>
-                        Has Primer
-                      </label>
-                    </div>
-                  </div>
-                </li>
-                <li class="list-entry">
-                  <div class="flex">
-                    <span class="delete-list ns">&times;</span>
-                    <input type="text" class="list-title" placeholder="Decklist title"/>
-                    <input type="text" class="list-link" placeholder="Link to decklist"/>
-                    <div class="flex">
-                      <label>
-                        <input type="checkbox" class="has-primer"/>
-                        Has Primer
-                      </label>
-                    </div>
-                  </div>
-                </li>
-                <li class="list-entry">
-                  <div class="flex">
-                    <span class="delete-list ns">&times;</span>
-                    <input type="text" class="list-title" placeholder="Decklist title"/>
-                    <input type="text" class="list-link" placeholder="Link to decklist"/>
-                    <div class="flex">
-                      <label>
-                        <input type="checkbox" class="has-primer"/>
+                        <input type="checkbox" class="has-primer" name="has-primer0"/>
                         Has Primer
                       </label>
                     </div>
@@ -161,7 +156,7 @@ Submission page for the cDDB
             </div>
             
             <div id="submit-wrap">
-            <div class="g-recaptcha" data-sitekey="6Lf6x68ZAAAAAOVJKUdXQKwu_kO2SGxf7clflkpe"></div>
+              <div class="g-recaptcha" data-expired-callback="refreshCaptcha" data-sitekey="6Lf6x68ZAAAAAOVJKUdXQKwu_kO2SGxf7clflkpe"></div>
               <input type="submit" id="submit-button" value="Submit Deck"/>
             </div>
           </form>

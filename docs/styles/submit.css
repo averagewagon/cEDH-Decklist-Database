@@ -18,7 +18,7 @@
 */
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 body {
@@ -323,18 +323,21 @@ textarea {
   padding: 8px;
 }
 
-.color-inactive, .color-active {
+#color-select img {
   cursor: pointer;
-}
-
-.color-inactive {
   opacity: 0.3;
-  transition: 0.4s;
 }
 
-.color-inactive:hover {
-transition: 0.0s;
-  opacity: 0.6;
+#color-select input + img:hover {
+  opacity: 0.5;
+}
+
+#color-select input:checked + img {
+  opacity: 1;
+}
+
+#color-select input:checked + img:hover {
+  opacity: 1;
 }
 
 #discord-wrap {
@@ -351,10 +354,14 @@ transition: 0.0s;
   justify-content: space-between;
 }
 
-#submit-wrap input {
+#submit-button {
   font-size: 18pt;
   padding-left: 24px;
   padding-right: 24px;
   background-color: var(--accent-color);
   color: black;
+}
+
+#submit-button:hover {
+  filter: brightness(0.9);
 }
