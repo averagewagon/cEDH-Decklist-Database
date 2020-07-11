@@ -27,9 +27,6 @@ Submission page for the cDDB
       grecaptcha.reset();
     }
   </script>
-  
-  <!-- DDB Scripts -->
-  <script src="scripts/submissions.js"></script>
 </head>
 
 <body>
@@ -65,9 +62,9 @@ Submission page for the cDDB
         </aside>
         <div id="content">
           <a id="login-msg" class="ns hidden">Log in or Create an Account to submit.</a>
-          <form method="post">
+          <form>
             <div>
-              <select id="table-select" name="table">
+              <select id="table-select">
                 <option value="competitive">Submitting a Competitive Deck</option>
                 <option value="deprecated">Submitting a Deprecated Deck</option>
                 <option value="meme">Submitting a Meme Deck</option>
@@ -77,29 +74,29 @@ Submission page for the cDDB
             <div class="flex">
               <div class="flex-column" id="title-wrap">
                 <label for="deck-title">Deck Title</label>
-                <input type="text" required maxlength="60" name="title" id="deck-title" placeholder="Enter the deck's name"/>
+                <input type="text" required maxlength="60" id="deck-title" placeholder="Enter the deck's name"/>
               </div>
               <div class="flex-column">
                 <label for="color-select">Choose Colors</label>
                 <div id="color-select" class="ns">
                   <label for="color-w">
-                    <input type="checkbox" name="color-w" id="color-w" class="hidden"></input>
+                    <input type="checkbox" id="color-w" class="hidden"></input>
                     <img class="icon" src="./img/mana/w.png" alt="white"/>
                   </label>
                   <label for="color-u">
-                    <input type="checkbox" name="color-u" id="color-u" class="hidden"></input>
+                    <input type="checkbox" id="color-u" class="hidden"></input>
                     <img class="icon" src="./img/mana/u.png" alt="blue"/>
                   </label>
                   <label for="color-b">
-                    <input type="checkbox" name="color-b" id="color-b" class="hidden"></input>
+                    <input type="checkbox" id="color-b" class="hidden"></input>
                     <img class="icon" src="./img/mana/b.png" alt="black"/>
                   </label>
                   <label for="color-r">
-                    <input type="checkbox" name="color-r" id="color-r" class="hidden"></input>
+                    <input type="checkbox" id="color-r" class="hidden"></input>
                     <img class="icon" src="./img/mana/r.png" alt="red"/>
                   </label>
                   <label for="color-g">
-                    <input type="checkbox" name="color-g" id="color-g" class="hidden"></input>
+                    <input type="checkbox" id="color-g" class="hidden"></input>
                     <img class="icon" src="./img/mana/g.png" alt="green"/>
                   </label>
                 </div>
@@ -115,14 +112,14 @@ Submission page for the cDDB
                 </div>
               </div>
               <div id="commander-wrap" class="flex">
-                <input required type="text" id="commander" maxlength="60" name="commander" placeholder="Enter the commander's full name"/>
-                <input  type="text" id="commander2" name="commander2" maxlength="60" class="hidden" placeholder="Enter the second commander's full name"/>
+                <input required type="text" id="commander" maxlength="60" placeholder="Enter the commander's full name"/>
+                <input  type="text" id="commander2" maxlength="60" class="hidden" placeholder="Enter the second commander's full name"/>
               </div>
             </div>
             
             <div class="flex-column">
               <label for="description">Write a description for the deck</label>
-              <textarea id="description" required name="description" placeholder="Enter your description here." rows="4"></textarea>
+              <textarea id="description" required placeholder="Enter your description here." rows="4"></textarea>
             </div>
             
             <div>
@@ -131,8 +128,8 @@ Submission page for the cDDB
                 <label for="has-discord">This deck has a Discord server</label>
               </div>
               <div class="flex hidden" id="discord-info">
-                <input type="text" id="discord-link" maxlength="40" name="discord-link" placeholder="Discord Link"/>
-                <input type="text" id="discord-title" maxlength="40" name="discord-title" placeholder="Discord Server Title"/>
+                <input type="text" id="discord-link" maxlength="40" placeholder="Discord Link"/>
+                <input type="text" id="discord-title" maxlength="40" placeholder="Discord Server Title"/>
               </div>
             </div>
               
@@ -141,11 +138,11 @@ Submission page for the cDDB
                 <li class="list-entry">
                   <div class="flex">
                     <span class="delete-list ns">&times;</span>
-                    <input type="text" required class="list-title" maxlength="60" name="list-title0" placeholder="Decklist title"/>
-                    <input type="text" required class="list-link" maxlength="60" name="list-link0" placeholder="Link to decklist"/>
+                    <input type="text" required class="list-title" maxlength="60" placeholder="Decklist title"/>
+                    <input type="text" required class="list-link" maxlength="60" placeholder="Link to decklist"/>
                     <div class="flex">
                       <label class="ns">
-                        <input type="checkbox" class="has-primer" name="has-primer0"/>
+                        <input type="checkbox" class="has-primer"/>
                         Has Primer
                       </label>
                     </div>
@@ -176,6 +173,7 @@ Submission page for the cDDB
 <!-- TODO: Add SDKs for Firebase products that you want to use
     https://firebase.google.com/docs/web/setup#available-libraries -->
 <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-functions.js"></script>
 
 <script>
   // Your web app's Firebase configuration
@@ -192,7 +190,10 @@ Submission page for the cDDB
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
+  firebase.functions();
 </script>
 
+<!-- DDB Scripts -->
+<script src="scripts/submissions.js"></script>
 </body>
 </html>
