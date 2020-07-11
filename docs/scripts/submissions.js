@@ -21,20 +21,71 @@
     
     id("add-deck").addEventListener("click", addDecklist);
     
-    qs("form").addEventListener("submit", checkCaptcha);
+    qs("form").addEventListener("submit", submitForm);
   }
   
   /** Makes sure the reCaptcha is checked
    */
-  function checkCaptcha(event) {
+  function submitForm(event) {
+    event.preventDefault();
     if (!grecaptcha.getResponse()) {
-      event.preventDefault();
       alert("Please complete the reCaptcha.");
-    } else {
-      if (!confirm("Are you sure you want to submit this deck for review?")) {
-        event.preventDefault();
+    } else if (confirm("Are you sure you want to submit this deck for review?")) {
+      let data = scrapeForm();
+      var submitDeck = firebase.functions().httpsCallable("submitDeck");
+      submitDeck(data).then((result) => {
+        showResults(result);
+      });
+    }
+  }
+  
+  /** Converts the form into a JSON object that can be submitted to Firebase
+   */
+  function scrapeForm() {
+    let data = {};
+    data.section = id("table-select").value;
+    data.name = id("deck-title").value;
+    data.colors = [];
+    let colors = qsa("#color-select input");
+    for (let i = 0; i < colors.length; i++) {
+      let c = colors[i];
+      if (c.checked) {
+        data.colors.push(c.id.charAt(c.id.length - 1));
       }
     }
+    data.commander = [];
+    data.commander.push(id("commander").value);
+    if (id("two-commanders").checked) {
+      data.commander.push(id("commander2").value);
+    }
+    data.description = id("description").value;
+
+    if (id("has-discord").checked) {
+      data["discord-title"] = id("discord-title").value;
+      data["discord-link"] = id("discord-link").value;
+    } else {
+      data["discord-title"] = "";
+      data["discord-link"] = "";
+    }
+    
+    data.lists = [];
+    let lists = qsa(".list-entry");
+    for (let i = 0; i < lists.length; i++) {
+      let list = lists[i];
+      let d = {};
+      d.primer = list.querySelector(".has-primer").checked;
+      d.description = list.querySelector(".list-title").value;
+      d.link = list.querySelector(".list-link").value;
+      data.lists.push(d);
+    }
+    
+    return data;
+  }
+  
+  /** Gets the result from Firebase and puts it on the site
+   */
+  function showResults(result) {
+    alert(result);
   }
   
   /** Activates or deactivates the partner text box
@@ -65,7 +116,6 @@
   
   function deleteDecklist() {
     this.parentElement.parentElement.remove();
-    setListNames();
   }
   
   /** Adds a new decklist entry to the list of decks
@@ -77,19 +127,6 @@
     newList.querySelector(".has-primer").checked = false;
     newList.querySelector(".delete-list").addEventListener("click", deleteDecklist);
     qs("#list-wrap ul").appendChild(newList);
-    setListNames();
-  }
-  
-  /** Sets the decklist names to be sequential
-   */
-  function setListNames() {
-    let lists = qsa("#list-wrap ul li");
-    for (let i = 0; i < lists.length; i++) {
-      let list = lists[i];
-      list.querySelector(".list-title").setAttribute("name", "list-titles" + i);
-      list.querySelector(".list-link").setAttribute("name", "list-link" + i);
-      list.querySelector(".has-primer").setAttribute("name", "has-primer" + i);
-    }
   }
   
   /* HELPER FUNCTIONS */
