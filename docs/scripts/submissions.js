@@ -27,9 +27,13 @@
   /** Makes sure the reCaptcha is checked
    */
   function checkCaptcha(event) {
-    if (!grecaptcha.getResponse()) {
+    if (grecaptcha.getResponse()) {
       event.preventDefault();
       alert("Please complete the reCaptcha.");
+    } else {
+      if (!confirm("Are you sure you want to submit this deck for review?")) {
+        event.preventDefault();
+      }
     }
   }
   
