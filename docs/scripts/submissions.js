@@ -91,7 +91,7 @@
    */
   function showResults(result) {
     console.log(result);
-    alert(result);
+    alert(result.data);
   }
   
   /** Activates or deactivates the partner text box
