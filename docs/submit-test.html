@@ -77,7 +77,7 @@ Submission page for the cDDB
             <div class="flex">
               <div class="flex-column" id="title-wrap">
                 <label for="deck-title">Deck Title</label>
-                <input type="text" required name="title" id="deck-title" placeholder="Enter the deck's name"/>
+                <input type="text" required maxlength="60" name="title" id="deck-title" placeholder="Enter the deck's name"/>
               </div>
               <div class="flex-column">
                 <label for="color-select">Choose Colors</label>
@@ -109,14 +109,14 @@ Submission page for the cDDB
             <div>
               <div class="flex" id="two-wrap">
                 <label for="commander-wrap">Commander(s)</label>
-                <div>
-                  <input type="checkbox" id="two-commanders"/>
+                <div class="ns">
+                  <input type="checkbox" id="two-commanders" />
                   <label for="two-commanders">This deck has 2 commanders<label>
                 </div>
               </div>
               <div id="commander-wrap" class="flex">
-                <input required type="text" id="commander" name="commander" placeholder="Enter the commander's full name"/>
-                <input  type="text" id="commander2" name="commander2" class="hidden" placeholder="Enter the second commander's full name"/>
+                <input required type="text" id="commander" maxlength="60" name="commander" placeholder="Enter the commander's full name"/>
+                <input  type="text" id="commander2" name="commander2" maxlength="60" class="hidden" placeholder="Enter the second commander's full name"/>
               </div>
             </div>
             
@@ -131,8 +131,8 @@ Submission page for the cDDB
                 <label for="has-discord">This deck has a Discord server</label>
               </div>
               <div class="flex hidden" id="discord-info">
-                <input type="text" id="discord-link" name="discord-link" placeholder="Discord Link"/>
-                <input type="text" id="discord-title" name="discord-title" placeholder="Discord Server Title"/>
+                <input type="text" id="discord-link" pattern="(https?:\/\/)?(www\.)?(discord\.(gg|io|me|li)|discordapp\.com\/invite)\/.+[a-z]" maxlength="40" name="discord-link" placeholder="Discord Link"/>
+                <input type="text" id="discord-title" maxlength="40" name="discord-title" placeholder="Discord Server Title"/>
               </div>
             </div>
               
@@ -141,10 +141,10 @@ Submission page for the cDDB
                 <li class="list-entry">
                   <div class="flex">
                     <span class="delete-list ns">&times;</span>
-                    <input type="text" class="list-title" name="list-title0" placeholder="Decklist title"/>
-                    <input type="text" class="list-link" name="list-link0" placeholder="Link to decklist"/>
+                    <input type="text" required class="list-title" maxlength="60" name="list-title0" placeholder="Decklist title"/>
+                    <input type="text" required class="list-link" maxlength="60" name="list-link0" placeholder="Link to decklist"/>
                     <div class="flex">
-                      <label>
+                      <label class="ns">
                         <input type="checkbox" class="has-primer" name="has-primer0"/>
                         Has Primer
                       </label>
