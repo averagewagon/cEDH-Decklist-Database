@@ -28,21 +28,25 @@
    */
   function submitForm(event) {
     event.preventDefault();
-    if (!grecaptcha.getResponse()) {
-      alert("Please complete the reCaptcha.");
-    } else if (confirm("Are you sure you want to submit this deck for review?")) {
-      let data = scrapeForm();
-      var submitDeck = firebase.functions().httpsCallable("submitDeck");
-      submitDeck(data).then((result) => {
-        showResults(result);
-      });
+    if (confirm("Are you sure you want to submit this deck for review?")) {
+      if (!grecaptcha.getResponse()) {
+        alert("Please complete the reCaptcha.");
+      } else {
+        let data = scrapeForm();
+        var submitDeck = firebase.functions().httpsCallable("submitDeck");
+        submitDeck(data).then((result) => {
+          showResults(result);
+        });
+      }
     }
   }
   
   /** Converts the form into a JSON object that can be submitted to Firebase
    */
   function scrapeForm() {
-    let data = {};
+    let wrap = {};
+    wrap.info = {};
+    let data = wrap.info;
     data.section = id("table-select").value;
     data.name = id("deck-title").value;
     data.colors = [];
@@ -79,7 +83,8 @@
       data.lists.push(d);
     }
     
-    return data;
+    wrap.recaptcha = grecaptcha.getResponse();
+    return wrap;
   }
   
   /** Gets the result from Firebase and puts it on the site
