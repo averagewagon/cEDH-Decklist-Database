@@ -123,8 +123,8 @@
    * @param {string} entryId - The entry ID which is to be hidden
    */
   function hideEntry(entryId) {
-    qs(".m" + entryId).classList.add("filtered");
-    qs(".s" + entryId).classList.add("filtered");
+    qs(".m" + entryId).classList.add("hidden");
+    qs(".s" + entryId).classList.add("hidden");
     qs(".s" + entryId).classList.add("sub-hide");
   }
   
@@ -132,8 +132,8 @@
    * @param {string} entryId - The entry ID which is to be shown
    */
   function showEntry(entryId) {
-    qs(".m" + entryId).classList.remove("filtered");
-    qs(".s" + entryId).classList.remove("filtered");
+    qs(".m" + entryId).classList.remove("hidden");
+    qs(".s" + entryId).classList.remove("hidden");
   }
   
   /** Turns a color filter on or off
@@ -148,10 +148,10 @@
    */
   function switchDescription() {
     let section = id("db-select").value;
-    id("competitive-desc").classList.add("filtered");
-    id("deprecated-desc").classList.add("filtered");
-    id("meme-desc").classList.add("filtered");
-    id(section + "-desc").classList.remove("filtered");
+    id("competitive-desc").classList.add("hidden");
+    id("deprecated-desc").classList.add("hidden");
+    id("meme-desc").classList.add("hidden");
+    id(section + "-desc").classList.remove("hidden");
   }
   
   /** Turns a button filter on or off
