@@ -1,0 +1,122 @@
+/* Utility Classes */
+:root {
+  --backdrop-color: #383c4a;
+  --canvas-color: #404552;
+  --secondary-color: #4b5162;
+  --accent-color: #8ebbd1;
+  --darker: #323643;
+  --lighter: #454b58;
+   scrollbar-color: #222222 #424242;
+}
+
+.ns {
+  -webkit-user-select: none !important; /* Safari */
+  -moz-user-select: none !important; /* Firefox */
+  -ms-user-select: none !important; /* IE10+/Edge */
+  user-select: none !important; /* Standard */
+}
+
+.hidden {
+  display: none !important;
+}
+
+.icon {
+  width: 36px;
+}
+
+.btn {
+  text-align: center;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.4s;
+  background-color: var(--backdrop-color);
+}
+
+.btn:hover {
+  transition: 0.0s;
+  background-color: var(--darker);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.list {
+  padding: 0;
+  list-style-type: none;
+}
+
+/* Global Styles */
+body {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  font-family: sans-serif;
+  background-color: var(--backdrop-color);
+  color: white;
+}
+
+#wrapper {
+  background-color: var(--canvas-color);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 16px;
+  border-bottom: 3px solid var(--backdrop-color);
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  min-width: 250px;
+  padding-right: 36px;
+}
+
+#logo h1 {
+  font-size: 16pt;
+  padding-left: 16px;
+  font-weight: normal;
+  font-family: 'Patua One', sans-serif;
+}
+
+nav img {
+  height: 56px;
+}
+
+nav .btn {
+  flex-grow: 1;
+  font-size: 14pt;
+  margin-right: 16px;
+  padding: 12px;
+  min-width: 170px;
+}
+
+header {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--accent-color);
+  color: black;
+  line-height: 1.5;
+}
+
+#motd-close {
+  cursor: pointer;
+  transition: 0.5s;
+  margin-left: 16px;
+  margin-right: 8px;
+  font-size: 28pt;
+  line-height: 16px;
+  color: black;
+}
+
+#motd-close:hover {
+  color: red;
+  transition: 0s;
+}
