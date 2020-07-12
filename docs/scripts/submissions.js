@@ -125,6 +125,8 @@
     }
   }
   
+  /** Removes a decklist entry option from the form
+   */
   function deleteDecklist() {
     this.parentElement.parentElement.remove();
   }
