@@ -90,8 +90,13 @@
   /** Gets the result from Firebase and puts it on the site
    */
   function showResults(result) {
-    console.log(result);
-    alert(result.data);
+    if (result.data.success) {
+      alert(result.data.msg);
+      window.location.href = "index.html";
+    } else {
+      console.error(result);
+      alert(result.data.msg);
+    }
   }
   
   /** Activates or deactivates the partner text box
