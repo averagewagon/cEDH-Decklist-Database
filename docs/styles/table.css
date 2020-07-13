@@ -161,7 +161,7 @@ td {
 .deck-list li a {
   display: flex;
   align-items: center;
-  padding-top: 6px;
+  padding-bottom: 4px;
 }
 
 .deck-list span {
