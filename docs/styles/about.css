@@ -1,6 +1,7 @@
-/*
-  Section Styles
-*/
+#nav-about {
+  background-color: var(--darker);
+}
+
 section {
   overflow: auto;
 }
