@@ -81,15 +81,15 @@
                 </a></li>
               {% endfor %}
             </ul>
+            <div class="d-commanders">
+              {%- for x in d.commander -%}
+                <div><a href="" title="{{x | escape }}">{{x | escape }}</a></div>
+              {% endfor %}
+            </div>
           </div>
           <div class="desc-wrapper">
             <div class="description">
               {{d.description | escape }}
-            </div>
-            <div class="mobile d-commanders">
-              {%- for x in d.commander -%}
-                <div><a href="" title="{{x | escape }}">{{x | escape }}</a></div>
-              {% endfor %}
             </div>
             
             <div class="d-date">
