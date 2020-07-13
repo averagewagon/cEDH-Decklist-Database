@@ -164,6 +164,15 @@ header {
 
 /* Mobile Adjustments */
 @media (max-width: 1200px) {
+  nav {
+    padding-top: 8px;
+  }
+  
+  nav .btn {
+    font-size: 12pt !important;
+    padding: 4px;
+  }
+  
   #nav-space {
     order: -2;
     width: 50%;
