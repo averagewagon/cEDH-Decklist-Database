@@ -276,6 +276,14 @@ td {
   text-decoration: underline;
 }
 
+.d-commanders {
+  font-size: 14pt;
+  padding: 8px;
+  line-height: 1.5;
+  color: skyblue;
+  text-decoration: underline;
+}
+
 .desc-wrapper {
   width: 100%;
   position: relative;
