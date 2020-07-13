@@ -73,7 +73,7 @@
               {% if d.discord-link == "" %}[No Discord Server]{% endif %}
               {{d.discord-title | escape }}
             </a>
-            <ul class="deck-list">
+            <ul class="deck-list list">
               {%- for x in d.lists -%}
                 <li><a href="{{x.link | escape}}">
                   <img class="d-icon t-{{x.primer | escape}} ns" src="./img/primer.png" />

@@ -124,7 +124,6 @@
    */
   function showEntry(entryId) {
     qs(".m" + entryId).classList.remove("hidden");
-    qs(".s" + entryId).classList.remove("hidden");
   }
   
   /** Turns a color filter on or off
