@@ -55,7 +55,7 @@ aside li span {
   height: 100%;
   width: 250px;
   background-color: var(--canvas-color);
-  margin: 16px 0;
+  margin-bottom: 16px;
 }
 
 .filter-active {
