@@ -109,16 +109,16 @@ The main page of the cEDH decklist database
             </select>
             <input id="db-search" type="search" placeholder="Search the database..." name="search" aria-label="search">
           </div>
-          <div id="copyright">
-            The cEDH Decklist Database is unofficial Fan Content permitted under the Fan Content Policy.
-            This site is not approved and/or endorsed by Wizards of the Coast.<br/>
-            Portions of the materials used are property of Wizards of the Coast, ©Wizards of the Coast LLC.
-          </div>
           <p id="db-description">
             <span id="competitive-desc">{{ site.data.meta.competitive  | escape }}</span>
             <span id="deprecated-desc">{{ site.data.meta.deprecated  | escape }}</span>
             <span id="meme-desc">{{ site.data.meta.meme  | escape }}</span>
           </p>
+          <div id="copyright">
+            The cEDH Decklist Database is unofficial Fan Content permitted under the Fan Content Policy.
+            This site is not approved and/or endorsed by Wizards of the Coast.<br/>
+            Portions of the materials used are property of Wizards of the Coast, ©Wizards of the Coast LLC.
+          </div>
           
           {% include ddb-table.html %}
           
