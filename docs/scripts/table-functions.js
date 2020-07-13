@@ -47,7 +47,7 @@
       mainRows[i].addEventListener("click", toggleSub);
     }
     
-    id("db-search").addEventListener("change", applyFilters);
+    id("db-search").addEventListener("input", applyFilters);
     id("db-select").addEventListener("change", applyFilters);
     id("db-select").addEventListener("change", switchDescription);
     id("db-sort").addEventListener("change", sortTable);
