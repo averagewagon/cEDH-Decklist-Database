@@ -1,45 +1,47 @@
 /* Mobile Adjustments */
 @media (max-width: 1200px) {
   #ddb {
-    display: flex;
-    flex-direction: column;
+    display: flex !important;
+    flex-direction: column !important;
   }
   
   #ddb tbody {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
   }
   
   .main tr {
-    display: flex;
-    justify-content: space-between;
+    display: flex !important;
+    justify-content: space-between !important;
   }
   
   .sub tr {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
   }
   
   .deck-commander {
-    display: none;
+    display: none !important;
   }
   
   .deck-info {
-    display: flex;
-    flex-direction: column;
-    padding: 16px;
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 16px !important;
+    height: auto !important;
   }
   
   .info-wrap {
-    display: flex;
-    flex-direction: column;
+    display: flex !important;
+    flex-direction: column !important;
   }
   
   .desc-wrapper {
-    display: flex;
-    flex-direction: column;
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 8px !important;
   }
   
   .info-wrap > div {
@@ -48,6 +50,11 @@
   
   .links {
     margin-left: 0 !important;
+  }
+  
+  .d-date {
+    position: static !important;
+    text-align: left !important;
   }
   
 }
