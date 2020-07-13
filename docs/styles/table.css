@@ -34,15 +34,24 @@
     flex-direction: column;
   }
   
+  .info-wrap > div {
+    margin-left: 0 !important;
+  }
+  
+  .d-commanders {
+    order: -1;
+    font-size: 18pt !important;
+  }
+  
+  .links ul {
+    height: auto !important;
+  }
+  
   .desc-wrapper {
     display: flex;
     flex-direction: column;
     padding: 8px !important;
     width: auto !important;
-  }
-  
-  .info-wrap > div {
-    margin-left: 0 !important;
   }
   
   .d-date {
