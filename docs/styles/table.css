@@ -1,5 +1,53 @@
 /* Mobile Adjustments */
 @media (max-width: 1200px) {
+  #ddb {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #ddb tbody {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .main tr {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .sub tr {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .deck-commander {
+    display: none;
+  }
+  
+  .deck-info {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+  }
+  
+  .info-wrap {
+    display: flex;
+    flex-direction: column;
+  
+  .desc-wrapper {
+    display: flex;
+    flex-direction: column;
+  
+  .info-wrap > div {
+    margin-left: 0 !important;
+  }
+  
+  .links {
+    margin-left: 0 !important;
+  }
+  
   
 }
 
