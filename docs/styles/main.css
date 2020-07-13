@@ -187,6 +187,7 @@ td {
   padding-left: 8px;
   padding-right: 8px;
   padding-bottom: 11px;
+  position: relative;
 }
 
 .card {
