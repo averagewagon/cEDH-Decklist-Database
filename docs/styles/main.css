@@ -1,24 +1,3 @@
-/* Mobile Adjustments */
-@media (max-width: 800px) {
-  #content {
-    flex-wrap: wrap;
-  }
-  
-  aside {
-    width: 100%;
-  }
-  
-  #advertisement {
-    height: 100px;
-    width: 100%;
-    margin: 0;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 10;
-  }
-}
-
 /* Aside Styles */
 aside {
   width: 250px;
@@ -123,4 +102,25 @@ section {
 #db-description {
   margin: 16px 0;
   line-height: 1.5;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 800px) {
+  #content {
+    flex-wrap: wrap;
+  }
+  
+  aside {
+    width: 100%;
+  }
+  
+  #advertisement {
+    height: 100px;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+  }
 }
