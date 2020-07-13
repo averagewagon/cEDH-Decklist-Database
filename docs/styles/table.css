@@ -1,60 +1,54 @@
 /* Mobile Adjustments */
 @media (max-width: 1200px) {
   #ddb {
-    display: flex !important;
-    flex-direction: column !important;
+    display: flex;
+    flex-direction: column;
   }
   
   #ddb tbody {
-    display: flex !important;
-    flex-direction: column !important;
-    width: 100% !important;
+    display: flex;
+    flex-direction: column;
   }
   
-  .main tr {
-    display: flex !important;
-    justify-content: space-between !important;
+  #ddb td {
   }
   
-  .sub tr {
-    display: flex !important;
-    flex-direction: column !important;
-    width: 100% !important;
+  .main {
+    display: flex;
+    justify-content: space-between;
   }
   
   .deck-commander {
-    display: none !important;
+    display: none;
   }
   
   .deck-info {
-    display: flex !important;
-    flex-direction: column !important;
+    display: flex;
+    flex-direction: column;
     padding: 16px !important;
     height: auto !important;
   }
   
   .info-wrap {
-    display: flex !important;
-    flex-direction: column !important;
+    display: flex;
+    flex-direction: column;
   }
   
   .desc-wrapper {
-    display: flex !important;
-    flex-direction: column !important;
+    display: flex;
+    flex-direction: column;
     padding: 8px !important;
+    width: auto !important;
   }
   
   .info-wrap > div {
     margin-left: 0 !important;
   }
   
-  .links {
-    margin-left: 0 !important;
-  }
-  
   .d-date {
     position: static !important;
     text-align: left !important;
+    margin-top: 16px;
   }
   
 }
