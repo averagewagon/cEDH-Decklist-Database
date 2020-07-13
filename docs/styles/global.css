@@ -53,6 +53,7 @@ a {
 /* Global Styles */
 html {
   height: 100%;
+  touch-action: manipulation;
 }
 
 body {
