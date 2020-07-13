@@ -100,7 +100,7 @@ section {
 }
 
 #db-description {
-  margin: 32px 0;
+  margin: 16px 0;
   line-height: 1.5;
 }
 
@@ -182,6 +182,7 @@ td {
 .card2 {
   height: 354px;
 }
+
 .card-wrap {
   padding-top: 15px;
   padding-left: 8px;
