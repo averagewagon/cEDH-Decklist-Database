@@ -1,3 +1,19 @@
+/* Mobile Adjustments */
+@media (max-width: 1200px) {
+  #db-functions {
+    flex-wrap: wrap;
+  }
+  
+  #db-search {
+    padding: 8px !important;
+    margin: 8px;
+  }
+  
+  #db-select, #db-sort {
+    margin: 8px !important;
+  }
+}
+
 /* Database Styles */
 #ddb {
   width: 100%;

@@ -1,11 +1,12 @@
 /* Mobile Adjustments */
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   #content {
     flex-wrap: wrap;
   }
   
   aside {
     width: 100% !important;
+    height: auto !important;
   }
   
   #advertisement {
