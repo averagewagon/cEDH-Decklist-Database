@@ -16,6 +16,11 @@
   .main {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .deck-title {
+    order: 1;
   }
   
   .deck-commander {
@@ -41,6 +46,10 @@
   .d-commanders {
     order: -1;
     font-size: 18pt !important;
+  }
+  
+  .links {
+    min-width: auto !important;
   }
   
   .links ul {
@@ -180,7 +189,7 @@ td {
 }
 
 .links {
-  min-width: 380px;
+  min-width: auto;
   position: relative;
   background-color: var(--canvas-color);
   display: flex;
