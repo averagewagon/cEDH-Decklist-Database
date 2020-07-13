@@ -165,21 +165,16 @@ header {
 /* Mobile Adjustments */
 @media (max-width: 1200px) {
   nav {
-    padding-top: 8px;
-  }
-  
-  nav .btn {
-    font-size: 12pt !important;
-    padding: 4px;
+    padding: 8px;
   }
   
   #nav-space {
-    order: -2;
-    width: 50%;
+    flex-grow: 0;
   }
   
-  #nav-discord {
-    order: -1;
+  #nav-discord img {
+    height: 28px;
+    margin: 0;
   }
   
   #logo {
@@ -187,6 +182,21 @@ header {
   }
   
   #logo h1 {
+    display: none;
+  }
+  
+  #logo img {
+    height: 32px;
+    padding: 0;
+  }
+  
+  nav .btn {
+    font-size: 12pt !important;
+    padding: 4px;
+    min-width: auto;
+  }
+  
+  nav .m-hide {
     display: none;
   }
 }
