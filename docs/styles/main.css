@@ -2,7 +2,10 @@
 @media (max-width: 1200px) {
   #content {
     flex-wrap: wrap;
-    margin-bottom: 116px;
+  }
+  
+  section {
+    padding-bottom: 500px;
   }
   
   aside {
