@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+Github Username - AverageDragon
+07/07/2020
+About Us page for the cDDB
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About - cEDH Decklist Database</title>
+
+  <!-- Search Engine Optimization -->
+  <meta name="description" content="A collection of Magic: The Gathering (MTG) decks from the Competitive EDH Format." />
+  <meta name="keywords" content="mtg,cedh,edh,magic,decks,decklists,database,competitive"
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/ico" href="img/favicon.ico">
+  <link rel="stylesheet" type="text/css" media="screen" href="./styles/global.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./styles/about.css" />
+
+  <!-- Logo Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap&text=DacestEHklibCompv" rel="stylesheet">
+</head>
+
+<body>
+  <div id="wrapper">
+    {% include navbar.html %}
+  
+    <div id="content">
+      <section id="section">
+        <header class="">
+          <span id="motd">
+            {{ site.data.meta.motd  | escape }}
+          </span>
+          <span id="motd-close" onclick="this.parentElement.style.display='none';">&times;</span>
+        </header>
+        
+        <div id="about-content">
+          <div id="copyright">
+            The cEDH Decklist Database is unofficial Fan Content permitted under the Fan Content Policy.
+            This site is not approved and/or endorsed by Wizards of the Coast.<br/>
+            Portions of the materials used are property of Wizards of the Coast, ©Wizards of the Coast LLC.
+          </div>
+          <div id="markdown">
+            {{ content }}
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
