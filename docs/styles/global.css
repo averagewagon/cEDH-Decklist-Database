@@ -154,3 +154,9 @@ header {
   overflow: auto;
   bottom: 0;
 }
+
+#copyright {
+  color: lightgray;
+  font-size: 10pt;
+  padding-bottom: 16px;
+}
