@@ -104,15 +104,6 @@ section {
   line-height: 1.5;
 }
 
-/* 
-  Footer Styles
-*/
-#copyright {
-  color: lightgray;
-  font-size: 10pt;
-  margin: 16px 0;
-}
-
 /* Database Styles */
 #ddb {
   width: 100%;

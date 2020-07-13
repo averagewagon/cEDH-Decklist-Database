@@ -54,7 +54,7 @@ The main page of the cEDH decklist database
           <span>About the DDB</span>
         </a>
         <a id="nav-discord" target="_blank" href="https://discord.gg/BXPyu2P">
-          <img src="./img/discord.png" alt="Discord icon">
+          <img src="./img/discord-server.png" alt="Discord icon">
         </a> 
       </nav>
         
@@ -66,64 +66,64 @@ The main page of the cEDH decklist database
       </header>
     </div>
 
-      <div id="content">
-        <aside id="aside">
-          <h2>Filters</h2>
-          <div id="filter-wrap">
-            <div id="color-filters" class="ns">
-              <img class="icon pt color-inactive" src="./img/mana/w.png" alt="w - white"/>
-              <img class="icon pt color-inactive" src="./img/mana/u.png" alt="u - blue"/>
-              <img class="icon pt color-inactive" src="./img/mana/b.png" alt="b - black"/>
-              <img class="icon pt color-inactive" src="./img/mana/r.png" alt="r - red"/>
-              <img class="icon pt color-inactive" src="./img/mana/g.png" alt="g - green"/>
-            </div>
-            <ul class="ns list">
-              <li id="rec-only" class="filter-option filter-active">
-                <img class="icon" src="./img/rec.png" alt="Recommended symbol"/>
-                <span>Recommendations</span>
-              </li>
-              <li id="primer-only" class="filter-option filter-inactive">
-                <img class="icon" src="./img/primer.png" alt="Primer symbol"/>
-                <span>Primers</span>
-              </li>
-              <li id="discord-only" class="filter-option filter-inactive">
-                <img class="icon" src="./img/discord.png" alt="Discord symbol"/>
-                <span>Discord Servers</span>
-              </li>
-            </ul>
+    <div id="content">
+      <aside id="aside">
+        <h2>Filters</h2>
+        <div id="filter-wrap">
+          <div id="color-filters" class="ns">
+            <img class="icon pt color-inactive" src="./img/mana/w.png" alt="w - white"/>
+            <img class="icon pt color-inactive" src="./img/mana/u.png" alt="u - blue"/>
+            <img class="icon pt color-inactive" src="./img/mana/b.png" alt="b - black"/>
+            <img class="icon pt color-inactive" src="./img/mana/r.png" alt="r - red"/>
+            <img class="icon pt color-inactive" src="./img/mana/g.png" alt="g - green"/>
           </div>
-          <div id="advertisement"></div>
-        </aside>
+          <ul class="ns list">
+            <li id="rec-only" class="filter-option filter-active">
+              <img class="icon" src="./img/rec.png" alt="Recommended symbol"/>
+              <span>Recommendations</span>
+            </li>
+            <li id="primer-only" class="filter-option filter-inactive">
+              <img class="icon" src="./img/primer.png" alt="Primer symbol"/>
+              <span>Primers</span>
+            </li>
+            <li id="discord-only" class="filter-option filter-inactive">
+              <img class="icon" src="./img/discord.png" alt="Discord symbol"/>
+              <span>Discord Servers</span>
+            </li>
+          </ul>
+        </div>
+        <div id="advertisement"></div>
+      </aside>
+      
+      <section id="section">
+        <div id="db-functions" class="ns">
+          <select id="db-select" class="btn">
+            <option value="competitive" id="main-db">Competitive Decks</option>
+            <option value="deprecated" id="deprecated-db">Deprecated Decks</option>
+            <option value="meme" id="meme-db">Meme Decks</option>
+          </select>
+          <select id="db-sort" class="btn">
+            <option value="date" id="sort-date">Sort by Newest</option>
+            <option value="color" id="sort-color">Sort by Color</option>
+            <option value="title" id="sort-title">Sort by Title</option>
+          </select>
+          <input id="db-search" type="search" placeholder="Search the database..." name="search" aria-label="search">
+        </div>
+        <p id="db-description">
+          <span id="competitive-desc">{{ site.data.meta.competitive  | escape }}</span>
+          <span id="deprecated-desc">{{ site.data.meta.deprecated  | escape }}</span>
+          <span id="meme-desc">{{ site.data.meta.meme  | escape }}</span>
+        </p>
+        <div id="copyright">
+          The cEDH Decklist Database is unofficial Fan Content permitted under the Fan Content Policy.
+          This site is not approved and/or endorsed by Wizards of the Coast.<br/>
+          Portions of the materials used are property of Wizards of the Coast, ©Wizards of the Coast LLC.
+        </div>
         
-        <section id="section">
-          <div id="db-functions" class="ns">
-            <select id="db-select" class="btn">
-              <option value="competitive" id="main-db">Competitive Decks</option>
-              <option value="deprecated" id="deprecated-db">Deprecated Decks</option>
-              <option value="meme" id="meme-db">Meme Decks</option>
-            </select>
-            <select id="db-sort" class="btn">
-              <option value="date" id="sort-date">Sort by Newest</option>
-              <option value="color" id="sort-color">Sort by Color</option>
-              <option value="title" id="sort-title">Sort by Title</option>
-            </select>
-            <input id="db-search" type="search" placeholder="Search the database..." name="search" aria-label="search">
-          </div>
-          <p id="db-description">
-            <span id="competitive-desc">{{ site.data.meta.competitive  | escape }}</span>
-            <span id="deprecated-desc">{{ site.data.meta.deprecated  | escape }}</span>
-            <span id="meme-desc">{{ site.data.meta.meme  | escape }}</span>
-          </p>
-          <div id="copyright">
-            The cEDH Decklist Database is unofficial Fan Content permitted under the Fan Content Policy.
-            This site is not approved and/or endorsed by Wizards of the Coast.<br/>
-            Portions of the materials used are property of Wizards of the Coast, ©Wizards of the Coast LLC.
-          </div>
-          
-          {% include ddb-table.html %}
-          
-        </section>
-      </div>
+        {% include ddb-table.html %}
+        
+      </section>
     </div>
-  </body>
-  </html>
+  </div>
+</body>
+</html>
