@@ -52,7 +52,7 @@
         <div class="icon-wrap">
           <img class="d-icon t-{{d.recommended | escape }}" src="./img/rec.png" alt="recommended"/>
           <img class="d-icon t-{%- unless primers contains true-%}false{% endunless %}" src="./img/primer.png" alt="primer"/>
-          <img class="d-icon t-{% if d.discord-link == "" %}false{% endif %}" src="./img/discord.png" alt="discord server"/>
+          <img class="d-icon t-{% if d.discord-link == "" %}false{% endif %}" src="./img/newdiscord.png" alt="discord server"/>
         </div>
       </td>
     </tr>
@@ -69,7 +69,7 @@
           <div class="links">
             <a class="d-discord btn {% if d.discord-link == "" %}no-discord{% endif %}"
             {% if d.discord-link != "" %}href="{{d.discord-link | escape }}"{% endif %}>
-              <img class="d-icon ns" src="./img/newdiscord.png" />
+              <img class="d-icon ns" src="./img/discord.png" />
               {% if d.discord-link == "" %}[No Discord Server]{% endif %}
               {{d.discord-title | escape }}
             </a>
