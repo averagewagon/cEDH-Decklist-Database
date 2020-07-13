@@ -35,10 +35,12 @@
   .info-wrap {
     display: flex;
     flex-direction: column;
+  }
   
   .desc-wrapper {
     display: flex;
     flex-direction: column;
+  }
   
   .info-wrap > div {
     margin-left: 0 !important;
@@ -47,7 +49,6 @@
   .links {
     margin-left: 0 !important;
   }
-  
   
 }
 
