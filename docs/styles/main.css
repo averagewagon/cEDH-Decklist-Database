@@ -2,6 +2,7 @@
 @media (max-width: 1200px) {
   #content {
     flex-wrap: wrap;
+    margin-bottom: 116px;
   }
   
   aside {
@@ -17,6 +18,19 @@
     bottom: 0;
     left: 0;
     z-index: 10;
+  }
+  
+  #db-functions {
+    flex-wrap: wrap;
+  }
+  
+  #db-search {
+    padding: 8px !important;
+    margin: 8px;
+  }
+  
+  #db-select, #db-sort {
+    margin: 8px !important;
   }
 }
 
