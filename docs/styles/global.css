@@ -161,3 +161,23 @@ header {
   font-size: 10pt;
   padding-bottom: 16px;
 }
+
+/* Mobile Adjustments */
+@media (max-width: 1200px) {
+  #nav-space {
+    order: -2;
+    width: 50%;
+  }
+  
+  #nav-discord {
+    order: -1;
+  }
+  
+  #logo {
+    width: auto;
+  }
+  
+  #logo h1 {
+    display: none;
+  }
+}

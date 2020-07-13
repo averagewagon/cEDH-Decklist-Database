@@ -11,6 +11,11 @@
   }
   
   #ddb td {
+    border: none;
+  }
+  
+  #ddb tr {
+    border-top: 2px solid var(--darker);
   }
   
   .main {
