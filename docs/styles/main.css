@@ -5,7 +5,7 @@
   }
   
   section {
-    padding-bottom: 500px;
+    padding-bottom: 500px !important;
   }
   
   aside {
