@@ -47,17 +47,9 @@
       mainRows[i].addEventListener("click", toggleSub);
     }
     
+    id("db-search").addEventListener("change", applyFilters);
     id("db-select").addEventListener("change", applyFilters);
     id("db-select").addEventListener("change", switchDescription);
-    
-    id("search-box").addEventListener("keyup", d => {
-      if (d.keyCode === 13 || id("search-box").value === "") {
-        id("search-btn").click();
-      }
-    });
-    
-    id("search-btn").addEventListener("click", applyFilters);
-    
     id("db-sort").addEventListener("change", sortTable);
   }
   
@@ -125,7 +117,6 @@
   function hideEntry(entryId) {
     qs(".m" + entryId).classList.add("hidden");
     qs(".s" + entryId).classList.add("hidden");
-    qs(".s" + entryId).classList.add("sub-hide");
   }
   
   /** Shows an entry
@@ -166,7 +157,7 @@
    */
   function toggleSub() {
     let entryId = ".s" + this.dataset.id;
-    if (!qs(entryId).classList.toggle("sub-hide")) {
+    if (!qs(entryId).classList.toggle("hidden")) {
       let cards = qsa(entryId + " .card");
       for (let i = 0; i < cards.length; i++) {
         let card = cards[i].title;
@@ -253,7 +244,7 @@
     filterState.rec = id("rec-only").classList.contains("filter-active");
     filterState.primer = id("primer-only").classList.contains("filter-active");
     filterState.discord = id("discord-only").classList.contains("filter-active");
-    filterState.search = id("search-box").value.trim().toUpperCase();
+    filterState.search = id("db-search").value.trim().toUpperCase();
     filterState.section = id("db-select").value;
     
     let colorFilters = qsa("#color-filters img");

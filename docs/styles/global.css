@@ -26,7 +26,6 @@
 
 .btn {
   text-align: center;
-  border-radius: 2px;
   cursor: pointer;
   transition: 0.4s;
   background-color: var(--backdrop-color);
@@ -47,7 +46,15 @@ a {
   list-style-type: none;
 }
 
+.pt {
+  cursor: pointer;
+}
+
 /* Global Styles */
+html {
+  height: 100%;
+}
+
 body {
   width: 100%;
   max-width: 1600px;
@@ -55,10 +62,19 @@ body {
   font-family: sans-serif;
   background-color: var(--backdrop-color);
   color: white;
+  height: 100%;
 }
 
 #wrapper {
   background-color: var(--canvas-color);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Top bar styles */
+#top-bar {
+  flex: 0 1 auto;
 }
 
 nav {
@@ -66,38 +82,48 @@ nav {
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0 16px;
   border-bottom: 3px solid var(--backdrop-color);
+  background-color: var(--secondary-color);
+}
+
+#nav-space {
+  flex-grow: 1;
 }
 
 #logo {
   display: flex;
   align-items: center;
-  min-width: 250px;
-  padding-right: 36px;
+  width: 220px;
 }
 
 #logo h1 {
-  font-size: 16pt;
-  padding-left: 16px;
+  font-size: 13pt;
+  margin: 0;
   font-weight: normal;
   font-family: 'Patua One', sans-serif;
 }
 
-nav img {
-  height: 56px;
+#logo img {
+  padding: 0px 12px;
+  height: 40px;
 }
 
 nav .btn {
-  flex-grow: 1;
   font-size: 14pt;
-  margin-right: 16px;
-  padding: 12px;
+  padding: 16px;
   min-width: 170px;
+  background-color: var(--secondary-color);
 }
 
+#nav-discord img {
+  margin: 0px 16px;
+  height: 36px;
+}
+
+/* Message of the Day */
 header {
   padding: 8px;
+  margin: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -119,4 +145,12 @@ header {
 #motd-close:hover {
   color: red;
   transition: 0s;
+}
+
+/* Universal content styles */
+#content {
+  display: flex;
+  flex: 1 1 auto;
+  overflow: auto;
+  bottom: 0;
 }
