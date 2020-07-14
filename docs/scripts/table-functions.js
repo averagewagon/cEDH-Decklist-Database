@@ -23,9 +23,7 @@
   function init() {
     prepareListeners();
     applyFilters();
-    if (id("db-sort").value != "date") {
-      sortTable();
-    }
+    sortTable();
     switchDescription();
   }
   
