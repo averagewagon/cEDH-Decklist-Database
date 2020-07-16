@@ -10,13 +10,3 @@ section {
   overflow: auto;
   padding: 0 16px;
 }
-
-#about-content {
-  margin: 16px;
-}
-
-#copyright {
-  color: lightgray;
-  font-size: 10pt;
-  padding-top: 8px;
-}

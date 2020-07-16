@@ -80,19 +80,19 @@ The main page of the cEDH decklist database
         <div id="db-description">
           <div id="competitive-desc">
             {% capture competitive %}
-            {%- include_relative markdown/tables/competitive.md -%}
+            {%- include_relative _markdown/tables/competitive.md -%}
             {% endcapture %}
             {{ competitive | escape | markdownify | replace: "id=", "data-content-id=" }}
           </div>
           <div id="deprecated-desc" class="hidden">
             {% capture deprecated %}
-            {%- include_relative markdown/tables/deprecated.md -%}
+            {%- include_relative _markdown/tables/deprecated.md -%}
             {% endcapture %}
             {{ deprecated | escape | markdownify | replace: "id=", "data-content-id=" }}
           </div>
           <div id="meme-desc" class="hidden">
             {% capture meme %}
-            {%- include_relative markdown/tables/meme.md -%}
+            {%- include_relative _markdown/tables/meme.md -%}
             {% endcapture %}
             {{ meme | escape | markdownify | replace: "id=", "data-content-id=" }}
           </div>

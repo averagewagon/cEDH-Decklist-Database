@@ -1,0 +1,4 @@
+collections_dir: _markdown
+collections:
+  updates:
+    output: true
