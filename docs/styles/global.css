@@ -166,6 +166,7 @@ header {
 @media (max-width: 1200px) {
   nav {
     padding: 8px;
+    align-items: stretch !important;
   }
   
   #nav-space {
@@ -173,12 +174,14 @@ header {
   }
   
   #nav-discord img {
-    height: 28px;
+    height: 26px;
     margin: 0;
+    margin-left: 8px;
   }
   
   #logo {
     width: auto;
+    margin-right: 8px;
   }
   
   #logo h1 {
@@ -186,7 +189,7 @@ header {
   }
   
   #logo img {
-    height: 32px;
+    height: 30px;
     padding: 0;
   }
   
@@ -194,6 +197,11 @@ header {
     font-size: 12pt !important;
     padding: 4px;
     min-width: auto;
+    flex-grow: 1;
+  }
+  
+  nav .btn span {
+    vertical-align: middle;
   }
   
   nav .m-hide {
