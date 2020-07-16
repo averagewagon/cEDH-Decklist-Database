@@ -1,4 +1,118 @@
 ---
 layout: none
 ---
- 
+<!DOCTYPE html>
+<!--
+Github Username - AverageDragon
+07/15/2020
+Edit page for the cDDB
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Edit a Deck - cEDH Decklist Database</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A collection of Magic: The Gathering (MTG) decks from the Competitive EDH Format." />
+  <meta name="keywords" content="mtg,cedh,edh,magic,decks,decklists,database,competitive" />
+  
+  <link rel="icon" type="image/ico" href="img/favicon.ico">
+  <link rel="stylesheet" type="text/css" media="screen" href="./styles/global.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./styles/edit.css" />
+
+  <!-- Logo Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap&text=DacestEHklibCompv" rel="stylesheet">
+  
+  <!-- ReCaptcha -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script>function refreshCaptcha() { grecaptcha.reset(); }</script>
+</head>
+
+<body>
+  <div id="wrapper">
+    {% include navbar.html %}
+      
+      <div id="content">
+        <aside>
+          <div>
+            {% capture content %}
+            {%- include_relative markdown/edit.md -%}
+            {% endcapture %}
+            {{ content | escape | markdownify | replace: "id=", "data-content-id="}}
+          </div>
+        </aside>
+        <div>
+          <section>
+            <form>
+              <label>What request would you like to make?</label>
+              <div class="">
+                <div class="subtext">If your issue is not in the dropdown, please join our Discord server, which is linked in the top right.</div>
+                <select id="edit-select">
+                  <option value="">Add a new list to a deck</option>
+                  <option value="">Modify a deck's current information</option>
+                  <option value="">Change a deck-specific Discord server</option>
+                  <option value="">Mark a deck as deprecated</option>
+                </select>
+              </div>
+              <div class="flex-column">
+                <label for="request-title">Request Title</label>
+                <input autocomplete="off" required type="text" id="request-title" maxlength="200" placeholder="A one-sentence summary of the change you are proposing"/>
+              </div>
+              
+              <div class="flex-column">
+                <label for="deck-title">Deck Title</label>
+                <input autocomplete="off" required type="text" id="deck-title" maxlength="200" placeholder="The title shown to the right of the deck's colors"/>
+              </div>
+              
+              <div class="flex-column">
+                <label for="description">Issue Description and Information</label>
+                <textarea autocomplete="off" id="description" maxlength="700" required placeholder="Read the sidebar to see what information is needed for each different kind of request." rows="4"></textarea>
+              </div>
+              
+              <div id="submit-wrap">
+                <div class="g-recaptcha" data-expired-callback="refreshCaptcha" data-sitekey="6Lf6x68ZAAAAAOVJKUdXQKwu_kO2SGxf7clflkpe"></div>
+                <input type="submit" id="submit-button" value="Submit Form"/>
+              </div>
+            </form>
+            <div id="copyright">
+              The cEDH Decklist Database is unofficial Fan Content permitted under the Fan Content Policy.
+              This site is not approved and/or endorsed by Wizards of the Coast.<br/>
+              Portions of the materials used are property of Wizards of the Coast, ©Wizards of the Coast LLC. 
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-functions.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-auth.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyAEjmTRrh2r05qOevsvxufeMsC43JTauQs",
+      authDomain: "cedh-decklist-database.firebaseapp.com",
+      databaseURL: "https://cedh-decklist-database.firebaseio.com",
+      projectId: "cedh-decklist-database",
+      storageBucket: "cedh-decklist-database.appspot.com",
+      messagingSenderId: "450552713209",
+      appId: "1:450552713209:web:7c746ddf9c392bafb8b728",
+      measurementId: "G-TB53N60CSL"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    firebase.functions();
+  </script>
+
+  <!-- DDB Scripts -->
+  <script src="scripts/submissions.js"></script>
+</body>
+</html>
