@@ -3,9 +3,13 @@
     flex-direction: column;
   }
   
-  aside {
+  aside, section{
     width: auto !important;
     overflow: visible !important;
+  }
+  
+  section {
+    margin: 4px !important;
   }
 }
 
@@ -167,6 +171,7 @@ textarea {
 
 #submit-wrap {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   flex-grow: 1;
 }
