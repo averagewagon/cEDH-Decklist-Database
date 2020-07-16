@@ -34,7 +34,7 @@ About Us page for the cDDB
           {% capture content %}
           {%- include_relative markdown/about.md -%}
           {% endcapture %}
-          {{ content | escape | markdownify }}
+          {{ content | escape | markdownify | replace: "id=", "data-content-id=" }}
         </div>
       </section>
       <div id="copyright">

@@ -26,7 +26,10 @@
     
   <header class="">
     <span id="motd">
-      {% include text/motd.md %}
+      {% capture content %}
+      {%- include_relative markdown/motd.md -%}
+      {% endcapture %}
+      {{ content | escape }}
     </span>
     <span id="motd-close" onclick="this.parentElement.style.display='none';">&times;</span>
   </header>

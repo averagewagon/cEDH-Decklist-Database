@@ -38,7 +38,7 @@ Submission page for the cDDB
             {% capture content %}
             {%- include_relative markdown/submit.md -%}
             {% endcapture %}
-            {{ content | escape | markdownify }}
+            {{ content | escape | markdownify | replace: "id=", "data-content-id="}}
           </div>
         </aside>
         <div>
