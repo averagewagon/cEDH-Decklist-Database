@@ -1,7 +1,3 @@
----
-layout: about
----
-
 # Markdown Test  
 ## Subheading
 This is a test to see how markdown functions with Jekyll and this site. You can see this by reading the example text, which contains [links](test.com), as well as *creative* **formatting**.
