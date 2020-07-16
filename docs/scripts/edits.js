@@ -19,7 +19,7 @@
   function submitForm(event) {
     event.preventDefault();
     if (confirm("Are you sure you want to make this request?")) {
-      if (grecaptcha.getResponse()) {
+      if (!grecaptcha.getResponse()) {
         alert("Please complete the reCaptcha.");
       } else {
         let data = scrapeForm();
