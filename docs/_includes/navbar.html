@@ -27,7 +27,7 @@
   <header class="">
     <span id="motd">
       {% capture content %}
-      {%- include_relative markdown/motd.md -%}
+      {%- include_relative _markdown/motd.md -%}
       {% endcapture %}
       {{ content | escape }}
     </span>

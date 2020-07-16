@@ -36,7 +36,7 @@ Edit page for the cDDB
         <aside>
           <div>
             {% capture content %}
-            {%- include_relative markdown/edit.md -%}
+            {%- include_relative _markdown/edit.md -%}
             {% endcapture %}
             {{ content | escape | markdownify | replace: "id=", "data-content-id="}}
           </div>
