@@ -34,16 +34,15 @@
   /** Converts the form into a JSON object that can be submitted to Firebase
    */
   function scrapeForm() {
-    let wrap = {};
-    wrap.info = {};
-    let data = wrap.info;
-    data.action = id("edit-select").value;
-    data.request = id("request-title").value;
-    data.deck = id("deck-title").value;
-    data.description = id("description").value;
+    let data = {};
+    data.info = {};
+    data.info.action = id("edit-select").value;
+    data.info.request = id("request-title").value;
+    data.info.deck = id("deck-title").value;
+    data.info.description = id("description").value;
     
-    wrap.recaptcha = grecaptcha.getResponse();
-    return wrap;
+    data.recaptcha = grecaptcha.getResponse();
+    return data;
   }
   
   /** Gets the result from Firebase and puts it on the site
