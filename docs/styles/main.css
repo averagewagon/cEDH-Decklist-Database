@@ -38,13 +38,6 @@
   }
 }
 
-#content {
-  display: flex;
-  flex: 1 1 auto;
-  overflow: auto;
-  bottom: 0;
-}
-
 /* Aside Styles */
 aside {
   width: 250px;
