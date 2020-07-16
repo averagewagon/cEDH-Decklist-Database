@@ -1,6 +1,5 @@
 #content {
   flex-direction: column;
-  padding: 0 16px;
 }
 
 #nav-about {
@@ -9,6 +8,7 @@
 
 section {
   overflow: auto;
+  padding: 0 16px;
 }
 
 #about-content {
@@ -18,4 +18,5 @@ section {
 #copyright {
   color: lightgray;
   font-size: 10pt;
+  padding-top: 8px;
 }
