@@ -23,7 +23,6 @@
         alert("Please complete the reCaptcha.");
       } else {
         let data = scrapeForm();
-        console.log(data);
         var requestEdit = firebase.functions().httpsCallable("requestEdit");
         requestEdit(data).then((result) => {
           showResults(result);
