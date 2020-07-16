@@ -149,6 +149,13 @@ header {
 }
 
 /* Universal content styles */
+#content {
+  display: flex;
+  flex: 1 1 auto;
+  overflow: auto;
+  bottom: 0;
+}
+
 #copyright {
   color: lightgray;
   font-size: 10pt;

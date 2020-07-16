@@ -1,8 +1,4 @@
 #content {
-  display: flex;
-  flex: 1 1 auto;
-  overflow: auto;
-  bottom: 0;
   flex-direction: column;
   padding: 0 16px;
 }
