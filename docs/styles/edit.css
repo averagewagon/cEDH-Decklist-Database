@@ -43,6 +43,12 @@ aside {
   justify-content: space-between;
 }
 
+.subtext {
+  font-size: 12pt;
+  padding-top: 4px;
+  font-style: italic;
+}
+
 form {
   font-size: 16pt;
   padding-left: 8px;
@@ -52,50 +58,8 @@ form > div {
   margin-bottom: 16px;
 }
 
-form label {
-  margin-bottom: 4px;
-}
-
-#title-wrap input {
-  margin-right: 16px;
-}
-
-#title-wrap, #commander-wrap input, #discord-info input {
-  flex-grow: 1;
-}
-
-#commander-wrap input:last-child, #discord-info input:last-child {
-  margin-left: 16px;
-}
-
-form ul {
-  margin: 0;
-  margin-top: 8px;
-  padding: 0;
-}
-
-#list-wrap {
-  display: flex;
-  flex-direction: column;
-}
-
-#add-deck {
-  margin-top: 8px;
-  padding: 12px;
-}
-
-form li {
-  list-style-type: none;
-  margin-bottom: 8px;
-}
-
-.list-title, .list-link {
-  margin-right: 16px;
-}
-
-form button {
-  font-size: 16pt;
-  color: white;
+#edit-select {
+  margin-top: 4px;
 }
 
 form input::placeholder, form textarea::placeholder {
@@ -108,19 +72,6 @@ form input, form textarea, form select, form button {
   background-color: var(--darker);
   color: white;
   border: none;
-}
-
-form li div > input {
-  flex-grow: 1;
-}
-
-.delete-list {
-  cursor: pointer;
-  transition: 0.3s;
-  font-size: 26pt;
-  line-height: 16px;
-  margin-right: 8px;
-  color: red;
 }
 
 form select {
@@ -137,31 +88,6 @@ textarea {
   font-size: 12pt;
   font-family: sans-serif;
   padding: 8px;
-}
-
-#color-select img {
-  cursor: pointer;
-  opacity: 0.3;
-}
-
-#color-select input + img:hover {
-  opacity: 0.5;
-}
-
-#color-select input:checked + img {
-  opacity: 1;
-}
-
-#color-select input:checked + img:hover {
-  opacity: 1;
-}
-
-#discord-wrap {
-  margin-bottom: 4px;
-}
-
-#list-wrap ul li:first-child .delete-list {
-  visibility: hidden;
 }
 
 #submit-wrap {
