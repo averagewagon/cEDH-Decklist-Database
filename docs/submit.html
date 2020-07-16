@@ -1,3 +1,6 @@
+---
+layout: none
+---
 <!DOCTYPE html>
 <!--
 Github Username - AverageDragon
@@ -32,7 +35,10 @@ Submission page for the cDDB
       <div id="content">
         <aside>
           <div>
-            {{content}}
+            {% capture content %}
+            {%- include_relative markdown/submit.md -%}
+            {% endcapture %}
+            {{ content | escape | markdownify }}
           </div>
         </aside>
         <div>

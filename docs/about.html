@@ -1,3 +1,6 @@
+---
+layout: none
+---
 <!DOCTYPE html>
 <!--
 Github Username - AverageDragon
@@ -28,7 +31,10 @@ About Us page for the cDDB
     <div id="content">
       <section>
         <div id="markdown">
-          {{ content }}
+          {% capture content %}
+          {%- include_relative markdown/about.md -%}
+          {% endcapture %}
+          {{ content | escape | markdownify }}
         </div>
       </section>
       <div id="copyright">

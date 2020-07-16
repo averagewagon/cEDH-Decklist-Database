@@ -1,3 +1,6 @@
+---
+layout: none
+---
 <!DOCTYPE html>
 <!--
 Github Username - AverageDragon
@@ -74,11 +77,26 @@ The main page of the cEDH decklist database
           </select>
           <input id="db-search" type="search" placeholder="Search the database..." name="search" aria-label="search">
         </div>
-        <p id="db-description">
-          <span id="competitive-desc">{{ site.data.meta.competitive  | escape }}</span>
-          <span id="deprecated-desc">{{ site.data.meta.deprecated  | escape }}</span>
-          <span id="meme-desc">{{ site.data.meta.meme  | escape }}</span>
-        </p>
+        <div id="db-description">
+          <div id="competitive-desc">
+            {% capture competitive %}
+            {%- include_relative markdown/tables/competitive.md -%}
+            {% endcapture %}
+            {{ competitive | escape | markdownify }}
+          </div>
+          <div id="deprecated-desc" class="hidden">
+            {% capture deprecated %}
+            {%- include_relative markdown/tables/deprecated.md -%}
+            {% endcapture %}
+            {{ deprecated | escape | markdownify }}
+          </div>
+          <div id="meme-desc" class="hidden">
+            {% capture meme %}
+            {%- include_relative markdown/tables/meme.md -%}
+            {% endcapture %}
+            {{ meme | escape | markdownify }}
+          </div>
+        </div>
         <div id="copyright">
           The cEDH Decklist Database is unofficial Fan Content permitted under the Fan Content Policy.
           This site is not approved and/or endorsed by Wizards of the Coast.<br/>
