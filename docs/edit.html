@@ -48,10 +48,10 @@ Edit page for the cDDB
               <div class="">
                 <div class="subtext">If your issue is not in the dropdown, please join our Discord server, which is linked in the top right.</div>
                 <select id="edit-select">
-                  <option value="">Add a new list to a deck</option>
-                  <option value="">Modify a deck's current information</option>
-                  <option value="">Change a deck-specific Discord server</option>
-                  <option value="">Mark a deck as deprecated</option>
+                  <option value="add_list">Add a new list to a deck</option>
+                  <option value="modify_info">Modify a deck's current information</option>
+                  <option value="add_discord">Change a deck-specific Discord server</option>
+                  <option value="deprecate_deck">Mark a deck as deprecated</option>
                 </select>
               </div>
               <div class="flex-column">
@@ -66,7 +66,7 @@ Edit page for the cDDB
               
               <div class="flex-column">
                 <label for="description">Issue Description and Information</label>
-                <textarea autocomplete="off" id="description" maxlength="700" required placeholder="Read the sidebar to see what information is needed for each different kind of request." rows="4"></textarea>
+                <textarea autocomplete="off" id="description" maxlength="2000" required placeholder="Read the sidebar to see what information is needed for each different kind of request." rows="4"></textarea>
               </div>
               
               <div id="submit-wrap">
@@ -113,6 +113,6 @@ Edit page for the cDDB
   </script>
 
   <!-- DDB Scripts -->
-  <script src="scripts/submissions.js"></script>
+  <script src="scripts/edits.js"></script>
 </body>
 </html>
