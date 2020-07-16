@@ -1,3 +1,14 @@
+@media (max-width: 1200px) {
+  #content {
+    flex-direction: column;
+  }
+  
+  aside {
+    width: auto !important;
+    overflow: visible !important;
+  }
+}
+
 #nav-submit {
   background-color: var(--darker);
 }
