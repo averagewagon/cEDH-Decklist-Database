@@ -27,6 +27,11 @@
   .deck-title {
     order: 1;
     width: 100%;
+    padding-top: 0px !important;
+  }
+  
+  .deck-title span {
+    padding-left: 0 !important;
   }
   
   .deck-commander {

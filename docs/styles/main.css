@@ -94,7 +94,6 @@ aside li span {
 #advertisement {
   height: 100%;
   width: 250px;
-  background-color: var(--canvas-color);
   margin-bottom: 16px;
 }
 
