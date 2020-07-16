@@ -10,7 +10,7 @@ About Us page for the cDDB
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>About - cEDH Decklist Database</title>
+  <title>Changelog - cEDH Decklist Database</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A collection of Magic: The Gathering (MTG) decks from the Competitive EDH Format." />
@@ -19,6 +19,8 @@ About Us page for the cDDB
   <link rel="icon" type="image/ico" href="img/favicon.ico">
   <link rel="stylesheet" type="text/css" media="screen" href="./styles/global.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="./styles/about.css" />
+  <!-- Page Scripts -->
+  <script src="scripts/about.js"></script>
 
   <!-- Logo Font -->
   <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap&text=DacestEHklibCompv" rel="stylesheet">
@@ -29,8 +31,23 @@ About Us page for the cDDB
     {% include navbar.html %}
   
     <div id="content">
+      <aside>
+        <div id="changelog-title">Changelog</div>
+        {%- assign updates = site.updates | sort: 'url' | reverse | where_exp:"x","x.title != 'CHANGE_ME'" -%}
+        <select id="update-select">
+          {%- for update in updates -%}
+            <option value="{{ update.url }}">{{ update.title }}</option>
+          {%- endfor -%}
+        </select>
+        
+        {%- for update in updates -%}
+          <div class="hidden update" id="update-{{ update.url }}">
+            {{ update.content | replace: "id=", "data-content-id=" }}
+          </div>
+        {%- endfor -%}
+      </aside>
       <section>
-        <div id="markdown">
+        <div id="about">
           {% capture content %}
           {%- include_relative _markdown/about.md -%}
           {% endcapture %}
