@@ -93,7 +93,7 @@ aside li .svg-icon {
 
 .color-inactive {
   opacity: 0.3;
-  transition: 0.4s;
+  transition: 0.3s;
 }
 
 .color-inactive:hover {
@@ -112,7 +112,7 @@ aside li .svg-icon {
 }
 
 .filter-inactive {
-  transition: 0.4s;
+  transition: 0.3s;
 }
 
 .filter-inactive:hover {
