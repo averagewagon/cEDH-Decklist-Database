@@ -114,6 +114,7 @@ aside li span {
 section {
   overflow: auto;
   padding: 16px;
+  flex-grow: 1;
 }
 
 #db-functions {
