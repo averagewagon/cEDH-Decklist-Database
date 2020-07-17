@@ -108,6 +108,8 @@ td {
 
 .d-icon {
   height: 28px;
+  width: 28px;
+  margin-right: 4px;
 }
 
 .svg-icon {
@@ -117,9 +119,12 @@ td {
   border-radius: 50%;
 }
 
-.deck-tags .icon-wrap {
+.icon-wrap {
   display: flex;
   align-items: center;
+}
+
+.deck-tags .icon-wrap {
   justify-content: flex-end;
 }
 

@@ -33,16 +33,21 @@
         
       <td class="deck-colors ns">
         <div class="icon-wrap">
-          <img class="d-icon {% unless d.colors contains "w" %} c-inactive{% endunless %}" 
-          src="./img/mana/w.png" alt="white"/>
-          <img class="d-icon {% unless d.colors contains "u" %} c-inactive{% endunless %}" 
-          src="./img/mana/u.png" alt="blue"/>
-          <img class="d-icon {% unless d.colors contains "b" %} c-inactive{% endunless %}" 
-          src="./img/mana/b.png" alt="black"/>
-          <img class="d-icon {% unless d.colors contains "r" %} c-inactive{% endunless %}" 
-          src="./img/mana/r.png" alt="red"/>
-          <img class="d-icon {% unless d.colors contains "g" %} c-inactive{% endunless %}" 
-          src="./img/mana/g.png" alt="green"/>
+          <div class="d-icon {% unless d.colors contains "w" %}c-inactive{% endunless %}">
+            {% include svg/colors/w.svg %}
+          </div>
+          <div class="d-icon {% unless d.colors contains "u" %}c-inactive{% endunless %}">
+            {% include svg/colors/u.svg %}
+          </div>
+          <div class="d-icon {% unless d.colors contains "b" %}c-inactive{% endunless %}">
+            {% include svg/colors/b.svg %}
+          </div>
+          <div class="d-icon {% unless d.colors contains "r" %}c-inactive{% endunless %}">
+            {% include svg/colors/r.svg %}
+          </div>
+          <div class="d-icon {% unless d.colors contains "g" %}c-inactive{% endunless %}">
+            {% include svg/colors/g.svg %}
+          </div>
         </div>
       </td>
       <td class="deck-title">
@@ -51,13 +56,13 @@
       <td class="deck-tags ns">
         <div class="icon-wrap">
           <div class="svg-icon t-{{d.recommended | escape }}">
-            {% include svg/recommend.html %}
+            {% include svg/recommend.svg %}
           </div>
           <div class="svg-icon t-{%- unless primers contains true-%}false{% endunless %}">
-            {% include svg/primer.html %}
+            {% include svg/primer.svg %}
           </div>
           <div class="svg-icon t-{% if d.discord-link == "" %}false{% endif %}">
-            {% include svg/discord.html %}
+            {% include svg/discord.svg %}
           </div>
         </div>
       </td>
@@ -76,7 +81,7 @@
             <a class="d-discord btn {% if d.discord-link == "" %}no-discord{% endif %}"
             {% if d.discord-link != "" %}href="{{d.discord-link | escape }}"{% endif %}>
               <div class="ns">
-              {% include svg/discord.html %}
+              {% include svg/discord.svg %}
               </div>
               {% if d.discord-link == "" %}[No Discord Server]{% endif %}
               {{d.discord-title | escape }}
@@ -85,7 +90,7 @@
               {%- for x in d.lists -%}
                 <li><a href="{{x.link | escape}}">
                   <div class="svg-icon t-{{x.primer | escape}} ns">
-                    {% include svg/primer.html %}
+                    {% include svg/primer.svg %}
                   </div>
                   <span>{{x.description | escape}}</span>
                 </a></li>

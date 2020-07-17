@@ -61,6 +61,10 @@ aside h2 {
   margin: 0;
 }
 
+aside ul {
+  margin: 8px 0;
+}
+
 aside li {
   padding: 16px;
   border-top: 1px solid darkgray;

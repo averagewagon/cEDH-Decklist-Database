@@ -30,7 +30,7 @@
   /** Adds a click listener for all the clickable elements
    */
   function prepareListeners() {
-    let colorFilters = qsa("#color-filters img");
+    let colorFilters = qsa("#color-filters .icon");
     for (let i = 0; i < colorFilters.length; i++) {
       colorFilters[i].addEventListener("click", toggleColor);
     }
@@ -244,12 +244,12 @@
     filterState.search = id("db-search").value.trim().toUpperCase();
     filterState.section = id("db-select").value;
     
-    let colorFilters = qsa("#color-filters img");
+    let colorFilters = qsa("#color-filters .icon");
     filterState.colors = [];
     for (let i = 0; i < colorFilters.length; i++) {
       let color = colorFilters[i];
       if (color.classList.contains("color-active")) {
-        filterState.colors.push(color.alt.charAt(0));
+        filterState.colors.push(color.dataset.c);
       }
     }
     
