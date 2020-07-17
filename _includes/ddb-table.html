@@ -51,13 +51,13 @@
       <td class="deck-tags ns">
         <div class="icon-wrap">
           <div class="svg-icon t-{{d.recommended | escape }}">
-            <img src="./img/rec.svg" class="rec-icon" alt="Has Recommended"/>
+            {% include svg/recommend.html %}
           </div>
           <div class="svg-icon t-{%- unless primers contains true-%}false{% endunless %}">
-            <img src="./img/primer.svg" class="primer-icon" alt="Has Primer"/>
+            {% include svg/primer.html %}
           </div>
           <div class="svg-icon t-{% if d.discord-link == "" %}false{% endif %}">
-            <img src="./img/discord.svg" class="discord-icon" alt="Has Discord"/>
+            {% include svg/discord.html %}
           </div>
         </div>
       </td>
@@ -73,9 +73,11 @@
       <td class="deck-info" colspan="2">
         <div class="info-wrap">
           <div class="links">
-            <a class="d-discord btn"
+            <a class="d-discord btn {% if d.discord-link == "" %}no-discord{% endif %}"
             {% if d.discord-link != "" %}href="{{d.discord-link | escape }}"{% endif %}>
-              <img class="d-icon ns {% if d.discord-link != "" %}discord-color{% endif %}" src="./img/discord.svg" />
+              <div class="ns">
+              {% include svg/discord.html %}
+              </div>
               {% if d.discord-link == "" %}[No Discord Server]{% endif %}
               {{d.discord-title | escape }}
             </a>
@@ -83,7 +85,7 @@
               {%- for x in d.lists -%}
                 <li><a href="{{x.link | escape}}">
                   <div class="svg-icon t-{{x.primer | escape}} ns">
-                    <img src="./img/primer.svg" class="primer-icon" alt="Primer symbol"/>
+                    {% include svg/primer.html %}
                   </div>
                   <span>{{x.description | escape}}</span>
                 </a></li>
