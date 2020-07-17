@@ -6,6 +6,7 @@
   --accent-color: #8ebbd1;
   --darker: #323643;
   --lighter: #454b58;
+  --discord: #8C9EFF;
    scrollbar-color: #222222 #424242;
 }
 
@@ -31,25 +32,24 @@
   justify-content: center;
 }
 
-.ddb-logo {
-  height: 80%;
-  width: 80%;
-}
-
-.rec-icon {
-  width: 90%;
-  height: 90%;
-}
-
-.primer-icon {
+.svg-icon .logo-svg {
   width: 80%;
   height: 80%;
 }
 
-.discord-icon {
-  width: 90%;
-  height: 90%;
-  filter: brightness(0);
+.svg-icon .recommend-svg {
+  width: 88%;
+  height: 88%;
+}
+
+.svg-icon .primer-svg {
+  width: 80%;
+  height: 80%;
+}
+
+.svg-icon .discord-svg {
+  width: 85%;
+  height: 85%;
 }
 
 .btn {
@@ -146,9 +146,10 @@ nav .btn {
   background-color: var(--secondary-color);
 }
 
-#nav-discord img {
+#nav-discord svg {
   margin: 0px 16px;
   height: 48px;
+  fill: var(--discord);
 }
 
 /* Message of the Day */

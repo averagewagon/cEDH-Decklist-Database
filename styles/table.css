@@ -110,7 +110,7 @@ td {
   height: 28px;
 }
 
-table .svg-icon {
+.svg-icon {
   height: 28px;
   width: 28px;
   background-color: white;
@@ -149,10 +149,6 @@ table .svg-icon {
 
 .t-false {
   filter: invert(100%) brightness(50%);
-}
-
-.deck-tags {
-  text-align: right;
 }
 
 .deck-title span {
@@ -235,21 +231,27 @@ table .svg-icon {
   align-items: center;
   border-radius: 0px;
   text-align: left;
-  padding: 8px;
+  padding: 4px;
   font-size: 14pt;
 }
 
-.d-discord img {
-  padding-right: 10px;
-  padding-left: 2px;
-  height: 26px;
+.d-discord div {
+  margin-right: 10px;
+  margin-left: 2px;
+  fill: var(--discord);
+  height: 36px;
+}
+
+.d-discord svg {
+  height: 100%;
+  width: 100%;
 }
 
 .no-discord {
   cursor: not-allowed !important;
 }
 
-.no-discord img {
+.no-discord svg {
   filter: grayscale(100%) brightness(0%);
 }
 
