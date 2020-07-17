@@ -138,21 +138,27 @@ textarea {
   font-family: sans-serif;
   padding: 8px;
 }
-
-#color-select img {
-  cursor: pointer;
-  opacity: 0.3;
+#color-select {
+  display: flex;
 }
 
-#color-select input + img:hover {
+#color-select div {
+  cursor: pointer;
+  opacity: 0.3;
+  height: 36px;
+  width: 36px;
+  margin-left: 4px;
+}
+
+#color-select input + div:hover {
   opacity: 0.5;
 }
 
-#color-select input:checked + img {
+#color-select input:checked + div {
   opacity: 1;
 }
 
-#color-select input:checked + img:hover {
+#color-select input:checked + div:hover {
   opacity: 1;
 }
 
