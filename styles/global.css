@@ -9,10 +9,6 @@
    scrollbar-color: #222222 #424242;
 }
 
-.discord-color {
-  filter: invert(61%) sepia(15%) saturate(1458%) hue-rotate(194deg) brightness(99%) contrast(105%);
-}
-
 .ns {
   -webkit-user-select: none !important; /* Safari */
   -moz-user-select: none !important; /* Firefox */
@@ -33,6 +29,27 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.ddb-logo {
+  height: 80%;
+  width: 80%;
+}
+
+.rec-icon {
+  width: 90%;
+  height: 90%;
+}
+
+.primer-icon {
+  width: 80%;
+  height: 80%;
+}
+
+.discord-icon {
+  width: 90%;
+  height: 90%;
+  filter: brightness(0);
 }
 
 .btn {
@@ -122,11 +139,6 @@ nav {
   background-color: var(--accent-color);
 }
 
-.ddb-logo {
-  height: 85%;
-  width: 85%;
-}
-
 nav .btn {
   font-size: 14pt;
   padding: 16px;
@@ -136,8 +148,7 @@ nav .btn {
 
 #nav-discord img {
   margin: 0px 16px;
-  height: 36px;
-  background-size: cover;
+  height: 48px;
 }
 
 /* Message of the Day */
