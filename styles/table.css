@@ -110,6 +110,23 @@ td {
   height: 28px;
 }
 
+table .svg-icon {
+  height: 28px;
+  width: 28px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.deck-tags .icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.deck-tags .icon-wrap div {
+  margin-left: 4px;
+}
+
 /* Main Row Styles */
 .main {
   background-color: var(--backdrop-color);
@@ -136,10 +153,6 @@ td {
 
 .deck-tags {
   text-align: right;
-}
-
-.deck-tags img {
-  margin-left: 2px;
 }
 
 .deck-title span {

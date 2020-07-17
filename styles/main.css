@@ -38,6 +38,26 @@
   }
 }
 
+/* SVG styles */
+aside .svg-icon {
+  background-color: white;
+}
+
+.rec-icon {
+  width: 90%;
+  height: 90%;
+}
+
+.primer-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.discord-icon {
+  width: 80%;
+  height: 80%;
+}
+
 /* Aside Styles */
 aside {
   width: 250px;
@@ -71,6 +91,11 @@ aside li:last-child {
 
 aside li span {
   margin-left: 16px;
+}
+
+aside li .svg-icon {
+  width: 36px;
+  height: 36px;
 }
 
 #color-filters {

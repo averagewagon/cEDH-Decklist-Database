@@ -9,6 +9,10 @@
    scrollbar-color: #222222 #424242;
 }
 
+.discord-color {
+  filter: invert(61%) sepia(15%) saturate(1458%) hue-rotate(194deg) brightness(99%) contrast(105%);
+}
+
 .ns {
   -webkit-user-select: none !important; /* Safari */
   -moz-user-select: none !important; /* Firefox */
@@ -22,6 +26,13 @@
 
 .icon {
   width: 36px;
+}
+
+.svg-icon {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn {
@@ -104,9 +115,16 @@ nav {
   font-family: 'Patua One', sans-serif;
 }
 
-#logo img {
-  padding: 0px 12px;
+#logo .svg-icon {
   height: 40px;
+  width: 40px;
+  margin: 0 12px;
+  background-color: var(--accent-color);
+}
+
+.ddb-logo {
+  height: 85%;
+  width: 85%;
 }
 
 nav .btn {
@@ -119,6 +137,7 @@ nav .btn {
 #nav-discord img {
   margin: 0px 16px;
   height: 36px;
+  background-size: cover;
 }
 
 /* Message of the Day */
