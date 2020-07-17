@@ -11,7 +11,7 @@
     {% assign decks = (site.data.entries.decks | sort: 'updated') | reverse %}
     {% for d in decks %}
     
-      <tr class="main m{{d.id | escape }}"
+      <tr class="main hidden m{{d.id | escape }}"
         data-id="{{d.id | escape}}"
         data-section="{{d.section | escape}}"
         data-updated="{{d.updated | escape}}"
@@ -66,7 +66,7 @@
       <td class="deck-commander">
         <div class="card-wrap card{{d.commander | size | escape }}">
           {%- for x in d.commander -%}
-          <img class="card" src="./img/card.png" alt="{{x | escape }}" title="{{x | escape }}"/>
+          <img class="card" src="" alt="{{x | escape }}" title="{{x | escape }}"/>
           {% endfor %}
         </div>
       </td>
