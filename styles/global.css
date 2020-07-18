@@ -214,6 +214,7 @@ header {
   #logo {
     width: auto;
     margin-right: 8px;
+    height: 100%;
   }
   
   #logo h1 {
