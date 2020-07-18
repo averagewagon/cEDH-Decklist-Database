@@ -151,7 +151,7 @@
    */
   function toggleSub() {
     let entryId = ".s" + this.dataset.id;
-    if (!qs(entryId).classList.toggle("hidden") && window.innerWidth >= 1200) {
+    if (!qs(entryId).classList.toggle("hidden")) {
       let cards = qsa(entryId + " .card");
       for (let i = 0; i < cards.length; i++) {
         let card = cards[i].title;
