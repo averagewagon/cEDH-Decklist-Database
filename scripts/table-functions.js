@@ -176,9 +176,11 @@
   function setCardSources(cardInfo) {
     let cardName = cardInfo.name;
     let imageSrc = cardInfo.image_uris.normal;
-    let images = qsa(".card-wrap [title=\"" + cardName + "\"]");
-    for (let i = 0; i < images.length; i++) {
-      images[i].src = imageSrc;
+    if (window.innerWidth >= 1200) {
+      let images = qsa(".card-wrap [title=\"" + cardName + "\"]");
+      for (let i = 0; i < images.length; i++) {
+        images[i].src = imageSrc;
+      }
     }
     
     let mobileNames = qsa(".d-commanders [title=\"" + cardName + "\"]");
