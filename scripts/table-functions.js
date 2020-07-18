@@ -22,9 +22,6 @@
   // Initialization function
   function init() {
     prepareListeners();
-    applyFilters();
-    sortTable();
-    switchDescription();
   }
   
   /** Adds a click listener for all the clickable elements
