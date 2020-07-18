@@ -123,14 +123,14 @@ nav {
 #logo {
   display: flex;
   align-items: center;
-  width: 220px;
+  width: 300px;
 }
 
 #logo h1 {
   font-size: 13pt;
   margin: 0;
-  font-weight: normal;
-  font-family: 'Patua One', sans-serif;
+  font-family: sans-serif;
+  font-weight: bold;
 }
 
 #logo .svg-icon {
