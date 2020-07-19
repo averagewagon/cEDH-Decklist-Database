@@ -123,11 +123,18 @@ nav {
 #logo {
   display: flex;
   align-items: center;
-  width: 300px;
+  width: 400px;
 }
 
 #logo h1 {
   font-size: 12pt;
+  margin: 0;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+#logo span {
+  font-size: 20pt;
   margin: 0;
   font-family: sans-serif;
   font-weight: bold;
@@ -217,7 +224,7 @@ header {
     height: 100%;
   }
   
-  #logo h1 {
+  #logo h1, #logo span {
     display: none;
   }
   
