@@ -1,0 +1,17 @@
+#content {
+  flex-direction: column;
+  align-items: center;
+}
+
+#content h1 {
+  font-size: 38pt;
+}
+
+#content h2 {
+  font-size: 28pt;
+}
+
+#content a {
+  color: skyblue;
+  font-size: 20pt;
+}
