@@ -24,7 +24,7 @@
 aside {
   overflow: auto;
   flex-grow: 1;
-  min-width: 400px;
+  min-width: 450px;
   padding: 16px;
   background-color: var(--secondary-color);
 }
