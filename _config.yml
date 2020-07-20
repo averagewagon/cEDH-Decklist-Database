@@ -1,4 +1,4 @@
-collections_dir: _markdown
+collections_dir: _includes/markdown
 collections:
   updates:
     output: true
