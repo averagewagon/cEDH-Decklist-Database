@@ -4,12 +4,12 @@ layout: none
 <!DOCTYPE html>
 <!--
 07/15/2020
-Edit page for the cDDB
+Request page for the cDDB
 -->
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Edit a Deck - cEDH Decklist Database</title>
+  <title>Make a Request - cEDH Decklist Database</title>
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A collection of Magic: The Gathering (MTG) decks from the Competitive EDH Format." />
@@ -17,7 +17,7 @@ Edit page for the cDDB
   
   <link rel="icon" type="image/ico" href="favicon.ico">
   <link rel="stylesheet" type="text/css" media="screen" href="/styles/global.css" />
-  <link rel="stylesheet" type="text/css" media="screen" href="/styles/edit.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="/styles/request.css" />
   
   <!-- ReCaptcha -->
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -32,7 +32,7 @@ Edit page for the cDDB
         <aside>
           <div>
             {% capture content %}
-            {%- include markdown/edit.md -%}
+            {%- include markdown/request.md -%}
             {% endcapture %}
             {{ content | escape | markdownify | replace: "id=", "data-content-id="}}
           </div>
@@ -109,6 +109,6 @@ Edit page for the cDDB
   </script>
 
   <!-- DDB Scripts -->
-  <script src="scripts/edits.js"></script>
+  <script src="scripts/request.js"></script>
 </body>
 </html>
