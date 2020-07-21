@@ -1,8 +1,40 @@
-<html>
-  <head>
-    <title></title>
-    <meta content="">
-    <style></style>
-  </head>
-  <body></body>
+---
+layout: none
+---
+<!DOCTYPE html>
+<!--
+07/07/2020
+Login page
+-->
+<html lang="en">
+<head>
+  {% include head.html %}
+  <title>Log In - cEDH Decklist Database</title>
+  
+  <link rel="stylesheet" type="text/css" media="screen" href="/console/styles/login.css" />
+
+  <!-- Page Scripts -->
+  <!--
+  <script src="/scripts/about.js"></script>
+  -->
+</head>
+
+<body>
+  <div id="wrapper">
+    {% include console-navbar.html %}
+  
+    <div id="content">
+      <aside>
+      </aside>
+      <section>
+        <div id="firebaseUI">
+        </div>
+      </section>
+    </div>
+  </div>
+  
+  {% include firebase.html %}
+  <script src="/console/scripts/firebaseui.js"></script>
+  <script src="/console/scripts/login.js"></script>
+</body>
 </html>

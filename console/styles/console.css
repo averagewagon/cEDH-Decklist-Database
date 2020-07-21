@@ -1,0 +1,32 @@
+@media (max-width: 1200px) {
+  #content {
+    flex-direction: column;
+  }
+  
+  aside, section {
+    width: auto !important;
+    overflow: visible !important;
+    min-width: auto !important;
+  }
+  
+  section {
+    margin: 4px !important;
+  }
+}
+
+#content {
+}
+
+aside {
+  overflow: auto;
+  flex-grow: 1;
+  min-width: 450px;
+  padding: 16px;
+  background-color: var(--secondary-color);
+}
+
+section {
+  overflow: auto;
+  padding: 0 16px;
+  flex-grow: 1;
+}

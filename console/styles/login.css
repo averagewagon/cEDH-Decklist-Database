@@ -1,6 +1,6 @@
 @media (max-width: 1200px) {
   #content {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   
   aside, section {
@@ -17,7 +17,7 @@
 #content {
 }
 
-#nav-about {
+#nav-login {
   background-color: var(--darker);
 }
 
@@ -31,6 +31,9 @@ aside {
 
 section {
   overflow: auto;
-  padding: 0 16px;
+  padding: 16px 16px;
   flex-grow: 1;
+}
+
+#login-ui {
 }
