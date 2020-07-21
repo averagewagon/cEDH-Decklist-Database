@@ -12,8 +12,7 @@
 
 .bw, .bu, .bb, .br, .bg {
   border-radius: 50%;
-  background-color: white;
-  filter: saturate(300%);
+  font-family: mono;
 }
 
 .bw {
@@ -22,18 +21,22 @@
 
 .bu {
   background-color: rgb(14, 104, 172);
+  filter: saturate(200%);
 }
 
 .bb {
-  background-color: rgb(105,105,105);
+  background-color: rgb(153,50,204);
+  filter: brightness(150%) saturate(50%);
 }
 
 .br {
   background-color: rgb(211, 32, 42);
+  filter: saturate(150%);
 }
 
 .bg {
   background-color: rgb(0, 115, 62);
+  filter: saturate(300%);
 }
 
 .ns {
