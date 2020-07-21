@@ -12,7 +12,7 @@
 
 .bw, .bu, .bb, .br, .bg {
   border-radius: 50%;
-  font-family: mono;
+  font-family: monospace;
 }
 
 .bw {
