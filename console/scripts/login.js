@@ -9,9 +9,10 @@ const uiParams = {
     "signInSuccessWithAuthResult": function(authResult, redirectUrl) {
       try {
         firebase.auth().setPersistence(firebase.auth.Auth.Persistence.LOCAL);
-        let user = authResult.user;
+        let user = firebase.auth().currentUser;
         if (!user.emailVerified) {
           user.sendEmailVerification().then(() => {
+            alert("You have been sent a verification email. Please use it to verify your email address, then log in again.");
             window.location.replace("/console/logout.html");
             return false;
           }).catch(function(error) {
@@ -19,8 +20,9 @@ const uiParams = {
             alert("Failed to send a verification email.");
             return false;
           });
+        } else {
+          return true;
         }
-        return true;
       } catch (error) {
         alert("Something went wrong");
         console.error(error);
