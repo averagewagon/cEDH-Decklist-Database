@@ -10,6 +10,31 @@
    scrollbar-color: #222222 #424242;
 }
 
+.bw, .bu, .bb, .br, .bg {
+  border-radius: 50%;
+  background-color: white;
+}
+
+.bw {
+  background-color: rgb(0, 115, 62);
+}
+
+.bu {
+  background-color: rgb(14, 104, 172);
+}
+
+.bb {
+  background-color: rgb(211, 32, 42);
+}
+
+.br {
+  background-color: rgb(249, 250, 244);
+}
+
+.bg {
+  background-color: rgb(21, 11, 0);
+}
+
 .ns {
   -webkit-user-select: none !important; /* Safari */
   -moz-user-select: none !important; /* Firefox */
