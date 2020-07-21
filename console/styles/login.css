@@ -73,3 +73,8 @@ form button {
   background-color: var(--accent-color);
   color: black;
 }
+
+form a {
+  color: skyblue;
+  margin-bottom: 8px;
+}
