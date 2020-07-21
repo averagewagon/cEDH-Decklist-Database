@@ -1,7 +1,4 @@
-window.addEventListener("load", init);
-
-// Initialization function
-function init() {
+function authCheck() {
   firebase.auth().onAuthStateChanged(user => {
      if (!user) {
       alert("You aren't logged in. You must log in to make any changes.");
@@ -12,6 +9,7 @@ function init() {
       } else {
         id("nav-login").innerText = user.email;
         id("nav-login").href = "/console/logout.html";
+        start();
       }
     }
   });

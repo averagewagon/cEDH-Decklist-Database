@@ -18,10 +18,6 @@
 #content {
 }
 
-#nav-changelog {
-  background-color: var(--darker);
-}
-
 aside {
   overflow: auto;
   flex-grow: 1;

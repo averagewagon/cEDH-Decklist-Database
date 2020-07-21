@@ -18,7 +18,7 @@
 #content {
 }
 
-#nav-changelog {
+#nav-modify {
   background-color: var(--darker);
 }
 
@@ -34,4 +34,4 @@ section {
   overflow: auto;
   padding: 16px 16px;
   flex-grow: 1;
-}
+} 
