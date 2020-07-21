@@ -35,5 +35,40 @@ section {
   flex-grow: 1;
 }
 
-#login-ui {
+#firebaseUI {
+  max-width: 600px;
+}
+
+#firebaseUI div {
+  display: flex;
+  flex-direction: column;
+}
+
+form input::placeholder, form textarea::placeholder {
+  opacity: .75;
+  font-style: italic;
+  color: white;
+}
+
+form input, form select, form button {
+  background-color: var(--darker);
+  color: white;
+  border: none;
+}
+
+form input {
+  font-size: 14pt;
+  padding: 8px;
+}
+
+form label {
+  font-size: 16pt;
+}
+
+form button {
+  font-size: 14pt;
+  padding: 8px 0;
+  margin-bottom: 8px;
+  background-color: var(--accent-color);
+  color: black;
 }
