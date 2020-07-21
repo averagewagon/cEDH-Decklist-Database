@@ -2,12 +2,14 @@ window.addEventListener("load", init);
 
 // Initialization function
 function init() {
-  var user = firebase.auth().currentUser;
-  if (!user) {
-    window.location.replace("/console/login.html");
-  } else {
-    id("nav-login").innerText = currentUser.email;
-  }
+  firebase.auth().onAuthStateChanged(user => {
+     if (!user) {
+      alert("You aren't logged in. You must log in to make any changes.");
+    } else {
+      id("nav-login").innerText = user.email;
+      id("nav-login").href = "/console/logout.html";
+    }
+  });
 }
 
 /* HELPER FUNCTIONS */
