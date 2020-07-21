@@ -6,8 +6,13 @@ function init() {
      if (!user) {
       alert("You aren't logged in. You must log in to make any changes.");
     } else {
-      id("nav-login").innerText = user.email;
-      id("nav-login").href = "/console/logout.html";
+      if (!user.emailVerified) {
+        alert("Please verify your email address. If you haven't received a verification email, log in again to resend it.");
+        window.location.replace("/console/logout.html");
+      } else {
+        id("nav-login").innerText = user.email;
+        id("nav-login").href = "/console/logout.html";
+      }
     }
   });
 }
