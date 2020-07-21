@@ -140,8 +140,14 @@ section {
   flex-grow: 1;
   font-size: 14pt;
   padding: 0 8px;
-  color: black;
-  background-color: lightgray;
+  color: white;
+  border: none;
+  background-color: var(--darker);
+}
+
+#db-search::placeholder {
+  opacity: .9;
+  color: white;
 }
 
 #db-select, #db-sort {
