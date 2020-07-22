@@ -6,5 +6,5 @@ layout: none
 window.addEventListener("load", authCheck);
 
 function start() {
-  alert("it worked!");
+  console.log("it worked!");
 }
