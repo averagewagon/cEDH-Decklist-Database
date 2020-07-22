@@ -23,15 +23,13 @@
         alert("Please complete the reCaptcha.");
       } else {
         let data = scrapeForm();
-        var makeRequest = firebase.functions().httpsCallable("makeRequest");
-        makeRequest(data).then((result) => {
-          showResults(result);
-        }).catch(showResults);
+        console.log(data);
+        //TODO: Migrate from Firebase to AWS Amplify
       }
     }
   }
   
-  /** Converts the form into a JSON object that can be submitted to Firebase
+  /** Converts the form into a JSON object
    */
   function scrapeForm() {
     let data = {};
@@ -43,23 +41,6 @@
     
     data.recaptcha = grecaptcha.getResponse();
     return data;
-  }
-  
-  /** Gets the result from Firebase and puts it on the site
-   */
-  function showResults(result) {
-    if (result && result.data) {
-      if (result.data.success) {
-        alert(result.data.msg);
-        window.location.href = "index.html";
-      } else {
-        console.error(result);
-        alert(result.data.msg);
-      }
-    } else {
-      console.error(result);
-      alert(result);
-    }
   }
   
   /* HELPER FUNCTIONS */
