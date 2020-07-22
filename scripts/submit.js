@@ -33,15 +33,13 @@
         alert("Please complete the reCaptcha.");
       } else {
         let data = scrapeForm();
-        var submitDeck = firebase.functions().httpsCallable("submitDeck");
-        submitDeck(data).then((result) => {
-          showResults(result);
-        }).catch(showResults);
+        console.log(data);
+        //TODO: Transfer to AWS Amplify for Submissions
       }
     }
   }
   
-  /** Converts the form into a JSON object that can be submitted to Firebase
+  /** Converts the form into a JSON object
    */
   function scrapeForm() {
     let wrap = {};
@@ -85,23 +83,6 @@
     
     wrap.recaptcha = grecaptcha.getResponse();
     return wrap;
-  }
-  
-  /** Gets the result from Firebase and puts it on the site
-   */
-  function showResults(result) {
-    if (result && result.data) {
-      if (result.data.success) {
-        alert(result.data.msg);
-        window.location.href = "index.html";
-      } else {
-        console.error(result);
-        alert(result.data.msg);
-      }
-    } else {
-      console.error(result);
-      alert(result);
-    }
   }
   
   /** Activates or deactivates the partner text box
