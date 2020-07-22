@@ -11,15 +11,8 @@ const uiParams = {
         firebase.auth().setPersistence(firebase.auth.Auth.Persistence.LOCAL);
         let user = firebase.auth().currentUser;
         if (!user.emailVerified) {
-          user.sendEmailVerification().then(() => {
-            alert("You have been sent a verification email. Please use it to verify your email address, then log in again.");
-            window.location.replace("/console/logout.html");
-            return false;
-          }).catch(function(error) {
-            console.error(error);
-            alert("Failed to send a verification email.");
-            return false;
-          });
+          alert("You should receive a verification email within a few minutes. Please use it to verify your email address, then log in again.");
+          window.location.replace("/console/logout.html");
         } else {
           return true;
         }
