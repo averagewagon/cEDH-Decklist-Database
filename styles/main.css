@@ -38,11 +38,6 @@
   }
 }
 
-/* SVG styles */
-aside .svg-icon {
-  background-color: white;
-}
-
 /* Aside Styles */
 aside {
   width: 250px;
@@ -85,6 +80,9 @@ aside li span {
 aside li .svg-icon {
   width: 36px;
   height: 36px;
+  min-width: 36px;
+  min-height: 36px;
+  background-color: white;
 }
 
 #color-filters {
