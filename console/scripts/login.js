@@ -19,13 +19,13 @@ async function init() {
     .then(response => {
       set("jwt", response.data.jwt);
       set("username", response.data.username);
-      set("expire", response.data.expire);
+      set("expire", response.data.exp);
       window.href.replace("/console");
     });
   } catch (error) {
     clear();
     console.error(error);
-    alert("There was an error while signing in. Please try again. If this problem persists, contact Average Dragon.");
+    alert("There was an error while signing in.");
     window.href.replace("/console");
   }
 }
