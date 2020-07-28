@@ -22,7 +22,7 @@ function init() {
 }
 
 function warn() {
-  alert("Your session will expire in 5 minutes. If you would like to continue, please save your changes and log in again.");
+  alert("Your session will expire in 5 minutes. If you would like to continue, please save your changes, log out, and log in again.");
 }
 
 function expire() {
