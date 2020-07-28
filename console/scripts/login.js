@@ -11,19 +11,17 @@ async function init() {
     
     let resp = fetch(API_URL, {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({ "jwt": jwt })
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ "jwt": jwt, "method": "LOGIN" })
     })
+    .then(checkStatus)
     .then(response => response.json())
-    .then(data => {
-      set("jwt", jwt);
-      set("username", data["cognito:username"]);
-      set("expire", data["exp"]);
+    .then(response => {
+      set("jwt", response.data.jwt);
+      set("username", response.data.username);
+      set("expire", response.data.expire);
       window.href.replace("/console");
     });
-    
   } catch (error) {
     clear();
     console.error(error);
@@ -88,14 +86,13 @@ function qsa(query) {
   * Helper function to return the response's result text if successful, otherwise
   * returns the rejected Promise result with an error status and corresponding text
   * @param {object} response - response to check for success/error
-  * @returns {object} - valid result text if response was successful, otherwise rejected
-  *                     Promise result
+  * @returns {object} - valid result if response was successful, otherwise error
   */
 function checkStatus(response) {
   if (response.status >= 200 && response.status < 300) {
-    return response.text();
+    return response;
   } else {
-    console.log(response);
-    return Promise.reject(new Error(response.status + ": " + response.statusText));
+    console.error(response);
+    throw new Error(response.status + ": " + response.statusText);
   }
 }
