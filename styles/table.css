@@ -109,12 +109,16 @@ td {
 .d-icon {
   height: 28px;
   width: 28px;
+  min-height: 28px;
+  min-width: 28px;
   margin-right: 4px;
 }
 
 .svg-icon {
   height: 28px;
   width: 28px;
+  min-height: 28px;
+  min-width: 28px;
   background-color: white;
   border-radius: 50%;
 }
