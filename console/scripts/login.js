@@ -17,11 +17,10 @@ async function init() {
     .then(response => {
       response.json().then(info => {
         if (checkStatus(response)) {
-          console.log(info);
           set("jwt", info.data.jwt);
           set("username", info.data.username);
           set("expire", info.data.exp);
-          window.href.replace("/console");
+          window.location.replace("/console");
         } else {
           console.error(info);
           throw new Error(response.status + ": " + response.statusText
@@ -33,7 +32,7 @@ async function init() {
     clear();
     console.error(error.message);
     alert(error.message);
-    window.href.replace("/console");
+    window.location.replace("/console");
   }
 }
 
