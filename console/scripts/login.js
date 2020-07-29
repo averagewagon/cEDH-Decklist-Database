@@ -15,7 +15,7 @@ async function init() {
       body: JSON.stringify({ "jwt": jwt, "method": "LOGIN" })
     })
     .then(response => {
-      info = response.json();
+      let info = response.json();
       if (checkStatus(response)) {
         set("jwt", response.info.jwt);
         set("username", response.info.username);
