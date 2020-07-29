@@ -15,17 +15,18 @@ async function init() {
       body: JSON.stringify({ "jwt": jwt, "method": "LOGIN" })
     })
     .then(response => {
-      let info = response.json();
-      if (checkStatus(response)) {
-        set("jwt", response.info.jwt);
-        set("username", response.info.username);
-        set("expire", response.info.exp);
-        window.href.replace("/console");
-      } else {
-        console.error(info);
-        throw new Error(response.status + ": " + response.statusText
-          + "\n" + info.message);
-      }
+      let info = response.json().then({
+        if (checkStatus(response)) {
+          set("jwt", response.info.jwt);
+          set("username", response.info.username);
+          set("expire", response.info.exp);
+          window.href.replace("/console");
+        } else {
+          console.error(info);
+          throw new Error(response.status + ": " + response.statusText
+            + "\n" + info.message);
+        }
+      });
     });
   } catch (error) {
     clear();
