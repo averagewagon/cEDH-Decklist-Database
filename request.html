@@ -37,11 +37,12 @@ Request page for the cDDB
               <label>What request would you like to make?</label>
               <div class="">
                 <div class="subtext">If your issue is not in the dropdown, please join our Discord server, which is linked in the top right.</div>
-                <select id="edit-select">
+                <select id="category-select">
                   <option value="add_list">Add a new list to a deck</option>
                   <option value="modify_info">Modify a deck's current information</option>
                   <option value="add_discord">Change a deck-specific Discord server</option>
                   <option value="deprecate_deck">Mark a deck as deprecated</option>
+                  <option value="other">Other</option>
                 </select>
               </div>
               <div class="flex-column">
@@ -50,8 +51,8 @@ Request page for the cDDB
               </div>
               
               <div class="flex-column">
-                <label for="deck-title">Deck Title</label>
-                <input autocomplete="off" required type="text" id="deck-title" maxlength="200" placeholder="The title shown to the right of the deck's colors"/>
+                <label for="deck-name">Deck Name</label>
+                <input autocomplete="off" required type="text" id="deck-name" maxlength="200" placeholder="The title shown to the right of the deck's colors"/>
               </div>
               
               <div class="flex-column">

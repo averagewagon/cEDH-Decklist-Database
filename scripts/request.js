@@ -16,15 +16,22 @@
   
   /** Makes sure the reCaptcha is checked
    */
-  function submitForm(event) {
+  async function submitForm(event) {
     event.preventDefault();
     if (confirm("Are you sure you want to make this request?")) {
       if (!grecaptcha.getResponse()) {
         alert("Please complete the reCaptcha.");
       } else {
-        let data = scrapeForm();
-        console.log(data);
-        //TODO: Migrate from Firebase to AWS Amplify
+        let body = scrapeForm();
+        console.log(body);
+        let result = await sendToDDB(body);
+        if (result.success) {
+          alert(result.message);
+          window.location.replace("/");
+        } else {
+          console.error(result.message);
+          alert(" There was an error:\n" + result.message);
+        }
       }
     }
   }
@@ -32,24 +39,41 @@
   /** Converts the form into a JSON object
    */
   function scrapeForm() {
-    let data = {};
-    data.info = {};
-    data.info.action = id("edit-select").value;
-    data.info.request = id("request-title").value;
-    data.info.deck = id("deck-title").value;
-    data.info.description = id("description").value;
+    let body = {};
+    body.data = {};
+    body.data.category = id("category-select").value;
+    body.data.title = id("request-title").value;
+    body.data.deck = id("deck-name").value;
+    body.data.description = id("description").value;
     
-    data.recaptcha = grecaptcha.getResponse();
-    return data;
+    body.rc = grecaptcha.getResponse();
+    return body;
   }
   
   /* HELPER FUNCTIONS */
+  const API_URL = "https://3rxytinw28.execute-api.us-west-2.amazonaws.com/default/DDB-API-Function";
   
-  /** Prints and error's content to the webpage
-  * @param {string} info - the error information that should be passed
-  */
-  function printError(info) {
-    console.error(info);
+  // Sends the body to the DDB API
+  async function sendToDDB(body) {
+    try {
+      let response;
+      let result = fetch(API_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body)
+      })
+      .then(resp => {
+        response = resp;
+        return response.json();
+      })
+      .then(info => {
+        info.success = (response.status >= 200 && response.status < 300);
+        return info;
+      });
+      return result;
+    } catch (error) {
+      return { success: false, message: error.message };
+    }
   }
 
   /**
@@ -76,21 +100,5 @@
    */
   function qsa(query) {
     return document.querySelectorAll(query);
-  }
-
-  /**
-   * Helper function to return the response's result text if successful, otherwise
-   * returns the rejected Promise result with an error status and corresponding text
-   * @param {object} response - response to check for success/error
-   * @returns {object} - valid result text if response was successful, otherwise rejected
-   *                     Promise result
-   */
-  function checkStatus(response) {
-    if (response.status >= 200 && response.status < 300) {
-      return response.text();
-    } else {
-      console.log(response);
-      return Promise.reject(new Error(response.status + ": " + response.statusText));
-    }
   }
 })();
