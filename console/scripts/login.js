@@ -25,7 +25,6 @@ async function init() {
         console.error(info);
         throw new Error(response.status + ": " + response.statusText
           + "\n" + info.message);
-        );
       }
     });
   } catch (error) {
