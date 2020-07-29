@@ -17,9 +17,10 @@ async function init() {
     .then(response => {
       response.json().then(info => {
         if (checkStatus(response)) {
-          set("jwt", response.info.jwt);
-          set("username", response.info.username);
-          set("expire", response.info.exp);
+          console.log(info);
+          set("jwt", info.data.jwt);
+          set("username", info.data.username);
+          set("expire", info.data.exp);
           window.href.replace("/console");
         } else {
           console.error(info);
