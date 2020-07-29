@@ -11,6 +11,7 @@ function init() {
     window.setTimeout(warn, warnTime);
     let expireTime = (get("expire") - getTime() - 10) * 1000;
     window.setTimeout(expire, expireTime);
+    console.log(expireTime);
     
     id("nav-account").innerText = get("username") + " - Log Out";
     id("nav-account").href = LOGOUT;
