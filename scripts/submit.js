@@ -54,7 +54,7 @@
     let body = {};
     let data = {};
     data.section = id("table-select").value;
-    data.name = id("deck-title").value;
+    data.title = id("deck-title").value;
     data.colors = scrapeColors();
     data.commander = scrapeCommanders();
     data.description = id("description").value;
