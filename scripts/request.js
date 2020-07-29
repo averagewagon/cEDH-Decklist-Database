@@ -23,7 +23,6 @@
         alert("Please complete the reCaptcha.");
       } else {
         let body = scrapeForm();
-        console.log(body);
         let result = await sendToDDB(body);
         if (result.success) {
           alert(result.message);

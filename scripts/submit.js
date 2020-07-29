@@ -32,9 +32,18 @@
       if (!grecaptcha.getResponse()) {
         alert("Please complete the reCaptcha.");
       } else {
-        let data = scrapeForm();
-        console.log(data);
-        //TODO: Transfer to AWS Amplify for Submissions
+        let body = scrapeForm();
+        let result = await sendToDDB(body);
+        if (result.success) {
+          alert(result.message);
+          window.location.replace("/");
+        } else {
+          if (result.data) {
+            console.error(result.data);
+          }
+          console.error(result.message);
+          alert(" There was an error:\n" + result.message);
+        }
       }
     }
   }
@@ -54,6 +63,7 @@
     
     body.data = data;
     body.recaptcha = grecaptcha.getResponse();
+    body.method = "SUBMIT_DECK";
     return body;
   }
   
@@ -148,12 +158,29 @@
   }
   
   /* HELPER FUNCTIONS */
+  const API_URL = "https://3rxytinw28.execute-api.us-west-2.amazonaws.com/default/DDB-API-Function";
   
-  /** Prints and error's content to the webpage
-  * @param {string} info - the error information that should be passed
-  */
-  function printError(info) {
-    console.error(info);
+  // Sends the body to the DDB API
+  async function sendToDDB(body) {
+    try {
+      let response;
+      let result = fetch(API_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body)
+      })
+      .then(resp => {
+        response = resp;
+        return response.json();
+      })
+      .then(info => {
+        info.success = (response.status >= 200 && response.status < 300);
+        return info;
+      });
+      return result;
+    } catch (error) {
+      return { success: false, message: error.message };
+    }
   }
 
   /**
@@ -180,21 +207,5 @@
    */
   function qsa(query) {
     return document.querySelectorAll(query);
-  }
-
-  /**
-   * Helper function to return the response's result text if successful, otherwise
-   * returns the rejected Promise result with an error status and corresponding text
-   * @param {object} response - response to check for success/error
-   * @returns {object} - valid result text if response was successful, otherwise rejected
-   *                     Promise result
-   */
-  function checkStatus(response) {
-    if (response.status >= 200 && response.status < 300) {
-      return response.text();
-    } else {
-      console.log(response);
-      return Promise.reject(new Error(response.status + ": " + response.statusText));
-    }
   }
 })();
