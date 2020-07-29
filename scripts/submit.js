@@ -42,47 +42,66 @@
   /** Converts the form into a JSON object
    */
   function scrapeForm() {
-    let wrap = {};
-    wrap.info = {};
-    let data = wrap.info;
+    let body = {};
+    let data = {};
     data.section = id("table-select").value;
     data.name = id("deck-title").value;
-    data.colors = [];
-    let colors = qsa("#color-select input");
-    for (let i = 0; i < colors.length; i++) {
-      let c = colors[i];
+    data.colors = scrapeColors();
+    data.commander = scrapeCommanders();
+    data.description = id("description").value;
+    data.discord = scrapeDiscord();
+    data.decklists = scrapeDecklists();
+    
+    body.data = data;
+    body.recaptcha = grecaptcha.getResponse();
+    return body;
+  }
+  
+  /** Helpers that scrape the form **/
+  function scrapeColors() {
+    const colors = [];
+    let colorElems = qsa("#color-select input");
+    for (let i = 0; i < colorElems.length; i++) {
+      let c = colorElems[i];
       if (c.checked) {
-        data.colors.push(c.id.charAt(c.id.length - 1));
+        colors.push(c.id.charAt(c.id.length - 1));
       }
     }
-    data.commander = [];
-    data.commander.push(id("commander").value);
+    return colors;
+  }
+  
+  function scrapeCommanders() {
+    const commanders = [];
+    commanders.push(id("commander").value);
     if (id("two-commanders").checked) {
-      data.commander.push(id("commander2").value);
+      commanders.push(id("commander2").value);
     }
-    data.description = id("description").value;
-
-    if (id("has-discord").checked) {
-      data["discord-title"] = id("discord-title").value;
-      data["discord-link"] = id("discord-link").value;
-    } else {
-      data["discord-title"] = "";
-      data["discord-link"] = "";
-    }
-    
-    data.lists = [];
+    return commanders;
+  }
+  
+  function scrapeDecklists() {
+    const decklists = [];
     let lists = qsa(".list-entry");
     for (let i = 0; i < lists.length; i++) {
       let list = lists[i];
       let d = {};
       d.primer = list.querySelector(".has-primer").checked;
-      d.description = list.querySelector(".list-title").value;
+      d.title = list.querySelector(".list-title").value;
       d.link = list.querySelector(".list-link").value;
-      data.lists.push(d);
+      decklists.push(d);
     }
-    
-    wrap.recaptcha = grecaptcha.getResponse();
-    return wrap;
+    return decklists;
+  }
+  
+  function scrapeDiscord() {
+    if (id("has-discord").checked) {
+      const discord = {};
+      discord.title = id("discord-title").value;
+      discord.link = id("discord-link").value;
+      return discord;
+    } else {
+      return null;
+    }
   }
   
   /** Activates or deactivates the partner text box
