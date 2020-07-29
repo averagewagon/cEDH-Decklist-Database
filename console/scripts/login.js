@@ -20,7 +20,7 @@ async function init() {
           set("jwt", info.data.jwt);
           set("username", info.data.username);
           set("expire", info.data.exp);
-          window.location.replace("/console");
+          window.location.replace("/console/");
         } else {
           console.error(info);
           throw new Error(response.status + ": " + response.statusText
@@ -32,7 +32,7 @@ async function init() {
     clear();
     console.error(error.message);
     alert(error.message);
-    window.location.replace("/console");
+    window.location.replace("/console/");
   }
 }
 
