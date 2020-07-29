@@ -30,6 +30,8 @@ function warn() {
 
 function expire() {
   clear();
+  id("motd").innerText = "You are not logged in. Log in to access curator controls.";
+  qs("header").backgroundColor = "pink";
   id("nav-account").href = LOGIN;
   id("nav-account").innerText = "Curator Login";
   alert("Your session has expired. Your changes will not be saved. Please log in again to continue");
