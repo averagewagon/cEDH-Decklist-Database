@@ -14,18 +14,24 @@ async function init() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ "jwt": jwt, "method": "LOGIN" })
     })
-    .then(checkStatus)
-    .then(response => response.json())
     .then(response => {
-      set("jwt", response.data.jwt);
-      set("username", response.data.username);
-      set("expire", response.data.exp);
-      window.href.replace("/console");
+      info = response.json();
+      if (checkStatus(response)) {
+        set("jwt", response.info.jwt);
+        set("username", response.info.username);
+        set("expire", response.info.exp);
+        window.href.replace("/console");
+      } else {
+        console.error(info);
+        throw new Error(response.status + ": " + response.statusText
+          + "\n" + info.message);
+        );
+      }
     });
   } catch (error) {
     clear();
-    console.error(error);
-    alert("There was an error while signing in.");
+    console.error(error.message);
+    alert(error.message);
     window.href.replace("/console");
   }
 }
@@ -82,17 +88,6 @@ function qsa(query) {
   return document.querySelectorAll(query);
 }
 
-/**
-  * Helper function to return the response's result text if successful, otherwise
-  * returns the rejected Promise result with an error status and corresponding text
-  * @param {object} response - response to check for success/error
-  * @returns {object} - valid result if response was successful, otherwise error
-  */
 function checkStatus(response) {
-  if (response.status >= 200 && response.status < 300) {
-    return response;
-  } else {
-    console.error(response);
-    throw new Error(response.status + ": " + response.statusText);
-  }
+  return (response.status >= 200 && response.status < 300);
 }
