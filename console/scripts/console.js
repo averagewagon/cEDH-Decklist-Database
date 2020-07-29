@@ -21,13 +21,33 @@
     const result = await sendToDDB(body);
     if (result.success) {
       console.log(result.message);
-      console.log(result.data);
+      const requests = result.data;
     } else {
       if (result.data) {
         console.error(result.data);
       }
       console.error(result.message);
       alert(" There was an error while fetching requests:\n" + result.message);
+    }
+  }
+  
+  async function deleteRequest(id) {
+    const jwt = get("jwt");
+    const body = {
+      "jwt": jwt,
+      "method": "DELETE_REQUEST",
+      "id": id
+    };
+    const result = await sendToDDB(body);
+    if (result.success) {
+      console.log(result.message);
+      console.log(result.data);
+    } else {
+      if (result.data) {
+        console.error(result.data);
+      }
+      console.error(result.message);
+      alert(" There was an error while deleting that request:\n" + result.message);
     }
   }
   
