@@ -62,7 +62,7 @@
     data.decklists = scrapeDecklists();
     
     body.data = data;
-    body.recaptcha = grecaptcha.getResponse();
+    body.rc = grecaptcha.getResponse();
     body.method = "SUBMIT_DECK";
     return body;
   }
