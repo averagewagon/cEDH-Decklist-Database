@@ -47,6 +47,7 @@
     body.data.description = id("description").value;
     
     body.rc = grecaptcha.getResponse();
+    body.method = "SUBMIT_REQUEST";
     return body;
   }
   
