@@ -29,6 +29,9 @@
           alert(result.message);
           window.location.replace("/");
         } else {
+          if (result.data) {
+            console.error(result.data);
+          }
           console.error(result.message);
           alert(" There was an error:\n" + result.message);
         }
