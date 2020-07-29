@@ -2,6 +2,8 @@
   
 const LOGIN = "https://cedh-decklist-database.auth.us-west-2.amazoncognito.com/login?client_id=41o965ca7urqoiutm603p7khqc&response_type=token&scope=openid&redirect_uri=https://cedh-decklist-database.com/console/login.html";
 const LOGOUT = "https://cedh-decklist-database.auth.us-west-2.amazoncognito.com/logout?client_id=41o965ca7urqoiutm603p7khqc&logout_uri=https://cedh-decklist-database.com/console/logout.html";
+const API_URL = "https://3rxytinw28.execute-api.us-west-2.amazonaws.com/default/DDB-API-Function";
+
 window.addEventListener("load", init);
 
 // Initialization function
@@ -11,14 +13,14 @@ function init() {
     window.setTimeout(warn, warnTime);
     let expireTime = (get("expire") - getTime() - 10) * 1000;
     window.setTimeout(expire, expireTime);
-    console.log(expireTime);
     
     id("nav-account").innerText = get("username") + " - Log Out";
     id("nav-account").href = LOGOUT;
   } else {
     clear();
+    id("motd").innerText = "You are not logged in. Log in to access curator controls.";
+    qs("header").backgroundColor = "pink";
     id("nav-account").href = LOGIN;
-    console.log("failure");
   } 
 }
 
