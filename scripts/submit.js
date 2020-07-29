@@ -26,7 +26,7 @@
   
   /** Makes sure the reCaptcha is checked
    */
-  function submitForm(event) {
+  async function submitForm(event) {
     event.preventDefault();
     if (confirm("Are you sure you want to submit this deck for review?")) {
       if (!grecaptcha.getResponse()) {
