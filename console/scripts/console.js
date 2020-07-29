@@ -7,7 +7,12 @@
   function init() {
     if (get("jwt")) {
       readRequests();
+      id("testSubmit").addEventListener("click", dele);
     }
+  }
+  
+  function dele() {
+    deleteRequest(id("testRequest").value);
   }
   
   /** Makes sure the reCaptcha is checked
