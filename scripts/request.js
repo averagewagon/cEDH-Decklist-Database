@@ -44,8 +44,6 @@
     let body = {};
     body.data = {};
     body.data.category = id("category-select").value;
-    body.data.title = id("request-title").value;
-    body.data.deck = id("deck-name").value;
     body.data.description = id("description").value;
     
     body.rc = grecaptcha.getResponse();
