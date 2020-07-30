@@ -45,7 +45,7 @@ Submission page for the cDDB
               <div class="flex">
                 <div class="flex-column" id="title-wrap">
                   <label for="deck-title">Deck Title</label>
-                  <input autocomplete="off" type="text" required maxlength="60" id="deck-title" placeholder="Enter the deck's name"/>
+                  <input autocomplete="off" type="text" required maxlength="100" id="deck-title" placeholder="Enter the deck's name"/>
                 </div>
                 <div class="flex-column">
                   <label for="color-select">Choose Colors</label>
@@ -83,14 +83,14 @@ Submission page for the cDDB
                   </div>
                 </div>
                 <div id="commander-wrap" class="flex">
-                  <input autocomplete="off" required type="text" id="commander" maxlength="200" placeholder="Enter the commander's full name"/>
-                  <input autocomplete="off"  type="text" id="commander2" maxlength="200" class="hidden" placeholder="Enter the second commander's full name"/>
+                  <input autocomplete="off" required type="text" id="commander" maxlength="300" placeholder="Enter the commander's full name"/>
+                  <input autocomplete="off"  type="text" id="commander2" maxlength="300" class="hidden" placeholder="Enter the second commander's full name"/>
                 </div>
               </div>
               
               <div class="flex-column">
                 <label for="description">Write a description for the deck</label>
-                <textarea autocomplete="off" id="description" maxlength="700" required placeholder="Enter your description here." rows="4"></textarea>
+                <textarea autocomplete="off" id="description" maxlength="1000" required placeholder="Enter your description here." rows="4"></textarea>
               </div>
               
               <div>
@@ -99,8 +99,8 @@ Submission page for the cDDB
                   <label for="has-discord">This deck has a Discord server</label>
                 </div>
                 <div class="flex hidden" id="discord-info">
-                  <input autocomplete="off" type="text" id="discord-title" maxlength="40" placeholder="Discord Server Title"/>
-                  <input autocomplete="off" type="text" id="discord-link" pattern="(https?:\/\/)?(www\.)?(discord\.(gg|io|me|li)|discordapp\.com\/invite)\/.+." title="You must input a valid Discord invite" maxlength="40" placeholder="A Discord invite link that won't expire"/>
+                  <input autocomplete="off" type="text" id="discord-title" maxlength="100" placeholder="Discord Server Title"/>
+                  <input autocomplete="off" type="text" id="discord-link" pattern="(https?:\/\/)?(www\.)?(discord\.(gg|io|me|li)|discordapp\.com\/invite)\/.+." title="You must input a valid Discord invite" maxlength="300" placeholder="A Discord invite link that won't expire"/>
                 </div>
               </div>
                 
@@ -109,8 +109,8 @@ Submission page for the cDDB
                   <li class="list-entry">
                     <div class="flex">
                       <span class="delete-list ns">&times;</span>
-                      <input autocomplete="off" type="text" required class="list-title" maxlength="60" placeholder="Decklist title"/>
-                      <input autocomplete="off" type="text" required class="list-link" pattern="(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_+.~#?&//=]*)" title="Input link is invalid" maxlength="200" placeholder="Link to decklist"/>
+                      <input autocomplete="off" type="text" required class="list-title" maxlength="100" placeholder="Decklist title"/>
+                      <input autocomplete="off" type="text" required class="list-link" pattern="(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_+.~#?&//=]*)" title="Input link is invalid" maxlength="300" placeholder="Link to decklist"/>
                       <div class="flex">
                         <label class="ns">
                           <input autocomplete="off" type="checkbox" class="has-primer"/>
