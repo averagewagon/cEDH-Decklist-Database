@@ -21,6 +21,7 @@
     if (result.success) {
       console.log(result.message);
       const requests = result.data;
+      console.log(requests);
     } else {
       console.error(result.message);
       if (result.data) {
@@ -60,6 +61,7 @@
     if (result.success) {
       console.log(result.message);
       const decks = result.data;
+      console.log(decks);
     } else {
       console.error(result.message);
       if (result.data) {
