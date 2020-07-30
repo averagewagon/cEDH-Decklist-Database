@@ -1,12 +1,13 @@
 @media (max-width: 1200px) {
   #content {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   
   aside, section {
     width: auto !important;
     overflow: visible !important;
     min-width: auto !important;
+    max-width: 100% !important;
   }
   
   section {
@@ -17,16 +18,26 @@
 #content {
 }
 
+#content ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 aside {
   overflow: auto;
   flex-grow: 1;
-  min-width: 450px;
+  max-width: 500px;
   padding: 16px;
   background-color: var(--secondary-color);
 }
 
+aside li {
+  border: 1px solid white;
+}
+
 section {
   overflow: auto;
-  padding: 0 16px;
+  padding: 16px 16px;
   flex-grow: 1;
-}
+} 
