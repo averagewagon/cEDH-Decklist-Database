@@ -13,6 +13,7 @@ async function init() {
     set("jwt", jwt);
     set("username", decoded["cognito:username"]);
     set("expire", decoded["exp"]);
+    window.location.replace("/console/");
   } catch (error) {
     clear();
     console.error(error.message);
