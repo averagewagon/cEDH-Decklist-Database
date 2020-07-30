@@ -18,7 +18,11 @@ function init() {
     id("nav-account").href = LOGOUT;
   } else {
     clear();
-    id("motd").innerText = "You are not logged in. Log in to access curator controls.";
+    id("motd").innerText = "You are not logged in. Log in to access curator controls. ";
+    const a = document.createElement("a");
+    a.setAttribute("href", "/");
+    a.innerText = "Click here to navigate back to the Database.";
+    id("motd").appendChild(a);
     qs("header").style.backgroundColor = "pink";
     id("nav-account").href = LOGIN;
   } 
