@@ -7,6 +7,7 @@
   function init() {
     if (get("jwt")) {
       readRequests();
+      readDecks();
     }
   }
   
