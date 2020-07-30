@@ -21,10 +21,10 @@
       console.log(result.message);
       const requests = result.data;
     } else {
+      console.error(result.message);
       if (result.data) {
         console.error(result.data);
       }
-      console.error(result.message);
       alert(" There was an error while fetching requests:\n" + result.message);
     }
   }
@@ -41,11 +41,30 @@
       console.log(result.message);
       console.log(result.data);
     } else {
+      console.error(result.message);
       if (result.data) {
         console.error(result.data);
       }
-      console.error(result.message);
       alert(" There was an error while deleting that request:\n" + result.message);
+    }
+  }
+  
+  async function readDecks() {
+    const jwt = get("jwt");
+    const body = {
+      "jwt": jwt,
+      "method": "READ_DECKS"
+    };
+    const result = await sendToDDB(body);
+    if (result.success) {
+      console.log(result.message);
+      const decks = result.data;
+    } else {
+      console.error(result.message);
+      if (result.data) {
+        console.error(result.data);
+      }
+      alert(" There was an error while fetching decks:\n" + result.message);
     }
   }
   
