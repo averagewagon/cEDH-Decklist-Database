@@ -55,12 +55,13 @@
   
   /* HELPER FUNCTIONS */
   const API_URL = "https://3rxytinw28.execute-api.us-west-2.amazonaws.com/default/DDB-API-Function";
+  const SCRYFALL_URL = "https://api.scryfall.com/cards/named?fuzzy=";
   
   // Sends the body to the DDB API
   async function sendToDDB(body) {
     try {
       let response;
-      let result = fetch(API_URL, {
+      let result = await fetch(API_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body)
