@@ -9,7 +9,6 @@ async function init() {
   try {
     let jwt = getJWT();
     let decoded = jwt_decode(jwt);
-    console.log(decoded);
     set("jwt", jwt);
     set("username", decoded["cognito:username"]);
     set("expire", decoded["exp"]);
