@@ -28,7 +28,10 @@
    */
   async function submitForm(event) {
     event.preventDefault();
-    if (confirm("Are you sure you want to submit this deck for review?")) {
+    let valid = await validCommanders();
+    if (!valid.success) {
+      alert(valid.message);
+    } else if (confirm("Are you sure you want to submit this deck for review?")) {
       if (!grecaptcha.getResponse()) {
         alert("Please complete the reCaptcha.");
       } else {
@@ -46,6 +49,31 @@
         }
       }
     }
+  }
+  
+  // Checks that the commanders are actual cards
+  async function validCommanders() {
+    const commander1 = await checkCommander(id("commander").value);
+    if (!commander1.success) {
+      return { 
+        success: false, 
+        message: id("commander").value + " is not a valid commander." 
+      };
+    }
+    id("commander").value = commander1.name;
+    
+    if (id("two-commanders").checked) {
+      const commander2 = await checkCommander(id("commander2").value);
+      if (!commander2.success) {
+        return { 
+          success: false, 
+          message: id("commander2").value + " is not a valid commander." 
+        };
+      }
+      id("commander2").value = commander2.name;
+    }
+    
+    return { success: true };
   }
   
   /** Converts the form into a JSON object
@@ -159,12 +187,13 @@
   
   /* HELPER FUNCTIONS */
   const API_URL = "https://3rxytinw28.execute-api.us-west-2.amazonaws.com/default/DDB-API-Function";
+  const SCRYFALL_URL = "https://api.scryfall.com/cards/named?fuzzy=";
   
   // Sends the body to the DDB API
   async function sendToDDB(body) {
     try {
       let response;
-      let result = fetch(API_URL, {
+      let result = await fetch(API_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body)
@@ -180,6 +209,35 @@
       return result;
     } catch (error) {
       return { success: false, message: error.message };
+    }
+  }
+  
+  // Checks that a commander is valid
+  async function checkCommander(name) {
+    try {
+      const url = SCRYFALL_URL + encodeURI(name);
+      let response;
+      
+      const result = await fetch(url)
+      .then(resp => {
+        response = resp;
+        return response.json();
+      })
+      .then(info => {
+        let body = {}
+        body.success = (response.status >= 200 && response.status < 300);
+        body.info = info;
+        return body;
+      });
+      
+      if (result.success) {
+        return { success: true, name: result.info.name };
+      } else {
+        return { success: false, message: result.info.details };
+      }
+    } catch (error) {
+      console.error(error.message);
+      return { success: false, message: "Error fetching from scryfall." };
     }
   }
 
