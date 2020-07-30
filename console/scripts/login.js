@@ -8,26 +8,11 @@ window.addEventListener("load", init);
 async function init() {
   try {
     let jwt = getJWT();
-    
-    let resp = fetch(API_URL, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ "jwt": jwt, "method": "LOGIN" })
-    })
-    .then(response => {
-      response.json().then(info => {
-        if (checkStatus(response)) {
-          set("jwt", info.data.jwt);
-          set("username", info.data.username);
-          set("expire", info.data.exp);
-          window.location.replace("/console/");
-        } else {
-          console.error(info);
-          throw new Error(response.status + ": " + response.statusText
-            + "\n" + info.message);
-        }
-      });
-    });
+    let decoded = jwt_decode(jwt);
+    console.log(decoded);
+    set("jwt", jwt);
+    set("username", decoded["cognito:username"]);
+    set("expire", decoded["exp"]);
   } catch (error) {
     clear();
     console.error(error.message);
