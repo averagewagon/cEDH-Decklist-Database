@@ -37,7 +37,79 @@
   
   // Takes an array of decks and transforms it into HTML
   function populateDecks(decks) {
+    const sortedDecks = decks.sort((a, b) => { return b.updated.localeCompare(a.updated); });
+    for (let i = 0; i < sortedDecks.length; i++) {
+      const deck = sortedDecks[i];
+      const item = id("deck-template").cloneNode(true);
+      build.deck(item, deck);
+      if (deck.status === "SUBdMITTED" || deck.status === "ARCHIVED") {
+        item.classList.add("hidden");
+      }
+      id("decks").appendChild(item);
+    }
+  }
+  
+  const build = {
+    deck: function(item, deck) {
+      let id = deck.id;
+      item.id = "d" + id;
+      item.classList.add(deck.status);
+      iqs(item, ".main").id = "m" + id;
+      iqs(item, ".sub").id = "s" + id;
+      iqs(item, ".main").addEventListener("click", toggleSub);
+      build.statuses(item, deck);
+      build.colors(item, deck);
+      iqs(item, ".ddb-title").innerText = deck.title;
+      build.icons(item, deck);
+      iqs(item, ".ddb-edit").href = "/console/edit.html?id=" + id;
+    },
     
+    statuses: function(item, deck) {
+      const statuses = iqsa(item, ".ddb-status");
+      for (let j = 0; j < statuses.length; j++) {
+        statuses[j].innerText = deck.status;
+      }
+    },
+  
+    colors: function(item, deck) {
+      const colors = ["w", "u", "b", "r", "g"];
+      const ddbColors = iqs(item, ".ddb-colors");
+      for (let j = 0; j < colors.length; j++) {
+        let symbol;
+        if (deck.colors.includes(colors[j])) {  
+          symbol = qs("#template-" + colors[j] + " svg").cloneNode(true);
+        } else {
+          symbol = qs("#template-x svg").cloneNode(true);
+        }
+        ddbColors.appendChild(symbol);
+      }
+    },
+  
+    icons: function(item, deck) {
+      if (!deck.recommended) {
+        iqs(item, ".ddb-icons .recommend-svg").classList.add("disabled");
+      }
+      if (deck.decklists.every(d => d.primer === false)) {
+        iqs(item, ".ddb-icons .primer-svg").classList.add("disabled");
+      }
+      if (!deck.discord) {
+        iqs(item, ".ddb-icons .discord-svg").classList.add("disabled");
+      }
+    }
+  }
+  
+  function toggleSub() {
+    const mainId = this.id;
+    const subId = "s" + (mainId.substring(1, mainId.length));
+    id(subId).classList.toggle("hidden");
+  }
+  
+  function iqs(item, query) {
+    return item.querySelector(query);
+  }
+  
+  function iqsa(item, query) {
+    return item.querySelectorAll(query);
   }
   
   async function readRequests() {
