@@ -34,7 +34,73 @@ Main console page
         <div class="req-date">
         </div>
       </li>
+      
+      <li id="x-template">
+        {% include svg/colors/w.svg %}
+      </li>
+      <li id="w-template">
+        {% include svg/colors/w.svg %}
+      </li>
+      <li id="u-template">
+        {% include svg/colors/w.svg %}
+      </li>
+      <li id="b-template">
+        {% include svg/colors/w.svg %}
+      </li>
+      <li id="r-template">
+        {% include svg/colors/w.svg %}
+      </li>
+      <li id="g-template">
+        {% include svg/colors/w.svg %}
+      </li>
+      
+      <li class="" id="deck-template">
+        <div class="main btn flex">
+          <div class="ddb-colors flex">
+          </div>
+          <div class="ddb-title">
+          </div>
+          <div class="ddb-status">
+          </div>
+          <div class="ddb-icons flex">
+            {% include svg/recommend.svg %}
+            {% include svg/primer.svg %}
+            {% include svg/discord.svg %}
+          </div>
+        </div>
+        <div class="sub flex">
+          <div class="ddb-controls flex-column">
+            <a class="ddb-edit btn" href="">
+              {% include svg/edit.svg %}
+              <span class="ddb-status">
+              </span>
+            </a>
+            <div class="ddb-comments">
+            </div>
+          </div>
+          <div class="ddb-links flex-column">
+            <a class="ddb-discord btn">{% include svg/discord-logo.svg %} <span class="ddb-discord-title"></span></a>
+            <ul class="ddb-decklists">
+              <li><a href="">{% include svg/primer.svg %} <span class="ddb-decklist-title"></span></a></li>
+            </ul>
+            <ul class="ddb-commanders">
+              <li><a href=""></a></li>
+            </ul>
+          </div>
+          <div class="ddb-info flex-column">
+            <div class="ddb-category flex">
+            </div>
+            <div class="ddb-description">
+            </div>
+            <div class="ddb-updates flex">
+              <span class="ddb-username"></span>
+              <span class="ddb-date"></span>
+            </div>
+          </div>
+        </div>
+      </li>
     </ul>
+    
   
     <div id="content" class="hidden">
       <aside>
@@ -47,39 +113,6 @@ Main console page
       </aside>
       <section>
         <ul id="decks">
-          <li>
-            <div class="main flex">
-              <div class="ddb-colors flex">
-                {% include svg/colors/x.svg %}
-                {% include svg/colors/u.svg %}
-                {% include svg/colors/b.svg %}
-                {% include svg/colors/r.svg %}
-                {% include svg/colors/g.svg %}
-              </div>
-              <div class="ddb-title">
-                Yidris, Queen of the Redesigns
-              </div>
-              <div class="ddb-icons flex">
-                {% include svg/recommend.svg %}
-                {% include svg/primer.svg %}
-                {% include svg/discord.svg %}
-              </div>
-            </div>
-            <div class="sub flex">
-              <div class="ddb-commanders">
-              </div>
-              <div class="ddb-links flex-column">
-                <a class="ddb-discord btn flex">{% include svg/discord-logo.svg %} Discord Server Title</a>
-                <ul class="ddb-decklists">
-                  <li><a href="sdajkldsa">{% include svg/primer.svg %} blahblahblah</a></li>
-                  <li><a href="sdajkldsa">{% include svg/primer.svg %} blahblahblah</a></li>
-                  <li><a href="sdajkldsa">{% include svg/primer.svg %} blahblahblah</a></li>
-                </ul>
-              </div>
-              <div class="ddb-info">
-              </div>
-            </div>
-          </li>
         </ul>
       </section>
     </div>
