@@ -21,11 +21,24 @@ Main console page
 <body>
   <div id="wrapper">
     {% include console-navbar.html %}
+    
+    <ul class="hidden">
+      <li class="flex-column" id="req-template">
+        <div class="flex">
+          <div class="req-category">
+          </div>
+          <button class="req-delete ns">X</button>
+        </div>
+        <div class="req-description">
+        </div>
+        <div class="req-date">
+        </div>
+      </li>
+    </ul>
   
     <div id="content">
       <aside>
-        <ul>
-          <li>hi</li>
+        <ul id="req-list">
         </ul>
       </aside>
       <section>
