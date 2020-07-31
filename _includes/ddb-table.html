@@ -64,7 +64,7 @@
             {% include svg/primer.svg %}
           </div>
           <div class="svg-icon t-{% if d.discord-link == "" %}false{% endif %}">
-            {% include svg/discord-logo.svg %}
+            {% include svg/discord.svg %}
           </div>
         </div>
       </td>
@@ -83,7 +83,7 @@
             <a class="d-discord btn {% if d.discord-link == "" %}no-discord{% endif %}"
             {% if d.discord-link != "" %}href="{{d.discord-link | escape }}"{% endif %}>
               <div class="ns">
-              {% include svg/discord.svg %}
+              {% include svg/discord-logo.svg %}
               </div>
               {% if d.discord-link == "" %}[No Discord Server]{% endif %}
               {{d.discord-title | escape }}
