@@ -1,6 +1,7 @@
 @media (max-width: 1200px) {
   #content {
-    flex-direction: column-reverse;
+    overflow: auto !important;
+    flex-wrap: wrap;
   }
   
   aside, section {
@@ -11,7 +12,7 @@
   }
   
   section {
-    margin: 4px !important;
+    order: -1;
   }
 }
 
@@ -34,19 +35,30 @@
 #content {
 }
 
-#content ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
 /* Request Styles */
 aside {
   overflow: auto;
   flex-grow: 1;
-  max-width: 450px;
+  max-width: 400px;
   padding: 16px;
   background-color: var(--secondary-color);
+}
+
+#req-controls {
+  margin-bottom: 16px;
+  font-size: 16pt;
+  display: flex;
+  align-items: center;
+}
+
+#req-controls label {
+  margin-left: 8px;
+}
+
+aside ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 aside li {
@@ -63,26 +75,128 @@ aside button {
   color: white;
   font-weight: bold;
   font-size: 16pt;
+  cursor: pointer;
+}
+
+aside button:hover {
+  background-color: red;
 }
 
 .req-category {
-  font-size: 14pt;
+  font-size: 13pt;
   font-weight: bold;
 }
 
 .req-description {
   margin: 8px 0;
   color: gainsboro;
+  font-size: 12pt;
 }
 
 .req-date {
   text-align: right;
-  font-size: 14pt;
+  font-size: 12pt;
   font-family: monospace;
 }
-/* Deck Styles */
+
+/* Deck Table Styles */
 section {
   overflow: auto;
   padding: 16px 16px;
   flex-grow: 1;
 } 
+
+section ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Row Styles */
+.main {
+  background-color: var(--backdrop-color);
+  border-top: 2px solid var(--darker);
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.ddb-colors svg {
+  height: 28px;
+  width: 28px;
+  min-height: 28px;
+  min-width: 28px;
+  margin-right: 4px;
+}
+
+.ddb-title {
+  margin-left: 64px;
+  flex-grow: 1;
+  font-size: 16pt;
+}
+
+.ddb-icons svg {
+  height: 28px;
+  width: 28px;
+  min-height: 28px;
+  min-width: 28px;
+  margin-left: 4px;
+}
+
+/* Sub Row Styles */
+.sub {
+  background-color: var(--lighter);
+  align-items: stretch;
+  padding: 12px;
+}
+
+.ddb-commanders {
+}
+
+.card {
+  border-radius: 12px;
+}
+
+.ddb-links {
+  background-color: var(--canvas-color);
+}
+
+.ddb-discord {
+  font-size: 14pt;
+  padding: 4px;
+}
+
+.ddb-discord svg {
+  height: 36px;
+  width: 36px;
+  min-height: 36px;
+  min-width: 36px;
+  fill: var(--discord);
+  margin-right: 10px;
+}
+
+.ddb-decklists {
+  flex-grow: 1;
+  margin: 0 7px;
+}
+
+.ddb-decklists li {
+  margin-top: 8px;
+}
+
+.ddb-decklists a {
+  color: skyblue;
+  display: flex;
+  align-items: center;
+}
+
+.ddb-decklists svg {
+  height: 28px;
+  width: 28px;
+  min-height: 28px;
+  min-width: 28px;
+  margin-right: 8px;
+}
+
+.ddb-info {
+  flex-grow: 1;
+}
