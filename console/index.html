@@ -36,13 +36,51 @@ Main console page
       </li>
     </ul>
   
-    <div id="content">
+    <div id="content" class="hidden">
       <aside>
-        <ul id="req-list">
+        <div id="req-controls" class="ns">
+          <input id="show-deleted" type="checkbox"></input>
+          <label for="show-deleted">Show deleted requests</label>
+        </div>
+        <ul id="requests">
         </ul>
       </aside>
       <section>
-      
+        <ul id="decks">
+          <li>
+            <div class="main flex">
+              <div class="ddb-colors flex">
+                {% include svg/colors/x.svg %}
+                {% include svg/colors/u.svg %}
+                {% include svg/colors/b.svg %}
+                {% include svg/colors/r.svg %}
+                {% include svg/colors/g.svg %}
+              </div>
+              <div class="ddb-title">
+                Yidris, Queen of the Redesigns
+              </div>
+              <div class="ddb-icons flex">
+                {% include svg/recommend.svg %}
+                {% include svg/primer.svg %}
+                {% include svg/discord.svg %}
+              </div>
+            </div>
+            <div class="sub flex">
+              <div class="ddb-commanders">
+              </div>
+              <div class="ddb-links flex-column">
+                <a class="ddb-discord btn flex">{% include svg/discord-logo.svg %} Discord Server Title</a>
+                <ul class="ddb-decklists">
+                  <li><a href="sdajkldsa">{% include svg/primer.svg %} blahblahblah</a></li>
+                  <li><a href="sdajkldsa">{% include svg/primer.svg %} blahblahblah</a></li>
+                  <li><a href="sdajkldsa">{% include svg/primer.svg %} blahblahblah</a></li>
+                </ul>
+              </div>
+              <div class="ddb-info">
+              </div>
+            </div>
+          </li>
+        </ul>
       </section>
     </div>
   </div>
