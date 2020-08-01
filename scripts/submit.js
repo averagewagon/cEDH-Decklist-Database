@@ -28,14 +28,14 @@
    */
   async function submitForm(event) {
     event.preventDefault();
-    let valid = await validCommanders();
-    if (!valid.success) {
-      alert(valid.message);
+    let scry = await getCommanderInfo();
+    if (!scry.success) {
+      alert(scry.message);
     } else if (confirm("Are you sure you want to submit this deck for review?")) {
       if (!grecaptcha.getResponse()) {
         alert("Please complete the reCaptcha.");
       } else {
-        let body = scrapeForm();
+        let body = scrapeForm(scry);
         let result = await sendToDDB(body);
         if (result.success) {
           alert(result.message);
@@ -52,69 +52,73 @@
   }
   
   // Checks that the commanders are actual cards
-  async function validCommanders() {
-    const commander1 = await checkCommander(id("commander").value);
-    if (!commander1.success) {
-      return { 
-        success: false, 
-        message: id("commander").value + " is not a valid commander." 
-      };
-    }
-    id("commander").value = commander1.name;
-    
-    if (id("two-commanders").checked) {
-      const commander2 = await checkCommander(id("commander2").value);
-      if (!commander2.success) {
-        return { 
-          success: false, 
-          message: id("commander2").value + " is not a valid commander." 
-        };
+  async function getCommanderInfo() {
+    try {
+      const commanders = qsa("#commander-wrap input");
+      const value = { success: true, commanders: [], colors: [] };
+      
+      const promises = []
+      
+      for (let i = 0; i < commanders.length; i++) {
+        const commander = commanders[i];
+        if (!commander.classList.contains("hidden")) {
+          const res = checkCommander(commander.value).then(check => {
+            if (!check.success) {
+              return { success: false, message: commander.value + " is not a valid card name." };
+            }
+            const scry = check.data;
+            commander.value = scry.name;
+            const obj = {};
+            obj.name = scry.name;
+            obj.link = scry.image_uris.normal;
+            const colors = [];
+            for (let j = 0; j < scry.color_identity.length; j++) {
+              colors.push(scry.color_identity[j].toLowerCase());
+            }
+            return { commander: obj, colors: colors, success: true };
+          });
+          promises.push(res);
+        }
       }
-      id("commander2").value = commander2.name;
+      
+      const results = await Promise.all(promises);
+      for (let i = 0; i < results.length; i++) {
+        const res = results[i];
+        if (!res.success) {
+          return res;
+        }
+        value.commanders.push(res.commander);
+        for (let j = 0; j < res.colors.length; j++) {
+          if (!value.colors.includes(res.colors[j])) {
+            value.colors.push(res.colors[j]);
+          }
+        }
+      }
+      return value;
+    } catch (error) {
+      console.log(error);
+      return { success: false, message: error.message };
     }
-    
-    return { success: true };
   }
   
   /** Converts the form into a JSON object
    */
-  function scrapeForm() {
+  function scrapeForm(scry) {
     let body = {};
     let data = {};
     data.section = id("table-select").value;
     data.title = id("deck-title").value;
-    data.colors = scrapeColors();
     data.commander = scrapeCommanders();
     data.description = id("description").value;
     data.discord = scrapeDiscord();
     data.decklists = scrapeDecklists();
+    data.commander = scry.commanders;
+    data.colors = scry.colors;
     
     body.data = data;
     body.rc = grecaptcha.getResponse();
     body.method = "SUBMIT_DECK";
     return body;
-  }
-  
-  /** Helpers that scrape the form **/
-  function scrapeColors() {
-    const colors = [];
-    let colorElems = qsa("#color-select input");
-    for (let i = 0; i < colorElems.length; i++) {
-      let c = colorElems[i];
-      if (c.checked) {
-        colors.push(c.id.charAt(c.id.length - 1));
-      }
-    }
-    return colors;
-  }
-  
-  function scrapeCommanders() {
-    const commanders = [];
-    commanders.push(id("commander").value);
-    if (id("two-commanders").checked) {
-      commanders.push(id("commander2").value);
-    }
-    return commanders;
   }
   
   function scrapeDecklists() {
@@ -231,7 +235,7 @@
       });
       
       if (result.success) {
-        return { success: true, name: result.info.name };
+        return { success: true, data: result.info };
       } else {
         return { success: false, message: result.info.details };
       }
