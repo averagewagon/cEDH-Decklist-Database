@@ -5,17 +5,16 @@
 
   // Initialization function
   async function init() {
-    //if (get("jwt")) {
+    if (get("jwt")) {
       await readRequests();
       await readDecks();
       id("show-deleted").addEventListener("change", toggleRequests);
       id("content").classList.remove("hidden");
-    //}
+    }
   }
   
   // Gets the list of decks from the API
   async function readDecks() {
-    /*
     const jwt = get("jwt");
     const body = {
       "jwt": jwt,
@@ -31,8 +30,7 @@
         console.error(result.data);
       }
       alert(" There was an error while fetching decks:\n" + result.message);
-    }*/
-    populateDecks([{"updated": "2020-07-30T23:13:49.260Z","commander": ["Godo, Bandit Warlord"],"section": "DEPRECATED","decklists": [{"link": "https://discord.gg/BXPyu2P","title": "fewfrsdfewsrsdf","primer": false}],"colors": ["r"],"status": "SUBMITTED","comments": "","discord": null,"description": "https://discord.gg/BXPyu2P https://discord.gg/BXPyu2P https://discord.gg/BXPyu2Phttps://discord.gg/BXPyu2Phttps://discord.gg/ XP yu2Phttps:/ /discord.gg/BXP yu2Phttps://discord.gg/BXPyu2 Phttps://discord.gg/BXPyu2Phttps://discord.gg/ XPyu2Phttp s://discord.gg /BXPyu2Phttps://discord .gg/BXPyu2Phttps://discord.gg/BXPyu2P   ","id": "1596150829260ehk7","recommended": false,"title": "A deprecated deck that's very boring indeed"},{"updated": "2020-07-30T23:14:56.080Z","commander": ["Sram, Senior Edificer"],"section": "MEME","decklists": [{"link": "https://discord.gg/BXPyu2P","title": "resdfsefdfes","primer": false}],"colors": ["w"],"status": "SUBMITTED","comments": "","discord": {"title": "fdsasefcsdfcds","link": "https://discord.gg/BXPyu2P"},"description": "https://discord.gg/BXPyu2P https://discord.gg/BXPyu2P","id": "1596150896080g3l6","recommended": false,"title": "Sram Meme"},{"updated": "2020-07-30T23:10:28.687Z","commander": ["Tymna the Weaver","Thrasios, Triton Hero"],"section": "COMPETITIVE","decklists": [{"link": "https://tappedout.gg/BXPyu2P","title": "Deck title","primer": false}],"colors": ["w","u","b","g"],"status": "SUBMITTED","comments": "","discord": {"title": "dsaffdsdsaffdsafdsa","link": "https://discord.gg/BXPyu2P"},"description": "Testetstetset","id": "1596150628687o4fc","recommended": false,"title": "Deck title for testing"},{"updated": "2020-07-30T23:12:48.980Z","commander": ["Tymna the Weaver","Tana, the Bloodsower"],"section": "COMPETITIVE","decklists": [{"link": "https://discord.gg/BXPyu2P","title": "fsdaewfdsdf","primer": false},{"link": "https://erwfefefw.gg/BXPyu2P","title": "https://discord.gg/BXPyu2Psdaerseaf","primer": false}],"colors": ["W","R","B","G"],"status": "SUBMITTED","comments": "","discord": null,"description": "https://discord.gg/BXPyu2Phttps://discord.gg/BXPyu2Phttps://discord.gg/BXPyu2Phttps://discord.gg/BXPyu2Phttps://discord.gg/BXPyu2Phttps://discord.gg/BXPyu2Phttps://discord.gg/BXPyu2Phttps://discord.gg/BXPyu2Phttps://discord.gg/BXPyu2P","id": "15961507689801h23","recommended": false,"title": "Deck with only one decklist"},{"updated": "2020-07-30T23:14:29.520Z","commander": ["Grand Arbiter Augustin IV"],"section": "DEPRECATED","decklists": [{"link": "https://discord.gg/BXPyu2P","title": "ewfsdfesfdfesff","primer": true}],"colors": ["w","u"],"status": "SUBMITTED","comments": "","discord": null,"description": "https://discord.gg/BXPyu2P https://discord.gg/BXPyu2P https://discord.gg/BXPyu2Pte. oo this update perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaqu","id": "1596150869520rt4f","recommended": false,"title": "Another Deprecated"},{"updated": "2020-07-30T23:11:38.699Z","commander": ["Arcum Dagsson"],"section": "COMPETITIVE","decklists": [{"link": "https://fdsfdsfdsafdsa.gg/BXPyu2P","title": "Multiple Decklists","primer": true},{"link": "https://discord.gg/BXPyu2P","title": "fdsfdsae","primer": false},{"link": "https://discord.gg/BXPyu2P","title": "refdfgftgtr","primer": false},{"link": "https://discord.gg/BXPyu2P","title": "ertdfgrdsg","primer": false},{"link": "https://discord.gg/BXPyu2P","title": "dfsafdew343545t6r","primer": false}],"colors": ["u"],"status": "SUBMITTED","comments": "","discord": null,"description": "this is a big fat deck description, you know","id": "1596150698699hva8","recommended": false,"title": "Name of deck with multiple decklists"},{"updated": "2020-07-30T23:15:26.841Z","commander": ["Momir Vig, Simic Visionary"],"section": "COMPETITIVE","decklists": [{"link": "https://discord.gg/BXPyu2P","title": "asdasdrrtdf","primer": true},{"link": "https://discord.gg/BXPyu2P","title": "fwefef43fd","primer": false}],"colors": ["u","g"],"status": "SUBMITTED","comments": "","discord": {"title": "dasdasdas","link": "https://discord.gg/BXPyu2P"},"description": "https://discord.gg/BXPyu2P https://discord.gg/BXPyu2P https://discord.gg/BXPyu2P https://discord.gg/BXPyu2P","id": "1596150926841c1hc","recommended": false,"title": "One More Meme"}]);
+    }
   }
   
   // Takes an array of decks and transforms it into HTML
@@ -42,8 +40,8 @@
       const deck = sortedDecks[i];
       const item = id("deck-template").cloneNode(true);
       build.deck(item, deck);
-      if (deck.status === "SUBdMITTED" || deck.status === "ARCHIVED") {
-        item.classList.add("hidden");
+      if (deck.status === "SUBMITTED" || deck.status === "ARCHIVED") {
+        //item.classList.add("hidden");
       }
       id("decks").appendChild(item);
     }
@@ -57,14 +55,22 @@
       iqs(item, ".main").id = "m" + id;
       iqs(item, ".sub").id = "s" + id;
       iqs(item, ".main").addEventListener("click", toggleSub);
-      build.statuses(item, deck);
-      build.colors(item, deck);
       iqs(item, ".ddb-title").innerText = deck.title;
-      build.icons(item, deck);
       iqs(item, ".ddb-edit").href = "/console/edit.html?id=" + id;
+      iqs(item, ".ddb-section").innerText = deck.section;
+      iqs(item, ".ddb-description").innerText = deck.description;
+      iqs(item, ".ddb-date").innerText = deck.updated.substring(0, 10);
+      build.status(item, deck);
+      build.colors(item, deck);
+      build.icons(item, deck);
+      build.comments(item, deck);
+      build.discord(item, deck);
+      build.decklists(item, deck);
+      build.commanders(item, deck);
+      build.editor(item, deck);
     },
     
-    statuses: function(item, deck) {
+    status: function(item, deck) {
       const statuses = iqsa(item, ".ddb-status");
       for (let j = 0; j < statuses.length; j++) {
         statuses[j].innerText = deck.status;
@@ -87,13 +93,70 @@
   
     icons: function(item, deck) {
       if (!deck.recommended) {
-        iqs(item, ".ddb-icons .recommend-svg").classList.add("disabled");
+        iqs(item, ".ddb-icons .recommend-svg").classList.add("unavailable");
       }
       if (deck.decklists.every(d => d.primer === false)) {
-        iqs(item, ".ddb-icons .primer-svg").classList.add("disabled");
+        iqs(item, ".ddb-icons .primer-svg").classList.add("unavailable");
       }
       if (!deck.discord) {
-        iqs(item, ".ddb-icons .discord-svg").classList.add("disabled");
+        iqs(item, ".ddb-icons .discord-svg").classList.add("unavailable");
+      }
+    },
+    
+    comments: function(item, deck) {
+      if (deck.comments !== "") {
+        iqs(item, ".ddb-comments").innerText = deck.comments;
+      } else {
+        iqs(item, ".ddb-comments").innerText = "This deck does not have any Curator comments.";
+      }
+    },
+  
+    discord: function(item, deck) {
+      if (deck.discord) {
+        iqs(item, ".ddb-discord").href = deck.discord.link;
+        iqs(item, ".ddb-discord-title").innerText = deck.discord.title;
+      } else {
+        iqs(item, ".ddb-discord").classList.add("disabled");
+        iqs(item, ".ddb-discord-title").innerText = "[No Discord Server]";
+        iqs(item, ".ddb-discord svg").classList.add("dark");
+      }
+    },
+    
+    decklists: function(item, deck) {
+      const decklists = iqs(item, ".ddb-decklists");
+      for (let i = 0; i < deck.decklists.length; i++) {
+        const decklist = deck.decklists[i];
+        const li = id("decklist-template").cloneNode(true);
+        li.id = "";
+        if (!decklist.primer) {
+          iqs(li, ".primer-svg").classList.add("unavailable");
+        }
+        iqs(li, ".ddb-decklist-title").innerText = decklist.title;
+        li.href = decklist.link;
+        decklists.appendChild(li);
+      }
+    },
+    
+    commanders: function(item, deck) {
+      const commanders = iqs(item, ".ddb-commanders");
+      for (let i = 0; i < deck.commander.length; i++) {
+        const commander = deck.commander[i];
+        const a = document.createElement("a");
+        a.innerText = commander.name;
+        a.href = commander.link;
+        
+        const li = document.createElement("li");
+        li.appendChild(a);
+        commanders.appendChild(li);
+      }
+    },
+  
+    editor: function(item, deck) {
+      console.log(deck.editor);
+      if (deck.editor) {
+        iqs(item, ".ddb-username").innerText = deck.editor;
+      } else {
+        iqs(item, ".ddb-username").innerText = "[Never Edited]";
       }
     }
   }
@@ -113,7 +176,7 @@
   }
   
   async function readRequests() {
-    /*const jwt = get("jwt");
+    const jwt = get("jwt");
     const body = {
       "jwt": jwt,
       "method": "READ_REQUESTS"
@@ -128,8 +191,7 @@
         console.error(result.data);
       }
       alert(" There was an error while fetching requests:\n" + result.message);
-    }*/
-    populateRequests([{"deleted": false,"category": "Request that a deck is removed","date": "2020-07-30T23:09:41.279Z","description": "adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat ","id": "1596150581279krbl"},{"deleted": true,"category": "Add, modify, or remove an entry's decklists","date": "2020-07-30T23:07:38.798Z","description": "inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.","id": "1596150458798hwru"},{"deleted": false,"category": "Make a correction to a submission","date": "2020-07-30T23:07:22.019Z","description": "This is an example request. inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciu","id": "15961504420193acm"},{"deleted": false,"category": "Add, modify, or remove an entry's decklists","date": "2020-07-30T23:08:30.618Z","description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciu","id": "1596150510618mrlx"}]);
+    }
   }
   
   function populateRequests(requests) {

@@ -171,6 +171,7 @@ section ul {
 
 /* Column 1 */
 .ddb-controls {
+  max-width: 300px;
   min-width: 300px;
   margin-right: 16px;
 }
@@ -205,6 +206,7 @@ section ul {
 .ddb-links {
   background-color: var(--canvas-color);
   min-width: 320px;
+  max-width: 320px;
   margin-right: 16px;
 }
 
@@ -213,6 +215,17 @@ section ul {
   padding: 4px 8px;
   display: flex;
   align-items: center;
+  color: white;
+  text-decoration: none;
+}
+
+.ddb-discord:hover {
+  text-decoration: underline;
+}
+
+.ddb-discord.disabled:hover {
+  text-decoration: none;
+  background-color: var(--backdrop-color);
 }
 
 .ddb-discord svg {
@@ -232,9 +245,7 @@ section ul {
 
 .ddb-decklists li {
   margin-top: 8px;
-  background-color: var(--backdrop-color);
-  border-top-left-radius: 100px;
-  border-bottom-left-radius: 100px;
+  border-bottom: 2px solid var(--lighter);
 }
 
 .ddb-decklists a {
@@ -279,7 +290,7 @@ section ul {
   background-color: var(--canvas-color);
 }
 
-.ddb-category {
+.ddb-section {
   min-height: 44px;
   padding: 0 8px;
   text-align: left;
@@ -291,6 +302,7 @@ section ul {
   overflow: auto;
   padding: 8px;
   color: gainsboro;
+  flex-grow: 1;
 }
 
 .ddb-updates {
