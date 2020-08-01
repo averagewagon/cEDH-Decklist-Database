@@ -108,7 +108,6 @@
     let data = {};
     data.section = id("table-select").value;
     data.title = id("deck-title").value;
-    data.commander = scrapeCommanders();
     data.description = id("description").value;
     data.discord = scrapeDiscord();
     data.decklists = scrapeDecklists();
