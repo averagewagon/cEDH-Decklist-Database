@@ -61,8 +61,16 @@
   min-height: 36px;
 }
 
-.disabled {
+.unavailable {
   filter: invert(100%) brightness(50%);
+}
+
+.disabled {
+  cursor: not-allowed !important;
+}
+
+.dark {
+  filter: brightness(0%);
 }
 
 .btn {
