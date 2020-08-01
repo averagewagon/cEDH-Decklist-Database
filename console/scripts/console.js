@@ -6,8 +6,8 @@
   // Initialization function
   async function init() {
     if (get("jwt")) {
-      await readRequests();
-      await readDecks();
+      readRequests();
+      readDecks();
       id("show-deleted").addEventListener("change", toggleRequests);
       id("content").classList.remove("hidden");
     }
@@ -152,7 +152,6 @@
     },
   
     editor: function(item, deck) {
-      console.log(deck.editor);
       if (deck.editor) {
         iqs(item, ".ddb-username").innerText = deck.editor;
       } else {
