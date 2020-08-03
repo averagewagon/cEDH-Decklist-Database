@@ -166,7 +166,7 @@ section ul {
   background-color: var(--lighter);
   align-items: stretch;
   padding: 12px;
-  max-height: 240px;
+  max-height: 300px;
 }
 
 /* Column 1 */

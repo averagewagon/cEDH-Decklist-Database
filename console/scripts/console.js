@@ -6,8 +6,10 @@
   // Initialization function
   async function init() {
     if (get("jwt")) {
-      readRequests();
-      readDecks();
+      const promises = [];
+      promises.push(readRequests());
+      promises.push(readDecks());
+      await Promise.all(promises);
       id("show-deleted").addEventListener("change", toggleRequests);
       id("content").classList.remove("hidden");
     }
