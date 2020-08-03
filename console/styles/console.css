@@ -68,6 +68,10 @@ aside li {
   margin-bottom: 16px;
 }
 
+.req-wrap {
+  align-items: flex-start;
+}
+
 aside button {
   background-color: firebrick;
   border: none;
