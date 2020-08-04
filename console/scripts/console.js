@@ -13,7 +13,37 @@
       id("show-deleted").addEventListener("change", toggleRequests);
       filterDecks();
       id("view-select").addEventListener("change", filterDecks);
+      id("publish-changes").addEventListener("click", publishChanges);
       id("content").classList.remove("hidden");
+    }
+      id("publish-changes").addEventListener("click", publishChanges);
+  }
+  
+  // Sends the request to the API that initiates a Github commit
+  async function publishChanges() {
+    if (!get("jwt")) {
+      alert("You are not logged in. You must be logged in to do this.");
+    } else if (confirm("Are you sure you want to publish all changes? This cannot be reversed, and it will take several minutes. If you haven't already, you should confirm this decision with the other curators.")) {
+      if (!get("jwt")) {
+        alert("You are not logged in. You must be logged in to do this.");
+      } else {
+        const jwt = get("jwt");
+        const body = {
+          "jwt": jwt,
+          "method": "PUBLISH_CHANGES"
+        };
+        const result = await sendToDDB(body);
+        if (result.success) {
+          alert("Success! The changes should be visible on the website in a few minutes.");
+          window.location.reload();
+        } else {
+          console.error(result.message);
+          if (result.data) {
+            console.error(result.data);
+          }
+          alert(" There was an error while publishing changes:\n" + result.message);
+        }
+      }
     }
   }
   

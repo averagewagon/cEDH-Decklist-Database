@@ -117,6 +117,8 @@
     let scry = await getCommanderInfo();
     if (!scry.success) {
       alert(scry.message);
+    } else if (!confirm("Are you sure you want to submit these changes?")) {
+      
     } else if (!get("jwt")) {
       alert("You are logged out. You must be logged in to submit the form.");
     } else {
