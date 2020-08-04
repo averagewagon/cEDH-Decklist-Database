@@ -298,7 +298,7 @@
       id("edit-info").innerHTML = edit;
       
       id("comments").value = deck.comments;
-      id("edit-comments").value = deck.comments;
+      id("edit-comments").innerText = deck.comments;
     },
   
     commander: function(deck) {
