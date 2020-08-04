@@ -223,6 +223,7 @@
       body.jwt = get("jwt");
       body.method = "UPDATE_DECK";
       body.timestamp = qs("form").dataset.timestamp;
+      console.log(body);
     },
   
     decklists: function() {
@@ -371,7 +372,7 @@
     
     status: function(item, deck) {
       item.classList.remove("RED", "BLUE", "GREEN");
-      if (deck.status === "SUBMITTED" && deck.destination === "SUBMITTED") {
+      if (deck.status === "PUBLISHED" && deck.destination === "PUBLISHED") {
         item.classList.add("BLUE");
       } else if (deck.status === "SUBMITTED") {
         item.classList.add("GREEN");
