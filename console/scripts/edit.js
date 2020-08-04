@@ -273,7 +273,6 @@
   // Helper object which fills out the form
   const fill = {
     form: function(deck) {
-      id("comments").value = deck.comments;
       id("deck-title").value = deck.title;
       id("description").value = deck.description;
       fill.section(deck);
@@ -297,6 +296,9 @@
       let edit = " on " + deck.updated.substring(0, 10);
       edit = deck.editor ? "<i>" + deck.editor + "</i> Edited" + edit : "Submitted" + edit;
       id("edit-info").innerHTML = edit;
+      
+      id("comments").value = deck.comments;
+      id("edit-comments").value = deck.comments;
     },
   
     commander: function(deck) {

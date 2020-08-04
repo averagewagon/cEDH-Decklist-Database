@@ -34,6 +34,17 @@ section {
 }
 
 /* Aside Styles */
+#edit-username {
+  font-weight: bold;
+  margin-top: 16px;
+  font-size: 18pt;
+}
+
+#edit-comments {
+  margin-top: 16px;
+  font-size: 14pt;
+}
+
 #prev-controls {
   margin-bottom: 16px;
   font-size: 16pt;
