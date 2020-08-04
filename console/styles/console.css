@@ -91,12 +91,37 @@ aside button:hover {
   font-family: monospace;
 }
 
-/* Deck Table Styles */
+/* Section Styles */
 section {
   overflow: auto;
   padding: 16px 16px;
   flex-grow: 1;
 } 
+
+#console-controls {
+  align-items: stretch;
+}
+
+#console-controls select {
+  background-color: var(--darker);
+  color: white;
+  border: none;
+  padding: 8px;
+  font-size: 14pt;
+}
+
+#console-controls label {
+  font-size: 12pt;
+  margin-bottom: 4px;
+}
+
+#console-controls button {
+  background-color: var(--accent-color);
+  color: black;
+  cursor: pointer;
+  border: none;
+  font-size: 14pt;
+}
 
 #decks, #decks ul {
   list-style-type: none;
