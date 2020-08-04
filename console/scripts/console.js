@@ -6,12 +6,14 @@
   // Initialization function
   async function init() {
     if (get("jwt")) {
-      readDecks().then(filterDecks);
+      readDecks().then( {
+        filterDecks();
+        id("content").classList.remove("hidden");
+      });
       readRequests();
       id("show-deleted").addEventListener("change", toggleRequests);
       id("view-select").addEventListener("change", filterDecks);
       id("publish-changes").addEventListener("click", publishChanges);
-      id("content").classList.remove("hidden");
     }
   }
   
