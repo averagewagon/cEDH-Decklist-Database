@@ -92,6 +92,7 @@ section {
 .main .ddb-status {
   font-size: 18pt;
   font-family: monospace;
+  margin-left: 16px;
   margin-top: 8px;
   overflow-wrap: normal;
 }
