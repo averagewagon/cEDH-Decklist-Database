@@ -382,7 +382,7 @@
         item.classList.add("BLUE");
       } else if (deck.destination === "PUBLISHED") {
         item.classList.add("GREEN");
-      } else if (deck.status === "PUBLISHED" || deck.status === "DELETED") {
+      } else if (deck.destination || deck.status === "DELETED") {
         item.classList.add("RED");
       }
       
