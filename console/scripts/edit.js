@@ -223,7 +223,7 @@
       body.jwt = get("jwt");
       body.method = "UPDATE_DECK";
       body.timestamp = qs("form").dataset.timestamp;
-      console.log(body);
+      return body;
     },
   
     decklists: function() {
