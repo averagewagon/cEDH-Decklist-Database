@@ -378,15 +378,11 @@
     
     status: function(item, deck) {
       item.classList.remove("RED", "BLUE", "GREEN");
-      if (deck.destination === "PUBLISHED") {
-        if (deck.status === "PUBLISHED") {
-          item.classList.add("BLUE");
-        } else {
-          item.classList.add("GREEN");
-        }
-      } else if (deck.destination === "DELETED") {
-        item.classList.add("RED");
-      } else if (deck.destination !== "SUBMITTED" && deck.status === "DELETED") {
+      if (deck.destination === "PUBLISHED" && deck.status === "PUBLISHED") {
+        item.classList.add("BLUE");
+      } else if (deck.destination === "PUBLISHED") {
+        item.classList.add("GREEN");
+      } else if (deck.status === "PUBLISHED" || deck.status === "DELETED") {
         item.classList.add("RED");
       }
       
