@@ -194,6 +194,12 @@ section {
   color: gainsboro;
 }
 
+.ddb-username {
+  background-color: var(--canvas-color);
+  padding: 8px;
+  font-weight: bold;
+}
+
 /* Column 2 */
 .ddb-links {
   background-color: var(--canvas-color);
@@ -301,4 +307,9 @@ section {
   font-size: 14pt;
   font-weight: bold;
   padding: 8px;
+}
+
+.ddb-date {
+  text-align: right;
+  flex-grow: 1;
 }
