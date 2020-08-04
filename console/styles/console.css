@@ -46,7 +46,6 @@ aside {
 
 aside ul {
   list-style-type: none;
-  margin: 0;
   padding: 0;
 }
 
@@ -101,7 +100,6 @@ section {
 
 #decks, #decks ul {
   list-style-type: none;
-  margin: 0;
   padding: 0;
 }
 
