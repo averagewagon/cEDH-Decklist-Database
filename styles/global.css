@@ -10,6 +10,10 @@
    scrollbar-color: #222222 #424242;
 }
 
+* {
+  overflow-wrap: anywhere;
+}
+
 .bw, .bu, .bb, .br, .bg, .bx {
   border-radius: 50%;
   font-family: 'courier new', monospace;
