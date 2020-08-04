@@ -393,7 +393,11 @@
       item.dataset.status = deck.status;
       item.dataset.destination = deck.destination;
       let val = deck.destination ? deck.destination : deck.status;
-      item.dataset.show = val;
+      if (deck.status === "SUBMITTED" || deck.destination === "SUBMITTED") {
+        item.dataset.show = "SUBMITTED";
+      } else {
+        item.dataset.show = val;
+      }
     
       const statuses = iqsa(item, ".ddb-status");
       for (let j = 0; j < statuses.length; j++) {
