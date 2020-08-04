@@ -139,7 +139,7 @@ section {
 
 .main .ddb-status {
   font-size: 18pt;
-  margin-right: 16px;
+  margin: 0 16px;
   font-family: monospace;
   overflow-wrap: normal;
 }
