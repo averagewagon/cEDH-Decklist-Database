@@ -6,11 +6,11 @@
   // Initialization function
   async function init() {
     if (get("jwt")) {
-      readDecks().then({
+      readDecks().then(() => {
         filterDecks();
         id("content").classList.remove("hidden");
       });
-      readRequests().then({
+      readRequests().then(() => {
         id("show-deleted").addEventListener("change", toggleRequests);
       });
       id("view-select").addEventListener("change", filterDecks);
