@@ -123,7 +123,7 @@
         }
       } else if (deck.destination === "DELETED") {
         item.classList.add("RED");
-      } else if (deck.destination !== "SUBMITTED" deck.status === "DELETED") {
+      } else if (deck.destination !== "SUBMITTED" && deck.status === "DELETED") {
         item.classList.add("RED");
       }
       
