@@ -12,6 +12,7 @@
       await Promise.all(promises);
       id("show-deleted").addEventListener("change", toggleRequests);
       id("content").classList.remove("hidden");
+      id("view-select").addEventListener("change", filterDecks);
     }
   }
   
@@ -42,10 +43,20 @@
       const deck = sortedDecks[i];
       const item = id("deck-template").cloneNode(true);
       build.deck(item, deck);
-      if (deck.status === "SUBMITTED" || deck.status === "ARCHIVED") {
-        //item.classList.add("hidden");
-      }
+      filterDecks();
       id("decks").appendChild(item);
+    }
+  }
+  
+  function filterDecks() {
+    const decks = qsa("#decks > li");
+    const shown = id("view-select").value;
+    for (let i = 0; i < decks.length; i++) {
+      if (decks[i].dataset.show === shown) {
+        decks[i].classList.remove("hidden");
+      } else {
+        decks[i].classList.add("hidden");
+      }
     }
   }
   
@@ -73,9 +84,26 @@
     },
     
     status: function(item, deck) {
+      item.classList.remove("RED", "BLUE", "GREEN");
+      if (deck.status === "SUBMITTED" && deck.destination === "SUBMITTED") {
+        item.classList.add("BLUE");
+      } else if (deck.status === "SUBMITTED") {
+        item.classList.add("GREEN");
+      } else if (deck.status === "DELETED") {
+        item.classList.add("RED");
+      }
+      
+      let val = deck.status;
+      item.dataset.status = deck.status;
+      if (deck.destination) {
+        item.dataset.destination = deck.destination;
+        val = deck.destination;
+      }
+      item.dataset.show = val;
+    
       const statuses = iqsa(item, ".ddb-status");
       for (let j = 0; j < statuses.length; j++) {
-        statuses[j].innerText = deck.status;
+        statuses[j].innerText = val;
       }
     },
   

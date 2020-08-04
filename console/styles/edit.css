@@ -52,15 +52,15 @@ section {
 }
 
 /* Main Row Styles */
-.ADDED .main {
+.GREEN .main {
   background-color: #1d4a1c;
 }
 
-.DELETED .main, .REMOVED .main {
+.RED .main {
   background-color: #551919;
 }
 
-.MODIFIED .main {
+.BLUE .main {
   background-color: #014d73;
 }
 

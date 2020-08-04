@@ -195,7 +195,8 @@
     form: function(scry = null) {
       const data = {};
       data.comments = id("comments").value;
-      data.status = id("in-destination").value;
+      data.status = id("old-deck").dataset.status;
+      data.destination = id("in-destination").value;
       data.editor = get("username");
       data.updated = new Date().toISOString();
       data.recommended = scrape.recommendation();
@@ -219,7 +220,6 @@
     body: function(scry) {
       const body = {};
       body.data = scrape.form(scry);
-      body.destination = body.data.status;
       body.jwt = get("jwt");
       body.method = "UPDATE_DECK";
       body.timestamp = qs("form").dataset.timestamp;
@@ -284,12 +284,10 @@
     
     section: function(deck) {
       id("in-section").value = deck.section;
-      if (deck.status === "SUBMITTED") {
-        id("in-destination").value = "SUBMITTED";
-      } else if (deck.status === "REMOVED" || deck.status === "DELETED") {
-        id("in-destination").value = "DELETED";
+      if (!deck.destination) {
+        id("in-destination").value = deck.status;
       } else {
-        id("in-destination").value = "PUBLISHED";
+        id("in-destination").value = deck.destination;
       }
     },
   
@@ -343,8 +341,10 @@
   const build = {
       deck: function(item, deck) {
       let id = deck.id;
-      item.classList.remove("SUBMITTED", "DELETED", "REMOVED", "MODIFIED", "PUBLISHED", "ADDED");
-      item.classList.add(deck.status);
+      item.dataset.status = deck.status;
+      if (deck.destination) {
+        item.dataset.destination = deck.destination;
+      }
       iqs(item, ".main").id = "m" + id;
       iqs(item, ".sub").id = "s" + id;
       iqs(item, ".ddb-title").innerText = deck.title;
@@ -370,9 +370,26 @@
     },
     
     status: function(item, deck) {
+      item.classList.remove("RED", "BLUE", "GREEN");
+      if (deck.status === "SUBMITTED" && deck.destination === "SUBMITTED") {
+        item.classList.add("BLUE");
+      } else if (deck.status === "SUBMITTED") {
+        item.classList.add("GREEN");
+      } else if (deck.status === "DELETED") {
+        item.classList.add("RED");
+      }
+      
+      let val = deck.status;
+      item.dataset.status = deck.status;
+      if (deck.destination) {
+        item.dataset.destination = deck.destination;
+        val = deck.destination;
+      }
+      item.dataset.show = val;
+    
       const statuses = iqsa(item, ".ddb-status");
       for (let j = 0; j < statuses.length; j++) {
-        statuses[j].innerText = deck.status;
+        statuses[j].innerText = val;
       }
     },
   
@@ -477,6 +494,7 @@
       })
       .then(info => {
         info.success = (response.status >= 200 && response.status < 300);
+        info.status = response.status;
         return info;
       });
       return result;
