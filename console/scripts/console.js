@@ -11,8 +11,9 @@
       promises.push(readDecks());
       await Promise.all(promises);
       id("show-deleted").addEventListener("change", toggleRequests);
-      id("content").classList.remove("hidden");
+      filterDecks();
       id("view-select").addEventListener("change", filterDecks);
+      id("content").classList.remove("hidden");
     }
   }
   
@@ -43,7 +44,6 @@
       const deck = sortedDecks[i];
       const item = id("deck-template").cloneNode(true);
       build.deck(item, deck);
-      filterDecks();
       id("decks").appendChild(item);
     }
   }
