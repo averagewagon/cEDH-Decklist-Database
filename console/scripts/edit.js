@@ -374,10 +374,14 @@
     
     status: function(item, deck) {
       item.classList.remove("RED", "BLUE", "GREEN");
-      if (deck.status === "PUBLISHED" && deck.destination === "PUBLISHED") {
-        item.classList.add("BLUE");
-      } else if (deck.status === "SUBMITTED") {
-        item.classList.add("GREEN");
+      if (deck.destination === "PUBLISHED") {
+        if (deck.status === "PUBLISHED") {
+          item.classList.add("BLUE");
+        } else {
+          item.classList.add("GREEN");
+        }
+      } else if (deck.destination === "DELETED" && deck.status === "PUBLISHED") {
+        item.classList.add("RED");
       } else if (deck.status === "DELETED") {
         item.classList.add("RED");
       }
