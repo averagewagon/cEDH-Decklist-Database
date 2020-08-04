@@ -93,6 +93,7 @@ section {
   font-size: 18pt;
   font-family: monospace;
   margin-top: 8px;
+  overflow-wrap: normal;
 }
 
 .ddb-icons svg {
