@@ -393,8 +393,8 @@
       item.dataset.status = deck.status;
       item.dataset.destination = deck.destination;
       let val = deck.destination ? deck.destination : deck.status;
-      if (deck.status === "SUBMITTED" || deck.destination === "SUBMITTED") {
-        item.dataset.show = "SUBMITTED";
+      if (deck.status === "PUBLISHED" || deck.destination === "PUBLISHED") {
+        item.dataset.show = "PUBLISHED";
       } else {
         item.dataset.show = val;
       }
