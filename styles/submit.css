@@ -58,10 +58,6 @@ form label {
   margin-bottom: 4px;
 }
 
-#title-wrap input {
-  margin-right: 16px;
-}
-
 #title-wrap, #commander-wrap input, #discord-info input {
   flex-grow: 1;
 }
