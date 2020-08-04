@@ -6,17 +6,13 @@
   // Initialization function
   async function init() {
     if (get("jwt")) {
-      const promises = [];
-      promises.push(readRequests());
-      promises.push(readDecks());
-      await Promise.all(promises);
+      readDecks().then(filterDecks);
+      readRequests();
       id("show-deleted").addEventListener("change", toggleRequests);
-      filterDecks();
       id("view-select").addEventListener("change", filterDecks);
       id("publish-changes").addEventListener("click", publishChanges);
       id("content").classList.remove("hidden");
     }
-      id("publish-changes").addEventListener("click", publishChanges);
   }
   
   // Sends the request to the API that initiates a Github commit
