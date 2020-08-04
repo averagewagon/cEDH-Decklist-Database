@@ -384,18 +384,15 @@
         } else {
           item.classList.add("GREEN");
         }
-      } else if (deck.destination === "DELETED" && deck.status === "PUBLISHED") {
+      } else if (deck.destination === "DELETED") {
         item.classList.add("RED");
-      } else if (deck.status === "DELETED") {
+      } else if (deck.destination !== "SUBMITTED" deck.status === "DELETED") {
         item.classList.add("RED");
       }
       
-      let val = deck.status;
       item.dataset.status = deck.status;
-      if (deck.destination) {
-        item.dataset.destination = deck.destination;
-        val = deck.destination;
-      }
+      item.dataset.destination = deck.destination;
+      let val = deck.destination ? deck.destination : deck.status;
       item.dataset.show = val;
     
       const statuses = iqsa(item, ".ddb-status");
