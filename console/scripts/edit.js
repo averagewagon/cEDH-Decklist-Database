@@ -200,6 +200,7 @@
       data.editor = get("username");
       data.updated = new Date().toISOString();
       data.recommended = scrape.recommendation();
+      data.id = id("old-deck").dataset.id;
       
       data.section = id("in-section").value;
       data.title = id("deck-title").value;
@@ -342,6 +343,7 @@
   const build = {
       deck: function(item, deck) {
       let id = deck.id;
+      item.dataset.id = id;
       item.dataset.status = deck.status;
       if (deck.destination) {
         item.dataset.destination = deck.destination;
