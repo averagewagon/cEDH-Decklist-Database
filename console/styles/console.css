@@ -20,18 +20,6 @@
   display: none !important;
 }
 
-.flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.flex-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 #content {
 }
 
@@ -111,7 +99,7 @@ section {
   flex-grow: 1;
 } 
 
-section ul {
+#decks, #decks ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -121,7 +109,7 @@ section ul {
   background-color: #1d4a1c;
 }
 
-.DELETED .main {
+.DELETED .main, .REMOVED .main {
   background-color: #551919;
 }
 

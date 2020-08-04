@@ -1,12 +1,12 @@
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   #content {
-    flex-direction: column-reverse;
+    flex-wrap: wrap;
   }
   
   aside, section {
     width: auto !important;
     overflow: visible !important;
-    min-width: auto !important;
+    min-width: 60% !important;
     max-width: 100% !important;
   }
   
@@ -21,13 +21,364 @@
 aside {
   overflow: auto;
   flex-grow: 1;
-  max-width: 450px;
   padding: 16px;
+  max-width: 650px;
+  min-width: 650px;
   background-color: var(--secondary-color);
 }
 
 section {
   overflow: auto;
-  padding: 16px 16px;
+  padding: 16px;
   flex-grow: 1;
+}
+
+/* Aside Styles */
+#prev-controls {
+  margin-bottom: 16px;
+  font-size: 16pt;
+  display: flex;
+  align-items: center;
+}
+
+#prev-controls label {
+  margin-left: 8px;
+}
+
+#decks {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Row Styles */
+.ADDED .main {
+  background-color: #1d4a1c;
+}
+
+.DELETED .main, .REMOVED .main {
+  background-color: #551919;
+}
+
+.MODIFIED .main {
+  background-color: #014d73;
+}
+
+.main {
+  border-top: 2px solid var(--darker);
+  padding: 8px 16px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.main > div {
+  align-items: flex-start;
+}
+
+.ddb-colors svg {
+  height: 28px;
+  width: 28px;
+  min-height: 28px;
+  min-width: 28px;
+  margin-right: 4px;
+}
+
+.ddb-title {
+  flex-grow: 1;
+  font-size: 16pt;
+  margin-top: 8px;
+}
+
+.main .ddb-status {
+  font-size: 18pt;
+  font-family: monospace;
+  margin-top: 8px;
+}
+
+.ddb-icons svg {
+  height: 28px;
+  width: 28px;
+  min-height: 28px;
+  min-width: 28px;
+  margin-left: 4px;
+}
+
+/* Sub Row Styles */
+.sub {
+  background-color: var(--lighter);
+  align-items: stretch;
+  padding: 12px;
+  max-height: 300px;
+}
+
+/* Column 1 */
+.ddb-links {
+  background-color: var(--canvas-color);
+  min-width: 320px;
+  max-width: 320px;
+  margin-right: 16px;
+}
+
+.ddb-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.ddb-discord {
+  font-size: 14pt;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
+
+.ddb-discord:hover {
+  text-decoration: underline;
+}
+
+.ddb-discord.disabled:hover {
+  text-decoration: none;
+  background-color: var(--backdrop-color);
+}
+
+.ddb-discord svg {
+  height: 36px;
+  width: 36px;
+  min-height: 36px;
+  min-width: 36px;
+  fill: var(--discord);
+  margin-right: 12px;
+}
+
+.ddb-decklists {
+  flex-grow: 1;
+  margin: 0 8px;
+  overflow: auto;
+}
+
+.ddb-decklists li {
+  margin-top: 8px;
+  border-bottom: 2px solid var(--lighter);
+}
+
+.ddb-decklists a {
+  color: skyblue;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.ddb-decklists a:hover {
+  text-decoration: underline;
+}
+
+.ddb-decklists svg {
+  height: 24px;
+  width: 24px;
+  min-height: 24px;
+  min-width: 24px;
+  margin-right: 8px;
+}
+
+.ddb-commanders {
+  margin: 8px;
+}
+
+.ddb-commanders a {
+  color: skyblue;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: monospace;
+  line-height: 1.5;
+  font-size: 14pt;
+}
+
+.ddb-commanders a:hover {
+  text-decoration: underline;
+}
+
+/* Column 2 */
+.ddb-info {
+  flex-grow: 1;
+  background-color: var(--canvas-color);
+}
+
+.ddb-section {
+  min-height: 44px;
+  padding: 0 8px;
+  text-align: left;
+  font-size: 16pt;
+  background-color: var(--backdrop-color);
+}
+
+.ddb-description {
+  overflow: auto;
+  padding: 8px;
+  color: gainsboro;
+  flex-grow: 1;
+}
+
+.ddb-updates {
+  font-size: 14pt;
+  font-weight: bold;
+  padding: 8px;
+}
+
+/* Section Styles */
+form {
+  font-size: 16pt;
+}
+
+form > div {
+  margin-bottom: 16px;
+}
+
+form label {
+  margin-bottom: 4px;
+}
+
+#title-wrap input {
+  margin-right: 16px;
+}
+
+#title-wrap, #commander-wrap input, #discord-info input {
+  flex-grow: 1;
+}
+
+#commander-wrap input:last-child, #discord-info input:last-child {
+  margin-top: 8px;
+}
+
+form ul {
+  margin: 0;
+  margin-top: 8px;
+  padding: 0;
+}
+
+#list-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+#add-deck {
+  margin-top: 8px;
+  padding: 12px;
+}
+
+form li {
+  list-style-type: none;
+  margin-bottom: 8px;
+}
+
+.list-title, .list-link {
+  margin-right: 16px;
+}
+
+form button {
+  font-size: 16pt;
+  color: white;
+}
+
+form input::placeholder, form textarea::placeholder {
+  opacity: .75;
+  font-style: italic;
+  color: white;
+}
+
+form input, form textarea, form select, form button {
+  background-color: var(--darker);
+  color: white;
+  border: none;
+}
+
+form li div > input {
+  flex-grow: 1;
+}
+
+.delete-list {
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 26pt;
+  line-height: 16px;
+  margin-right: 8px;
+  color: red;
+}
+
+form select {
+  font-size: 18pt;
+  padding: 8px 16px;
+}
+
+form [type="text"] {
+  font-size: 14pt;
+  padding: 8px;
+}
+
+textarea {
+  font-size: 12pt;
+  font-family: sans-serif;
+  padding: 8px;
+}
+#color-select {
+  display: flex;
+}
+
+#color-select div {
+  cursor: pointer;
+  opacity: 0.3;
+  height: 36px;
+  width: 36px;
+  margin-left: 4px;
+}
+
+#color-select input + div:hover {
+  opacity: 0.5;
+}
+
+#color-select input:checked + div {
+  opacity: 1;
+}
+
+#color-select input:checked + div:hover {
+  opacity: 1;
+}
+
+#discord-wrap {
+  margin-bottom: 4px;
+}
+
+.list-entry .flex-column {
+  flex-grow: 1;
+}
+
+.list-entry > div {
+  display: flex;
+  align-items: center;
+}
+
+.list-link {
+  margin-top: 4px;
+}
+
+#list-wrap ul li:only-child .delete-list {
+  visibility: hidden;
+}
+
+#submit-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+#submit-button {
+  padding: 8px 24px;
+  font-size: 18pt;
+  background-color: var(--accent-color);
+  color: black;
+}
+
+#submit-button:hover {
+  filter: brightness(0.9);
 }

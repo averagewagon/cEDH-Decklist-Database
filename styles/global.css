@@ -54,6 +54,18 @@
   display: none !important;
 }
 
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .icon {
   width: 36px;
   height: 36px;

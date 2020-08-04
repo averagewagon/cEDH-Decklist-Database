@@ -22,12 +22,232 @@ Edit console page
   <div id="wrapper">
     {% include console-navbar.html %}
   
-    <div id="content">
-      <aside>
+    <ul class="hidden">
+      <li id="template-x">
+        {% include svg/colors/x.svg %}
+      </li>
+      <li id="template-w">
+        {% include svg/colors/w.svg %}
+      </li>
+      <li id="template-u">
+        {% include svg/colors/u.svg %}
+      </li>
+      <li id="template-b">
+        {% include svg/colors/b.svg %}
+      </li>
+      <li id="template-r">
+        {% include svg/colors/r.svg %}
+      </li>
+      <li id="template-g">
+        {% include svg/colors/g.svg %}
+      </li>
       
+      <li id="decklist-template">
+        <a href="">{% include svg/primer.svg %} <span class="ddb-decklist-title"></span></a>
+      </li>
+    </ul>
+    
+    <div id="content" class="hidden">
+      <aside>
+        <div id="prev-controls" class="ns">
+          <input type="checkbox" autocomplete="false" id="preview-toggle"></input>
+          <label for="preview-toggle">Show original listing</label>
+        </div>
+        <ul id="decks">
+          <li><h2 id="deck-label">Preview</h2></li>
+          <li id="preview-deck">
+            <div class="main btn flex-column">
+              <div class="flex">
+                <div class="ddb-colors flex">
+                </div>
+                
+                <div class="ddb-icons flex">
+                  {% include svg/recommend.svg %}
+                  {% include svg/primer.svg %}
+                  {% include svg/discord.svg %}
+                </div>
+              </div>
+              
+              <div class="flex">
+                <div class="ddb-title">
+                </div>
+                <div class="ddb-status">
+                </div>
+              </div>
+            </div>
+            <div class="sub flex">
+              <div class="ddb-links flex-column">
+                <a class="ddb-discord btn" target="_blank">{% include svg/discord-logo.svg %} <span class="ddb-discord-title"></span></a>
+                <ul class="ddb-decklists">
+                </ul>
+                <ul class="ddb-commanders">
+                  <li><a href=""></a></li>
+                </ul>
+              </div>
+              <div class="ddb-info flex-column">
+                <div class="ddb-section flex">
+                </div>
+                <div class="ddb-description">
+                </div>
+                <div class="ddb-updates flex">
+                  <span class="ddb-username"></span>
+                  <span class="ddb-date"></span>
+                </div>
+              </div>
+            </div>
+          </li>
+          
+          <li class="hidden" id="old-deck">
+            <div class="main btn flex-column">
+              <div class="flex">
+                <div class="ddb-colors flex">
+                </div>
+                
+                <div class="ddb-icons flex">
+                  {% include svg/recommend.svg %}
+                  {% include svg/primer.svg %}
+                  {% include svg/discord.svg %}
+                </div>
+              </div>
+              
+              <div class="flex">
+                <div class="ddb-title">
+                </div>
+                <div class="ddb-status">
+                </div>
+              </div>
+            </div>
+            <div class="sub flex">
+              <div class="ddb-links flex-column">
+                <a class="ddb-discord btn" target="_blank">{% include svg/discord-logo.svg %} <span class="ddb-discord-title"></span></a>
+                <ul class="ddb-decklists">
+                </ul>
+                <ul class="ddb-commanders">
+                  <li><a href=""></a></li>
+                </ul>
+              </div>
+              <div class="ddb-info flex-column">
+                <div class="ddb-section flex">
+                </div>
+                <div class="ddb-description">
+                </div>
+                <div class="ddb-updates flex">
+                  <span class="ddb-username"></span>
+                  <span class="ddb-date"></span>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
       </aside>
       <section>
-      
+        <form>
+          <div class="flex">
+            <div class="flex-column">
+              <label for="in-section">Section</label>
+              <select id="in-section">
+                <option value="COMPETITIVE">Competitive</option>
+                <option value="DEPRECATED">Deprecated</option>
+                <option value="MEME">Meme</option>
+              </select>
+            </div>
+            
+            <div class="flex-column">
+              <label for="in-recommend">Curator</label>
+              <select id="in-recommend">
+                <option value="NO_RECOMMEND">Not Recommended</option>
+                <option value="RECOMMEND">Recommended</option>
+              </select>
+            </div>
+            
+            <div class="flex-column">
+              <label for="in-destination">Destination</label>
+              <select id="in-destination">
+                <option value="PUBLISHED">Published</option>
+                <option value="DELETED">Deleted</option>
+                <option value="SUBMITTED">Submitted</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="flex-column">
+            <div class="flex">
+              <label for="comments">Curator Comments</label>
+              <div id="edit-info">
+                <i>username</i> Edited on 2020-03-08
+              </div>
+            </div>
+            
+            <textarea id="comments" required autocomplete="off" maxlength="1000"  placeholder="Enter some comments to accompany this update"></textarea>
+          </div>
+          
+          <div>
+            <div class="flex-column">
+              <label for="deck-title">Deck Title</label>
+              <input type="text" id="deck-title" required autocomplete="off" maxlength="100"  placeholder="Enter the deck's name"/>
+            </div>
+          </div>
+          
+          <div>
+            <div class="flex" id="two-wrap">
+              <label for="commander-wrap">Commander(s)</label>
+              <div class="ns">
+                <input autocomplete="off" type="checkbox" id="two-commanders" />
+                <label for="two-commanders">This deck has 2 commanders<label>
+              </div>
+            </div>
+            <div id="commander-wrap" class="flex-column">
+              <input autocomplete="off" required type="text" id="commander" maxlength="300" placeholder="Enter the commander's full name"/>
+              <input autocomplete="off"  type="text" id="commander2" maxlength="300" class="hidden" placeholder="Enter the second commander's full name"/>
+            </div>
+          </div>
+          
+          <div class="flex-column">
+            <label for="description">Deck Description</label>
+            <textarea autocomplete="off" id="description" maxlength="1000" required placeholder="Enter the deck's description here." rows="4"></textarea>
+          </div>
+          
+          <div>
+            <div id="discord-wrap">
+              <input autocomplete="off" type="checkbox" id="has-discord"/>
+              <label for="has-discord">This deck has a Discord server</label>
+            </div>
+            <div class="flex-column hidden" id="discord-info">
+              <input autocomplete="off" type="text" id="discord-title" maxlength="100" placeholder="Discord Server Title"/>
+              <input autocomplete="off" type="text" id="discord-link" pattern="(https?:\/\/)?(www\.)?(discord\.(gg|io|me|li)|discordapp\.com\/invite)\/.+." title="You must input a valid Discord invite" maxlength="300" placeholder="A Discord invite link that won't expire"/>
+            </div>
+          </div>
+          
+          <div id="list-wrap">
+            <ul>
+              <li class="list-entry">
+                <div>
+                  <span class="delete-list ns">&times;</span>
+                  <div class="flex-column">
+                    <input autocomplete="off" type="text" required class="list-title" maxlength="100" placeholder="Decklist title"/>
+                    
+                    <div class="flex">
+                      <input autocomplete="off" type="text" required class="list-link" pattern="(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_+.~#?&//=]*)" title="Input link is invalid" maxlength="300" placeholder="Link to decklist"/>
+                      
+                      <div class="flex">
+                        <label class="ns">
+                          <input autocomplete="off" type="checkbox" class="has-primer"/>
+                          Has Primer
+                        </label>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <button type="button" class="btn" id="add-deck">+ Add a Decklist</button>
+          </div>
+          
+          <div id="submit-wrap">
+            <input type="submit" id="submit-button" value="Submit Update"/>
+          </div>
+        </form>
       </section>
     </div>
   </div>

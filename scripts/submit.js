@@ -174,7 +174,9 @@
   /** Removes a decklist entry option from the form
    */
   function deleteDecklist() {
-    this.parentElement.parentElement.remove();
+    if (this.parentElement.parentElement.parentElement.childElementCount > 1) {
+      this.parentElement.parentElement.remove();
+    }
   }
   
   /** Adds a new decklist entry to the list of decks

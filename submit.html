@@ -31,85 +31,83 @@ Submission page for the cDDB
             {{ content | escape | markdownify | replace: "id=", "data-content-id="}}
           </div>
         </aside>
-        <div>
-          <section>
-            <form>
-              <div>
-                <select id="table-select">
-                  <option value="COMPETITIVE">Submitting a Competitive Deck</option>
-                  <option value="DEPRECATED">Submitting a Deprecated Deck</option>
-                  <option value="MEME">Submitting a Meme Deck</option>
-                </select>
-              </div>
-                
-              <div class="flex">
-                <div class="flex-column" id="title-wrap">
-                  <label for="deck-title">Deck Title</label>
-                  <input autocomplete="off" type="text" required maxlength="100" id="deck-title" placeholder="Enter the deck's name"/>
-                </div>
-              </div>
-              
-              <div>
-                <div class="flex" id="two-wrap">
-                  <label for="commander-wrap">Commander(s)</label>
-                  <div class="ns">
-                    <input autocomplete="off" type="checkbox" id="two-commanders" />
-                    <label for="two-commanders">This deck has 2 commanders<label>
-                  </div>
-                </div>
-                <div id="commander-wrap" class="flex">
-                  <input autocomplete="off" required type="text" id="commander" maxlength="300" placeholder="Enter the commander's full name"/>
-                  <input autocomplete="off"  type="text" id="commander2" maxlength="300" class="hidden" placeholder="Enter the second commander's full name"/>
-                </div>
-              </div>
-              
-              <div class="flex-column">
-                <label for="description">Write a description for the deck</label>
-                <textarea autocomplete="off" id="description" maxlength="1000" required placeholder="Enter your description here." rows="4"></textarea>
-              </div>
-              
-              <div>
-                <div id="discord-wrap">
-                  <input autocomplete="off" type="checkbox" id="has-discord"/>
-                  <label for="has-discord">This deck has a Discord server</label>
-                </div>
-                <div class="flex hidden" id="discord-info">
-                  <input autocomplete="off" type="text" id="discord-title" maxlength="100" placeholder="Discord Server Title"/>
-                  <input autocomplete="off" type="text" id="discord-link" pattern="(https?:\/\/)?(www\.)?(discord\.(gg|io|me|li)|discordapp\.com\/invite)\/.+." title="You must input a valid Discord invite" maxlength="300" placeholder="A Discord invite link that won't expire"/>
-                </div>
-              </div>
-                
-              <div id="list-wrap">
-                <ul>
-                  <li class="list-entry">
-                    <div class="flex">
-                      <span class="delete-list ns">&times;</span>
-                      <input autocomplete="off" type="text" required class="list-title" maxlength="100" placeholder="Decklist title"/>
-                      <input autocomplete="off" type="text" required class="list-link" pattern="(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_+.~#?&//=]*)" title="Input link is invalid" maxlength="300" placeholder="Link to decklist"/>
-                      <div class="flex">
-                        <label class="ns">
-                          <input autocomplete="off" type="checkbox" class="has-primer"/>
-                          Has Primer
-                        </label>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-                <button type="button" class="btn" id="add-deck">+ Add a Decklist</button>
-              </div>
-              
-              <div id="submit-wrap">
-                <div class="g-recaptcha" data-theme="dark" data-expired-callback="refreshCaptcha" data-sitekey="6Lf6x68ZAAAAAOVJKUdXQKwu_kO2SGxf7clflkpe"></div>
-                <input type="submit" id="submit-button" value="Submit Deck"/>
-              </div>
-            </form>
-            <div id="copyright">
-              The cEDH Decklist Database is unofficial Fan Content permitted under the Fan Content Policy.
-              This site is not approved and/or endorsed by Wizards of the Coast.<br/>
-              Portions of the materials used are property of Wizards of the Coast, ©Wizards of the Coast LLC. 
+        <section>
+          <form>
+            <div>
+              <select id="table-select">
+                <option value="COMPETITIVE">Submitting a Competitive Deck</option>
+                <option value="DEPRECATED">Submitting a Deprecated Deck</option>
+                <option value="MEME">Submitting a Meme Deck</option>
+              </select>
             </div>
-          </section>
-        </div>
+              
+            <div class="flex">
+              <div class="flex-column" id="title-wrap">
+                <label for="deck-title">Deck Title</label>
+                <input autocomplete="off" type="text" required maxlength="100" id="deck-title" placeholder="Enter the deck's name"/>
+              </div>
+            </div>
+            
+            <div>
+              <div class="flex" id="two-wrap">
+                <label for="commander-wrap">Commander(s)</label>
+                <div class="ns">
+                  <input autocomplete="off" type="checkbox" id="two-commanders" />
+                  <label for="two-commanders">This deck has 2 commanders<label>
+                </div>
+              </div>
+              <div id="commander-wrap" class="flex">
+                <input autocomplete="off" required type="text" id="commander" maxlength="300" placeholder="Enter the commander's full name"/>
+                <input autocomplete="off"  type="text" id="commander2" maxlength="300" class="hidden" placeholder="Enter the second commander's full name"/>
+              </div>
+            </div>
+            
+            <div class="flex-column">
+              <label for="description">Write a description for the deck</label>
+              <textarea autocomplete="off" id="description" maxlength="1000" required placeholder="Enter your description here." rows="4"></textarea>
+            </div>
+            
+            <div>
+              <div id="discord-wrap">
+                <input autocomplete="off" type="checkbox" id="has-discord"/>
+                <label for="has-discord">This deck has a Discord server</label>
+              </div>
+              <div class="flex hidden" id="discord-info">
+                <input autocomplete="off" type="text" id="discord-title" maxlength="100" placeholder="Discord Server Title"/>
+                <input autocomplete="off" type="text" id="discord-link" pattern="(https?:\/\/)?(www\.)?(discord\.(gg|io|me|li)|discordapp\.com\/invite)\/.+." title="You must input a valid Discord invite" maxlength="300" placeholder="A Discord invite link that won't expire"/>
+              </div>
+            </div>
+              
+            <div id="list-wrap">
+              <ul>
+                <li class="list-entry">
+                  <div class="flex">
+                    <span class="delete-list ns">&times;</span>
+                    <input autocomplete="off" type="text" required class="list-title" maxlength="100" placeholder="Decklist title"/>
+                    <input autocomplete="off" type="text" required class="list-link" pattern="(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_+.~#?&//=]*)" title="Input link is invalid" maxlength="300" placeholder="Link to decklist"/>
+                    <div class="flex">
+                      <label class="ns">
+                        <input autocomplete="off" type="checkbox" class="has-primer"/>
+                        Has Primer
+                      </label>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <button type="button" class="btn" id="add-deck">+ Add a Decklist</button>
+            </div>
+            
+            <div id="submit-wrap">
+              <div class="g-recaptcha" data-theme="dark" data-expired-callback="refreshCaptcha" data-sitekey="6Lf6x68ZAAAAAOVJKUdXQKwu_kO2SGxf7clflkpe"></div>
+              <input type="submit" id="submit-button" value="Submit Deck"/>
+            </div>
+          </form>
+          <div id="copyright">
+            The cEDH Decklist Database is unofficial Fan Content permitted under the Fan Content Policy.
+            This site is not approved and/or endorsed by Wizards of the Coast.<br/>
+            Portions of the materials used are property of Wizards of the Coast, ©Wizards of the Coast LLC. 
+          </div>
+        </section>
       </div>
     </section>
   </div>

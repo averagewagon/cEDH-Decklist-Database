@@ -19,7 +19,9 @@
 
 /* Section Styles */
 section {
-  margin: 16px;
+  flex-grow: 1;
+  padding: 16px;
+  overflow: auto;
 }
 
 aside {
@@ -166,7 +168,7 @@ textarea {
   margin-bottom: 4px;
 }
 
-#list-wrap ul li:first-child .delete-list {
+#list-wrap ul li:only-child .delete-list {
   visibility: hidden;
 }
 
