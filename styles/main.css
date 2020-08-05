@@ -109,11 +109,9 @@ aside li svg {
   transition: 0.3s;
 }
 
-
-
 #advertisement {
   height: 100%;
-  width: 250px;
+  width: 251px;
   margin-bottom: 16px;
 }
 
@@ -124,8 +122,6 @@ aside li svg {
 .filter-inactive {
   transition: 0.3s;
 }
-
-
 
 /* Section Styles */
 section {
@@ -153,7 +149,7 @@ section {
   color: white;
 }
 
-#db-select, #db-sort {
+#db-section, #db-sort {
   font-size: 16pt;
   padding: 8px;
   margin-right: 16px;
