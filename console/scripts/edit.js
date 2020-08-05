@@ -132,7 +132,6 @@ async function submitForm() {
         qs("form").dataset.timestamp = result.data.updated;
         build.old(result.data);
         id("preview-toggle").checked = true;
-        togglePreview();
         id("deck-label").innerText = result.data.editor + "'s Version";
         alert(result.message);
       } else {
