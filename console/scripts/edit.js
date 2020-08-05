@@ -127,11 +127,21 @@ async function submitForm() {
         window.location.replace("/console/");
       }
     } else {
-      if (result.data) {
-        console.error(result.data);
+      console.log(result);
+      if (result.status = 409) {
+        qs("form").dataset.timestamp = result.data.updated;
+        build.old(result.data);
+        id("preview-toggle").checked = true;
+        togglePreview();
+        id("deck-label").innerText = result.data.editor + "'s Version";
+        alert(result.message);
+      } else {
+        if (result.data) {
+          console.error(result.data);
+        }
+        console.error(result.message);
+        alert(" There was an error:\n" + result.message);
       }
-      console.error(result.message);
-      alert(" There was an error:\n" + result.message);
     }
   }
 }
