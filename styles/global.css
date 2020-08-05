@@ -247,20 +247,29 @@ header {
     flex-grow: 0;
   }
   
-  #nav-discord img {
-    height: 26px;
-    margin: 0;
-    margin-left: 8px;
+  #nav-discord {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #nav-discord svg {
+    margin: 0 4px;
+    height: 34px;
   }
   
   #logo {
     width: auto;
-    margin-right: 8px;
     height: 100%;
   }
   
   #logo h1, #logo span {
     display: none;
+  }
+  
+  #logo svg {
+    height: 30px !important;
+    margin: 0 4px;
   }
   
   nav .btn {
