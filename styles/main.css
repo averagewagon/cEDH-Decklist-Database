@@ -77,12 +77,11 @@ aside li span {
   margin-left: 16px;
 }
 
-aside li .svg-icon {
+aside li svg {
   width: 36px;
   height: 36px;
   min-width: 36px;
   min-height: 36px;
-  background-color: white;
 }
 
 #color-filters {

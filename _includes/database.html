@@ -1,0 +1,106 @@
+<link rel="stylesheet" type="text/css" href="/styles/database.css" />
+<script src="/scripts/database.js"></script>
+<ul id="decks">
+  {% assign decks = (site.data.database | sort: 'updated') | reverse %}
+  {% for d in decks %}
+  
+  {% capture primers %}
+  {% for x in d.decklists %}
+  {{x.primer}}
+  {% endfor %}
+  {% endcapture %}
+  
+  
+  <li id="{{d.id}}" data-colors="{{d.colors | join ""}}">
+    <div class="main btn flex">
+      <div class="ddb-colors flex">
+        {% if d.colors contains "w" %}
+          {% include svg/colors/w.svg %}{% else %}{% include svg/colors/x.svg %}
+        {% endif %}
+        
+        {% if d.colors contains "u" %}
+          {% include svg/colors/u.svg %}{% else %}{% include svg/colors/x.svg %}
+        {% endif %}
+        
+        {% if d.colors contains "b" %}
+          {% include svg/colors/b.svg %}{% else %}{% include svg/colors/x.svg %}
+        {% endif %}
+        
+        {% if d.colors contains "r" %}
+          {% include svg/colors/r.svg %}{% else %}{% include svg/colors/x.svg %}
+        {% endif %}
+        
+        {% if d.colors contains "g" %}
+          {% include svg/colors/g.svg %}{% else %}{% include svg/colors/x.svg %}
+        {% endif %}
+      </div>
+      <div class="ddb-title">
+        {{d.title | escape}}
+      </div>
+      <div class="ddb-icons flex">
+        {% if d.recommended %}
+          {% include svg/recommend.svg %}{% else %}{% include svg/not/recommend.svg %}
+        {% endif %}
+        
+        {% if primers contains true %}
+          {% include svg/primer.svg %}{% else %}{% include svg/not/primer.svg %}
+        {% endif %}
+        
+        {% unless d.discord == null %}
+          {% include svg/discord.svg %}{% else %}{% include svg/not/discord.svg %}
+        {% endunless %}
+      </div>
+    </div>
+    
+    <div class="sub hidden flex">
+      <div class="ddb-images">
+        {% for x in d.commander %}
+          <img data-src="{{x.link}}" alt="{{x.name | escape}}"/>
+        {% endfor %}
+      </div>
+      <div class="ddb-links flex-column">
+        {% unless d.discord == null %}
+        <a class="ddb-discord btn" target="_blank" href="{{d.discord.link | escape}}">
+          {% include svg/discord-logo.svg %}
+          <span class="ddb-discord-title">{{d.discord.title | escape}}</span>
+        </a>
+        {% else %}
+        <a class="ddb-discord btn disabled" target="_blank">
+          {% include svg/not/discord-logo.svg %}
+          <span class="ddb-discord-title">[No Discord Server]</span>
+        </a>
+        {% endunless %}
+        <ul class="ddb-commanders">
+          {% for x in d.commander %}
+          <a href="{{x.link | escape}}"><li class="btn">{{x.name | escape}}</li></a>
+          {% endfor %}
+        </ul>
+        <ul class="ddb-decklists">
+          {% for x in d.decklists %}
+            <li>
+              <a href="{{x.link}}">
+                {% if x.primer %}
+                  {% include svg/primer.svg %}{% else %}{% include svg/not/primer.svg %}
+                {% endif %}
+                {{x.title | escape}}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="ddb-info flex-column">
+      <div class="ddb-section flex">
+        COMPETITIVE
+      </div>
+        <div class="ddb-description">
+          {{d.description | escape}}
+        </div>
+        <div class="flex">
+          <span class="ddb-date">{{ d.updated | slice: 0, 10 | escape}}
+        </div>
+      </div>
+    </div>
+  </li>
+  
+  {% endfor %}
+</ul>
