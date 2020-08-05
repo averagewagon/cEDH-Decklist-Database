@@ -290,21 +290,22 @@ section {
 }
 
 .ddb-commanders {
-  margin: 8px;
+  padding: 0;
+}
+
+.ddb-commanders li {
+  border-top: 2px solid var(--darker);
+  text-align: left;
+  padding: 4px 12px;
 }
 
 .ddb-commanders a {
   color: skyblue;
-  font-weight: bold;
   text-decoration: none;
-  font-family: monospace;
   line-height: 1.5;
   font-size: 14pt;
 }
 
-.ddb-commanders a:hover {
-  text-decoration: underline;
-}
 
 /* Column 3 */
 .ddb-info {

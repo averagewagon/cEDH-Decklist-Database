@@ -1,0 +1,197 @@
+#decks, #decks ul {
+  list-style-type: none;
+}
+
+#decks {
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Row Styles */
+.main {
+  border-top: 2px solid var(--darker);
+  padding: 8px 16px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.ddb-colors svg {
+  height: 28px;
+  width: 28px;
+  min-height: 28px;
+  min-width: 28px;
+  margin-right: 4px;
+}
+
+.ddb-title {
+  margin-left: 90px;
+  flex-grow: 1;
+  font-size: 16pt;
+}
+
+.main .ddb-status {
+  font-size: 18pt;
+  margin: 0 16px;
+  font-family: monospace;
+  overflow-wrap: normal;
+}
+
+.ddb-icons svg {
+  height: 28px;
+  width: 28px;
+  min-height: 28px;
+  min-width: 28px;
+  margin-left: 4px;
+}
+
+/* Sub Row Styles */
+.sub {
+  background-color: var(--lighter);
+  align-items: stretch;
+  padding: 12px;
+  max-height: 334px;
+}
+
+/* Column 1 */
+.ddb-images {
+  position: relative;
+  margin-right: 12px;
+  min-width: 240px;
+  max-width: 240px;
+  min-height: 334px;
+  max-height: 334px;
+}
+
+.ddb-images img {
+  border-radius: 12px;
+  width: 91%;
+  position: absolute;
+}
+
+.ddb-images img:hover {
+  z-index: 2;
+}
+
+.ddb-images img:nth-child(2) {
+  margin-top: 31px;
+  margin-left: 20px;
+}
+
+.ddb-images img:only-child {
+  width: 100%;
+}
+
+/* Column 2 */
+.ddb-links {
+  background-color: var(--canvas-color);
+  min-width: 320px;
+  max-width: 320px;
+  margin-right: 12px;
+}
+
+.ddb-discord {
+  font-size: 14pt;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
+
+.ddb-discord:hover {
+  text-decoration: underline;
+}
+
+.ddb-discord.disabled:hover {
+  text-decoration: none;
+  background-color: var(--backdrop-color);
+}
+
+.ddb-discord svg {
+  height: 36px;
+  width: 36px;
+  min-height: 36px;
+  min-width: 36px;
+  fill: var(--discord);
+  margin-right: 12px;
+}
+
+.ddb-decklists {
+  flex-grow: 1;
+  padding: 0 8px;
+  overflow: auto;
+}
+
+.ddb-decklists li {
+  margin-top: 8px;
+  border-bottom: 2px solid var(--lighter);
+}
+
+.ddb-decklists a {
+  color: skyblue;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 13pt;
+}
+
+.ddb-decklists a:hover {
+  text-decoration: underline;
+}
+
+.ddb-decklists svg {
+  height: 28px;
+  width: 28px;
+  min-height: 28px;
+  min-width: 28px;
+  margin-right: 8px;
+}
+
+.ddb-commanders {
+  padding: 0;
+}
+
+.ddb-commanders li {
+  border-top: 2px solid var(--darker);
+  text-align: left;
+  padding: 4px 12px;
+}
+
+.ddb-commanders a {
+  color: skyblue;
+  text-decoration: none;
+  line-height: 1.5;
+  font-size: 14pt;
+}
+
+/* Column 3 */
+.ddb-info {
+  flex-grow: 1;
+  background-color: var(--canvas-color);
+}
+
+.ddb-section {
+  min-height: 44px;
+  padding: 0 8px;
+  text-align: left;
+  font-size: 16pt;
+  background-color: var(--backdrop-color);
+}
+
+.ddb-description {
+  overflow: auto;
+  padding: 8px;
+  color: gainsboro;
+  flex-grow: 1;
+}
+
+.ddb-updates {
+}
+
+.ddb-date {
+  text-align: right;
+  flex-grow: 1;
+  font-size: 14pt;
+  font-weight: bold;
+  padding: 8px;
+}
