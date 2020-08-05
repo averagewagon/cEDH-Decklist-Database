@@ -69,7 +69,7 @@ function addDecklist() {
 }
 
 function togglePreview() {
-  if (this.checked) {
+  if (id("preview-toggle").checked) {
     id("old-deck").classList.remove("hidden");
     id("preview-deck").classList.add("hidden");
     id("deck-label").innerText = "Original Listing";
@@ -126,6 +126,7 @@ async function submitForm() {
         qs("form").dataset.timestamp = result.data.updated;
         build.old(result.data);
         id("preview-toggle").checked = true;
+        togglePreview();
         id("deck-label").innerText = result.data.editor + "'s Version";
         alert(result.message);
       } else {
