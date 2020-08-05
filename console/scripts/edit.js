@@ -119,13 +119,7 @@ async function submitForm() {
     let result = await sendToDDB(body);
     if (result.success) {
       alert(result.message);
-      if (result.data) {
-        id("preview-toggle").checked = true;
-        togglePreview();
-        build.old(result.data);
-      } else {
-        window.location.replace("/console/");
-      }
+      window.location.replace("/console/");
     } else {
       console.log(result);
       if (result.status = 409) {
