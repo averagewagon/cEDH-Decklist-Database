@@ -17,86 +17,52 @@ const COLOR_ORDER = [
 
 // Initialization function
 function init() {
-  prepareListeners();
-}
-
-/** Adds a click listener for all the clickable elements
-  */
-function prepareListeners() {
-  let mainRows = qsa(".main");
-  for (let i = 0; i < mainRows.length; i++) {
-    mainRows[i].addEventListener("click", toggleSub);
-  }
-  
-  let colorFilters = qsa("#color-filters .icon");
-  for (let i = 0; i < colorFilters.length; i++) {
-    colorFilters[i].addEventListener("click", toggleColor);
-  }
-  
-  /*
-  let buttonFilters = qsa(".filter-option");
-  for (let i = 0; i < buttonFilters.length; i++) {
-    buttonFilters[i].addEventListener("click", toggleFilter);
-  }
-  */
-  
-  
-  id("db-select").addEventListener("change", switchDescription);
-  /*
-  id("db-select").addEventListener("change", applyFilters);
-  id("db-search").addEventListener("input", applyFilters);
   id("db-sort").addEventListener("change", sortTable);
-*/
-}
-
-/** Iterates through the table and applies the currently-selected filters
-  */
-function applyFilters() {
-  let fs = checkFilterState();
-  let rows = qsa(".main");
-  for (let i = 0; i < rows.length; i++) {
-    let entryId = rows[i].dataset.id;
-    if (determineFilterCompliance(entryId, fs)) {
-      showEntry(entryId);
-    } else {
-      hideEntry(entryId);
-    }
-  }
-}
-
-/** Sorts the table depending on the selected sort
-  */
-function sortTable() {
-  let sort = id("db-sort").value;
-  let mainRows = qsa(".main");
-  let entries = [];
-  for (let i = 0; i < mainRows.length; i++) {
-    entries.push(mainRows[i].dataset);
-  }
+  id("db-search").addEventListener("change", applyFilters);
+  id("db-section").addEventListener("change", changeSection);
+  qsa(".main").forEach(item => item.addEventListener("click", toggleSub));
   
-  let sorted = entries.sort((a, b) => {
-    if (sort == "date") {
-      return b.updated.localeCompare(a.updated);
-    } else if (sort == "title") {
-      return a.name.localeCompare(b.name);
-    } else {
-      return convertColor(a.colors) - convertColor(b.colors);
+  qsa("#color-filters > div").forEach(item => item.addEventListener("click", () => {
+    item.classList.toggle("color-inactive");
+    item.classList.toggle("color-active");
+    applyFilters();
+  }));
+  
+  qsa("#entry-filters > li").forEach(item => item.addEventListener("click", () => {
+    item.classList.toggle("filter-inactive");
+    item.classList.toggle("filter-active");
+    applyFilters();
+  }));
+}
+
+// Toggles the visibility of a subrow
+function toggleSub() {
+  const entry = iqs(this.parentElement, ".sub");
+  entry.classList.toggle("hidden");
+  iqsa(entry, ".ddb-images img").forEach(card => {
+    if (!card.src && window.innerWidth > 1200) {
+      card.src = card.dataset.src;
     }
   });
-  
-  for (let i = 0; i < sorted.length; i++) {
-    let entryId = sorted[i].id;
-    let mainEntry = qs(".m" + entryId);
-    let subEntry = qs(".s" + entryId);
-    qs("tbody").appendChild(mainEntry);
-    qs("tbody").appendChild(subEntry);
-  }
 }
 
-/** Converts a color string into a number for its priority
-  * @param {string} colors - A string containing the colors for the deck
-  * @returns {int} - The priority by which this color should be sorted
-  */
+// Sorts a table with the available sort values being: NEW, TITLE, COLOR
+function sortTable() {
+  const sort = id("db-sort").value;
+  const entries = [...qsa("#decks > li")];
+  
+  const sorted = entries.sort((a, b) => {
+    if (sort === "NEW")   { return b.dataset.updated.localeCompare(a.dataset.updated); }
+    if (sort === "TITLE") { return a.dataset.title.localeCompare(b.dataset.title); }
+    if (sort === "COLOR") { return convertColor(a.dataset.colors) - convertColor(b.dataset.colors); }
+    return 0;
+  });
+  
+  const decks = id("decks");
+  sorted.forEach(item => decks.appendChild(item));
+}
+
+// Converts a color array or color string into a number for sorting purposes
 function convertColor(colors) {
   let val = 0;
   if (colors.includes("w")) { val += 1 }
@@ -107,143 +73,46 @@ function convertColor(colors) {
   return COLOR_ORDER.indexOf(val);
 }
 
-/** Hides an entry
-  * @param {string} entryId - The entry ID which is to be hidden
-  */
-function hideEntry(entryId) {
-  qs(".m" + entryId).classList.add("hidden");
-  qs(".s" + entryId).classList.add("hidden");
-}
-
-/** Shows an entry
-  * @param {string} entryId - The entry ID which is to be shown
-  */
-function showEntry(entryId) {
-  qs(".m" + entryId).classList.remove("hidden");
-}
-
-/** Turns a color filter on or off
-  */
-function toggleColor() {
-  this.classList.toggle("color-inactive");
-  this.classList.toggle("color-active");
-  applyFilters();
-}
-
-/** Changes the description when the database changes
-  */
-function switchDescription() {
-  let section = id("db-select").value;
-  id("competitive-desc").classList.add("hidden");
-  id("deprecated-desc").classList.add("hidden");
-  id("meme-desc").classList.add("hidden");
-  id(section + "-desc").classList.remove("hidden");
-}
-
-/** Turns a button filter on or off
-  */
-function toggleFilter() {
-  this.classList.toggle("filter-active");
-  this.classList.toggle("filter-inactive");
-  applyFilters();
-}
-
-/** Toggles the visibility of a subrow and fetches card images
-  */
-function toggleSub() {
-  const entry = this.parentElement.querySelector(".sub");
-  entry.classList.toggle("hidden");
-  const cards = entry.querySelectorAll(".ddb-images img");
-  for (let i = 0; i < cards.length; i++) {
-    if (!cards[i].src && window.innerWidth > 1200) {
-      cards[i].src = cards[i].dataset.src;
-    }
-  }
-}
-
-/** Sets the src of all the given cards to the Scryfall image URI
-  * @param {Object} cardInfo - The Scryfall object which holds all card info
-  */
-function setCardSources(cardInfo) {
-  let cardName = cardInfo.name;
-  let imageSrc = cardInfo.image_uris.normal;
-  if (window.innerWidth >= 1200) {
-    let images = qsa(".card-wrap [title=\"" + cardName + "\"]");
-    for (let i = 0; i < images.length; i++) {
-      images[i].src = imageSrc;
-    }
-  }
+function applyFilters() {
+  const recommended = id("rec-only").classList.contains("filter-active");
+  const primer = id("primer-only").classList.contains("filter-active");
+  const discord = id("discord-only").classList.contains("filter-active");
+  const section = id("db-section").value;
+  const search = id("db-search").value.toLowerCase();
+  const colors = [];
+  qsa(".color-active").forEach(color => colors.push(color.dataset.c));
   
-  let mobileNames = qsa(".d-commanders [title=\"" + cardName + "\"]");
-  for (let i = 0; i < mobileNames.length; i++) {
-    mobileNames[i].href = cardInfo.scryfall_uri;
-  }
-  cachedCards[cardName] = imageSrc;
-}
-
-/** Determines if a given row should be hidden or shown based on state of the filters
-  * @param {string} entryId - The entry which is being inspected
-  * @param {Object} filterState - The current state of the filters and searches on the page
-  * @returns {boolean} - If true, then the entry should be visible, else false
-  */
-function determineFilterCompliance(entryId, fs) {
-  let show = true;
-  let entry = qs(".m" + entryId).dataset;
-  
-  if (fs.section != entry.section) {
-    show = false;
-  } else if (fs.rec && entry.recommended == "false") {
-    show = false;
-  } else if (fs.primer && entry.primer == "noprimer") {
-    show = false;
-  } else if (fs.discord && entry.discord_link == "") {
-    show = false;
-  } else {
-    for (let i = 0; i < fs.colors.length; i++) {
-      let color = fs.colors[i];
-      if (!entry.colors.includes(color)) {
-        show = false;
-        break;
-      }
+  qsa("#decks > li").forEach(deck => {
+    let hide = false;
+    if (recommended && iqs(deck, ".ddb-icons .recommend-svg").classList.contains("unavailable")) {
+      hide = true;
+    } else if (primer && iqs(deck, ".ddb-icons .primer-svg").classList.contains("unavailable")) {
+      hide = true;
+    } else if (discord && iqs(deck, ".ddb-icons .discord-svg").classList.contains("unavailable")) {
+      hide = true;
+    } else if (section !== iqs(deck, ".ddb-section").innerText.trim()) {
+      hide = true;
+    } else if (search && !deck.textContent.toLowerCase().includes(search)) {
+      hide = true;
+    } else if (colors) {
+      colors.forEach(color => {
+        if (!deck.dataset.colors.includes(color)) {
+          hide = true;
+          return;
+        }
+      });
     }
     
-    if (show) {
-      let match = entry.updated + " " 
-        + entry.name + " "
-        + entry.commander + " "
-        + entry.description + " "
-        + entry.discord_title + " "
-        + entry.decks;
-      if (fs.search && !match.toUpperCase().includes(fs.search)) {
-        show = false;
-      }
-    }
-  }
-  
-  return show;
+    hide ? deck.classList.add("hidden") : deck.classList.remove("hidden");
+  });
 }
 
-/** Returns an object which holds the current state of the filters
-  * @returns {Object} filterState - An Object describing the currently-active filters
-  */
-function checkFilterState() {
-  let filterState = {};
-  filterState.rec = id("rec-only").classList.contains("filter-active");
-  filterState.primer = id("primer-only").classList.contains("filter-active");
-  filterState.discord = id("discord-only").classList.contains("filter-active");
-  filterState.search = id("db-search").value.trim().toUpperCase();
-  filterState.section = id("db-select").value;
-  
-  let colorFilters = qsa("#color-filters .icon");
-  filterState.colors = [];
-  for (let i = 0; i < colorFilters.length; i++) {
-    let color = colorFilters[i];
-    if (color.classList.contains("color-active")) {
-      filterState.colors.push(color.dataset.c);
-    }
-  }
-  
-  return filterState;
+function changeSection() {
+  applyFilters();
+  const section = id("db-section").value.toLowerCase();
+  qsa("#db-description > div").forEach(item => {
+    item.id.includes(section) ? item.classList.remove("hidden") : item.classList.add("hidden");
+  });
 }
 
 /* HELPER FUNCTIONS */

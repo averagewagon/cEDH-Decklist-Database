@@ -12,9 +12,6 @@ The main page of the cEDH decklist database
   <title>cEDH Decklist Database</title>
   
   <link rel="stylesheet" type="text/css" href="/styles/main.css" />
-  <link rel="stylesheet" type="text/css" href="/styles/table.css" />
-  <!-- DDB Scripts -->
-  <script defer src="scripts/table.js"></script>
   
   <!-- Google AdSense -->
   <script data-ad-client="ca-pub-4373090976253918" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -29,29 +26,23 @@ The main page of the cEDH decklist database
         <h2>Filters</h2>
         <div id="filter-wrap">
           <div id="color-filters" class="ns">
-            <div class="icon pt color-inactive bw" data-c="w">{% include svg/colors/w.svg %}</div>
-            <div class="icon pt color-inactive bu" data-c="u">{% include svg/colors/u.svg %}</div>
-            <div class="icon pt color-inactive bb" data-c="b">{% include svg/colors/b.svg %}</div>
-            <div class="icon pt color-inactive br" data-c="r">{% include svg/colors/r.svg %}</div>
-            <div class="icon pt color-inactive bg" data-c="g">{% include svg/colors/g.svg %}</div>
+            <div class="icon pt color-inactive" data-c="w">{% include svg/colors/w.svg %}</div>
+            <div class="icon pt color-inactive" data-c="u">{% include svg/colors/u.svg %}</div>
+            <div class="icon pt color-inactive" data-c="b">{% include svg/colors/b.svg %}</div>
+            <div class="icon pt color-inactive" data-c="r">{% include svg/colors/r.svg %}</div>
+            <div class="icon pt color-inactive" data-c="g">{% include svg/colors/g.svg %}</div>
           </div>
-          <ul class="ns list">
-            <li id="rec-only" class="filter-option filter-active">
-              <div class="svg-icon">
-                {% include svg/recommend.svg %}
-              </div>
+          <ul id="entry-filters" class="ns list">
+            <li id="rec-only" class="filter-active">
+              {% include svg/recommend.svg %}
               <span>Recommendations</span>
             </li>
-            <li id="primer-only" class="filter-option filter-inactive">
-              <div class="svg-icon">
-                {% include svg/primer.svg %}
-              </div>
+            <li id="primer-only" class="filter-inactive">
+              {% include svg/primer.svg %}
               <span>Primers</span>
             </li>
-            <li id="discord-only" class="filter-option filter-inactive">
-              <div class="svg-icon">
-                {% include svg/discord.svg %}
-              </div>
+            <li id="discord-only" class="filter-inactive">
+              {% include svg/discord.svg %}
               <span>Discord Servers</span>
             </li>
           </ul>
@@ -61,15 +52,15 @@ The main page of the cEDH decklist database
       
       <section id="section">
         <div id="db-functions" class="ns">
-          <select id="db-select" class="btn" autocomplete="off">
-            <option value="competitive" id="main-db">Competitive Decks</option>
-            <option value="deprecated" id="deprecated-db">Deprecated Decks</option>
-            <option value="meme" id="meme-db">Meme Decks</option>
+          <select id="db-section" class="btn" autocomplete="off">
+            <option value="COMPETITIVE">Competitive Decks</option>
+            <option value="DEPRECATED">Deprecated Decks</option>
+            <option value="MEME">Meme Decks</option>
           </select>
           <select id="db-sort" class="btn" autocomplete="off">
-            <option value="date" id="sort-date">Sort by Newest</option>
-            <option value="color" id="sort-color">Sort by Color</option>
-            <option value="title" id="sort-title">Sort by Title</option>
+            <option value="NEW">Sort by Newest</option>
+            <option value="TITLE">Sort by Title</option>
+            <option value="COLOR">Sort by Color</option>
           </select>
           <input id="db-search" type="search" placeholder="Search the database..." name="search" aria-label="search" autocomplete="off">
         </div>
@@ -99,7 +90,7 @@ The main page of the cEDH decklist database
           Portions of the materials used are property of Wizards of the Coast, ©Wizards of the Coast LLC.
         </div>
         
-        {% include ddb-table.html %}
+        {% include database.html %}
         
       </section>
     </div>
