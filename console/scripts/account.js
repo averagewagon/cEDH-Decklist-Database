@@ -1,10 +1,10 @@
-"use strict";
-  
-const LOGIN = "https://cedh-decklist-database.auth.us-west-2.amazoncognito.com/login?client_id=41o965ca7urqoiutm603p7khqc&response_type=token&scope=openid&redirect_uri=https://cedh-decklist-database.com/console/login.html";
-const LOGOUT = "https://cedh-decklist-database.auth.us-west-2.amazoncognito.com/logout?client_id=41o965ca7urqoiutm603p7khqc&logout_uri=https://cedh-decklist-database.com/console/logout.html";
-const API_URL = "https://3rxytinw28.execute-api.us-west-2.amazonaws.com/default/DDB-API-Function";
-
+---
+---
+(function() {"use strict";
 window.addEventListener("load", init);
+
+const LOGIN = "https://cedh-decklist-database.auth.us-west-2.amazoncognito.com/login?client_id=41o965ca7urqoiutm603p7khqc&response_type=token&scope=openid&redirect_uri=https://cedh-decklist-database.com/console/login";
+const LOGOUT = "https://cedh-decklist-database.auth.us-west-2.amazoncognito.com/logout?client_id=41o965ca7urqoiutm603p7khqc&logout_uri=https://cedh-decklist-database.com/console/logout";
 
 // Initialization function
 function init() {
@@ -47,40 +47,7 @@ function getTime() {
 }
 
 /* HELPER FUNCTIONS */
-function get(input) {
-  return window.localStorage.getItem(input);
-}
+{% include javascript/dom.js %}
+{% include javascript/backend.js %}
 
-function set(key, value) {
-  window.localStorage.setItem(key, value);
-}
-
-function clear() {
-  window.localStorage.clear();
-}
-
-/**
-  * Returns the element that has the ID attribute with the specified value.
-  * @param {string} idName - element ID
-  * @returns {object} DOM object associated with id.
-  */
-function id(idName) {
-  return document.getElementById(idName);
-}
-/**
-* Returns the first element that matches the given CSS selector.
-* @param {string} query - CSS query selector.
-* @returns {object} The first DOM object matching the query.
-*/
-function qs(query) {
-  return document.querySelector(query);
-}
-
-/**
-  * Returns the array of elements that match the given CSS selector.
-  * @param {string} query - CSS query selector
-  * @returns {object[]} array of DOM objects matching the query.
-  */
-function qsa(query) {
-  return document.querySelectorAll(query);
-}
+})();

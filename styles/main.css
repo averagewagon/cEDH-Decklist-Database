@@ -38,6 +38,18 @@
   }
 }
 
+@media (min-width: 801px) {
+  .color-inactive:hover {
+    transition: 0.0s;
+    opacity: 0.6;
+  }
+  
+  .filter-inactive:hover {
+    transition: 0.0s;
+    background-color: var(--canvas-color);
+  }
+}
+
 /* Aside Styles */
 aside {
   width: 250px;
@@ -97,10 +109,7 @@ aside li svg {
   transition: 0.3s;
 }
 
-.color-inactive:hover {
-  transition: 0.0s;
-  opacity: 0.6;
-}
+
 
 #advertisement {
   height: 100%;
@@ -116,10 +125,7 @@ aside li svg {
   transition: 0.3s;
 }
 
-.filter-inactive:hover {
-  transition: 0.0s;
-  background-color: var(--canvas-color);
-}
+
 
 /* Section Styles */
 section {

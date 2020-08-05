@@ -1,3 +1,55 @@
+@media (max-width: 800px) {
+  .main {
+    flex-wrap: wrap;
+  }
+  
+  .ddb-title {
+    order: 1;
+    margin-left: 0 !important;
+    margin-top: 8px;
+    width: 80%;
+  }
+  
+  .sub {
+    flex-wrap: wrap;
+  }
+  
+  .ddb-links {
+    max-width: 100% !important;
+    min-width: 0% !important;
+    width: 100%;
+    margin-right: 0 !important;
+  }
+  
+  .ddb-section {
+    display: none;
+  }
+  
+  .ddb-description {
+    order: 1;
+  }
+  
+  #decks .btn:hover {
+    background-color: var(--backdrop-color);
+  }
+  
+  .sub {
+    max-height: 100% !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .ddb-images {
+    display: none;
+  }
+}
+
+@media (min-width: 1201px) {
+  .ddb-commanders {
+    display: none;
+  }
+}
+
 #decks, #decks ul {
   list-style-type: none;
 }
