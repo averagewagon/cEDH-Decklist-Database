@@ -206,6 +206,7 @@ const build = {
       a.href = commander.link;
       
       const li = document.createElement("li");
+      li.classList.add("btn");
       li.appendChild(a);
       commanders.appendChild(li);
     }
