@@ -48,7 +48,7 @@ async function submit() {
     "jwt": get("jwt"),
     "method": "MODIFY_SITE",
     "file": id("file-select").value,
-    "content": base64.encode(id("input").value)
+    "content": base64.encode(utf8.encode(id("input").value))
   }
   const result = await sendToDDB(body);
   if (result.success) {
