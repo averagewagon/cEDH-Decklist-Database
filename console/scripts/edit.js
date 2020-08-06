@@ -21,6 +21,34 @@ function prepareListeners() {
   qs("form").addEventListener("submit", submitForm);
   qs("form").addEventListener("change", updatePreview);
   qs("form").addEventListener("keyup", updatePreview);
+  id("in-recommend").addEventListener("change", swapIcon);
+  id("in-destination").addEventListener("change", swapBackground);
+  swapIcon();
+  swapBackground();
+}
+
+// Switches between active and inactive rec icon depending on select value
+function swapIcon() {
+  const svgs = qsa("#recommend-wrap .recommend-svg");
+  if (id("in-recommend").value === "RECOMMEND") {
+    svgs[0].classList.remove("hidden");
+    svgs[1].classList.add("hidden");
+  } else {
+    svgs[0].classList.add("hidden");
+    svgs[1].classList.remove("hidden");
+  }
+}
+
+function swapBackground() {
+  const dest = id("in-destination");
+  dest.classList.remove("RED", "BLUE", "GREEN");
+  if (dest.value === "PUBLISHED") {
+    dest.classList.add("BLUE");
+  } else if (dest.value === "DELETED") {
+    dest.classList.add("RED");
+  } else {
+    dest.classList.add("GREEN");
+  }
 }
 
 // Activates or deactivates the partner text box

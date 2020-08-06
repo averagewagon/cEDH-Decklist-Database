@@ -47,7 +47,7 @@ Edit console page
       </li>
     </ul>
     
-    <div id="content" class="hidden">
+    <div id="content" class="">
       <aside>
         <div id="prev-controls" class="ns">
           <input type="checkbox" autocomplete="false" id="preview-toggle"></input>
@@ -147,42 +147,47 @@ Edit console page
       </aside>
       <section>
         <form>
-          <div class="flex">
-            <div class="flex-column">
-              <label for="in-section">Section</label>
-              <select id="in-section">
-                <option value="COMPETITIVE">Competitive</option>
-                <option value="DEPRECATED">Deprecated</option>
-                <option value="MEME">Meme</option>
-              </select>
+          <div id="curator-controls">
+            <div class="flex">
+              <div id="recommend-wrap" class="flex-column">
+                <label for="in-recommend">Recommendation</label>
+                <div class="flex">
+                  {% include svg/recommend.svg %}
+                  {% include svg/not/recommend.svg %}
+                  <select id="in-recommend">
+                    <option value="NO_RECOMMEND">Not Recommended</option>
+                    <option value="RECOMMEND">Recommended</option>
+                  </select>
+                </div>
+              </div>
+              
+              <div class="flex-column">
+                <label for="in-destination">Destination</label>
+                <select id="in-destination">
+                  <option value="PUBLISHED">Published</option>
+                  <option value="DELETED">Deleted</option>
+                  <option value="SUBMITTED">Submitted</option>
+                </select>
+              </div>
             </div>
             
-            <div class="flex-column">
-              <label for="in-recommend">Recommendation</label>
-              <select id="in-recommend">
-                <option value="NO_RECOMMEND">Not Recommended</option>
-                <option value="RECOMMEND">Recommended</option>
-              </select>
-            </div>
-            
-            <div class="flex-column">
-              <label for="in-destination">Destination</label>
-              <select id="in-destination">
-                <option value="PUBLISHED">Published</option>
-                <option value="DELETED">Deleted</option>
-                <option value="SUBMITTED">Submitted</option>
-              </select>
+            <div id="comment-wrap" class="flex-column">
+              <label for="comments">Curator Comments</label>
+              <textarea id="comments" autocomplete="off" maxlength="1000"  placeholder="(Optional) Enter some comments to accompany this update"></textarea>
             </div>
           </div>
           
           <div class="flex-column">
-            <div class="flex">
-              <label for="comments">Curator Comments</label>
+            <label for="in-section">Section</label>
+            <div>
+              <select id="in-section">
+                <option value="COMPETITIVE">Competitive Deck</option>
+                <option value="DEPRECATED">Deprecated Deck</option>
+                <option value="MEME">Meme Deck</option>
+              </select>
             </div>
-            
-            <textarea id="comments" autocomplete="off" maxlength="1000"  placeholder="Enter some comments to accompany this update"></textarea>
           </div>
-          
+            
           <div>
             <div class="flex-column">
               <label for="deck-title">Deck Title</label>
