@@ -63,15 +63,15 @@ section {
 }
 
 /* Main Row Styles */
-.GREEN .main {
+.GREEN .main, select.GREEN  {
   background-color: #1d4a1c;
 }
 
-.RED .main {
+.RED .main, select.RED  {
   background-color: #551919;
 }
 
-.BLUE .main {
+.BLUE .main, select.BLUE  {
   background-color: #014d73;
 }
 
@@ -251,11 +251,36 @@ form label {
   margin-bottom: 4px;
 }
 
-#title-wrap input {
-  margin-right: 16px;
+#curator-controls {
+  background-color: var(--darker);
+  padding: 16px;
 }
 
-#title-wrap, #commander-wrap input, #discord-info input {
+#recommend-wrap div {
+  background-color: var(--canvas-color);
+  position: relative;
+}
+
+#recommend-wrap svg {
+  height: 36px;
+  padding-left: 8px;
+  position: absolute;
+  pointer-events: none;
+}
+
+#in-recommend {
+  padding-left: 52px;
+}
+
+#comment-wrap label {
+  margin-top: 16px;
+}
+
+#curator-controls textarea, #in-recommend {
+  background-color: var(--canvas-color);
+}
+
+#commander-wrap input, #discord-info input {
   flex-grow: 1;
 }
 
