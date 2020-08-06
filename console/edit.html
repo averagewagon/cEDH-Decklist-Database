@@ -47,7 +47,7 @@ Edit console page
       </li>
     </ul>
     
-    <div id="content" class="">
+    <div id="content" class="hidden">
       <aside>
         <div id="prev-controls" class="ns">
           <input type="checkbox" autocomplete="false" id="preview-toggle"></input>
@@ -173,7 +173,12 @@ Edit console page
             
             <div id="comment-wrap" class="flex-column">
               <label for="comments">Curator Comments</label>
-              <textarea id="comments" autocomplete="off" maxlength="1000"  placeholder="(Optional) Enter some comments to accompany this update"></textarea>
+              <div class="flex">
+                <textarea id="comments" autocomplete="off" maxlength="1000"  placeholder="(Optional) Enter some comments to accompany this update"></textarea>
+                <div id="submit-wrap">
+                  <input type="submit" id="submit-button" value="Submit Update"/>
+                  </div>
+                </div>
             </div>
           </div>
           
@@ -249,10 +254,6 @@ Edit console page
               </li>
             </ul>
             <button type="button" class="btn" id="add-deck">+ Add a Decklist</button>
-          </div>
-          
-          <div id="submit-wrap">
-            <input type="submit" id="submit-button" value="Submit Update"/>
           </div>
         </form>
       </section>

@@ -239,18 +239,6 @@ section {
 }
 
 /* Section Styles */
-form {
-  font-size: 16pt;
-}
-
-form > div {
-  margin-bottom: 16px;
-}
-
-form label {
-  margin-bottom: 4px;
-}
-
 #curator-controls {
   background-color: var(--darker);
   padding: 16px;
@@ -276,6 +264,10 @@ form label {
   margin-top: 16px;
 }
 
+#comments {
+  flex-grow: 1;
+}
+
 #curator-controls textarea, #in-recommend {
   background-color: var(--canvas-color);
 }
@@ -286,6 +278,18 @@ form label {
 
 #commander-wrap input:last-child, #discord-info input:last-child {
   margin-top: 8px;
+}
+
+form {
+  font-size: 16pt;
+}
+
+form > div {
+  margin-bottom: 16px;
+}
+
+form label {
+  margin-bottom: 4px;
 }
 
 form ul {
@@ -404,14 +408,13 @@ textarea {
 }
 
 #submit-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  flex-grow: 1;
+  height: 100%;
 }
 
 #submit-button {
+  height: 100%;
   padding: 8px 24px;
+  margin-left: 16px;
   font-size: 18pt;
   background-color: var(--accent-color);
   color: black;
