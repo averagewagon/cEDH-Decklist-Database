@@ -5,7 +5,7 @@ window.addEventListener("load", init);
 
 // Initialization function
 function init() {
-  if (!get("jwt")) {
+  if (get("jwt")) {
     id("input").addEventListener("keyup", generatePreview);
     id("input").addEventListener("change", generatePreview);
     id("file-select").addEventListener("change", swapText);
