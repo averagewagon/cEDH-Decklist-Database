@@ -101,9 +101,17 @@
   background-color: var(--darker);
 }
 
+a {
+  color: skyblue;
+}
+
 nav a {
   color: inherit;
   text-decoration: none;
+}
+
+#motd a {
+  color: blue;
 }
 
 .list {
@@ -113,6 +121,22 @@ nav a {
 
 .pt {
   cursor: pointer;
+}
+
+/* Markdown Styles */
+h1 {
+  font-size: 22pt;
+  margin: 16px 0;
+}
+
+h2 {
+  font-size: 18pt;
+  margin: 8px 0;
+}
+
+h3 {
+  font-size: 14pt;
+  margin: 8px 0;
 }
 
 /* Global Styles */

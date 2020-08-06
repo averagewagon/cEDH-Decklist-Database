@@ -23,7 +23,7 @@ About Us page for the cDDB
     <div id="content">
       <aside>
         <div id="changelog-title">Changelog</div>
-        {%- assign updates = site.updates | sort: 'url' | reverse | where_exp:"x","x.title != 'CHANGE_ME'" -%}
+        {%- assign updates = site.updates | sort: 'url' | reverse -%}
         <select id="update-select">
           {%- for update in updates -%}
             <option value="{{ update.url }}">{{ update.title }}</option>

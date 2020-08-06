@@ -25,13 +25,63 @@
 aside {
   overflow: auto;
   flex-grow: 1;
-  max-width: 450px;
-  padding: 16px;
   background-color: var(--secondary-color);
+  width: 50%;
 }
 
 section {
   overflow: auto;
-  padding: 16px 16px;
-  flex-grow: 1;
+  width: 50%;
+  margin: 16px;
 } 
+
+#preview-label {
+  background-color: var(--lighter);
+  padding: 8px;
+  font-size: 24pt;
+  text-align: center;
+  display: block;
+}
+
+#preview {
+  margin: 16px;
+  overflow: auto;
+}
+
+textarea, select {
+  background-color: var(--darker);
+  color: white;
+  border: none;
+}
+
+#controls {
+  align-items: stretch;
+  margin-bottom: 16px;
+}
+
+#file-select {
+  padding: 8px 16px;
+}
+
+#submit {
+  background-color: var(--accent-color);
+  color: black;
+  border: none;
+  padding: 8px 16px;
+}
+
+#submit:hover {
+  filter: brightness(80%) contrast(120%);
+}
+
+#input {
+  padding: 8px;
+  font-size: 12pt;
+  font-family: monospace;
+  flex-grow: 1;
+  white-space: pre-wrap;
+}
+
+#texts {
+  white-space: pre-wrap;
+}

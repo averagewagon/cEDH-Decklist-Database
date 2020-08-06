@@ -19,19 +19,50 @@ Modify Site console page
 </head>
 
 <body>
+<ul id="texts" class="hidden">
+<li class="motd">{% capture md %}{% include markdown/motd.md %}{% endcapture %}{{ md | escape | strip }}</li>
+<li class="about">{% capture md %}{% include markdown/about.md %}{% endcapture %}{{ md | escape | strip }}</li>
+<li class="submit">{% capture md %}{% include markdown/submit.md %}{% endcapture %}{{ md | escape | strip }}</li>
+<li class="request">{% capture md %}{% include markdown/request.md %}{% endcapture %}{{ md | escape | strip }}</li>
+<li class="competitive">{% capture md %}{% include markdown/tables/competitive.md %}{% endcapture %}{{ md | escape | strip }}</li>
+<li class="deprecated">{% capture md %}{% include markdown/tables/deprecated.md %}{% endcapture %}{{ md | escape | strip }}</li>
+<li class="meme">{% capture md %}{% include markdown/tables/meme.md %}{% endcapture %}{{ md | escape | strip }}</li>
+</ul>
+
   <div id="wrapper">
     {% include console-navbar.html %}
-  
-    <div id="content">
+    <div id="content" class="hidden">
       <aside>
-      
+        <label for="preview" id="preview-label">Preview Text</label>
+        <div id="preview">
+        </div>
       </aside>
-      <section>
-      
+      <section class="flex-column">
+        <div id="description">
+          {% capture content %}
+          {%- include markdown/admin/modify.md -%}
+          {% endcapture %}
+          {{ content | escape | markdownify | replace: "id=", "data-content-id=" }}
+        </div>
+        <div id="controls" class="flex">
+          <select id="file-select" autocomplete="off" class="pt">
+            <option value="MOTD">Message of the Day</option>
+            <option value="ABOUT">About the DDB</option>
+            <option value="SUBMIT">"Submit a Deck" Sidebar</option>
+            <option value="REQUEST">"Make a Request" Sidebar</option>
+            <option value="COMPETITIVE">"Competitive" Description</option>
+            <option value="DEPRECATED">"Deprecated" Description</option>
+            <option value="MEME">"Meme" Description</option>
+          </select>
+          <button id="submit" class="pt">Submit File</button>
+        </div>
+        <textarea id="input" autocomplete="off">{% capture md %}{% include markdown/motd.md %}{% endcapture %}{{ md | escape | strip }}</textarea>
       </section>
     </div>
   </div>
   
+  <script src="/console/scripts/snarkdown.js"></script>
+  <script src="/console/scripts/base64.js"></script>
   <script src="/console/scripts/account.js"></script>
   <script src="/console/scripts/modify.js"></script>
 </body>
