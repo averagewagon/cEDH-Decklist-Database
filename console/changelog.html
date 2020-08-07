@@ -12,25 +12,58 @@ Edit console page
   <title>Edit Changelog - cEDH Decklist Database</title>
   
   <link rel="stylesheet" type="text/css" media="screen" href="/console/styles/changelog.css" />
-  <!-- Page Scripts -->
-  <!--
-  <script src="/scripts/about.js"></script>
-  -->
 </head>
 
 <body>
   <div id="wrapper">
     {% include console-navbar.html %}
   
-    <div id="content">
+    <div id="content" class="hidden">
       <aside>
-      
+          <div id="description">
+            {% capture content %}
+            {%- include markdown/admin/changelog.md -%}
+            {% endcapture %}
+            {{ content | escape | markdownify | replace: "id=", "data-content-id=" }}
+          </div>
+          <ul id="changelog-posts">
+            <li id="new" class="active">
+              Create a New Update
+              <div class="title hidden"></div>
+              <div class="markdown hidden">{% capture md %}{% include markdown/changelog_template.md %}{% endcapture %}{{md | escape | strip}}</div>
+            </li>
+            {% assign updates = site.updates | sort: 'date' | reverse %}
+            {% for update in updates %}
+              <li id="{{update.filename}}" class="old">
+                <div class="date">{{update.date | date_to_string: "ordinal", "US"}}</div>
+                <div class="title">{{update.title | escape | strip}}</div>
+                <div class="markdown hidden">{% capture md %}{% include markdown/{{update.path}} %}{% endcapture %}{{md | split: "---" | last | escape | strip}}</div>
+              </li>
+            {% endfor %}
+          </ul>
       </aside>
       <section>
-      
+        <form id="input-form" class="flex-column">
+          <div id="input-label">Edit</div>
+          <input id="title" type="text" maxlength="100" placeholder="Update title" required></input>
+          <textarea id="input" required autocomplete="off" placeholder="Put the changelog's content here">{% capture md %}{% include markdown/changelog_template.md %}{% endcapture %}{{md | escape | strip}}</textarea>
+          
+          <input type="submit" id="submit" class="pt" value="Submit Changes"></input>
+        </form>
+        <div id="preview-wrap" class="flex-column">
+          <label for="preview" id="preview-label">Preview</label>
+          <div id="preview"></div>
+        </div>
       </section>
     </div>
   </div>
+  
+  <!-- Snarkdown used with MIT License: https://github.com/developit/snarkdown -->
+  <script src="/console/scripts/snarkdown.js"></script>
+  <!-- utf8.js used with MIT License: https://github.com/mathiasbynens/utf8.js -->
+  <script src="/console/scripts/utf8.js"></script>
+  <!-- base64 used with MIT License: https://github.com/mathiasbynens/base64 -->
+  <script src="/console/scripts/base64.js"></script>
   
   <script src="/console/scripts/account.js"></script>
   <script src="/console/scripts/changelog.js"></script>
