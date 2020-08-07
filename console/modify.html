@@ -15,6 +15,7 @@ Modify Site console page
 </head>
 
 <body>
+  {% include loading.html %}
 <ul id="texts" class="hidden">
 <li class="motd">{% capture md %}{% include markdown/motd.md %}{% endcapture %}{{ md | escape | strip }}</li>
 <li class="about">{% capture md %}{% include markdown/about.md %}{% endcapture %}{{ md | escape | strip }}</li>
