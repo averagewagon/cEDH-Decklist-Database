@@ -11,7 +11,6 @@ function init() {
     id("file-select").addEventListener("change", swapText);
     id("submit").addEventListener("click", submit);
     generatePreview();
-    id("content").classList.remove("hidden");
   }
 }
 

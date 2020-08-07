@@ -105,7 +105,7 @@ Main console page
     </ul>
     
   
-    <div id="content" class="hidden">
+    <div id="content" class="">
       <aside>
         <div id="req-controls" class="ns">
           <input id="show-deleted" type="checkbox" autocomplete="off"></input>
@@ -115,6 +115,7 @@ Main console page
         </ul>
       </aside>
       <section>
+      
         <div id="console-controls" class="flex ns">
           <div class="flex-column">
             <label for="view-select">Currently Viewing:</label>
@@ -126,7 +127,12 @@ Main console page
           </div>
           
           <button id="publish-changes">Publish All Changes</button>
-        </div>
+        </div><div id="description">
+            {% capture content %}
+            {%- include markdown/admin/console.md -%}
+            {% endcapture %}
+            {{ content | escape | markdownify | replace: "id=", "data-content-id=" }}
+          </div>
         <ul id="decks">
         </ul>
       </section>

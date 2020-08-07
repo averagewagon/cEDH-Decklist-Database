@@ -8,7 +8,6 @@ async function init() {
   if (get("jwt")) {
     prepareListeners();
     await getDeck();
-    id("content").classList.remove("hidden");
   }
 }
 
