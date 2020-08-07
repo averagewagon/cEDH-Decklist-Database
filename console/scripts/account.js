@@ -17,6 +17,7 @@ function init() {
     id("nav-account").innerText = get("username") + " - Log Out";
     id("nav-account").href = LOGOUT;
   } else {
+    cover();
     clear();
     id("motd").innerText = "You are not logged in. Log in to access curator controls. ";
     const a = document.createElement("a");
@@ -26,6 +27,13 @@ function init() {
     qs("header").style.backgroundColor = "pink";
     id("nav-account").href = LOGIN;
   } 
+}
+
+// Covers the page when not logged in
+function cover() {
+  const div = document.createElement("div");
+  div.id = "login-notice";
+  id("content").appendChild(div);
 }
 
 function warn() {
