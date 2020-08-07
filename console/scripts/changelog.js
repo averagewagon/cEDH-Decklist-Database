@@ -5,7 +5,7 @@ window.addEventListener("load", init);
 
 // Initialization function
 function init() {
-  if (!get("jwt")) {
+  if (get("jwt")) {
     id("input").addEventListener("keyup", generatePreview);
     id("input").addEventListener("change", generatePreview);
     qs("form").addEventListener("submit", submit);
