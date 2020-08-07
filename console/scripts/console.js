@@ -8,7 +8,6 @@ async function init() {
   if (get("jwt")) {
     readDecks().then(() => {
       filterDecks();
-      id("content").classList.remove("hidden");
     });
     readRequests().then(() => {
       id("show-deleted").addEventListener("change", toggleRequests);

@@ -11,7 +11,6 @@ function init() {
     qs("form").addEventListener("submit", submit);
     qsa("#changelog-posts li").forEach(item => item.addEventListener("click", switchLog));
     generatePreview();
-    id("content").classList.remove("hidden");
   }
 }
 
