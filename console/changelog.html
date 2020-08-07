@@ -45,7 +45,7 @@ Edit console page
       <section>
         <form id="input-form" class="flex-column">
           <div id="input-label">Edit</div>
-          <input id="title" type="text" maxlength="100" placeholder="Update title" required></input>
+          <input id="title" type="text" maxlength="100" autocomplete="off" placeholder="Update title" required></input>
           <textarea id="input" required autocomplete="off" placeholder="Put the changelog's content here">{% capture md %}{% include markdown/changelog_template.md %}{% endcapture %}{{md | escape | strip}}</textarea>
           
           <input type="submit" id="submit" class="pt" value="Submit Changes"></input>
