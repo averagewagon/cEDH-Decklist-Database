@@ -4,6 +4,7 @@ const API_URL = "https://3rxytinw28.execute-api.us-west-2.amazonaws.com/default/
 // Sends the body to the DDB API
 async function sendToDDB(body) {
   try {
+    showLoad();
     let response;
     let result = fetch(API_URL, {
       method: "POST",
@@ -19,8 +20,10 @@ async function sendToDDB(body) {
       info.status = response.status;
       return info;
     });
+    hideLoad();
     return result;
   } catch (error) {
+    hideLoad();
     return { success: false, message: error.message };
   }
 }

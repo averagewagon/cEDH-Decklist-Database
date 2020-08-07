@@ -142,17 +142,15 @@ h3 {
 /* Global Styles */
 html {
   height: 100%;
-  touch-action: manipulation;
 }
 
 body {
   width: 100%;
-  max-width: 1600px;
-  margin: 0 auto;
   font-family: sans-serif;
   background-color: var(--backdrop-color);
   color: white;
   height: 100%;
+  margin: 0;
 }
 
 #wrapper {
@@ -160,6 +158,8 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 /* Top bar styles */

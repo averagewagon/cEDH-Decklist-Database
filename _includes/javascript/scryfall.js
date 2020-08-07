@@ -60,7 +60,9 @@ async function getCommanderInfo() {
       }
     }
     
+    showLoad();
     const results = await Promise.all(promises);
+    hideLoad();
     for (let i = 0; i < results.length; i++) {
       const res = results[i];
       if (!res.success) {
@@ -75,6 +77,7 @@ async function getCommanderInfo() {
     }
     return value;
   } catch (error) {
+    hideLoad();
     console.log(error);
     return { success: false, message: error.message };
   }
