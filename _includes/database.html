@@ -1,5 +1,3 @@
-<link rel="stylesheet" type="text/css" href="/styles/database.css" />
-<script src="/scripts/database.js"></script>
 <ul id="decks">
   {% assign decks = (site.data.database | sort: 'updated') | reverse %}
   {% for d in decks %}

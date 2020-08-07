@@ -1,0 +1,52 @@
+@media (max-width: 1200px) {
+  #content {
+    flex-direction: column;
+  }
+  
+  aside, section {
+    width: auto !important;
+    overflow: visible !important;
+    min-width: auto !important;
+  }
+  
+  section {
+    margin: 4px !important;
+  }
+}
+
+#content {
+}
+
+#nav-about {
+  background-color: var(--darker);
+}
+
+aside {
+  overflow: auto;
+  flex-grow: 1;
+  min-width: 450px;
+  padding: 16px;
+  background-color: var(--secondary-color);
+}
+
+section {
+  overflow: auto;
+  padding: 0 16px;
+  flex-grow: 1;
+}
+
+#changelog-title {
+  font-size: 18pt;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+#update-select {
+  background-color: var(--darker);
+  color: white;
+  border: none;
+  font-size: 18pt;
+  padding: 8px 16px;
+  width: 100%;
+  max-width: 500px;
+}
