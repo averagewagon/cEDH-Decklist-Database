@@ -1,6 +1,6 @@
 @media (max-width: 1200px) {
   #content {
-    flex-direction: column-reverse;
+  flex-wrap: wrap;
   }
   
   aside, section {
@@ -12,6 +12,23 @@
   
   section {
     margin: 4px !important;
+    flex-wrap: wrap;
+  }
+  
+  #changelog-posts {
+    max-height: 200px;
+  }
+  
+  #input-form {
+    min-width: 450px;
+  }
+  
+  #input {
+    min-height: 400px;
+  }
+  
+  #preview-wrap {
+    min-width: 100% !important;
   }
 }
 
@@ -23,15 +40,148 @@
 }
 
 aside {
-  overflow: auto;
-  flex-grow: 1;
-  max-width: 450px;
-  padding: 16px;
   background-color: var(--secondary-color);
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
 }
 
 section {
-  overflow: auto;
-  padding: 16px 16px;
+  display: flex;
   flex-grow: 1;
 } 
+
+#description {
+  margin: 0 16px;
+  margin-top: 8px;
+}
+
+#changelog-posts {
+  margin: 16px;
+  list-style-type: none;
+  padding: 0;
+  overflow: auto;
+}
+
+#changelog-posts li {
+  padding: 16px;
+  border-top: 1px solid darkgray;
+  display: flex;
+  align-items: center;
+  font-size: 16pt;
+  cursor: pointer;
+}
+
+#changelog-posts li:last-child {
+  border-bottom: 1px solid darkgray;
+}
+
+.active {
+  background-color: var(--backdrop-color);
+}
+
+#changelog-posts li:not(.active):hover {
+  background-color: var(--canvas-color);
+}
+
+.old {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.old div {
+  width: 100%;
+}
+
+.date {
+  font-size: 12pt;
+  color: gainsboro;
+}
+
+.markdown {
+  white-space: pre-wrap;
+}
+
+/* Section Styles */
+#preview-label, #input-label {
+  background-color: var(--secondary-color);
+  padding: 8px;
+  font-size: 24pt;
+  text-align: center;
+  display: block;
+}
+
+#input-label {
+  border-right: 2px solid var(--darker);
+  border-left: 2px solid var(--darker);
+}
+
+#input-form {
+  flex-grow: 1;
+}
+
+#title {
+  margin: 16px;
+  background-color: var(--darker);
+  color: white;
+  padding: 8px;
+  font-size: 14pt;
+  border: none;
+}
+
+#title::placeholder {
+  color: white;
+  opacity: .7;
+}
+
+#input {
+  padding: 8px;
+  font-size: 12pt;
+  font-family: monospace;
+  flex-grow: 1;
+  white-space: pre-wrap;
+  background-color: var(--darker);
+  color: white;
+  border: none;
+  margin: 0px 16px;
+  margin-bottom: 16px;
+}
+
+#submit-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 16px;
+  margin-top: 16px;
+}
+
+#submit {
+  background-color: var(--accent-color);
+  color: black;
+  border: none;
+  padding: 8px 16px;
+  font-size: 16pt;
+  margin: 0px 16px;
+  margin-bottom: 16px;
+}
+
+#submit:hover {
+  filter: brightness(80%) contrast(120%);
+}
+
+#preview-wrap {
+  min-width: 450px;
+  max-width: 450px;
+  background-color: var(--lighter);
+}
+
+#preview {
+  padding: 16px;
+  flex-grow: 1;
+  overflow: auto;
+}
+
+#preview h1 {
+  font-size: 18pt;
+  margin: 8px 0;
+}
