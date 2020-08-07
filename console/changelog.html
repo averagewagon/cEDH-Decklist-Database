@@ -18,7 +18,7 @@ Edit console page
   <div id="wrapper">
     {% include console-navbar.html %}
   
-    <div id="content" class="hidden">
+    <div id="content" class="">
       <aside>
           <div id="description">
             {% capture content %}
@@ -31,13 +31,15 @@ Edit console page
               Create a New Update
               <div class="title hidden"></div>
               <div class="markdown hidden">{% capture md %}{% include markdown/changelog_template.md %}{% endcapture %}{{md | escape | strip}}</div>
+              <div class="rawdate hidden">new</div>
             </li>
             {% assign updates = site.updates | sort: 'date' | reverse %}
             {% for update in updates %}
               <li id="{{update.filename}}" class="old">
-                <div class="date">{{update.date | date_to_string: "ordinal", "US"}}</div>
+                <div class="date">{{update.date | slice: 0, 10 | date_to_string: "ordinal", "US"}}</div>
                 <div class="title">{{update.title | escape | strip}}</div>
                 <div class="markdown hidden">{% capture md %}{% include markdown/{{update.path}} %}{% endcapture %}{{md | split: "---" | last | escape | strip}}</div>
+                <div class="rawdate hidden">{{update.date}}</div>
               </li>
             {% endfor %}
           </ul>
