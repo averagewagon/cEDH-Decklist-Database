@@ -18,8 +18,9 @@ async function sendToDDB(body) {
     .then(info => {
       info.success = (response.status >= 200 && response.status < 300);
       info.status = response.status;
+      hideLoad();
       return info;
-    }).then(hideLoad);
+    });
     return result;
   } catch (error) {
     hideLoad();
