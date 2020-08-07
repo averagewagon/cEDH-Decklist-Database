@@ -38,11 +38,11 @@ async function submit(event) {
     alert("You are not logged in. You must be logged in to make these changes.");
     return;
   }
-  const id = qs("#changelog-posts .active").id;
+  const updateId = qs("#changelog-posts .active").id;
   const body = {
     "jwt": get("jwt"),
     "method": "UPDATE_CHANGELOG",
-    "file": id,
+    "file": updateId,
     "title": base64.encode(utf8.encode(id("title").value)),
     "content": base64.encode(utf8.encode(id("input").value))
   }
