@@ -162,17 +162,6 @@ body {
   margin: 0 auto;
 }
 
-#login-notice {
-  position: fixed;
-  z-index: 1000;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, .4);
-}
-
 /* Top bar styles */
 #top-bar {
   flex: 0 1 auto;
@@ -258,11 +247,20 @@ header {
 }
 
 /* Universal content styles */
+#login-notice {
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .4);
+}
+
 #content {
   display: flex;
   flex: 1 1 auto;
   overflow: auto;
   bottom: 0;
+  position: relative;
 }
 
 #copyright {
