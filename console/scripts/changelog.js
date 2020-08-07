@@ -5,7 +5,7 @@ window.addEventListener("load", init);
 
 // Initialization function
 function init() {
-  if (get("jwt")) {
+  if (!get("jwt")) {
     id("input").addEventListener("keyup", generatePreview);
     id("input").addEventListener("change", generatePreview);
     qs("form").addEventListener("submit", submit);
@@ -39,10 +39,12 @@ async function submit(event) {
     return;
   }
   const updateId = qs("#changelog-posts .active").id;
+  const rawDate = qs("#changelog-posts .active .rawdate").innerText;
   const body = {
     "jwt": get("jwt"),
     "method": "UPDATE_CHANGELOG",
     "file": updateId,
+    "date": rawDate,
     "title": base64.encode(utf8.encode(id("title").value)),
     "content": base64.encode(utf8.encode(id("input").value))
   }
