@@ -162,3 +162,6 @@ section {
   margin: 16px 0;
   line-height: 1.5;
 }
+
+/* Database Styles */
+{% include styles/database.css %}
