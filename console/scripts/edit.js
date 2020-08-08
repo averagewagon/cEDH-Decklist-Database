@@ -46,7 +46,7 @@ function swapBackground() {
     item.classList.add("BLUE");
   } else if (dest === "PUBLISHED") {
     item.classList.add("GREEN");
-  } else if (dest) {
+  } else if (dest === "DELETED") {
     item.classList.add("RED");
   }
 }
