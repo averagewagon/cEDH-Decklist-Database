@@ -357,7 +357,7 @@ const build = {
   },
   
   status: function(item, deck) {
-    item.classList.remove("RED", "BLUE", "GREEN");
+    item.classList.remove("RED", "BLUE", "GREEN", "NEUTRAL");
     if (deck.destination === "PUBLISHED" && deck.status === "PUBLISHED") {
       item.classList.add("BLUE");
     } else if (deck.destination === "PUBLISHED") {
