@@ -123,6 +123,10 @@ section {
   font-size: 14pt;
 }
 
+#decks {
+  margin-bottom: 200px;
+}
+
 #decks, #decks ul {
   list-style-type: none;
   padding: 0;
