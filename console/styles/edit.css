@@ -75,6 +75,10 @@ section {
   background-color: #014d73;
 }
 
+select.NEUTRAL {
+  background-color: var(--backdrop-color):
+}
+
 .main {
   border-top: 2px solid var(--darker);
   padding: 8px 16px;

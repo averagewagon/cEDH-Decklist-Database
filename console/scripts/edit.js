@@ -41,13 +41,15 @@ function swapBackground() {
   const item = id("in-destination");
   const dest = item.value;
   const status = qs("form").dataset.status;
-  item.classList.remove("RED", "BLUE", "GREEN");
+  item.classList.remove("RED", "BLUE", "GREEN", "NEUTRAL");
   if (dest === "PUBLISHED" && status === "PUBLISHED") {
     item.classList.add("BLUE");
   } else if (dest === "PUBLISHED") {
     item.classList.add("GREEN");
   } else if (dest === "DELETED") {
     item.classList.add("RED");
+  } else {
+    item.classList.add("NEUTRAL");
   }
 }
 
