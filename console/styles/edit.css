@@ -75,7 +75,7 @@ section {
   background-color: #014d73;
 }
 
-select.NEUTRAL {
+.NEUTRAL .main, select.NEUTRAL {
   background-color: var(--canvas-color):
 }
 
