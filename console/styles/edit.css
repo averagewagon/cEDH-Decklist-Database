@@ -76,7 +76,7 @@ section {
 }
 
 select.NEUTRAL {
-  background-color: var(--backdrop-color):
+  background-color: var(--canvas-color):
 }
 
 .main {
