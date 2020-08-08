@@ -257,6 +257,8 @@ const fill = {
     fill.discord(deck);
     fill.decklists(deck);
     fill.recommendation(deck);
+    swapIcon();
+    swapBackground();
   },
   
   section: function(deck) {
