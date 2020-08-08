@@ -149,6 +149,7 @@
   align-items: center;
   color: white;
   text-decoration: none;
+  text-align: left;
 }
 
 .ddb-discord:hover {
