@@ -23,7 +23,6 @@ function prepareListeners() {
   id("in-recommend").addEventListener("change", swapIcon);
   id("in-destination").addEventListener("change", swapBackground);
   swapIcon();
-  swapBackground();
 }
 
 // Switches between active and inactive rec icon depending on select value
@@ -39,14 +38,16 @@ function swapIcon() {
 }
 
 function swapBackground() {
-  const dest = id("in-destination");
-  dest.classList.remove("RED", "BLUE", "GREEN");
-  if (dest.value === "PUBLISHED") {
-    dest.classList.add("BLUE");
-  } else if (dest.value === "DELETED") {
-    dest.classList.add("RED");
-  } else {
-    dest.classList.add("GREEN");
+  const item = id("in-destination");
+  const dest = item.value;
+  const status = qs("form").dataset.status;
+  item.classList.remove("RED", "BLUE", "GREEN");
+  if (dest === "PUBLISHED" && status === "PUBLISHED") {
+    item.classList.add("BLUE");
+  } else if (dest === "PUBLISHED") {
+    item.classList.add("GREEN");
+  } else if (dest) {
+    item.classList.add("RED");
   }
 }
 
@@ -120,6 +121,7 @@ async function getDeck() {
   if (result.success) {
     const deck = result.data;
     qs("form").dataset.timestamp = deck.updated;
+    qs("form").dataset.status = deck.status;
     build.old(deck);
     build.preview(deck);
     fill.form(deck);
