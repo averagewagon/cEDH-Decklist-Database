@@ -362,8 +362,10 @@ const build = {
       item.classList.add("BLUE");
     } else if (deck.destination === "PUBLISHED") {
       item.classList.add("GREEN");
-    } else if (deck.destination || deck.status === "DELETED") {
+    } else if (deck.destination === "DELETED") {
       item.classList.add("RED");
+    } else {
+      item.classList.add("NEUTRAL");
     }
     
     item.dataset.status = deck.status;
