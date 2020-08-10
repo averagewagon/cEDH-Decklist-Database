@@ -14,18 +14,13 @@
   }
 }
 
-#content {
-}
-
 #nav-about {
   background-color: var(--darker);
 }
 
 aside {
-  overflow: auto;
   flex-grow: 1;
-  min-width: 450px;
-  padding: 16px;
+  min-width: 482px;
   background-color: var(--secondary-color);
 }
 
@@ -35,18 +30,57 @@ section {
   flex-grow: 1;
 }
 
-#changelog-title {
+aside h1 {
   font-size: 18pt;
-  font-weight: bold;
-  margin-bottom: 8px;
+  margin: 8px 0;
 }
 
-#update-select {
+#updates {
+  height: 100%;
+}
+
+.update {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.controls {
   background-color: var(--darker);
-  color: white;
-  border: none;
+  padding: 16px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.controls svg {
+  height: 48px;
+}
+
+.newer, .older {
+  cursor: pointer;
+}
+
+.end-arrow {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.title-wrap {
+  flex-grow: 1;
+  margin: 0 16px;
+}
+
+.title {
   font-size: 18pt;
-  padding: 8px 16px;
-  width: 100%;
-  max-width: 500px;
+}
+
+.date {
+  font-size: 14pt;
+  color: gainsboro;
+}
+
+.content {
+  padding: 16px;
+  overflow: auto;
+  flex-grow: 1;
 }

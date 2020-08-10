@@ -22,19 +22,28 @@ About Us page for the cDDB
   
     <div id="content">
       <aside>
-        <div id="changelog-title">Changelog</div>
-        {%- assign updates = site.updates | sort: 'url' | reverse -%}
-        <select id="update-select">
-          {%- for update in updates -%}
-            <option value="{{ update.url }}">{{ update.title }}</option>
-          {%- endfor -%}
-        </select>
+        {%- assign updates = site.updates | sort: 'date' | reverse -%}
         
-        {%- for update in updates -%}
-          <div class="hidden update" id="update-{{ update.url }}">
-            {{ update.content | replace: "id=", "data-content-id=" }}
-          </div>
-        {%- endfor -%}
+        
+        <div id="updates">
+          {% for update in updates -%}
+            <div data-index="{{forloop.index}}" class="{% if forloop.index > 1%}hidden{% endif %} update">
+              <div class="controls">
+                <div class="newer arrow {% if forloop.index == 1 %}end-arrow{% endif %}" data-index="{{forloop.index | minus: 1}}">{% include svg/back.svg %}</div>
+              
+                <div class="flex-column title-wrap">
+                  <div class="date">{{update.date | slice: 0, 10 | date_to_string: "ordinal", "US"}}</div>
+                  <div class="title">{{update.title | escape}}</div>
+                </div>
+                
+                <div class="older arrow {% if forloop.last == true %}end-arrow{% endif %}" data-index="{{forloop.index | plus: 1}}">{% include svg/forward.svg %}</div>
+              </div>
+              <div class="content">
+                {{ update.content | replace: "id=", "data-content-id=" }}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
       </aside>
       <section>
         <div id="about">
