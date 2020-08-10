@@ -17,6 +17,15 @@ async function init() {
   }
 }
 
+function changeSection() {
+  const section = id("db-section").value;
+  qsa("#decks > li").forEach(deck => {
+    if (section !== iqs(deck, ".ddb-section").innerText.trim()) {
+      deck.classList.add("hidden")
+    }
+  });
+}
+
 // Sends the request to the API that initiates a Github commit
 async function publishChanges() {
   if (!get("jwt")) {
@@ -79,8 +88,10 @@ function populateDecks(decks) {
 function filterDecks() {
   const decks = qsa("#decks > li");
   const shown = id("view-select").value;
+  const section = id("db-section").value;
   for (let i = 0; i < decks.length; i++) {
-    if (decks[i].dataset.show === shown) {
+    const sec = iqs(decks[i], ".ddb-section").innerText.trim();
+    if (decks[i].dataset.show === shown && sec === section) {
       decks[i].classList.remove("hidden");
     } else {
       decks[i].classList.add("hidden");

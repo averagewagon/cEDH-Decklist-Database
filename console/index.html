@@ -22,6 +22,48 @@ Main console page
   {% include loading.html %}
   <div id="wrapper">
     {% include console-navbar.html %}
+
+    <div id="content" class="">
+      <aside>
+        <div id="req-controls" class="ns">
+          <input id="show-deleted" type="checkbox" autocomplete="off"></input>
+          <label for="show-deleted">Show deleted requests</label>
+        </div>
+        <ul id="requests">
+        </ul>
+      </aside>
+      <section>
+      
+        <div id="console-controls" class="flex ns">
+          <div class="flex-column">
+            <label for="view-select">Currently Viewing:</label>
+            <select id="view-select" class="btn" autocomplete="off">
+              <option value="PUBLISHED">To-Be-Published Decks</option>
+              <option value="DELETED">Deleted Decks</option>
+              <option value="SUBMITTED">Submitted Decks</option>
+            </select>
+          </div>
+          
+          <div class="flex-column">
+            <label for="db-section">Filter Section</label>
+            <select id="db-section">
+              <option value="COMPETITIVE">Competitive Decks</option>
+              <option value="DEPRECATED">Deprecated Decks</option>
+              <option value="MEME">Meme Decks</option>
+            </select>
+          </div>
+          
+          <button id="publish-changes">Publish All Changes</button>
+        </div><div id="description">
+            {% capture content %}
+            {%- include markdown/admin/console.md -%}
+            {% endcapture %}
+            {{ content | escape | markdownify | replace: "id=", "data-content-id=" }}
+          </div>
+        <ul id="decks">
+        </ul>
+      </section>
+    </div>
     
     <ul class="hidden">
       <li class="flex-column" id="req-template">
@@ -58,7 +100,6 @@ Main console page
       <li id="decklist-template">
         <a href="">{% include svg/primer.svg %} <span class="ddb-decklist-title"></span></a>
       </li>
-      
       
       <li class="" id="deck-template">
         <div class="main btn flex">
@@ -105,39 +146,6 @@ Main console page
       </li>
     </ul>
     
-  
-    <div id="content" class="">
-      <aside>
-        <div id="req-controls" class="ns">
-          <input id="show-deleted" type="checkbox" autocomplete="off"></input>
-          <label for="show-deleted">Show deleted requests</label>
-        </div>
-        <ul id="requests">
-        </ul>
-      </aside>
-      <section>
-      
-        <div id="console-controls" class="flex ns">
-          <div class="flex-column">
-            <label for="view-select">Currently Viewing:</label>
-            <select id="view-select" class="btn" autocomplete="off">
-              <option value="PUBLISHED">To-Be-Published Decks</option>
-              <option value="DELETED">Deleted Decks</option>
-              <option value="SUBMITTED">Submitted Decks</option>
-            </select>
-          </div>
-          
-          <button id="publish-changes">Publish All Changes</button>
-        </div><div id="description">
-            {% capture content %}
-            {%- include markdown/admin/console.md -%}
-            {% endcapture %}
-            {{ content | escape | markdownify | replace: "id=", "data-content-id=" }}
-          </div>
-        <ul id="decks">
-        </ul>
-      </section>
-    </div>
   </div>
   
   <script src="/console/scripts/account.js"></script>
