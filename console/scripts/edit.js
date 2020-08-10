@@ -441,7 +441,7 @@ const build = {
         iqs(li, ".primer-svg").classList.add("unavailable");
       }
       iqs(li, ".ddb-decklist-title").innerText = decklist.title;
-      li.href = decklist.link;
+      iqs(li, "a").href = decklist.link;
       decklists.appendChild(li);
     }
   },
