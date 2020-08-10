@@ -50,6 +50,11 @@ Request page for the cDDB
               </div>
               
               <div class="flex-column">
+                <label for="username">(Optional) Discord Username</label>
+                <input type="text" maxlength="100" id="username" placeholder="Optional Discord username, in the format of 'Username#1234'" pattern="(.+#[0-9]{4}$)"></input>
+              </div>
+              
+              <div class="flex-column">
                 <label for="description">Issue Description and Information</label>
                 <textarea autocomplete="off" id="description" maxlength="1000" required placeholder="If you're requesting an edit to a deck, please include the deck name as it appears on the cEDH Decklist Database." rows="4"></textarea>
               </div>

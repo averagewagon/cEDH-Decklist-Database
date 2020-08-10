@@ -13,7 +13,7 @@ async function init() {
       id("show-deleted").addEventListener("change", toggleRequests);
     });
     id("view-select").addEventListener("change", filterDecks);
-    id("db-select").addEventListener("change", filterDecks);
+    id("db-section").addEventListener("change", filterDecks);
     id("publish-changes").addEventListener("click", publishChanges);
   }
 }
@@ -268,6 +268,7 @@ function populateRequests(requests) {
       item.classList.add("deleted", "hidden");
       item.querySelector(".req-delete").classList.add("hidden");
     }
+    iqs(item, ".req-username").innerText = req.username ? req.username : "";
     item.classList.add("r" + req.id);
     item.querySelector(".req-category").innerText = req.category;
     item.querySelector(".req-description").innerText = req.description;

@@ -45,6 +45,7 @@ function scrapeForm() {
   body.data = {};
   body.data.category = id("category-select").value;
   body.data.description = id("description").value;
+  body.data.username = id("username").value;
   
   body.rc = grecaptcha.getResponse();
   body.method = "SUBMIT_REQUEST";
