@@ -5,21 +5,18 @@ window.addEventListener("load", init);
 
 // Initialization function
 function init() {
-  id("update-select").addEventListener("change", swapChangelog);
-  swapChangelog();
+  qsa(".arrow").forEach(x => x.addEventListener("click", switchChangelog));
 }
 
-function swapChangelog() {
-  let changelog = id("update-select").value;
-  let updates = qsa(".update");
-  for (let i = 0; i < updates.length; i++) {
-    let update = updates[i];
-    if (update.id.includes(changelog)) {
-      update.classList.remove("hidden");
+function switchChangelog() {
+  const index = this.dataset.index;
+  qsa(".update").forEach(x => {
+    if (x.dataset.index !== index) {
+      x.classList.add("hidden");
     } else {
-      update.classList.add("hidden");
+      x.classList.remove("hidden");
     }
-  }
+  });
 }
 
 /* HELPER FUNCTIONS */
