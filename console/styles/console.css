@@ -91,6 +91,11 @@ aside button:hover {
   font-family: monospace;
 }
 
+.req-username {
+  font-weight: bold;
+  padding-top: 4px;
+}
+
 /* Section Styles */
 section {
   overflow: auto;
