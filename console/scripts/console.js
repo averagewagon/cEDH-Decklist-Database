@@ -258,6 +258,7 @@ async function readRequests() {
 }
 
 function populateRequests(requests) {
+  console.log(requests);
   const sortedRequests = requests.sort((a, b) => { return b.date.localeCompare(a.date); });
   const requestList = id("requests");
   const template = id("req-template");
