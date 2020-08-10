@@ -1,5 +1,5 @@
 # Database Console
-Welcome to the **Database Console**! This page renders similarly to the database, but all changes  made here are hidden until "Publish All Changes" is pressed. Because publishing changes to the site is an expensive operation, it has a **cooldown of 6 hours**.
+Welcome to the **Database Console**! This page renders similarly to the database, but all changes  made here are hidden until "Publish All Changes" is pressed. Because publishing changes to the site is an expensive operation, it has a **cooldown of 1 hour**.
 
 Each deck on this page has a "Status". Decks which are **PUBLISHED** will appear on the site the next time changes are published, user-submitted decks are **SUBMITTED**, and deleted decks are **DELETED**.
 
