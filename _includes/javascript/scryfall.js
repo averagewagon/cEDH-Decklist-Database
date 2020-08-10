@@ -49,7 +49,13 @@ async function getCommanderInfo() {
           commander.value = scry.name;
           const obj = {};
           obj.name = scry.name;
-          obj.link = scry.image_uris.normal;
+          if (scry.image_uris) {
+            obj.link = scry.image_uris.normal;
+          } else if (scry.card_faces) {
+            obj.link = scry.card_faces[0].image_uris.normal;
+          } else {
+            obj.link = "error-getting-image.link";
+          }
           const colors = [];
           for (let j = 0; j < scry.color_identity.length; j++) {
             colors.push(scry.color_identity[j].toLowerCase());
