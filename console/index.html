@@ -25,6 +25,12 @@ Main console page
 
     <div id="content" class="">
       <aside>
+        <div id="req-description">
+          {% capture content %}
+          {%- include markdown/admin/requests.md -%}
+          {% endcapture %}
+          {{ content | escape | markdownify | replace: "id=", "data-content-id=" }}
+        </div>
         <div id="req-controls" class="ns">
           <input id="show-deleted" type="checkbox" autocomplete="off"></input>
           <label for="show-deleted">Show deleted requests</label>
