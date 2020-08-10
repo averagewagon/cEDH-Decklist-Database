@@ -13,6 +13,7 @@ async function init() {
       id("show-deleted").addEventListener("change", toggleRequests);
     });
     id("view-select").addEventListener("change", filterDecks);
+    id("db-select").addEventListener("change", filterDecks);
     id("publish-changes").addEventListener("click", publishChanges);
   }
 }
