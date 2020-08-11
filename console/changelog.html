@@ -31,7 +31,7 @@ Edit console page
             <li id="new" class="active">
               Create a New Update
               <div class="title hidden"></div>
-              <div class="markdown hidden">{% capture md %}{% include markdown/changelog_template.md %}{% endcapture %}{{md | escape | strip}}</div>
+              <div class="markdown hidden">{% capture md %}{% include markdown/template.md %}{% endcapture %}{{md | escape | strip}}</div>
               <div class="rawdate hidden">new</div>
             </li>
             {% assign updates = site.updates | sort: 'date' | reverse %}
@@ -49,7 +49,7 @@ Edit console page
         <form id="input-form" class="flex-column">
           <div id="input-label">Edit</div>
           <input id="title" type="text" maxlength="100" autocomplete="off" placeholder="Update title" required></input>
-          <textarea id="input" required autocomplete="off" placeholder="Put the changelog's content here">{% capture md %}{% include markdown/changelog_template.md %}{% endcapture %}{{md | escape | strip}}</textarea>
+          <textarea id="input" required autocomplete="off" placeholder="Put the changelog's content here">{% capture md %}{% include markdown/template.md %}{% endcapture %}{{md | escape | strip}}</textarea>
           
           <input type="submit" id="submit" class="pt" value="Submit Changes"></input>
         </form>
