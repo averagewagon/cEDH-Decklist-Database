@@ -1,18 +1,18 @@
 # New Decks
-- [deck name] added to [section]
+- DECK added to SECTION
 
 # New deck links
-- Added [decklist name] to [deck name]
+- Added LIST to DECK
 
 # Modified Decks
-- Renamed [original deck name] to [new name]
-- Added a Discord server to [deck name]
-- Merged [deck name 1] and [deck name 2]
+- Renamed OLDNAME to NEWNAME
+- Added a Discord server to DECK
+- Merged DECK1 and DECK2
 
 # Removed Decks
-- Deprecated [deck name]
-- Removed [deck name]
+- Deprecated DECK
+- Removed DECK
 
 # Recommendations
-- Recommended [deck name]
-- No longer recommending [deck name]
+- Recommended DECK
+- No longer recommending DECK
