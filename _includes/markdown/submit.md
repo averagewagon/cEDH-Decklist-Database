@@ -2,15 +2,15 @@
 ## We are not accepting lists from tappedout.net
 Please explore options such as MoxField or other websites, which are higher quality and more secure service providers. For help and ideas with using these websites, check out the [cEDH discord](discord.gg/cedh).  
 ## Table Categories
-Competitive
+### Competitive  
 - Decks that are intended for competitive and follow the minimum power guidelines in "About the DDB".
 - No joke decks, decks must be intended for competitive play.
 - Recommendations are given out based on our discretion. You can read about our criteria by which we recommend a deck in the "About the DDB" page.
-Deprecated
+### Deprecated  
 - Old, banned, abandoned, outdated, or otherwise formerly-played decks.
 - Intended for archival purposes, so that players can find inspiration from lists that are no longer competitive.
 - No joke decks, decks must have been intended for competitive play at some point in the past.
-Meme
+### Meme  
 - Joke decks, gimmicky decks, parodies, or otherwise comedic lists.
 - Submissions should be relatively known to the online cEDH community - don't just submit a random list directly to the meme table.
 - You must have created the deck and/or received permission from the deck's creator(s) before submitting it to the meme table. We'd like to avoid bullying our players.
@@ -20,6 +20,7 @@ An addition to the database should contain:
 - A powerful and unique strategy within the cEDH format
 - A commander that uniquely enables the deck and is not easily replaced by a more powerful option
 - No obvious exclusions of staple cards without justification
+  
 Recommended decks are standout choices from the variety of decks within the cEDH format. Deck recommendations are chosen to help players discover reliable options for strategies, color combinations, and archetypes that they are interested in.  
   
 For more information about accepted decks, recommendations, and other pertinent submissions information, check the [About the DDB](/about) page.
