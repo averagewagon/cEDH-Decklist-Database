@@ -5,4 +5,6 @@ These decks are categorized as "Deprecated", meaning they meet the following req
 - No joke decks, decks must have been intended for competitive play.
 - No obvious exclusions of staple cards without justification  
   
+This section is intended for archival purposes, so that players can find inspiration from lists that are no longer competitive. Many of these lists could still be viable, if only they were adopted by a caring owner!  
+  
 If you see a deck in "Competitive" which you believe should be "Deprecated", please report it in [Make a Request](/request).
