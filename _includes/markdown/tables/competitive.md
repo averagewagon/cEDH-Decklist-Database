@@ -1,1 +1,11 @@
-Consectetur sit perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? 
+## Competitive Decks
+These decks are categorized as "Competitive", meaning they meet the following requirements
+- Decks that are intended for competitive and follow the minimum power guidelines in "About the DDB".
+- No joke decks, decks must be intended for competitive play.
+- A powerful and unique strategy within the cEDH format
+- A commander that uniquely enables the deck and is not easily replaced by a more powerful option
+- No obvious exclusions of staple cards without justification  
+  
+Recommendations are given out based on our discretion. You can read about our criteria by which we recommend a deck on the [About the DDB](/about) page.  
+  
+Deck recommendations are chosen to help players discover reliable options for strategies, color combinations, and archetypes that they are interested in.
