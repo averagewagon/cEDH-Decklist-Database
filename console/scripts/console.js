@@ -141,7 +141,7 @@ function filterDecks() {
     }
     
     hide ? deck.classList.add("hidden") : deck.classList.remove("hidden");
-  }
+  });
 }
 
 function checkView(deck) {
