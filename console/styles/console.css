@@ -313,6 +313,7 @@ section {
 
 .ddb-commanders {
   padding: 0;
+  order: -1;
 }
 
 .ddb-commanders li {
