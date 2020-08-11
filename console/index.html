@@ -43,29 +43,45 @@ Main console page
         <div id="console-controls" class="flex ns">
           <div class="flex-column">
             <label for="view-select">Currently Viewing:</label>
-            <select id="view-select" class="btn" autocomplete="off">
-              <option value="PUBLISHED">To-Be-Published Decks</option>
-              <option value="DELETED">Deleted Decks</option>
+            <select id="view-select" autocomplete="off">
               <option value="SUBMITTED">Submitted Decks</option>
+              <option value="PUBLISHED">Published Decks</option>
+              <option value="DELETED">Deleted Decks</option>
+              <option value="CHANGES">Changes</option>
             </select>
           </div>
           
+          <button id="publish-changes">Publish All Changes</button>
+        </div>
+        <div id="description">
+          {% capture content %}
+          {%- include markdown/admin/console.md -%}
+          {% endcapture %}
+          {{ content | escape | markdownify | replace: "id=", "data-content-id=" }}
+        </div>
+        <div id="database-controls" class="flex">
           <div class="flex-column">
             <label for="db-section">Filter Section</label>
             <select id="db-section">
+              <option value="ALL">All Sections</option>
               <option value="COMPETITIVE">Competitive Decks</option>
               <option value="DEPRECATED">Deprecated Decks</option>
               <option value="MEME">Meme Decks</option>
             </select>
           </div>
-          
-          <button id="publish-changes">Publish All Changes</button>
-        </div><div id="description">
-            {% capture content %}
-            {%- include markdown/admin/console.md -%}
-            {% endcapture %}
-            {{ content | escape | markdownify | replace: "id=", "data-content-id=" }}
+          <div class="flex-column">
+            <label for="db-sort">Sort</label>
+            <select id="db-sort" class="btn" autocomplete="off">
+              <option value="NEW">Sort by Newest</option>
+              <option value="TITLE">Sort by Title</option>
+              <option value="COLOR">Sort by Color</option>
+            </select>
           </div>
+          <div id="search-wrap" class="flex-column">
+            <label for="db-search">Search</label>
+            <input id="db-search" type="search" placeholder="Search the database..." name="search" aria-label="search" autocomplete="off"></input>
+          </div>
+        </div>
         <ul id="decks">
         </ul>
       </section>
