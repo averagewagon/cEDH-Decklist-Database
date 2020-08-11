@@ -317,7 +317,7 @@ section {
 }
 
 .ddb-commanders li {
-  border-top: 2px solid var(--darker);
+  border-bottom: 2px solid var(--darker);
   text-align: left;
   padding: 4px 12px;
 }
