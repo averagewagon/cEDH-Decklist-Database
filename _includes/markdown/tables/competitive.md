@@ -1,4 +1,3 @@
-## Competitive Decks
 These decks are categorized as "Competitive", meaning they meet the following requirements
 - Decks that are intended for competitive and follow the minimum power guidelines in "About the DDB".
 - No joke decks, decks must be intended for competitive play.
