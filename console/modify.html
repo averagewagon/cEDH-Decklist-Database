@@ -21,6 +21,7 @@ Modify Site console page
 <li class="about">{% capture md %}{% include markdown/about.md %}{% endcapture %}{{ md | escape | strip }}</li>
 <li class="submit">{% capture md %}{% include markdown/submit.md %}{% endcapture %}{{ md | escape | strip }}</li>
 <li class="request">{% capture md %}{% include markdown/request.md %}{% endcapture %}{{ md | escape | strip }}</li>
+<li class="template">{% capture md %}{% include markdown/template.md %}{% endcapture %}{{ md | escape | strip }}</li>
 <li class="competitive">{% capture md %}{% include markdown/tables/competitive.md %}{% endcapture %}{{ md | escape | strip }}</li>
 <li class="deprecated">{% capture md %}{% include markdown/tables/deprecated.md %}{% endcapture %}{{ md | escape | strip }}</li>
 <li class="meme">{% capture md %}{% include markdown/tables/meme.md %}{% endcapture %}{{ md | escape | strip }}</li>
@@ -45,6 +46,7 @@ Modify Site console page
           <select id="file-select" autocomplete="off" class="pt">
             <option value="MOTD">Message of the Day</option>
             <option value="ABOUT">About the DDB</option>
+            <option value="TEMPLATE">Changelog Template</option>
             <option value="SUBMIT">"Submit a Deck" Sidebar</option>
             <option value="REQUEST">"Make a Request" Sidebar</option>
             <option value="COMPETITIVE">"Competitive" Description</option>
