@@ -51,18 +51,27 @@ The main page of the cEDH decklist database
       </aside>
       
       <section id="section">
-        <div id="db-functions" class="ns">
-          <select id="db-section" class="btn" autocomplete="off">
-            <option value="COMPETITIVE">Competitive Decks</option>
-            <option value="DEPRECATED">Deprecated Decks</option>
-            <option value="MEME">Meme Decks</option>
-          </select>
-          <select id="db-sort" class="btn" autocomplete="off">
-            <option value="NEW">Sort by Newest</option>
-            <option value="TITLE">Sort by Title</option>
-            <option value="COLOR">Sort by Color</option>
-          </select>
-          <input id="db-search" type="search" placeholder="Search the database..." name="search" aria-label="search" autocomplete="off"></input>
+        <div id="database-controls" class="ns flex">
+          <div class="flex-column">
+            <label for="db-section">Filter Section</label>
+            <select id="db-section">
+              <option value="COMPETITIVE">Competitive Decks</option>
+              <option value="DEPRECATED">Deprecated Decks</option>
+              <option value="MEME">Meme Decks</option>
+            </select>
+          </div>
+          <div class="flex-column">
+            <label for="db-sort">Sort</label>
+            <select id="db-sort" autocomplete="off">
+              <option value="NEW">Sort by Newest</option>
+              <option value="TITLE">Sort by Title</option>
+              <option value="COLOR">Sort by Color</option>
+            </select>
+          </div>
+          <div id="search-wrap" class="flex-column">
+            <label for="db-search">Search</label>
+            <input id="db-search" type="search" placeholder="Search the database..." name="search" aria-label="search" autocomplete="off"></input>
+          </div>
         </div>
         <div id="db-description">
           <div id="competitive-desc">

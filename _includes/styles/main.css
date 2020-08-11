@@ -23,7 +23,7 @@
     z-index: 10;
   }
   
-  #db-functions {
+  #database-controls {
     flex-wrap: wrap;
   }
   
@@ -130,9 +130,26 @@ section {
   flex-grow: 1;
 }
 
-#db-functions {
+#database-controls {
   display: flex;
   justify-content: space-between;
+}
+
+#database-controls {
+  align-items: stretch;
+}
+
+#db-section, #db-search, #db-sort {
+  background-color: var(--darker);
+  color: white;
+  border: none;
+  padding: 8px;
+  font-size: 14pt;
+}
+
+#database-controls label {
+  font-size: 14pt;
+  margin-bottom: 4px;
 }
 
 #db-search {
@@ -142,6 +159,10 @@ section {
   color: white;
   border: none;
   background-color: var(--darker);
+}
+
+#search-wrap {
+  flex-grow: 1;
 }
 
 #db-search::placeholder {

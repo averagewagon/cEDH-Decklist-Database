@@ -106,7 +106,6 @@ function applyFilters() {
 }
 
 function changeSection() {
-  applyFilters();
   qsa(".filter-active").forEach(i => {
     i.classList.remove("filter-active");
     i.classList.add("filter-inactive");
@@ -115,6 +114,7 @@ function changeSection() {
     i.classList.remove("color-active");
     i.classList.add("color-inactive");
   });
+  applyFilters();
   const section = id("db-section").value.toLowerCase();
   qsa("#db-description > div").forEach(item => {
     item.id.includes(section) ? item.classList.remove("hidden") : item.classList.add("hidden");
