@@ -156,7 +156,7 @@ function checkView(deck) {
     case "DELETED":
       return (status === "DELETED" || dest === "DELETED");
     case "CHANGES":
-      return (status !== dest || dest === "PUBLISHED");
+      return (dest !== "null");
     default: 
       return true;
   }
@@ -171,10 +171,12 @@ const build = {
     iqs(item, ".sub").id = "s" + id;
     iqs(item, ".main").addEventListener("click", toggleSub);
     iqs(item, ".ddb-title").innerText = deck.title;
+    item.dataset.title = deck.title;
     iqs(item, ".ddb-edit").href = "/console/edit.html?id=" + id;
     iqs(item, ".ddb-section").innerText = deck.section;
     iqs(item, ".ddb-description").innerText = deck.description;
     iqs(item, ".ddb-date").innerText = deck.updated.substring(0, 10);
+    item.dataset.updated = deck.updated;
     build.status(item, deck);
     build.colors(item, deck);
     build.icons(item, deck);
