@@ -42,11 +42,16 @@
   .ddb-images {
     display: none;
   }
+  
+  .ddb-commanders {
+    order: -1;
+  }
 }
 
 @media (min-width: 1201px) {
   .ddb-commanders {
     display: none;
+    order: -1;
   }
 }
 
