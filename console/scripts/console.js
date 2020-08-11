@@ -3,6 +3,18 @@
 (function() {"use strict";
 window.addEventListener("load", init);
 
+// MTG Color ordering converted to binary
+const COLOR_ORDER = [
+  0,
+  1,2,4,8,16,
+  3,6,12,24,17,
+  5,10,20,9,18,
+  19,7,14,28,25,
+  13,26,21,11,22,
+  15,23,27,29,30,
+  31
+]
+
 // Initialization function
 async function init() {
   if (get("jwt")) {
@@ -14,6 +26,8 @@ async function init() {
     });
     id("view-select").addEventListener("change", filterDecks);
     id("db-section").addEventListener("change", filterDecks);
+    id("db-search").addEventListener("change", filterDecks);
+    id("db-sort").addEventListener("change", sortTable);
     id("publish-changes").addEventListener("click", publishChanges);
   }
 }
@@ -86,17 +100,65 @@ function populateDecks(decks) {
   }
 }
 
+function sortTable() {
+  const sort = id("db-sort").value;
+  const entries = [...qsa("#decks > li")];
+  
+  const sorted = entries.sort((a, b) => {
+    if (sort === "NEW")   { return b.dataset.updated.localeCompare(a.dataset.updated); }
+    if (sort === "TITLE") { return a.dataset.title.localeCompare(b.dataset.title); }
+    if (sort === "COLOR") { return convertColor(a.dataset.colors) - convertColor(b.dataset.colors); }
+    return 0;
+  });
+  
+  const decks = id("decks");
+  sorted.forEach(item => decks.appendChild(item));
+}
+
+function convertColor(colors) {
+  let val = 0;
+  if (colors.includes("w")) { val += 1 }
+  if (colors.includes("u")) { val += 2 }
+  if (colors.includes("b")) { val += 4 }
+  if (colors.includes("r")) { val += 8 }
+  if (colors.includes("g")) { val += 16 }
+  return COLOR_ORDER.indexOf(val);
+}
+
 function filterDecks() {
   const decks = qsa("#decks > li");
-  const shown = id("view-select").value;
   const section = id("db-section").value;
-  for (let i = 0; i < decks.length; i++) {
-    const sec = iqs(decks[i], ".ddb-section").innerText.trim();
-    if (decks[i].dataset.show === shown && sec === section) {
-      decks[i].classList.remove("hidden");
-    } else {
-      decks[i].classList.add("hidden");
+  const search = id("db-search").value.toLowerCase();
+  
+  qsa("#decks > li").forEach(deck => {
+    let hide = false;
+    if (!checkView(deck)) {
+      hide = true;
+    } else if (section !== "ALL" && section !== iqs(deck, ".ddb-section").innerText.trim()) {
+      hide = true;
+    } else if (search && !deck.textContent.toLowerCase().includes(search)) {
+      hide = true;
     }
+    
+    hide ? deck.classList.add("hidden") : deck.classList.remove("hidden");
+  }
+}
+
+function checkView(deck) {
+  const view = id("view-select").value;
+  const status = deck.dataset.status;
+  const dest = deck.dataset.destination;
+  switch (view) {
+    case "SUBMITTED":
+      return (status === "SUBMITTED");
+    case "PUBLISHED":
+      return (status === "PUBLISHED");
+    case "DELETED":
+      return (status === "DELETED" || dest === "DELETED");
+    case "CHANGES":
+      return (status !== dest || dest === "PUBLISHED");
+    default: 
+      return true;
   }
 }
 
@@ -124,24 +186,20 @@ const build = {
   },
   
   status: function(item, deck) {
-    item.classList.remove("RED", "BLUE", "GREEN");
+    item.classList.remove("RED", "BLUE", "GREEN", "PURPLE");
     if (deck.destination === "PUBLISHED" && deck.status === "PUBLISHED") {
       item.classList.add("BLUE");
     } else if (deck.destination === "PUBLISHED") {
       item.classList.add("GREEN");
-    } else if (deck.destination || deck.status === "DELETED") {
+    } else if (deck.destination === "DELETED") {
       item.classList.add("RED");
+    } else if (deck.destination === "SUBMITTED") {
+      item.classList.add("PURPLE");
     }
     
     item.dataset.status = deck.status;
     item.dataset.destination = deck.destination;
     let val = deck.destination ? deck.destination : deck.status;
-    if (deck.status === "PUBLISHED" || deck.destination === "PUBLISHED") {
-      item.dataset.show = "PUBLISHED";
-    } else {
-      item.dataset.show = val;
-    }
-  
     const statuses = iqsa(item, ".ddb-status");
     for (let j = 0; j < statuses.length; j++) {
       statuses[j].innerText = val;
@@ -150,6 +208,7 @@ const build = {
 
   colors: function(item, deck) {
     const colors = ["w", "u", "b", "r", "g"];
+    item.dataset.colors = JSON.stringify(deck.colors);
     const ddbColors = iqs(item, ".ddb-colors");
     for (let j = 0; j < colors.length; j++) {
       let symbol;
