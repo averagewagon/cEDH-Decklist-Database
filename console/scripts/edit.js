@@ -41,13 +41,15 @@ function swapBackground() {
   const item = id("in-destination");
   const dest = item.value;
   const status = qs("form").dataset.status;
-  item.classList.remove("RED", "BLUE", "GREEN", "NEUTRAL");
+  item.classList.remove("RED", "BLUE", "GREEN", "PURPLE", "NEUTRAL");
   if (dest === "PUBLISHED" && status === "PUBLISHED") {
     item.classList.add("BLUE");
   } else if (dest === "PUBLISHED") {
     item.classList.add("GREEN");
   } else if (dest === "DELETED") {
     item.classList.add("RED");
+  } else if (dest === "SUBMITTED") {
+    item.classList.add("PURPLE");
   } else {
     item.classList.add("NEUTRAL");
   }
@@ -357,26 +359,20 @@ const build = {
   },
   
   status: function(item, deck) {
-    item.classList.remove("RED", "BLUE", "GREEN", "NEUTRAL");
+    item.classList.remove("RED", "BLUE", "GREEN", "PURPLE");
     if (deck.destination === "PUBLISHED" && deck.status === "PUBLISHED") {
       item.classList.add("BLUE");
     } else if (deck.destination === "PUBLISHED") {
       item.classList.add("GREEN");
     } else if (deck.destination === "DELETED") {
       item.classList.add("RED");
-    } else {
-      item.classList.add("NEUTRAL");
+    } else if (deck.destination === "SUBMITTED") {
+      item.classList.add("PURPLE");
     }
     
     item.dataset.status = deck.status;
     item.dataset.destination = deck.destination;
     let val = deck.destination ? deck.destination : deck.status;
-    if (deck.status === "PUBLISHED" || deck.destination === "PUBLISHED") {
-      item.dataset.show = "PUBLISHED";
-    } else {
-      item.dataset.show = val;
-    }
-  
     const statuses = iqsa(item, ".ddb-status");
     for (let j = 0; j < statuses.length; j++) {
       statuses[j].innerText = val;

@@ -150,7 +150,7 @@ function checkView(deck) {
   const dest = deck.dataset.destination;
   switch (view) {
     case "SUBMITTED":
-      return (status === "SUBMITTED");
+      return (status === "SUBMITTED" || dest === "SUBMITTED");
     case "PUBLISHED":
       return (status === "PUBLISHED");
     case "DELETED":
