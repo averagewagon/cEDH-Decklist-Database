@@ -15,36 +15,7 @@
 }
 
 .bw, .bu, .bb, .br, .bg, .bx {
-  border-radius: 50%;
   font-family: 'courier new', monospace;
-}
-
-.bw {
-  background-color: rgb(249, 250, 244);
-}
-
-.bu {
-  background-color: rgb(14, 104, 172);
-  filter: saturate(200%);
-}
-
-.bb {
-  background-color: rgb(153,50,204);
-  filter: brightness(150%) saturate(50%);
-}
-
-.br {
-  background-color: rgb(211, 32, 42);
-  filter: saturate(150%);
-}
-
-.bg {
-  background-color: rgb(0, 115, 62);
-  filter: saturate(300%);
-}
-
-.bx {
-  background-color: #777;
 }
 
 .ns {

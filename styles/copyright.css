@@ -1,0 +1,56 @@
+@media (max-width: 1200px) {
+  #content {
+    flex-direction: column;
+  }
+  
+  aside, section {
+    width: auto !important;
+    overflow: visible !important;
+    min-width: auto !important;
+  }
+  
+  section {
+    margin: 4px !important;
+  }
+  
+  #icons {
+    width: 100% !important;
+  }
+  
+  section svg {
+  height: 28px !important;
+  width: 28px !important;
+  min-width: 28px !important;
+  min-height: 28px !important;
+  margin-right: 16px;
+}
+}
+
+section {
+  overflow: auto;
+  padding: 0 16px;
+  flex-grow: 1;
+}
+
+section svg {
+  height: 48px;
+  width: 48px;
+  min-width: 48px;
+  min-height: 48px;
+  margin-right: 16px;
+}
+
+#icons {
+  flex-grow: 1;
+  margin: 0 auto;
+}
+
+.discord-svg {
+  fill: var(--discord);
+}
+
+#icons > div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
