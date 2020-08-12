@@ -1,4 +1,3 @@
-## Deprecated Decks
 These decks are categorized as "Deprecated", meaning they meet the following requirements
 - Decks which are no longer considered viable, have had essential pieces banned, or are otherwise no longer updated
 - Used to be intended for competitive and followed the minimum power guidelines in "About the DDB".

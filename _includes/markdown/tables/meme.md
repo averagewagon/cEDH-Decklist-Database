@@ -1,4 +1,3 @@
-## Meme Decks
 These decks are categorized as "Meme", meaning they meet the following requirements
 - Joke decks, gimmicky decks, parodies, or otherwise comedic lists.
 - Submissions should be relatively known to the online cEDH community - don't just submit a random list directly to the meme table.
