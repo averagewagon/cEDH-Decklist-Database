@@ -117,6 +117,10 @@
   #decks {
     padding-top: 16px !important;
   }
+  
+  #advertisement {
+    pointer-events: none;
+  }
 }
 
 /* Aside Styles */
