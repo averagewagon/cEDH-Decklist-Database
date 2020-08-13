@@ -1,5 +1,5 @@
-<svg class="svg recommend-svg unavailable" alt="Recommendation icon" viewBox="0 0 28 28" stroke-width="1.5" stroke="#000" fill="none" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="14" cy="14" r="14" stroke="white" fill="white" stroke-width="0" />
+<svg class="svg recommend-svg unavailable" alt="Recommendation icon" viewBox="0 0 28 28" stroke-width="1.5" stroke="#666" fill="none" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="14" cy="14" r="14" stroke="#666" fill="black" stroke-width="0" />
   <path transform="translate(2, 2.5)" stroke="none" d="M0 0h24v24H0z"/>
   <path transform="translate(2, 2.5)" d="M9 12l2 2l4 -4" />
   <path transform="translate(2, 2.5)" d="M12 3a12 12 0 0 0 8.5 3a12 12 0 0 1 -8.5 15a12 12 0 0 1 -8.5 -15a12 12 0 0 0 8.5 -3" />
