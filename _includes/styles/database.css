@@ -51,7 +51,35 @@
 @media (min-width: 1201px) {
   .ddb-commanders {
     display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .ddb-info {
     order: -1;
+  }
+  
+  .ddb-commanders {
+    font-size: 16pt;
+  }
+  
+  .ddb-date-wrap {
+    order: 1;
+  }
+  
+  .ddb-colors svg, .ddb-icons svg {
+    height: 24px !important;
+    width: 24px !important;
+    min-height: 24px !important;
+    min-width: 24px !important;
+  }
+  
+  .ddb-title {
+    font-size: 14pt !important;
+  }
+  
+  .ddb-decklists {
+    margin-bottom: 8px;
   }
 }
 

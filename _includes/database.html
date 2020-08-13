@@ -72,11 +72,6 @@
           <span class="ddb-discord-title">[No Discord Server]</span>
         </a>
         {% endunless %}
-        <ul class="ddb-commanders">
-          {% for x in d.commander %}
-          <a href="{{x.link | escape}}"><li class="btn">{{x.name | escape}}</li></a>
-          {% endfor %}
-        </ul>
         <ul class="ddb-decklists">
           {% for x in d.decklists %}
             <li>
@@ -91,13 +86,16 @@
         </ul>
       </div>
       <div class="ddb-info flex-column">
-      <div class="ddb-section flex">
-        {{d.section}}
-      </div>
+        <div class="ddb-section flex">{{d.section}}</div>
+        <ul class="ddb-commanders">
+          {% for x in d.commander %}
+          <a href="{{x.link | escape}}"><li class="btn">{{x.name | escape}}</li></a>
+          {% endfor %}
+        </ul>
         <div class="ddb-description">
           {{d.description | escape}}
         </div>
-        <div class="flex">
+        <div class="flex ddb-date-wrap">
           <span class="ddb-date">{{ d.updated | slice: 0, 10 | escape}}
         </div>
       </div>
