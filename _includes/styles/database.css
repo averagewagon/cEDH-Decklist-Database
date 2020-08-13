@@ -60,7 +60,7 @@
   }
   
   .ddb-commanders {
-    font-size: 16pt;
+    font-size: 14pt;
   }
   
   .ddb-date-wrap {
@@ -246,7 +246,6 @@
 
 .ddb-commanders a {
   color: skyblue;
-  text-decoration: none;
   line-height: 1.5;
   font-size: 14pt;
 }
