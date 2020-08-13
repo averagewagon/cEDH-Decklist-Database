@@ -15,6 +15,7 @@ const COLOR_ORDER = [
 
 // Initialization function
 function init() {
+  sortTable();
   id("db-sort").addEventListener("change", sortTable);
   id("db-search").addEventListener("change", applyFilters);
   id("db-section").addEventListener("change", changeSection);
