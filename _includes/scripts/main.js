@@ -107,19 +107,11 @@ function applyFilters() {
 }
 
 function changeSection() {
-  qsa(".filter-active").forEach(i => {
-    i.classList.remove("filter-active");
-    i.classList.add("filter-inactive");
-  });
-  qsa(".color-active").forEach(i => {
-    i.classList.remove("color-active");
-    i.classList.add("color-inactive");
-  });
-  applyFilters();
   const section = id("db-section").value.toLowerCase();
   qsa("#db-description > div").forEach(item => {
     item.id.includes(section) ? item.classList.remove("hidden") : item.classList.add("hidden");
   });
+  applyFilters();
 }
 
 /* HELPER FUNCTIONS */
