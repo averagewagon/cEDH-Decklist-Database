@@ -1,7 +1,7 @@
 # cEDH Decklist Database
 A collection of Magic: The Gathering (MTG) decks from the Competitive EDH Format.
 
-The site is hosted at [cedh-decklist-database.com](https://cedh-decklist-database.com). It utilizes Firebase as a backend for the forms, while the main database is prerendered using Jekyll to improve performance, take advantage of browser caching, and reduce the load on the backend.
+The site is hosted at [cedh-decklist-database.com](https://cedh-decklist-database.com). It utilizes AWS as a backend for the forms, while the main database is prerendered using Jekyll to improve performance, take advantage of browser caching, and reduce the load on the backend.
 
 ## Features
 - Deck listings with Scryfall-imported commanders and user-submitted information
