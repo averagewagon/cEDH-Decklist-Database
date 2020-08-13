@@ -13,7 +13,7 @@
   data-updated="{{d.updated}}"
   data-title="{{d.title | escape}}"
   data-colors="{{d.colors | join ""}}"
-  class="{% if d.section != "COMPETITIVE" or d.recommended == false%}hidden{% endif %}">
+  class="{% if d.section != "COMPETITIVE" %}hidden{% endif %}">
     <div class="main btn flex">
       <div class="ddb-colors flex">
         {% if d.colors contains "w" %}
