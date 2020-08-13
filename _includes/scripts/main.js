@@ -20,6 +20,8 @@ function init() {
   id("db-search").addEventListener("change", applyFilters);
   id("db-section").addEventListener("change", changeSection);
   qsa(".main").forEach(item => item.addEventListener("click", toggleSub));
+  id("mobile-filters").addEventListener("click", toggleMobileFilters);
+  id("mobile-desc").addEventListener("click", toggleMobileDescription);
   
   qsa("#color-filters > div").forEach(item => item.addEventListener("click", () => {
     item.classList.toggle("color-inactive");
@@ -32,6 +34,22 @@ function init() {
     item.classList.toggle("filter-active");
     applyFilters();
   }));
+}
+
+function toggleMobileDescription() {
+  id("db-description").classList.toggle("mhide");
+}
+
+function toggleMobileFilters() {
+  if (id("mobile-filters").classList.contains("shown")) {
+    id("mobile-filters").classList.remove("shown");
+    id("filter-wrap").classList.add("mhide");
+    id("database-controls").classList.add("mhide");
+  } else {
+    id("mobile-filters").classList.add("shown");
+    id("filter-wrap").classList.remove("mhide");
+    id("database-controls").classList.remove("mhide");
+  } 
 }
 
 // Toggles the visibility of a subrow
@@ -108,6 +126,7 @@ function applyFilters() {
 
 function changeSection() {
   const section = id("db-section").value.toLowerCase();
+  id("show-desc").innerText = section.charAt(0).toUpperCase() + section.slice(1) + " Decks";
   qsa("#db-description > div").forEach(item => {
     item.id.includes(section) ? item.classList.remove("hidden") : item.classList.add("hidden");
   });

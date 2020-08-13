@@ -20,11 +20,14 @@ The main page of the cEDH decklist database
 <body>
   <div id="wrapper">
     {% include navbar.html %}
+    <div id="mobile-filters" class="mobile ns">
+      + Show Filters
+    </div>
 
     <div id="content">
-      <aside id="aside">
+      <aside id="aside" class="">
         <h2>Filters</h2>
-        <div id="filter-wrap">
+        <div id="filter-wrap" class="mhide">
           <div id="color-filters" class="ns">
             <div class="icon pt color-inactive" data-c="w">{% include svg/colors/w.svg %}</div>
             <div class="icon pt color-inactive" data-c="u">{% include svg/colors/u.svg %}</div>
@@ -51,10 +54,10 @@ The main page of the cEDH decklist database
       </aside>
       
       <section id="section">
-        <div id="database-controls" class="ns flex">
+        <div id="database-controls" class="ns flex mhide">
           <div class="flex-column">
             <label for="db-section">Section</label>
-            <select id="db-section">
+            <select id="db-section" autocomplete="off">
               <option value="COMPETITIVE">Competitive Decks</option>
               <option value="DEPRECATED">Deprecated Decks</option>
               <option value="MEME">Meme Decks</option>
@@ -73,7 +76,10 @@ The main page of the cEDH decklist database
             <input id="db-search" type="search" placeholder="Search the database..." name="search" aria-label="search" autocomplete="off"></input>
           </div>
         </div>
-        <div id="db-description">
+        <div id="mobile-desc" class="mobile ns">
+          Competitive Decks
+        </div>
+        <div id="db-description" class="mhide">
           <div id="competitive-desc">
             {% capture competitive %}
             {%- include markdown/tables/competitive.md -%}
