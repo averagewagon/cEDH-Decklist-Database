@@ -4,10 +4,6 @@
     flex-wrap: wrap;
   }
   
-  section {
-    padding-bottom: 500px !important;
-  }
-  
   aside {
     width: 100% !important;
     height: auto !important;
@@ -64,10 +60,6 @@
     flex-direction: column;
   }
   
-  #copyright {
-    order: 1;
-  }
-  
   aside {
     position: fixed;
     padding-left: 0 !important;
@@ -121,6 +113,11 @@
   #advertisement {
     pointer-events: none;
   }
+}
+
+#copyright {
+  margin-top: 256px;
+  margin-bottom: 16px;
 }
 
 /* Aside Styles */
@@ -255,6 +252,7 @@ section {
 #db-description {
   margin: 16px 0;
   line-height: 1.5;
+  font-size: 13pt;
 }
 
 /* Database Styles */
