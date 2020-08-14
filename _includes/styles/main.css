@@ -113,6 +113,10 @@
   #advertisement {
     pointer-events: none;
   }
+  
+  #db-description {
+    font-size: 12pt;
+  }
 }
 
 #copyright {
@@ -252,7 +256,7 @@ section {
 #db-description {
   margin: 16px 0;
   line-height: 1.5;
-  font-size: 13pt;
+  font-size: 12pt;
 }
 
 /* Database Styles */

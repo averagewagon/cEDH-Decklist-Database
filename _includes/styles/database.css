@@ -36,10 +36,6 @@
   .sub {
     max-height: 100% !important;
   }
-  
-  #db-description {
-    font-size: 12pt;
-  }
 }
 
 @media (max-width: 1200px) {
