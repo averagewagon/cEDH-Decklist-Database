@@ -36,6 +36,10 @@
   .sub {
     max-height: 100% !important;
   }
+  
+  #db-description {
+    font-size: 12pt;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -88,8 +92,6 @@
 }
 
 #decks {
-  margin: 0;
-  margin-bottom: 400px;
   padding: 0;
 }
 

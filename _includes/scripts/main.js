@@ -22,6 +22,7 @@ function init() {
   qsa(".main").forEach(item => item.addEventListener("click", toggleSub));
   id("mobile-filters").addEventListener("click", toggleMobileFilters);
   id("mobile-desc").addEventListener("click", toggleMobileDescription);
+  id("db-search").addEventListener("click", mobileSearchInput);
   
   qsa("#color-filters > div").forEach(item => item.addEventListener("click", () => {
     item.classList.toggle("color-inactive");
@@ -36,6 +37,15 @@ function init() {
   }));
 }
 
+function mobileSearchInput() {
+  const search = id("db-search");
+  if (window.innerWidth <= 800) {
+    search.value = prompt("Search the Database:");
+    search.blur();
+    applyFilters();
+  }
+}
+
 function toggleMobileDescription() {
   id("db-description").classList.toggle("mhide");
 }
@@ -45,10 +55,12 @@ function toggleMobileFilters() {
     id("mobile-filters").classList.remove("shown");
     id("filter-wrap").classList.add("mhide");
     id("database-controls").classList.add("mhide");
+    id("mobile-filters").innerText = "+ Show Filters";
   } else {
     id("mobile-filters").classList.add("shown");
     id("filter-wrap").classList.remove("mhide");
     id("database-controls").classList.remove("mhide");
+    id("mobile-filters").innerText = "- Hide Filters";
   } 
 }
 
