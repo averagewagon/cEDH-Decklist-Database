@@ -40,7 +40,7 @@ function init() {
 function mobileSearchInput() {
   const search = id("db-search");
   if (window.innerWidth <= 800) {
-    search.value = prompt("Search the Database:");
+    search.value = prompt("Search the Database:", search.value);
     search.blur();
     applyFilters();
   }
