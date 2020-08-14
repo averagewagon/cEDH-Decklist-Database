@@ -125,12 +125,12 @@ function applyFilters() {
 }
 
 function changeSection() {
+  applyFilters();
   const section = id("db-section").value.toLowerCase();
   id("show-desc").innerText = section.charAt(0).toUpperCase() + section.slice(1) + " Decks";
   qsa("#db-description > div").forEach(item => {
     item.id.includes(section) ? item.classList.remove("hidden") : item.classList.add("hidden");
   });
-  applyFilters();
 }
 
 /* HELPER FUNCTIONS */
