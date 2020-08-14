@@ -89,6 +89,7 @@
     margin-top: 240px;
     z-index: 12;
     left: 0;
+    padding-bottom: 16px;
   }
   
   #database-controls label {
