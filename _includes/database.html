@@ -75,7 +75,7 @@
         <ul class="ddb-decklists">
           {% for x in d.decklists %}
             <li>
-              <a href="{{x.link}}">
+              <a href="{{x.link}}" target="_blank">
                 {% if x.primer %}
                   {% include svg/primer.svg %}{% else %}{% include svg/not/primer.svg %}
                 {% endif %}
@@ -89,7 +89,7 @@
         <div class="ddb-section flex">{{d.section}}</div>
         <ul class="ddb-commanders">
           {% for x in d.commander %}
-          <a href="{{x.link | escape}}"><li class="btn">{{x.name | escape}}</li></a>
+          <a href="{{x.link | escape}}" target="_blank"><li class="btn">{{x.name | escape}}</li></a>
           {% endfor %}
         </ul>
         <div class="ddb-description">
