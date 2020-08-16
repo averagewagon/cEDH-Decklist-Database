@@ -11,7 +11,7 @@ Contributing factors to a list being recommended:
 
 ## Table Categories
 ### Competitive
-- Decks that are intended for competitive and follow the minimum power guidelines in "About the DDB".
+- Decks that are intended for competitive and follow the minimum power guidelines (coming soon, probably).
 - No joke decks, decks must be intended for competitive play.
 - Recommendations are given out based on our discretion. You can read about our criteria by which we recommend a deck in the "About the DDB" page.  
   
