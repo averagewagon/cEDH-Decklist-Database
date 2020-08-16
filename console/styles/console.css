@@ -23,6 +23,14 @@
 #content {
 }
 
+.dark {
+  filter: brightness(0%);
+}
+
+.unavailable {
+  filter: invert(100%) brightness(50%);
+}
+
 /* Request Styles */
 aside {
   overflow: auto;
