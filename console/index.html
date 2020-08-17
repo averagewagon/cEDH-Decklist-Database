@@ -44,14 +44,21 @@ Main console page
           <div class="flex-column">
             <label for="view-select">Currently Viewing:</label>
             <select id="view-select" autocomplete="off">
+              <option value="CHANGES">Changes</option>
               <option value="SUBMITTED">Submitted Decks</option>
               <option value="PUBLISHED">Published Decks</option>
               <option value="DELETED">Deleted Decks</option>
-              <option value="CHANGES">Changes</option>
             </select>
           </div>
           
-          <button id="publish-changes">Publish All Changes</button>
+          <div id="publish-wrap">
+            <div class="flex-column" id="select-wrap">
+              <button id="select-all">Select All</button>
+              <button id="unselect-all" disabled>Unselect All</button>
+            </div>
+          
+            <button id="publish-changes" disabled>Publish Selected Changes</button>
+          </div>
         </div>
         <div id="description">
           {% capture content %}
@@ -125,11 +132,15 @@ Main console page
       
       <li class="" id="deck-template">
         <div class="main btn flex">
+          <label class="ddb-publish">
+            <input type="checkbox" autocomplete="off"/>
+            <span class="checkbox"></span>
+          </label>
           <div class="ddb-colors flex">
           </div>
           <div class="ddb-title">
           </div>
-          <div class="ddb-status">
+          <div class="ddb-main-section">
           </div>
           <div class="ddb-icons flex">
             {% include svg/recommend.svg %}

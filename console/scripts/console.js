@@ -20,6 +20,8 @@ async function init() {
   if (get("jwt")) {
     readDecks().then(() => {
       filterDecks();
+      id("select-all").addEventListener("click", selectAll);
+      id("unselect-all").addEventListener("click", unselectAll);
     });
     readRequests().then(() => {
       id("show-deleted").addEventListener("change", toggleRequests);
@@ -30,6 +32,20 @@ async function init() {
     id("db-sort").addEventListener("change", sortTable);
     id("publish-changes").addEventListener("click", publishChanges);
   }
+}
+
+function selectAll() {
+  qsa("#decks .ddb-publish input").forEach(item => {
+    item.checked = true;
+  });
+  markForPublish();
+}
+
+function unselectAll() {
+  qsa("#decks .ddb-publish input").forEach(item => {
+    item.checked = false;
+  });
+  markForPublish();
 }
 
 function changeSection() {
@@ -50,11 +66,17 @@ async function publishChanges() {
       alert("You are not logged in. You must be logged in to do this.");
     } else {
       const jwt = get("jwt");
+      const changes = [];
+      qsa("#decks .ddb-publish input:checked").forEach(item => {
+        const mainId = item.parentElement.parentElement.id;
+        changes.push(mainId.substring(1, mainId.length));
+      });
       const body = {
         "jwt": jwt,
-        "method": "PUBLISH_CHANGES"
+        "method": "PUBLISH_CHANGES",
+        "changes": changes
       };
-      const result = await sendToDDB(body);
+      const result = await sendToDDB(JSON.stringify(body));
       if (result.success) {
         alert("Success! The changes should be visible on the website in a few minutes.");
         window.location.reload();
@@ -98,6 +120,14 @@ function populateDecks(decks) {
     build.deck(item, deck);
     id("decks").appendChild(item);
   }
+}
+
+function markForPublish(event = null) {
+  if (event) {
+    event.stopPropagation();
+  }
+  id("publish-changes").disabled = qsa(".ddb-publish input:checked").length < 1 ? true : false;
+  id("unselect-all").disabled = qsa(".ddb-publish input:checked").length < 1 ? true : false;
 }
 
 function sortTable() {
@@ -174,6 +204,7 @@ const build = {
     item.dataset.title = deck.title;
     iqs(item, ".ddb-edit").href = "/console/edit.html?id=" + id;
     iqs(item, ".ddb-section").innerText = deck.section;
+    iqs(item, ".ddb-main-section").innerText = deck.section;
     iqs(item, ".ddb-description").innerText = deck.description;
     iqs(item, ".ddb-date").innerText = deck.updated.substring(0, 10);
     item.dataset.updated = deck.updated;
@@ -189,6 +220,9 @@ const build = {
   
   status: function(item, deck) {
     item.classList.remove("RED", "BLUE", "GREEN", "PURPLE");
+    iqs(item, ".ddb-publish").addEventListener("change", function(event) {
+      markForPublish(event);
+    });
     if (deck.destination === "PUBLISHED" && deck.status === "PUBLISHED") {
       item.classList.add("BLUE");
     } else if (deck.destination === "PUBLISHED") {
@@ -197,6 +231,9 @@ const build = {
       item.classList.add("RED");
     } else if (deck.destination === "SUBMITTED") {
       item.classList.add("PURPLE");
+    } else {
+      const input = iqs(item, ".ddb-publish");
+      input.parentNode.removeChild(input);
     }
     
     item.dataset.status = deck.status;
