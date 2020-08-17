@@ -129,11 +129,40 @@ section {
 }
 
 #console-controls button {
-  background-color: var(--accent-color);
   color: black;
   cursor: pointer;
   border: none;
   font-size: 14pt;
+}
+
+#console-controls button:not(:disabled):hover {
+  filter: brightness(80%);
+}
+
+#console-controls button:disabled {
+  filter: grayscale(50%) brightness(60%);
+  cursor: not-allowed;
+}
+
+#select-wrap {
+  margin-right: 8px;
+  height: 100%;
+}
+
+#select-wrap button {
+  background-color: #8dc18b;
+}
+
+#publish-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+}
+
+#publish-changes {
+  background-color: var(--accent-color);
+  height: 100%;
+  padding: 16px;
 }
 
 #search-wrap {
@@ -153,19 +182,19 @@ section {
   padding: 0;
 }
 
-.GREEN .main {
+.GREEN .main, .GREEN .ddb-edit {
   background-color: #1d4a1c;
 }
 
-.RED .main {
+.RED .main, .RED .ddb-edit {
   background-color: #551919;
 }
 
-.BLUE .main {
+.BLUE .main, .BLUE .ddb-edit  {
   background-color: #014d73;
 }
 
-.PURPLE .main {
+.PURPLE .main, .PURPLE .ddb-edit {
   background-color: #551357;
 }
 
@@ -175,6 +204,38 @@ section {
   padding: 8px 16px;
   cursor: pointer;
   text-align: left;
+}
+
+.ddb-publish {
+  margin-right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.ddb-publish input {
+  display: none;
+}
+
+.ddb-publish .checkbox {
+  width: 26px;
+  height: 26px;
+  background-color: white;
+}
+
+.ddb-publish:hover .checkbox {
+  background-color: #ccc;
+  width: 18px;
+  height: 18px;
+  border: 4px solid white;
+}
+
+.ddb-publish input:checked + .checkbox {
+  background-color: #15a5ec;
+  width: 18px;
+  height: 18px;
+  border: 4px solid white;
 }
 
 .ddb-colors svg {
@@ -191,7 +252,7 @@ section {
   font-size: 16pt;
 }
 
-.main .ddb-status {
+.ddb-main-section {
   font-size: 18pt;
   margin: 0 16px;
   font-family: monospace;
