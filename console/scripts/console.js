@@ -18,14 +18,18 @@ const COLOR_ORDER = [
 // Initialization function
 async function init() {
   if (get("jwt")) {
-    readDecks().then(() => {
+    const deckRead = readDecks().then(() => {
       filterDecks();
       id("select-all").addEventListener("click", selectAll);
       id("unselect-all").addEventListener("click", unselectAll);
+      showLoad();
     });
-    readRequests().then(() => {
+    const reqRead = readRequests().then(() => {
       id("show-deleted").addEventListener("change", toggleRequests);
+      showLoad();
     });
+    await Promise.all([deckRead, reqRead]);
+    hideLoad();
     id("view-select").addEventListener("change", filterDecks);
     id("db-section").addEventListener("change", filterDecks);
     id("db-search").addEventListener("change", filterDecks);
@@ -74,10 +78,11 @@ async function publishChanges() {
       const body = {
         "jwt": jwt,
         "method": "PUBLISH_CHANGES",
-        "changes": changes
+        "changes": JSON.stringify(changes)
       };
-      const result = await sendToDDB(JSON.stringify(body));
+      const result = await sendToDDB(body);
       if (result.success) {
+        console.log(result.data);
         alert("Success! The changes should be visible on the website in a few minutes.");
         window.location.reload();
       } else {
