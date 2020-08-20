@@ -212,6 +212,7 @@ const build = {
     iqs(item, ".ddb-main-section").innerText = deck.section;
     iqs(item, ".ddb-description").innerText = deck.description;
     iqs(item, ".ddb-date").innerText = deck.updated.substring(0, 10);
+    iqs(item, ".ddb-main-date").innerText = deck.updated.substring(0, 10);
     item.dataset.updated = deck.updated;
     build.status(item, deck);
     build.colors(item, deck);
