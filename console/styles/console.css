@@ -253,10 +253,15 @@ section {
 }
 
 .ddb-main-section {
-  font-size: 18pt;
+  font-size: 14pt;
   margin: 0 16px;
   font-family: monospace;
+  font-weight: bold;
   overflow-wrap: normal;
+}
+
+.ddb-main-date {
+  margin-right: 4px;
 }
 
 .ddb-icons svg {
