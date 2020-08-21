@@ -32,6 +32,10 @@
     z-index: 10;
   }
   
+  #advertisement {
+    background-color: var(--darker);
+  }
+  
   #database-controls {
     flex-wrap: wrap;
   }
