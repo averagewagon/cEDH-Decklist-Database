@@ -242,8 +242,8 @@ header {
   }
   
   #mobile-motd {
-    padding: 8px 16px;
-    font-size: 12pt;
+    padding: 4px 16px;
+    font-size: 11pt;
     text-align: center;
     background-color: var(--accent-color);
     color: black;
@@ -276,7 +276,7 @@ header {
   
   #nav-discord svg {
     margin: 0 4px;
-    height: 34px;
+    height: 30px;
   }
   
   #logo {
@@ -289,7 +289,7 @@ header {
   }
   
   #logo svg {
-    height: 30px !important;
+    height: 26px !important;
     margin: 0 4px;
   }
   
