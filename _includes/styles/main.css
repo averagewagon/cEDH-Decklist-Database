@@ -1,10 +1,7 @@
 /* Mobile Adjustments */
-@media (min-width: 1201px) {
-  #mobile-advertisement {
-    display: none;
-  }
+#advertisement {
+  display: none;
 }
-
 @media (max-width: 1200px) {
   #content {
     flex-wrap: wrap;
@@ -13,14 +10,9 @@
   aside {
     width: 100% !important;
     height: auto !important;
-    position: relative !important;
   }
   
   #advertisement {
-    display: none;
-  }
-  
-  #mobile-advertisement {
     height: 100px !important;
     width: 100% !important;
     margin: 0 !important;
@@ -29,6 +21,10 @@
     left: 0;
     z-index: 10;
     background-color: white;
+  }
+  
+  ins {
+    max-height: 100px !important;
   }
   
   #database-controls {
@@ -193,6 +189,10 @@ aside li svg {
 #advertisement {
   width: 100%;
   height: 100%;
+}
+
+ins {
+  max-height: 400px;
 }
 
 .filter-active {
