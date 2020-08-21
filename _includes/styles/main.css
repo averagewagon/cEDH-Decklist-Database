@@ -7,6 +7,10 @@
   #aside {
     position: absolute;
   }
+  
+  #advertisement {
+    margin-top: 16px;
+  }
 }
 
 /* Mobile Adjustments */
