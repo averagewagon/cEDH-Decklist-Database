@@ -1,7 +1,4 @@
 /* Mobile Adjustments */
-#advertisement {
-  display: none;
-}
 @media (max-width: 1200px) {
   #content {
     flex-wrap: wrap;
@@ -16,11 +13,18 @@
     height: 100px !important;
     width: 100% !important;
     margin: 0 !important;
+    padding: 0 !important;
     position: fixed;
     bottom: 0;
     left: 0;
     z-index: 10;
-    background-color: white;
+  }
+  
+  #advertisement > .adsbygoogle {
+    max-height: 100px !important;
+    height: 100px !important;
+    max-width: 100% !important;
+    background-color: steelblue;
   }
   
   ins {
@@ -129,10 +133,22 @@
   margin-bottom: 16px;
 }
 
+#advertisement {
+  padding-left: 16px;
+  padding-right: 16px;
+  display: none;
+}
+
+#advertisement > .adsbygoogle {
+  max-height: 250px;
+  max-width: 250px;
+  background-color: steelblue;
+}
+
 /* Aside Styles */
 aside {
-  width: 266px;
-  min-width: 266px;
+  width: 282px;
+  min-width: 282px;
   z-index: 0;
   background-color: var(--secondary-color);
   display: flex;
@@ -184,15 +200,6 @@ aside li svg {
 .color-inactive {
   opacity: 0.3;
   transition: 0.3s;
-}
-
-#advertisement {
-  width: 100%;
-  height: 100%;
-}
-
-ins {
-  max-height: 400px;
 }
 
 .filter-active {
