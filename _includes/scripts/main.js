@@ -47,7 +47,7 @@ function prepareAd() {
     id("mobile-ad").classList.add("adsbygoogle");
   }
   try {
-    (const adsbygoogle = window.adsbygoogle || []).push({});
+    (adsbygoogle = window.adsbygoogle || []).push({});
   } catch (error) {
     console.log("Adblocker detected");
   }
