@@ -32,10 +32,6 @@
     z-index: 10;
   }
   
-  ins {
-    max-height: 100px !important;
-  }
-  
   #database-controls {
     flex-wrap: wrap;
   }
