@@ -46,7 +46,11 @@ function prepareAd() {
     id("desktop-ad").classList.add("hidden");
     id("mobile-ad").classList.add("adsbygoogle");
   }
+  try{
   (adsbygoogle = window.adsbygoogle || []).push({});
+  } catch (error) {
+    console.log("Adblocker detected");
+  }
 }
 
 function mobileSearchInput() {
