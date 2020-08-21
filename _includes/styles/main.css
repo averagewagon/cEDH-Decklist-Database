@@ -1,3 +1,17 @@
+/* Advertisement Size Adjustment */
+@media (max-width: 1200px) { #ad { max-width: 100%; max-height: 100px; } }
+@media (min-width: 1201px) { 
+  #ad { width: 300px; max-height: 100px; } 
+  @media (min-height: 700px) { #ad { max-height: 250px } }
+  @media (min-height: 750px) { #ad { max-height: 300px } }
+  @media (min-height: 800px) { #ad { max-height: 350px } }
+  @media (min-height: 850px) { #ad { max-height: 400px } }
+  @media (min-height: 900px) { #ad { max-height: 450px } }
+  @media (min-height: 950px) { #ad { max-height: 500px } }
+  @media (min-height: 1000px) { #ad { max-height: 550px } }
+  @media (min-height: 1050px) { #ad { max-height: 600px } }
+}
+
 /* Mobile Adjustments */
 @media (max-width: 1200px) {
   #content {
@@ -7,10 +21,11 @@
   aside {
     width: 100% !important;
     height: auto !important;
+    min-width: 0 !important;
   }
   
   #advertisement {
-    height: 100px !important;
+    height: auto !important;
     width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
@@ -21,9 +36,6 @@
   }
   
   #advertisement > .adsbygoogle {
-    max-height: 100px !important;
-    height: 100px !important;
-    max-width: 100% !important;
     background-color: steelblue;
   }
   
@@ -134,21 +146,18 @@
 }
 
 #advertisement {
-  padding-left: 16px;
-  padding-right: 16px;
-  display: none;
+  margin: 0 auto;
 }
 
 #advertisement > .adsbygoogle {
-  max-height: 250px;
-  max-width: 250px;
   background-color: steelblue;
 }
 
 /* Aside Styles */
 aside {
-  width: 282px;
-  min-width: 282px;
+  width: 300px;
+  min-width: 300px;
+  padding: 0 8px;
   z-index: 0;
   background-color: var(--secondary-color);
   display: flex;
@@ -162,7 +171,7 @@ aside h2 {
 }
 
 aside ul {
-  margin: 16px;
+  margin: 16px 8px;
 }
 
 aside li {
@@ -193,8 +202,8 @@ aside li svg {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .color-inactive {
