@@ -15,7 +15,6 @@ const COLOR_ORDER = [
 
 // Initialization function
 function init() {
-  prepareAd();
   sortTable();
   id("db-sort").addEventListener("change", sortTable);
   id("db-search").addEventListener("change", applyFilters);
@@ -36,16 +35,6 @@ function init() {
     item.classList.toggle("filter-active");
     applyFilters();
   }));
-}
-
-function prepareAd() {
-  const width = window.innerWidth;
-  const height = window.innerHeight;
-  const ad = id("ad");
-  if (width <= 1200) {
-    ad.style = `display:block;max-height: 100px;max-width:${width}`;
-  }
-  (adsbygoogle = window.adsbygoogle || []).push({});
 }
 
 function mobileSearchInput() {
