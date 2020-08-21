@@ -1,4 +1,10 @@
 /* Mobile Adjustments */
+@media (min-width: 1201px) {
+  #mobile-advertisement {
+    display: none;
+  }
+}
+
 @media (max-width: 1200px) {
   #content {
     flex-wrap: wrap;
@@ -7,9 +13,14 @@
   aside {
     width: 100% !important;
     height: auto !important;
+    position: relative !important;
   }
   
   #advertisement {
+    display: none;
+  }
+  
+  #mobile-advertisement {
     height: 100px !important;
     width: 100% !important;
     margin: 0 !important;
@@ -17,6 +28,7 @@
     bottom: 0;
     left: 0;
     z-index: 10;
+    background-color: white;
   }
   
   #database-controls {
@@ -111,10 +123,6 @@
     padding-top: 16px !important;
   }
   
-  #advertisement {
-    pointer-events: none;
-  }
-  
   #db-description {
     font-size: 12pt;
   }
@@ -127,24 +135,23 @@
 
 /* Aside Styles */
 aside {
-  width: 250px;
-  padding-left: 16px;
-  padding-right: 16px;
+  width: 266px;
+  min-width: 266px;
   z-index: 0;
-  height: 100%;
   background-color: var(--secondary-color);
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 
 aside h2 {
   font-size: 16pt;
-  padding: 16px 0;
+  padding: 16px;
   margin: 0;
 }
 
 aside ul {
-  margin: 16px 0;
+  margin: 16px;
 }
 
 aside li {
@@ -185,9 +192,7 @@ aside li svg {
 }
 
 #advertisement {
-  height: 100%;
-  width: 251px;
-  margin-bottom: 16px;
+  width: 100%;
 }
 
 .filter-active {
