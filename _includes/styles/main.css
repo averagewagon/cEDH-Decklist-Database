@@ -75,6 +75,10 @@
     z-index: 101;
   }
   
+  #content {
+    padding-top: 108px !important;
+  }
+  
   .color-inactive {
     transition: 0.0s !important;
   }
