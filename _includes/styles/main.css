@@ -68,22 +68,11 @@
 }
 
 @media (max-width: 800px) {
-  #top-bar {
-    position: fixed;
-    width: 100%;
-    z-index: 102;
-  }
-  
   #mobile-filters {
     top: 74px;
     position: fixed;
     width: 100%;
     z-index: 101;
-  }
-  
-  #content {
-    overflow: visible;
-    padding-top: 108px;
   }
   
   .color-inactive {
