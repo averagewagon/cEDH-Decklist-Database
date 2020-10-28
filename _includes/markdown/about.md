@@ -15,6 +15,8 @@ Contributing factors to a list being recommended:
 - Primer
 - Active deck community
 - Learning material
+
+
 Decklists are recommended based on the discretion of the Database Managers, and are subjective evaluations of the deck based on the above factors. Note that not all of the above factors will be present for any given recommendation, and there is an inherent intangibility to the qualities that make the Database Managers recommend a specific deck.
 
 ## Deck Submissions
