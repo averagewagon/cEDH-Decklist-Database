@@ -1,6 +1,6 @@
 # Submit a Deck 
 ## We are not accepting lists from tappedout.net
-Please explore options such as MoxField or other websites, which are higher quality and more secure service providers. For help and ideas with using these websites, check out the [cEDH discord](discord.gg/cedh).  
+Please explore options such as MoxField or other websites, which are higher quality and more secure service providers. For help and ideas with using these websites, check out the [cEDH discord](https://discord.gg/cedh).  
   
 Existing links to tappedout will remain on the database for the time being but we highly encourage people to work on porting over to another website. MoxField, for example, supports the same formatting as TappedOut and should make it easy to transfer content.  
 
