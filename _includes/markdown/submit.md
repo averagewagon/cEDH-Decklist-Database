@@ -10,7 +10,7 @@ Existing links to tappedout will remain on the database for the time being but w
 - No joke decks, decks must be intended for competitive play.
 - Recommendations are given out based on our discretion. You can read about our criteria by which we recommend a deck in the "About the DDB" page.  
   
-### Deprecated  
+### Outdated  
 - Old, banned, abandoned, outdated, or otherwise formerly-played decks.
 - Intended for archival purposes, so that players can find inspiration from lists that are no longer competitive.
 - No joke decks, decks must have been intended for competitive play at some point in the past.  
