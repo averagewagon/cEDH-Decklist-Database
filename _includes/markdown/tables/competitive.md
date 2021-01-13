@@ -1,3 +1,8 @@
+Please check out our new Brewer's Corner tab (located under sections at the top right). Before getting onto the database, lists are now initially accepted under Brewer's Corner entries. So if you are interested on where the new commanders are-- most of them are under the Brewer's Corner! <br>
+
+---
+
+
 These decks are categorized as "Competitive", meaning they meet the following requirements
 - Decks that are intended for competitive and follow the minimum power guidelines in "About the DDB".
 - No joke decks, decks must be intended for competitive play.
