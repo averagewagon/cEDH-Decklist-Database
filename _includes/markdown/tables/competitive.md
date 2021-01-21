@@ -1,5 +1,4 @@
-<h1> Please check out our new Brewer's Corner tab (located under sections at the top right). Before getting onto the database, lists are now initially accepted under Brewer's Corner entries. So if you are interested on where the new commanders are-- most of them are under the Brewer's Corner!  
-</h1>
+Please check out our new Brewer's Corner tab (located under sections at the top right). Before getting onto the database, lists are now initially accepted under Brewer's Corner entries. So if you are interested on where the new commanders are-- most of them are under the Brewer's Corner!  
 
 ---
 
