@@ -1,1 +1,1 @@
-Welcome to the December site update! Check out the brand new "Brewer's Corner" section, where fresh, spicy, and experimental decks are published.
+Check out the brand new "Brewer's Corner" section, where fresh, spicy, and experimental decks are published.
