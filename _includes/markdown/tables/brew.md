@@ -5,4 +5,4 @@ The Brewer's Corner is a solution for many of these concerns. New entries that d
 Each review cycle, the managers and the reviewers will revisit the entries in the Brewer's Corner.  We'll look into how well the decks are maintained and perform, and how frequently they're played after the initial hype. 
 
 
-[Google Form to submit Feedback on Brewer's Corner Lists](https://docs.google.com/forms/d/1EyvHduNoEggZlnGd5epshpwPc67pR36QqxXPAlLS9SA/)
+[FEB 2021 Google Form to submit Feedback on Brewer's Corner Lists](https://docs.google.com/forms/d/1SXNQJJLyUbnSrXuUslxRBTnkmzOqKZi4eMUM4iN4Ne0/)
