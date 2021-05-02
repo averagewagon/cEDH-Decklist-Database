@@ -24,6 +24,7 @@ A new addition to the database should contain:
 - A powerful and unique strategy within the cEDH format
 - A commander that uniquely enables the deck and is not easily replaced by a more powerful option
 - No obvious exclusions of staple cards without adequate justification
+
 A deck entry is not meant to encompass all possible lists for a given archetype, but rather portray a proven and reliable option for a decklist or a direction for an archetype as well as the notable variations that have been created by notable pilots.
 
 
