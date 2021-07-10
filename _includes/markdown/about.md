@@ -43,3 +43,6 @@ A deck entry is not meant to encompass all possible lists for a given archetype,
 - Joke decks, gimmicky decks, parodies, or otherwise comedic lists.
 - Submissions should be relatively known to the online cEDH community - don't just submit a random list directly to the meme table.
 - You must have created the deck and/or received permission from the deck's creator(s) before submitting it to the meme table. We'd like to avoid bullying our players.
+
+### Frequently Asked Questions
+- [Please check out this Google Document for further reading on frequently asked questions](https://docs.google.com/document/d/14AmpkuN2-YUcyU3xpyEurGMde_0aMbfQ5PMbLGOqkF4/edit)
