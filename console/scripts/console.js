@@ -107,6 +107,7 @@ async function readDecks() {
   if (result.success) {
     const decks = result.data;
     populateDecks(decks);
+    console.log(decks).
   } else {
     console.error(result.message);
     if (result.data) {
