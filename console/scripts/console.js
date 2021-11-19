@@ -105,7 +105,7 @@ async function readDecks() {
   };
   const result = await sendToDDB(body);
   if (result.success) {
-    const decks = result.data;
+    const decks = JSON.parse(result.data);
     populateDecks(decks);
     console.log(decks);
   } else {
