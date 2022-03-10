@@ -1,1 +1,1 @@
-[Apply to be a Reviewer today!](https://docs.google.com/forms/d/1eDXQjfCLmNTJdP2d0iDqfE2Yt5Op7qZIQ6PDLBG50_Q/edit)
+Apply to be a Reviewer today!
