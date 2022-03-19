@@ -1,18 +1,13 @@
-Interested in being part of the DDB team?  Apply to become a reviewer for the cEDH DDB! 
+Interested in being part of the DDB team?  Apply to become a reviewer! 
 
-Reviewers write summaries for submitted decks and recommendations for the managers whether to accept it or not!
+Reviewers write summaries for submitted decks and recommendations for the managers whether to accept them or not.
 
-[Link to application (closes 4/2/2022 @ 11:59 PM EST)](https://t.co/SVyVS9apmN)
-
----
-
-Please check out our new Brewer's Corner tab (located under sections at the top right). Before getting onto the database, lists are now initially accepted under Brewer's Corner entries. So if you are interested on where the new commanders are-- most of them are under the Brewer's Corner!  
+[Link to application (closes April 2nd 2022 @ 11:59 PM EST)](https://t.co/SVyVS9apmN)
 
 ---
 
-These decks are categorized as "Competitive", meaning they meet the following requirements
-- Decks that are intended for competitive and follow the minimum power guidelines in "About the DDB".
-- No joke decks, decks must be intended for competitive play.
-- A powerful and unique strategy within the cEDH format
-- A commander that uniquely enables the deck and is not easily replaced by a more powerful option
-- No obvious exclusions of staple cards without justification
+If you're interested in new ideas and brews, please check out the Brewer's Corner (found under the 'section' filter). Before getting onto the main page, lists are now initially displayed there.
+
+---
+
+The main page (/'Competitive Decks' section) displays all lists that have proven themselves in the cEDH community. They follow our guidelines found in the Submit and About tabs.
