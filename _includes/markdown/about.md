@@ -19,7 +19,7 @@ The cEDH Decklist Database does not attempt to use gameplay data as a major arbi
 ## Brewer’s Corner vs. Main Page
 If a deck is accepted, it will automatically be accepted into the Brewer’s Corner. For decks where the commander is new, or has gotten new tools in recent releases, we will be less strict with our requirements, as the goal of the Brewer’s Corner is to get people familiar with and excited about new decks. Since older decks and strategies do not follow this need, these are required to have ‘proven themselves’ to increase their chances of being accepted.
 
-Players can submit feedback for decks on the Brewer’s Corner through a feedback form in the changelog channel of our Discord server.
+Players can submit feedback for decks on the Brewer’s Corner through a feedback form. This feedback form can be found in both the changelog channel of our Discord server, as well as the description of the Brewer's Corner section.
 
 If a decklist is maintained, and the strategy has proven itself to be strong enough, decks will move from the Brewer’s Corner to the main page. New lists for an already existing category are often added directly to the main page.
 
