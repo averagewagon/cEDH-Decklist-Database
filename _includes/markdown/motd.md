@@ -1,1 +1,0 @@
-Apply to be a Reviewer today! See 'Competitive Decks' description for more information.
