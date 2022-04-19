@@ -1,9 +1,8 @@
 # About the DDB
 Welcome to the cEDH Decklist Database (DDB). This resource is used to showcase viable and unique decks in competitive EDH. It is not meant as a comprehensive resource of all possibilities or the current metagame. More importantly, the database should not be considered a tier list. The main goal of the database is as a resource for knowing what possible decks you could play, or play against. Notably, different local metagames may feature some or none of these decks, and there may be many decks in local metagames that do not appear on the database but are still appropriately tuned to those games of cEDH.
 
-## Submitting and deck requirements
-Decks can be submitted through the form on the ‘Submit’ page. A submitted competitive deck is expected to follow these requirements:
 
+## Our definition of ‘Competitive’ decks
 - A strategy that has an expected winrate of around 25% in a competitive environment.
 - Inclusion of all relevant staple cards for the strategy.
 - No inclusions that don’t enhance the deck’s gameplan in some way.
@@ -11,8 +10,8 @@ Decks can be submitted through the form on the ‘Submit’ page. A submitted co
 - The ability to consistently interact with your opponents, or win the game, around turn three.
 - The list is not hosted on TappedOut.
 - Preferably, but this is not a hard rule, no overreliance on the commander.
- 
-Note that when a deck doesn’t follow these requirements, it may still be a good and fun deck in your personal meta. If your deck is not accepted to the database, it does not mean that the deck is not worth playing in any way. It is just not something we are interested in displaying to keep the quality of the resource high for people wanting to get into, or learn more about, the format.
+
+Note that when a deck doesn’t follow this definition, it may still be a good and fun deck in your personal meta. It may even mean the deck is considered 'Competitive' in other circles. If your deck is not accepted to the database, it does not mean that the deck is not worth playing in any way. It is just not something we are interested in displaying to keep the quality of the resource high for people wanting to get into, or learn more about, the format.
 
 The cEDH Decklist Database does not attempt to use gameplay data as a major arbiter of deck evaluation due to the difficult and nebulous nature of acquiring accurate gameplay data for cEDH.  Although some managers may be involved in other projects addressing data within cEDH, those projects are not considered when making decisions regarding the DDB.
 
