@@ -1,5 +1,3 @@
-These decks are categorized as "Meme", meaning they meet the following requirements
-- Joke decks, parodies, gimmicky decks, or otherwise comedic lists.
-- Eelatively known to the online cEDH community.
+# Our meme section is deprecated. We will remove the category at a later date. We are not accepting new submissions for this category.
 
-# At the moment, we are not accepting submissions for "Meme" decks
+If there are any questions about this choice, please visit our [Discord server](https://discord.gg/BXPyu2P).
