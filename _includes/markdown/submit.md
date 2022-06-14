@@ -21,7 +21,7 @@ If a list historically saw play, you can submit it directly to the Outdated sect
 Known approved websites are: Aetherhub, Archidekt, Deckbox, Deckstats, Moxfield.
 
 ## Description requirements:
-- Explain the main game plan and backup plan in relation to game turns.
+- Explain the main game plan and backup plan (preferably in relation to game turns).
 - Explain the deck’s strengths, preferably by comparing it to other options.
 - Explain the deck’s weaknesses, preferably by comparing it to other options.
 - No more than 600 characters (to prevent scrolling).
