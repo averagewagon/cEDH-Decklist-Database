@@ -27,5 +27,6 @@ Known approved websites are: Aetherhub, Archidekt, Deckbox, Deckstats, Moxfield.
 - No more than 600 characters (to prevent scrolling).
 
 Example: This deck tries to go for an Underworld Breach combo as soon as possible, preferably at turn two or three. If that fails, it deploys Rule of Law effects to prevent other combo decks from playing a fast game and beats people down with its commanders. In comparison to other decks in these colours this deck struggles in the card advantage department, but it excels in metas with lots of combo decks because of its ability to quickly go for a win then swap to a controlling game plan.
+
 ## When will my deck be reviewed?
 You can see the next submission deadline, as well as estimated update dates, on our [Discord server](https://discord.gg/BXPyu2P). Your deck can be reviewed at any point between its submission and the deadline.
