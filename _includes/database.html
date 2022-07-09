@@ -40,10 +40,6 @@
         {{d.title | escape}}
       </div>
       <div class="ddb-icons flex">
-        {% if d.recommended %}
-          {% include svg/recommend.svg %}{% else %}{% include svg/not/recommend.svg %}
-        {% endif %}
-        
         {% if primers contains true %}
           {% include svg/primer.svg %}{% else %}{% include svg/not/primer.svg %}
         {% endif %}

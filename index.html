@@ -37,10 +37,6 @@ The main page of the cEDH decklist database
             <div class="icon pt color-inactive" data-c="g">{% include svg/colors/g.svg %}</div>
           </div>
           <ul id="entry-filters" class="ns list">
-            <li id="rec-only" class="filter-inactive">
-              {% include svg/recommend.svg %}
-              <span>Recommendations</span>
-            </li>
             <li id="primer-only" class="filter-inactive">
               {% include svg/primer.svg %}
               <span>Primers</span>
@@ -75,7 +71,6 @@ The main page of the cEDH decklist database
               <option value="COMPETITIVE">Competitive Decks</option>
               <option value="BREW">Brewer's Corner</option>
               <option value="OUTDATED">Outdated Decks</option>
-              <option value="MEME">Meme Decks</option>
             </select>
           </div>
           <div class="flex-column">
@@ -112,12 +107,6 @@ The main page of the cEDH decklist database
             {%- include markdown/tables/deprecated.md -%}
             {% endcapture %}
             {{ deprecated | escape | markdownify | replace: "id=", "data-content-id=" }}
-          </div>
-          <div id="meme-desc" class="hidden">
-            {% capture meme %}
-            {%- include markdown/tables/meme.md -%}
-            {% endcapture %}
-            {{ meme | escape | markdownify | replace: "id=", "data-content-id=" }}
           </div>
         </div>
         
