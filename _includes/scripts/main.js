@@ -119,7 +119,6 @@ function convertColor(colors) {
 }
 
 function applyFilters() {
-  const recommended = id("rec-only").classList.contains("filter-active");
   const primer = id("primer-only").classList.contains("filter-active");
   const discord = id("discord-only").classList.contains("filter-active");
   const section = id("db-section").value;
@@ -129,9 +128,7 @@ function applyFilters() {
   
   qsa("#decks > li").forEach(deck => {
     let hide = false;
-    if (recommended && iqs(deck, ".ddb-icons .recommend-svg").classList.contains("unavailable")) {
-      hide = true;
-    } else if (primer && iqs(deck, ".ddb-icons .primer-svg").classList.contains("unavailable")) {
+      if (primer && iqs(deck, ".ddb-icons .primer-svg").classList.contains("unavailable")) {
       hide = true;
     } else if (discord && iqs(deck, ".ddb-icons .discord-svg").classList.contains("unavailable")) {
       hide = true;

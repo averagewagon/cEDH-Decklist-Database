@@ -63,7 +63,6 @@ Edit console page
                 </div>
                 
                 <div class="ddb-icons flex">
-                  {% include svg/recommend.svg %}
                   {% include svg/primer.svg %}
                   {% include svg/discord.svg %}
                 </div>
@@ -104,7 +103,6 @@ Edit console page
                 </div>
                 
                 <div class="ddb-icons flex">
-                  {% include svg/recommend.svg %}
                   {% include svg/primer.svg %}
                   {% include svg/discord.svg %}
                 </div>
@@ -150,17 +148,6 @@ Edit console page
         <form>
           <div id="curator-controls">
             <div class="flex">
-              <div id="recommend-wrap" class="flex-column">
-                <label for="in-recommend">Recommendation</label>
-                <div class="flex">
-                  {% include svg/recommend.svg %}
-                  {% include svg/not/recommend.svg %}
-                  <select id="in-recommend">
-                    <option value="NO_RECOMMEND">Not Recommended</option>
-                    <option value="RECOMMEND">Recommended</option>
-                  </select>
-                </div>
-              </div>
               
               <div class="flex-column">
                 <label for="in-destination">Destination</label>
@@ -190,7 +177,6 @@ Edit console page
                 <option value="COMPETITIVE">Competitive Deck</option>
                 <option value="BREW">Brew Deck</option>
                 <option value="DEPRECATED">Outdated Deck</option>
-                <option value="MEME">Meme Deck</option>
               </select>
             </div>
           </div>
