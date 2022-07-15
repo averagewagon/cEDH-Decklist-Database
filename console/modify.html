@@ -25,7 +25,6 @@ Modify Site console page
 <li class="competitive">{% capture md %}{% include markdown/tables/competitive.md %}{% endcapture %}{{ md | escape | strip }}</li>
 <li class="brew">{% capture md %}{% include markdown/tables/brew.md %}{% endcapture %}{{ md | escape | strip }}</li>
 <li class="deprecated">{% capture md %}{% include markdown/tables/deprecated.md %}{% endcapture %}{{ md | escape | strip }}</li>
-<li class="meme">{% capture md %}{% include markdown/tables/meme.md %}{% endcapture %}{{ md | escape | strip }}</li>
 </ul>
 
   <div id="wrapper">
@@ -53,7 +52,6 @@ Modify Site console page
             <option value="COMPETITIVE">"Competitive" Description</option>
             <option value="BREW">"Brewer's Corner" Description</option>
             <option value="DEPRECATED">"Outdated" Description</option>
-            <option value="MEME">"Meme" Description</option>
           </select>
           <button id="submit" class="pt">Submit File</button>
         </div>
