@@ -1,0 +1,1 @@
+Deadline for the current cycle of reviews passed on 7/15. Submitted decks will be considered in the next review cycle.
