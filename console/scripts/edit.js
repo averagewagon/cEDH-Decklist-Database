@@ -20,21 +20,7 @@ function prepareListeners() {
   qs("form").addEventListener("submit", submitForm);
   qs("form").addEventListener("change", updatePreview);
   qs("form").addEventListener("keyup", updatePreview);
-  id("in-recommend").addEventListener("change", swapIcon);
   id("in-destination").addEventListener("change", swapBackground);
-  swapIcon();
-}
-
-// Switches between active and inactive rec icon depending on select value
-function swapIcon() {
-  const svgs = qsa("#recommend-wrap .recommend-svg");
-  if (id("in-recommend").value === "RECOMMEND") {
-    svgs[0].classList.remove("hidden");
-    svgs[1].classList.add("hidden");
-  } else {
-    svgs[0].classList.add("hidden");
-    svgs[1].classList.remove("hidden");
-  }
 }
 
 function swapBackground() {
@@ -181,7 +167,6 @@ const scrape = {
     data.destination = id("in-destination").value;
     data.editor = get("username");
     data.updated = new Date().toISOString();
-    data.recommended = scrape.recommendation();
     data.id = id("old-deck").dataset.id;
     
     data.section = id("in-section").value;
@@ -245,10 +230,6 @@ const scrape = {
 
   colors: function() {
     return id("preview-deck").dataset.colors;
-  },
-
-  recommendation: function() {
-    return id("in-recommend").value === "RECOMMEND" ? true : false;
   }
 }
 
@@ -262,7 +243,6 @@ const fill = {
     fill.commander(deck);
     fill.discord(deck);
     fill.decklists(deck);
-    fill.recommendation(deck);
     swapIcon();
     swapBackground();
   },
@@ -313,14 +293,6 @@ const fill = {
       iqs(item, ".list-title").value = decklist.title;
       iqs(item, ".list-link").value = decklist.link;
       iqs(item, ".has-primer").checked = decklist.primer;
-    }
-  },
-
-  recommendation: function(deck) {
-    if (deck.recommended) {
-      id("in-recommend").value = "RECOMMEND";
-    } else {
-      id("in-recommend").value = "NO_RECOMMEND";
     }
   }
 }
@@ -396,11 +368,6 @@ const build = {
   },
 
   icons: function(item, deck) {
-    if (!deck.recommended) {
-      iqs(item, ".ddb-icons .recommend-svg").classList.add("unavailable");
-    } else {
-      iqs(item, ".ddb-icons .recommend-svg").classList.remove("unavailable");
-    }
     if (deck.decklists.every(d => d.primer === false)) {
       iqs(item, ".ddb-icons .primer-svg").classList.add("unavailable");
     } else {
