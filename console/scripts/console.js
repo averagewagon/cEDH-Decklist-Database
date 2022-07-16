@@ -268,9 +268,6 @@ const build = {
   },
 
   icons: function(item, deck) {
-    if (!deck.recommended) {
-      iqs(item, ".ddb-icons .recommend-svg").classList.add("unavailable");
-    }
     if (deck.decklists.every(d => d.primer === false)) {
       iqs(item, ".ddb-icons .primer-svg").classList.add("unavailable");
     }
