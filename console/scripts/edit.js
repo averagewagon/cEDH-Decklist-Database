@@ -14,7 +14,6 @@ async function init() {
 function prepareListeners() {
   id("two-commanders").addEventListener("change", togglePartner);
   id("has-discord").addEventListener("change", toggleDiscord);
-  qs(".delete-list").addEventListener("click", deleteDecklist);
   id("add-deck").addEventListener("click", addDecklist);
   id("preview-toggle").addEventListener("change", togglePreview);
   qs("form").addEventListener("submit", submitForm);
@@ -82,7 +81,6 @@ function addDecklist() {
   newList.querySelector(".list-title").value = "";
   newList.querySelector(".list-link").value = "";
   newList.querySelector(".has-primer").checked = false;
-  newList.querySelector(".delete-list").addEventListener("click", deleteDecklist);
   qs("#list-wrap ul").appendChild(newList);
 }
 

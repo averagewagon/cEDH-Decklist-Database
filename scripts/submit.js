@@ -17,8 +17,6 @@ function prepareListeners() {
   
   id("has-discord").addEventListener("change", toggleDiscord);
   
-  qs(".delete-list").addEventListener("click", deleteDecklist);
-  
   id("add-deck").addEventListener("click", addDecklist);
   
   qs("form").addEventListener("submit", submitForm);
@@ -119,25 +117,6 @@ function toggleDiscord() {
     id("discord-title").required = false;
     id("discord-link").required = false;
   }
-}
-
-/** Removes a decklist entry option from the form
-  */
-function deleteDecklist() {
-  if (this.parentElement.parentElement.parentElement.childElementCount > 1) {
-    this.parentElement.parentElement.remove();
-  }
-}
-
-/** Adds a new decklist entry to the list of decks
-  */
-function addDecklist() {
-  let newList = qs("#list-wrap ul li:first-child").cloneNode(true);
-  newList.querySelector(".list-title").value = "";
-  newList.querySelector(".list-link").value = "";
-  newList.querySelector(".has-primer").checked = false;
-  newList.querySelector(".delete-list").addEventListener("click", deleteDecklist);
-  qs("#list-wrap ul").appendChild(newList);
 }
 
 /* HELPER FUNCTIONS */

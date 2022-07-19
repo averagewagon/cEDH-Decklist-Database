@@ -112,15 +112,6 @@ form li div > input {
   flex-grow: 1;
 }
 
-.delete-list {
-  cursor: pointer;
-  transition: 0.3s;
-  font-size: 26pt;
-  line-height: 16px;
-  margin-right: 8px;
-  color: red;
-}
-
 form select {
   font-size: 18pt;
   padding: 8px 16px;
@@ -162,10 +153,6 @@ textarea {
 
 #discord-wrap {
   margin-bottom: 4px;
-}
-
-#list-wrap ul li:only-child .delete-list {
-  visibility: hidden;
 }
 
 #submit-wrap {

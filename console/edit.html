@@ -218,29 +218,23 @@ Edit console page
             </div>
           </div>
           
-          <div id="list-wrap">
-            <ul>
-              <li class="list-entry">
-                <div>
-                  <span class="delete-list ns">&times;</span>
-                  <div class="flex-column">
-                    <input autocomplete="off" type="text" required class="list-title" maxlength="100" placeholder="Decklist title"/>
-                    
-                    <div class="flex">
-                      <input autocomplete="off" type="text" required class="list-link" pattern="(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_+.~#?&//=]*)*+" title="Input link is invalid" maxlength="300" placeholder="Link to decklist"/>
-                      
-                      <div class="flex">
-                        <label class="ns">
-                          <input autocomplete="off" type="checkbox" class="has-primer"/>
-                          Has Primer
-                        </label>
-                      </div>
-                      
-                    </div>
-                  </div>
+          
+          <div>
+            <div class="flex-column">
+              <input autocomplete="off" type="text" required class="list-title" maxlength="100" placeholder="Decklist title"/>
+              
+              <div class="flex">
+                <input autocomplete="off" type="text" required class="list-link" pattern="(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_+.~#?&//=]*)*+" title="Input link is invalid" maxlength="300" placeholder="Link to decklist"/>
+                
+                <div class="flex">
+                  <label class="ns">
+                    <input autocomplete="off" type="checkbox" class="has-primer"/>
+                    Has Primer
+                  </label>
                 </div>
-              </li>
-            </ul>
+                
+              </div>
+            </div>
             <button type="button" class="btn" id="add-deck">+ Add a Decklist</button>
           </div>
         </form>

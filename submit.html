@@ -79,23 +79,15 @@ Submission page for the cDDB
               </div>
             </div>
               
-            <div id="list-wrap">
-              <ul>
-                <li class="list-entry">
-                  <div class="flex">
-                    <span class="delete-list ns">&times;</span>
-                    <input autocomplete="off" type="text" required class="list-title" maxlength="100" placeholder="Decklist title"/>
-                    <input autocomplete="off" type="text" required class="list-link" pattern="(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_+.~#?&//=]*)*+" title="Input link is invalid" maxlength="300" placeholder="Link to decklist"/>
-                    <div class="flex">
-                      <label class="ns">
-                        <input autocomplete="off" type="checkbox" class="has-primer"/>
-                        Has Primer
-                      </label>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-              <button type="button" class="btn" id="add-deck">+ Add a Decklist</button>
+            <div class="flex">
+              <input autocomplete="off" type="text" required class="list-title" maxlength="100" placeholder="Decklist title"/>
+              <input autocomplete="off" type="text" required class="list-link" pattern="(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_+.~#?&//=]*)*+" title="Input link is invalid" maxlength="300" placeholder="Link to decklist"/>
+              <div class="flex">
+                <label class="ns">
+                  <input autocomplete="off" type="checkbox" class="has-primer"/>
+                  Has Primer
+                </label>
+              </div>
             </div>
             
             <div id="submit-wrap">
