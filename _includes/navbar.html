@@ -21,11 +21,13 @@
     </a> 
   </nav>
     
+  {% capture content %}
+  {%- include markdown/motd.md -%}
+  {% endcapture %}
+
+  {% if content.size > 0 %}
   <header class="mhide">
     <span id="motd">
-      {% capture content %}
-      {%- include markdown/motd.md -%}
-      {% endcapture %}
       {{ content | escape }}
     </span>
     <span id="motd-close" onclick="this.parentElement.style.display='none';">&times;</span>
@@ -33,6 +35,7 @@
   <div id="mobile-motd" class="mobile ns">
     + Message of the Day
   </div>
+  {% endif %}
 </div>
 
 <script>
