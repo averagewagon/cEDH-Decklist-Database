@@ -36,6 +36,7 @@ function init() {
     item.classList.toggle("filter-active");
     applyFilters();
   }));
+  sortTableInitial();
 }
 
 function prepareAd() {
@@ -105,6 +106,14 @@ function sortTable() {
   
   const decks = id("decks");
   sorted.forEach(item => decks.appendChild(item));
+}
+
+// Make the page start with tiered sorting Color -> Title -> New 
+function sortTableInitial() {
+  id("db-sort").value = "TITLE";
+  sortTable();
+  id("db-sort").value = "COLOR";
+  sortTable();
 }
 
 // Converts a color array or color string into a number for sorting purposes
