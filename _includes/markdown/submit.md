@@ -2,7 +2,7 @@
 Lists that do not follow the requirements set in the ‘Website’ and ‘Description’ sections will not be reviewed. The decklist requirements are displayed to give you an idea of what types of decks we're looking for.
 
 ## Decklist requirements:
-- The list must be commander legal ‘out of the box’.
+- The list must be commander legal ‘out of the box’ (Spoiled cards are fine, but only if they will release before or right after the update).
 - A strategy that has an expected winrate of around 25% in a competitive environment.
 - Inclusion of all relevant staple cards for the strategy.
 - No inclusions that don’t enhance the deck’s gameplan in some way.
