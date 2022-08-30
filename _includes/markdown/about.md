@@ -1,31 +1,95 @@
 # About the DDB
-Welcome to the cEDH Decklist Database (DDB). This resource is used to showcase viable and unique decks in competitive EDH. It is not meant as a comprehensive resource of all possibilities or the current metagame. More importantly, the database should not be considered a tier list. The main goal of the database is as a resource for knowing what possible decks you could play, or play against. Notably, different local metagames may feature some or none of these decks, and there may be many decks in local metagames that do not appear on the database but are still appropriately tuned to those games of cEDH.
 
+Welcome to the cEDH Decklist Database (DDB). The DDB is a showcase of different decks from cEDH.  **The goal of the DDB is to highlight the variety of different decks that exist within that space to help new players acclimate to cEDH concepts and possibilities while also helping established players find inspiration for brewing and playing**.  <u>The DDB is not a tier list</u>, nor a collection of tournament decks, and should not be considered in any way a list of the “best” decks in cEDH nor an exhaustive list of decks in cEDH. **It is a collection of decks that the DDB Managers and Reviewers believe underscore just some of a variety of options available to players within the world of cEDH.**
 
-## Our definition of ‘Competitive’ decks
-- A strategy that has an expected winrate of around 25% in a competitive environment.
-- Inclusion of all relevant staple cards for the strategy.
-- No inclusions that don’t enhance the deck’s gameplan in some way.
-- A commander that isn’t easily replaced by a stronger alternative.
-- The ability to consistently interact with your opponents, or win the game, around turn three.
-- The list is not hosted on TappedOut.
-- Preferably, but this is not a hard rule, no overreliance on the commander.
+<br>
+The decks shown on the DDB are looked over by an experienced team of reviewers before getting a final approval to be on the DDB by the manager team.  The following is a list of some of the different items that are taken into account when reviewing:
 
-Note that when a deck doesn’t follow this definition, it may still be a good and fun deck in your personal meta. It may even mean the deck is considered 'Competitive' in other circles. If your deck is not accepted to the database, it does not mean that the deck is not worth playing in any way. It is just not something we are interested in displaying to keep the quality of the resource high for people wanting to get into, or learn more about, the format.
+<br>
+-A strategy that can hold its own in a cEDH environment
 
-The cEDH Decklist Database does not attempt to use gameplay data as a major arbiter of deck evaluation due to the difficult and nebulous nature of acquiring accurate gameplay data for cEDH.  Although some managers may be involved in other projects addressing data within cEDH, those projects are not considered when making decisions regarding the DDB.
+-Inclusion of all relevant cards for the deck’s strategy
 
-## Brewer’s Corner vs. Main Page
-If a deck is accepted, it will automatically be accepted into the Brewer’s Corner. For decks where the commander is new, or has gotten new tools in recent releases, we will be less strict with our requirements, as the goal of the Brewer’s Corner is to get people familiar with and excited about new decks. Since older decks and strategies do not follow this need, these are required to have ‘proven themselves’ to increase their chances of being accepted.
+-A chosen commander that enhances the deck’s performance
 
-Players can submit feedback for decks on the Brewer’s Corner through a feedback form. This feedback form can be found in both the changelog channel of our Discord server, as well as the description of the Brewer's Corner section.
+-The ability to relevantly impact the game state in the earliest turns of a game
 
-If a decklist is maintained, and the strategy has proven itself to be strong enough, decks will move from the Brewer’s Corner to the main page. New lists for an already existing category are often added directly to the main page.
+-Listed on an approved decklist site
 
-## Outdated and removed decks
-The Outdated section is meant to display decks that have historically been played in cEDH but currently do not see play any more, thus serving as a form of archive. It can also contain decks that are still viable, but where the creator of the list simply didn’t update it any more.
+<br>
+Notably, the DDB does not attempt to use gameplay data as a major arbiter of deck evaluation due to the difficult and nebulous nature of acquiring accurate gameplay data for cEDH. Although some team members may be involved in other projects addressing data within cEDH, those projects are not considered when making decisions regarding the DDB.
 
-Decks can be submitted directly into the outdated section if it is a list that commonly saw play. Otherwise, any deck that is removed from the ‘Competitive decks’ section is automatically moved to ‘Outdated’ one. Decks that have not been updated in six months will be moved to the outdated section regardless. We use 'Last updated' fields on decklist sites to determine this duration. Decks that are deleted from the Brewer’s Corner are not put in the outdated section, as many of these decks are still being explored and likely didn’t fit our requirements. 
+<br>
+A submitted deck not being accepted to the DDB does not mean that deck is not mean the deck is not competitive, not fun, or not worth playing. It simply means the team did not want to display it at that time. As cEDH shifts, new cards are printed, and opinions change, resubmitted decks often find their way onto the DDB, so a deck not being on the DDB in a given review cycle is not the final word from the DDB team. 
 
+<br>
+##Brewer’s Corner vs. Main Page
+
+<br>
+**With the goal of highlighting different decks within cEDH, the DDB has a Brewer’s Corner page for new decks. The Brewer’s Corner is designed to showcase decks that have the potential to be on the main DDB page, but that the community may not be familiar with.**  The reviews for decks going to the Brewer’s Corner are less strict than decks going to the main page in order to allow time for those decks to be considered by a wider audience. With this goal in mind, reviews for consideration to the Brewer's Corner are less strict than when lists are considered for the main DDB page.
+
+<br>
+New deck archetypes accepted to the DDB will start on the Brewer’s Corner, and the decks on the Brewer’s Corner are all evaluated to potentially move to the main page or be removed during each review cycle.  If a decklist is maintained, and the strategy has proven itself to be strong enough to the DDB team, decks will move from the Brewer’s Corner to the main page. Brewer’s Corner reviews take into account the review and manager teams, as well as public feedback. Players can submit feedback on Brewer’s Corner decks through the feedback form available in the changelog channel on the DDB Discord as well as on the Brewer’s Corner section of the website. 
+
+<br>
+##Outdated and removed decks
+
+<br>
+The Outdated section is meant to display decks that have historically been played in cEDH but currently do not see a large amount of play either due to meta shifts or bannings, thus serving as a form of archive. It can also contain decks that are still viable, but where the creator of the list simply didn’t update it any more.
+
+<br>
+Decks can be submitted directly into the outdated section if it is a list that commonly saw play. Otherwise, any deck that is removed from the ‘Competitive decks’ section is automatically moved to ‘Outdated’. <u>Decks that have not been updated in six months will be moved to the outdated section regardless.</u> We use 'Last updated' fields on decklist sites to determine this duration. Decks that are deleted from the Brewer’s Corner are not put in the outdated section, as many of these decks are still being explored and likely didn’t fit our requirements.
+
+<br>
+##The DDB Team
+
+As mentioned above, the DDB is maintained by a team of managers and reviewers.  The review team provides initial feedback on all the lists submitted to the DDB, in addition to providing ongoing feedback about the main DDB page, Brewer’s Corner lists, and the website itself. The review team currently consists of the following members:
+<br>
+
+-Alchmyst
+
+-Avaloon
+
+-Blazingscout
+
+-deak
+
+-DJYavimaya
+
+-Eisenherz
+
+-Forge10
+
+-iraruel
+
+-DefinitelyNotKevin
+
+-Mormonator
+
+-Raps
+
+-Sinivi
+
+-smartaleck
+
+-Spleenface
+
+-Ulavala
+
+The management team oversees the review team’s work and uses their feedback to make final decisions regarding the DDB, in addition to handling the non-technical work on the DDB and discord. The current management team consists of:
+
+<br>
+-Cinestra
+
+-Natux
+
+-Sickrobot
+
+-Squirrelmob
+
+<br>
+Additionally, the DDB would not function without the technical work of our volunteer web director, Average Dragon.
+
+<br>
 ## Frequently Asked Questions
 - [Please check out our FAQ in this Google Document](https://docs.google.com/document/d/14AmpkuN2-YUcyU3xpyEurGMde_0aMbfQ5PMbLGOqkF4/edit)
