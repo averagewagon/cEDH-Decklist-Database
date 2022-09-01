@@ -70,7 +70,7 @@ The main page of the cEDH decklist database
             <select id="db-section" autocomplete="off">
               <option value="COMPETITIVE">Competitive Decks</option>
               <option value="BREW">Brewer's Corner</option>
-              <option value="OUTDATED">Outdated Decks</option>
+              <option value="ARCHIVED">Archived Decks</option>
             </select>
           </div>
           <div class="flex-column">
@@ -102,7 +102,7 @@ The main page of the cEDH decklist database
             {% endcapture %}
             {{ brew | escape | markdownify | replace: "id=", "data-content-id=" }}
           </div>
-          <div id="outdated-desc" class="hidden">
+          <div id="Archived-desc" class="hidden">
             {% capture deprecated %}
             {%- include markdown/tables/deprecated.md -%}
             {% endcapture %}

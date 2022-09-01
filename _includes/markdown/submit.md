@@ -10,7 +10,7 @@ Lists that do not follow the requirements set in the ‘Website’ and ‘Descri
 - The ability to consistently interact with your opponents, or win the game, around turn three.
 - Preferably no overreliance on the commander.
 
-If a list historically saw play, you can submit it directly to the Outdated section.
+If a list historically saw play, you can submit it directly to the Archived section.
 
 ## Decklist website requirements:
 - Needs to display ‘Last updated’ information.

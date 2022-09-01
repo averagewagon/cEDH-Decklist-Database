@@ -22,10 +22,10 @@ Players can submit feedback for decks on the Brewer’s Corner through a feedbac
 
 If a decklist is maintained, and the strategy has proven itself to be strong enough, decks will move from the Brewer’s Corner to the main page. New lists for an already existing category are often added directly to the main page.
 
-## Outdated and removed decks
-The Outdated section is meant to display decks that have historically been played in cEDH but currently do not see play any more, thus serving as a form of archive. It can also contain decks that are still viable, but where the creator of the list simply didn’t update it any more.
+## Archived and removed decks
+The Archived section is meant to display decks that have historically been played in cEDH but currently do not see play any more, thus serving as a form of archive. It can also contain decks that are still viable, but where the creator of the list simply didn’t update it any more.
 
-Decks can be submitted directly into the outdated section if it is a list that commonly saw play. Otherwise, any deck that is removed from the ‘Competitive decks’ section is automatically moved to ‘Outdated’ one. Decks that have not been updated in six months will be moved to the outdated section regardless. We use 'Last updated' fields on decklist sites to determine this duration. Decks that are deleted from the Brewer’s Corner are not put in the outdated section, as many of these decks are still being explored and likely didn’t fit our requirements. 
+Decks can be submitted directly into the archived section if it is a list that commonly saw play. Otherwise, any deck that is removed from the ‘Competitive decks’ section is automatically moved to the ‘Archived’ one. Decks that have not been updated in six months will be moved to the archived section regardless. We use 'Last updated' fields on decklist sites to determine this duration. Decks that are deleted from the Brewer’s Corner are not put in the archived section, as many of these decks are still being explored and likely didn’t fit our requirements. 
 
 ## Frequently Asked Questions
 - [Please check out our FAQ in this Google Document](https://docs.google.com/document/d/14AmpkuN2-YUcyU3xpyEurGMde_0aMbfQ5PMbLGOqkF4/edit)
