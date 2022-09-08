@@ -2,4 +2,4 @@ If you're interested in new ideas and brews, please check out the Brewer's Corne
 
 ---
 
-The main page (/'Competitive Decks' section) displays lists that follow the guidelines found in the Submit and About tabs.
+The main page showcases a selection of decks the DDB team has chosen as a snapshot of the wider cEDH environment.
