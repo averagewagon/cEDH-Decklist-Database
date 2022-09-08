@@ -1,1 +1,2 @@
-Deadline for the current cycle of reviews passed on July 15th. Decks submitted after that date will be considered in the next review cycle.
+The most recent changes to the DB went live Sept. 2nd.
+The next submission deadline will be announced soon.
