@@ -1,2 +1,1 @@
-The most recent changes to the DB went live Sept. 2nd.
-The next submission deadline will be announced soon.
+The next deadline for submissions is October 15th at 11:59 pm EST.
