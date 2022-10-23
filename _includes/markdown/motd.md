@@ -1,2 +1,1 @@
-The next deadline for submissions is October 15th at 11:59 pm EST.
-The DDB is recruiting new reviewers! Check out the DDB Discord for more information!
+We recently made some adjustments to the DDB main page and many lists were moved to the "Outdated Decks" section. More information is available on the Discord.
