@@ -1,7 +1,7 @@
-These decks are categorized as "Outdated", meaning they meet the following requirements
-- Decks which are no longer considered viable, have had essential pieces banned, or are otherwise no longer updated.
-- Used to be intended for competitive play and followed the minimum power guidelines in 'About the DDB'.
-  
-This section is intended for archival purposes, so that players can find inspiration from lists that are no longer competitive. Many of these lists could still be viable, if only they were adopted by a caring owner.
+The 'Archived' category exists of two types of decks:
+- Decks we feel no longer fit on the main page. This can be either because of general power level concerns, essential pieces being banned, or a lack of updates.
+- Decks that were never on the main page, but were submitted directly into this category to display something that historically saw play.
 
-If you see a deck in "Competitive" which you believe should be "Outdated", please report it in [Make a Request](/request).
+Many of these lists could still work in a cEDH pod. They might just be a bit weaker compared to other options, or simply need a caring owner to take the deck to the next level once more.
+
+If you see a deck in "Competitive" which you believe should be "Archived", please report it in [Make a Request](/request).
