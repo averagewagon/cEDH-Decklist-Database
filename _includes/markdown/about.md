@@ -33,10 +33,10 @@ A submitted deck not being accepted to the DDB does not mean that deck is not me
 New deck archetypes accepted to the DDB will start on the Brewer’s Corner, and the decks on the Brewer’s Corner are all evaluated to potentially move to the main page or be removed during each review cycle.  If a decklist is maintained, and the strategy has proven itself to be strong enough to the DDB team, decks will move from the Brewer’s Corner to the main page. Brewer’s Corner reviews take into account the review and manager teams, as well as public feedback. Players can submit feedback on Brewer’s Corner decks through the feedback form available in the changelog channel on the DDB Discord as well as on the Brewer’s Corner section of the website. 
 
 
-## Outdated and removed decks
+## Archived decks
 
 
-The Outdated section is meant to display decks that have historically been played in cEDH but currently do not see a large amount of play either due to meta shifts or bannings, thus serving as a form of archive. It can also contain decks that are still viable, but where the creator of the list simply didn’t update it any more.
+The Archived section (currently named 'Outdated') is meant to display decks that have been on the main page but have been moved due to general power level concerns, essential pieces being banned, or a lack of updates. It also contains decks that historically saw play but were never on the main page.
 
 
 Decks can be submitted directly into the outdated section if it is a list that commonly saw play. Otherwise, any deck that is removed from the ‘Competitive decks’ section is automatically moved to ‘Outdated’. *Decks that have not been updated in six months will be moved to the outdated section regardless.* We use 'Last updated' fields on decklist sites to determine this duration. Decks that are deleted from the Brewer’s Corner are not put in the outdated section, as many of these decks are still being explored and likely didn’t fit our requirements.
