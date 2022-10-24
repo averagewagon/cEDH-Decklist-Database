@@ -1,4 +1,4 @@
-The 'Archived' category exists of two types of decks:
+The 'Archived' category consists of two types of decks:
 - Decks we feel no longer fit on the main page. This can be either because of general power level concerns, essential pieces being banned, or a lack of updates.
 - Decks that were never on the main page, but were submitted directly into this category to display something that historically saw play.
 
