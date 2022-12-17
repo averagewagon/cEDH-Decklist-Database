@@ -1,1 +1,1 @@
-The December 2022 DDB update is now live. If you'd like to discuss changes or get feedback for lists, please visit our discord (click the link in the upper right hand corner of this page to go there)
+The December 2022 DDB update is now live. If you'd like to discuss changes or get feedback for lists, please visit our discord (click the link in the upper right hand corner of this page to go there).
