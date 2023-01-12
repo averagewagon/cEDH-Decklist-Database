@@ -53,23 +53,37 @@ As mentioned above, the DDB is maintained by a team of managers and reviewers.  
 
 -Blazingscout
 
--deak
+-bones
+
+-ChoirBoy2020
+
+-DefinitelyNotKevin
 
 -DJYavimaya
 
+-doomdg
+
 -Eisenherz
+
+-emsmax
 
 -Forge10
 
 -iraruel
 
--DefinitelyNotKevin
+-litano
 
 -Mormonator
 
+-OpalEave
+
 -Raps
 
--Sinivi
+-RiledUpWhiteKid
+
+-Ring13
+
+-ruination
 
 -smartaleck
 
@@ -97,4 +111,4 @@ Additionally, the DDB would not function without the technical work of our volun
 ## Frequently Asked Questions
 - [Please check out our FAQ in this Google Document](https://docs.google.com/document/d/14AmpkuN2-YUcyU3xpyEurGMde_0aMbfQ5PMbLGOqkF4/edit)
 
-- If you are interested in joining the DDB team, we are currently looking to add deck reviewers. Please note that the DDB team operates primarily on Discord and so those applying MUST be in the DDB discord server to be accepted. If you would like to apply to be a DDB Reviewer, please fill out [this google form by October 15, 2022 11:59 PM](https://docs.google.com/forms/d/1aR8qKekSR5Xlk_cBWIZ_yuVGI9ph4hi0v-5VEoN4kWE/)
+- If you are interested in joining the DDB team, we periodically reach out to add new reviewers. Although the application is not currently live, new reviewer applications typically occur 1-2 times a year.
