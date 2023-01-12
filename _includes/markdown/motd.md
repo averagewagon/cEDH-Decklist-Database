@@ -1,1 +1,1 @@
-The December 2022 DDB update is now live. If you'd like to discuss changes or get feedback for lists, please visit our discord (click the link in the upper right hand corner of this page to go there).
+Submissions for our current review cycle are due by 11:59 Eastern time n Thursday, January 26th.  If you would like to leave feedback for the Brewers Corner, it has the same deadline.
