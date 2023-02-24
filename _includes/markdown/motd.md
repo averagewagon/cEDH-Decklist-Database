@@ -1,1 +1,1 @@
-Submissions for our current review cycle are due by 11:59 Eastern time n Thursday, January 26th.  If you would like to leave feedback for the Brewers Corner, it has the same deadline.
+The most recent deadline for submissions was on January 26th. Decks submitted before that date are currently under review. Feedback will be available on the Discord after the update is finalized.
