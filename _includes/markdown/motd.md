@@ -1,1 +1,1 @@
-The DDB was updated on March 23rd. If you'd like feedback on any lists, please head to our discord for more information. Deadlines for the next cycle will be available soon.
+The DDB was updated on March 20th. If you'd like feedback on any lists, please head to our discord for more information. Deadlines for the next cycle will be available soon.
