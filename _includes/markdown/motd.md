@@ -1,1 +1,1 @@
-The most recent deadline for submissions was on January 26th. Decks submitted before that date are currently under review. Feedback will be available on the Discord after the update is finalized.
+The DDB was updated on March 23rd. If you'd like feedback on any lists, please head to our discord for more information. Deadlines for the next cycle will be available soon.
