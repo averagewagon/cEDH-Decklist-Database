@@ -1,1 +1,1 @@
-The DDB was updated on March 20th. If you'd like feedback on any lists, please head to our discord for more information. Deadlines for the next cycle will be available soon.
+Submissions are closed for our current cycle. Any submissions since April 30th will be considered for the following cycle. Decks in the current cycle are continuing to undergo the review process.
