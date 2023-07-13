@@ -1,1 +1,1 @@
-Submissions are closed for our current cycle. Any submissions since April 30th will be considered for the following cycle. Decks in the current cycle are continuing to undergo the review process.
+The DDB updated on July 13th. Deadlines for the next cycle will be published soon.
