@@ -1,1 +1,1 @@
-The DDB updated on July 13th. Deadlines for the next cycle will be published soon.
+The deadline for submission to be considered for the next update is September 4th at 11:59 pm.
