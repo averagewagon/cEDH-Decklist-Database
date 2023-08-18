@@ -27,7 +27,7 @@ A submitted deck not being accepted to the DDB does not mean that deck is not me
 ## Brewer’s Corner vs. Main Page
 
 
-**With the goal of highlighting different decks within cEDH, the DDB has a Brewer’s Corner page for new decks. The Brewer’s Corner is designed to showcase decks that have the potential to be on the main DDB page, but that the community may not be familiar with.**  The reviews for decks going to the Brewer’s Corner are less strict than decks going to the main page in order to allow time for those decks to be considered by a wider audience. With this goal in mind, reviews for consideration to the Brewer's Corner are less strict than when lists are considered for the main DDB page.
+**With the goal of highlighting different decks within cEDH, the DDB has a Brewer’s Corner page for new decks. The Brewer’s Corner is designed to showcase decks that have the potential to be on the main DDB page, but that the community may not be familiar with.**  The reviews for decks going to the Brewer’s Corner are less strict than decks going to the main page in order to allow time for those decks to be considered by a wider audience.
 
 
 New deck archetypes accepted to the DDB will start on the Brewer’s Corner, and the decks on the Brewer’s Corner are all evaluated to potentially move to the main page or be removed during each review cycle.  If a decklist is maintained, and the strategy has proven itself to be strong enough to the DDB team, decks will move from the Brewer’s Corner to the main page. Brewer’s Corner reviews take into account the review and manager teams, as well as public feedback. Players can submit feedback on Brewer’s Corner decks through the feedback form available in the changelog channel on the DDB Discord as well as on the Brewer’s Corner section of the website. 
@@ -47,13 +47,9 @@ Decks can be submitted directly into the outdated section if it is a list that c
 As mentioned above, the DDB is maintained by a team of managers and reviewers.  The review team provides initial feedback on all the lists submitted to the DDB, in addition to providing ongoing feedback about the main DDB page, Brewer’s Corner lists, and the website itself. The review team currently consists of the following members:
 
 
--Alchmyst
-
--Avaloon
-
 -Blazingscout
 
--bones
+-Bones
 
 -ChoirBoy2020
 
@@ -61,46 +57,37 @@ As mentioned above, the DDB is maintained by a team of managers and reviewers.  
 
 -DJYavimaya
 
--doomdg
+-Doomdg
 
 -Eisenherz
 
--emsmax
-
 -Forge10
 
--iraruel
+-Geck
 
--litano
+-Iraruel
+
+-Joking101
+
+-Litano
 
 -Mormonator
 
--OpalEave
-
--Raps
+-OpalWave
 
 -RiledUpWhiteKid
 
 -Ring13
 
--ruination
-
--smartaleck
+-Ruination
 
 -Spleenface
-
--Ulavala
-
 
 
 The management team oversees the review team’s work and uses their feedback to make final decisions regarding the DDB, in addition to handling the non-technical work on the DDB and discord. The current management team consists of:
 
 
--Cinestra
-
 -Natux
-
--Sickrobot
 
 -Squirrelmob
 
