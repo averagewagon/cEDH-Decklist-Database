@@ -1,1 +1,1 @@
-The deadline for submission to be considered for the next update is September 4th at 11:59 pm.
+All decks received before the September 4th deadline are under review, with the update coming soon. 
