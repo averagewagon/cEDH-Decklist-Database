@@ -6,4 +6,4 @@ Each review cycle, the managers and the reviewers revisit the entries in the Bre
 
 If you want to provide feedback on Brewer's Corner lists, you can use the feedback form found in the changelog channel on our Discord server and linked below.
 
-[DEC Brewer's Corner Feedback](https://docs.google.com/forms/d/e/1FAIpQLSfPXU7lW65pq2kNtRSOymDXoCoqb6gsMT_YVStfeiVgQ3Gjww/viewform?usp=sf_link)
+[DEC Brewer's Corner Feedback](https://docs.google.com/forms/d/e/1FAIpQLSchI1k8Z2DCRhMi11ETIv0HzYJXXueeU51HHHHlAM156ffhKQ/viewform?usp=sf_link)
