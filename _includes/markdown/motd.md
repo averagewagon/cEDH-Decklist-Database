@@ -1,1 +1,1 @@
-All decks received before the September 4th deadline are under review, with the update coming soon. 
+The Wilds of Eldraine update is now live! Cutoff dates and updated Brewers Corner feedback form will be posted soon.
