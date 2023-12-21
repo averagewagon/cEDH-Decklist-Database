@@ -1,1 +1,1 @@
-The cutoff for submissions for the Lost Caverns of Ixalan update is November 16th, 6 pm eastern time.
+Happy Holidays!
