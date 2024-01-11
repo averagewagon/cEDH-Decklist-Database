@@ -6,4 +6,4 @@ Each review cycle, the managers and the reviewers revisit the entries in the Bre
 
 If you want to provide feedback on Brewer's Corner lists, you can use the feedback form found in the changelog channel on our Discord server and linked below.
 
-[DEC Brewer's Corner Feedback](https://docs.google.com/forms/d/e/1FAIpQLSchI1k8Z2DCRhMi11ETIv0HzYJXXueeU51HHHHlAM156ffhKQ/viewform?usp=sf_link)
+[Murders at Karlov Manor Brewer's Corner Feedback](https://docs.google.com/forms/d/e/1FAIpQLSdk7I2rJdBYSY6QTF56m4Gzb_ozrGYbJH1zO0WPgnOWEJdEig/viewform?usp=sf_link)
