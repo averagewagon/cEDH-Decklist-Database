@@ -2232,7 +2232,7 @@
         "primer": true
       },
       {
-        "link": " https://www.moxfield.com/decks/qKhW5Z7MCUqLts3rsCYx7w",
+        "link": "https://www.moxfield.com/decks/qKhW5Z7MCUqLts3rsCYx7w",
         "title": "Tainted Kess",
         "primer": true
       }
@@ -2560,7 +2560,7 @@
         "primer": true
       },
       {
-        "link": " https://www.moxfield.com/decks/0ONY5eLrSE2wmWoEOjhhcQ",
+        "link": "https://www.moxfield.com/decks/0ONY5eLrSE2wmWoEOjhhcQ",
         "title": "Chulane CIA",
         "primer": true
       }
@@ -4499,7 +4499,7 @@
     "colors": ["b", "g", "u"],
     "decklists": [
       {
-        "link": " https://www.moxfield.com/decks/FU-C6vZ_f0-SWXt1QwGBzw",
+        "link": "https://www.moxfield.com/decks/FU-C6vZ_f0-SWXt1QwGBzw",
         "title": "Tasigur One-Card Combos",
         "primer": true
       },
@@ -7607,6 +7607,7 @@
     "title": "Heliod Flash Storm"
   },
   {
+    "id": "xkjsmdf234jhj",
     "commander": [
       {
         "name": "Saheeli, the Sun's Brilliance",

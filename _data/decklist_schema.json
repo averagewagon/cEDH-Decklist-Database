@@ -20,13 +20,20 @@
         }
       },
       "discord": {
-        "type": "object",
-        "properties": {
-          "title": { "type": "string" },
-          "link": { "type": "string", "format": "uri" }
-        },
-        "required": ["title", "link"],
-        "additionalProperties": false
+        "anyOf": [
+          {
+            "type": "object",
+            "properties": {
+              "title": { "type": "string" },
+              "link": { "type": "string", "format": "uri" }
+            },
+            "required": ["title", "link"],
+            "additionalProperties": true
+          },
+          {
+            "type": "null"
+          }
+        ]
       },
       "updated": {
         "type": "string",
