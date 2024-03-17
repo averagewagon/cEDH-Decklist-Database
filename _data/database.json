@@ -5232,6 +5232,77 @@
   {
     "commander": [
       {
+        "name": "Ob Nixilis, Captive Kingpin",
+        "link": "https://cards.scryfall.io/normal/front/d/d/ddb68233-3683-41bd-9b6e-4f07a1b54244.jpg?1684340801"
+      }
+    ],
+    "discord": {
+      "title": "Cult of Rakdos",
+      "link": "https://discord.gg/uzgTNJZx"
+    },
+    "updated": "2023-10-15T20:36:43.746Z",
+    "section": "COMPETITIVE",
+    "colors": ["b","r"],
+    "decklists": [
+      {
+        "link": "https://www.moxfield.com/decks/tmfd9pNic0mn4kbHTvXrzQ",
+        "title": "All Will Be One",
+        "primer": true
+      },
+      {
+        "link": "https://www.moxfield.com/decks/hTtslZM6CESViXgoQ6YAVw",
+        "title": "Ob's Palace",
+        "primer": true
+      }
+    ],
+    "description": "This is a grindy, value based deck that uses Ob Nixilis to generate card advantage. It uses cards like kederekt parasite to grind out long games. It can use Ob Nixilis’ size to one shot opponents. This deck is reliant on Ob Nixilis, but if you resolve him early, then you will find yourself winning several games. It is slower than ad naus decks and decks that run rograkh, but it sees a lot more cards. It also has the major upside of using all will be one as a one card win.",
+    "id": "xy45huy9wgc",
+    "recommended": false,
+    "title": "Ob Nixilis Ping"
+  },
+{
+   "commander":[
+      {
+         "name":"Thrasios, Triton Hero",
+         "link":"https://cards.scryfall.io/normal/front/2/1/21e27b91-c7f1-4709-aa0d-8b5d81b22a0a.jpg?1606762176"
+      },
+      {
+         "name":"Bruse Tarl, Boorish Herder",
+         "link":"https://cards.scryfall.io/normal/front/1/2/125b552b-45ea-4e0b-94a9-8131c97a04c0.jpg?1644853018"
+      }
+   ],
+   "discord":{
+      "title":"Thrasios Incorporated",
+      "link":"https://discord.gg/pdF3jWw"
+   },
+   "updated":"2023-09-16T19:51:22.162Z",
+   "section":"COMPETITIVE",
+   "colors":["g","u","r","w"],
+   "decklists":[
+      {
+         "link":"https://www.moxfield.com/decks/3qBRL7s02UG7yFKUnILbOw",
+         "title":"Midrange Sans Black Evolution",
+         "primer":false
+      },
+      {
+         "link":"https://www.moxfield.com/decks/kLygDHVCskGtvwAWsL2MNw/",
+         "title":"Dawnwaker Thrasios",
+         "primer":true
+      },
+      {
+         "link":"https://www.moxfield.com/decks/vcpCc0uNk0-QwRwqr5XzBw",
+         "title":"Advantage Blue Pod",
+         "primer":false
+      }
+   ],
+   "description":"Evolution is a mana combo deck with compact and overlapping cards to gain quality of cards and speed. Deck aims to win at medium speed with Thrasios activations into a lethal finale or a Timetwister loop of spells.",
+   "id":"x8pxpq9js9s2",
+   "recommended":false,
+   "title":"Bruse Thrasios Midrange"
+},
+  {
+    "commander": [
+      {
         "name": "Captain Sisay",
         "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/d/2/d24d441c-f37f-44fe-8a93-f5c89df807e4.jpg?1562937244"
       }
@@ -5828,36 +5899,6 @@
   {
     "commander": [
       {
-        "name": "Kamahl, Heart of Krosa",
-        "link": "https://cards.scryfall.io/normal/front/4/c/4c3560ae-b1f6-4269-a9eb-1a45247b6232.jpg?1608910749"
-      },
-      {
-        "name": "Tymna the Weaver",
-        "link": "https://cards.scryfall.io/normal/front/b/c/bc7cbe9b-324e-42b8-94e2-36e91cb32163.jpg?1644853048"
-      }
-    ],
-    "discord": {
-      "title": "Rule of Law",
-      "link": "https://discord.gg/hYk2zCE44n"
-    },
-    "updated": "2022-12-17T19:35:59.323Z",
-    "section": "COMPETITIVE",
-    "colors": ["g", "b", "w"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/DSMA6dSn7Ey6ENoHKdYvxQ",
-        "title": "Combat Kamahl",
-        "primer": true
-      }
-    ],
-    "description": "A \"win condition-less\" Rule of Law | Hatebears deck that aims to choke our opponents' resources, and win through a lot of combat damage.",
-    "id": "xq82dnx54vp",
-    "recommended": false,
-    "title": "Kamahl Tymna Stax"
-  },
-  {
-    "commander": [
-      {
         "name": "Grist, the Hunger Tide",
         "link": "https://cards.scryfall.io/normal/front/6/9/69af2825-18c2-4463-b6ba-42eaa070ccc1.jpg?1626098484"
       },
@@ -6246,11 +6287,6 @@
         "link": "https://www.moxfield.com/decks/Q5GFGDOtqk6-ri92lbDxsg",
         "title": "Pacific Poly",
         "primer": true
-      },
-      {
-        "link": "https://www.moxfield.com/decks/JDxQcciDBE--KZxFnUgZgw",
-        "title": "We are dead. We are robot jox.",
-        "primer": false
       },
       {
         "link": "https://www.moxfield.com/decks/iaGBV1bNjEezPnUmoPJX4Q",
