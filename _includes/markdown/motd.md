@@ -1,1 +1,1 @@
-The submission deadline for the Murders at Karlov Manor DDB update is February 9th, 2024 at 11:59 pm Eastern Time.  Submissions after that date will be considered for the following update.
+The submission deadline for the Outlaws of Thunder Junction DDB update is April 19th, 2024 at 11:59 pm Eastern Time.  Submissions after that date will be considered for the following update.
