@@ -962,11 +962,6 @@
         "primer": true
       },
       {
-        "link": "https://www.moxfield.com/decks/K_2io47loUmwYn0SprxR1A",
-        "title": "Ascetic Fish",
-        "primer": true
-      },
-      {
         "link": "https://www.moxfield.com/decks/4y21sNGeOE2qgFGs3mMOHA",
         "title": "Turtleguide",
         "primer": true
@@ -1311,11 +1306,6 @@
         "link": "https://www.moxfield.com/decks/3SpRZcA6Z0WKsk9PRBQATA",
         "title": "Curio Control",
         "primer": true
-      },
-      {
-        "link": "https://www.moxfield.com/decks/o-AXLI0dKkK9Nz2-t6ObJQ",
-        "title": "Thrasios Vial Smasher Reanimator",
-        "primer": false
       }
     ],
     "description": "A sans-white version of typical sans-red Thassa's Oracle decks. While these highly adaptive, interactive decks can win quickly with infinite mana or Underworld Breach. These decks look to establish card advantage early and interact on the stack. They have no issue easily pivoting to a grind strategy, falling back on Thrasios, Triton Hero and Seedborn Muse to pull ahead and win with an efficient combo finish.",
@@ -1595,11 +1585,6 @@
     "colors": ["b", "u", "w"],
     "decklists": [
       {
-        "link": "https://www.moxfield.com/decks/1t0Cpm1xqUeyA-6xi2TrGQ",
-        "title": "Consultation Zur",
-        "primer": true
-      },
-      {
         "link": "https://www.moxfield.com/decks/6kN7cSH9xUSrQtv873pziw",
         "title": "Consult Zur",
         "primer": false
@@ -1631,19 +1616,9 @@
     "colors": ["b", "g", "u"],
     "decklists": [
       {
-        "link": "https://www.moxfield.com/decks/LcNaaKov-kGLxjUvclpDdg",
-        "title": "Golden Control",
-        "primer": true
-      },
-      {
         "link": "https://www.moxfield.com/decks/YyMGY5BD_0-gR0vQwaXPtA",
         "title": "Tainted Control",
         "primer": true
-      },
-      {
-        "link": "https://www.moxfield.com/decks/PVs--Bcd6UOsZ1u7rf4mRQ",
-        "title": "Tasigur Neoform",
-        "primer": false
       }
     ],
     "description": "A Control deck that seeks to control the game with early game card advantage and disruption until the late game, where it seeks to win when we can safely land a win condition. Tasigur is an important asset to the deck that can greatly help us in the late game by acting either as a political resource to recur disruption or as a source of card advantage.",
@@ -2403,11 +2378,6 @@
       {
         "link": "https://www.moxfield.com/decks/GBpmGCGzpki3zU0FzxV-ow",
         "title": "Underworld Chain",
-        "primer": true
-      },
-      {
-        "link": "https://www.moxfield.com/decks/nbyz49GtFUiP1ZqV1NnJfQ",
-        "title": "Sliver Shiver",
         "primer": true
       }
     ],
@@ -3291,11 +3261,6 @@
     "colors": ["g", "u", "w"],
     "decklists": [
       {
-        "link": "https://www.moxfield.com/decks/bowilU8pp0ehbGPapI6vpA",
-        "title": "Spellpod Derevi",
-        "primer": true
-      },
-      {
         "link": "https://www.moxfield.com/decks/Dj12VRnJjkqd-kF-mhSY1w",
         "title": "b i r d w i z a r d",
         "primer": true
@@ -3585,11 +3550,6 @@
     "colors": ["r", "u"],
     "decklists": [
       {
-        "link": "https://www.moxfield.com/decks/HmRJ5ju54USIf9UVsl5kwQ",
-        "title": "Niv-Mizzet, Parun Control",
-        "primer": true
-      },
-      {
         "link": "https://www.moxfield.com/decks/iXxJYiYCY0GLeqkMEu-AjA",
         "title": "Dragon Control",
         "primer": false
@@ -3598,6 +3558,11 @@
         "link": "https://www.moxfield.com/decks/u9h92YBTe0a5ei7SLDxeKg",
         "title": "Niv-Mizzet's Realm of the Parun",
         "primer": false
+      },
+      {
+        "link": "https://www.moxfield.com/decks/j29sR-RJbUG9nwJg_IGoQA",
+        "title": "Primal Niv",
+        "primer": true
       }
     ],
     "description": "Niv-Mizz Parun Control, is a control shell similar to Rashmi, Curious Control, and Tasigur that seeks to slow the game down with Stax, prevent wins with interaction, and eventually end the game with a resolved Niv Mizzet. Compact combos include Curiosity effect on Niv-Mizzet, or sometimes with Glint-Horn Buccaneer or Isochron Scepter + Dramatic Reversal. Does poorly against multiple fast, low-interaction, decks. Does well against mid-range or other control lists.",
@@ -3791,11 +3756,6 @@
     "section": "COMPETITIVE",
     "colors": ["b", "g", "r"],
     "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/Re-_xtEbCkyNdH69vyGR8w",
-        "title": "BAD Korvold",
-        "primer": true
-      },
       {
         "link": "https://www.moxfield.com/decks/MNRi-mtvb02tMF3KqmF60g",
         "title": "The MAD King",
@@ -4228,7 +4188,7 @@
     ],
     "discord": null,
     "updated": "2023-10-15T19:50:48.341Z",
-    "section": "COMPETITIVE",
+    "section": "DEPRECATED",
     "colors": ["b", "g", "r", "u", "w"],
     "decklists": [
       {
@@ -4502,11 +4462,6 @@
         "link": "https://www.moxfield.com/decks/FU-C6vZ_f0-SWXt1QwGBzw",
         "title": "Tasigur One-Card Combos",
         "primer": true
-      },
-      {
-        "link": "https://www.moxfield.com/decks/Hfv5zDI5T0S_ywWIS80cAw",
-        "title": "Black Wings",
-        "primer": false
       }
     ],
     "description": "Tasigur Fast Combo brings Tasigur's advantages with an aggressive twist. It has the ability to power out early game wins while pivoting to a bevy of secondary strategies if disrupted, giving the deck near unparalleled flexibility. You can grind with many of the best decks at the table and land a stupid value engine early, whether through a powerful Ad Nauseam or a combo utilizing Tasigur's cost reduction to power out expensive creatures through Evolution effects.",
@@ -4702,11 +4657,6 @@
         "primer": true
       },
       {
-        "link": "https://www.moxfield.com/decks/_HEy_8vUe0i6DIZ0yt3isQ",
-        "title": "Medium Tentacles",
-        "primer": false
-      },
-      {
         "link": "https://www.moxfield.com/decks/AAfKuJsUnEOSI66_zBUlJw",
         "title": "Tentacle Hulk",
         "primer": true
@@ -4714,6 +4664,11 @@
       {
         "link": "https://www.moxfield.com/decks/l3t7BdJigk6mAygcWZ1Txw",
         "title": "Thrasios Tevesh Horror Kitten",
+        "primer": false
+      },
+      {
+        "link": "https://www.moxfield.com/decks/ogbZzql4O0qwpaqXzavhcg",
+        "title": "Midrange Doom",
         "primer": false
       }
     ],
@@ -4779,11 +4734,6 @@
       {
         "link": "https://www.moxfield.com/decks/LvX86uPuNUai_jGJWNiaiA",
         "title": "Mulling for Malcolm",
-        "primer": false
-      },
-      {
-        "link": "https://www.moxfield.com/decks/6ZHkS4Lx10-YNy8mcBAneA",
-        "title": "Tymna Malcolm DDay",
         "primer": false
       },
       {
@@ -5030,16 +4980,6 @@
         "link": "https://www.moxfield.com/decks/2QnGQIegsUaChGQe31VvJQ",
         "title": "Abzan Scales",
         "primer": true
-      },
-      {
-        "link": "https://www.moxfield.com/decks/YClMqfqWRUqdrw6_gLGT3A",
-        "title": "Vizier of the Pod",
-        "primer": true
-      },
-      {
-        "link": "https://www.moxfield.com/decks/IUgKedidTUyw6PmqjAbTAg",
-        "title": "A Song of Abzhan Stax",
-        "primer": false
       }
     ],
     "description": "This deck attempts to land a Rule of Law effect as early as turn one or two to slow opponents down. From there we can play a turn three Tymna, which allows us to refill our hand and flood the board with more stax pieces until we can land Kodama and go for a win in the later game, around turn 6 or after. In comparison to other abzan stax builds, this deck struggles to win through tutor hate or Drannith Magistrate, and can struggle to stick Kodama before winning, but excels at winning through almost all other stax effects including our own.",
@@ -5159,11 +5099,6 @@
         "link": "https://www.moxfield.com/decks/pc90TNIHNkeUbVKDUpkRzA",
         "title": "Opus Fool",
         "primer": false
-      },
-      {
-        "link": "https://www.moxfield.com/decks/Ri7pQ1q-t0SyXgoeQ656kg",
-        "title": "Double Black Label",
-        "primer": false
       }
     ],
     "description": "A Grixis Ad Nauseam Storm / Breach deck that uses both of the commanders as card draw engines to help get us to a win. With Tevesh now at the helm, we can utilize our creatures beyond just the abilities in the card text. Not only is Tevesh itself an outlet, but other cards such as rituals, or tutors become more synergistic with our game plan. The aim here is to be drawing multiple cards on our turn to out advantage our opponents, and get us to the point of storming off.",
@@ -5279,11 +5214,6 @@
    "section":"COMPETITIVE",
    "colors":["g","u","r","w"],
    "decklists":[
-      {
-         "link":"https://www.moxfield.com/decks/3qBRL7s02UG7yFKUnILbOw",
-         "title":"Midrange Sans Black Evolution",
-         "primer":false
-      },
       {
          "link":"https://www.moxfield.com/decks/kLygDHVCskGtvwAWsL2MNw/",
          "title":"Dawnwaker Thrasios",
@@ -5744,7 +5674,7 @@
     ],
     "discord": null,
     "updated": "2022-01-28T05:37:25.595Z",
-    "section": "COMPETITIVE",
+    "section": "DEPRECATED",
     "colors": ["b", "g", "u"],
     "decklists": [
       {
@@ -5883,11 +5813,6 @@
       {
         "link": "https://www.moxfield.com/decks/5VixJnhn_0-vGPMMmWMyag",
         "title": "Fiddle Me This",
-        "primer": true
-      },
-      {
-        "link": "https://www.moxfield.com/decks/wGb1WzU340WICbUVk8MXwg",
-        "title": "Ozzy Fiddle Stax",
         "primer": true
       }
     ],
@@ -6227,7 +6152,7 @@
       "link": "https://discord.gg/up3AWDNjPM"
     },
     "updated": "2022-12-17T19:34:58.945Z",
-    "section": "COMPETITIVE",
+    "section": "DEPRECATED",
     "colors": ["u", "g", "r"],
     "decklists": [
       {
@@ -6284,20 +6209,20 @@
     "colors": ["u", "w"],
     "decklists": [
       {
-        "link": "https://www.moxfield.com/decks/Q5GFGDOtqk6-ri92lbDxsg",
-        "title": "Pacific Poly",
+        "link": "https://www.moxfield.com/decks/iaGBV1bNjEezPnUmoPJX4Q",
+        "title": "Vehicular Manslaughter",
         "primer": true
       },
       {
-        "link": "https://www.moxfield.com/decks/iaGBV1bNjEezPnUmoPJX4Q",
-        "title": "Vehicular Manslaughter",
+        "link": "https://www.moxfield.com/decks/JHFaWu9cwU2N3Yi7m5gYAA",
+        "title": "Iso-Rev Shorikai",
         "primer": true
       }
     ],
     "description": "Pacific Poly is a combo deck at heart that leverages the activated ability of Shorikai, Genesis Engine with cards such as Manifold Key that allow us to activate Shorikai more than once each turn to amass massive advantage and a perfectly sculpted hand. We make good use of heavy control and interactive elements, even including Humility, to keep opponents at bay until we’re able to pivot into our winning turn. This often involves getting infinite mana through Isochron Scepter and Hullbreaker Horror.",
     "id": "x9ijn9r9zyjl",
     "recommended": false,
-    "title": "Shorikai Humility"
+    "title": "Shorikai Combo"
   },
   {
     "commander": [
@@ -6525,11 +6450,6 @@
         "primer": false
       },
       {
-        "link": "https://www.moxfield.com/decks/BvEOsMyp1kCMpXpyI8U2qw/",
-        "title": "Rocco Food Chain",
-        "primer": true
-      },
-      {
         "link": "https://www.moxfield.com/decks/NK-X4EwocUS1QTEVKyNnCQ",
         "title": "Rocco Food Chain Stax AKA The Last Supper",
         "primer": true
@@ -6538,6 +6458,11 @@
         "link": "https://www.moxfield.com/decks/ib-yJujRLE-0WIbKh17I9A",
         "title": "Rocco Tutor Chains",
         "primer": false
+      },
+      {
+        "link": "https://www.moxfield.com/decks/NIrEE00qDkioqlgw39ECkA",
+        "title": "Rocc'ed the Dinner Rush",
+        "primer": true
       }
     ],
     "description": "This list takes advantage of having a tutor in the command zone to assemble very flexible lines. Having a large number of one card win conditions, and the ability to find whatever you need means the list is very resilient and able to make multiple win attempts, even in the face of interaction.",
@@ -6816,6 +6741,11 @@
         "link": "https://www.moxfield.com/decks/4VETNnvuVEewJUoIuSW81Q",
         "title": "Temur Advantage Evolution",
         "primer": false
+      },
+      {
+        "link": "https://www.moxfield.com/decks/yN_vO9Kr1ECf9_fZ8Yr7uA",
+        "title": "RogThras Midrange",
+        "primer": true
       }
     ],
     "description": "Temur Thrasios Midrange aims at using both it's commanders to gain advantage over the table and use evolution pieces to go infinite with Dockside Extortionist. Typically turns 4-5 while holding up interaction on turns 3-4 to stop wins.",
@@ -6851,11 +6781,6 @@
         "link": "https://www.moxfield.com/decks/YAaImlptyUifCfct1hbF7Q",
         "title": "Metapod",
         "primer": true
-      },
-      {
-        "link": "https://www.moxfield.com/decks/7iwPSXSVlEy5fvKqDTCNEg",
-        "title": "Tymna Tana Reanimator",
-        "primer": false
       },
       {
         "link": "https://www.moxfield.com/decks/KcU93NG41kisOr_xN_1YmA",
@@ -7020,11 +6945,6 @@
       {
         "link": "https://www.moxfield.com/decks/GjMvF6Ucg0u_Tu_JFGMxgw",
         "title": "Ryugu Kingdom",
-        "primer": true
-      },
-      {
-        "link": "https://www.moxfield.com/decks/t92_dRCJgkmD7N94DA6D1g",
-        "title": "Vohar Sceptor Doomsday",
         "primer": true
       },
       {
@@ -7431,11 +7351,6 @@
         "primer": true
       },
       {
-        "link": "https://www.moxfield.com/decks/VzyiRjRCm0KJkrxv9gnKZA",
-        "title": "Minsced Garlic",
-        "primer": true
-      },
-      {
         "link": "https://www.moxfield.com/decks/tUI6bALB3Ei76nMuXC2ELw",
         "title": "Boo Pod",
         "primer": true
@@ -7586,6 +7501,11 @@
         "link": "https://www.moxfield.com/decks/-I4OjFNb70O8BaUDhtOEuw",
         "title": "Rhystic in the Command Zone",
         "primer": true
+      },
+      {
+        "link": "https://www.moxfield.com/decks/zBfjvarsOkWdrgAiDv92Aw",
+        "title": "You Play, I Draw",
+        "primer": true
       }
     ],
     "description": "This is an adaptive control list that seeks to survive the early game by utilizing powerful hatepieces like Grafdigger's Cage or Cursed Totem that allow us to slow down our opponents so we can find a game ending combo. \nDue to Talions ability to draw cards we can make sure to not run out of ressources.\nIn comparison to other control decks like Tivit or Niv-Mizzet Parun it lacks clear one card wincons out of the CZ like Time Sieve or Curiosity.",
@@ -7679,8 +7599,8 @@
       }
     ],
     "discord": {
-      "title": "The Magisterium - Azorius cEDH",
-      "link": "https://discord.gg/QBG4wymWrZ"
+      "title": "Tameshi, Reality Architect cEDH",
+      "link": "https://discord.gg/QScKvrMQmM"
     },
     "updated": "2023-12-20T02:04:13.245Z",
     "section": "BREW",
@@ -7690,10 +7610,158 @@
         "link": "https://www.moxfield.com/decks/bZkoFr3N6EWCRnw4OPSfow",
         "title": "Tameshi Bloomin' Control",
         "primer": true
+      },
+      {
+        "link": "https://www.moxfield.com/decks/TgC5Nn3-ikuHlv-ROLB_6Q",
+        "title": "Tameshi, Reality Architect",
+        "primer": true
       }
     ],
     "description": "A UW Control strategy that seeks to leverage Tameshi to accrue advantages throughout the game. The deck is highly interactive and uses a handful of disruptive permanents to aid in its control gameplan. A number of permanents in the deck are highly synergistic with Tameshi and allow the deck to play a 1-to-1 interactive game without expending real resources, with such cards as Seal of Removal proving to be incredibly problematic for many decks. Additionally, many of the most important cards in the deck are artifacts or enchantments, making it hard for opponents to permanently deal with those effects. The deck wins with its signature Copy Artifact - Lotus Bloom loop, Mind Over Matter + The One Ring, or Mystic Sanctuary Turns. ",
     "recommended": false,
     "title": "Tameshi Combo Control"
+  },
+  {
+    "id": "svj119zdvqeg",
+    "commander": [
+      {
+        "name": "The Master, Transcendent",
+        "link": "https://cards.scryfall.io/large/front/5/b/5b0497da-670a-405c-a39c-97cae7942836.jpg?1710673422"
+      }
+    ],
+    "discord": null,
+    "updated": "2024-07-13T02:04:13.245Z",
+    "section": "BREW",
+    "colors": ["b", "u", "g"],
+    "decklists": [
+      {
+        "link": "https://www.moxfield.com/decks/56C9Ai4qgE2ehnBSuxukww",
+        "title": "The Food Chain Master",
+        "primer": true
+      }
+    ],
+    "description": "This is a midrange combo deck that uses its commander as a value piece to reanimate big threats or combo pieces, as well as being a finisher for food chain or HBH loops. As a midrange list, this decks tries to run the most valuable cards in it's colours while having perfect synergies to win as optimal as possible.",
+    "recommended": false,
+    "title": "The Master Food Chain"
+  },
+  {
+    "id": "o2xhhwdjplql",
+    "commander": [
+      {
+        "name": "Etali, Primal Conqueror // Etali, Primal Sickness",
+        "link": "https://cards.scryfall.io/large/front/9/5/95c14c4d-6c16-4826-8d93-d89ad04aee09.jpg?1682204132"
+      }
+    ],
+    "discord": null,
+    "updated": "2024-07-13T02:04:13.245Z",
+    "section": "BREW",
+    "colors": ["r", "g"],
+    "decklists": [
+      {
+        "link": "https://www.moxfield.com/decks/R9kTJ60av0enTuN3ukqA7A",
+        "title": "Down with the (Primal) Sickness",
+        "primer": true
+      },
+      {
+        "link": "https://www.moxfield.com/decks/3uQCo276WUqrgP_Hsr_23g",
+        "title": "Super Mega Turbo Dinosaur 4000",
+        "primer": false
+      }
+    ],
+    "description": "Etali, Primal Conqueror is a outlet in the command zone with several different combos. Those combos include: Dockside Extortionist + Temur Sabertooth or Cloudstone Curio, Food Chain + Squee, the Immortal or Eternal Scourge, Dualcaster Mage + Twinflame or Heat Shimmer",
+    "recommended": false,
+    "title": "Etali Combo"
+  },
+  {
+    "id": "yh6jhtompv29",
+    "commander": [
+      {
+        "name": "Stella Lee, Wild Card",
+        "link": "https://cards.scryfall.io/large/front/2/a/2a8a7696-b5d9-4378-9d5c-2c9007e4df63.jpg?1714110409"
+      }
+    ],
+    "discord": {
+      "title": "Izzet cEDH?",
+      "link": "https://discord.gg/E4HPUcD8qJ"
+    },
+    "updated": "2024-07-13T02:04:13.245Z",
+    "section": "BREW",
+    "colors": ["u", "r"],
+    "decklists": [
+      {
+        "link": "https://www.moxfield.com/decks/jdIzXcCPEUq2x2BDZ8jINg",
+        "title": "Clever Knife Joke",
+        "primer": true
+      },
+      {
+        "link": "https://www.moxfield.com/decks/Zi_9nc6G9EWyugXmJmvD1g",
+        "title": "Big Iron on Her Hip",
+        "primer": false
+      },
+      {
+        "link": "https://www.moxfield.com/decks/x5iDbb-n9UCrYAh5PIdtbg",
+        "title": "Count to Three",
+        "primer": false
+      }
+    ],
+    "description": "Stella Lee is a midrange combo Izzet deck which seeks to resolve Stella Lee as soon as possible before winning the game with one of her multiple tutorable 1 card combos. Stella Lee is unique among Izzet commanders in her 1 card combos are both tutorable and do not require playing a somewhat large package of build-around cards to make the deck work. This opens slots up for more generically powerful cards, making the deck powerful with Stella in play, but not reliant on her to function. Due to the instant speed nature of many of her combos, she also holds the capacity to win on top of your opponents through Borne Upon the Wind.",
+    "recommended": false,
+    "title": "Stella Lee Turbo Threat"
+  },
+  {
+    "id": "r1f1fz3b0x1y",
+    "commander": [
+      {
+        "name": "Sisay, Weatherlight Captain",
+        "link": "https://cards.scryfall.io/large/front/5/a/5a293c45-1e73-4527-be2f-2dcd5c47b610.jpg?1650730165"
+      }
+    ],
+    "discord": {
+      "title": "The Weatherlight, Compleated",
+      "link": "https://discord.gg/A3rZNGnTjB"
+    },
+    "updated": "2024-07-13T02:04:13.245Z",
+    "section": "BREW",
+    "colors": ["w", "u", "b", "r", "g"],
+    "decklists": [
+      {
+        "link": "https://www.moxfield.com/decks/uiyDiFnEQke0z9BKtbfJHQ",
+        "title": "Animal Farm",
+        "primer": true
+      }
+    ],
+    "description": "5c midrange creature combo deck with a tutor, free/cheap spell-enabler, combo enabler and infinite mana outlet in the command zone.",
+    "recommended": false,
+    "title": "Sisay 5C Midrange"
+  },
+  {
+    "id": "pda2xpqxfdtv",
+    "commander": [
+      {
+        "name": "Dargo, the Shipwrecker",
+        "link": "https://cards.scryfall.io/normal/front/5/c/5cd87cf8-4d5d-4aba-8dfa-800b1fb3799b.jpg?1608910155"
+      },
+      {
+        "name": "Tymna the Weaver",
+        "link": "https://cards.scryfall.io/large/front/b/c/bc7cbe9b-324e-42b8-94e2-36e91cb32163.jpg?1644853048"
+      }
+    ],
+    "discord": {
+      "title": "Dargo and the Dargonauts",
+      "link": "https://discord.gg/RCK9EWrb8M"
+    },
+    "updated": "2024-07-13T02:04:13.245Z",
+    "section": "BREW",
+    "colors": ["w", "b", "r"],
+    "decklists": [
+      {
+        "link": "https://www.moxfield.com/decks/5Nbm07WvPEqcjRy2xhnBsQ",
+        "title": "Mad Pod",
+        "primer": true
+      }
+    ],
+    "description": "An aggressive Mardu Dargo list focused on turbo-ing out Arena Rector then saccing it to Dargo, which starts a pod-style chain that puts Razaketh onto the battlefield to win. Dargo's depths as a combo piece, sac outlet, and facebeater create variety and unpredictability in both play patterns and wincons.",
+    "recommended": false,
+    "title": "Dargo Tymna Turbo Rector"
   }
 ]
