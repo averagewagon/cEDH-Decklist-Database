@@ -6745,7 +6745,7 @@
       {
         "link": "https://www.moxfield.com/decks/yN_vO9Kr1ECf9_fZ8Yr7uA",
         "title": "RogThras Midrange",
-        "primer": yes
+        "primer": true
       }
     ],
     "description": "Temur Thrasios Midrange aims at using both it's commanders to gain advantage over the table and use evolution pieces to go infinite with Dockside Extortionist. Typically turns 4-5 while holding up interaction on turns 3-4 to stop wins.",
@@ -7763,5 +7763,5 @@
     "description": "An aggressive Mardu Dargo list focused on turbo-ing out Arena Rector then saccing it to Dargo, which starts a pod-style chain that puts Razaketh onto the battlefield to win. Dargo's depths as a combo piece, sac outlet, and facebeater create variety and unpredictability in both play patterns and wincons.",
     "recommended": false,
     "title": "Dargo Tymna Turbo Rector"
-  },
+  }
 ]
