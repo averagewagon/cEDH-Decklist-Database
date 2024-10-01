@@ -65,9 +65,9 @@ index 441acb6..ef31275 100644
 +      applyFilters();
 +    });
 +  });
- }
-
- function applyFilters() {
++}
++
++function applyFilters() {
 -  const primer = id("primer-only").classList.contains("filter-active");
 -  const discord = id("discord-only").classList.contains("filter-active");
 -  const section = id("db-section").value;
