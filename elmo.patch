@@ -86,7 +86,7 @@ index 441acb6..ef31275 100644
 +  const isMainPage = filters.section === 'COMPETITIVE';
 +  const hasActiveFilters = filters.primer || filters.discord || filters.colors.length > 0 || searchTerm;
 +
-   qsa("#decks > li").forEach(deck => {
++   qsa("#decks > li").forEach(deck => {
 -    let hide = false;
 -      if (primer && iqs(deck, ".ddb-icons .primer-svg").classList.contains("unavailable")) {
 -      hide = true;
@@ -114,8 +114,8 @@ index 441acb6..ef31275 100644
 + }
 -    
 -    hide ? deck.classList.add("hidden") : deck.classList.remove("hidden");
-   });
- }
++   });
++ }
 
 +function searchAllCategories(deck, searchTerm) {
 +  if (!searchTerm) {
@@ -147,33 +147,33 @@ index 441acb6..ef31275 100644
 +  return false;
 +}
 
- function changeSection() {
-   applyFilters();
-   const section = id("db-section").value.toLowerCase();
++ function changeSection() {
++   applyFilters();
++   const section = id("db-section").value.toLowerCase();
 -  id("mobile-desc").innerText = section.charAt(0).toUpperCase() + section.slice(1) + " Decks";
 +  id("mobile-desc").innerText = section === 'all' ? "All Decks" : section.charAt(0).toUpperCase() + section.slice(1) + " Decks";
-   qsa("#db-description > div").forEach(item => {
++   qsa("#db-description > div").forEach(item => {
 -    item.id.includes(section) ? item.classList.remove("hidden") : item.classList.add("hidden");
 +    if (section === 'all') {
 +      item.classList.remove("hidden");
 +    } else {
 +      item.id.includes(section) ? item.classList.remove("hidden") : item.classList.add("hidden");
 +    }
-   });
- }
++   });
++ }
 
 diff --git a/index.html b/index.html
 index 5628b44..03ba235 100755
 --- a/index.html
 +++ b/index.html
 @@ -68,9 +68,9 @@ The main page of the cEDH decklist database
-           <div class="flex-column">
-             <label for="db-section">Section</label>
-             <select id="db-section" autocomplete="off">
++           <div class="flex-column">
++             <label for="db-section">Section</label>
++             <select id="db-section" autocomplete="off">
 -              <option value="COMPETITIVE">Competitive Decks</option>
 +              <option value="COMPETITIVE">Main Page</option>
-               <option value="BREW">Brewer's Corner</option>
++               <option value="BREW">Brewer's Corner</option>
 -              <option value="OUTDATED">Outdated Decks</option>
 +              <option value="OUTDATED">Database</option>
-             </select>
-           </div>
++             </select>
++           </div>
