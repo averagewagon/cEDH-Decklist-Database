@@ -17,144 +17,105 @@ const COLOR_ORDER = [
 function init() {
   prepareAd();
   sortTable();
+  setupEventListeners();
+}
+
+function setupEventListeners() {
   id("db-sort").addEventListener("change", sortTable);
   id("db-search").addEventListener("change", applyFilters);
   id("db-section").addEventListener("change", changeSection);
-  qsa(".main").forEach(item => item.addEventListener("click", toggleSub));
-  id("mobile-filters").addEventListener("click", toggleMobileFilters);
   id("mobile-desc").addEventListener("click", toggleMobileDescription);
   id("db-search").addEventListener("click", mobileSearchInput);
   
-  qsa("#color-filters > div").forEach(item => item.addEventListener("click", () => {
-    item.classList.toggle("color-inactive");
-    item.classList.toggle("color-active");
-    applyFilters();
-  }));
-  
-  qsa("#entry-filters > li").forEach(item => item.addEventListener("click", () => {
-    item.classList.toggle("filter-inactive");
-    item.classList.toggle("filter-active");
-    applyFilters();
-  }));
+  setupColorFilters();
+  setupEntryFilters();
 }
 
-function prepareAd() {
-  if (window.innerWidth > 1200) {
-    id("desktop-ad").classList.add("adsbygoogle");
-    id("mobile-ad").classList.add("hidden");
-  } else {
-    id("desktop-ad").classList.add("hidden");
-    id("mobile-ad").classList.add("adsbygoogle");
-  }
-  try {
-    (adsbygoogle = window.adsbygoogle || []).push({});
-  } catch (error) {
-    console.log("Adblocker detected");
-  }
-}
-
-function mobileSearchInput() {
-  const search = id("db-search");
-  if (window.innerWidth <= 800) {
-    search.value = prompt("Search the Database:", search.value);
-    search.blur();
-    applyFilters();
-  }
-}
-
-function toggleMobileDescription() {
-  id("db-description").classList.toggle("mhide");
-}
-
-function toggleMobileFilters() {
-  if (id("mobile-filters").classList.contains("shown")) {
-    id("mobile-filters").classList.remove("shown");
-    id("filter-wrap").classList.add("mhide");
-    id("database-controls").classList.add("mhide");
-    id("mobile-filters").innerText = "+ Show Filters";
-  } else {
-    id("mobile-filters").classList.add("shown");
-    id("filter-wrap").classList.remove("mhide");
-    id("database-controls").classList.remove("mhide");
-    id("mobile-filters").innerText = "- Hide Filters";
-  } 
-}
-
-// Toggles the visibility of a subrow
-function toggleSub() {
-  const entry = iqs(this.parentElement, ".sub");
-  entry.classList.toggle("hidden");
-  iqsa(entry, ".ddb-images img").forEach(card => {
-    if (!card.src && window.innerWidth > 1200) {
-      card.src = card.dataset.src;
-    }
+function setupColorFilters() {
+  qsa("#color-filters > div").forEach(item => {
+    item.addEventListener("click", () => {
+      item.classList.toggle("color-inactive");
+      item.classList.toggle("color-active");
+      applyFilters();
+    });
   });
 }
 
-// Sorts a table with the available sort values being: NEW, TITLE, COLOR
-function sortTable() {
-  const sort = id("db-sort").value;
-  const entries = [...qsa("#decks > li")];
-  
-  const sorted = entries.sort((a, b) => {
-    if (sort === "NEW")   { return b.dataset.updated.localeCompare(a.dataset.updated); }
-    if (sort === "TITLE") { return a.dataset.title.localeCompare(b.dataset.title); }
-    if (sort === "COLOR") { return convertColor(a.dataset.colors) - convertColor(b.dataset.colors); }
-    return 0;
+function setupEntryFilters() {
+  qsa("#entry-filters > li").forEach(item => {
+    item.addEventListener("click", () => {
+      item.classList.toggle("filter-inactive");
+      item.classList.toggle("filter-active");
+      applyFilters();
+    });
   });
-  
-  const decks = id("decks");
-  sorted.forEach(item => decks.appendChild(item));
-}
-
-// Converts a color array or color string into a number for sorting purposes
-function convertColor(colors) {
-  let val = 0;
-  if (colors.includes("w")) { val += 1 }
-  if (colors.includes("u")) { val += 2 }
-  if (colors.includes("b")) { val += 4 }
-  if (colors.includes("r")) { val += 8 }
-  if (colors.includes("g")) { val += 16 }
-  return COLOR_ORDER.indexOf(val);
 }
 
 function applyFilters() {
-  const primer = id("primer-only").classList.contains("filter-active");
-  const discord = id("discord-only").classList.contains("filter-active");
-  const section = id("db-section").value;
-  const search = id("db-search").value.toLowerCase();
-  const colors = [];
-  qsa(".color-active").forEach(color => colors.push(color.dataset.c));
-  
+  const filters = {
+    primer: id("primer-only").classList.contains("filter-active"),
+    discord: id("discord-only").classList.contains("filter-active"),
+    section: id("db-section").value,
+    colors: [...qsa(".color-active")].map(color => color.dataset.c)
+  };
+
+  const searchTerm = id("db-search").value.toLowerCase();
+  const isMainPage = filters.section === 'COMPETITIVE';
+  const hasActiveFilters = filters.primer || filters.discord || filters.colors.length > 0 || searchTerm;
+
   qsa("#decks > li").forEach(deck => {
-    let hide = false;
-      if (primer && iqs(deck, ".ddb-icons .primer-svg").classList.contains("unavailable")) {
-      hide = true;
-    } else if (discord && iqs(deck, ".ddb-icons .discord-svg").classList.contains("unavailable")) {
-      hide = true;
-    } else if (section !== iqs(deck, ".ddb-section").innerText.trim()) {
-      hide = true;
-    } else if (search && !deck.textContent.toLowerCase().includes(search)) {
-      hide = true;
-    } else if (colors) {
-      colors.forEach(color => {
-        if (!deck.dataset.colors.includes(color)) {
-          hide = true;
-          return;
-        }
-      });
+    if (isMainPage && !hasActiveFilters) {
+      // Show all decks on the main page when no filters are active
+      deck.classList.remove("hidden");
+    } else {
+      const matchesFilters = !isHidden(deck, filters);
+      const matchesSearch = searchAllCategories(deck, searchTerm);
+      const showDeck = matchesFilters && matchesSearch;
+      deck.classList.toggle("hidden", !showDeck);
     }
-    
-    hide ? deck.classList.add("hidden") : deck.classList.remove("hidden");
   });
+}
+
+function searchAllCategories(deck, searchTerm) {
+  if (!searchTerm) {
+    return true; // return all on empty search
+  }
+  
+  const searchableContent = [
+    deck.dataset.title,
+    deck.querySelector('.ddb-description').textContent,
+    deck.dataset.colors,
+    Array.from(iqsa(deck, '.ddb-commanders li')).map(c => c.textContent).join(' '),
+    Array.from(iqsa(deck, '.ddb-decklists li')).map(d => d.textContent).join(' '),
+    iqs(deck, ".ddb-discord-title") ? iqs(deck, ".ddb-discord-title").textContent : ''
+  ].join(' ').toLowerCase();
+
+  return searchableContent.includes(searchTerm);
+}
+
+function isHidden(deck, filters) {
+  if (filters.primer && iqs(deck, ".ddb-icons .primer-svg").classList.contains("unavailable")) {
+    return true;
+  }
+  if (filters.discord && iqs(deck, ".ddb-icons .discord-svg").classList.contains("unavailable")) {
+    return true;
+  }
+  if (filters.colors.length && !filters.colors.every(color => deck.dataset.colors.includes(color))) {
+    return true;
+  }
+  return false;
 }
 
 function changeSection() {
   applyFilters();
   const section = id("db-section").value.toLowerCase();
-  id("mobile-desc").innerText = section.charAt(0).toUpperCase() + section.slice(1) + " Decks";
+  id("mobile-desc").innerText = section === 'all' ? "All Decks" : section.charAt(0).toUpperCase() + section.slice(1) + " Decks";
   qsa("#db-description > div").forEach(item => {
-    item.id.includes(section) ? item.classList.remove("hidden") : item.classList.add("hidden");
+    if (section === 'all') {
+      item.classList.remove("hidden");
+    } else {
+      item.id.includes(section) ? item.classList.remove("hidden") : item.classList.add("hidden");
+    }
   });
 }
 
