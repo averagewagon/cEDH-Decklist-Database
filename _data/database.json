@@ -2,32 +2,6 @@
   {
     "commander": [
       {
-        "name": "Zaxara, the Exemplary",
-        "link": "https://cards.scryfall.io/normal/front/6/d/6dc390da-75f8-490a-a724-c12d21cfe578.jpg?1664361739"
-      }
-    ],
-    "discord": {
-      "title": "Zaxara's Exemplaries",
-      "link": "https://discord.gg/qQZP7ym"
-    },
-    "updated": "2022-10-23T19:16:57.056Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "g", "u"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/qcFvPNMzzE28jo0SlB2jwA",
-        "title": "Freed Zaxara",
-        "primer": false
-      }
-    ],
-    "description": "Freed Zaxara is a Sultai Midrange focused on the synergy of Zaxara, the Exemplary with Freed from the Real or Pemmin's Aura to generate infinite mana of any color. The same can be done using Bloom Tender or Arbor Elf + Land's Auras. From that point, any outlet can guarantee victory. As a consistent alternative plan, it has the package of Thassa's Oracle and Demonic Consultation.",
-    "id": "xdk8ykocyebe",
-    "recommended": false,
-    "title": "Zaxara Freed Combo"
-  },
-  {
-    "commander": [
-      {
         "name": "Breya, Etherium Shaper",
         "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/2/1/2143f700-7311-46a4-ad9b-4e743a345785.jpg?1599707856"
       }
@@ -75,40 +49,7 @@
     "description": "A deck based around playing small creatures with evasion and chaining extra turns.",
     "id": "xqpp184rjf1",
     "recommended": false,
-    "title": "Edric Turns"
-  },
-  {
-    "commander": [
-      {
-        "name": "Grand Arbiter Augustin IV",
-        "link": "https://cards.scryfall.io/normal/front/f/4/f43748ea-1d65-4ee8-9c66-221412a284c0.jpg?1662528760"
-      }
-    ],
-    "discord": { "title": "GAAIV", "link": "https://discord.gg/zGmMtmxU2b" },
-    "updated": "2022-10-19T20:24:31.817Z",
-    "section": "DEPRECATED",
-    "colors": ["u", "w"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/7i3rCq-PtEWCx771zlRXnQ",
-        "title": "Grand Arbiter Storm",
-        "primer": true
-      },
-      {
-        "link": "https://www.moxfield.com/decks/41UpuPhPgkOXb1P9tbH0og",
-        "title": "Shift Lash GAAIV",
-        "primer": true
-      },
-      {
-        "link": "https://www.moxfield.com/decks/CNxApwC0YE6QUQCFf-dwBQ",
-        "title": "Smothering Arbiter",
-        "primer": false
-      }
-    ],
-    "description": "GAAIV is a control deck that uses its commander to gain a mana advantage over its opponents. This commander excels in the late game, but has a hard time closing out the game because win conditions in Azorius aren't exactly aplenty. Because it doesn't have card advantage in the command zone, it makes up for that with many value pieces in the deck.",
-    "id": "xyckywrhxor",
-    "recommended": false,
-    "title": "GAAIV Control"
+    "title": "[HISTORIC] Edric Turns"
   },
   {
     "commander": [
@@ -118,137 +59,31 @@
       }
     ],
     "ttl": null,
-    "discord": { "title": "Prossh", "link": "https://discord.gg/xFPmD2E" },
+    "discord": { "title": "Food Chain", "link": "https://discord.gg/dftqxZW" },
     "updated": "2020-08-10T03:34:05.351Z",
     "section": "DEPRECATED",
-    "colors": ["b", "g", "r"],
+    "colors": ["b", "g", "r", "u", "w"],
     "decklists": [
       {
         "link": "https://tappedout.net/mtg-decks/19-07-16-food-chain-prossh/",
         "title": "Food Chain Prossh",
         "primer": false
-      }
-    ],
-    "description": "A fast deck which combos using Food Chain, with good matchups vs control/stax.",
-    "id": "x1uuemw89oma",
-    "recommended": false,
-    "title": "Food Chain Prossh"
-  },
-  {
-    "commander": [
-      {
-        "name": "Tymna the Weaver",
-        "link": "https://img.scryfall.com/cards/normal/front/b/c/bc7cbe9b-324e-42b8-94e2-36e91cb32163.jpg?1562417406"
       },
       {
-        "name": "Kraum, Ludevic's Opus",
-        "link": "https://img.scryfall.com/cards/normal/front/5/5/557fcd17-6cb3-414a-b2b1-ea9ae32e5aec.jpg?1562400560"
-      }
-    ],
-    "ttl": null,
-    "discord": null,
-    "updated": "2020-08-10T03:34:08.574Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "w", "r", "u"],
-    "decklists": [
-      {
-        "link": "https://tappedout.net/mtg-decks/enduring-gravestorm/",
-        "title": "Enduring Gravestorm",
-        "primer": false
-      }
-    ],
-    "description": "Enduring Renewal gravestorm which is built as an answer to creature-heavy metas.",
-    "id": "xddsuuktsdy",
-    "recommended": false,
-    "title": "Fruity Pebbles"
-  },
-  {
-    "commander": [
-      {
-        "name": "Tymna the Weaver",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/c/bc7cbe9b-324e-42b8-94e2-36e91cb32163.jpg?1644853048"
-      },
-      {
-        "name": "Tana, the Bloodsower",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/a/3/a3d8d64f-a403-42a7-881b-4f70e9fe15a2.jpg?1562413758"
-      }
-    ],
-    "discord": {
-      "title": "Tymna & Tana's Dynamite Lounge",
-      "link": "https://discord.gg/bFqHXcX"
-    },
-    "updated": "2022-03-20T09:21:21.792Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "w", "g", "r"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/boQZOdVCC02uAjGpjShtLA",
-        "title": "Tymna Tana Double D",
-        "primer": false
-      }
-    ],
-    "description": "This deck seeks to consistently power out early wins by leveraging its commander Tymna, dorks and rituals to win with multiple one card win-conditions: Either cracking a Doomsday or Goblin Recruiter pile with her card draw or using her as Birthing Pod fodder to convert into a Kiki-Jiki and Felidar Guardian win. The deck plays best in creature-light metas where dorks can easily swing in to best utilize Tymna's card draw effect throughout the game to grind and threaten multiple wins.",
-    "id": "x7qt4qra9ps5",
-    "recommended": false,
-    "title": "Tana Tymna Snoop"
-  },
-  {
-    "commander": [
-      {
-        "name": "Kenrith, the Returned King",
-        "link": "https://img.scryfall.com/cards/normal/front/5/6/56c1227e-bea7-47cb-bbec-389a3d585af5.jpg?1571282458"
-      },
-      {
-        "name": "Najeela, the Blade-Blossom",
-        "link": "https://img.scryfall.com/cards/normal/front/2/c/2cb1d1da-6077-46b5-8c63-39882b8016f2.jpg?1567181270"
-      }
-    ],
-    "ttl": null,
-    "discord": null,
-    "updated": "2020-08-10T00:00:44.240Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "g", "r", "u", "w"],
-    "decklists": [
-      {
-        "link": "https://tappedout.net/mtg-decks/marmelade-sandwich-tea/",
-        "title": "Marmalade Sandwich & Tea ",
+        "link": "http://tappedout.net/mtg-decks/food-chain-tazri/",
+        "title": "Food Chain Tazri",
         "primer": true
       },
       {
-        "link": "https://tappedout.net/mtg-decks/cedh-you-cant-beat-me-im-full-of-tinier-men/",
-        "title": "You can't beat me! I'm full of tinier men!",
-        "primer": false
-      },
-      {
-        "link": "https://deckstats.net/decks/50436/1145708-extremespeed-lightning-druid-e",
-        "title": "5c Lightning Druid",
-        "primer": false
-      },
-      {
-        "link": "https://tappedout.net/mtg-decks/golos-druid-hulk-primer/?cb=1563511528",
-        "title": "Golos \"Druid\" Hulk",
-        "primer": false
-      },
-      {
-        "link": "https://archidekt.com/decks/86888",
-        "title": "Sisay, Onion Queen",
-        "primer": false
-      },
-      {
-        "link": "https://tappedout.net/mtg-decks/5c-flash-hulk-deck-kenrith-the-returned-king/",
-        "title": "5c Flash Hulk",
-        "primer": false
-      },
-      {
-        "link": "https://tappedout.net/mtg-decks/druid-breach/",
-        "title": "Druid Breach",
+        "link": "https://tappedout.net/mtg-decks/food-chain-niv/",
+        "title": "Food Chain Niv",
         "primer": false
       }
     ],
-    "description": "5 color Hulk decks tend to be aggressive, fast combo decks that often layer other win conditions on top of the Flash Hulk combo, including hermit druid, bomberman, scepter, and consult. The commander is often there to primarily serve as an outlet with several colors, though may provide layering such as with Najeela. ",
-    "id": "x40e32seqy1t",
+    "description": "A fast deck which combos using Food Chain, with good matchups vs control/stax. Over the years, FC started to see repeated power creep, with commanders requiring less pieces to close out games.",
+    "id": "x1uuemw89oma",
     "recommended": false,
-    "title": "5 Color Flash Hulk"
+    "title": "Food Chain History"
   },
   {
     "commander": [
@@ -326,30 +161,6 @@
   {
     "commander": [
       {
-        "name": "Zada, Hedron Grinder",
-        "link": "https://img.scryfall.com/cards/normal/front/b/a/baa36309-4bcc-4455-813a-c0243b906792.jpg?1562440241"
-      }
-    ],
-    "ttl": null,
-    "discord": { "title": "Red Love", "link": "https://discord.gg/HWf2VWJ" },
-    "updated": "2020-08-10T02:25:37.360Z",
-    "section": "DEPRECATED",
-    "colors": ["r"],
-    "decklists": [
-      {
-        "link": "https://tappedout.net/mtg-decks/26-04-19-zada-storm/",
-        "title": "Zada Storm",
-        "primer": false
-      }
-    ],
-    "description": "A combo deck that uses its commander in conjunction with other effects to assemble storm-like wins.",
-    "id": "xoq4l3hjg4ao",
-    "recommended": false,
-    "title": "Zada Storm"
-  },
-  {
-    "commander": [
-      {
         "name": "Heliod, Sun-Crowned",
         "link": "https://cards.scryfall.io/normal/front/0/1/01a8576e-cadc-4521-aadd-3a05f0bc4d20.jpg?1581479085"
       }
@@ -409,36 +220,6 @@
     "commander": [
       {
         "name": "Tymna the Weaver",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/c/bc7cbe9b-324e-42b8-94e2-36e91cb32163.jpg?1644853048"
-      },
-      {
-        "name": "Thrasios, Triton Hero",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/2/1/21e27b91-c7f1-4709-aa0d-8b5d81b22a0a.jpg?1606762176"
-      }
-    ],
-    "discord": {
-      "title": "Unified Hulk",
-      "link": "https://discord.gg/ZaEtFCd"
-    },
-    "updated": "2022-03-19T16:31:27.649Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "w", "g", "u"],
-    "decklists": [
-      {
-        "link": "https://tappedout.net/mtg-decks/sacred-hulk/",
-        "title": "Sacred Hulk",
-        "primer": true
-      }
-    ],
-    "description": "An efficient and stax-resistant Flash Hulk deck, which sacrifices playing white cards to utilize Sacred Guide with Laboratory Maniac to win the game at instant speed. Due to Laboratory Maniac's inherent synergy with forbidden tutors like Demonic Consultation or Tainted Pact, Sacred Hulk is a powerful, consistent, and efficient deck that attacks from multiple angles, and has no issue winning when Protean Hulk can't be used. Sacred Hulk is the best pick for slower, staxier metas out of the Thrasios/Tymna hulk decks.",
-    "id": "xnj7rv66ncve",
-    "recommended": false,
-    "title": "Thrasios Tymna Sacred Hulk"
-  },
-  {
-    "commander": [
-      {
-        "name": "Tymna the Weaver",
         "link": "https://cards.scryfall.io/normal/front/b/c/bc7cbe9b-324e-42b8-94e2-36e91cb32163.jpg?1644853048"
       },
       {
@@ -483,106 +264,6 @@
   {
     "commander": [
       {
-        "name": "Daretti, Scrap Savant",
-        "link": "https://img.scryfall.com/cards/normal/front/3/f/3f4e6adf-d52f-4087-a919-789a543a9a3e.jpg?1562273442"
-      }
-    ],
-    "ttl": null,
-    "discord": { "title": "Red Love", "link": "https://discord.gg/MYPEmJQ" },
-    "updated": "2020-08-10T02:25:44.383Z",
-    "section": "DEPRECATED",
-    "colors": ["r"],
-    "decklists": [
-      {
-        "link": "https://tappedout.net/mtg-decks/darettis-staxmobile/",
-        "title": "Daretti's Staxmobile",
-        "primer": false
-      }
-    ],
-    "description": "A stax deck which focuses on reanimating expensive and oppressive artifacts.",
-    "id": "xkddx0iptt8k",
-    "recommended": false,
-    "title": "Daretti Stax"
-  },
-  {
-    "commander": [
-      {
-        "name": "Fblthp, the Lost",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/5/2/52558748-6893-4c72-a9e2-e87d31796b59.jpg?1559959349"
-      }
-    ],
-    "discord": {
-      "title": "100 Card Doomsday",
-      "link": "https://discord.gg/nfc2vYx"
-    },
-    "updated": "2021-02-07T06:05:37.665Z",
-    "section": "DEPRECATED",
-    "colors": ["u"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/MG2xWW9Sb0C4EDS6U7kS5Q",
-        "title": "Fblthp: Lost and Found",
-        "primer": true
-      }
-    ],
-    "description": "This is an adaptive combo-control list that aims to create a \"100 card Doomsday pile\" through activating Proteus Staff. The deck has a high density of interaction, and runs little to no dead cards. It plays well under stax conditions, and is able to shut down faster decks due to it's wide variety of efficient control options. With numerous flex spots, the deck can be easily customized for specific metagames.",
-    "id": "xpnak3qh75h",
-    "recommended": false,
-    "title": "Fblthp"
-  },
-  {
-    "commander": [
-      {
-        "name": "General Tazri",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/3/4/34e9aa86-1a31-4c0f-928d-923f066286b6.jpg?1562905706"
-      }
-    ],
-    "discord": null,
-    "updated": "2022-03-19T16:33:17.605Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "g", "r", "u", "w"],
-    "decklists": [
-      {
-        "link": "http://tappedout.net/mtg-decks/food-chain-tazri/",
-        "title": "Food Chain Tazri",
-        "primer": true
-      }
-    ],
-    "description": "A fast and consistent combo list which is highly interactive and difficult to shut down.",
-    "id": "xyjhvf2027cl",
-    "recommended": false,
-    "title": "Tazri Food Chain"
-  },
-  {
-    "commander": [
-      {
-        "name": "Thrasios, Triton Hero",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/2/1/21e27b91-c7f1-4709-aa0d-8b5d81b22a0a.jpg?1606762176"
-      },
-      {
-        "name": "Vial Smasher the Fierce",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/7/2/722b1e02-2268-4e02-8d09-9b337da2a844.jpg?1562405249"
-      }
-    ],
-    "discord": null,
-    "updated": "2022-03-19T16:29:39.262Z",
-    "section": "DEPRECATED",
-    "colors": ["g", "u", "b", "r"],
-    "decklists": [
-      {
-        "link": "http://tappedout.net/mtg-decks/4c-necrotic-ooze-brewsday-112216/",
-        "title": "4c Necrotic Ooze",
-        "primer": false
-      }
-    ],
-    "description": "A fast reanimator deck which centers around Necrotic Ooze, Razaketh, and Jin-Gitaxias.",
-    "id": "xnzr7ki15kwh",
-    "recommended": false,
-    "title": "Thrasios Vial Nooze Reanimator"
-  },
-  {
-    "commander": [
-      {
         "name": "Tymna the Weaver",
         "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/c/bc7cbe9b-324e-42b8-94e2-36e91cb32163.jpg?1644853048"
       },
@@ -613,150 +294,7 @@
     "description": "A sans-red version of midrange Ad-Naus, with asymmetrical hate pieces and more storm.",
     "id": "x7u18ra633s3",
     "recommended": false,
-    "title": "Thrasios Tymna E-MAN"
-  },
-  {
-    "commander": [
-      {
-        "name": "Brago, King Eternal",
-        "link": "https://cards.scryfall.io/normal/front/0/a/0ac3fb08-741a-49e5-9fae-b26819677d24.jpg?1631235340"
-      }
-    ],
-    "discord": {
-      "title": "The Blink Tank",
-      "link": "https://discord.gg/ZkX5uQ8"
-    },
-    "updated": "2022-10-19T20:25:43.581Z",
-    "section": "DEPRECATED",
-    "colors": ["u", "w"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/hbLMs7xcfUyun2nxK-sRlw",
-        "title": "Brago, playing cedh with Azorius",
-        "primer": true
-      }
-    ],
-    "description": "Brago is a stax deck that gains an advantage over its opponents through stax pieces and powerful carddraw. Brago himself serves two main purposes in the deck. By flickering mana rocks, Brago lets pilots play through the suite of backbreaking stax pieces that it employs, such as Stasis and Static Orb. By flickering permanents that draw cards when they enter, such as Omen of the Sea, Brago can continually interact by keeping pilots' hands stuffed.",
-    "id": "x3zet7uw6j3x",
-    "recommended": false,
-    "title": "Brago Stax"
-  },
-  {
-    "commander": [
-      {
-        "name": "Tymna the Weaver",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/c/bc7cbe9b-324e-42b8-94e2-36e91cb32163.jpg?1644853048"
-      },
-      {
-        "name": "Thrasios, Triton Hero",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/2/1/21e27b91-c7f1-4709-aa0d-8b5d81b22a0a.jpg?1606762176"
-      }
-    ],
-    "discord": null,
-    "updated": "2022-03-19T16:32:25.011Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "w", "g", "u"],
-    "decklists": [
-      {
-        "link": "http://tappedout.net/mtg-decks/sigil-hulk-4/",
-        "title": "Sigil Hulk",
-        "primer": true
-      },
-      {
-        "link": "http://tappedout.net/mtg-decks/sigil-hulk/",
-        "title": "Sigil Hulk",
-        "primer": false
-      }
-    ],
-    "description": "Sigil Hulk is a layered midrange-combo deck focused around Protean Hulk, Isochron Scepter, and Demonic Consultation. Thanks to the variety of effects and paths to victory, Sigil Hulk can be played in different metas against a variety of stax pieces. Often Sigil Hulk can grind out value better than anyone else at the table and play a win condition that avoids the stax pieces on the battlefield the most successfully.",
-    "id": "xzd73pz03u5n",
-    "recommended": false,
-    "title": "Thrasios Tymna Sigil Hulk"
-  },
-  {
-    "commander": [
-      {
-        "name": "Tymna the Weaver",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/c/bc7cbe9b-324e-42b8-94e2-36e91cb32163.jpg?1644853048"
-      },
-      {
-        "name": "Kraum, Ludevic's Opus",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/5/5/557fcd17-6cb3-414a-b2b1-ea9ae32e5aec.jpg?1644853032"
-      }
-    ],
-    "discord": {
-      "title": "The MAN Model",
-      "link": "https://discord.gg/9AwgYgs"
-    },
-    "updated": "2022-03-19T16:33:05.889Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "w", "r", "u"],
-    "decklists": [
-      {
-        "link": "https://tappedout.net/mtg-decks/opus-consultation/",
-        "title": "Opus Consultation",
-        "primer": true
-      }
-    ],
-    "description": "A sans-green version of midrange Ad-Naus, with asymmetrical hate pieces and stormy bits",
-    "id": "xgyi9mth7ca",
-    "recommended": false,
-    "title": "Kraum Tymna MAN"
-  },
-  {
-    "commander": [
-      {
-        "name": "Nin, the Pain Artist",
-        "link": "https://img.scryfall.com/cards/normal/front/0/0/005ad65e-cf0b-48e9-a314-2ebba5a1400c.jpg?1562598065"
-      }
-    ],
-    "ttl": null,
-    "discord": null,
-    "updated": "2020-08-10T02:24:07.977Z",
-    "section": "DEPRECATED",
-    "colors": ["r", "u"],
-    "decklists": [
-      {
-        "link": "https://deckbox.org/sets/1253315?s=c&o=a",
-        "title": "cEDH Nin",
-        "primer": true
-      },
-      {
-        "link": "https://tappedout.net/mtg-decks/nin-competitive-primer-1/",
-        "title": "Nin Competitive Primer ",
-        "primer": true
-      }
-    ],
-    "description": "Nin is an artifact combo list with a healthy dose of interaction and a little stax. Our gameplan is to generate infinite mana using one of our compact 2-card combos and find an outlet to kill the table (if Nin herself isn't available). While not as ubiquitous as 4-color Thrasios, Nin offeres a variety of helpful red stax pieces and interaction, enabling a deck style with all the payoff cards of a monoblue deck (High Tide, Vedalken Shackles) while still having a variety of powerful answers.",
-    "id": "x7mn4owblb82",
-    "recommended": false,
-    "title": "Nin Scepter"
-  },
-  {
-    "commander": [
-      {
-        "name": "Muldrotha, the Gravetide",
-        "link": "https://cards.scryfall.io/normal/front/c/4/c4125bb0-b104-438e-a6a2-97f9d141243c.jpg?1662529704"
-      }
-    ],
-    "discord": {
-      "title": "The Graveyard",
-      "link": "https://discord.gg/CGr6ppz"
-    },
-    "updated": "2022-10-23T19:13:19.013Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "g", "u"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/qULIEoTSeUqKxmUPjrRRJw",
-        "title": "Make No Gravetide Image",
-        "primer": true
-      }
-    ],
-    "description": "A deck that uses Muldrotha to recur hate or value pieces before its combo finish.",
-    "id": "xb8ypbat95e",
-    "recommended": false,
-    "title": "Muldrotha Midrange"
+    "title": "[HISTORIC] Thrasios Tymna E-MAN"
   },
   {
     "commander": [
@@ -817,69 +355,32 @@
         "link": "https://tappedout.net/mtg-decks/oracle-core/",
         "title": "Oracle Core",
         "primer": false
+      },
+      {
+        "link": "https://deckstats.net/decks/50436/1152876-4c-lightning-druid/en",
+        "title": "Lightning Druid",
+        "primer": false
+      },
+      {
+        "link": "http://tappedout.net/mtg-decks/breakfast-hulk/",
+        "title": "Breakfast Hulk",
+        "primer": false
+      },
+      {
+        "link": "https://tappedout.net/mtg-decks/shuffle-hulk/",
+        "title": "Shuffle Hulk",
+        "primer": true
+      },
+      {
+        "link": "https://tappedout.net/mtg-decks/sacred-hulk/",
+        "title": "Sacred Hulk",
+        "primer": true
       }
     ],
     "description": "Oracle Hulk is a Flash Hulk deck that combines the historic speed and efficiency of Flash as a win condition, with the card quality and resilience of Consultation to deadly effect. Oracle hulk is equally capable of keeping up with the fastest of the fast, as well as out-grinding the best of them. The deck is incredibly incredibly difficult to meaningfully disrupt, and will compete at the top level in all but the most hostile metas.",
     "id": "xnetlvohbtj",
     "recommended": false,
-    "title": "Thrasios Tymna Oracle Hulk"
-  },
-  {
-    "commander": [
-      {
-        "name": "Kalamax, the Stormsire",
-        "link": "https://cards.scryfall.io/normal/front/f/9/f990cd78-2165-446f-a116-ae55d7a0f00d.jpg?1591234251"
-      }
-    ],
-    "discord": {
-      "title": "Kalamaxing",
-      "link": "https://discord.gg/HEG8YxSxFG"
-    },
-    "updated": "2022-10-24T11:37:38.196Z",
-    "section": "DEPRECATED",
-    "colors": ["g", "r", "u"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/7o0BSUMz6U6aHAVfK1JWKQ",
-        "title": "Kalamax Breach",
-        "primer": true
-      }
-    ],
-    "description": "Kalamax offers a sizeable body that gladly attacks every turn putting pressure on various strategies. The value we can maintain off of regularly used instants is unparalleled. We are a pure control deck aiming to get to the mid to late game and grind our oppoents before going for a well backed combo finish. Many cards layer for infinte turns and really optimize the few tutors temur has to offer. ",
-    "id": "xheie3eylgkd",
-    "recommended": false,
-    "title": "Kalamax Control Breach"
-  },
-  {
-    "commander": [
-      {
-        "name": "Selvala, Explorer Returned",
-        "link": "https://cards.scryfall.io/normal/front/b/d/bd39ebe5-2725-4cfb-8a94-54e71d55e8b3.jpg?1664361554"
-      }
-    ],
-    "discord": {
-      "title": "Explorers Returned",
-      "link": "https://discord.gg/PhB7wvG"
-    },
-    "updated": "2022-10-19T20:22:49.873Z",
-    "section": "DEPRECATED",
-    "colors": ["g", "w"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/4FAartw-BEKZq-5pONsN8A",
-        "title": "Selvala Twiddlestorm",
-        "primer": true
-      },
-      {
-        "link": "https://www.moxfield.com/decks/7rV-BDTUcEush4GjLnx-0A",
-        "title": "The Fastest Explorer in the West",
-        "primer": true
-      }
-    ],
-    "description": "This is a resilient yet fast combo deck built around many infinite mana combos that each can win the game on the spot if Selvala is in play. Using Selvala as a draw outlet, this deck produces large amounts of mana quickly from cards like Priest of Titania, then uses cards like Umbral Mantle, Staff of Domination, and Temur Sabertooth to reuse Selvala and win the game. This deck is capable of winning quickly, even through multiple pieces of interaction, but can still grind in the late game.",
-    "id": "x262log3fbhu",
-    "recommended": false,
-    "title": "Selvala Twiddlestorm"
+    "title": "[HISTORIC] Thrasios Tymna Flash Hulk"
   },
   {
     "commander": [
@@ -910,29 +411,6 @@
   {
     "commander": [
       {
-        "name": "Breya, Etherium Shaper",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/2/1/2143f700-7311-46a4-ad9b-4e743a345785.jpg?1599707856"
-      }
-    ],
-    "discord": null,
-    "updated": "2022-03-19T16:32:51.193Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "r", "u", "w"],
-    "decklists": [
-      {
-        "link": "http://tappedout.net/mtg-decks/breya-ad-naus/",
-        "title": "Breya Ad naus",
-        "primer": true
-      }
-    ],
-    "description": "A split reanimator/Doomsday list centered around Bomberman, WGD, and Doomsday.",
-    "id": "x3cp7w18v57f",
-    "recommended": false,
-    "title": "Breya Doomsday"
-  },
-  {
-    "commander": [
-      {
         "name": "Arcum Dagsson",
         "link": "https://img.scryfall.com/cards/normal/front/f/5/f5ecf811-2efc-4fa6-9af8-ef09f559ec1a.jpg?1596138059"
       }
@@ -952,30 +430,7 @@
     "description": "An all-in fast combo list which chains Arcum's ability using Paradox/Flute.",
     "id": "xfsowebc7qh4",
     "recommended": false,
-    "title": "Paradox Arcum"
-  },
-  {
-    "commander": [
-      {
-        "name": "Tatyova, Benthic Druid",
-        "link": "https://cards.scryfall.io/normal/front/9/3/93657aaa-7a0f-49ad-b026-6f79b3bd6768.jpg?1665822988"
-      }
-    ],
-    "discord": null,
-    "updated": "2023-03-27T14:58:45.730Z",
-    "section": "DEPRECATED",
-    "colors": ["g", "u"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/Vva2blXPDEWTPCIW7QfpbA",
-        "title": "Simic Ad Naus in the CZ",
-        "primer": false
-      }
-    ],
-    "description": "Tatyova is a commander centric deck that aims to first ramp, resolve Tatyova, proceed to take multiple extra turns, and then piece together a win. Tatyova sidesteps many different kinds of stax pieces and represents a very powerful engine in the command zone.",
-    "id": "xiekjtxv3gqn",
-    "recommended": false,
-    "title": "Tatyova Turns"
+    "title": "[HISTORIC] Paradox Arcum"
   },
   {
     "commander": [
@@ -1071,7 +526,7 @@
     "description": "Rakdos Worldgorger decks leverage Black's tutor suite and the availability of cheap outlet commanders to assemble the Worldgorger Dragon combo. Decks often feature anti-meta disruptive elements such as creature hate and hand hate.",
     "id": "xn90pgz185hb",
     "recommended": false,
-    "title": "Rakdos WGD"
+    "title": "[HISTORIC] Xantcha WGD"
   },
   {
     "commander": [
@@ -1099,30 +554,6 @@
   {
     "commander": [
       {
-        "name": "Neheb, the Worthy",
-        "link": "https://img.scryfall.com/cards/normal/front/7/5/7593d5fb-c6b3-4d24-b9d3-97a4378161fd.jpg?1543676084"
-      }
-    ],
-    "ttl": null,
-    "discord": null,
-    "updated": "2020-08-10T02:24:52.943Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "r"],
-    "decklists": [
-      {
-        "link": "https://tappedout.net/mtg-decks/neheb-0-rack/",
-        "title": "Neheb 0 Rack",
-        "primer": false
-      }
-    ],
-    "description": "A stax list which uses symmetrical discard effects and plays reanimator to break parity.",
-    "id": "x1x0yuxq3x29",
-    "recommended": false,
-    "title": "Neheb Handstax"
-  },
-  {
-    "commander": [
-      {
         "name": "Scion of the Ur-Dragon",
         "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/5/6/565b2a40-57b1-451f-8c2a-e02222502288.jpg?1562608891"
       }
@@ -1134,7 +565,7 @@
     "decklists": [
       {
         "link": "https://tappedout.net/mtg-decks/18-12-18-scion-reanimator/",
-        "title": "Scion Reanimator",
+        "title": "HISTORIC Scion Reanimator",
         "primer": false
       }
     ],
@@ -1173,57 +604,6 @@
   {
     "commander": [
       {
-        "name": "Alesha, Who Smiles at Death",
-        "link": "https://img.scryfall.com/cards/normal/front/0/0/0088e145-d402-42bb-98b5-af33901de44a.jpg?1591320536"
-      }
-    ],
-    "ttl": null,
-    "discord": null,
-    "updated": "2020-08-10T02:22:09.879Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "r", "w"],
-    "decklists": [
-      {
-        "link": "https://tappedout.net/mtg-decks/alesha-stax-1/",
-        "title": "Alesha Stax",
-        "primer": false
-      }
-    ],
-    "description": "A stax/hatebears deck which keeps hatebears alive using Alesha's reanimation.",
-    "id": "xqefitnojfl",
-    "recommended": false,
-    "title": "Alesha Stax"
-  },
-  {
-    "commander": [
-      {
-        "name": "Silas Renn, Seeker Adept",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/4/e/4e3fe912-1374-47c7-b73f-89ef55c479c1.jpg?1562399367"
-      },
-      {
-        "name": "Thrasios, Triton Hero",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/2/1/21e27b91-c7f1-4709-aa0d-8b5d81b22a0a.jpg?1606762176"
-      }
-    ],
-    "discord": null,
-    "updated": "2022-03-19T16:29:06.307Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "u", "g"],
-    "decklists": [
-      {
-        "link": "https://tappedout.net/mtg-decks/bug-citadel-storm/",
-        "title": "BUG Citadel Storm",
-        "primer": false
-      }
-    ],
-    "description": "BUG Scepter storm decks tend to rely on the card quality of the BUG color combination to leverage the IsoRev combo, along with an infinite mana outlet in the command zone.",
-    "id": "xbuhphiv5xch",
-    "recommended": false,
-    "title": "Silas Thrasios Scepter"
-  },
-  {
-    "commander": [
-      {
         "name": "Thrasios, Triton Hero",
         "link": "https://cards.scryfall.io/normal/front/2/1/21e27b91-c7f1-4709-aa0d-8b5d81b22a0a.jpg?1606762176"
       },
@@ -1252,32 +632,6 @@
     "id": "xydig1rxziqe",
     "recommended": false,
     "title": "Thrasios Vial Midrange"
-  },
-  {
-    "commander": [
-      {
-        "name": "Ghave, Guru of Spores",
-        "link": "https://cards.scryfall.io/normal/front/c/2/c2be0e99-cf43-423f-974f-02e3313b3aa9.jpg?1662528636"
-      }
-    ],
-    "discord": {
-      "title": "Ghave Discord",
-      "link": "https://discord.gg/RCZcBJT"
-    },
-    "updated": "2022-10-23T19:16:25.992Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "g", "w"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/fsrJzDCtX0-8UZczYGcwDQ/",
-        "title": "Ghave Adnaus",
-        "primer": true
-      }
-    ],
-    "description": "Adnaus/Earthcraft Ghave combo aims to slow the game down through cheap stax/hate pieces long enough to assemble an infinite combo with Ghave. Earthcraft, Ashnod's Altar and Phyrexian Altar are the key mana combo cards. Young Wolf and Strangleroot Geist are key counter cards. It's good against both grindy and aggro metas, as it can adapt to both. The rest of the deck is stax, midrange value and tutors. ",
-    "id": "xi5a73sbe0n",
-    "recommended": false,
-    "title": "Ghave Combo"
   },
   {
     "commander": [
@@ -1326,70 +680,7 @@
     "description": "A fast and graveyard-reliant combo deck which layers together multiple win conditions, often including Hermit Druid, Food Chain, and sometimes other options like Reanimator, Protean Hulk, and Doomsday.\n",
     "id": "xedsxgf4by6a",
     "recommended": false,
-    "title": "Sidisi Layered Combo"
-  },
-  {
-    "commander": [
-      {
-        "name": "Kess, Dissident Mage",
-        "link": "https://img.scryfall.com/cards/normal/front/3/6/3651483f-6077-4b4e-b2c7-9d57f22c65dc.jpg?1562202361"
-      }
-    ],
-    "ttl": null,
-    "discord": {
-      "title": "Grixis Mean Girls",
-      "link": "https://discord.gg/6v7wkPT"
-    },
-    "updated": "2020-08-10T02:23:09.975Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "r", "u"],
-    "decklists": [
-      {
-        "link": "https://tappedout.net/mtg-decks/17-09-16-grixis-twin/",
-        "title": "Grixis Twin",
-        "primer": false
-      }
-    ],
-    "description": "A Kiki-Jiki/Lab maniac reanimator list which uses Kess to flashback utility cards wincons",
-    "id": "xuxvr2psq1b",
-    "recommended": false,
-    "title": "Grixis Twin"
-  },
-  {
-    "commander": [
-      {
-        "name": "Taigam, Ojutai Master",
-        "link": "https://cards.scryfall.io/normal/front/b/4/b47e2781-544f-442c-98d0-43b9d91bab03.jpg?1562621099"
-      }
-    ],
-    "discord": {
-      "title": "Draw-Go Control",
-      "link": "https://discord.gg/2qmqsAz"
-    },
-    "updated": "2022-10-24T07:39:33.908Z",
-    "section": "DEPRECATED",
-    "colors": ["u", "w"],
-    "decklists": [
-      {
-        "link": "https://archidekt.com/decks/409513#Taigam_Extra_Turns",
-        "title": "Taigam Extra Turns",
-        "primer": false
-      },
-      {
-        "link": "https://tappedout.net/mtg-decks/05-12-17-NQO-taigam-control/",
-        "title": "Taigam Xerox/Control",
-        "primer": false
-      },
-      {
-        "link": "https://www.moxfield.com/decks/rRTQZ6bk1EKOwCfBTntf1Q",
-        "title": "Tragically Taking Turns",
-        "primer": false
-      }
-    ],
-    "description": "Taigam Turns is a meta-buster control deck that uses Taigam as a strong control piece, value engine, and eventual win condition. The goal is to control the game with a fully powered suite of counter magic and stax pieces, and win through infinite turns using Mystic Sanctuary loops. The deck is highly tunable to local metas, as many of the slots in the deck are open for customization.",
-    "id": "xuzaqfuyoa4j",
-    "recommended": false,
-    "title": "Taigam Extra Turns"
+    "title": "[HISTORIC] Sidisi Layered Combo"
   },
   {
     "commander": [
@@ -1416,78 +707,6 @@
     "id": "xtoaehsryw2",
     "recommended": false,
     "title": "Rielle Breach"
-  },
-  {
-    "commander": [
-      {
-        "name": "Hapatra, Vizier of Poisons",
-        "link": "https://cards.scryfall.io/normal/front/5/6/56fbbcc9-db23-4902-b0f7-cea78a2a36af.jpg?1543676055"
-      }
-    ],
-    "discord": { "title": "Hapatra", "link": "https://discord.gg/xV6mHQC" },
-    "updated": "2022-10-23T19:17:03.913Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "g"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/3jJGHnq1-UO_dHUSXy0lnQ",
-        "title": "Turbo Poison Hulk",
-        "primer": true
-      }
-    ],
-    "description": "Turbo Poison Hulk is an adaptive deck in the B/G colors that leverages Hapatra's ability to create bodies in order to fuel an aristocrat-style combo. The primary strategy is to assemble a winning combo off of a Protean Hulk death trigger. This deck has a very high tutor density to assemble your missing pieces and can win as early as turn three. Instant speed stack interaction has been prioritized over various stax pieces to fight against the blue menace!",
-    "id": "x10mybrm99rn",
-    "recommended": false,
-    "title": "Hapatra Hulk"
-  },
-  {
-    "commander": [
-      {
-        "name": "God-Eternal Kefnet",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/5/e/5e14060f-9167-4e28-a053-77689e066e30.jpg?1559959354"
-      }
-    ],
-    "discord": { "title": "Kefnet", "link": "https://discord.gg/HRfaycS" },
-    "updated": "2020-12-06T06:04:19.297Z",
-    "section": "DEPRECATED",
-    "colors": ["u"],
-    "decklists": [
-      {
-        "link": "https://tappedout.net/mtg-decks/kefnet-turns-cedh-primer/",
-        "title": "Kefnet Turns",
-        "primer": false
-      }
-    ],
-    "description": "The main goal of the deck is to control the board long enough to deploy our commander with reasonable protection with plenty of interaction in the forms of counters. Once the board is under control, the ultimate goal is to take infinite turns",
-    "id": "xypkm979h959",
-    "recommended": false,
-    "title": "Kefnet Turns"
-  },
-  {
-    "commander": [
-      {
-        "name": "Sygg, River Cutthroat",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/1/b/1b10e23a-7cf5-47dc-9c51-5cbe444a99c7.jpg?1604197497"
-      }
-    ],
-    "discord": {
-      "title": "Draw-Go Control",
-      "link": "https://discord.gg/UQbRkHz"
-    },
-    "updated": "2021-08-22T17:10:29.193Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "u"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/ozNqMp_H90mIuyhnKLXI4g",
-        "title": "Sygg control",
-        "primer": false
-      }
-    ],
-    "description": "Sygg Draw-Go is a deck that aims to control the table with counterspells while creating card advantage with its commander Sygg. The UB colors allow it to win with consultation combo. This deck relies on its opponnents taking damage with through combat and through their own cards, such as mana crypt. Otherwise, Sygg may fail to generate enough card draw to fuel the deck.",
-    "id": "x28eh08xst3j",
-    "recommended": false,
-    "title": "Sygg Control"
   },
   {
     "commander": [
@@ -1543,86 +762,6 @@
   {
     "commander": [
       {
-        "name": "Tymna the Weaver",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/c/bc7cbe9b-324e-42b8-94e2-36e91cb32163.jpg?1644853048"
-      },
-      {
-        "name": "Thrasios, Triton Hero",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/2/1/21e27b91-c7f1-4709-aa0d-8b5d81b22a0a.jpg?1606762176"
-      }
-    ],
-    "discord": {
-      "title": "Unified Hulk",
-      "link": "https://discord.gg/n8xVUxu"
-    },
-    "updated": "2022-03-19T16:31:50.409Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "w", "g", "u"],
-    "decklists": [
-      {
-        "link": "http://tappedout.net/mtg-decks/breakfast-hulk/",
-        "title": "Breakfast Hulk",
-        "primer": false
-      }
-    ],
-    "description": "A Flash Hulk combo deck layered with Hermit Druid, based around infinitely self-milling.",
-    "id": "xegr4npucnop",
-    "recommended": false,
-    "title": "Thrasios Tymna Breakfast Hulk"
-  },
-  {
-    "commander": [
-      {
-        "name": "Meren of Clan Nel Toth",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/1/7/17d6703c-ad79-457b-a1b5-c2284e363085.jpg?1592673422"
-      }
-    ],
-    "discord": {
-      "title": "Meren",
-      "link": "https://discordapp.com/invite/qUVxcc6"
-    },
-    "updated": "2022-01-28T05:47:52.997Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "g"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/mXvFQ7yKz0OFrsbWAv2bkQ/",
-        "title": "Honorless Meren",
-        "primer": true
-      }
-    ],
-    "description": "An adaptive list which is able to both combo early or grind out value in the lategame. It can threaten wins as early as turn 3, and can recover by grinding out value should that fail via Meren and other value engines. Its main win condition is a Protean Hulk pile, with a backup Earthcraft/Squirrel Nest win condition, and Razaketh lines that lead to both.",
-    "id": "x9kchj23rcmb",
-    "recommended": false,
-    "title": "Meren Hulk"
-  },
-  {
-    "commander": [
-      {
-        "name": "General Tazri",
-        "link": "https://img.scryfall.com/cards/normal/front/3/4/34e9aa86-1a31-4c0f-928d-923f066286b6.jpg?1562905706"
-      }
-    ],
-    "ttl": null,
-    "discord": null,
-    "updated": "2020-08-10T00:00:53.522Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "g", "r", "u", "w"],
-    "decklists": [
-      {
-        "link": "http://tappedout.net/mtg-decks/tazri-hulk-druid/",
-        "title": "Tazri Hulk Druid",
-        "primer": false
-      }
-    ],
-    "description": "A fast and resilient layered combo list with Food Chain, Razaketh, and Hulk",
-    "id": "xih57eyvesjp",
-    "recommended": false,
-    "title": "Tazri Hulk"
-  },
-  {
-    "commander": [
-      {
         "name": "Tayam, Luminous Enigma",
         "link": "https://cards.scryfall.io/normal/front/0/5/05b837a2-5773-4340-87f9-b4d6a43deb27.jpg?1591234301"
       }
@@ -1650,36 +789,6 @@
     "id": "xfjy2oh6pv1f",
     "recommended": false,
     "title": "Tayam Midrange"
-  },
-  {
-    "commander": [
-      {
-        "name": "Pir, Imaginative Rascal",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/5/a/5a7241f5-4d69-47fe-b037-95037008184c.jpg?1562913367"
-      },
-      {
-        "name": "Toothy, Imaginary Friend",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/e/b/ebdf2f50-f69a-47c4-a75f-ff55781bb0c8.jpg?1562942414"
-      }
-    ],
-    "discord": {
-      "title": "A World of Pir Imagination",
-      "link": "https://discord.gg/uQGhPPb"
-    },
-    "updated": "2022-04-17T20:15:37.346Z",
-    "section": "DEPRECATED",
-    "colors": ["g", "u"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/XzOpWa7hKEiCTJQ4kIbH2A",
-        "title": "Pir Imagination",
-        "primer": false
-      }
-    ],
-    "description": "This is a slower storm deck that seeks to quickly land Toothy and use cantrips, wheels, and draw engines to put counters on him. From there, the goal is to resolve flicker effects on Toothy. The flickers this deck uses bring Toothy back to the battlefield immediately meaning he will see all the cards you draw from him leaving the battlefield netting you huge amounts of cards at little cost. This deck does best in a slow meta where it can use its cantrips to set up a mid game combo turn. ",
-    "id": "xdiau6juqtka",
-    "recommended": false,
-    "title": "Pir Toothy Storm"
   },
   {
     "commander": [
@@ -1744,56 +853,6 @@
   {
     "commander": [
       {
-        "name": "Tymna the Weaver",
-        "link": "https://cards.scryfall.io/normal/front/b/c/bc7cbe9b-324e-42b8-94e2-36e91cb32163.jpg?1644853048"
-      },
-      {
-        "name": "Ikra Shidiqi, the Usurper",
-        "link": "https://cards.scryfall.io/normal/front/8/f/8f2abcc3-dc33-4b9d-a372-1d936e954f94.jpg?1562275017"
-      }
-    ],
-    "discord": { "title": "Turbo Farm", "link": "https://discord.gg/EXJCGgS" },
-    "updated": "2022-10-23T19:16:18.191Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "w", "g"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/vozlLm9Hyki2PFvBcJlGBg",
-        "title": "Abzan Farm",
-        "primer": false
-      }
-    ],
-    "description": "A general turbo ad nauseam list that shines in slower metas because of Tymna's ability to grind and Ikra's ability to turn life into more resources. Missing red is very noticeable for the strategy nowadays, as many efficient rituals or game-winning spells have moved to that colour. This list is very good if you're specifically looking to play a Abzan deck with a noncreature combo strategy, but doesn't have many distinct advantages over comparable strategies with more or different colours, as green and white cards are mostly support colours for that strategy.",
-    "id": "xhncsoirphpv",
-    "recommended": false,
-    "title": "Ikra Tymna Turbo Naus"
-  },
-  {
-    "commander": [
-      {
-        "name": "Yidris, Maelstrom Wielder",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/c/2/c219dd22-433c-4f6a-a0c4-fae12239291c.jpg?1562418099"
-      }
-    ],
-    "discord": { "title": "Yidris", "link": "https://discord.gg/RVE3Yxg" },
-    "updated": "2022-01-28T05:50:55.712Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "g", "r", "u"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/ZUw1dxdOJUyMvi2VZoIXJw",
-        "title": "Yidris Storm Consultation",
-        "primer": true
-      }
-    ],
-    "description": "A storm deck which can aggressively push for wins using its commander in conjunction with typical storm lines. ",
-    "id": "x3ca28x2xc5a",
-    "recommended": false,
-    "title": "Yidris Storm"
-  },
-  {
-    "commander": [
-      {
         "name": "Cazur, Ruthless Stalker",
         "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/d/5/d5e857aa-06b7-4bce-b56d-6f6be5cfc77b.jpg?1591234223"
       },
@@ -1842,38 +901,7 @@
     "description": "5 Color Storm is an archetype that combines the best tutors, acceleration, and combo enablers in every color to assemble powerful storm turns often involving Ad Nauseam, Yawg Will, Breach, and 2-card combos such as Consultation.",
     "id": "xvnyzbg3z2ub",
     "recommended": false,
-    "title": "Golos Storm"
-  },
-  {
-    "commander": [
-      {
-        "name": "Sidisi, Brood Tyrant",
-        "link": "https://cards.scryfall.io/normal/front/6/b/6b8e44d4-db67-4bf4-97c0-ffe6a0eb2954.jpg?1689999255"
-      }
-    ],
-    "discord": {
-      "title": "Sidisi, Brood Tyrant cEDH",
-      "link": "https://discord.gg/Fx2D2S2"
-    },
-    "updated": "2023-09-20T06:46:13.663Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "g", "u"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/W3Ko6od8a0CJ5T2Kd1ftdQ",
-        "title": "Doom Druid",
-        "primer": false
-      },
-      {
-        "link": "https://tappedout.net/mtg-decks/tyrant-queen/",
-        "title": "Tyrant Queen",
-        "primer": true
-      }
-    ],
-    "description": "A fast and graveyard-reliant combo deck which layers several win conditions together, often including Food Chain, Hulk, and sometimes Hermit Druid and Reanimator.",
-    "id": "x3c4p418nbh9",
-    "recommended": false,
-    "title": "Sidisi Layered Combo"
+    "title": "[HISTORIC] Golos Storm"
   },
   {
     "commander": [
@@ -1900,37 +928,6 @@
     "id": "xeoc8ser38fv",
     "recommended": false,
     "title": "Rashmi Control"
-  },
-  {
-    "commander": [
-      {
-        "name": "Prime Speaker Vannifar",
-        "link": "https://cards.scryfall.io/normal/front/8/4/84abfc59-10a7-4cb5-9cdd-81797116c810.jpg?1572893948"
-      }
-    ],
-    "discord": {
-      "title": "Prime Speaker Vannifar",
-      "link": "https://discord.gg/YRTj2KE"
-    },
-    "updated": "2022-10-24T00:46:35.171Z",
-    "section": "DEPRECATED",
-    "colors": ["g", "u"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/lnGMJblY0kCqTPxVmSpmGg",
-        "title": "Vannifar Hasteless Combo",
-        "primer": true
-      },
-      {
-        "link": "https://www.moxfield.com/decks/vbDFJXl9vUOwg9QTXKDLvQ",
-        "title": "Prime Rib",
-        "primer": false
-      }
-    ],
-    "description": "Vannifar is a creature combo deck that uses several untap effects to reuse Vannifar multiple times in a turn in order to cheat out an infinite combo. The deck is extremely commander reliant, but guarantees victory if you can untap with it. Aside from its main combo the deck doesn't have many other angles to push, so it tries and tries again until it succeeds.",
-    "id": "xnzkagdg9qd",
-    "recommended": false,
-    "title": "Vannifar Creature-Chain"
   },
   {
     "commander": [
@@ -1966,58 +963,6 @@
   {
     "commander": [
       {
-        "name": "Kess, Dissident Mage",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/e/8/e83e6d7a-3af0-4955-8004-2310f051e306.jpg?1650423096"
-      }
-    ],
-    "discord": {
-      "title": "Grixis Mean Girls",
-      "link": "https://discord.gg/m4uMbqqrye"
-    },
-    "updated": "2022-05-01T09:58:00.021Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "r", "u"],
-    "decklists": [
-      {
-        "link": "https://tappedout.net/mtg-decks/kess-final-turns/",
-        "title": "https://archidekt.com/decks/370988#Jeleva_Storm",
-        "primer": false
-      }
-    ],
-    "description": "A unique combo list which uses Final Fortune-type extra turns to combo off.",
-    "id": "xgajopyuhp1",
-    "recommended": false,
-    "title": "Kess Turns"
-  },
-  {
-    "commander": [
-      {
-        "name": "Momir Vig, Simic Visionary",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/2/5/25a8c801-df0c-402b-a41c-4703a2abfb66.jpg?1593273661"
-      }
-    ],
-    "discord": {
-      "title": "Hackball Tech Support",
-      "link": "https://discord.gg/K7AUzH4"
-    },
-    "updated": "2022-09-02T04:42:39.826Z",
-    "section": "DEPRECATED",
-    "colors": ["g", "u"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/tIL7CthM5kuTXkzgdjfCxA",
-        "title": "Momir Vig's Hackball",
-        "primer": true
-      }
-    ],
-    "description": "A midrange deck which ramps into Momir, and combos with a color changing effect for a deterministic and consistent win. Besides combo pieces, the deck consists of a large quantity of ramp, counterspells, removal, and a few stax effects. While effective against many stax effects because of Momir’s toolboxing abilities, the deck will struggle if its ramp plan is disrupted or Momir is undefended.",
-    "id": "x7s90b16vhku",
-    "recommended": false,
-    "title": "Momir Hackball"
-  },
-  {
-    "commander": [
-      {
         "name": "The Mimeoplasm",
         "link": "https://img.scryfall.com/cards/normal/front/a/e/aedc7a6b-c481-4719-bc83-424eeb216aef.jpg?1562275521"
       }
@@ -2040,7 +985,7 @@
     "description": "A Protean Hulk/Reanimator deck which uses Mimeoplasm as a backup reanimator.",
     "id": "xulyhe5a779e",
     "recommended": false,
-    "title": "Mimeo Reanimator Hulk"
+    "title": "[HISTORIC] Mimeo Reanimator Hulk"
   },
   {
     "commander": [
@@ -2095,71 +1040,7 @@
     "description": "A stormish deck which focuses on using Thrasios as both a noninfinite and infinite sink.",
     "id": "xwdgp5628nl",
     "recommended": false,
-    "title": "Thrasios Vial Paradox Scepter"
-  },
-  {
-    "commander": [
-      {
-        "name": "Korvold, Fae-Cursed King",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/9/2/92ea1575-eb64-43b5-b604-c6e23054f228.jpg?1571197150"
-      }
-    ],
-    "discord": {
-      "title": "Korvold's Keep",
-      "link": "https://discord.gg/7xFWn9F"
-    },
-    "updated": "2022-01-28T05:51:56.117Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "g", "r"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/uxtkikNzW0mTluQuOGF4eg",
-        "title": "The King's Chain",
-        "primer": true
-      }
-    ],
-    "description": "A food chain combo deck with a commander that both serves as an outlet and a card draw engine for grind situations",
-    "id": "xebrs4rsxg5d",
-    "recommended": false,
-    "title": "Food Chain Korvold"
-  },
-  {
-    "commander": [
-      {
-        "name": "Atla Palani, Nest Tender",
-        "link": "https://cards.scryfall.io/normal/front/2/b/2b8414f7-22c3-4e1c-934b-4a0e7acf951d.jpg?1664361043"
-      }
-    ],
-    "discord": { "title": "Atla's Eggs", "link": "https://discord.gg/gq3Ke9Q" },
-    "updated": "2022-10-24T07:39:22.703Z",
-    "section": "DEPRECATED",
-    "colors": ["g", "r", "w"],
-    "decklists": [
-      {
-        "link": "https://tappedout.net/mtg-decks/shuffle-atla/",
-        "title": "Shuffle Atla",
-        "primer": false
-      },
-      {
-        "link": "https://tappedout.net/mtg-decks/shuffle-panini/",
-        "title": "Shuffle Panini",
-        "primer": false
-      },
-      {
-        "link": "https://www.moxfield.com/decks/1oA9GT21REuqhQdphHMPaw",
-        "title": "Shuffle Atla",
-        "primer": true
-      },
-      {
-        "link": "https://www.moxfield.com/decks/K0JrsLiOX02lhyu_myxVdA",
-        "title": "Chill Academy Beats",
-        "primer": false
-      }
-    ],
-    "description": "Shuffle Atla is a Naya stax deck that seeks to stymie its opponents mana with hatebears, and close out the game with a 2 card combo of Mirror Entity and a pump spell. The deck runs an extensive suite of creature tutors to enable its wins or to allow it to find its most relevant hatebears. It’s a primarily disruptive deck that does best in a meta where blood moon and null rod are powerful stax pieces, especially when it can lean on other disruptive decks for stack based interaction",
-    "id": "xu0as9kxlc7",
-    "recommended": false,
-    "title": "Atla Shuffle Combo"
+    "title": "[HISTORIC] Thrasios Vial Paradox Scepter"
   },
   {
     "commander": [
@@ -2186,30 +1067,6 @@
     "id": "xr64jn3mx0i",
     "recommended": false,
     "title": "Marwyn Elfball"
-  },
-  {
-    "commander": [
-      {
-        "name": "Sidisi, Undead Vizier",
-        "link": "https://img.scryfall.com/cards/normal/front/6/e/6ea5dbba-6114-4d97-9363-817ab9e896d3.jpg?1562788006"
-      }
-    ],
-    "ttl": null,
-    "discord": { "title": "Razaketh", "link": "https://discord.gg/87FbAFD" },
-    "updated": "2020-08-10T02:25:50.723Z",
-    "section": "DEPRECATED",
-    "colors": ["b"],
-    "decklists": [
-      {
-        "link": "https://tappedout.net/mtg-decks/buried-alive-sidisi/",
-        "title": "Buried Alive Sidisi",
-        "primer": true
-      }
-    ],
-    "description": "A fast Razaketh reanimator combo deck with Ad Nauseam as a secondary plan.",
-    "id": "xw0jg3yc34a",
-    "recommended": false,
-    "title": "Buried Alive Razaketh Sidisi"
   },
   {
     "commander": [
@@ -2268,29 +1125,6 @@
   {
     "commander": [
       {
-        "name": "Kenrith, the Returned King",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/5/6/56c1227e-bea7-47cb-bbec-389a3d585af5.jpg?1571282458"
-      }
-    ],
-    "discord": null,
-    "updated": "2020-12-06T07:58:46.889Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "g", "r", "u", "w"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/sW-s46Nx1EidXp0p157AHQ",
-        "title": "King of Thieves",
-        "primer": false
-      }
-    ],
-    "description": "This is a 5 color Opus Thief deck. Look to Opus thief for a more in-depth description. This one differs though by having a dockside combo with Barrin Master Wizard. Deck also runs consultation lines with lab man, oracle, and Jace.This deck mostly uses it's many wheels to win though and the various outlets. ",
-    "id": "xtcdpjnfmwqc",
-    "recommended": false,
-    "title": "Kenrith Thief"
-  },
-  {
-    "commander": [
-      {
         "name": "Godo, Bandit Warlord",
         "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/1/2/123d1368-fbbe-48f8-9b44-d51946529322.jpg?1599706406"
       }
@@ -2310,57 +1144,6 @@
     "id": "xzirzgscry18",
     "recommended": false,
     "title": "Godo Helm"
-  },
-  {
-    "commander": [
-      {
-        "name": "Tymna the Weaver",
-        "link": "https://img.scryfall.com/cards/normal/front/b/c/bc7cbe9b-324e-42b8-94e2-36e91cb32163.jpg?1562417406"
-      },
-      {
-        "name": "Sidar Kondo of Jamuraa",
-        "link": "https://img.scryfall.com/cards/normal/front/1/9/19d2671c-39bd-4dd7-ac97-9cdf5c2cb149.jpg?1562390224"
-      }
-    ],
-    "ttl": null,
-    "discord": null,
-    "updated": "2020-08-13T18:16:32.327Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "w", "g"],
-    "decklists": [
-      {
-        "link": "http://tappedout.net/mtg-decks/junkweaver/?cb=1536609208",
-        "title": "Junkweaver",
-        "primer": false
-      }
-    ],
-    "description": "A creature-based Adaptive deck with hatebears alongside hulk and Razaketh wins",
-    "id": "xtnd16l3l8re",
-    "recommended": false,
-    "title": "Junkweaver"
-  },
-  {
-    "commander": [
-      {
-        "name": "Niv-Mizzet Reborn",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/5/6/56a2609d-b535-400b-81d9-72989a33c70f.jpg?1582037402"
-      }
-    ],
-    "discord": null,
-    "updated": "2022-03-19T16:33:29.185Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "g", "r", "u", "w"],
-    "decklists": [
-      {
-        "link": "https://tappedout.net/mtg-decks/food-chain-niv/",
-        "title": "Food Chain Niv",
-        "primer": false
-      }
-    ],
-    "description": "An adaption of Food Chain Tazri, using Niv Mizzet at the helm",
-    "id": "xt73p2tyfk1l",
-    "recommended": false,
-    "title": "Niv Food Chain"
   },
   {
     "commander": [
@@ -2396,33 +1179,6 @@
   {
     "commander": [
       {
-        "name": "Thrasios, Triton Hero",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/2/1/21e27b91-c7f1-4709-aa0d-8b5d81b22a0a.jpg?1606762176"
-      },
-      {
-        "name": "Vial Smasher the Fierce",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/7/2/722b1e02-2268-4e02-8d09-9b337da2a844.jpg?1562405249"
-      }
-    ],
-    "discord": null,
-    "updated": "2022-03-19T16:29:53.726Z",
-    "section": "DEPRECATED",
-    "colors": ["g", "u", "b", "r"],
-    "decklists": [
-      {
-        "link": "https://tappedout.net/mtg-decks/adbond-nano/",
-        "title": "Adbond Nano",
-        "primer": false
-      }
-    ],
-    "description": "Mana bond storm",
-    "id": "xpfapwsedulf",
-    "recommended": false,
-    "title": "Thrasios Vial Adbond Nano"
-  },
-  {
-    "commander": [
-      {
         "name": "Nath of the Gilt-Leaf",
         "link": "https://cards.scryfall.io/normal/front/2/9/294ccc67-6fc9-411b-9100-ae6a9b7fadfc.jpg?1562392895"
       }
@@ -2449,67 +1205,7 @@
     "description": "Nath is a midrange stax list focused on discarding, mana denial, and staying ahead of the “stax curve” while your opponents lose resources. The deck typically seeks to set up a stax’d out boardstate and end the game with a finisher such as the SquirrelCraft combo, beats, or in some lists, Razaketh. As a slower deck, there can be struggle against turbo strategies but excels if you can reel them in to Nath's pace.",
     "id": "xedzpd1hpq6k",
     "recommended": false,
-    "title": "Nath Stax"
-  },
-  {
-    "commander": [
-      {
-        "name": "Tymna the Weaver",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/c/bc7cbe9b-324e-42b8-94e2-36e91cb32163.jpg?1606762188"
-      },
-      {
-        "name": "Kraum, Ludevic's Opus",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/5/5/557fcd17-6cb3-414a-b2b1-ea9ae32e5aec.jpg?1562400560"
-      }
-    ],
-    "discord": {
-      "title": "The MAN Model",
-      "link": "https://discord.gg/SXGkx8V"
-    },
-    "updated": "2020-12-06T06:10:21.276Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "w", "r", "u"],
-    "decklists": [
-      {
-        "link": "https://tappedout.net/mtg-decks/tk-divergent/",
-        "title": "TK Divergent",
-        "primer": true
-      }
-    ],
-    "description": "This deck aims to drop value engines and disrupt faster decks until enough card advantage can be accrued to force through a win attempt. Divergent Transformations and Ad Nauseam are the one-card win conditions with wheel synergies and Consultation lines as backup. This deck is most successful when there is another disruptive deck in the pod. It has game against the faster decks in the format thanks to powerful hate pieces like Rest In Peace, Cursed Totem, and Suppression Field.",
-    "id": "xt6flifta2e",
-    "recommended": false,
-    "title": "Tymna Kraum Divergent"
-  },
-  {
-    "commander": [
-      {
-        "name": "Tymna the Weaver",
-        "link": "https://cards.scryfall.io/normal/front/b/c/bc7cbe9b-324e-42b8-94e2-36e91cb32163.jpg?1644853048"
-      },
-      {
-        "name": "Kraum, Ludevic's Opus",
-        "link": "https://cards.scryfall.io/normal/front/5/5/557fcd17-6cb3-414a-b2b1-ea9ae32e5aec.jpg?1644853032"
-      }
-    ],
-    "discord": {
-      "title": "Stax of Bears",
-      "link": "https://discord.gg/smxWcm"
-    },
-    "updated": "2022-10-23T19:13:27.810Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "w", "r", "u"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/i270Uk4osUi75C81IX4XAg",
-        "title": "T&K Bearweaver",
-        "primer": true
-      }
-    ],
-    "description": "An interactive and grindy hatebear strategy that uses these creatures to gain tempo with Tymna and in board stalls with Kraum. With this gradual card advantage it can assemble various A+B combos like Jace & Tainted Pact. Thrives in metas with Hermit Druid and Storm-esque strategies.",
-    "id": "xjjivz5e1m7m",
-    "recommended": false,
-    "title": "Kraum Tymna Bearweaver"
+    "title": "[HISTORIC] Nath Stax"
   },
   {
     "commander": [
@@ -2540,63 +1236,6 @@
   {
     "commander": [
       {
-        "name": "Thrasios, Triton Hero",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/2/1/21e27b91-c7f1-4709-aa0d-8b5d81b22a0a.jpg?1606762176"
-      },
-      {
-        "name": "Vial Smasher the Fierce",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/7/2/722b1e02-2268-4e02-8d09-9b337da2a844.jpg?1562405249"
-      }
-    ],
-    "discord": null,
-    "updated": "2022-03-19T16:30:26.285Z",
-    "section": "DEPRECATED",
-    "colors": ["g", "u", "b", "r"],
-    "decklists": [
-      {
-        "link": "https://tappedout.net/mtg-decks/bugr-divergent-control/",
-        "title": "BUGR Divergent Control",
-        "primer": false
-      }
-    ],
-    "description": "A control deck that utilizes the namesake card as an instant speed, compact wincon.",
-    "id": "x9b5ddal5ykf",
-    "recommended": false,
-    "title": "Thrasios Vial Divergent Control"
-  },
-  {
-    "commander": [
-      {
-        "name": "Tymna the Weaver",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/c/bc7cbe9b-324e-42b8-94e2-36e91cb32163.jpg?1644853048"
-      },
-      {
-        "name": "Thrasios, Triton Hero",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/2/1/21e27b91-c7f1-4709-aa0d-8b5d81b22a0a.jpg?1606762176"
-      }
-    ],
-    "discord": {
-      "title": "Unified Hulk",
-      "link": "https://discord.gg/n8xVUxu"
-    },
-    "updated": "2022-03-19T16:31:39.509Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "w", "g", "u"],
-    "decklists": [
-      {
-        "link": "https://tappedout.net/mtg-decks/shuffle-hulk/",
-        "title": "Shuffle Hulk",
-        "primer": true
-      }
-    ],
-    "description": "An aggressive Flash Hulk combo deck which uses the hulk pile of Sacrifice Outlet + Blood Artist + Nomads En-Kor + Cephalid Illusionist. Along with Flash Hulk, this deck utilizes sacrifice outlets along with cards such as Pattern of Rebirth and Academy Rector to increase its consistency. Shuffle Hulk looks to leverage the ability of its hulk package to win at instant speed, along with built-in protection in the form of Memory's Journey.",
-    "id": "xjllu85y2kka",
-    "recommended": false,
-    "title": "Thrasios Tymna Shuffle Hulk"
-  },
-  {
-    "commander": [
-      {
         "name": "Grenzo, Dungeon Warden",
         "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/6/e/6e19c383-88bd-4bde-ac81-c0eb6d5b5bd4.jpg?1562436569"
       }
@@ -2619,43 +1258,6 @@
     "id": "xacjh0t35awp",
     "recommended": false,
     "title": "Grenzo Doomsday"
-  },
-  {
-    "commander": [
-      {
-        "name": "Omnath, Locus of the Roil",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/c/b/cb53a29d-2de2-4874-a6f3-0fecbfa14cf2.jpg?1592517562"
-      },
-      {
-        "name": "Illuna, Apex of Wishes",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/9/f/9fc99c81-d112-4811-9bba-77a14d904692.jpg?1591228061"
-      }
-    ],
-    "discord": { "title": "Food Chain", "link": "https://discord.gg/dftqxZW" },
-    "updated": "2020-12-06T08:28:06.032Z",
-    "section": "DEPRECATED",
-    "colors": ["g", "r", "u"],
-    "decklists": [
-      {
-        "link": "https://scryfall.com/@MercsGuardian/decks/a90cc621-4406-4425-afa4-c9e7b16f7112",
-        "title": "Roiling Chain by Hulk Chain Gang",
-        "primer": false
-      },
-      {
-        "link": "https://scryfall.com/@MercsGuardian/decks/dc2ca803-a629-4bed-a462-24153d402f42",
-        "title": "Cosmos Chain by Hulk Chain Gang",
-        "primer": false
-      },
-      {
-        "link": "https://www.moxfield.com/decks/_Sgnu1DKrUOj370tMErbvg",
-        "title": "Ahamkara",
-        "primer": false
-      }
-    ],
-    "description": "UG-based non-black Food Chain combo decks use their commanders as outlets for Food Chain combo. Because they tend to struggle to find their win condition quickly, they tend to be able to pack more interaction and hate pieces. RUG in particular will often feature Blood Moon and Back to Basics.",
-    "id": "x8391xqrl3pu",
-    "recommended": false,
-    "title": "Temur Food Chain"
   },
   {
     "commander": [
@@ -2686,31 +1288,7 @@
     "description": "Kroxa adds a unique flavor to the world of Rakdos cEDH in that he is both an outlet in the command zone and does not require activated abilities to win. Kroxa's win condition will require only one card in hand (Animate Dead) and one card in the graveyard (Worldgorger Dragon), allowing the pilot to continue the game unhindered if hands are attacked or the game state is reduced to top-decking.",
     "id": "x172y4sfg7ng",
     "recommended": false,
-    "title": "Kroxa WGD"
-  },
-  {
-    "commander": [
-      {
-        "name": "Edric, Spymaster of Trest",
-        "link": "https://img.scryfall.com/cards/normal/front/2/1/2183cfb3-6bf5-4fbc-b535-a42ba954e8a3.jpg?1574767851"
-      }
-    ],
-    "ttl": null,
-    "discord": null,
-    "updated": "2020-08-10T02:23:47.799Z",
-    "section": "DEPRECATED",
-    "colors": ["g", "u"],
-    "decklists": [
-      {
-        "link": "https://tappedout.net/mtg-decks/ug-meme-hulk/",
-        "title": "UG meme hulk",
-        "primer": false
-      }
-    ],
-    "description": "Similar to Edric Turns, but with an added Protean Hulk package with Ezuri and Sage.",
-    "id": "xi91p0dmhnr8",
-    "recommended": false,
-    "title": "Edric Hulk"
+    "title": "Kroxa Hand Control"
   },
   {
     "commander": [
@@ -2741,57 +1319,6 @@
     "id": "xy4jwiqgy11",
     "recommended": false,
     "title": "Kraum Tymna Opus Thief"
-  },
-  {
-    "commander": [
-      {
-        "name": "Roon of the Hidden Realm",
-        "link": "https://img.scryfall.com/cards/normal/front/f/8/f8ff4b08-fa1a-4564-b427-ea89e54a0e7b.jpg?1592673448"
-      }
-    ],
-    "ttl": null,
-    "discord": null,
-    "updated": "2020-08-10T02:22:54.699Z",
-    "section": "DEPRECATED",
-    "colors": ["g", "u", "w"],
-    "decklists": [
-      {
-        "link": "https://tappedout.net/mtg-decks/05-12-19-rooney-tunes/",
-        "title": "Rooney Tunes",
-        "primer": false
-      }
-    ],
-    "description": "Roon is a disruptive and controlling deck that looks to interact with opponents' game plans early, lock out commander centered strategies, and capitalize on the chaos in the mid to late game. Running duel combos of Roon + Eternal Witness + Time Warp and Nexus Loops funneled through Enter The Infinite, Roon is a hard hitting, resilient deck well suited for controlling players who enjoy the bant colors. ",
-    "id": "x6d5ydhryuwg",
-    "recommended": false,
-    "title": "Roon Turns"
-  },
-  {
-    "commander": [
-      {
-        "name": "Tymna the Weaver",
-        "link": "https://cards.scryfall.io/normal/front/b/c/bc7cbe9b-324e-42b8-94e2-36e91cb32163.jpg?1644853048"
-      },
-      {
-        "name": "Thrasios, Triton Hero",
-        "link": "https://cards.scryfall.io/normal/front/2/1/21e27b91-c7f1-4709-aa0d-8b5d81b22a0a.jpg?1606762176"
-      }
-    ],
-    "discord": { "title": "Razaketh", "link": "https://discord.gg/sgJwnJj" },
-    "updated": "2023-03-20T23:11:22.815Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "w", "g", "u"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/CwZ4jijMkkWpvx7smX2-jQ",
-        "title": "Razakats",
-        "primer": true
-      }
-    ],
-    "description": "A reanimator deck featuring Razaketh, which allows for fast wins with few dead cards.",
-    "id": "xtx7cdb71nrc",
-    "recommended": false,
-    "title": "Thrasios Tymna Razakats"
   },
   {
     "commander": [
@@ -2844,43 +1371,12 @@
         "link": "https://www.moxfield.com/decks/IkyDwh_o0UWLzXROMWSlhA",
         "title": "Marath Holy Trinity",
         "primer": true
-      },
-      {
-        "link": "https://www.moxfield.com/decks/PCv5XGUD3EWGwbTXt-DwHQ",
-        "title": "The Ardent Wild",
-        "primer": false
       }
     ],
     "description": "Marath Holy Trinity is a stax deck that seeks to assemble the “holy trinity” of stax pieces: Linvala, Keeper of Silence, Living Plane and Collector Ouphe to completely lock down your opponents’ ability to cast spells. In the meantime, Marath is a powerful tool for controlling the board, picking off mana dorks and small commanders with ease. Powerful support cards like Unbound Flourishing, Earthcraft and Dockside Extortionist eventually become combo pieces to put the game away.",
     "id": "xzhkkd6v9j9",
     "recommended": false,
-    "title": "Marath Stax"
-  },
-  {
-    "commander": [
-      {
-        "name": "Vadrok, Apex of Thunder",
-        "link": "https://cards.scryfall.io/normal/front/e/d/ed7b0256-d342-4523-9516-6a007bf51825.jpg?1591228299"
-      }
-    ],
-    "discord": {
-      "title": "Vadrok, Thor's Mightiest Seed",
-      "link": "https://discord.gg/uQTppRh"
-    },
-    "updated": "2022-10-24T00:53:07.642Z",
-    "section": "DEPRECATED",
-    "colors": ["r", "u", "w"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/kGI0y8FmH0aAU2ed8nIUiA",
-        "title": "Apex of the Tide",
-        "primer": false
-      }
-    ],
-    "description": "This is a reactive combo deck that seeks to pursue its combo lines while keeping a handle on what the table is doing. The main combo lines involve High Tide or Dockside Extortionist. The biggest appeal of this deck is that all of its pieces are active in the game and you don't need to hold back anything in your hand due to the nature of Vadrok. ",
-    "id": "xaojx87piwmm",
-    "recommended": false,
-    "title": "Vadrok Storm"
+    "title": "[HISTORIC] Marath Stax"
   },
   {
     "commander": [
@@ -2906,33 +1402,7 @@
     "description": "Turbo-Ad Nauseam list which is capable of explosively fast storm wins.",
     "id": "xi7vwdwchtx9",
     "recommended": false,
-    "title": "Sidisi Ad Naus Fishbowl"
-  },
-  {
-    "commander": [
-      {
-        "name": "Edgar Markov",
-        "link": "https://cards.scryfall.io/normal/front/8/d/8d94b8ec-ecda-43c8-a60e-1ba33e6a54a4.jpg?1562616128"
-      }
-    ],
-    "discord": {
-      "title": "The Markov Brood",
-      "link": "https://discord.gg/Qy5wSfk"
-    },
-    "updated": "2022-10-24T00:39:28.681Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "r", "w"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/4ZIRDku-j0id8XGD-V4Nuw",
-        "title": "Symphony of the Knight",
-        "primer": true
-      }
-    ],
-    "description": "A deck that layers several synergistic combos alongside a Ad Nauseam, Razaketh or skull clamp plan to produce a deck with many overlapping abilities. Edgar enables these strategies to work in tandem, as well as laying the groundwork for concise win conditions. (Such as Leonin-relic warder/dockside curio/Breach wheel)\n",
-    "id": "xyezvyi4j7cb",
-    "recommended": false,
-    "title": "Markov Razaketh"
+    "title": "[HISTORIC] Sidisi Ad Naus Fishbowl"
   },
   {
     "commander": [
@@ -2957,6 +1427,11 @@
       {
         "link": "https://www.moxfield.com/decks/ilvW7g3hsUio09K2gLuDmg",
         "title": "Wanderer's Song",
+        "primer": true
+      },
+      {
+        "link": "https://www.moxfield.com/decks/TPMg4S5QyEmRXoDwKNvj0g",
+        "title": "Hulk Yisan",
         "primer": true
       }
     ],
@@ -3004,32 +1479,6 @@
   {
     "commander": [
       {
-        "name": "Jeleva, Nephalia's Scourge",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/8/3/83f9aeb8-05ba-49d9-a834-62f42fcd295b.jpg?1562922860"
-      }
-    ],
-    "discord": {
-      "title": "Grixis Mean Girls",
-      "link": "https://discord.gg/m4uMbqqrye"
-    },
-    "updated": "2022-05-01T09:58:03.344Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "r", "u"],
-    "decklists": [
-      {
-        "link": "https://archidekt.com/decks/370988#Jeleva_Storm",
-        "title": "Jeleva Storm",
-        "primer": false
-      }
-    ],
-    "description": "A Grixis Ad Naus/Doomsday storm list which uses Jeleva as a card advantage engine.",
-    "id": "xrvrfsj4lnid",
-    "recommended": false,
-    "title": "Jeleva Storm"
-  },
-  {
-    "commander": [
-      {
         "name": "Aminatou, the Fateshifter",
         "link": "https://cards.scryfall.io/normal/front/b/c/bc010302-e715-4946-89eb-a214e0b836ba.jpg?1662527474"
       }
@@ -3052,30 +1501,6 @@
     "id": "x8720k3ergbp",
     "recommended": false,
     "title": "Aminatou Consultation"
-  },
-  {
-    "commander": [
-      {
-        "name": "Dralnu, Lich Lord",
-        "link": "https://img.scryfall.com/cards/normal/front/b/3/b3828efe-cbe1-473c-8dde-60ea9aaf23a2.jpg?1562932859"
-      }
-    ],
-    "ttl": null,
-    "discord": { "title": "Dimir EDH", "link": "https://discord.gg/6Mb9p3q" },
-    "updated": "2020-08-10T02:25:08.505Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "u"],
-    "decklists": [
-      {
-        "link": "https://tappedout.net/mtg-decks/dralnu-doomtide/",
-        "title": "Dralnu Doomtide",
-        "primer": true
-      }
-    ],
-    "description": "A doomsday paradox storm list which can take on a control role by reusing counterspells.",
-    "id": "x3yeeu5xpgqy",
-    "recommended": false,
-    "title": "Dralnu Doomtide"
   },
   {
     "commander": [
@@ -3152,29 +1577,6 @@
   {
     "commander": [
       {
-        "name": "Yuriko, the Tiger's Shadow",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/3/b/3bd81ae6-e628-447a-a36b-597e63ede295.jpg?1592710334"
-      }
-    ],
-    "discord": { "title": "Sneaky Farm", "link": "https://discord.gg/YGfRRWW" },
-    "updated": "2021-06-05T16:40:48.182Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "u"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/Bv8Jo8vkCUmHo-If-g6hug",
-        "title": "Sneaky Farm",
-        "primer": true
-      }
-    ],
-    "description": "Yuriko Turbo Naus is a deck that primarily focuses on winning quickly with various one card enablers such as Doomsday or Ad Nauseam. Yuriko herself helps the deck grind when needed and her cheap creatures help enable various turbo naus cards such as Culling the Weak.",
-    "id": "x94d7f6zei6k",
-    "recommended": false,
-    "title": "Yuriko Turbo Naus"
-  },
-  {
-    "commander": [
-      {
         "name": "Teshar, Ancestor's Apostle",
         "link": "https://cards.scryfall.io/normal/front/0/e/0ec9ef7c-88de-4346-a8f9-44beda59fa68.jpg?1664360323"
       }
@@ -3227,7 +1629,7 @@
     "description": "A Paradox Engine combo deck which can switch between fast combo and stax gameplans.",
     "id": "xv69hddaw7ah",
     "recommended": false,
-    "title": "Sisay Paradox"
+    "title": "[HISTORIC] Sisay Paradox"
   },
   {
     "commander": [
@@ -3281,90 +1683,6 @@
     "id": "x3b6v3moe5ug",
     "recommended": false,
     "title": "Thrasios Tymna Protean Hulk"
-  },
-  {
-    "commander": [
-      {
-        "name": "Baral, Chief of Compliance",
-        "link": "https://img.scryfall.com/cards/normal/front/6/0/60e16d94-1166-4050-8554-686e153a7f80.jpg?1576381454"
-      }
-    ],
-    "ttl": null,
-    "discord": {
-      "title": "Draw-Go Control",
-      "link": "https://discord.gg/UQbRkHz"
-    },
-    "updated": "2020-08-13T20:22:04.423Z",
-    "section": "DEPRECATED",
-    "colors": ["u"],
-    "decklists": [
-      {
-        "link": "https://tappedout.net/mtg-decks/baral-draw-go-2/",
-        "title": "Baral Draw-Go",
-        "primer": false
-      }
-    ],
-    "description": "A blue control deck that runs a high density of counterspells and instant-speed draw.",
-    "id": "x1llwymasxqa",
-    "recommended": false,
-    "title": "Baral Control"
-  },
-  {
-    "commander": [
-      {
-        "name": "Tymna the Weaver",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/c/bc7cbe9b-324e-42b8-94e2-36e91cb32163.jpg?1644853048"
-      },
-      {
-        "name": "Thrasios, Triton Hero",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/2/1/21e27b91-c7f1-4709-aa0d-8b5d81b22a0a.jpg?1606762176"
-      }
-    ],
-    "discord": {
-      "title": "Unified Hulk",
-      "link": "https://discord.gg/n8xVUxu"
-    },
-    "updated": "2022-03-19T16:32:04.591Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "w", "g", "u"],
-    "decklists": [
-      {
-        "link": "https://deckstats.net/decks/50436/1152876-4c-lightning-druid/en",
-        "title": "Lightning Druid",
-        "primer": false
-      }
-    ],
-    "description": "An extremely fast combo list which layers Flash Hulk with Razaketh + Breakfast + Druid.",
-    "id": "xv8whjik53pj",
-    "recommended": false,
-    "title": "Thrasios Tymna Lightning Druid"
-  },
-  {
-    "commander": [
-      {
-        "name": "Tymna the Weaver",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/c/bc7cbe9b-324e-42b8-94e2-36e91cb32163.jpg?1644853048"
-      },
-      {
-        "name": "Thrasios, Triton Hero",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/2/1/21e27b91-c7f1-4709-aa0d-8b5d81b22a0a.jpg?1606762176"
-      }
-    ],
-    "discord": { "title": "Hulkweaver", "link": "https://discord.gg/gqjbmsD" },
-    "updated": "2022-03-19T16:31:02.094Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "w", "g", "u"],
-    "decklists": [
-      {
-        "link": "https://tappedout.net/mtg-decks/protean-weaver/",
-        "title": "protean weaver",
-        "primer": false
-      }
-    ],
-    "description": "A slower Flash Hulk combo list which runs multiple backup plans and hatebears.",
-    "id": "xrlel3hc0ds",
-    "recommended": false,
-    "title": "Thrasios Tymna Hulkweaver"
   },
   {
     "commander": [
@@ -3426,92 +1744,17 @@
         "link": "https://www.moxfield.com/decks/8CkGkfcOfkGNkYf0WnwzVg",
         "title": "Pact of Nauseous Ninjas",
         "primer": true
+      },
+      {
+        "link": "https://www.moxfield.com/decks/e5I1ZiYoVkiC5EDE_Z1Luw",
+        "title": "Last Resort (español)",
+        "primer": true
       }
     ],
     "description": "Yuriko is a deck that utilizes Yuriko's ability to burn out its opponents while maintaining card advantage using enablers (low costing creatures) and ninjas. The versatile deck shifts between playing Aggro, Combo, and Control. The deck wins by burning your opponents' life totals to zero, Thoracle + Consultation/Pact, Nashi + Enter the Infinite, or Sakashima's Student loop with an opponent's Dockside. Yuriko is incredibly resilient due to her Commander Ninjutsu which bypasses Commander Tax.",
     "id": "x5pd8ywa5pkb",
     "recommended": false,
     "title": "Yuriko Tempo"
-  },
-  {
-    "commander": [
-      {
-        "name": "Kykar, Wind's Fury",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/5/9/594cb7dc-ea88-4909-ab40-1d40fecc9817.jpg?1592517535"
-      }
-    ],
-    "discord": {
-      "title": "The Bird Wizard Tower",
-      "link": "https://discord.gg/YZtZYBG"
-    },
-    "updated": "2022-01-28T05:52:34.135Z",
-    "section": "DEPRECATED",
-    "colors": ["r", "u", "w"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/Vjk-170XDkCBMDRMP8nqPQ",
-        "title": "Kykar, Divergent Control",
-        "primer": false
-      }
-    ],
-    "description": "Divergent Kykar looks to utilize Divergent Transformations and the similar Synthetic Destiny to use Kykar's token generation as a compact and mana efficient win condition, turning them into the Niv-Mizzet, Parun + Tandem Lookout combo to win the game. Along with this main win condition, Divergent Kykar uses the Sensei's Divining Top + Future Sight combo, as well as Isochron Scepter + Dramatic Reversal to present a consistent and resilient win condition package.",
-    "id": "xdazeqwdwr4f",
-    "recommended": false,
-    "title": "Divergent Kykar"
-  },
-  {
-    "commander": [
-      {
-        "name": "Najeela, the Blade-Blossom",
-        "link": "https://img.scryfall.com/cards/normal/front/2/c/2cb1d1da-6077-46b5-8c63-39882b8016f2.jpg?1567181270"
-      }
-    ],
-    "ttl": null,
-    "discord": {
-      "title": "Beats by Najeela",
-      "link": "https://discord.gg/eFed3Yg"
-    },
-    "updated": "2020-08-10T00:01:04.039Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "g", "r", "u", "w"],
-    "decklists": [
-      {
-        "link": "https://deckstats.net/decks/50436/1091682-najeela-druid-hulk/en",
-        "title": "Najeela Hermit Hulk",
-        "primer": false
-      }
-    ],
-    "description": "An 5c breakfast hulk layering Najeela combos for lines that win through grave hate.",
-    "id": "xji5e390kpko",
-    "recommended": false,
-    "title": "Najeela Hermit Hulk"
-  },
-  {
-    "commander": [
-      {
-        "name": "Tymna the Weaver",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/c/bc7cbe9b-324e-42b8-94e2-36e91cb32163.jpg?1644853048"
-      },
-      {
-        "name": "Tana, the Bloodsower",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/a/3/a3d8d64f-a403-42a7-881b-4f70e9fe15a2.jpg?1562413758"
-      }
-    ],
-    "discord": null,
-    "updated": "2022-03-20T09:21:18.252Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "w", "g", "r"],
-    "decklists": [
-      {
-        "link": "http://tappedout.net/mtg-decks/tymna-tana_the-burlap-sack_threaten-copy-1/",
-        "title": "Tymna Tana Aristocrats Hulk",
-        "primer": true
-      }
-    ],
-    "description": "A midrange deck which runs a high density of sac outlets and ways to cheat Hulk into play.",
-    "id": "xjr8cq20nf3",
-    "recommended": false,
-    "title": "Tana Tymna Hulkball"
   },
   {
     "commander": [
@@ -3568,61 +1811,17 @@
         "link": "https://www.moxfield.com/decks/m1L9GaTE-E-h-UiLRZuL0A",
         "title": "Korvold Turbo",
         "primer": false
+      },
+      {
+        "link": "https://www.moxfield.com/decks/uxtkikNzW0mTluQuOGF4eg",
+        "title": "The King's Chain",
+        "primer": true
       }
     ],
     "description": "Ad Nauseam & Dockside are the pillars of this Korvold, Fae-Cursed King storm list that uses Korvold's sac ability to its fullest, drawing through its deck with Dockside loops and finishing the game off with a wide variety of two-and-three-card combos. While it focuses on the early game, the deck can also take to the late game by keeping its hand full with Korvold's ability and swinging in with a large Korvold to put pressure on its opponents.",
     "id": "xdx78i138sr7",
     "recommended": false,
     "title": "Korvold Turbo Naus"
-  },
-  {
-    "commander": [
-      {
-        "name": "Ruric Thar, the Unbowed",
-        "link": "https://cards.scryfall.io/normal/front/a/a/aa828bdc-221e-4e81-9e71-6f288690ddcd.jpg?1662530113"
-      }
-    ],
-    "discord": {
-      "title": "The Gruul Brew Crew",
-      "link": "https://discord.gg/KrtbUeF"
-    },
-    "updated": "2022-10-24T00:55:03.304Z",
-    "section": "DEPRECATED",
-    "colors": ["g", "r"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/wHkTll0w6EuJPkqNTGfkig",
-        "title": "Gruul Was the Hand They Dealt Me",
-        "primer": true
-      }
-    ],
-    "description": "In contrast to the stax approach of original Thar, this list is an adaptive creature based midrange deck that can win early, beatdown in the mid game, and grind into the late game. Our optimal game plan usually to soften up life totals with Thar, help answer early combos as needed, and develop a board state or hand that allows us to advance comfortably towards a win. The deck requires a pilot to read the table and understand their role within the pod as the game progresses.",
-    "id": "xlfajln8uqcj",
-    "recommended": false,
-    "title": "Ruric Thar Midrange"
-  },
-  {
-    "commander": [
-      {
-        "name": "Tawnos, Urza's Apprentice",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/a/0/a031a6c1-d7d1-4980-ac8e-30440ff4408f.jpg?1592710289"
-      }
-    ],
-    "discord": null,
-    "updated": "2021-01-20T21:19:40.427Z",
-    "section": "DEPRECATED",
-    "colors": ["r", "u"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/RrKO_S54A0q674n-nLjSPQ",
-        "title": "Tawnos ",
-        "primer": true
-      }
-    ],
-    "description": "This deck aims to control the game using countermagic and stax effects long enough to execute one of multiple game-winning combos. The primary combo in this deck uses the commander, Tawnos, with Sands of Time to generate infinite mana during the upkeep. Since Tawnos himself is very cheap, and assembling a two-card combo with a deck's commander is very easy, especially if there are many available tutors, this deck can win relatively fast for a control deck, giving it a slight edge on slower decks in the format while still being able to keep up with the faster decks.",
-    "id": "x4hyukjoc7xj",
-    "recommended": false,
-    "title": "Tawnos Control"
   },
   {
     "commander": [
@@ -3826,43 +2025,12 @@
         "link": "https://www.moxfield.com/decks/C61FsXyVcU6XSeMz6n7BDg",
         "title": "Techno Dungeons",
         "primer": false
-      },
-      {
-        "link": "https://tappedout.net/mtg-decks/grenzo-ft-dj-doomsday-competitive-primer/",
-        "title": "Grenzo ft. DJ Doomsday",
-        "primer": true
       }
     ],
     "description": "A proactive Doomsday deck that utilizes its commander to crack the piles, to win with Kiki-Jiki and Zealous Conscripts, with a variety of backup win conditions, such Redcap combo or Snoop lines. The decks primary goal is to make a lot of fast mana and utilize it to make explosive plays.",
     "id": "xc0i0a5057p",
     "recommended": false,
     "title": "Grenzo Doomsday"
-  },
-  {
-    "commander": [
-      {
-        "name": "Kels, Fight Fixer",
-        "link": "https://cards.scryfall.io/normal/front/b/7/b70d445b-d3d6-4f7c-b9ea-bed6a26d4a2a.jpg?1632261776"
-      }
-    ],
-    "discord": {
-      "title": "Kels' Fight Club",
-      "link": "https://discord.gg/JqSv9VS"
-    },
-    "updated": "2022-10-23T21:46:48.642Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "u"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/5_b4DltiAkaMGDI3rv3TxA",
-        "title": "Kels Consultation",
-        "primer": false
-      }
-    ],
-    "description": "A typical midrange deck that grinds its opponents out with potent draw engines such as Notion Thief and Necropotence to grind out a win with Consult Oracle or Isochron Scepter. It runs few synergy pieces, using its commander only as a last resort.",
-    "id": "x76uwck0its2",
-    "recommended": false,
-    "title": "Kels Consult Scepter"
   },
   {
     "commander": [
@@ -4347,66 +2515,6 @@
   {
     "commander": [
       {
-        "name": "Thrasios, Triton Hero",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/2/1/21e27b91-c7f1-4709-aa0d-8b5d81b22a0a.jpg?1606762176"
-      },
-      {
-        "name": "Vial Smasher the Fierce",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/7/2/722b1e02-2268-4e02-8d09-9b337da2a844.jpg?1562405249"
-      }
-    ],
-    "discord": {
-      "title": "Unified Hulk",
-      "link": "https://discord.com/invite/n8xVUxu"
-    },
-    "updated": "2021-09-10T18:19:25.382Z",
-    "section": "DEPRECATED",
-    "colors": ["g", "u", "b", "r"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/WyjJzywfYEyiofDYuxFCug/",
-        "title": "BUGR Druid Breach",
-        "primer": false
-      }
-    ],
-    "description": "An aggressive Thrasios/Vial list that layers Hermit Druid, Underworld Breach, and Consultation to assemble quick wins using Thassa's Oracle. The inclusion of Dockside Extortionist results in powerful Ad Nauseams, traditionally winning via the Breach/Freeze combo.",
-    "id": "xtbcnku466se",
-    "recommended": false,
-    "title": "Thrasios Vial Hermit Druid"
-  },
-  {
-    "commander": [
-      {
-        "name": "Tymna the Weaver",
-        "link": "https://cards.scryfall.io/normal/front/b/c/bc7cbe9b-324e-42b8-94e2-36e91cb32163.jpg?1644853048"
-      },
-      {
-        "name": "Tevesh Szat, Doom of Fools",
-        "link": "https://cards.scryfall.io/normal/front/8/f/8f244716-78ab-46f5-b6e9-fc1e6db28052.jpg?1608909980"
-      }
-    ],
-    "discord": {
-      "title": "Rule of Law",
-      "link": "https://discord.gg/qySXW6uZFx"
-    },
-    "updated": "2023-09-18T12:02:03.815Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "w"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/AwvOht5A9EiKavXOram1bA",
-        "title": "Tymna Tevesh Prison",
-        "primer": true
-      }
-    ],
-    "description": "Tevesh Prison is an anti-meta stax deck that punishes proactive decks that operate on thin margins by going all-in on disruptive stax-forward hands and leveraging having two card advantage engines and inevitability in the command zone via Tevesh's ultimate during a lock. The deck also features a combo win via Razaketh, who can incidentally remove any of your own stax pieces on the way to killing the table. ",
-    "id": "xnhpt1ktumb7",
-    "recommended": false,
-    "title": "Tevesh Tymna Stax"
-  },
-  {
-    "commander": [
-      {
         "name": "Magda, Brazen Outlaw",
         "link": "https://cards.scryfall.io/normal/front/0/7/079e6263-e54c-4899-a336-5315909b9322.jpg?1631049453"
       }
@@ -4649,59 +2757,6 @@
   {
     "commander": [
       {
-        "name": "Kodama of the East Tree",
-        "link": "https://cards.scryfall.io/normal/front/a/f/af5105ee-09e2-4344-ab39-00f0e9034c47.jpg?1608910768"
-      },
-      {
-        "name": "Silas Renn, Seeker Adept",
-        "link": "https://cards.scryfall.io/normal/front/4/e/4e3fe912-1374-47c7-b73f-89ef55c479c1.jpg?1562399367"
-      }
-    ],
-    "discord": {
-      "title": "Kodama's Acolytes",
-      "link": "https://discord.gg/bFVg3RDYgR"
-    },
-    "updated": "2022-10-23T19:14:04.753Z",
-    "section": "DEPRECATED",
-    "colors": ["g", "b", "u"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/fsr5Euhk6EqLyp4v5_6jeg",
-        "title": "Reach against the machine",
-        "primer": true
-      }
-    ],
-    "description": "A sultai list that takes advantage of Kodama of the East Tree's ability to circumvent mana costs, dodge counterspells and pull of neat combos.",
-    "id": "x5s4p0sx5xsh",
-    "recommended": false,
-    "title": "Kodama Silas Adaptive Combo"
-  },
-  {
-    "commander": [
-      {
-        "name": "Jegantha, the Wellspring",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/1/d/1d52e527-3835-4350-8c01-0f2d5d623b9c.jpg?1600967546"
-      }
-    ],
-    "discord": null,
-    "updated": "2022-04-17T20:24:20.624Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "g", "r", "u", "w"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/HghFWVWMp0ef_6dYPRgN0A",
-        "title": "Jegantha-Naus",
-        "primer": false
-      }
-    ],
-    "description": "It's 5c Naus except with a big fat dork in the command zone",
-    "id": "x9upysws3i1i",
-    "recommended": false,
-    "title": "Jegantha Naus"
-  },
-  {
-    "commander": [
-      {
         "name": "Birgi, God of Storytelling // Harnfel, Horn of Bounty",
         "link": "https://cards.scryfall.io/normal/front/4/4/44657ab1-0a6a-4a5f-9688-86f239083821.jpg?1631048969"
       }
@@ -4791,32 +2846,6 @@
   {
     "commander": [
       {
-        "name": "Yennett, Cryptic Sovereign",
-        "link": "https://cards.scryfall.io/normal/front/f/b/fb51b2a8-035c-44e6-92db-2e2385066470.jpg?1592710328"
-      }
-    ],
-    "discord": {
-      "title": "Yennett's Palace of Time",
-      "link": "https://discord.gg/fMHrJrxDJC"
-    },
-    "updated": "2022-12-06T13:27:24.214Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "u", "w"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/UlP4pj3SyU2ytH86lnRH5Q",
-        "title": "Turns of Future Past",
-        "primer": false
-      }
-    ],
-    "description": "This deck aims to land an early Yennett, typically by turn 3 at the latest, and then cast a top deck tutor to cast Peer Into the Abyss for free, assemble any of the infinite turns combos with Nexus of Fate, or slam a Doomsday and win. Yennett has some decent grind potential as well, acting as a cracked-out Tymna, trading more cards for potential free casts.",
-    "id": "x2cycydtcqsp",
-    "recommended": false,
-    "title": "Yennett Peer"
-  },
-  {
-    "commander": [
-      {
         "name": "Thrasios, Triton Hero",
         "link": "https://cards.scryfall.io/normal/front/2/1/21e27b91-c7f1-4709-aa0d-8b5d81b22a0a.jpg?1606762176"
       },
@@ -4883,37 +2912,6 @@
     "id": "xjimhngopxfa",
     "recommended": false,
     "title": "Kraum Tevesh Breach Storm"
-  },
-  {
-    "commander": [
-      {
-        "name": "Jorn, God of Winter // Kaldring, the Rimestaff",
-        "link": "https://cards.scryfall.io/normal/front/c/6/c697548f-925b-405e-970a-4e78067d5c8e.jpg?1631050504"
-      }
-    ],
-    "discord": {
-      "title": "Jorn Snow",
-      "link": "https://discord.gg/HUt65RdmFA"
-    },
-    "updated": "2023-09-18T12:01:35.501Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "g", "u"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/W0tbKZGNyEa5vXx9JBOxNA",
-        "title": "Jorn God of Stax",
-        "primer": false
-      },
-      {
-        "link": "https://www.moxfield.com/decks/-9GxAdbF7k2YLe9fUe4HLw",
-        "title": "SnowMAN",
-        "primer": true
-      }
-    ],
-    "description": "An adaptive midrange deck that utilizes Jorn's ability to untap snow permanents in order to break parity on stax pieces that are historically difficult to break (Stasis, Static Orb, etc) and out-tempo opponents with its mana advantage. The deck is built around a fairly standard Sultai core of interaction, tutors, and ramp, utilizing various payoff lines like Ad Nauseam and Notion Thief + Timetwister. Stasis & co are often used to create windows for the deck to present a game ending line. Typically wins with Thassa's Oracle + Demonic Consultation.",
-    "id": "xa7nzxckwz0q",
-    "recommended": false,
-    "title": "Jorn Stasis Midrange"
   },
   {
     "commander": [
@@ -5006,62 +3004,6 @@
     "id": "xxk0lkf61ks",
     "recommended": false,
     "title": "Sisay Adaptive Tutors"
-  },
-  {
-    "commander": [
-      {
-        "name": "Bruse Tarl, Boorish Herder",
-        "link": "https://cards.scryfall.io/normal/front/1/2/125b552b-45ea-4e0b-94a9-8131c97a04c0.jpg?1644853018"
-      },
-      {
-        "name": "Kamahl, Heart of Krosa",
-        "link": "https://cards.scryfall.io/normal/front/4/c/4c3560ae-b1f6-4269-a9eb-1a45247b6232.jpg?1608910749"
-      }
-    ],
-    "discord": {
-      "title": "ROL Discord",
-      "link": "https://discord.gg/Qur6jsNE5j"
-    },
-    "updated": "2022-10-23T19:13:46.152Z",
-    "section": "DEPRECATED",
-    "colors": ["r", "w", "g"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/dTXstKwxVkax4l4zfpriNg",
-        "title": "Brute Force",
-        "primer": false
-      }
-    ],
-    "description": "This is a \"winconless\" Rule of Law deck, leveraging the inevitability both its generals provide (although mainly Kamahl) to close out games with combat damage\n\nAlso running Possibility Storm/Knowledge Pool locks (that in the case of this deck work as effectively with Rule of Laws as they do with Drannith)",
-    "id": "x8296bucsinr",
-    "recommended": false,
-    "title": "Bruse Kamahl Stax"
-  },
-  {
-    "commander": [
-      {
-        "name": "Extus, Oriq Overlord // Awaken the Blood Avatar",
-        "link": "https://cards.scryfall.io/normal/front/b/a/ba09360a-067e-48a5-bdc5-a19fd066a785.jpg?1624593379"
-      }
-    ],
-    "discord": {
-      "title": "Extus-tential Crisis",
-      "link": "https://discord.gg/cPEQgPtnFr"
-    },
-    "updated": "2022-10-24T11:29:55.773Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "r", "w"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/WQUC_soKSkWAqh3lyoucDw",
-        "title": "Exitus ad Nauseam",
-        "primer": false
-      }
-    ],
-    "description": "A Mardu graveyard-storm deck with incredible resilience. It sets itself apart from Tymna/Jeska as a Mardu deck with an infinite mana outlet in the command zone due to its ability to play through counterspells.",
-    "id": "x4r7ygkgxaw",
-    "recommended": false,
-    "title": "Extus Ad Nauseam"
   },
   {
     "commander": [
@@ -5215,121 +3157,6 @@
   {
     "commander": [
       {
-        "name": "Jeska, Thrice Reborn",
-        "link": "https://cards.scryfall.io/normal/front/4/8/48caf4c4-745c-4072-bf3d-1a3fa7c3bc9c.jpg?1644853023"
-      },
-      {
-        "name": "Kraum, Ludevic's Opus",
-        "link": "https://cards.scryfall.io/normal/front/5/5/557fcd17-6cb3-414a-b2b1-ea9ae32e5aec.jpg?1644853032"
-      }
-    ],
-    "discord": {
-      "title": "Izzet cEDH",
-      "link": "https://discord.gg/Q83vBPraFf"
-    },
-    "updated": "2023-09-16T23:11:37.065Z",
-    "section": "DEPRECATED",
-    "colors": ["r", "u"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/TW26GjX_5ku6qXzUrshy3g",
-        "title": "Crackle Control",
-        "primer": true
-      }
-    ],
-    "description": "With Jeska as an outlet and Kraum as a potent card advantage engine, this list layers several combos into a tight control shell, easily pivoting into an arrangement of wins featuring either Underworld Breach, Isochron Scepter + Dramatic Reversal, Dockside Extortionist + Barin/Lore Drakkis with a bounce spell. The overall goal would be to control the state of the game, interacting with our opponent's win conditions, and waiting until we have acquired enough card advantage to safely execute our game plan.",
-    "id": "xy2eu4hu386l",
-    "recommended": false,
-    "title": "Jeska Kraum Control"
-  },
-  {
-    "commander": [
-      {
-        "name": "Thrasios, Triton Hero",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/2/1/21e27b91-c7f1-4709-aa0d-8b5d81b22a0a.jpg?1606762176"
-      },
-      {
-        "name": "Tevesh Szat, Doom of Fools",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/8/f/8f244716-78ab-46f5-b6e9-fc1e6db28052.jpg?1608909980"
-      }
-    ],
-    "discord": null,
-    "updated": "2022-01-28T05:50:32.413Z",
-    "section": "DEPRECATED",
-    "colors": ["g", "u", "b"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/vDiuSDspDk-J6LVn3RpzZA",
-        "title": "Thrasios/Tevesh Reanimator ",
-        "primer": false
-      }
-    ],
-    "description": "Reanimator deck ft. VILIS & Razaketh, The foul-blooded. The deck aims to get Razaketh out as quick as possible, and assemble a Thassa’s Oracle/Laboratory manic, Demonic consultation line.",
-    "id": "xjxfylqvvzn",
-    "recommended": false,
-    "title": "Tevesh / Thrasios Reanimator "
-  },
-  {
-    "commander": [
-      {
-        "name": "Kykar, Wind's Fury",
-        "link": "https://cards.scryfall.io/normal/front/5/9/594cb7dc-ea88-4909-ab40-1d40fecc9817.jpg?1592517535"
-      }
-    ],
-    "discord": {
-      "title": "The Bird Wizard Tower",
-      "link": "https://discord.gg/Ak3wqhP"
-    },
-    "updated": "2022-10-23T21:48:17.776Z",
-    "section": "DEPRECATED",
-    "colors": ["r", "u", "w"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/Ogv9GYu6sUKfZeGvF8UIHA",
-        "title": "[cEDH] Kykar Underworld Storm [Primer]",
-        "primer": true
-      },
-      {
-        "link": "https://www.moxfield.com/decks/HYFBDOcpQU-VngKx9YEX7g",
-        "title": "Jeskai Turbo Duck",
-        "primer": false
-      }
-    ],
-    "description": "This build of Kykar is a fast combo deck that is looking to assemble one of many storm combos as quickly as possible, and aims to be flexible enough to pivot from combo to combo in rapid succession should the initial plan be foiled. The deck's namesake card, Underworld Breach, enables many of the combos, and is the most commonly tutored for card in the deck. Kykar is the best fit as a commander because his mana acceleration turns him into a combo piece, rather than just utility and ramp. ",
-    "id": "xa5dk80u5owd",
-    "recommended": false,
-    "title": "Kykar Underworld Storm"
-  },
-  {
-    "commander": [
-      {
-        "name": "Malcolm, Keen-Eyed Navigator",
-        "link": "https://cards.scryfall.io/normal/front/b/b/bbc3bbda-a4bc-4302-a3fc-b1c89f0f5461.jpg?1608909299"
-      },
-      {
-        "name": "Rograkh, Son of Rohgahh",
-        "link": "https://cards.scryfall.io/normal/front/a/4/a4fab67f-00c2-4125-9262-d21a29411797.jpg?1644853041"
-      }
-    ],
-    "discord": null,
-    "updated": "2023-09-16T19:35:12.796Z",
-    "section": "DEPRECATED",
-    "colors": ["u", "r"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/CBzP1wRIXEOxR1IC6c0icw",
-        "title": "Malcolm Rograkh Turbo Poly",
-        "primer": true
-      }
-    ],
-    "description": "Polyhorn is a deck taking aim at the current cEDH metagame where Rule of Law and turbo Ad Nauseam strategies are taking root with a more interactive gameplan and multiple redundant Polymorph effects to land our game-winning combo with one of our commanders and the deck's namesake creature: Glint-Horn Buccaneer.",
-    "id": "xqagpz47gxzo",
-    "recommended": false,
-    "title": "Malcolm Rograkh Polyhorn"
-  },
-  {
-    "commander": [
-      {
         "name": "Prosper, Tome-Bound",
         "link": "https://cards.scryfall.io/normal/front/d/7/d743336e-d5c7-4053-a23d-92ec7581f74e.jpg?1631839207"
       }
@@ -5385,32 +3212,6 @@
     "id": "xmxnkk7t14fj",
     "recommended": false,
     "title": "Sythis Enchantments"
-  },
-  {
-    "commander": [
-      {
-        "name": "Jorn, God of Winter // Kaldring, the Rimestaff",
-        "link": "https://cards.scryfall.io/normal/front/c/6/c697548f-925b-405e-970a-4e78067d5c8e.jpg?1631050504"
-      }
-    ],
-    "discord": {
-      "title": "Jorn Snow",
-      "link": "https://discord.gg/jUq6jKc7Cg"
-    },
-    "updated": "2022-10-23T19:13:08.972Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "g", "u"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/HnIu-bb92k6S92WRtdW7zw",
-        "title": "Freezing Razakats",
-        "primer": true
-      }
-    ],
-    "description": "This list is a mix between Shaper's famous TnT Razakats and your standard resource denial stax build. This deck seeks to either reaniamte an early threat or quickly resolve a back breaking stax pieces whilst breaking parity with Jorn's untap effect. With the right hand we can even go for a fast Thoracle win.",
-    "id": "x7opley0mdi4",
-    "recommended": false,
-    "title": "Jorn Reanimator"
   },
   {
     "commander": [
@@ -5508,42 +3309,6 @@
   {
     "commander": [
       {
-        "name": "Tiamat",
-        "link": "https://cards.scryfall.io/normal/front/6/d/6dd0b9b0-55f4-4ce7-a916-6f23687f3fe4.jpg?1627709478"
-      }
-    ],
-    "discord": {
-      "title": "Dragon Halls",
-      "link": "https://discord.gg/XGd9cxmjAN"
-    },
-    "updated": "2022-10-24T16:09:01.358Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "g", "r", "u", "w"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/1WiOFXIns0ijOJQRxiOQCw",
-        "title": "Dream Dragon Chain",
-        "primer": false
-      },
-      {
-        "link": "https://www.moxfield.com/decks/JHrPo_VOtUqgCOX5H1rkHQ",
-        "title": "Tiamat Halls",
-        "primer": false
-      },
-      {
-        "link": "https://www.moxfield.com/decks/Wa-RkRCM70ORQF8f2razGw",
-        "title": "Dragon Halls",
-        "primer": false
-      }
-    ],
-    "description": "Dream halls focused combo list with the upside of being a 5 color goodstuff backup plan.",
-    "id": "xep5m36ju17",
-    "recommended": false,
-    "title": "Tiamat Dream Halls"
-  },
-  {
-    "commander": [
-      {
         "name": "Oswald Fiddlebender",
         "link": "https://cards.scryfall.io/normal/front/b/b/bba1650f-eddf-49a9-820e-489cb8d5b6fa.jpg?1627702172"
       }
@@ -5564,6 +3329,11 @@
       {
         "link": "https://www.moxfield.com/decks/5VixJnhn_0-vGPMMmWMyag",
         "title": "Fiddle Me This",
+        "primer": true
+      },
+      {
+        "link": "https://www.moxfield.com/decks/SbeGAEVZaUSNXjpYD_ZIkw",
+        "title": "Oswald Translated",
         "primer": true
       }
     ],
@@ -5674,42 +3444,6 @@
   {
     "commander": [
       {
-        "name": "Lonis, Cryptozoologist",
-        "link": "https://cards.scryfall.io/normal/front/5/d/5dfd08da-6717-49ee-94ba-2562224f5baa.jpg?1626098533"
-      }
-    ],
-    "discord": {
-      "title": "The Cryptozoology Department",
-      "link": "https://discord.gg/bhjSzzBbJX"
-    },
-    "updated": "2022-10-23T21:49:20.384Z",
-    "section": "DEPRECATED",
-    "colors": ["g", "u"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/Gx2Tj9j29kWm5lFCQDrVMg",
-        "title": "Lonis Endurance Loops",
-        "primer": false
-      },
-      {
-        "link": "https://www.moxfield.com/decks/mkZNFm68E0-AHeOeV-1mlA",
-        "title": "Lonis Elves and Clues",
-        "primer": true
-      },
-      {
-        "link": "https://www.moxfield.com/decks/I1wQ2ToTIUKd4O74hoZhRA",
-        "title": "Lonis Clue Storm",
-        "primer": false
-      }
-    ],
-    "description": "Lonis, Cryptozoologist is a proactive midrange deck that seeks to utilize various clue synergies to storm off. Lonis also packs various A+B combos that result in infinite clues which can be translated into various infinite mana combos utilizing a Lonis activation for an opponents clone effect. Once infinite mana is achieved, this deck looks to either win through opponents' permanents or through looping Endurance and a bounce spell on top of infinite clues to loop the deck.",
-    "id": "xh809n7v6ar4",
-    "recommended": false,
-    "title": "Lonis Midrange Clues"
-  },
-  {
-    "commander": [
-      {
         "name": "Thrasios, Triton Hero",
         "link": "https://cards.scryfall.io/normal/front/2/1/21e27b91-c7f1-4709-aa0d-8b5d81b22a0a.jpg?1606762176"
       },
@@ -5736,36 +3470,6 @@
     "id": "xb05y57ip1kr",
     "recommended": false,
     "title": "Dargo Thrasios NeoTyrant"
-  },
-  {
-    "commander": [
-      {
-        "name": "Thrasios, Triton Hero",
-        "link": "https://cards.scryfall.io/normal/front/2/1/21e27b91-c7f1-4709-aa0d-8b5d81b22a0a.jpg?1606762176"
-      },
-      {
-        "name": "Ishai, Ojutai Dragonspeaker",
-        "link": "https://cards.scryfall.io/normal/front/2/e/2e89ce6a-6bc9-427f-a8b2-c07a9fc3218f.jpg?1562272963"
-      }
-    ],
-    "discord": {
-      "title": "RoL Discord Server",
-      "link": "https://discord.gg/CcjPcuRjSD"
-    },
-    "updated": "2023-09-18T12:02:51.653Z",
-    "section": "DEPRECATED",
-    "colors": ["g", "u", "w"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/QoIOksCLh0ik6w2h9c7Xkg",
-        "title": "bird delver",
-        "primer": false
-      }
-    ],
-    "description": "Ishai Thras supplements the GW stax core with counterspell backup while relying on it's commanders to close out the game and provide card advantage.",
-    "id": "xftryu823mn",
-    "recommended": false,
-    "title": "Ishai Thrasios Bant RoL"
   },
   {
     "commander": [
@@ -5807,33 +3511,6 @@
     "id": "x9ajuztvl7u",
     "recommended": false,
     "title": "Grolnok Selfmill"
-  },
-  {
-    "commander": [
-      {
-        "name": "Tymna the Weaver",
-        "link": "https://cards.scryfall.io/normal/front/b/c/bc7cbe9b-324e-42b8-94e2-36e91cb32163.jpg?1644853048"
-      },
-      {
-        "name": "Tana, the Bloodsower",
-        "link": "https://cards.scryfall.io/normal/front/a/3/a3d8d64f-a403-42a7-881b-4f70e9fe15a2.jpg?1562413758"
-      }
-    ],
-    "discord": null,
-    "updated": "2023-09-18T12:01:22.344Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "w", "g", "r"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/UaxZi466EEu_YOMq3avtqw",
-        "title": "Kity Kats",
-        "primer": false
-      }
-    ],
-    "description": "This is an alternate form of the traditional Tymna/Tana stax decks that focuses on using Lukka, Coppercoat Outcast as a one card win condition that wins through the majority of stax pieces such as Collector Ouphe and Rule of Law.",
-    "id": "xag6iseys73",
-    "recommended": false,
-    "title": "Tana Tymna Lukka"
   },
   {
     "commander": [
@@ -5952,64 +3629,6 @@
   {
     "commander": [
       {
-        "name": "Yasharn, Implacable Earth",
-        "link": "https://cards.scryfall.io/normal/front/1/2/12878fbd-dbe5-44bc-9f34-38fd374ec10a.jpg?1604200584"
-      }
-    ],
-    "discord": {
-      "title": "Rule of Law",
-      "link": "https://discord.gg/MrJ97PEFhY"
-    },
-    "updated": "2023-09-18T12:01:50.516Z",
-    "section": "DEPRECATED",
-    "colors": ["g", "w"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/c0vCJr_6eEmf7AECzDNFTA",
-        "title": "Steamed Ham",
-        "primer": true
-      },
-      {
-        "link": "https://www.moxfield.com/decks/ORHruJ8OxUu1ABoxNuTUIg",
-        "title": "local boar gores naus player",
-        "primer": false
-      }
-    ],
-    "description": "A combat focused stax deck designed to overwhelm opponents with threats and restrictive permanents, one of which is in the command zone.",
-    "id": "xbkgbl4bwmsd",
-    "recommended": false,
-    "title": "Yasharn Stax"
-  },
-  {
-    "commander": [
-      {
-        "name": "Tymna the Weaver",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/c/bc7cbe9b-324e-42b8-94e2-36e91cb32163.jpg?1644853048"
-      },
-      {
-        "name": "Thrasios, Triton Hero",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/2/1/21e27b91-c7f1-4709-aa0d-8b5d81b22a0a.jpg?1606762176"
-      }
-    ],
-    "discord": null,
-    "updated": "2022-07-14T00:41:13.141Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "w", "g", "u"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/Wq0M9v7MbE-_L1ZevTGcag",
-        "title": "T&T Stax",
-        "primer": false
-      }
-    ],
-    "description": "A generic T&T stax deck.",
-    "id": "xjppuzknp4s",
-    "recommended": false,
-    "title": "Thrasios Tymna Stax"
-  },
-  {
-    "commander": [
-      {
         "name": "Mizzix of the Izmagnus",
         "link": "https://cards.scryfall.io/normal/front/8/2/82f949d0-41a0-4491-9057-bfb2bb20bdb3.jpg?1689999174"
       }
@@ -6055,36 +3674,6 @@
     "id": "xowklxvxefz",
     "recommended": false,
     "title": "Kinnan Infinite Mana"
-  },
-  {
-    "commander": [
-      {
-        "name": "Krark, the Thumbless",
-        "link": "https://cards.scryfall.io/normal/front/0/6/06a981cd-1951-438e-95c9-68294795638e.jpg?1617148336"
-      },
-      {
-        "name": "Silas Renn, Seeker Adept",
-        "link": "https://cards.scryfall.io/normal/front/4/e/4e3fe912-1374-47c7-b73f-89ef55c479c1.jpg?1562399367"
-      }
-    ],
-    "discord": {
-      "title": "The Thumbless",
-      "link": "https://discord.gg/uZBTePnc3p"
-    },
-    "updated": "2023-09-16T19:34:06.735Z",
-    "section": "DEPRECATED",
-    "colors": ["r", "b", "u"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/3MSTqK1_YU6X1-_amNDrmA",
-        "title": "Krark Silas Lowlife",
-        "primer": false
-      }
-    ],
-    "description": "Krark Silas Lowlife is a Grixis Turbo Ad Nauseam deck that leverages Krark to copy rituals and forbidden tutors. If the deck is unable to win in the early game, it pivots to a Midrange plan that can grind value through Krark support pieces and payoffs. While typical Turbo decks struggle against Stax decks, Krark Silas Lowlife has a more favorable Stax matchup, since it can use fewer resources to greater advantage. However, the deck can struggle with consistency due to the somewhat unpredictable nature of Krark triggers.",
-    "id": "xd43x4owakx",
-    "recommended": false,
-    "title": "Krark Silas Turbo"
   },
   {
     "commander": [
@@ -6351,36 +3940,6 @@
     "recommended": false,
     "id": "xl9dl2ffcce",
     "title": "Rograkh Silas Turbo Naus"
-  },
-  {
-    "commander": [
-      {
-        "name": "Malcolm, Keen-Eyed Navigator",
-        "link": "https://cards.scryfall.io/normal/front/b/b/bbc3bbda-a4bc-4302-a3fc-b1c89f0f5461.jpg?1608909299"
-      },
-      {
-        "name": "Tevesh Szat, Doom of Fools",
-        "link": "https://cards.scryfall.io/normal/front/8/f/8f244716-78ab-46f5-b6e9-fc1e6db28052.jpg?1608909980"
-      }
-    ],
-    "discord": {
-      "title": "Malcolm / Tevesh Szat",
-      "link": "https://discord.gg/dfeqUJFcwf"
-    },
-    "updated": "2023-09-16T19:36:15.497Z",
-    "section": "DEPRECATED",
-    "colors": ["u", "b"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/-MpWhvWOQkqfzF9_nD1msw",
-        "title": "Malc Tev HBH Naus ",
-        "primer": false
-      }
-    ],
-    "description": "This is a UB midrange Naus deck which focuses on powering out its commanders to set up value engines, while using the standard UB suite of cards to control and win the game. It utilizes HBH, Thoracle, and Doomsday as winconditions. Basically this is what I see as the baseline of UB in the format. ",
-    "id": "xrc0amzulugn",
-    "recommended": false,
-    "title": "Malcolm Tevesh Midrange"
   },
   {
     "commander": [
@@ -6737,33 +4296,6 @@
   {
     "commander": [
       {
-        "name": "Ikra Shidiqi, the Usurper",
-        "link": "https://cards.scryfall.io/normal/front/8/f/8f2abcc3-dc33-4b9d-a372-1d936e954f94.jpg?1562275017"
-      },
-      {
-        "name": "Jeska, Thrice Reborn",
-        "link": "https://cards.scryfall.io/normal/front/4/8/48caf4c4-745c-4072-bf3d-1a3fa7c3bc9c.jpg?1644853023"
-      }
-    ],
-    "discord": null,
-    "updated": "2023-03-20T22:47:12.684Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "g", "r"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/4SVV8sxDbUmLfSmTRHsCIg",
-        "title": "Ikra ShiJeska",
-        "primer": false
-      }
-    ],
-    "description": "Ikra Rograkh is a fast turbo ad naus deck that sacrifices more grind for explosive t1 and t2 plays. Where other Turbo naus decks can usually turn to grind power in the command zone or interaction in the 99, this deck really wants to go for its combo as soon as possible and the rituals and ramp in these colours really allow for that. This does mean the deck performs worse in slower games, and it can really struggle to get back in the game once stopped.\n",
-    "id": "xnv4larwqhh",
-    "recommended": false,
-    "title": "Ikra Jeska Turbo Naus"
-  },
-  {
-    "commander": [
-      {
         "name": "Codie, Vociferous Codex",
         "link": "https://cards.scryfall.io/normal/front/e/a/ea476ee1-67d9-4dd8-a5ac-f68a155eb18b.jpg?1624740590"
       }
@@ -6914,68 +4446,6 @@
   {
     "commander": [
       {
-        "name": "Ruric Thar, the Unbowed",
-        "link": "https://cards.scryfall.io/normal/front/a/a/aa828bdc-221e-4e81-9e71-6f288690ddcd.jpg?1673149099"
-      }
-    ],
-    "discord": {
-      "title": "Gruul Brew Crew",
-      "link": "https://discord.gg/KrtbUeF"
-    },
-    "updated": "2023-03-26T12:03:37.397Z",
-    "section": "DEPRECATED",
-    "colors": ["g", "r"],
-    "decklists": [
-      {
-        "link": "https://tappedout.net/mtg-decks/ruric-thar-competitive-your-heart-is-a-muscle/",
-        "title": "Your Heart is a Muscle",
-        "primer": false
-      },
-      {
-        "link": "https://www.moxfield.com/decks/am_nfGfWT0idmVUO9Rj1dw",
-        "title": "Blood Röd",
-        "primer": true
-      }
-    ],
-    "description": "Ruric Thar is a distinctly Gruul stax deck that aims to lock opponents out of the game with a combination of on-board resource denial and Jokulhaups-style mass artifact-, creature-, and land-destruction spells. Its combination of early mana denial and Ruric Thar, the Unbowed makes it difficult for most combo decks in cEDH to execute their winning lines. In slower pods, Blood Röd looks to play an attrition game and rely on A + B locks, global resets, and a stax-resistant Kiki-Jiki, Mirror Breaker combo for late-game inevitability. Predictably, the deck shares many of the weaknesses of nonwhite, nonblue control decks. Despite having an anti-storm card in the command zone, it can struggle in exceptionally fast, uninteractive pods due to its commander's high casting cost and Gruul's limitations as a colour pair.",
-    "recommended": false,
-    "id": "xg76o3uce6vk",
-    "title": "Ruric Thar Stax"
-  },
-  {
-    "commander": [
-      {
-        "name": "Jace, Vryn's Prodigy // Jace, Telepath Unbound",
-        "link": "https://cards.scryfall.io/normal/front/0/2/02d6d693-f1f3-4317-bcc0-c21fa8490d38.jpg?1651492800"
-      }
-    ],
-    "discord": {
-      "title": "Vyrn's Prodigies ",
-      "link": "https://discord.gg/VhwSnvY"
-    },
-    "updated": "2023-03-30T20:17:48.441Z",
-    "section": "DEPRECATED",
-    "colors": ["u"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/G0YVGWD68keygYqjPTz8ZQ",
-        "title": "Jace High Tide",
-        "primer": true
-      },
-      {
-        "link": "https://www.moxfield.com/decks/ypCHJwxoMECddaGgJp_mUQ",
-        "title": "JVP Kitten Storm",
-        "primer": true
-      }
-    ],
-    "description": "The main game plan of the deck is to develop its mana base early with Islands to synergize with High Tide to resolve a payoff spell. It uses a typical control package with counterspells and some onboard removal to diffuse faster decks and remove problematic permanents. Its commander provides several advantages that include the ability to loot early while being able to flashback relevant cards in the graveyard to reduce variance during critical storm turns, provide extra interaction, or further ramp mana production. Its backup plan to High Tide is to use Isochron Scepter with Dramatic Reversal and artifacts to achieve a similar effect of storm and mana generation; the deck also runs Displacer Kitten, which can have a similar impact on mana generation, storm, and card draw when paired with other cards in the deck such as Arcum’s Astrolabe. Its primary win condition is Aetherflux Reservoir with an incidental backup in Isochron Scepter with Dramatic Reversal and Copy Artifact with Swan Son",
-    "id": "xudo92cyg1qk",
-    "recommended": false,
-    "title": "JVP Kitten Storm"
-  },
-  {
-    "commander": [
-      {
         "name": "Atraxa, Grand Unifier",
         "link": "https://cards.scryfall.io/normal/front/4/a/4a1f905f-1d55-4d02-9d24-e58070793d3f.jpg?1676519555"
       }
@@ -7029,13 +4499,18 @@
       "title": "Dargo and the Dargonauts",
       "link": "https://discord.gg/3QJa4PVFqE"
     },
-    "updated": "2023-12-11T10:57:11.002Z",
+    "updated": "2023-10-02T10:57:11.002Z",
     "section": "COMPETITIVE",
     "colors": ["r", "g", "u"],
     "decklists": [
       {
         "link": "https://www.moxfield.com/decks/NbC7buwS5EqgHtXglU7f_A",
         "title": "Dargo Thrasios Combo Midrange",
+        "primer": true
+      },
+      {
+        "link": "https://www.moxfield.com/decks/D7Oxkt3-s0SwLEaiX4g9UQ",
+        "title": "Temur Necro",
         "primer": true
       }
     ],
@@ -7236,13 +4711,18 @@
     ],
     "discord": null,
     "updated": "2023-12-11T11:10:34.505Z",
-    "section": "BREW",
+    "section": "DEPRECATED",
     "colors": ["g", "u"],
     "decklists": [
       {
         "link": "https://www.moxfield.com/decks/shJXCKZkEECtSx1XpN_J3A",
         "title": "Tatyova Turns",
         "primer": true
+      },
+      {
+        "link": "https://www.moxfield.com/decks/Vva2blXPDEWTPCIW7QfpbA",
+        "title": "Simic Ad Naus in the CZ",
+        "primer": false
       }
     ],
     "description": "Tatyova Turns is a midrange deck that aims to navigate the early game through interaction and playing key stax pieces, and is able to dominate the mid-late game thanks to having a very powerful value engine on the command zone that is able to draw a lot of cards without casting spells and functions through the most commonly played stax. It wins through generating an infinite turns loop or with a huge finale of devastation after making infinite mana/drawing your deck. The primer has all the combo lines explained.\n\nTatyova is a deck that focuses on lands, which is a unique arquetype not commonly seen in cedh that can be attractive to players trying to start on the format or looking for an unconventional cedh deck. With this deck I won Ka0s Treasure Series 7 in September 2023, proving that it is a viable cedh deck in the current meta.",
@@ -7262,13 +4742,18 @@
       "link": "https://discord.gg/YqMF4uNKhQ"
     },
     "updated": "2023-12-11T11:08:38.282Z",
-    "section": "BREW",
+    "section": "DEPRECATED",
     "colors": ["u", "w"],
     "decklists": [
       {
         "link": "https://www.moxfield.com/decks/Z0qIhpgH5Ui_ddm4xLHOSQ",
         "title": "Warped Tour Theros",
         "primer": false
+      },
+      {
+        "link": "https://www.moxfield.com/decks/bge2GjyyfkiUFR_q150pKA",
+        "title": "God of Timing and Priority",
+        "primer": true
       }
     ],
     "description": "An Azorius Storm deck that utilizes flash and cost reduction to choose the best window to go off",
@@ -7317,7 +4802,7 @@
       "link": "https://discord.gg/QScKvrMQmM"
     },
     "updated": "2023-12-20T02:04:13.245Z",
-    "section": "BREW",
+    "section": "DEPRECATED",
     "colors": ["u", "w"],
     "decklists": [
       {
@@ -7345,7 +4830,7 @@
     ],
     "discord": null,
     "updated": "2024-07-13T02:04:13.245Z",
-    "section": "BREW",
+    "section": "DEPRECATED",
     "colors": ["b", "u", "g"],
     "decklists": [
       {
@@ -7366,9 +4851,12 @@
         "link": "https://cards.scryfall.io/large/front/9/5/95c14c4d-6c16-4826-8d93-d89ad04aee09.jpg?1682204132"
       }
     ],
-    "discord": null,
+    "discord": {
+      "title": "Etali cEDH",
+      "link": "https://discord.gg/54aH2UxJU9"
+    },
     "updated": "2024-07-13T02:04:13.245Z",
-    "section": "BREW",
+    "section": "COMPETITIVE",
     "colors": ["r", "g"],
     "decklists": [
       {
@@ -7380,6 +4868,11 @@
         "link": "https://www.moxfield.com/decks/3uQCo276WUqrgP_Hsr_23g",
         "title": "Super Mega Turbo Dinosaur 4000",
         "primer": false
+      },
+      {
+        "link": "https://www.moxfield.com/decks/ib0mCeSAhU65ZzpCHo_Btw",
+        "title": "Flintstone Gummy",
+        "primer": true
       }
     ],
     "description": "Etali, Primal Conqueror is a outlet in the command zone with several different combos. Those combos include: Dockside Extortionist + Temur Sabertooth or Cloudstone Curio, Food Chain + Squee, the Immortal or Eternal Scourge, Dualcaster Mage + Twinflame or Heat Shimmer",
@@ -7399,7 +4892,7 @@
       "link": "https://discord.gg/E4HPUcD8qJ"
     },
     "updated": "2024-07-13T02:04:13.245Z",
-    "section": "BREW",
+    "section": "COMPETITIVE",
     "colors": ["u", "r"],
     "decklists": [
       {
@@ -7475,6 +4968,166 @@
     "title": "Sisay Elk Tutors"
   },
   {
+    "commander": [
+      {
+        "name": "Narset, Enlightened Exile",
+        "link": "https://cards.scryfall.io/large/front/8/2/827ecc44-0b00-4515-8953-bc91fa03705a.jpg?1684340776"
+      }
+    ],
+    "discord": {
+      "title": "Narset Discord",
+      "link": "https://discord.gg/FKn3KdZmjB"
+    },
+    "updated": "2024-10-03T00:50:58.298Z",
+    "section": "BREW",
+    "colors": ["r", "u", "w"],
+    "decklists": [
+      {
+        "link": "https://www.moxfield.com/decks/7sKt08_bI06nTPuwS57jNg",
+        "title": "Narset Breach",
+        "primer": true
+      }
+    ],
+    "description": "Narset, enlightened exile is truly one of Jeskai's strongest allies. This deck can be considered a 'turbo underworld breach' deck since Narset is seeking to win with underworld breach as quickly as possible. This is coupled with a disruptive graveyard strategy while utilizing cards like traumatize (a 1-card-win-condition) with Narset.",
+    "id": "tk3btcn49589",
+    "recommended": false,
+    "title": "Narset Jeskai Breach"
+  },
+  {
+    "commander": [
+      {
+        "name": "Francisco, Fowl Marauder",
+        "link": "https://cards.scryfall.io/large/front/5/1/5182b527-739e-4523-8611-01244ced26ac.jpg?1701084734"
+      },
+      {
+        "name": "Kraum, Ludevic's Opus",
+        "link": "https://cards.scryfall.io/large/front/5/5/557fcd17-6cb3-414a-b2b1-ea9ae32e5aec.jpg?1644853032"
+      }
+    ],
+    "discord": {
+      "title": "Francisco's Marauders",
+      "link": "https://discord.gg/FwnWu7U7tV"
+    },
+    "updated": "2024-10-03T00:50:58.298Z",
+    "section": "BREW",
+    "colors": ["b", "r", "u"],
+    "decklists": [
+      {
+        "link": "https://www.moxfield.com/decks/nqKneyTrb0qXKy1elGekbQ",
+        "title": "Grixisco and the Potent Buccaneers",
+        "primer": true
+      }
+    ],
+    "description": "Grixis midrange control deck. We can leverage our colors and Francisco to play some of the format's cheapest and most efficient combos while also playing an interesting spread of attrition focus cards. This deck has enough explosiveness to seize a window when it appears but enough flexibility to rely on punishing opponents for taking game actions with an oppressive board state of hard to counter creatures and enchantments.",
+    "id": "hou9g36l7qh7",
+    "recommended": false,
+    "title": "Francisco Kraum Midrange Combo"
+  },
+  {
+    "commander": [
+      {
+        "name": "Nadu, Winged Wisdom",
+        "link": "https://cards.scryfall.io/large/front/9/4/94b67489-5eb0-4406-9bf3-27e50dc632eb.jpg?1727093701"
+      }
+    ],
+    "discord": {
+      "title": "Nadu Server",
+      "link": "https://discord.gg/VxdSs6VjCa"
+    },
+    "updated": "2024-10-03T00:50:58.298Z",
+    "section": "DEPRECATED",
+    "colors": ["g", "u"],
+    "decklists": [
+      {
+        "link": "https://www.moxfield.com/decks/7-cxCS-oCk2wDU_auZkNGw",
+        "title": "The Better Bird Wizard",
+        "primer": true
+      },
+      {
+        "link": " https://www.moxfield.com/decks/q1F3AI1NLUSjlehEC-Vv8w",
+        "title": "Tweety & Sylvester",
+        "primer": false
+      }
+    ],
+    "description": "This is a proactive Simic deck that leverages its strong commander to set up insane value and combos to try to win early and grind late its effect being able to put lands into play untapped is so massive it's just a better Thrasios activation that's free if you can target your creatures and with clone effects when can reset out commanders passive it's very clear weakness is that it's a very commander-centric. With the 0 mana equip cards we can use them to get free activations and combo with cards like scute swarm and so much more.",
+    "id": "k61pb4kckr40",
+    "recommended": false,
+    "title": "[HISTORIC] Nadu Manual Value"
+  },
+  {
+    "commander": [
+      {
+        "name": "Ashling, Flame Dancer",
+        "link": "https://cards.scryfall.io/large/front/4/0/40463be5-89e2-410b-9a4b-770f70d14293.jpg?1717012132"
+      }
+    ],
+    "discord": null,
+    "updated": "2024-10-03T00:50:58.298Z",
+    "section": "BREW",
+    "colors": ["r"],
+    "decklists": [
+      {
+        "link": "https://www.moxfield.com/decks/3KP3L6Ns5UK4DTd8mcuHVw",
+        "title": "That New Hotness",
+        "primer": true
+      }
+    ],
+    "description": "This is a combo deck that aims to win at instant speed by targeting a copy spell on the stack with a second copy spell with the commander in play. This results in infinite Magecraft triggers, allowing us to rummage through the deck. In addition to being a combo engine, Ashling’s Magecraft abilities help us to sift through the deck, keep the board clear of dorks/hatebears, and ritual off while we are looking for wins.",
+    "id": "ztcn0d2ttvre",
+    "recommended": false,
+    "title": "Ashling Copy Storm"
+  },
+  {
+    "commander": [
+      {
+        "name": "Derevi, Empyrial Tactician",
+        "link": "https://cards.scryfall.io/large/front/3/a/3a1d0dad-18a8-489e-ac11-08f64b72fda4.jpg?1592673365"
+      }
+    ],
+    "discord": null,
+    "updated": "2024-10-03T00:50:58.298Z",
+    "section": "BREW",
+    "colors": ["g", "u", "w"],
+    "decklists": [
+      {
+        "link": "https://www.moxfield.com/decks/quWU6oeAaEaduCPW-shX4Q",
+        "title": "Peer into the Ibis",
+        "primer": true
+      }
+    ],
+    "description": "This deck leverages efficient creature combinations, usually including its flexible and resilient commander, Derevi, Empyrial Tactician. Derevi relishes the printings of Emiel, Preston, Delney, and Nadu, executes combos with artifacts like Birthing Pod and Chromatic Orrery, and employs The One Ring as an explosive card draw engine. Derevi's biggest weakness is not providing card advantage herself.",
+    "id": "g7e61c5y6nyw",
+    "recommended": false,
+    "title": "Derevi Midrange Pod"
+  },
+  
+  {
+    "commander": [
+      {
+        "name": "Glarb, Calamity's Augur",
+        "link": "https://cards.scryfall.io/large/front/f/f/ffc70b2d-5a3a-49ea-97db-175a62248302.jpg?1721427068"
+      }
+    ],
+    "discord": {
+      "title": "Glarb Server",
+      "link": "https://discord.gg/dxWFRXMWfa"
+    },
+    "updated": "2024-10-03T00:50:58.298Z",
+    "section": "BREW",
+    "colors": ["b", "g", "u"],
+    "decklists": [
+      {
+        "link": "https://www.moxfield.com/decks/RF3Jf0Tn3EWhJl4-liNnEg",
+        "title": "Doomsday FrAugur",
+        "primer": true
+      }
+    ],
+    "description": "Glarb let's you play lands and cast spells (Mana Value 4+) from the top of library, which makes him good for grinding out the long game. You're much more likely than most decks to hit your land drop every turn, and the restriction on his ability to cast spells still lets you cast The One Ring or Ad Naus. He also turns all your top-of-deck tutors into immediately castable, often game-winning, cards. The main win condition (other than Thoracle) is Doomsday. We can Gush for free from the top to break the pile, or just Finale of Devastation X=2 for Thoracle, leaving 3 cards left exactly (Glarb can surveil 2 more if we need to). There are as many piles as there are board states (in theory).",
+    "id": "d0chj24n5jrf",
+    "recommended": false,
+    "title": "Glarb Doomsday"
+  },
+  {
     "id": "pda2xpqxfdtv",
     "commander": [
       {
@@ -7491,12 +5144,17 @@
       "link": "https://discord.gg/RCK9EWrb8M"
     },
     "updated": "2024-07-13T02:04:13.245Z",
-    "section": "BREW",
+    "section": "DEPRECATED",
     "colors": ["w", "b", "r"],
     "decklists": [
       {
         "link": "https://www.moxfield.com/decks/5Nbm07WvPEqcjRy2xhnBsQ",
         "title": "Mad Pod",
+        "primer": true
+      },
+      {
+        "link": "https://www.moxfield.com/decks/MJnAXBjZa0KK1T186FEkmg",
+        "title": "Tymna Dargo Multipass",
         "primer": true
       }
     ],
