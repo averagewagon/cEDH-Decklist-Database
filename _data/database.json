@@ -37,7 +37,7 @@
       "link": "https://discord.gg/Kf2rvZy"
     },
     "updated": "2020-12-17T07:15:09.608Z",
-    "section": "COMPETITIVE",
+    "section": "DEPRECATED",
     "colors": ["b", "r", "u", "w"],
     "decklists": [
       {
@@ -293,11 +293,6 @@
     "colors": ["b", "w", "g", "u"],
     "decklists": [
       {
-        "link": "https://www.moxfield.com/decks/CuKho0dh4UaVpYJWy3xG4A",
-        "title": "Tender Consultation",
-        "primer": false
-      },
-      {
         "link": "https://www.moxfield.com/decks/6KnPPbyVxUW2R4uPV9A3rw",
         "title": "Green CST",
         "primer": false
@@ -310,6 +305,16 @@
       {
         "link": "https://www.moxfield.com/decks/puMwmtIQm0S_2iVLQDkuqQ",
         "title": "Breakfast Hulk",
+        "primer": true
+      },
+      {
+        "link": "https://www.moxfield.com/decks/LBCfNAlN4kOQNqdtqAxBtg",
+        "title": "T&T Turbo Druid",
+        "primer": true
+      },
+      {
+        "link": "https://www.moxfield.com/decks/4y21sNGeOE2qgFGs3mMOHA",
+        "title": "Turtleguide",
         "primer": true
       }
     ],
@@ -354,7 +359,7 @@
       "link": "https://discord.com/invite/wQxeXrj"
     },
     "updated": "2022-11-20T17:09:46.106Z",
-    "section": "COMPETITIVE",
+    "section": "DEPRECATED",
     "colors": ["w"],
     "decklists": [
       {
@@ -366,11 +371,6 @@
         "link": "https://www.moxfield.com/decks/Xp2BrIl_H0iW2m_ShfrtQQ",
         "title": "Lawful Evil",
         "primer": true
-      },
-      {
-        "link": "https://www.moxfield.com/decks/rohOeIs-dEmA1LAqpNaCOg",
-        "title": "Heliod II: Sunshine Boogaloo",
-        "primer": false
       }
     ],
     "description": "A creature based stax deck that seeks to slow the game down and hate out its opponents. Eventually winning with a one card combo with the commander. The deck is very resilient to creature removal and packs a punch as you constantly threaten life totals with your slowly growing creatures. ",
@@ -775,12 +775,12 @@
     "decklists": [
       {
         "link": "https://www.moxfield.com/decks/tj910qUf9Uq-Iibp40QfKw",
-        "title": "To Infinity & Beyond",
+        "title": "Elsha Turbo Breach",
         "primer": true
       },
       {
         "link": "https://www.moxfield.com/decks/a-NUF_t6I0egu8o0JwvXEQ",
-        "title": "Frozen Like Elsha",
+        "title": "Elsha Midrange",
         "primer": false
       },
       {
@@ -823,36 +823,6 @@
     "id": "xnetlvohbtj",
     "recommended": false,
     "title": "Thrasios Tymna Oracle Hulk"
-  },
-  {
-    "commander": [
-      {
-        "name": "Kodama of the East Tree",
-        "link": "https://cards.scryfall.io/normal/front/a/f/af5105ee-09e2-4344-ab39-00f0e9034c47.jpg?1608910768"
-      },
-      {
-        "name": "Tymna the Weaver",
-        "link": "https://cards.scryfall.io/normal/front/b/c/bc7cbe9b-324e-42b8-94e2-36e91cb32163.jpg?1644853048"
-      }
-    ],
-    "discord": {
-      "title": "Abzan Razaketh",
-      "link": "https://discord.gg/mJeBmKp"
-    },
-    "updated": "2023-03-20T23:00:56.274Z",
-    "section": "DEPRECATED",
-    "colors": ["g", "b", "w"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/aR00ZuPWTkCfKtK6lZAm-w",
-        "title": "Abzan Razaketh",
-        "primer": false
-      }
-    ],
-    "description": "An adaptive Abzan deck that aims to grind into the mid to late game through utilization of stax pieces, then pivots to game-ending combos. ",
-    "id": "x7cayignu74g",
-    "recommended": false,
-    "title": "Kodama Tymna Razaketh"
   },
   {
     "commander": [
@@ -936,41 +906,6 @@
     "id": "xsthbf2c4d8",
     "recommended": false,
     "title": "Anje Madness"
-  },
-  {
-    "commander": [
-      {
-        "name": "Tymna the Weaver",
-        "link": "https://cards.scryfall.io/normal/front/b/c/bc7cbe9b-324e-42b8-94e2-36e91cb32163.jpg?1644853048"
-      },
-      {
-        "name": "Thrasios, Triton Hero",
-        "link": "https://cards.scryfall.io/normal/front/2/1/21e27b91-c7f1-4709-aa0d-8b5d81b22a0a.jpg?1606762176"
-      }
-    ],
-    "discord": {
-      "title": "The Paradox",
-      "link": "https://discord.gg/KptBGKxaGy"
-    },
-    "updated": "2023-07-13T22:13:36.237Z",
-    "section": "COMPETITIVE",
-    "colors": ["b", "w", "g", "u"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/LBCfNAlN4kOQNqdtqAxBtg",
-        "title": "T&T Turbo Druid",
-        "primer": true
-      },
-      {
-        "link": "https://www.moxfield.com/decks/4y21sNGeOE2qgFGs3mMOHA",
-        "title": "Turtleguide",
-        "primer": true
-      }
-    ],
-    "description": "This is a Thrasios Tymna midrange deck that uses forbidden tutors, Hermit Druid, Sacred Guide and/or Divining Witch to exile your deck and then win with Thassa's Oracle or Laboratory Maniac. The main draw of the deck is the ability to win via creatures, making it harder to interact with and turning each of your creature tutors into either part of your A+B combo. The commanders are also easily able to grind advantage in longer games.",
-    "id": "xk4etnrdt3t",
-    "recommended": false,
-    "title": "Thrasios Tymna Hermit Druid"
   },
   {
     "commander": [
@@ -1306,6 +1241,11 @@
         "link": "https://www.moxfield.com/decks/3SpRZcA6Z0WKsk9PRBQATA",
         "title": "Curio Control",
         "primer": true
+      },
+      {
+        "link": "https://www.moxfield.com/decks/CeY3eH3oUUynLoLnrMV85A",
+        "title": "Crazy Diamond Breach",
+        "primer": false
       }
     ],
     "description": "A sans-white version of typical sans-red Thassa's Oracle decks. While these highly adaptive, interactive decks can win quickly with infinite mana or Underworld Breach. These decks look to establish card advantage early and interact on the stack. They have no issue easily pivoting to a grind strategy, falling back on Thrasios, Triton Hero and Seedborn Muse to pull ahead and win with an efficient combo finish.",
@@ -1603,32 +1543,6 @@
   {
     "commander": [
       {
-        "name": "Tasigur, the Golden Fang",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/d/7/d7b7d726-c395-4af4-aa6a-e8e0c0582a1f.jpg?1559959246"
-      }
-    ],
-    "discord": {
-      "title": "The Banana King of cELK",
-      "link": "https://discord.gg/ERMTuyP"
-    },
-    "updated": "2021-09-05T17:24:26.930Z",
-    "section": "COMPETITIVE",
-    "colors": ["b", "g", "u"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/YyMGY5BD_0-gR0vQwaXPtA",
-        "title": "Tainted Control",
-        "primer": true
-      }
-    ],
-    "description": "A Control deck that seeks to control the game with early game card advantage and disruption until the late game, where it seeks to win when we can safely land a win condition. Tasigur is an important asset to the deck that can greatly help us in the late game by acting either as a political resource to recur disruption or as a source of card advantage.",
-    "id": "xsbjhy8iowuh",
-    "recommended": false,
-    "title": "Tasigur Control"
-  },
-  {
-    "commander": [
-      {
         "name": "Tymna the Weaver",
         "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/c/bc7cbe9b-324e-42b8-94e2-36e91cb32163.jpg?1644853048"
       },
@@ -1709,34 +1623,6 @@
   {
     "commander": [
       {
-        "name": "Kenrith, the Returned King",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/5/6/56c1227e-bea7-47cb-bbec-389a3d585af5.jpg?1637568481"
-      }
-    ],
-    "discord": { "title": "Turbo Farm", "link": "https://discord.gg/xxpPBj4" },
-    "updated": "2022-09-02T04:56:20.051Z",
-    "section": "COMPETITIVE",
-    "colors": ["b", "g", "r", "u", "w"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/-MbskARpZEunKrzXVvrNmw",
-        "title": "[5C Storm] CEDH Algenus Turbo Naus",
-        "primer": true
-      },
-      {
-        "link": "https://www.moxfield.com/decks/6DSumnTcFkmstxEtZpik-A",
-        "title": "Underworld Returned",
-        "primer": false
-      }
-    ],
-    "description": "Kenrith not only provides you with all the colours in the game, it also has potential as a commander that allows for additional combos such as dockside loops. Since it's a storm deck it still tries to win in the early (1-3) turns, but with its abilities it also allows you to go into longer games. Faring better in slower metas and games does mean the speed suffers a bit compared to other Storm and Turbo Naus commanders, however. A solid deck to pick up if you want to play storm in heavy stax metas, or when you really can't choose what colours you want to exclude.\n\n\n5 Color Storm is an archetype that combines the best tutors, acceleration, and combo enablers in every color to assemble powerful storm turns often involving Ad Nauseam, Yawg Will, Breach, and 2-card combos such as Consultation.",
-    "id": "xvywjz21fkxc",
-    "recommended": false,
-    "title": "Kenrith Storm"
-  },
-  {
-    "commander": [
-      {
         "name": "Tayam, Luminous Enigma",
         "link": "https://cards.scryfall.io/normal/front/0/5/05b837a2-5773-4340-87f9-b4d6a43deb27.jpg?1591234301"
       }
@@ -1752,11 +1638,6 @@
       {
         "link": "https://www.moxfield.com/decks/rVEjo7IdpECuP96MlsjcrQ",
         "title": "Tayam Midrange Adnaus",
-        "primer": true
-      },
-      {
-        "link": "https://www.moxfield.com/decks/BpFjTrlXN0ikDw33Vf-dow",
-        "title": "The Devoted Enigma",
         "primer": true
       },
       {
@@ -1816,11 +1697,6 @@
     "colors": ["b", "g", "r", "u", "w"],
     "decklists": [
       {
-        "link": "https://www.moxfield.com/decks/WuFgkXDyCUOl8kMaiqIioA",
-        "title": "Sisay Elk",
-        "primer": true
-      },
-      {
         "link": "https://www.moxfield.com/decks/GMft59MvVkq0po8hUB2Ccg",
         "title": "Sisay Tutor Chains",
         "primer": true
@@ -1840,29 +1716,6 @@
     "id": "xdqkszzrcprk",
     "recommended": false,
     "title": "Sisay Five-Colour Tutors"
-  },
-  {
-    "commander": [
-      {
-        "name": "Tasigur, the Golden Fang",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/d/7/d7b7d726-c395-4af4-aa6a-e8e0c0582a1f.jpg?1559959246"
-      }
-    ],
-    "discord": null,
-    "updated": "2020-12-06T05:50:08.192Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "g", "u"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/lndnBV6EQ0uQsgm9I5o6Bg",
-        "title": "HexBroker",
-        "primer": false
-      }
-    ],
-    "description": "BUG Scepter storm decks tend to rely on the card quality of the BUG color combination to leverage the IsoRev combo, along with an infinite mana outlet in the command zone.",
-    "id": "x3h5931g81n",
-    "recommended": false,
-    "title": "BUG Scepter"
   },
   {
     "commander": [
@@ -1954,7 +1807,7 @@
       "link": "https://discord.gg/6Ub5QnN"
     },
     "updated": "2022-03-20T09:18:22.629Z",
-    "section": "COMPETITIVE",
+    "section": "DEPRECATED",
     "colors": ["g", "b", "u"],
     "decklists": [
       {
@@ -2091,7 +1944,7 @@
       "link": "https://discord.gg/7Bj3wuS"
     },
     "updated": "2021-09-05T16:10:17.297Z",
-    "section": "COMPETITIVE",
+    "section": "DEPRECATED",
     "colors": ["g"],
     "decklists": [
       {
@@ -2101,7 +1954,7 @@
       },
       {
         "link": "https://www.moxfield.com/decks/MAQLHack_0SqFMRiVoKY4w",
-        "title": "Kingdom of Wild Hearts",
+        "title": "Selvala Slowstorm",
         "primer": false
       }
     ],
@@ -2367,7 +2220,7 @@
     ],
     "discord": { "title": "Food Chain", "link": "https://discord.gg/dftqxZW" },
     "updated": "2023-10-15T20:16:26.311Z",
-    "section": "COMPETITIVE",
+    "section": "DEPRECATED",
     "colors": ["b", "g", "r", "u", "w"],
     "decklists": [
       {
@@ -2521,7 +2374,7 @@
       "link": "https://discord.gg/NakeK4d"
     },
     "updated": "2021-08-22T17:11:59.086Z",
-    "section": "COMPETITIVE",
+    "section": "DEPRECATED",
     "colors": ["g", "u", "w"],
     "decklists": [
       {
@@ -2916,32 +2769,6 @@
   {
     "commander": [
       {
-        "name": "Animar, Soul of Elements",
-        "link": "https://cards.scryfall.io/normal/front/a/3/a3da57d0-1ae3-4f05-a52d-eb76ad56cae7.jpg?1673148281"
-      }
-    ],
-    "discord": {
-      "title": "Animar's Creature Feature",
-      "link": "https://discord.gg/BXgec3K"
-    },
-    "updated": "2023-03-20T23:15:37.859Z",
-    "section": "COMPETITIVE",
-    "colors": ["g", "r", "u"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/s2jUy7wW1kipTK8IXXpuzQ",
-        "title": "Ancestral Animar",
-        "primer": false
-      }
-    ],
-    "description": "A combo deck which uses a unique suite of combos with Animar's discount ability.",
-    "id": "xf0qh7108yy",
-    "recommended": false,
-    "title": "Animar Harvest"
-  },
-  {
-    "commander": [
-      {
         "name": "Tymna the Weaver",
         "link": "https://cards.scryfall.io/normal/front/b/c/bc7cbe9b-324e-42b8-94e2-36e91cb32163.jpg?1644853048"
       },
@@ -3119,12 +2946,17 @@
       "link": "https://discord.gg/ukqBA8U"
     },
     "updated": "2023-04-09T18:11:47.418Z",
-    "section": "COMPETITIVE",
+    "section": "DEPRECATED",
     "colors": ["g"],
     "decklists": [
       {
         "link": "https://www.moxfield.com/decks/IOyWxvodxkiGECm8CIulEA",
         "title": "Bard Rock Cafe",
+        "primer": true
+      },
+      {
+        "link": "https://www.moxfield.com/decks/ilvW7g3hsUio09K2gLuDmg",
+        "title": "Wanderer's Song",
         "primer": true
       }
     ],
@@ -3257,7 +3089,7 @@
       "link": "https://discord.gg/DQxD2UX"
     },
     "updated": "2022-03-20T09:07:52.497Z",
-    "section": "COMPETITIVE",
+    "section": "DEPRECATED",
     "colors": ["g", "u", "w"],
     "decklists": [
       {
@@ -3657,35 +3489,6 @@
   {
     "commander": [
       {
-        "name": "Jhoira, Weatherlight Captain",
-        "link": "https://img.scryfall.com/cards/normal/front/4/f/4f77d23d-6257-4dae-b585-29f45f13f2e2.jpg?1596138959"
-      }
-    ],
-    "ttl": null,
-    "discord": { "title": "Gartanism", "link": "https://discord.gg/9wkqPyC" },
-    "updated": "2020-08-10T02:24:01.214Z",
-    "section": "DEPRECATED",
-    "colors": ["r", "u"],
-    "decklists": [
-      {
-        "link": "https://tappedout.net/mtg-decks/jhoira-stax-storm-cedh-1/?cb=1564924574",
-        "title": "Jhoira Stax Storm",
-        "primer": false
-      },
-      {
-        "link": "https://tappedout.net/mtg-decks/not-gartas-list-ngl/",
-        "title": "Not  Garda's List",
-        "primer": true
-      }
-    ],
-    "description": "Jhoira Storm aims to disrupt opponent's battlefields with stax effects and a small sutie of counterspells, then assemble a game-winning combo during a single turn. A wide range of tutorable win-cons and Jhoira's innate card draw ability make digging easy in this deck.",
-    "id": "xgg123z7v06",
-    "recommended": false,
-    "title": "Jhoira Stax Storm"
-  },
-  {
-    "commander": [
-      {
         "name": "Tymna the Weaver",
         "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/c/bc7cbe9b-324e-42b8-94e2-36e91cb32163.jpg?1644853048"
       },
@@ -3877,7 +3680,7 @@
       "link": "https://discord.gg/W3VNqbc"
     },
     "updated": "2023-03-20T23:06:09.454Z",
-    "section": "COMPETITIVE",
+    "section": "DEPRECATED",
     "colors": ["b", "g", "r", "u"],
     "decklists": [
       {
@@ -3908,7 +3711,7 @@
       "link": "https://discord.gg/F797PtD"
     },
     "updated": "2022-07-14T00:41:50.553Z",
-    "section": "COMPETITIVE",
+    "section": "DEPRECATED",
     "colors": ["b", "g", "r", "u", "w"],
     "decklists": [
       {
@@ -4329,7 +4132,7 @@
       "link": "https://discord.com/invite/XbCHA4S"
     },
     "updated": "2022-09-23T10:57:04.723Z",
-    "section": "COMPETITIVE",
+    "section": "DEPRECATED",
     "colors": ["r", "u"],
     "decklists": [
       {
@@ -4389,7 +4192,7 @@
       "link": "https://discord.gg/8xH5EN6CPD"
     },
     "updated": "2022-09-02T22:42:47.176Z",
-    "section": "COMPETITIVE",
+    "section": "DEPRECATED",
     "colors": ["g", "u", "r"],
     "decklists": [
       {
@@ -4419,7 +4222,7 @@
       "link": "https://discord.gg/Pr5z3PgggA"
     },
     "updated": "2022-12-17T22:37:08.244Z",
-    "section": "COMPETITIVE",
+    "section": "DEPRECATED",
     "colors": ["r", "b"],
     "decklists": [
       {
@@ -4460,14 +4263,19 @@
     "decklists": [
       {
         "link": "https://www.moxfield.com/decks/FU-C6vZ_f0-SWXt1QwGBzw",
-        "title": "Tasigur One-Card Combos",
+        "title": "Synchro Summon 877",
+        "primer": true
+      },
+      {
+        "link": "https://www.moxfield.com/decks/YyMGY5BD_0-gR0vQwaXPtA",
+        "title": "Tainted Control",
         "primer": true
       }
     ],
-    "description": "Tasigur Fast Combo brings Tasigur's advantages with an aggressive twist. It has the ability to power out early game wins while pivoting to a bevy of secondary strategies if disrupted, giving the deck near unparalleled flexibility. You can grind with many of the best decks at the table and land a stupid value engine early, whether through a powerful Ad Nauseam or a combo utilizing Tasigur's cost reduction to power out expensive creatures through Evolution effects.",
+    "description": "Tasigur has the ability to power out early game wins while pivoting to a bevy of secondary strategies if disrupted, giving the deck near unparalleled flexibility. You can grind with many of the best decks at the table and land a stupid value engine early, whether through a powerful Ad Nauseam or a combo utilizing Tasigur's cost reduction to power out expensive creatures through Evolution effects.",
     "id": "xg1ggyb89nlv",
     "recommended": false,
-    "title": "Tasigur Fast Combo"
+    "title": "Tasigur"
   },
   {
     "commander": [
@@ -4517,7 +4325,7 @@
       "link": "https://discord.gg/XxqWs2A"
     },
     "updated": "2022-03-20T12:07:11.110Z",
-    "section": "COMPETITIVE",
+    "section": "DEPRECATED",
     "colors": ["g", "r", "u", "w"],
     "decklists": [
       {
@@ -4605,7 +4413,7 @@
     ],
     "discord": {
       "title": "Magda Project",
-      "link": "https://discord.gg/x3sYmbtxgY"
+      "link": "https://discord.gg/Magda"
     },
     "updated": "2023-12-21T22:55:33.349Z",
     "section": "COMPETITIVE",
@@ -4693,7 +4501,7 @@
       "link": "https://discord.gg/xxpPBj4"
     },
     "updated": "2023-10-15T19:55:04.202Z",
-    "section": "COMPETITIVE",
+    "section": "DEPRECATED",
     "colors": ["r", "b", "w"],
     "decklists": [
       {
@@ -4811,36 +4619,6 @@
   {
     "commander": [
       {
-        "name": "Thrasios, Triton Hero",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/2/1/21e27b91-c7f1-4709-aa0d-8b5d81b22a0a.jpg?1606762176"
-      },
-      {
-        "name": "Vial Smasher the Fierce",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/7/2/722b1e02-2268-4e02-8d09-9b337da2a844.jpg?1562405249"
-      }
-    ],
-    "discord": {
-      "title": "Turbo Farm",
-      "link": "https://discord.com/invite/W3VNqbc"
-    },
-    "updated": "2022-04-26T08:08:50.016Z",
-    "section": "COMPETITIVE",
-    "colors": ["g", "u", "b", "r"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/CeY3eH3oUUynLoLnrMV85A",
-        "title": "Crazy Diamond Breach",
-        "primer": false
-      }
-    ],
-    "description": "A sans-white turbo Ad Nauseam strategy that focuses on powerful early starts to end the game quickly, focusing on the common Grixis core of fast Ad Nauseam strategies in conjunction with Underworld Breach and Dockside Extortionist. Has solid backup strategies of Oracle Consultation and Dramatic Scepter. ",
-    "id": "x9ujrj0fip1l",
-    "recommended": false,
-    "title": "Thrasios Vial Turbo Naus"
-  },
-  {
-    "commander": [
-      {
         "name": "Kodama of the East Tree",
         "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/a/f/af5105ee-09e2-4344-ab39-00f0e9034c47.jpg?1608910768"
       },
@@ -4854,7 +4632,7 @@
       "link": "https://discord.gg/mNncKnsv2n"
     },
     "updated": "2022-09-02T04:57:34.535Z",
-    "section": "COMPETITIVE",
+    "section": "DEPRECATED",
     "colors": ["g", "u"],
     "decklists": [
       {
@@ -4973,7 +4751,7 @@
       "link": "https://discord.gg/DVnDSm5yNj"
     },
     "updated": "2022-09-02T01:47:05.536Z",
-    "section": "COMPETITIVE",
+    "section": "DEPRECATED",
     "colors": ["g", "b", "w"],
     "decklists": [
       {
@@ -4996,7 +4774,7 @@
     ],
     "discord": { "title": "Razaketh", "link": "https://discord.gg/V6C3nfT7eZ" },
     "updated": "2021-12-21T23:29:06.874Z",
-    "section": "COMPETITIVE",
+    "section": "DEPRECATED",
     "colors": ["b", "g", "r", "u", "w"],
     "decklists": [
       {
@@ -5140,33 +4918,6 @@
   {
     "commander": [
       {
-        "name": "Tymna the Weaver",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/c/bc7cbe9b-324e-42b8-94e2-36e91cb32163.jpg?1644853048"
-      },
-      {
-        "name": "Tana, the Bloodsower",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/a/3/a3d8d64f-a403-42a7-881b-4f70e9fe15a2.jpg?1562413758"
-      }
-    ],
-    "discord": { "title": "Turbo Naus", "link": "https://discord.gg/xxpPBj4" },
-    "updated": "2022-07-14T00:40:51.000Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "w", "g", "r"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/_4HeABv9DEeykmnZy1JICg",
-        "title": "Blood Farm",
-        "primer": false
-      }
-    ],
-    "description": "A sans-blue turbo Naus deck that augments the Mardu core with the best green spells. Sacrifices the interaction found in blue decks for higher densities of ramp and game-winning payoffs like Ad Nauseam, Peer into the Abyss, and Bolas's Citadel.",
-    "id": "x7fyfg31xw5b",
-    "recommended": false,
-    "title": "Tana Tymna Turbo Naus"
-  },
-  {
-    "commander": [
-      {
         "name": "Ob Nixilis, Captive Kingpin",
         "link": "https://cards.scryfall.io/normal/front/d/d/ddb68233-3683-41bd-9b6e-4f07a1b54244.jpg?1684340801"
       }
@@ -5211,7 +4962,7 @@
       "link":"https://discord.gg/pdF3jWw"
    },
    "updated":"2023-09-16T19:51:22.162Z",
-   "section":"COMPETITIVE",
+   "section":"DEPRECATED",
    "colors":["g","u","r","w"],
    "decklists":[
       {
@@ -5242,7 +4993,7 @@
       "link": "https://discord.gg/J6r5R8a7vN"
     },
     "updated": "2022-03-24T07:49:35.996Z",
-    "section": "COMPETITIVE",
+    "section": "DEPRECATED",
     "colors": ["g", "w"],
     "decklists": [
       {
@@ -5394,7 +5145,7 @@
       "link": "https://discord.gg/4znZnVzFD6"
     },
     "updated": "2022-03-20T09:10:01.238Z",
-    "section": "COMPETITIVE",
+    "section": "DEPRECATED",
     "colors": ["w", "g", "r"],
     "decklists": [
       {
@@ -5447,7 +5198,7 @@
     ],
     "discord": null,
     "updated": "2023-03-20T22:45:36.735Z",
-    "section": "COMPETITIVE",
+    "section": "DEPRECATED",
     "colors": ["b", "g", "r"],
     "decklists": [
       {
@@ -5611,7 +5362,7 @@
       "link": "https://discord.com/invite/7BeVTPV"
     },
     "updated": "2022-03-20T09:03:55.757Z",
-    "section": "COMPETITIVE",
+    "section": "DEPRECATED",
     "colors": ["g", "w"],
     "decklists": [
       {
@@ -5740,7 +5491,7 @@
       "link": "https://discord.gg/uDvtcwEDjY"
     },
     "updated": "2023-03-20T22:49:23.262Z",
-    "section": "COMPETITIVE",
+    "section": "DEPRECATED",
     "colors": ["b", "g", "r", "u", "w"],
     "decklists": [
       {
@@ -5802,7 +5553,7 @@
       "link": "https://discord.com/invite/wQxeXrj"
     },
     "updated": "2022-12-17T19:32:22.207Z",
-    "section": "COMPETITIVE",
+    "section": "DEPRECATED",
     "colors": ["w"],
     "decklists": [
       {
@@ -5837,7 +5588,7 @@
       "link": "https://discord.gg/mTAAGZZ"
     },
     "updated": "2022-10-23T18:49:43.179Z",
-    "section": "COMPETITIVE",
+    "section": "DEPRECATED",
     "colors": ["b", "g"],
     "decklists": [
       {
@@ -5879,7 +5630,7 @@
     ],
     "discord": null,
     "updated": "2022-03-20T09:08:38.157Z",
-    "section": "COMPETITIVE",
+    "section": "DEPRECATED",
     "colors": ["b", "u", "w"],
     "decklists": [
       {
@@ -5896,32 +5647,6 @@
   {
     "commander": [
       {
-        "name": "Old Stickfingers",
-        "link": "https://cards.scryfall.io/normal/front/b/2/b203be6f-c565-4d8f-b200-b537569a0292.jpg?1636684695"
-      }
-    ],
-    "discord": {
-      "title": "Stinky Fingies",
-      "link": "https://discord.gg/dbRrXfawF7"
-    },
-    "updated": "2023-09-20T06:45:53.942Z",
-    "section": "COMPETITIVE",
-    "colors": ["b", "g"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/Sm3q2nF4nkWtGi59FuyTcA",
-        "title": "Old Stickfingers Raza Tutor Chain",
-        "primer": true
-      }
-    ],
-    "description": "A fast combo deck that attempts to cast Old Stickfingers and resolve a reanimation spell to win the game.",
-    "id": "xnxtlp1xc0wf",
-    "recommended": false,
-    "title": "Old Stickfingers Reanimation"
-  },
-  {
-    "commander": [
-      {
         "name": "Bruse Tarl, Boorish Herder",
         "link": "https://cards.scryfall.io/normal/front/1/2/125b552b-45ea-4e0b-94a9-8131c97a04c0.jpg?1644853018"
       },
@@ -5932,7 +5657,7 @@
     ],
     "discord": null,
     "updated": "2022-12-17T19:35:21.064Z",
-    "section": "COMPETITIVE",
+    "section": "DEPRECATED",
     "colors": ["r", "w", "u"],
     "decklists": [
       {
@@ -6122,7 +5847,7 @@
       "link": "https://discord.gg/PPKrDgs8Uc"
     },
     "updated": "2022-08-25T14:05:08.311Z",
-    "section": "COMPETITIVE",
+    "section": "DEPRECATED",
     "colors": ["b", "u"],
     "decklists": [
       {
@@ -6179,7 +5904,7 @@
     ],
     "discord": { "title": "Evolution", "link": "https://discord.gg/BbUueGh" },
     "updated": "2023-12-11T11:31:51.885Z",
-    "section": "COMPETITIVE",
+    "section": "DEPRECATED",
     "colors": ["g", "u", "w"],
     "decklists": [
       {
@@ -6202,7 +5927,7 @@
     ],
     "discord": {
       "title": "Shorikai Tarmac",
-      "link": "https://discord.gg/2Cf6S8Xp"
+      "link": "https://discord.gg/7RhFAEB9k6"
     },
     "updated": "2023-10-19T01:51:37.617Z",
     "section": "COMPETITIVE",
@@ -6373,7 +6098,7 @@
       "link": "https://discord.gg/UA66u4ySj4"
     },
     "updated": "2022-09-10T09:38:02.373Z",
-    "section": "COMPETITIVE",
+    "section": "DEPRECATED",
     "colors": ["b", "g", "r", "u", "w"],
     "decklists": [
       {
@@ -6460,8 +6185,8 @@
         "primer": false
       },
       {
-        "link": "https://www.moxfield.com/decks/NIrEE00qDkioqlgw39ECkA",
-        "title": "Rocc'ed the Dinner Rush",
+        "link": "https://www.moxfield.com/decks/jsfVJmjVY0WnuqhXE9FlVg",
+        "title": "New Catering",
         "primer": true
       }
     ],
@@ -6482,7 +6207,7 @@
       "link": "https://discord.gg/HWPs5xbdaT"
     },
     "updated": "2023-03-20T23:41:13.859Z",
-    "section": "COMPETITIVE",
+    "section": "DEPRECATED",
     "colors": ["b", "r", "u"],
     "decklists": [
       {
@@ -6513,7 +6238,7 @@
       "link": "https://discord.gg/UbXHKE866C"
     },
     "updated": "2023-03-20T23:41:55.919Z",
-    "section": "COMPETITIVE",
+    "section": "DEPRECATED",
     "colors": ["b", "r", "u"],
     "decklists": [
       {
@@ -6578,7 +6303,7 @@
       "link": "https://discord.gg/9MA3zb7C6t"
     },
     "updated": "2023-06-02T08:45:10.524Z",
-    "section": "COMPETITIVE",
+    "section": "DEPRECATED",
     "colors": ["r", "b", "g"],
     "decklists": [
       {
@@ -6697,7 +6422,7 @@
     ],
     "discord": null,
     "updated": "2023-06-02T08:44:14.298Z",
-    "section": "COMPETITIVE",
+    "section": "DEPRECATED",
     "colors": ["b", "u", "w"],
     "decklists": [
       {
@@ -6809,7 +6534,7 @@
       "link": "https://discord.gg/tumqnJ7eZY"
     },
     "updated": "2023-10-15T20:15:38.056Z",
-    "section": "COMPETITIVE",
+    "section": "DEPRECATED",
     "colors": ["g", "b", "w"],
     "decklists": [
       {
@@ -6846,7 +6571,7 @@
     ],
     "discord": null,
     "updated": "2022-12-15T12:01:13.588Z",
-    "section": "COMPETITIVE",
+    "section": "DEPRECATED",
     "colors": ["g", "r", "b", "w"],
     "decklists": [
       {
@@ -6858,12 +6583,17 @@
         "link": "https://www.moxfield.com/decks/71_aiEMXNkGLFr8368ytNw",
         "title": "Snake Farm",
         "primer": false
+      },
+      {
+        "link": "https://www.moxfield.com/decks/_4HeABv9DEeykmnZy1JICg",
+        "title": "Blood Farm",
+        "primer": false
       }
     ],
     "description": "Sans-blue turbo lists are extremely fast combo decks intending to leverage early mana and wheels into Ad Naus or PITA. The inclusion of light grind pieces enables the deck a surprising mid game via the Tymna card draw or Bruse/Ikra lifegain plans, giving these decks staying power and stronger mulligan options. In comparison to sans-G turbo decks, green offers the obscene enabler of Culling Ritual, additional fast mana, and a stronger removal suite.",
     "recommended": false,
     "id": "xhy3u2jsb1d",
-    "title": "Sans-blue Turbo"
+    "title": "Tana Tymna Turbo Naus"
   },
   {
     "commander": [
@@ -6908,7 +6638,7 @@
       "link": "https://discord.gg/AgCqtsKjVr"
     },
     "updated": "2023-09-17T02:11:44.390Z",
-    "section": "COMPETITIVE",
+    "section": "DEPRECATED",
     "colors": ["g", "r"],
     "decklists": [
       {
@@ -6939,7 +6669,7 @@
       "link": "https://discord.gg/MmuxqqHhTu"
     },
     "updated": "2023-03-20T23:43:40.699Z",
-    "section": "COMPETITIVE",
+    "section": "DEPRECATED",
     "colors": ["b", "u"],
     "decklists": [
       {
@@ -6973,6 +6703,11 @@
     "section": "DEPRECATED",
     "colors": ["b", "g"],
     "decklists": [
+      {
+        "link": "https://www.moxfield.com/decks/Sm3q2nF4nkWtGi59FuyTcA",
+        "title": "Old Stickfingers Raza Tutor Chain",
+        "primer": true
+      },
       {
         "link": "https://www.moxfield.com/decks/fmnNES9WukquHS4crBUE4A",
         "title": "Old NoozeFingers",
@@ -7134,6 +6869,11 @@
     "colors": ["g", "r", "u"],
     "decklists": [
       {
+        "link": "https://www.moxfield.com/decks/s2jUy7wW1kipTK8IXXpuzQ",
+        "title": "Ancestral Animar",
+        "primer": false
+      },
+      {
         "link": "https://www.moxfield.com/decks/MO7d17e-l0-kwXYG5OjzaQ",
         "title": "Harvest Animar",
         "primer": true
@@ -7157,7 +6897,7 @@
     ],
     "discord": null,
     "updated": "2023-07-13T22:12:44.389Z",
-    "section": "COMPETITIVE",
+    "section": "DEPRECATED",
     "colors": ["r", "g", "w"],
     "decklists": [
       {
@@ -7232,32 +6972,6 @@
     "id": "xudo92cyg1qk",
     "recommended": false,
     "title": "JVP Kitten Storm"
-  },
-  {
-    "commander": [
-      {
-        "name": "Yisan, the Wanderer Bard",
-        "link": "https://cards.scryfall.io/normal/front/6/5/65cd97cd-6d6e-4512-a050-6851b7527567.jpg?1562788157"
-      }
-    ],
-    "discord": {
-      "title": "Wandering Bards",
-      "link": "https://discord.gg/invite/ukqBA8U"
-    },
-    "updated": "2023-04-09T18:14:36.015Z",
-    "section": "DEPRECATED",
-    "colors": ["g"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/ilvW7g3hsUio09K2gLuDmg",
-        "title": "Wanderer's Song",
-        "primer": true
-      }
-    ],
-    "description": "An adaptive, efficient, and consistent mono green list designed to combo out with typical green infinite mana combos assembled through Yisan's ability. This deck is a bit slower, which is made possible by tutorable hate pieces like Collector Ouphe to take the game into the later turns. There it can take up a beatdown plan, swinging in with powerful green creatures.",
-    "recommended": false,
-    "id": "xv3r7zwq6rqg",
-    "title": "Yisan"
   },
   {
     "commander": [
@@ -7342,7 +7056,7 @@
       "link": "https://discord.gg/mTAAGZZ"
     },
     "updated": "2023-09-17T02:13:34.929Z",
-    "section": "COMPETITIVE",
+    "section": "DEPRECATED",
     "colors": ["g", "r", "w"],
     "decklists": [
       {
@@ -7463,7 +7177,7 @@
     "decklists": [
       {
         "link": "https://www.moxfield.com/decks/eb7L1NnJ_UefJC_vNGQkcw",
-        "title": "Wild Court Stax",
+        "title": "It Does Nothing",
         "primer": true
       },
       {
@@ -7570,25 +7284,25 @@
         "link": "https://cards.scryfall.io/normal/front/0/b/0ba99b60-c7d0-4041-a065-f2c510745223.jpg?1699044570"
       }
     ],
-    "discord": { "title": "Izzet cEDH", "link": "https://discord.gg/bVYVdvue" },
+    "discord": { "title": "Simply Saheeli cEDH", "link": "https://discord.com/invite/YPGjd8RTMN" },
     "updated": "2023-11-18T18:37:44.564Z",
-    "section": "BREW",
+    "section": "DEPRECATED",
     "colors": ["r", "u"],
     "decklists": [
       {
         "link": "https://www.moxfield.com/decks/bRpCULcG_EOrIKWTO9Bhvg",
-        "title": "Sun is Shining, Weather is Sweet- Collaborative Saheeli CEDH Primer",
+        "title": "Sun is Shining, Weather is Sweet",
         "primer": true
       },
       {
         "link": "https://www.moxfield.com/decks/4RIqe5ITWEeyKb7ONeA-NQ",
-        "title": "Covoted Briliance Layerd combo Colabritive Saheeli cEDH",
+        "title": "Coveted Brilliance",
         "primer": false
       }
     ],
     "description": "This deck uses the new Saheeli to provide lots of value by abusing a variety of cards that have enter or leave the battlefield effects. Because of this it has a variety of 1 card win conditions with saheeli and overlapping lines that provide lots of redundancy. The deck has two versions, one that is a little faster using underworld breach lines, and a version that is a little more slower that tries to abuse Coveted Jewel as a repeatable card draw and mana engine.",
     "recommended": false,
-    "title": "Saheeli, Sun's Brilliance"
+    "title": "Saheeli Combo"
   },
   {
     "id": "xvd52mf4lp5o",
@@ -7733,6 +7447,32 @@
     "description": "5c midrange creature combo deck with a tutor, free/cheap spell-enabler, combo enabler and infinite mana outlet in the command zone.",
     "recommended": false,
     "title": "Sisay 5C Midrange"
+  },
+  {
+    "commander": [
+      {
+        "name": "Sisay, Weatherlight Captain",
+        "link": "https://cards.scryfall.io/normal/front/5/a/5a293c45-1e73-4527-be2f-2dcd5c47b610.jpg?1650730165"
+      }
+    ],
+    "discord": {
+      "title": "The Weatherlight Compleated",
+      "link": "https://discord.gg/23edgkp5np"
+    },
+    "updated": "2023-10-21T00:50:58.298Z",
+    "section": "DEPRECATED",
+    "colors": ["b", "g", "r", "u", "w"],
+    "decklists": [
+      {
+        "link": "https://www.moxfield.com/decks/WuFgkXDyCUOl8kMaiqIioA",
+        "title": "Sisay Elk",
+        "primer": true
+      }
+    ],
+    "description": "Sisay is a proactive deck that utilizes Sisay's unique activated ability to tutor essential pieces for winning the game. Some lists also utilize Jegantha as a 5C dork in the companion zone to enable a powerful 2-part combo with Sisay.",
+    "id": "vmxtr2xy40qs",
+    "recommended": false,
+    "title": "Sisay Elk Tutors"
   },
   {
     "id": "pda2xpqxfdtv",
