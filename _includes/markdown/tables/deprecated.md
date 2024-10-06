@@ -1,7 +1,7 @@
-The 'Archived' category consists of two types of decks:
-- Decks we feel no longer fit on the main page. This can be either because of general power level concerns, essential pieces being banned, or a lack of updates.
-- Decks that were never on the main page, but were submitted directly into this category to display something that historically saw play.
+The 'Database' category consists of two types of decks:
+- Decks that are still viable within the current cEDH landscape, but are not impactful enough on the larger scale to be featured on the Main Page.
+- 'Historic' decks that represent cEDH's many years of innovation and meta changes. Most lists here were at the top at one point but were impacted by bans.
 
-Many of these lists could still work in a cEDH pod. They might just be a bit weaker compared to other options, or simply need a caring owner to take the deck to the next level once more.
+Many of these lists still work in cEDH pods. They might just be not as popular compared to other options or simply need a caring owner/pilot/community to take the deck to the next level once more. cEDH is a vast format with many viable options for those willing to spend the time to learn.
 
-If you see a deck in "Competitive" which you believe should be "Archived", please report it in [Make a Request](/request).
+If you see a deck in "Competitive" that you believe should be "Database" or visa versa, please report it in [Make a Request](/request) or visit our DDB Support Discord server and participate in related forum discussions.
