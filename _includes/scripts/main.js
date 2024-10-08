@@ -51,6 +51,21 @@ function setupEntryFilters() {
   });
 }
 
+function prepareAd() {
+  if (window.innerWidth > 1200) {
+    id("desktop-ad").classList.add("adsbygoogle");
+    id("mobile-ad").classList.add("hidden");
+  } else {
+    id("desktop-ad").classList.add("hidden");
+    id("mobile-ad").classList.add("adsbygoogle");
+  }
+  try {
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  } catch (error) {
+    console.log("Adblocker detected");
+  }
+}
+
 function applyFilters() {
   const filters = {
     primer: id("primer-only").classList.contains("filter-active"),
