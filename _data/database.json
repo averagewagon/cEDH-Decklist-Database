@@ -3868,7 +3868,7 @@
     "description": "Glarb let's you play lands and cast spells (Mana Value 4+) from the top of library, which makes him good for grinding out the long game. You're much more likely than most decks to hit your land drop every turn, and the restriction on his ability to cast spells still lets you cast The One Ring or Ad Naus. He also turns all your top-of-deck tutors into immediately castable, often game-winning, cards. The main win condition (other than Thoracle) is Doomsday. We can Gush for free from the top to break the pile, or just Finale of Devastation X=2 for Thoracle, leaving 3 cards left exactly (Glarb can surveil 2 more if we need to). There are as many piles as there are board states (in theory).",
     "id": "d0chj24n5jrf",
     "recommended": false,
-    "title": "Glarb Doomsday"
+    "title": "Glarb DoomHulk"
   },
   {
     "commander": [
@@ -3969,7 +3969,7 @@
         "primer": true
       }
     ],
-    "description": "This is a combo heavy midrange list that is trying to abuse Storm's ability, giving storm to the most powerful spells of the format, notably eldritch evolution which is almost a one card combo with the commander. It uses a variety of layered combos to win the game but also play an high tide package to make lots and lots of mana and storm manually to the win!",
+    "description": "Niv Mizzet, Visionary is a Curiosity in the Command Zone, allowing the deck to deploy a large number of pingers and burn spells/abilities into card advantage. Fast Niv is the game, backed up by punishing reactive burn effects and interaction to ensure Niv sticks.",
     "id": "lqf86kmt5h3z",
     "recommended": false,
     "title": "Storm Storm"
@@ -4054,11 +4054,6 @@
         "link": "https://www.moxfield.com/decks/MJnAXBjZa0KK1T186FEkmg",
         "title": "Tymna Dargo Multipass",
         "primer": true
-      },
-      {
-        "link": "https://www.moxfield.com/decks/6PsoE3IuLke1ZZiQMLJakg",
-        "title": "Dargo Huntin' for Treasure",
-        "primer": true
       }
     ],
     "description": "An aggressive Mardu Dargo list focused on turbo-ing out Arena Rector then saccing it to Dargo, which starts a pod-style chain that puts Razaketh onto the battlefield to win. Dargo's depths as a combo piece, sac outlet, and facebeater create variety and unpredictability in both play patterns and wincons.",
@@ -4125,5 +4120,35 @@
     "id": "lvr9ebvppzie",
     "recommended": false,
     "title": "Izzet Poly"
+  },
+  {
+    "commander": [
+      {
+        "name": "Dargo, the Shipwrecker",
+        "link": "https://cards.scryfall.io/large/front/5/c/5cd87cf8-4d5d-4aba-8dfa-800b1fb3799b.jpg?1608910155"
+      },
+      {
+        "name": "Tymna the Weaver",
+        "link": "https://cards.scryfall.io/large/front/b/c/bc7cbe9b-324e-42b8-94e2-36e91cb32163.jpg?1644853048"
+      }
+    ],
+    "discord": {
+      "title": "Dargo and the Dargonauts",
+      "link": "https://discord.gg/RCK9EWrb8M"
+    },
+    "updated": "2025-01-15T02:04:13.245Z",
+    "section": "BREW",
+    "colors": ["w", "b", "r"],
+    "decklists": [
+      {
+        "link": "https://moxfield.com/decks/6PsoE3IuLke1ZZiQMLJakg",
+        "title": "Dargo Huntin' for Treasure",
+        "primer": true
+      }
+    ],
+    "description": "Mardu Dargo is a midrange turbo deck that wins using explosive plays by sacrificing Dargo or following the classic Tymna grind plan. The deck abuses cards such as Burnt Offering, Sacrifice, and Altar of the Wretched to allow for massive payoffs or multiple win attempts on the same turn. If the initial win attempts fail, the deck pivots to using Tymna and Dargo to refill the hand. While this deck struggles into stax, Dargo can pressure life totals of those players to create a window. Pivoting is one of the greatest strengths this deck has due to the sheer density of wincons and lines of play.",
+    "id": "awm370veu7kw",
+    "recommended": false,
+    "title": "Dargo Tymna Layered Turbo"
   }
 ]
