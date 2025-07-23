@@ -3772,7 +3772,7 @@
     },
     "updated": "2025-07-20T00:50:58.298Z",
     "section": "BREW",
-    "colors": ["w, b, r"],
+    "colors": ["w", "b", "r"],
     "decklists": [
       {
         "link": "https://moxfield.com/decks/bh40TYVQ2UWWHBcoF7pn6w",
@@ -3805,7 +3805,7 @@
     "discord": null,
     "updated": "2025-07-20T00:50:58.298Z",
     "section": "BREW",
-    "colors": ["u, r"],
+    "colors": ["u", "r"],
     "decklists": [
       {
         "link": "https://moxfield.com/decks/lZnEmX3Tl0arm4IZEROy6w",
@@ -3836,7 +3836,7 @@
     },
     "updated": "2025-07-20T00:50:58.298Z",
     "section": "BREW",
-    "colors": ["r, g"],
+    "colors": ["r", "g"],
     "decklists": [
       {
         "link": "https://moxfield.com/decks/YSELSaDZo0aJ0FFjFsOvJg",
@@ -3859,7 +3859,7 @@
     "discord": null,
     "updated": "2025-07-20T00:50:58.298Z",
     "section": "BREW",
-    "colors": ["u, r, g"],
+    "colors": ["u", "r", "g"],
     "decklists": [
       {
         "link": "https://moxfield.com/decks/6ktvzFyKG0O2wuuHIkIecw",
@@ -3916,7 +3916,7 @@
     },
     "updated": "2025-07-20T00:50:58.298Z",
     "section": "BREW",
-    "colors": ["w, u, b, r, g"],
+    "colors": ["w", "u", "b", "r", "g"],
     "decklists": [
       {
         "link": "https://moxfield.com/decks/rkfPluCxT0yK3ktOuDZAEQ",
