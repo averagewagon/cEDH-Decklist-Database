@@ -57,7 +57,7 @@
     "description": "A fast deck which combos using Food Chain, with good matchups vs control/stax. Over the years, FC started to see repeated power creep, with commanders requiring less pieces to close out games.",
     "id": "x1uuemw89oma",
     "recommended": false,
-    "title": "Food Chain History"
+    "title": "[HISTORIC] Food Chain History"
   },
   {
     "commander": [
@@ -76,23 +76,23 @@
     "colors": ["b", "w", "g", "u"],
     "decklists": [
       {
-        "link": "https://www.moxfield.com/decks/6KnPPbyVxUW2R4uPV9A3rw",
-        "title": "Green CST",
-        "primer": false
-      },
-      {
         "link": "https://www.moxfield.com/decks/3zvonKRG-0adRL5zi2e0Jg",
         "title": "Thrasios Tymna Chain Stasis",
         "primer": true
       },
       {
-        "link": "https://www.moxfield.com/decks/puMwmtIQm0S_2iVLQDkuqQ",
-        "title": "Breakfast Hulk",
+        "link": "https://www.moxfield.com/decks/4y21sNGeOE2qgFGs3mMOHA",
+        "title": "Turtleguide",
         "primer": true
       },
       {
-        "link": "https://www.moxfield.com/decks/4y21sNGeOE2qgFGs3mMOHA",
-        "title": "Turtleguide",
+        "link": "https://moxfield.com/decks/_qHrZ6hjvUaHkRPP4Gpy9g",
+        "title": "Sad Farm",
+        "primer": true
+      },
+      {
+        "link": "https://moxfield.com/decks/XvNOa4G7jE-37oi_HJ10ag",
+        "title": "Thrasios's Tree Farm",
         "primer": true
       }
     ],
@@ -154,7 +154,7 @@
       {
         "link": "https://www.moxfield.com/decks/2zSXC86KokyKs6vAS9-_sw",
         "title": "💧 Blue Farm💧",
-        "primer": false
+        "primer": true
       },
       {
         "link": "https://www.moxfield.com/decks/7O1sCuIti0igU6Us_Jhadg",
@@ -234,7 +234,7 @@
       },
       {
         "link": "https://www.moxfield.com/decks/y2qAYiefgEOPZmtV2mOQLg",
-        "title": "Monk Tribal",
+        "title": "Elsha Midrange",
         "primer": true
       }
     ],
@@ -288,7 +288,7 @@
         "primer": true
       }
     ],
-    "description": "Oracle Hulk is a Flash Hulk deck that combines the historic speed and efficiency of Flash as a win condition, with the card quality and resilience of Consultation to deadly effect. Oracle hulk is equally capable of keeping up with the fastest of the fast, as well as out-grinding the best of them. The deck is incredibly incredibly difficult to meaningfully disrupt, and will compete at the top level in all but the most hostile metas.",
+    "description": "Oracle Hulk is a Flash Hulk deck that combines the historic speed and efficiency of Flash as a win condition, with the card quality and resilience of Consultation to deadly effect. Oracle Hulk is equally capable of keeping up with the fastest of the fast, as well as out-grinding the best of them. The deck is incredibly difficult to meaningfully disrupt, and will compete at the top level in all but the most hostile metas.",
     "id": "xnetlvohbtj",
     "recommended": false,
     "title": "[HISTORIC] Thrasios Tymna Flash Hulk"
@@ -309,12 +309,12 @@
     "colors": ["b", "r"],
     "decklists": [
       {
-        "link": "https://www.moxfield.com/decks/CBUSkWmVckSqKs_2hj8f0Q",
-        "title": "Filter Anje",
+        "link": "https://moxfield.com/decks/6M-wwdxPjk2GxVbuWLMfgg",
+        "title": "Gecko Morbia",
         "primer": true
       }
     ],
-    "description": "An extremely proactive list, bringing Anje out as quickly as possible to filter through the 40% of the deck that is Madness cards. The density of Madness cards means that the deck is effectively a 60 card deck, increasing its consistency. The deck finishes people off through Worldgorger Dragon loops with Anje out to draw the deck or occasionally infinite mana combos with Cloudstone Curio, again filtering through Anje to find a finisher.",
+    "description": "An extremely proactive list, bringing Anje out as quickly as possible to filter through the 40% of the deck that is Madness cards. The density of Madness cards means that the deck is effectively a 60-card deck, increasing its consistency. The deck finishes people off through Worldgorger Dragon loops with Anje out to draw the deck or occasionally infinite mana combos with Cloudstone Curio, again filtering through Anje to find a finisher.",
     "id": "xsthbf2c4d8",
     "recommended": false,
     "title": "Anje Madness"
@@ -323,7 +323,11 @@
     "commander": [
       {
         "name": "Arcum Dagsson",
-        "link": "https://img.scryfall.com/cards/normal/front/f/5/f5ecf811-2efc-4fa6-9af8-ef09f559ec1a.jpg?1596138059"
+        "link": "https://cards.scryfall.io/large/front/f/5/f5ecf811-2efc-4fa6-9af8-ef09f559ec1a.jpg?1598303734"
+      },
+      {
+        "name": "Paradox Engine",
+        "link": "https://cards.scryfall.io/large/front/f/d/fd8ccd81-9e11-47fa-8e16-064c52c24506.jpg?1576382376"
       }
     ],
     "ttl": null,
@@ -365,7 +369,7 @@
       },
       {
         "link": "https://www.moxfield.com/decks/Kjmsu_ClUkq0uDHRXdMyuw",
-        "title": "Speed needs no translation",
+        "title": "Speed Needs No Translation",
         "primer": true
       }
     ],
@@ -402,11 +406,6 @@
       {
         "link": "https://www.moxfield.com/decks/HYT9YcG0bEK1UMvmEEXtTA",
         "title": "A Faster K'rikk Storm",
-        "primer": true
-      },
-      {
-        "link": "https://www.moxfield.com/decks/qQatEv5sQUeGLg21mUt9EQ",
-        "title": "The RazaK'rrik",
         "primer": true
       }
     ],
@@ -482,6 +481,11 @@
         "link": "https://www.moxfield.com/decks/b4w_I9z0yU6sNBC0kV9YWA",
         "title": "Curious Control",
         "primer": true
+      },
+      {
+        "link": "https://moxfield.com/decks/r4TVjpZkQk-3gOiXbBk0-A",
+        "title": "Mana Boy und die Orangensaftverschütterin",
+        "primer": false
       }
     ],
     "description": "A sans-white version of typical sans-red Thassa's Oracle decks. While these highly adaptive, interactive decks can win quickly with infinite mana or Underworld Breach. These decks look to establish card advantage early and interact on the stack. They have no issue easily pivoting to a grind strategy, falling back on Thrasios, Triton Hero and Seedborn Muse to pull ahead and win with an efficient combo finish.",
@@ -537,32 +541,6 @@
     "id": "xedsxgf4by6a",
     "recommended": false,
     "title": "[HISTORIC] Sidisi Layered Combo"
-  },
-  {
-    "commander": [
-      {
-        "name": "Rielle, the Everwise",
-        "link": "https://cards.scryfall.io/normal/front/5/f/5f03c944-1929-4cb2-a373-d57eefa29ed1.jpg?1591228198"
-      }
-    ],
-    "discord": {
-      "title": "Rielle, la Abuela",
-      "link": "https://discord.gg/9atqeZs"
-    },
-    "updated": "2022-10-23T21:32:12.198Z",
-    "section": "DEPRECATED",
-    "colors": ["r", "u"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/rdb6vhTBQk2dAYDAdnt_jw",
-        "title": "Rielle Tempo?",
-        "primer": true
-      }
-    ],
-    "description": "Rielle is a commander reliant deck that attempts to disrupt opponents tempo with moons and dork denial while using Rielle's ability to outdraw opponents and set up for late game wins by way of sheer card advantage. Most often the deck wins with Underworld Breach as an enabler to set up one of various combo options.",
-    "id": "xtoaehsryw2",
-    "recommended": false,
-    "title": "Rielle Breach"
   },
   {
     "commander": [
@@ -667,8 +645,8 @@
     "colors": ["b", "g", "r", "u", "w"],
     "decklists": [
       {
-        "link": "https://www.moxfield.com/decks/GMft59MvVkq0po8hUB2Ccg",
-        "title": "Sisay Tutor Chains",
+        "link": "https://moxfield.com/decks/4_8wod4y7ECmFZi-d_drpA",
+        "title": "Oath of Sisay",
         "primer": true
       },
       {
@@ -677,8 +655,8 @@
         "primer": true
       },
       {
-        "link": "https://www.moxfield.com/decks/83om8BsqMUWfPbSYQx4iQw",
-        "title": "Stax is for Sisays",
+        "link": "https://moxfield.com/decks/jPeyBO5VYkq60DdFTHlvZg",
+        "title": "Sisay Elk",
         "primer": true
       },
       {
@@ -763,7 +741,7 @@
       {
         "link": "https://www.moxfield.com/decks/YjMwjsyBQ0iHSEQCVLKnYw",
         "title": "Doomsday Rashmi",
-        "primer": false
+        "primer": true
       }
     ],
     "description": "A draw-go control list which uses Rashmi to generate card advantage for counterspells.",
@@ -1011,32 +989,6 @@
   {
     "commander": [
       {
-        "name": "Emry, Lurker of the Loch",
-        "link": "https://cards.scryfall.io/normal/front/2/0/20fec02d-77af-4975-b410-7097c7c28e7e.jpg?1651655696"
-      }
-    ],
-    "discord": {
-      "title": "Emry Discord",
-      "link": "https://discord.gg/yGQ3nYWpdd"
-    },
-    "updated": "2022-10-19T20:21:28.403Z",
-    "section": "DEPRECATED",
-    "colors": ["u"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/Ns1U8bi1fEap3ZT7Is5WmA",
-        "title": "Emry Rusty Rocks",
-        "primer": true
-      }
-    ],
-    "description": "Emry is a non-linear combo deck with varying gameplay patterns and a high learning curve. This deck utilizes the graveyard by repeatedly using Emry's ability to cycle artifacts through your graveyard, using Emry-specific combos and more traditional Isochron Scepter combos in a controlling shell.",
-    "id": "xvihgr8aje8",
-    "recommended": false,
-    "title": "Emry Artifacts"
-  },
-  {
-    "commander": [
-      {
         "name": "Kroxa, Titan of Death's Hunger",
         "link": "https://cards.scryfall.io/normal/front/c/e/cee0459b-9aac-4d2f-abe4-4d5fedde7eb8.jpg?1581481096"
       }
@@ -1125,16 +1077,16 @@
       }
     ],
     "discord": {
-      "title": "Wandering Bards",
-      "link": "https://discord.gg/ukqBA8U"
+      "title": "Yisan Uni-Verse",
+      "link": "https://discord.gg/smUdkSyDbQ"
     },
     "updated": "2023-04-09T18:11:47.418Z",
     "section": "DEPRECATED",
     "colors": ["g"],
     "decklists": [
       {
-        "link": "https://www.moxfield.com/decks/IOyWxvodxkiGECm8CIulEA",
-        "title": "Bard Rock Cafe",
+        "link": "https://moxfield.com/decks/nl1ee7FRm06oDZeU0UBJUw",
+        "title": "Lute-tenant Yisan",
         "primer": true
       },
       {
@@ -1167,9 +1119,19 @@
         "link": "https://www.moxfield.com/decks/shj-af8AiUWaoFVbNORQig",
         "title": "Wizard's Chess",
         "primer": true
-      }
+      },
+      {
+        "link": "https://moxfield.com/decks/Xgz0NiZV-EOPi8W-JKV_pQ",
+        "title": "Nonfoil Tidal Barracuda",
+        "primer": true
+      },
+      {
+        "link": "https://moxfield.com/decks/GbomRsPGaUum9iYp63i3vQ",
+        "title": "Mike Wizardski",
+        "primer": true
+      }      
     ],
-    "description": "Inalla is a proactive combo deck with multiple one card win conditions backed up by the proven and powerful consultation package. What Inalla lacks in command zone value and the utility white or green provides decks, she makes up for with absolutely blistering speed backed up by an interaction suite rivaling that of many of the formats most controlling decks.",
+    "description": "Inalla is a proactive combo deck with multiple one card win conditions backed up by the proven and powerful consultation package. What Inalla lacks in command zone value and the utility white or green provides decks, she makes up for with absolutely blistering speed backed up by an interaction suite rivaling that of many of the format's most controlling decks.",
     "id": "xql9x5rw1hm",
     "recommended": false,
     "title": "Inalla Wizard Combo"
@@ -1216,23 +1178,13 @@
     "colors": ["g", "u"],
     "decklists": [
       {
-        "link": "https://www.moxfield.com/decks/Ivr0j6ozM0C9HpAQM5AUKg",
-        "title": "Kinnan Loves Seedborn",
-        "primer": true
-      },
-      {
-        "link": "https://www.moxfield.com/decks/OYpsy84lZU-HPrQiW9hmdQ",
-        "title": "Grind Them Into Dust",
-        "primer": true
-      },
-      {
-        "link": "https://www.moxfield.com/decks/oRyvNzqYWEiCPQzOjhvFvg",
-        "title": "Kinnan Loves Basalt",
-        "primer": true
-      },
-      {
         "link": "https://moxfield.com/decks/Mi4yPy0jFUGPx6pI5x3OVw",
         "title": "No Bad Cards",
+        "primer": true
+      },
+      {
+        "link": "https://moxfield.com/decks/b2x5nTi6gEuSlyWhdqDlQQ",
+        "title": "Mana Printer",
         "primer": true
       }
     ],
@@ -1264,6 +1216,11 @@
       {
         "link": "https://www.moxfield.com/decks/EhAmBrU6jkmnBE9_BfN7uw",
         "title": "Frosted Flake Loops",
+        "primer": true
+      },
+      {
+        "link": "https://moxfield.com/decks/b3rIFdriv02V2ed0W5yGgw",
+        "title": "Draft Chaff Tribal",
         "primer": true
       }
     ],
@@ -1358,7 +1315,12 @@
         "link": "https://www.moxfield.com/decks/e5I1ZiYoVkiC5EDE_Z1Luw",
         "title": "Last Resort (español)",
         "primer": true
-      }
+      },
+      {
+        "link": "https://moxfield.com/decks/XBLFLjwD5Em0CRjsb9uO0Q",
+        "title": "Sloth Ninja",
+        "primer": false
+      }      
     ],
     "description": "Yuriko is a deck that utilizes Yuriko's ability to burn out its opponents while maintaining card advantage using enablers (low costing creatures) and ninjas. The versatile deck shifts between playing Aggro, Combo, and Control. The deck wins by burning your opponents' life totals to zero, Thoracle + Consultation/Pact, Nashi + Enter the Infinite, or Sakashima's Student loop with an opponent's Dockside. Yuriko is incredibly resilient due to her Commander Ninjutsu which bypasses Commander Tax.",
     "id": "x5pd8ywa5pkb",
@@ -1386,7 +1348,7 @@
         "primer": true
       }
     ],
-    "description": "A low-curve, engine-oriented combo shell for Yarok that leverages cards like Cloud of Faeries, Aluren, Earthcraft and Intruder Alarm to net infinite mana off of continuous creature casts, which are fueled by bounce outlets such as Shrieking Drake, Cavern Harpy or Cloudstone Curio. Combined with an ETB draw creature like Wall of Blossoms, the deck can then win with a win card of your choice, usually with a large Finale of Devastation, Laboratory Maniac or an established Timetwister loop.",
+    "description": "A low-curve, engine-oriented combo shell for Yarok that leverages cards like Cloud of Faeries, Aluren, Earthcraft and Intruder Alarm to net infinite mana off of continuous creature casts, which are fueled by bounce outlets such as Shrieking Drake, Cavern Harpy, or Cloudstone Curio. Combined with an ETB draw creature like Wall of Blossoms, the deck can then win with a win card of your choice, usually with a large Finale of Devastation, Laboratory Maniac or an established Timetwister loop.",
     "id": "xscjeb7bx9a",
     "recommended": false,
     "title": "Yarok Spellseeker Aluren"
@@ -1444,7 +1406,7 @@
       {
         "link": "https://www.moxfield.com/decks/5MGq8rHiN0eVPhDtVi84AQ",
         "title": "4 Color Definitely Not Varolz",
-        "primer": false
+        "primer": true
       }
     ],
     "description": "Tymna/Tana Hulk is a proactive archetype that cheats Protean Hulk into play using the former Shuffle Hulk package. While it doesn't have the speed of Varolz Hulk nor the power of the Oracle pile, the deck has a strong source of card advantage in Tymna, can power out explosive turns with Dockside Extortionist, and has additional ways of getting Hulk triggers using cards like Sneak Attack and Goblin Bombardment",
@@ -1468,17 +1430,22 @@
     "colors": ["b", "g", "r", "u", "w"],
     "decklists": [
       {
-        "link": "https://www.moxfield.com/decks/FqWcv7mbwkuYxEXTTUYGbA",
-        "title": "A² EVO",
-        "primer": false
+        "link": "https://moxfield.com/decks/mkIhm5thEUGpwANTr1-GJQ",
+        "title": "King of Thousand Faces",
+        "primer": true
       },
       {
         "link": "https://www.moxfield.com/decks/gCGAkW-HEUGRAlnPW0umaA",
         "title": "The King's Kitten",
         "primer": false
+      },
+      {
+        "link": "https://moxfield.com/decks/9bUzbdppDkKj7kl4mkcO1g",
+        "title": "Mask of Royalty",
+        "primer": true
       }
     ],
-    "description": "Kenrith Midrange is an adaptive deck that really wants to out value other decks through multiple lines that generate card value. Typical wincons include Oracle Consult and Dockside Mayhem loops with Kenrith.",
+    "description": "Kenrith Midrange is an adaptive deck that wants to out-value other decks through multiple lines that generate card value. Typical wincons include Oracle Consult and Dockside Mayhem loops with Kenrith.",
     "id": "xsltu71ufxg8",
     "recommended": false,
     "title": "Kenrith Midrange"
@@ -1507,9 +1474,14 @@
         "link": "https://www.moxfield.com/decks/vreLLzMBwk2e4UoyV7mZUw",
         "title": "Winota Avalanche",
         "primer": true
+      },
+      {
+        "link": "https://moxfield.com/decks/K1g-UAe7I0WK1yZgSYD_SA",
+        "title": "Red Famine",
+        "primer": true
       }
     ],
-    "description": "Winota Snowball Stax seeks to be an explosive stax combo deck that wants to play nonhuman creatures early and then play its commander. Winota cheats creatures into play at an alarming rate and the deck can overwhelm the board quite easily. The explosive nature of the deck in combination with its tightly layered combos allow for the first real opportunity for Boros to play at the competitive tables.",
+    "description": "Winota Snowball Stax seeks to be an explosive stax combo deck that wants to play nonhuman creatures early and then play its commander. Winota cheats creatures into play at an alarming rate, and the deck can overwhelm the board quite easily. The explosive nature of the deck in combination with its tightly layered combos allows for the first real opportunity for Boros to play at the competitive tables.",
     "id": "xsfpzzmphkx",
     "recommended": false,
     "title": "Winota Stax"
@@ -1532,10 +1504,10 @@
       {
         "link": "https://www.moxfield.com/decks/Fk3420CmO0ONCWVeag_MTA",
         "title": "Doomsday at its Finest.",
-        "primer": false
+        "primer": true
       }
     ],
-    "description": "A proactive Doomsday deck that utilizes its commander to crack the piles, to win with Kiki-Jiki and Zealous Conscripts, with a variety of backup win conditions, such Redcap combo or Snoop lines. The decks primary goal is to make a lot of fast mana and utilize it to make explosive plays.",
+    "description": "A proactive Doomsday deck that utilizes its commander to crack the piles, to win with Kiki-Jiki and Zealous Conscripts, with a variety of backup win conditions, such Redcap combo or Snoop lines. The deck's primary goal is to make a lot of fast mana and utilize it to make explosive plays.",
     "id": "xc0i0a5057p",
     "recommended": false,
     "title": "Grenzo Doomsday"
@@ -1552,16 +1524,6 @@
     "section": "COMPETITIVE",
     "colors": ["u"],
     "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/mNapLrgSiUaA17cl9XNCpw",
-        "title": "🌊 Urza Poly Tyrant 🌊\"The Tide pod Challenge\"🌀",
-        "primer": true
-      },
-      {
-        "link": "https://www.moxfield.com/decks/kes83-onUU6X_H-RyM8HPw",
-        "title": "Urza Poly Kraken",
-        "primer": true
-      },
       {
         "link": "https://www.moxfield.com/decks/UCZpPdZhHESE1BgFVge3OA/",
         "title": "Urza Power Scepter",
@@ -1598,6 +1560,11 @@
         "link": "https://www.moxfield.com/decks/RyNHZTNqwU2OiJtCz_rwuw",
         "title": "Scurvy Speedrun",
         "primer": true
+      },
+      {
+        "link": "https://moxfield.com/decks/vm1vIKmR9EWj0Qrfa4vOKw",
+        "title": "Grixis Kaizoku",
+        "primer": true
       }
     ],
     "description": "Malcom // Vial Smasher is a traditional grixis turbo naus shell with additional wincons of Malcom + Glint Horn Buccaneer. Malcolm is very cheap to play and helps with initial ramp needed to get off the ground in the early game.",
@@ -1621,12 +1588,12 @@
       "link": "https://discord.gg/UMzWWxjuvD"
     },
     "updated": "2023-09-20T06:46:46.199Z",
-    "section": "COMPETITIVE",
+    "section": "DEPRECATED",
     "colors": ["u", "w", "r"],
     "decklists": [
       {
         "link": "https://www.moxfield.com/decks/tkt0v4U2TEi4m-iKf-WlGQ",
-        "title": "Prep time",
+        "title": "Prep Time",
         "primer": false
       },
       {
@@ -1668,42 +1635,17 @@
         "link": "https://www.moxfield.com/decks/79hYZQUBdUaA9xD8zLX4vQ",
         "title": "Rograkh Silas Storm Combo",
         "primer": true
+      },
+      {
+        "link": "https://moxfield.com/decks/pAPA2nEcuUaTYCuJ31FvXQ",
+        "title": "Greatness At Any Cost",
+        "primer": true
       }
     ],
     "description": "This is a turbo ad nauseam deck that uses its 0 mana commander to enable cards that are incredibly good in the archetype at a very early turn (e.g.: Mox Amber, Culling the Weak, Fierce Guardianship). The deck is incredibly fast, even when compared to other turbo naus commanders. The downside is that it loses out on a commander that grants card advantage.",
     "id": "x4hio3thxg7w",
     "recommended": false,
     "title": "Rograkh Silas Turbo Naus"
-  },
-  {
-    "commander": [
-      {
-        "name": "Thrasios, Triton Hero",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/2/1/21e27b91-c7f1-4709-aa0d-8b5d81b22a0a.jpg?1606762176"
-      },
-      {
-        "name": "Rograkh, Son of Rohgahh",
-        "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/a/4/a4fab67f-00c2-4125-9262-d21a29411797.jpg?1644853041"
-      }
-    ],
-    "discord": {
-      "title": "Temur PolyKraken",
-      "link": "https://discord.gg/8xH5EN6CPD"
-    },
-    "updated": "2022-09-02T22:42:47.176Z",
-    "section": "DEPRECATED",
-    "colors": ["g", "u", "r"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/OSZYIdU-bUmA7MifJQ_fYg",
-        "title": "Temur PolyKraken",
-        "primer": false
-      }
-    ],
-    "description": "Temur PolyKraken (TPK) is a proactive deck that trades the ability to run creatures to turn Polymorph (as well as 5 or more other similar effects) into a 1 card infinite mana combo assemblers using Tidespout Tyrant and Hullbreaker Horror as the deck's only two creature outside of the command zone. Rograkh, son of Rohgahh enables more ways to establish very fast boardstates, and can function as a piece in the Tidespout combo, while Thrasios grinds midgame value and serves as an infinite mana outlet. High amounts of card velocity in TPK assist in assembling the high density of win conditions: Polymorphs, the mana rocks required for the Polymorph and IsoRev combos, and filling the graveyard to fuel Underworld Breach lines",
-    "id": "xya1y3o7b4u",
-    "recommended": false,
-    "title": "Rograkh Thrasios PolyKraken"
   },
   {
     "commander": [
@@ -1879,14 +1821,9 @@
     "colors": ["b", "g", "u"],
     "decklists": [
       {
-        "link": "https://www.moxfield.com/decks/1lr83pnZzkGuN7usk86-6g",
-        "title": "Tentacle Sushi",
-        "primer": true
-      },
-      {
         "link": "https://www.moxfield.com/decks/l3t7BdJigk6mAygcWZ1Txw",
         "title": "Thrasios Tevesh Horror Kitten",
-        "primer": false
+        "primer": true
       }
     ],
     "description": "This is a Sultai Midrange deck that uses its commanders as the main draw engine to find its combos and layers different combos to win the game. A potential main focus is Displacer Kitten to generate more mana for Thrasios activations or flickering Tevesh to draw more cards as well. In addition, it layers its small reanimation package for Hullbreaker Horror to generate infinite mana. Its main way of winning the game is Thassa's Oracle with Timetwister loop as the backup. ",
@@ -1951,18 +1888,18 @@
       {
         "link": "https://www.moxfield.com/decks/FP8jtOxZSk6uMXGchT86Qg",
         "title": "Tymna Malcolm Reanimator",
-        "primer": false
+        "primer": true
       },
       {
-        "link": "https://www.moxfield.com/decks/1ouoXMI2_kmKZDt88bBvLg",
-        "title": "Tymna Malcolm Midrange",
-        "primer": false
+        "link": "https://moxfield.com/decks/lA3BD7dpW0mkmhQljhXerg",
+        "title": "Abandoned To Your Doom",
+        "primer": true
       }
     ],
     "description": "A turbo Ad Nauseam strategy that uses Tymna as a value piece to stay relevant during the whole game while either having another combo piece in the command zone with Malcolm, or even more value with Sakashima. Missing red is going to make this deck slower compared to its Grixis counterparts as many rituals and wincons have been printed in this colour recently, but the UB core still allows us to go for very explosive wins especially considering many lists can pivot to a commander-centric plan.",
     "id": "xc9cxatgah7m",
     "recommended": false,
-    "title": "Esper Turbo Naus"
+    "title": "Malcolm Tymna Esper Turbo"
   },
   {
     "commander": [
@@ -2088,36 +2025,6 @@
   {
     "commander": [
       {
-        "name": "Thrasios, Triton Hero",
-        "link": "https://cards.scryfall.io/normal/front/2/1/21e27b91-c7f1-4709-aa0d-8b5d81b22a0a.jpg?1606762176"
-      },
-      {
-        "name": "Krark, the Thumbless",
-        "link": "https://cards.scryfall.io/normal/front/0/6/06a981cd-1951-438e-95c9-68294795638e.jpg?1617148336"
-      }
-    ],
-    "discord": {
-      "title": "The Thumbless",
-      "link": "https://discord.gg/BZ5JTSJjzF"
-    },
-    "updated": "2023-09-16T19:34:26.974Z",
-    "section": "DEPRECATED",
-    "colors": ["g", "u", "r"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/yWSH2CBfQ0iaQL03CxAs9g",
-        "title": "Thrasios Krark Highlife",
-        "primer": false
-      }
-    ],
-    "description": "This is a proactive combo and storm list that uses Krark to outpace opponents and double disruptive effects. This deck uses Krark's triggered ability to reuse rituals and cantrips. Green's color identity provides better recursion, effective creature tutors and combos, and an infinite mana outlet in the command zone.",
-    "id": "xoys02tfnwhh",
-    "recommended": false,
-    "title": "Krark Thrasios Storm"
-  },
-  {
-    "commander": [
-      {
         "name": "Tevesh Szat, Doom of Fools",
         "link": "https://c1.scryfall.com/file/scryfall-cards/normal/front/8/f/8f244716-78ab-46f5-b6e9-fc1e6db28052.jpg?1608909980"
       },
@@ -2131,7 +2038,7 @@
       "link": "https://discord.gg/jtPw8mdnP9"
     },
     "updated": "2022-03-20T09:08:54.704Z",
-    "section": "COMPETITIVE",
+    "section": "DEPRECATED",
     "colors": ["b", "r", "u"],
     "decklists": [
       {
@@ -2161,12 +2068,17 @@
     "colors": ["b","r"],
     "decklists": [
       {
-        "link": "https://www.moxfield.com/decks/hTtslZM6CESViXgoQ6YAVw",
-        "title": "Ob's Palace",
+        "link": "https://moxfield.com/decks/JotXCPe_TUaM5RiKVQkEmQ",
+        "title": "Roberto Nixilonius is: Chinfather",
         "primer": true
+      },
+      {
+        "link": "https://moxfield.com/decks/CtjNbU4cJ0ahv0HRXTUrYA",
+        "title": "Needles in the Eyes",
+        "primer": false
       }
     ],
-    "description": "This is a grindy, value based deck that uses Ob Nixilis to generate card advantage. It uses cards like kederekt parasite to grind out long games. It can use Ob Nixilis’ size to one shot opponents. This deck is reliant on Ob Nixilis, but if you resolve him early, then you will find yourself winning several games. It is slower than ad naus decks and decks that run rograkh, but it sees a lot more cards. It also has the major upside of using all will be one as a one card win.",
+    "description": "This is a grindy, value-based deck that uses Ob Nixilis to generate card advantage. It uses cards like Kederekt Parasite to grind out long games. It can use Ob Nixilis’ size to one-shot opponents. This deck is reliant on Ob Nixilis, but if you resolve him early, then you will find yourself winning several games. It is slower than ad naus decks and decks that run rograkh, but it sees a lot more cards. It also has the major upside of using all will be one as a one-card win.",
     "id": "xy45huy9wgc",
     "recommended": false,
     "title": "Ob Nixilis Ping"
@@ -2227,7 +2139,7 @@
         "primer": true
       }
     ],
-    "description": "An adaptive combo deck that leverages the consistency and versatility of Captain Sisay's ability to assemble one card combos and find silver bullet stax pieces to stop a majority of archetypes in the format. This deck aims to have Sisay in play quickly and tutor for stax pieces to lock out the board or tutor for infinite mana combos using a variety of legendary combo enablers, including Ashaya, Soul of the Wild, Emiel the Blessed, and Kogla, the Titan Ape. The deck can also assemble stax locks with Living Plane and Linvala, Keeper of Silence or Elesh Norn.",
+    "description": "An adaptive combo deck that leverages the consistency and versatility of Captain Sisay's ability to assemble one-card combos and find silver bullet stax pieces to stop a majority of archetypes in the format. This deck aims to have Sisay in play quickly and tutor for stax pieces to lock out the board or tutor for infinite mana combos using a variety of legendary combo enablers, including Ashaya, Soul of the Wild, Emiel the Blessed, and Kogla, the Titan Ape. The deck can also assemble stax locks with Living Plane and Linvala, Keeper of Silence or Elesh Norn.",
     "id": "xxk0lkf61ks",
     "recommended": false,
     "title": "Sisay Adaptive Tutors"
@@ -2255,11 +2167,6 @@
         "link": "https://www.moxfield.com/decks/oQ2waBUnukehFIS4swH14w",
         "title": "Hipster Stax",
         "primer": true
-      },
-      {
-        "link": "https://moxfield.com/decks/g8ydF842c0WCbXUYBCuXuA",
-        "title": "The New Tier 1",
-        "primer": false
       }
     ],
     "description": "A deck that uses hate cards to lock other players out of their resources. The deck closes games with either one card combo Ardenn/Godo, punchies, or other options such as cloning Archon of Valor's Reach",
@@ -2275,8 +2182,8 @@
       }
     ],
     "discord": {
-      "title": "Blue Man Group",
-      "link": "https://discord.gg/HcrEnRKD3w"
+      "title": "cEDH Arcum Dagsson",
+      "link": "https://discord.gg/SnyAmUxC2z"
     },
     "updated": "2022-10-19T20:20:45.502Z",
     "section": "DEPRECATED",
@@ -2285,6 +2192,11 @@
       {
         "link": "https://www.moxfield.com/decks/HW0maA_PBESdJsRhCWmZfQ",
         "title": "Adaptive Arcum",
+        "primer": true
+      },
+      {
+        "link": "https://moxfield.com/decks/Br2xVKzyTkuh5XMf0kmDiw",
+        "title": "Arcum Dagsson Toolbox",
         "primer": true
       }
     ],
@@ -2316,10 +2228,15 @@
       {
         "link": "https://www.moxfield.com/decks/RqDxnIhrXkSxngOd7xZvWw",
         "title": "Sythis Staxy Combo",
-        "primer": false
+        "primer": true
+      },
+      {
+        "link": "https://moxfield.com/decks/YSJFxR87nEaR3ia2GF-0xQ",
+        "title": "Stax Storm",
+        "primer": true
       }
     ],
-    "description": "Enchanted Harvest's gameplan, similar to that of the legacy enchantress archtype, is to act as a pseudo-prision/stax deck. This is accomplished by abusing stong hate pieces like Stoney Silence and Drannith Magistrate to slow our opponent's gameplans. In doing this we allow time to establish a value engine, such as our commander or another enchantress (e.g. Argothian Enchantress). A winning position usually involves a combo finisher, such as Nature's Chosen loops or Seedcradle Witch loops, allowing us to swing for leathal or draw our deck for a similar result.",
+    "description": "Enchanted Harvest's gameplan, similar to that of the legacy enchantress archetype, is to act as a pseudo-prision/stax deck. This is accomplished by abusing stong hate pieces like Stoney Silence and Drannith Magistrate to slow our opponent's gameplans. In doing this, we allow time to establish a value engine, such as our commander or another enchantress (e.g., Argothian Enchantress). A winning position usually involves a combo finisher, such as Nature's Chosen loops or Seedcradle Witch loops, allowing us to swing for lethal or draw our deck for a similar result.",
     "id": "xmxnkk7t14fj",
     "recommended": false,
     "title": "Sythis Enchantments"
@@ -2346,49 +2263,13 @@
       {
         "link": "https://www.moxfield.com/decks/arYp_HtABUS4t9yG8dIeCg",
         "title": "Snoop Daryl",
-        "primer": false
+        "primer": true
       }
     ],
     "description": "This is a fast combo deck that leverages Gruul's creature tutors and your commander's card draw to crack snoop piles quickly, occasionally hiding behind hatebears and assembling creature based value engines.",
     "id": "xgf6gwxuk06q",
     "recommended": false,
     "title": "Gruul Snoop"
-  },
-  {
-    "commander": [
-      {
-        "name": "Oswald Fiddlebender",
-        "link": "https://cards.scryfall.io/normal/front/b/b/bba1650f-eddf-49a9-820e-489cb8d5b6fa.jpg?1627702172"
-      }
-    ],
-    "discord": {
-      "title": "Unified Mono White",
-      "link": "https://discord.com/invite/wQxeXrj"
-    },
-    "updated": "2022-12-17T19:32:22.207Z",
-    "section": "DEPRECATED",
-    "colors": ["w"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/QSOSSOWsOE6-bpoZG2H_Fg",
-        "title": "Porcelain Throne",
-        "primer": true
-      },
-      {
-        "link": "https://www.moxfield.com/decks/5VixJnhn_0-vGPMMmWMyag",
-        "title": "Fiddle Me This",
-        "primer": true
-      },
-      {
-        "link": "https://www.moxfield.com/decks/SbeGAEVZaUSNXjpYD_ZIkw",
-        "title": "Oswald Translated",
-        "primer": true
-      }
-    ],
-    "description": "A mono white stax deck built around locking your opponents out and using Oswald Fiddlebender to break parity under Rule of Law effects and enable multi-piece combos that let you win through your own stax pieces.",
-    "id": "x580aspgrjui",
-    "recommended": false,
-    "title": "Oswald Rule of Law Stax"
   },
   {
     "commander": [
@@ -2410,23 +2291,8 @@
     "colors": ["b", "g"],
     "decklists": [
       {
-        "link": "https://www.moxfield.com/decks/6qvBeZsl5UOtt3jk0f3n3w",
-        "title": "Grist 12 Entombs (Hulk)",
-        "primer": true
-      },
-      {
-        "link": "https://www.moxfield.com/decks/vOXZWt7llUiHA-ZgB1GgcQ",
-        "title": "Grist 12 Entombs (Razaketh)",
-        "primer": true
-      },
-      {
         "link": "https://www.moxfield.com/decks/yBih2LlY3UmOJkvNuocfCg",
         "title": "Varolz Hulk",
-        "primer": true
-      },
-      {
-        "link": "https://www.moxfield.com/decks/IpKNjemMhUy1cGGAK-zFOA",
-        "title": "Dina Hulk",
         "primer": true
       }
     ],
@@ -2452,6 +2318,11 @@
     "colors": ["r", "w", "u"],
     "decklists": [
       {
+        "link": "https://moxfield.com/decks/q5O2oqFfdUiqgZN-Ve_HJg",
+        "title": "We Are The Pirates Who Don't Do Anything",
+        "primer": true
+      },
+      {
         "link": "https://www.moxfield.com/decks/pKFOTQpWwUS_UBLjSjPivw",
         "title": "Pirates of America",
         "primer": false
@@ -2475,7 +2346,7 @@
     ],
     "discord": { "title": "Evolution", "link": "https://discord.gg/BbUueGh" },
     "updated": "2023-12-11T11:31:51.885Z",
-    "section": "DEPRECATED",
+    "section": "COMPETITIVE",
     "colors": ["g", "u", "w"],
     "decklists": [
       {
@@ -2487,7 +2358,7 @@
     "description": "Bant Advantage Evolution, the BAE archetype, seizes advantage by having a 1-CMC commander in the CZ, opening new Neoform lines into each of the deck's compact combos. While not combing off, the deck turns its other commander, Thrasios, into a grindy value engine, eventually overwhelming the board with filtered card draw and value. ",
     "id": "xmb2ojjsmi8a",
     "recommended": false,
-    "title": "Thrasios Yoshimaru Evolution"
+    "title": "Thrasios Yoshimaru Cradlestorm"
   },
   {
     "commander": [
@@ -2611,59 +2482,6 @@
   {
     "commander": [
       {
-        "name": "Dargo, the Shipwrecker",
-        "link": "https://cards.scryfall.io/normal/front/5/c/5cd87cf8-4d5d-4aba-8dfa-800b1fb3799b.jpg?1608910155"
-      },
-      {
-        "name": "Ikra Shidiqi, the Usurper",
-        "link": "https://cards.scryfall.io/normal/front/8/f/8f2abcc3-dc33-4b9d-a372-1d936e954f94.jpg?1562275017"
-      }
-    ],
-    "discord": {
-      "title": "Dargo and the Dargonauts",
-      "link": "https://discord.gg/9MA3zb7C6t"
-    },
-    "updated": "2023-06-02T08:45:10.524Z",
-    "section": "DEPRECATED",
-    "colors": ["r", "b", "g"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/SVq1U9ZehkCGjROcxTpHPg",
-        "title": "Pirate Blender",
-        "primer": true
-      }
-    ],
-    "description": "The Jund Dargo archetype is a Turbo Naus deck looking to cast an early Ad Nauseam or Peer into the Abyss to draw a large portion of the deck. It aims to use Dargo's cheap casting cost with cards that care about having a high mana value creature to use them with. Sacrifice and Burnt Offering grants you lots of mana, Greater Good to draw you lots of cards, or Eldritch Evolution to cheat Razaketh, the Foulblooded into play and use Dargo as your cheap sacrifice fodder to tutor out your wincons. The deck looks to win with either Dualcaster Mage combo, Breach, or Praetor's Grasp.",
-    "id": "xwpht3auoam",
-    "recommended": false,
-    "title": "Dargo Ikra Raza Naus"
-  },
-  {
-    "commander": [
-      {
-        "name": "Raffine, Scheming Seer",
-        "link": "https://cards.scryfall.io/normal/front/7/1/716a44b4-f6b0-4f14-a270-6442aed3251f.jpg?1664413581"
-      }
-    ],
-    "discord": null,
-    "updated": "2023-06-02T08:44:14.298Z",
-    "section": "DEPRECATED",
-    "colors": ["b", "u", "w"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/mh4NjTAWGUaoZ3pwjziEog",
-        "title": "Seer of Destruction",
-        "primer": true
-      }
-    ],
-    "description": "A midrange deck that seeks to leverage Raffine to provide card selection and pressure through damage, while having a high density of ways to break parity on her ability and generate value and advantage",
-    "id": "xwnqyadhm0x",
-    "recommended": false,
-    "title": "Raffine Midrange"
-  },
-  {
-    "commander": [
-      {
         "name": "Thrasios, Triton Hero",
         "link": "https://cards.scryfall.io/normal/front/2/1/21e27b91-c7f1-4709-aa0d-8b5d81b22a0a.jpg?1606762176"
       },
@@ -2674,29 +2492,19 @@
     ],
     "discord": null,
     "updated": "2023-10-02T11:03:57.768Z",
-    "section": "COMPETITIVE",
+    "section": "DEPRECATED",
     "colors": ["g", "u", "r"],
     "decklists": [
       {
         "link": "https://www.moxfield.com/decks/dd-7fRM6_ECUV1VqZdK9uA",
         "title": "J. Neutron's Brain Blast",
         "primer": true
-      },
-      {
-        "link": "https://www.moxfield.com/decks/4VETNnvuVEewJUoIuSW81Q",
-        "title": "Temur Advantage Evolution",
-        "primer": true
-      },
-      {
-        "link": "https://www.moxfield.com/decks/yN_vO9Kr1ECf9_fZ8Yr7uA",
-        "title": "RogThras Midrange",
-        "primer": true
       }
     ],
-    "description": "Temur Thrasios Midrange aims at using both it's commanders to gain advantage over the table and use evolution pieces to go infinite with Dockside Extortionist. Typically turns 4-5 while holding up interaction on turns 3-4 to stop wins.",
+    "description": "Temur Thrasios Midrange aims at using both its commanders to gain advantage over the table and use evolution pieces to go infinite with Dockside Extortionist. Typically turns 4-5 while holding up interaction on turns 3-4 to stop wins.",
     "id": "x6ow5j5eh1lo",
     "recommended": false,
-    "title": "Temur Thrasios Midrange"
+    "title": "Temur Jeska Thrasios Midrange"
   },
   {
     "commander": [
@@ -2726,9 +2534,14 @@
         "link": "https://www.moxfield.com/decks/KcU93NG41kisOr_xN_1YmA",
         "title": "Hermit Pod",
         "primer": true
+      },
+      {
+        "link": "https://moxfield.com/decks/f_Hvko5gPkGL_GVRlptxaw",
+        "title": "Blood Pod",
+        "primer": true
       }
     ],
-    "description": "Tana Tymna Hulk is a midrange deck that seeks to slow down its opponents with its many supreme stax pieces until it finds a game ending combo involving Protean Hulk, or Arena and/or Academy Rector and Kiki-Jiki. \nThe deck fuses together the very best from the well known Tymna&Tana Birthing Pod / Hulk lists. \n\nWe want to deploy a RoL and/or Null Rod effect asap to slow down faster decks. Rector Breakers biggest strengths is the fact that we can combo off through Null Rod effects with Vivien on the Hunt instead of Birthing Pod. Having Tymna as our commander gives us huge grind potential as well. The most obvious weakness is not playing blue and not being super interactive on the first 2 turns.\n",
+    "description": "Tana Tymna Hulk is a midrange deck that seeks to slow down its opponents with its many supreme stax pieces until it finds a game ending combo involving Protean Hulk, or Arena and/or Academy Rector and Kiki-Jiki. \nThe deck fuses together the very best from the well known Tymna&Tana Birthing Pod / Hulk lists. \n\nWe want to deploy a RoL and/or Null Rod effect asap to slow down faster decks. Rector Breakers biggest strength is the fact that we can combo off through Null Rod effects with Vivien on the Hunt instead of Birthing Pod. Having Tymna as our commander gives us huge grind potential as well. The most obvious weakness is not playing blue and not being super interactive on the first 2 turns.\n",
     "id": "xlbp3dadv87",
     "recommended": false,
     "title": "Tana Tymna Midrange"
@@ -2792,12 +2605,12 @@
       {
         "link": "https://www.moxfield.com/decks/71_aiEMXNkGLFr8368ytNw",
         "title": "Snake Farm",
-        "primer": false
+        "primer": true
       },
       {
         "link": "https://www.moxfield.com/decks/_4HeABv9DEeykmnZy1JICg",
         "title": "Blood Farm",
-        "primer": false
+        "primer": true
       }
     ],
     "description": "Sans-blue turbo lists are extremely fast combo decks intending to leverage early mana and wheels into Ad Naus or PITA. The inclusion of light grind pieces enables the deck a surprising mid game via the Tymna card draw or Bruse/Ikra lifegain plans, giving these decks staying power and stronger mulligan options. In comparison to sans-G turbo decks, green offers the obscene enabler of Culling Ritual, additional fast mana, and a stronger removal suite.",
@@ -2821,41 +2634,20 @@
     "colors": ["b", "u", "w"],
     "decklists": [
       {
-        "link": "https://www.moxfield.com/decks/_s5S0zjjYkW1aT2PoeYV0Q",
-        "title": "Midrange Marnie",
+        "link": "https://moxfield.com/decks/EXv2FGlEeEmiQzbrUoE1WQ",
+        "title": "The Space Cadet",
         "primer": true
-      }
-    ],
-    "description": "A proactive midrange deck with a infinite mana outlet in the command zone that looks to assemble one of two infinite mana combos or pact/thoracle off of an ad nauseam.",
-    "id": "xh7kqh81pnv9",
-    "recommended": false,
-    "title": "Marneus Infinite Mana"
-  },
-  {
-    "commander": [
+      },
       {
-        "name": "Minsc & Boo, Timeless Heroes",
-        "link": "https://cards.scryfall.io/normal/front/9/2/928036c9-11b8-493e-b9f2-8fbd3487cd19.jpg?1681130108"
-      }
-    ],
-    "discord": {
-      "title": "The Gruul Brew Crew",
-      "link": "https://discord.gg/AgCqtsKjVr"
-    },
-    "updated": "2023-09-17T02:11:44.390Z",
-    "section": "DEPRECATED",
-    "colors": ["g", "r"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/N26Q8kszC0uGsmAA-Y5Qdg",
-        "title": "Hamster Boss",
+        "link": "https://moxfield.com/decks/ITI8q7hy80KIeK1jRe-xxQ",
+        "title": "Bald Bros Inc",
         "primer": false
       }
     ],
-    "description": "This midrange deck aims to gain massive value from playing its powerful commander as early as turn 1 (but usually 2-3) and win either by making infinite mana or with a classic gruul combos such as Protean Hulk. M&B is removal, card draw, board presence, and an infinite mana outlet all in the command zone, limited only by being 2 colors.",
-    "id": "xm3ukf3173a7",
+    "description": "Marneus Calgar is versatile against many deck archetypes and can evade the majority of concerning stax pieces. This is an opportunistic deck that seeks to control the game while generating card advantage over time or turbo aggressive win attempts. Marneus will keep the table in check time and time again!",
+    "id": "xh7kqh81pnv9",
     "recommended": false,
-    "title": "Minsc & Boo Midrange"
+    "title": "Marneus Midrange"
   },
   {
     "commander": [
@@ -2872,11 +2664,6 @@
     "section": "DEPRECATED",
     "colors": ["b", "g", "r", "u", "w"],
     "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/OlG6HNPQbUKKY118Y5MqFA",
-        "title": "Codie Naus?",
-        "primer": true
-      },
       {
         "link": "https://www.moxfield.com/decks/jDcOeP7ZcE2KnyuK4Hddag",
         "title": "The Suite Life of Sacking Codie",
@@ -2910,7 +2697,7 @@
       {
         "link": "https://www.moxfield.com/decks/0mnESQIM8k-4_Nz3NGhtdg",
         "title": "Underworld Usurper",
-        "primer": false
+        "primer": true
       }
     ],
     "description": "A sans-white turbo Ad Nauseam strategy that focuses on powerful early starts to end the game quickly, focusing on the common grixis core of fast Ad Nauseam strategies in conjunction with Underworld Breach and Dockside Extortionist. When it is unable to win quickly, it can utilize the powerful card advantage engine Kraum provides while keeping Ad Nauseam relevant and lethal even in the later stages of the game through Ikra Shidiqi's lifegain.",
@@ -2973,11 +2760,6 @@
         "link": "https://www.moxfield.com/decks/qeCOV0mWq02qTSyIEAVlQQ",
         "title": "Layered Atraxa",
         "primer": false
-      },
-      {
-        "link": "https://www.moxfield.com/decks/-y8EU1dmLEOKQuqqvoKeig",
-        "title": "Collaborative Atraxa Primer",
-        "primer": true
       }
     ],
     "description": "Atraxa is both a Food Chain combo outlet and a soft payoff in the command zone, meaning we can build a layered deck that supports both strategies, while also having some unique and powerful interactions with Atraxa herself, like Displacer Kitten. This deck lacks the early game value that Tymna and Thrasios can provide, but the rest of her textbox positions her well for longer games, where you are able to use her large body to pressure opposing life totals, threaten a three turn player clock under a staxxed board or replenish your life total for a late-game Ad Nauseam.",
@@ -3004,11 +2786,6 @@
     "section": "COMPETITIVE",
     "colors": ["r", "g", "u"],
     "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/NbC7buwS5EqgHtXglU7f_A",
-        "title": "Dargo Thrasios Combo Midrange",
-        "primer": true
-      },
       {
         "link": "https://www.moxfield.com/decks/D7Oxkt3-s0SwLEaiX4g9UQ",
         "title": "Temur Necro",
@@ -3067,8 +2844,8 @@
         "primer": true
       },
       {
-        "link": "https://www.moxfield.com/decks/wriu4M_8HE-1rr51DMDNDg",
-        "title": "Winoter in Selesneyan",
+        "link": "https://moxfield.com/decks/P0cqjxPbikKc9cNPFqAkQA",
+        "title": "The Girl and the Tentacles",
         "primer": true
       }
     ],
@@ -3094,12 +2871,7 @@
     "decklists": [
       {
         "link": "https://www.moxfield.com/decks/1DSNHF1Ju0yWCObsgOcXmQ",
-        "title": "UB adaptive control",
-        "primer": false
-      },
-      {
-        "link": "https://www.moxfield.com/decks/-I4OjFNb70O8BaUDhtOEuw",
-        "title": "Rhystic in the Command Zone",
+        "title": "UB Adaptive Control",
         "primer": true
       },
       {
@@ -3176,14 +2948,9 @@
     "colors": ["r", "u"],
     "decklists": [
       {
-        "link": "https://www.moxfield.com/decks/bRpCULcG_EOrIKWTO9Bhvg",
-        "title": "Sun is Shining, Weather is Sweet",
-        "primer": true
-      },
-      {
         "link": "https://www.moxfield.com/decks/4RIqe5ITWEeyKb7ONeA-NQ",
         "title": "Coveted Brilliance",
-        "primer": false
+        "primer": true
       }
     ],
     "description": "This deck uses the new Saheeli to provide lots of value by abusing a variety of cards that have enter or leave the battlefield effects. Because of this it has a variety of 1 card win conditions with saheeli and overlapping lines that provide lots of redundancy. The deck has two versions, one that is a little faster using underworld breach lines, and a version that is a little more slower that tries to abuse Coveted Jewel as a repeatable card draw and mana engine.",
@@ -3207,17 +2974,12 @@
     "colors": ["u", "w"],
     "decklists": [
       {
-        "link": "https://www.moxfield.com/decks/bZkoFr3N6EWCRnw4OPSfow",
-        "title": "Tameshi Bloomin' Control",
-        "primer": true
-      },
-      {
         "link": "https://www.moxfield.com/decks/TgC5Nn3-ikuHlv-ROLB_6Q",
         "title": "Tameshi, Reality Architect",
         "primer": true
       }
     ],
-    "description": "Tameshi is a combo-control deck that uses its commander to present difficult to interact with wins and rebuy high impact permanents. The deck uses Lotus Bloom and LED to great effect, generating large bursts of mana to enable intricate combo turns. The high number of draw engines and interactive spells allows the deck to consistently play into a wide variety of metagames. The primary combos of the deck are Copy Artifact loops, Mind Over Matter + The One Ring, and Mind Over Matter loops.",
+    "description": "Tameshi is a combo-control deck that uses its commander to present difficult-to-interact-with wins and rebuy high-impact permanents. The deck uses Lotus Bloom and LED to great effect, generating large bursts of mana to enable intricate combo turns. The high number of draw engines and interactive spells allows the deck to consistently play into a wide variety of metagames. The primary combos of the deck are Copy Artifact loops, Mind Over Matter + The One Ring, and Mind Over Matter loops.",
     "recommended": false,
     "title": "Tameshi Combo Control"
   },
@@ -3264,8 +3026,8 @@
     "colors": ["u", "r"],
     "decklists": [
       {
-        "link": "https://www.moxfield.com/decks/x5iDbb-n9UCrYAh5PIdtbg",
-        "title": "Count to Three",
+        "link": "https://moxfield.com/decks/IB5XOsz5nk2jBWvqeb7_cA",
+        "title": "Stella Template V3.1",
         "primer": true
       }
     ],
@@ -3346,11 +3108,6 @@
     "colors": ["r"],
     "decklists": [
       {
-        "link": "https://www.moxfield.com/decks/3KP3L6Ns5UK4DTd8mcuHVw",
-        "title": "That New Hotness",
-        "primer": true
-      },
-      {
         "link": "https://www.moxfield.com/decks/P7WbRf3TcEKQlIEflLci0A",
         "title": "Ashling, the Infinite Storm",
         "primer": true
@@ -3408,8 +3165,8 @@
     "colors": ["b", "g", "u"],
     "decklists": [
       {
-        "link": "https://www.moxfield.com/decks/RF3Jf0Tn3EWhJl4-liNnEg",
-        "title": "Doomsday FrAugur",
+        "link": "https://moxfield.com/decks/7feBVhMQKEOmqT5XoaqaMQ",
+        "title": "SirCroaksALot",
         "primer": true
       },
       {
@@ -3440,7 +3197,7 @@
       "link": "https://discord.gg/dxWFRXMWfa"
     },
     "updated": "2024-10-03T00:50:58.298Z",
-    "section": "BREW",
+    "section": "COMPETITIVE",
     "colors": ["w", "b", "r"],
     "decklists": [
       {
@@ -3457,32 +3214,6 @@
   {
     "commander": [
       {
-        "name": "Ratadrabik of Urborg",
-        "link": "https://cards.scryfall.io/large/front/9/3/9315812d-03e8-4eb4-a693-e7adf281f7fb.jpg?1673308046"
-      }
-    ],
-    "discord": {
-      "title": "Orzhov Discord",
-      "link": "https://discord.gg/vzfQNKV4Ry"
-    },
-    "updated": "2024-12-23T00:50:58.298Z",
-    "section": "DEPRECATED",
-    "colors": ["w", "b"],
-    "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/V4RPoLKpr0-WnBpJs8b5XA",
-        "title": "Ratadrabik's Rings of Power",
-        "primer": true
-      }
-    ],
-    "description": "The introduction of the Ring Tempt mechanic from Lord of the Rings: Tales of Middle Earth creates a unique synergy with Ratadrabik of Urborg and creatures with a Ring Tempt ability. When one of those creatures (mainly Samwise the Stouthearted, Gollum, Patient Plotter, or Boromir, Warden of the Tower) die, Ratadrabik will trigger, creating a non-legendary token that is a copy of that creature. Regardless of which one you're using, a Ring tempt trigger will be on the stack. Once it resolves, you choose the token that was just created to be your Ring Bearer, turning it into a legendary creature again. Sacrificing the token then repeats the process, creating a loop that can be used to win the game. Ratadrabik himself also offers a commander with inherent protection through Ward  and has a sizable enough body combined with vigilance to attack through and block most creatures in the format.",
-    "id": "yy5y4r688nx1",
-    "recommended": false,
-    "title": "Ratadrabik Combo"
-  },
-  {
-    "commander": [
-      {
         "name": "The Master of Keys",
         "link": "https://cards.scryfall.io/large/front/3/5/3545341b-dacc-4ac8-976e-39754a62bbc3.jpg?1726596841"
       }
@@ -3495,11 +3226,6 @@
     "section": "DEPRECATED",
     "colors": ["w", "u", "b"],
     "decklists": [
-      {
-        "link": "https://www.moxfield.com/decks/U6-JUrZhCUWx_8jt5lU3Ew",
-        "title": "The Skeleton Keys",
-        "primer": true
-      },
       {
         "link": "https://moxfield.com/decks/HSADrBJTI0iH-IwCWgcx4w",
         "title": "Esper Breach",
@@ -3523,13 +3249,18 @@
       "link": "https://discord.gg/9MrznFwB2H"
     },
     "updated": "2025-04-20T00:50:58.298Z",
-    "section": "BREW",
+    "section": "COMPETITIVE",
     "colors": ["w", "u", "b"],
     "decklists": [
       {
         "link": "https://moxfield.com/decks/uIm7e_KXcUGhv1JB4X4vhQ",
         "title": "The Master of Ceremonies",
         "primer": true
+      },
+      {
+        "link": "https://moxfield.com/decks/HDjM48cwv0mzeosvhKmgZg",
+        "title": "Tivit Time Sieve",
+        "primer": false
       }
     ],
     "description": "Tivit is a primary cEDH Esper commander based around either a simple combo involving Tivit and Time Sieve, or a midrange grind plan produced by flickering Tivit with Displacer Kitten.",
@@ -3549,7 +3280,7 @@
       "link": "https://discord.gg/j9tmgEJhpX"
     },
     "updated": "2025-04-20T00:50:58.298Z",
-    "section": "BREW",
+    "section": "COMPETITIVE",
     "colors": ["w", "u", "b"],
     "decklists": [
       {
@@ -3561,64 +3292,17 @@
         "link": "https://moxfield.com/decks/BXImPca7ak-FsOaDyzE7iw",
         "title": "Fly Eagles Fly",
         "primer": false
+      },
+      {
+        "link": "https://moxfield.com/decks/5QWwmguHmE65SvJF34ngVA",
+        "title": "Hash Slinging Slasher",
+        "primer": true
       }
     ],
     "description": "This is a midrange Esper deck using the commander to break parity in the long game by cheating out instant speed wins, uncounterable silences, or game-breaking creatures.",
     "id": "dxz70dpah2nc",
     "recommended": false,
     "title": "Hashaton Midrange Reanimator"
-  },
-  {
-    "commander": [
-      {
-        "name": "Storm, Force of Nature",
-        "link": "https://cards.scryfall.io/large/front/6/a/6af7766e-7438-4128-a1f2-8b3b3ba3c650.jpg?1730758321"
-      }
-    ],
-    "discord": {
-      "title": "Storm, Force of Nature Discord",
-      "link": "https://discord.com/invite/hHfRXesaNE"
-    },
-    "updated": "2024-12-23T00:50:58.298Z",
-    "section": "DEPRECATED",
-    "colors": ["u", "r", "g"],
-    "decklists": [
-      {
-        "link": "https://moxfield.com/decks/k1hwNaNbdkKnF96OLWuRgw",
-        "title": "The Weather Woman",
-        "primer": true
-      }
-    ],
-    "description": "A highly interactive Storm list that seeks to remain interactive throughout the game and win through a variety of Temur combos as well as by copying your opponents' best spells.",
-    "id": "lqf86kmt5h3z",
-    "recommended": false,
-    "title": "Storm Storm"
-  },
-  {
-    "commander": [
-      {
-        "name": "Niv-Mizzet, Visionary",
-        "link": "https://cards.scryfall.io/large/front/7/a/7a69a618-d588-4745-8ede-0ff0a9f356f1.jpg?1730489058"
-      }
-    ],
-    "discord": {
-      "title": "Izzet cEDH",
-      "link": "https://discord.com/invite/4zKD5fQgXG"
-    },
-    "updated": "2024-12-23T00:50:58.298Z",
-    "section": "BREW",
-    "colors": ["u", "r"],
-    "decklists": [
-      {
-        "link": "https://moxfield.com/decks/f2mxD-Ncl069nEuvt3QULg",
-        "title": "Paruntal Advisory Explicit Content",
-        "primer": false
-      }
-    ],
-    "description": "Niv Mizzet Visionary deploys a plethora of burn engines and spells to draw massive amounts of cards, eventually assembling a typical Izzet combo or continuing to burn out opponents. Pingers, Bolt-effects, and strategies ranging from midrange to turbo can all be found in these lists.",
-    "id": "zddidbjihjx8",
-    "recommended": false,
-    "title": "Niv Mizzet Visionary Value"
   },
   {
     "commander": [
@@ -3632,7 +3316,7 @@
       "link": "https://discord.com/invite/JEmCEf57pm"
     },
     "updated": "2024-12-23T00:50:58.298Z",
-    "section": "BREW",
+    "section": "DEPRECATED",
     "colors": ["w", "u", "b", "r", "g"],
     "decklists": [
       {
@@ -3641,7 +3325,7 @@
         "primer": true
       }
     ],
-    "description": "This variant of Esika is more of a NBC (No Bad Card) than the traditional Jeskai Ascendancy Storm or a polymorph variant. This variant is closer to a standard Blue Farm or RogSi deck than any other 5c Decks. The difference between a Blue Farm deck and Esika is that Esika is a mana engine in the command zone while Tymna, is a draw engine. Both decks utilizing creatures like Ragavan and Lotho to generate advantage, however, Esika will utilize these creatures as an additional mana engine, hence the title, BoP Farm.",
+    "description": "This variant of Esika is more of a NBC (No Bad Card) than the traditional Jeskai Ascendancy Storm or a polymorph variant. This variant is closer to a standard Blue Farm or RogSi deck than any other 5c Decks. The difference between a Blue Farm deck and Esika is that Esika is a mana engine in the command zone, while Tymna is a draw engine. Both decks utilize creatures like Ragavan and Lotho to generate advantage, however, Esika will utilize these creatures as an additional mana engine, hence the title, BoP Farm.",
     "id": "weuggl7xaayf",
     "recommended": false,
     "title": "Esika 5C Good Stuff"
@@ -3658,7 +3342,7 @@
       "link": "https://discord.gg/Ft2wW6hVW4"
     },
     "updated": "2024-04-20T00:50:58.298Z",
-    "section": "BREW",
+    "section": "COMPETITIVE",
     "colors": ["b", "r"],
     "decklists": [
       {
@@ -3669,6 +3353,11 @@
       {
         "link": "https://moxfield.com/decks/5fsJeRHmrUCT5o6vuwLTZA",
         "title": "You Don't Need Blue to Draw Cards",
+        "primer": true
+      },
+      {
+        "link": "https://moxfield.com/decks/ev1ALilkekSHpx-D6bG6Og",
+        "title": "Scam.EXE",
         "primer": true
       }
     ],
@@ -3689,21 +3378,21 @@
       "link": "https://discord.gg/XVbN9R2wQq"
     },
     "updated": "2024-04-20T00:50:58.298Z",
-    "section": "BREW",
+    "section": "COMPETITIVE",
     "colors": ["b", "r"],
-    "decklists": [
+    "decklists": [    
       {
-        "link": "https://moxfield.com/decks/K5aQH5H29Um4Rkv61SZ0mg",
-        "title": "Scion of War",
+        "link": "https://moxfield.com/decks/tvcixDhFv0uRXUyMRt47WA",
+        "title": "Rowan II: Into the Dragonstorm",
         "primer": true
-      },      
+      },
       {
         "link": "https://moxfield.com/decks/1HEyg7BMCUmuFPuMJy6L3Q",
         "title": "As the War Drums Beat...",
         "primer": false
       }
     ],
-    "description": "This is a turbo deck, that seeks to gain mana advantage through the commander and cast big spells to finish your opponents. But this deck is not only all-in turbo, as rakdos is known for, it also has the possibility to grind the midgame quiet well.",
+    "description": "This is a turbo deck that seeks to gain mana advantage through the commander and cast big spells to finish your opponents. But this deck is not only all-in turbo, as Rakdos is known for, it also can grind the midgame quite well.",
     "id": "u3fejoa1irdd",
     "recommended": false,
     "title": "Rowan Turbo Loss"
@@ -3720,14 +3409,9 @@
       "link": "https://discord.gg/Nh4PAZKKpR"
     },
     "updated": "2024-04-20T00:50:58.298Z",
-    "section": "BREW",
+    "section": "DEPRECATED",
     "colors": ["u", "w"],
-    "decklists": [
-      {
-        "link": "https://moxfield.com/decks/1UzXRuaf20WoH2yozTjmJw",
-        "title": "Pla-Gon Jinn",
-        "primer": true
-      },      
+    "decklists": [  
       {
         "link": "https://moxfield.com/decks/6lt1OQkYLUmcqSZrENJxLw",
         "title": "Patrick Star",
@@ -3751,14 +3435,22 @@
         "link": "https://cards.scryfall.io/large/front/a/e/ae4f3aaf-3960-48cd-b34b-32e4ae5ae088.jpg?1721426865"
       }
     ],
-    "discord": null,
+    "discord": {
+      "title": "Build a Bear Workshop",
+      "link": "https://discord.com/invite/Uat39ZFMk4"
+    },
     "updated": "2024-04-20T00:50:58.298Z",
-    "section": "BREW",
+    "section": "COMPETITIVE",
     "colors": ["g"],
     "decklists": [
       {
         "link": "https://moxfield.com/decks/M_pcU9UU_UOLeWUVrgD7Aw",
         "title": "Cocaine Bear",
+        "primer": true
+      },
+      {
+        "link": "https://moxfield.com/decks/2MrG9ADf9km-Lg4hVDHweQ",
+        "title": "The Second Line",
         "primer": true
       }
     ],
@@ -3783,9 +3475,14 @@
       "link": "https://discord.gg/RCK9EWrb8M"
     },
     "updated": "2024-07-13T02:04:13.245Z",
-    "section": "DEPRECATED",
+    "section": "COMPETITIVE",
     "colors": ["w", "b", "r"],
     "decklists": [
+      {
+        "link": "https://moxfield.com/decks/6PsoE3IuLke1ZZiQMLJakg",
+        "title": "Dargo Huntin' for Treasure",
+        "primer": true
+      },
       {
         "link": "https://www.moxfield.com/decks/5Nbm07WvPEqcjRy2xhnBsQ",
         "title": "Mad Pod",
@@ -3797,10 +3494,10 @@
         "primer": true
       }
     ],
-    "description": "An aggressive Mardu Dargo list focused on turbo-ing out Arena Rector then saccing it to Dargo, which starts a pod-style chain that puts Razaketh onto the battlefield to win. Dargo's depths as a combo piece, sac outlet, and facebeater create variety and unpredictability in both play patterns and wincons.",
+    "description": "Dargo Tymna is an adaptive turbo deck that can pivot into wins from seemingly empty board states by using Dargo and Sacrifice effects to obtain large bursts of mana. If attempting to turbo out a win is not feasible, the deck can pivot into drawing cards with Tymna and other strong value creatures.",
     "id": "pda2xpqxfdtv",
     "recommended": false,
-    "title": "Dargo Tymna Turbo Rector"
+    "title": "Dargo Tymna Turbo"
   },
   {
     "commander": [
@@ -3824,11 +3521,6 @@
       {
         "link": "https://moxfield.com/decks/gcbL4HSukUOyNunSOS5xHQ",
         "title": "King Wizzard & The Lizard Kizzard",
-        "primer": true
-      },
-      {
-        "link": "https://moxfield.com/decks/MZmVWKAy-02yU3iiFP7KoQ",
-        "title": "Izzet Kinnan",
         "primer": true
       }
     ],
@@ -3883,8 +3575,8 @@
       "link": "https://discord.gg/AkmDbSScR5"
     },
     "updated": "2025-04-20T02:04:13.245Z",
-    "section": "BREW",
-    "colors": ["u", "r"],
+    "section": "DEPRECATED",
+    "colors": ["b", "g", "u"],
     "decklists": [
       {
         "link": "https://moxfield.com/decks/6R_6Y60onECPsNQbZT7eRw",
@@ -3900,31 +3592,510 @@
   {
     "commander": [
       {
-        "name": "Dargo, the Shipwrecker",
-        "link": "https://cards.scryfall.io/large/front/5/c/5cd87cf8-4d5d-4aba-8dfa-800b1fb3799b.jpg?1608910155"
+        "name": "Krark, the Thumbless",
+        "link": "https://cards.scryfall.io/large/front/0/6/06a981cd-1951-438e-95c9-68294795638e.jpg?1617148336"
       },
       {
-        "name": "Tymna the Weaver",
-        "link": "https://cards.scryfall.io/large/front/b/c/bc7cbe9b-324e-42b8-94e2-36e91cb32163.jpg?1644853048"
+        "name": "Silas Renn, Seeker Adept",
+        "link": "https://cards.scryfall.io/large/front/4/e/4e3fe912-1374-47c7-b73f-89ef55c479c1.jpg?1562399367"
       }
     ],
     "discord": {
-      "title": "Dargo and the Dargonauts",
-      "link": "https://discord.gg/RCK9EWrb8M"
+      "title": "The Thumbless",
+      "link": "https://discord.gg/BZ5JTSJjzF"
     },
-    "updated": "2025-01-15T02:04:13.245Z",
-    "section": "BREW",
-    "colors": ["w", "b", "r"],
+    "updated": "2025-07-21T02:04:13.245Z",
+    "section": "COMPETITIVE",
+    "colors": ["u", "b", "r"],
     "decklists": [
       {
-        "link": "https://moxfield.com/decks/6PsoE3IuLke1ZZiQMLJakg",
-        "title": "Dargo Huntin' for Treasure",
+        "link": "https://moxfield.com/decks/PQ9PfU5bX0SKmSWoBhe2aA",
+        "title": "Breadstorm",
         "primer": true
       }
     ],
-    "description": "Mardu Dargo is a midrange turbo deck that wins using explosive plays by sacrificing Dargo or following the classic Tymna grind plan. The deck abuses cards such as Burnt Offering, Sacrifice, and Altar of the Wretched to allow for massive payoffs or multiple win attempts on the same turn. If the initial win attempts fail, the deck pivots to using Tymna and Dargo to refill the hand. While this deck struggles into stax, Dargo can pressure life totals of those players to create a window. Pivoting is one of the greatest strengths this deck has due to the sheer density of wincons and lines of play.",
-    "id": "awm370veu7kw",
+    "description": "This is a midrange deck that focuses on leveraging value from Krark flips without the need of clone effects or coin-flip doublers to find a way to victory. This means prioritizing powerful, low CMC cantrips, rituals, disruption spells, and tutors provided within the Grixis color identity. The deck has an abundance of powerful draw engines that allow grinding through the midgame. These include cards such as Archmage Emeritus, Mystic Remora, Yusri, Fortune's Flame, Rhystic Study and The One Ring.",
+    "id": "uf67syn94taa",
     "recommended": false,
-    "title": "Dargo Tymna Layered Turbo"
+    "title": "Krark Silas Grixis Krark"
+  },
+  {
+    "commander": [
+      {
+        "name": "Celes, Rune Knight",
+        "link": "https://cards.scryfall.io/large/front/3/0/30584c53-533b-4dc7-b07c-8600164a99b3.jpg?1752052917"
+      }
+    ],
+    "discord": {
+      "title": "Celes, Rune Knight",
+      "link": "https://discord.gg/h2T666jN9r"
+    },
+    "updated": "2025-07-20T00:50:58.298Z",
+    "section": "COMPETITIVE",
+    "colors": ["w", "b", "r"],
+    "decklists": [
+      {
+        "link": "https://moxfield.com/decks/bh40TYVQ2UWWHBcoF7pn6w",
+        "title": "Celes Turbo Breach",
+        "primer": true
+      },
+      {
+        "link": "https://moxfield.com/decks/HKtGTFQFP0mtPGqoEhfaHg",
+        "title": "Celes Gravechurn Combo",
+        "primer": true
+      }
+    ],
+    "description": "Celes, Rune Knight is Mardu commander option with a strong ETB that can be used in infinite combos to draw the whole deck. This ETB can also be used to filter your hand to keep reanimation spells and to discard reanimation targets. Her second ability provides the possibility to win with persist creatures and a sac outlet with infinite sacrifices.",
+    "id": "omgq5px8p5sd",
+    "recommended": false,
+    "title": "Celes Persistant Breach"
+  },
+  {
+    "commander": [
+      {
+        "name": "Vivi Ornitier",
+        "link": "https://cards.scryfall.io/large/front/e/c/ecc1027a-8c07-44a0-bdde-fa2844cff694.jpg?1748706721"
+      }
+    ],
+    "discord": null,
+    "updated": "2025-07-20T00:50:58.298Z",
+    "section": "COMPETITIVE",
+    "colors": ["u", "r"],
+    "decklists": [
+      {
+        "link": "https://moxfield.com/decks/4JeKZ_g_LkGVumOT_5AxiQ",
+        "title": "Turbo Black Mage",
+        "primer": false
+      },
+      {
+        "link": "https://moxfield.com/decks/oumM4rK-O0uZtgaatbHNrA",
+        "title": "...Maybe We Don't Exist",
+        "primer": true
+      }
+    ],
+    "description": "Vivi is a commander that enables explosive storm turns, especially when combined with a curiosity effect. Vivi works both as a mana engine and as a combo outlet.",
+    "id": "fpesw7ay2zdh",
+    "recommended": false,
+    "title": "Vivi Curiosity Storm"
+  },
+  {
+    "commander": [
+      {
+        "name": "Rydia, Summoner of Mist",
+        "link": "https://cards.scryfall.io/large/front/9/9/99450143-6ab5-463d-9e04-e8e6703a8b92.jpg?1748706673"
+      }
+    ],
+    "discord": {
+      "title": "The Gruul Brew Crew",
+      "link": "https://discord.com/invite/zjHZ2vaUAP"
+    },
+    "updated": "2025-07-20T00:50:58.298Z",
+    "section": "DEPRECATED",
+    "colors": ["r", "g"],
+    "decklists": [
+      {
+        "link": "https://moxfield.com/decks/YSELSaDZo0aJ0FFjFsOvJg",
+        "title": "Race to the Bottom",
+        "primer": true
+      }
+    ],
+    "description": "Rydia is a proactive Gruul deck that seeks to use its low cost commander to rummage through its library aggressively, filling its graveyard and finding its combo pieces quickly. The deck wins using Ashaya, Soul of the Wilds & Quirion Ranger to infinitely rummage, Hedge Shredder & Golgari Grave-Troll to mill itself out, or various Underworld Breach lines, both Rydia-agnostic and her own unique versions.",
+    "id": "k2zhrn79dsiv",
+    "recommended": false,
+    "title": "Rydia Turbo Dredge"
+  },
+  {
+    "commander": [
+      {
+        "name": "Loot, the Pathfinder",
+        "link": "https://cards.scryfall.io/large/front/3/3/33c59c04-4c0b-4a60-826e-3a7757d0b2a2.jpg?1738356691"
+      }
+    ],
+    "discord": null,
+    "updated": "2025-07-20T00:50:58.298Z",
+    "section": "DEPRECATED",
+    "colors": ["u", "r", "g"],
+    "decklists": [
+      {
+        "link": "https://moxfield.com/decks/6ktvzFyKG0O2wuuHIkIecw",
+        "title": "Loot and Boop",
+        "primer": true
+      }
+    ],
+    "description": "This deck is an adaptive temur midrange strategy, built around Loot, the Pathfinder. This deck's strategy is to leverage Loot's enormous utility in the command zone to out value and out politic everyone at the table. We are able to leverage loads of interaction, efficient card advantage engines, and multiple combo lines that win at instant speed to play around and over the top of your opponents. The deck is designed to function effectively with and without Loot on the battlefield using an array of combos such as Food Chain, Dualcaster Mage, and Hullbreaker Horror.",
+    "id": "yu6s4l8qe4cl",
+    "recommended": false,
+    "title": "Loot Food Chain"
+  },
+  {
+    "commander": [
+      {
+        "name": "The War Doctor",
+        "link": "https://cards.scryfall.io/large/front/7/a/7a51472c-b61f-4d31-8753-a9ec90d12889.jpg?1696636782"
+      },
+      {
+        "name": "K-9, Mark I",
+        "link": "https://cards.scryfall.io/large/front/b/2/b2e46695-7bd3-448c-a5ea-6d544943ec5f.jpg?1696691794"
+      }
+    ],
+    "discord": {
+      "title": "WarDog House cEDH",
+      "link": "https://discord.gg/BQkKyRf6Kk"
+    },
+    "updated": "2025-07-21T02:04:13.245Z",
+    "section": "DEPRECATED",
+    "colors": ["w", "u", "r"],
+    "decklists": [
+      {
+        "link": "https://moxfield.com/decks/MYN5mWyfbUOw9HFDnGGdPg",
+        "title": "InuSai",
+        "primer": true
+      }
+    ],
+    "description": "Commonly referred to as WarDog, K-9/War Doc is a turbo-style Underworld Breach deck with a game plan to win early and has the ability to pivot based on the pilot's needs. It relies less on The War Doctor and leans more into synergies with K-9, Mark I to get us to The One Ring fastest (via Transmute Artifact) or the ability to use our free Commander-reliant interaction earlier.",
+    "id": "q6tj10urxmni",
+    "recommended": false,
+    "title": "War Doctor / K9 Turbo Breach"
+  },
+  {
+    "commander": [
+      {
+        "name": "Terra, Magical Adept",
+        "link": "https://cards.scryfall.io/large/front/f/b/fbd447aa-588d-4c4d-925e-a7d3bdf6a65c.jpg?1748707836"
+      },
+      {
+        "name": "Esper Terra",
+        "link": "https://cards.scryfall.io/large/back/f/b/fbd447aa-588d-4c4d-925e-a7d3bdf6a65c.jpg?1748707836"
+      }
+    ],
+    "discord": {
+      "title": "The Terra Stack",
+      "link": "https://discord.gg/x7zshpMxnP"
+    },
+    "updated": "2025-07-20T00:50:58.298Z",
+    "section": "COMPETITIVE",
+    "colors": ["w", "u", "b", "r", "g"],
+    "decklists": [
+      {
+        "link": "https://moxfield.com/decks/rkfPluCxT0yK3ktOuDZAEQ",
+        "title": "Terra 5C Turbo Necro/Naus",
+        "primer": true
+      },
+      {
+        "link": "https://moxfield.com/decks/jETanh66Vkua0oZNZi9xuw",
+        "title": "Terran 5C Christmas",
+        "primer": true
+      },
+      {
+        "link": "https://moxfield.com/decks/VQ-CGULXj0KYXSzGqVI5Jw",
+        "title": "Terra Midrange",
+        "primer": true
+      },
+      {
+        "link": "https://moxfield.com/decks/v8i_j7EnYUueo50nbhOzDQ",
+        "title": "Terra the Turbo Terror",
+        "primer": true
+      }
+    ],
+    "description": "This deck is a five-color goodstuff list with a strong focus on enchantments. Terra, Magical Adept can adapt to both turbo and midrange strategies, performing reliably well in either approach. As a win condition, it can pivot to classic lines like Underworld Breach / Thassa's Oracle, or lean into its more unique identity with a Food Chain or clone loop using Terra’s back side. What sets this commander apart is the value engine it creates through milling and tutoring for enchantments.",
+    "id": "yxxzmjj9w1en",
+    "recommended": false,
+    "title": "Terra 5C Goodstuff"
+  },
+  {
+    "commander": [
+      {
+        "name": "Rograkh, Son of Rohgahh",
+        "link": "https://cards.scryfall.io/large/front/a/4/a4fab67f-00c2-4125-9262-d21a29411797.jpg?1769437009"
+      },
+      {
+        "name": "Thrasios, Triton Hero",
+        "link": "https://cards.scryfall.io/large/front/2/1/21e27b91-c7f1-4709-aa0d-8b5d81b22a0a.jpg?1721690845"
+      }
+    ],
+    "discord": {
+      "title": "Rograkh Thrasios cEDH",
+      "link": "https://discord.gg/8c22FCgH3f"
+    },
+    "updated": "2026-02-16T00:50:58.298Z",
+    "section": "BREW",
+    "colors": ["u", "r", "g"],
+    "decklists": [
+      {
+        "link": "https://moxfield.com/decks/BNWjUa_lA0mzxNpgpHDGSA",
+        "title": "Thras-and-Silent Rog",
+        "primer": true
+      }
+    ],
+    "description": "'Roger' and Thrasios are two powerful commanders often seen in other decks like RogSi, Thrasios/Dargo, and Tymna/Thrasios, but until recently were not often seen paired together. Rograkh is a zero-cost creature that will come out on turn one. Thrasios is also often an early drop, but is an important balance as a mana sink to win the game that the pilot always has access to. So, with an outlet in the CZ, two cheap commanders that turn on spells like Fierce Guardianship, Deflecting Swat, and Flare of Duplication; and early access acesss to mana from cards like Springleaf Drum and Gaea's Cradle, you have one of the best decks in the format.",
+    "id": "i38o3ly2s5ie",
+    "recommended": false,
+    "title": "Rograkh Thrasios Cradlestorm+"
+  },
+  {
+    "commander": [
+      {
+        "name": "Narset, Enlightened Master",
+        "link": "https://cards.scryfall.io/large/front/d/e/de4b0d5f-1071-4030-be16-2b4dadbdf9e9.jpg?1690005259"
+      }
+    ],
+    "discord": {
+      "title": "Narset Re-Enlightened",
+      "link": "https://discord.gg/Qx4vfTHvrd"
+    },
+    "updated": "2026-02-16T00:50:58.298Z",
+    "section": "BREW",
+    "colors": ["r", "u", "w"],
+    "decklists": [
+      {
+        "link": "https://moxfield.com/decks/oqXfFIWojUerNdUZRMn2-Q",
+        "title": "Flip It or Rip It",
+        "primer": true
+      }
+    ],
+    "description": "Narset, Enlightened Master is a high-powered extra turns/combo build leveraging Narset's attack trigger to cast high-impact noncreature spells for free. The primary strategy involves accelerating Narset onto the battlefield early (often T2-T3), granting haste, and chaining extra turn spells (e.g., Temporal Manipulation, Time Warp, Alrund's Epiphany) to repeatedly attack and exile cards. Win conditions include storming off with Mind's Desire/Brain Freeze, generating infinite turns via Mind Over Matter + Narset, or using Jace, Wielder of Mysteries with library depletion. Narset is the core engine, enabling free spell cascades and demanding protection due to the deck's heavy reliance on her.",
+    "id": "h9t87vya626y",
+    "recommended": false,
+    "title": "Narset Turns"
+  },
+  {
+    "id": "xbaa6sv9uxcj",
+    "commander": [
+      {
+        "name": "Ral, Monsoon Mage",
+        "link": "https://cards.scryfall.io/large/front/4/3/438d8a26-ddc9-4829-8aff-22d6af6575cf.jpg?1748260617"
+      },
+      {
+        "name": "Ral, Leyline Prodigy",
+        "link": "https://cards.scryfall.io/large/back/4/3/438d8a26-ddc9-4829-8aff-22d6af6575cf.jpg?1748260617"
+      }
+    ],
+    "discord": {
+      "title": "Ral Monsoon Mage - cEDH",
+      "link": "https://discord.gg/EJJBhqYDcg"
+    },
+    "updated": "2026-02-16T02:04:13.245Z",
+    "section": "BREW",
+    "colors": ["u", "r"],
+    "decklists": [
+      {
+        "link": "https://moxfield.com/decks/nmG_zNiugEeTszW5ojaQrQ",
+        "title": "NASA: The Parker Solar Probe",
+        "primer": true
+      }
+    ],
+    "description": "Ral, Monsoon Mage is a turbo storm deck that looks to shove wins through any window it’s granted—often repeatedly throughout a game. As a two-drop with cost reduction, Ral enables these attempts as early as turn 1 or 2, punishing slower midrange setups. His Planeswalker side’s ultimate not only enables explosive finishes, but also rewards minor (or even countered) spells, making storm turns resilient even against the format’s strongest engines.",
+    "recommended": false,
+    "title": "Ral Turbo Storm"
+  },
+  {
+    "commander": [
+      {
+        "name": "The Wandering Minstrel",
+        "link": "https://cards.scryfall.io/large/front/7/7/77bc419d-ff69-4e7c-afe6-faca383a5ed7.jpg?1748706723"
+      }
+    ],
+    "discord": {
+      "title": "Amulet in the CZ",
+      "link": "https://discord.gg/ghDbGRVUBk"
+    },
+    "updated": "2026-02-16T11:02:45.073Z",
+    "section": "BREW",
+    "colors": ["b", "g", "r", "u", "w"],
+    "decklists": [
+      {
+        "link": "https://moxfield.com/decks/A8bXWkeyZE2-iJh5U950Bw",
+        "title": "YABL",
+        "primer": true
+      },
+      {
+        "link": "https://moxfield.com/decks/n1pdvrlUoUSm5a17eWTZlA",
+        "title": "Song of the Lands",
+        "primer": true
+      }
+    ],
+    "description": "This deck wins in a hard-to-interact way with land loops utilizing Aftermath Analyst or Lumra, Bellow of the Woods. Similar to Modern Amulet Titan, the list presents land-based combos that don't use the stack, creating win attempts that are difficult to interact with.",
+    "id": "im0alrcdaxop",
+    "recommended": false,
+    "title": "Wandering Minstrel Lands Combo"
+  },
+  {
+    "commander": [
+      {
+        "name": "Jhoira, Weatherlight Captain",
+        "link": "https://cards.scryfall.io/large/front/7/7/776f490a-2f75-4c18-8164-56bd65bb09c6.jpg?1752944973"
+      }
+    ],
+    "discord": {
+      "title": "Jhoira cEDH",
+      "link": "https://discord.com/invite/XbCHA4S"
+    },
+    "updated": "2026-02-16T00:50:58.298Z",
+    "section": "BREW",
+    "colors": ["u", "r"],
+    "decklists": [
+      {
+        "link": "https://moxfield.com/decks/EN1m3TWUzkCTK5r5K1q4vQ",
+        "title": "Storm the Weatherlight",
+        "primer": true
+      },
+      {
+        "link": "https://moxfield.com/decks/V88LiV2xS0if2GRr_zYpAA",
+        "title": "Ship Shape",
+        "primer": true
+      }
+    ],
+    "description": "I am EnderMorph, I have won a tropical island playing this deck, I belong to the Playing With Power Recording Crew, I am a tournament grinder who goes to a tournament on average twice a month. I am ranked 9th on the Topdeck leaderboards. This deck has won me numerous games, it is my tournament deck alongside Kinnan and Blue Farm, this deck should absolutely be on the DDB. If you need help with the lines or understanding why it's so good, I can walk you through it over Spelltable or Discord. It's not a tier 1 deck like Blue Farm or Kinnan, but it is very powerful, resilient to stax with the numerous bounce cards, and can win at instant speed over top of other players. New cards like Uthros research craft, Vivi, Tezzerot Cruel Captain, and floodcaller have really boosted the strength of the deck.",
+    "id": "ddfd3kd7v3yi",
+    "recommended": false,
+    "title": "Jhoira Storm"
+  },
+    {
+    "commander": [
+      {
+        "name": "Ishai, Ojutai Dragonspeaker",
+        "link": "https://cards.scryfall.io/large/front/2/e/2e89ce6a-6bc9-427f-a8b2-c07a9fc3218f.jpg?1562272963"
+      },
+      {
+        "name": "Rograkh, Son of Rohgahh",
+        "link": "https://cards.scryfall.io/large/front/a/4/a4fab67f-00c2-4125-9262-d21a29411797.jpg?1769437009"
+      }
+    ],
+    "discord": {
+      "title": "Jeskai Temple",
+      "link": "https://discord.gg/PyUTKpX54y"
+    },
+    "updated": "2026-02-16T02:04:13.245Z",
+    "section": "BREW",
+    "colors": ["w", "u", "r"],
+    "decklists": [
+      {
+        "link": "https://moxfield.com/decks/8F7klUCkik28jy3q_gAQmA",
+        "title": "RogShai",
+        "primer": true
+      }
+    ],
+    "description": "This is a turbo Jeskai list that aims to either establish an early Underworld Breach line or chain together several spells in a manner reminiscent of modern Ruby storm but with the added protection of silence. Rograkh provides the list with a mana advantage at a pace other Jeskai lists cannot match.",
+    "id": "h2g5kw990spm",
+    "recommended": false,
+    "title": "Ishai Rograkh Jeskai Turbo Storm"
+  },
+  {
+    "commander": [
+      {
+        "name": "Raffine, Scheming Seer",
+        "link": "https://cards.scryfall.io/large/front/7/1/716a44b4-f6b0-4f14-a270-6442aed3251f.jpg?1711471750"
+      }
+    ],
+    "discord": {
+      "title": "Esper Friends",
+      "link": "https://discord.gg/9MrznFwB2H"
+    },
+    "updated": "2026-02-16T00:50:58.298Z",
+    "section": "BREW",
+    "colors": ["w", "u", "b"],
+    "decklists": [
+      {
+        "link": "https://moxfield.com/decks/pQ__gk279ECSqGjmYEquyQ",
+        "title": "The Graveyard Farmer",
+        "primer": true
+      }
+    ],
+    "description": "Raffine is a deck that merges midrange, control, stax, combo, reanimator, and aggro principles into a single cohesive strategy. While this combination may appear a strange mix of archetypes, Raffine’s natural synergy and scaling card advantage allow the deck to fluidly adapt to any stage of the game, maintaining pressure while retaining strong interactive capabilities.",
+    "id": "x52d41xaknmo",
+    "recommended": false,
+    "title": "Raffine Adaptive"
+  },
+  {
+    "commander": [
+      {
+        "name": "Aang, at the Crossroads",
+        "link": "https://cards.scryfall.io/large/front/f/e/fea89ca0-8070-4f28-9851-994314f9d248.jpg?1764522003"
+      },
+      {
+        "name": "Aang, Destined Savior",
+        "link": "https://cards.scryfall.io/large/back/f/e/fea89ca0-8070-4f28-9851-994314f9d248.jpg?1764522003"
+      }
+    ],
+    "discord": {
+      "title": "The Crossroads",
+      "link": "https://discord.gg/7Qcb83MhPS"
+    },
+    "updated": "2026-02-16T09:07:52.497Z",
+    "section": "BREW",
+    "colors": ["g", "u", "w"],
+    "decklists": [
+      {
+        "link": "https://moxfield.com/decks/VYzL5E8tZE2POHm_XyfmRw",
+        "title": "Stuck on Repeat",
+        "primer": true
+      },
+      {
+        "link": "https://moxfield.com/decks/3hJju6EN6029wmk6glK2ow",
+        "title": "The Crossroads of Aang's Mind",
+        "primer": true
+      }
+    ],
+    "description": "Aang is a Bant creature storm/combo deck that aims to win through copying Aang and amassing an insurmountable amount of triggers and creature value before winning through a variety of creature based combos or Food Chain combos.",
+    "id": "n4npz9wbkz07",
+    "recommended": false,
+    "title": "Aang Clones"
+  },
+    {
+    "commander": [
+      {
+        "name": "Malcolm, Keen-Eyed Navigator",
+        "link": "https://cards.scryfall.io/large/front/5/1/51187cdb-85ee-4f68-9e29-d84d296f0825.jpg?1698988164"
+      },
+      {
+        "name": "Tana, the Bloodsower",
+        "link": "https://cards.scryfall.io/large/front/a/3/a3d8d64f-a403-42a7-881b-4f70e9fe15a2.jpg?1562413758"
+      }
+    ],
+    "discord": null,
+    "updated": "2026-02-16T00:50:58.298Z",
+    "section": "BREW",
+    "colors": ["u", "r", "g"],
+    "decklists": [
+      {
+        "link": "https://moxfield.com/decks/2lXd2OfODUWOfjKO19YtPw",
+        "title": "麦わら海賊 Shinsekai Mugiwara Pirates",
+        "primer": true
+      }
+    ],
+    "description": "Turbo Glinthorn, with layered birthing pod style lines to attempt a win every turn until it can push through. Also includes breach lines as a tertiary backup plan.",
+    "id": "vp850mz3x6t7",
+    "recommended": false,
+    "title": "Temur Pirates"
+  },
+    {
+    "commander": [
+      {
+        "name": "Ezio Auditore da Firenze",
+        "link": "https://cards.scryfall.io/large/front/d/a/dae9ee75-30b8-4e24-af8b-031c816d3221.jpg?1737999942"
+      },
+      {
+        "name": "Lurrus of the Dream-Den",
+        "link": "https://cards.scryfall.io/large/front/5/a/5ad36fb2-c44e-4085-ba0d-54277841ad3a.jpg?1764801075"
+      }
+    ],
+    "discord": {
+      "title": "Lurrus of the Dream-Den cEDH",
+      "link": "https://discord.gg/RrVV9YFZ9w"
+    },
+    "updated": "2026-02-16T11:02:45.073Z",
+    "section": "BREW",
+    "colors": ["b", "g", "r", "u", "w"],
+    "decklists": [
+      {
+        "link": "https://moxfield.com/decks/cfr-s3qynUCqRNJqtodX6w",
+        "title": "Dreams and Nightmares",
+        "primer": true
+      }
+    ],
+    "description": "Ezio and Lurrus Companion (#129 + #191) (Also known as 5 Color Lurrus) is a proactive turbo ad naus deck that can pivot to a breach or hermit druid plan (No Hermit Currently). This deck provides typical 5 color good stuff with a building restriction, no permanents over 2CMC. It has one of the leanest ad naus plans with the ability to pivot and present constant win attempts after the first.",
+    "id": "fmrqzyzjax8r",
+    "recommended": false,
+    "title": "Ezio 5C Lurrus"
   }
 ]
