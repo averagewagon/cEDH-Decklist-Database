@@ -10,12 +10,8 @@ Main console page
 <head>
   {% include head.html %}
   <title>Console - cEDH Decklist Database</title>
-  
+
   <link rel="stylesheet" type="text/css" media="screen" href="/console/styles/console.css" />
-  <!-- Page Scripts -->
-  <!--
-  <script src="/scripts/about.js"></script>
-  -->
 </head>
 
 <body>
@@ -39,61 +35,13 @@ Main console page
         </ul>
       </aside>
       <section>
-      
-        <div id="console-controls" class="flex ns">
-          <div class="flex-column">
-            <label for="view-select">Currently Viewing:</label>
-            <select id="view-select" autocomplete="off">
-              <option value="CHANGES">Changes</option>
-              <option value="SUBMITTED">Submitted Decks</option>
-              <option value="PUBLISHED">Published Decks</option>
-              <option value="DELETED">Deleted Decks</option>
-            </select>
-          </div>
-          
-          <div id="publish-wrap">
-            <div class="flex-column" id="select-wrap">
-              <button id="select-all">Select All</button>
-              <button id="unselect-all" disabled>Unselect All</button>
-            </div>
-          
-            <button id="publish-changes" disabled>Publish Selected Changes</button>
-          </div>
-        </div>
-        <div id="description">
-          {% capture content %}
-          {%- include markdown/admin/console.md -%}
-          {% endcapture %}
-          {{ content | escape | markdownify | replace: "id=", "data-content-id=" }}
-        </div>
-        <div id="database-controls" class="flex">
-          <div class="flex-column">
-            <label for="db-section">Filter Section</label>
-            <select id="db-section">
-              <option value="ALL">All Sections</option>
-              <option value="COMPETITIVE">Competitive Decks</option>
-              <option value="BREW">Brew Decks</option>
-              <option value="DEPRECATED">Outdated Decks</option>
-            </select>
-          </div>
-          <div class="flex-column">
-            <label for="db-sort">Sort</label>
-            <select id="db-sort" class="btn" autocomplete="off">
-              <option value="NEW">Sort by Newest</option>
-              <option value="TITLE">Sort by Title</option>
-              <option value="COLOR">Sort by Color</option>
-            </select>
-          </div>
-          <div id="search-wrap" class="flex-column">
-            <label for="db-search">Search</label>
-            <input id="db-search" type="search" placeholder="Search the database..." name="search" aria-label="search" autocomplete="off"></input>
-          </div>
-        </div>
-        <ul id="decks">
-        </ul>
+        <p>
+          <a id="db-download" download="database.json">Download database.json</a>
+        </p>
+        <pre><code id="db-json"></code></pre>
       </section>
     </div>
-    
+
     <ul class="hidden">
       <li class="flex-column" id="req-template">
         <div class="flex req-wrap">
@@ -106,78 +54,10 @@ Main console page
           <div class="req-date"></div>
         </div>
       </li>
-      
-      <li id="template-x">
-        {% include svg/colors/x.svg %}
-      </li>
-      <li id="template-w">
-        {% include svg/colors/w.svg %}
-      </li>
-      <li id="template-u">
-        {% include svg/colors/u.svg %}
-      </li>
-      <li id="template-b">
-        {% include svg/colors/b.svg %}
-      </li>
-      <li id="template-r">
-        {% include svg/colors/r.svg %}
-      </li>
-      <li id="template-g">
-        {% include svg/colors/g.svg %}
-      </li>
-      
-      <li id="decklist-template">
-        <a href="">{% include svg/primer.svg %} <span class="ddb-decklist-title"></span></a>
-      </li>
-      
-      <li class="" id="deck-template">
-        <div class="main btn flex">
-          <label class="ddb-publish">
-            <input type="checkbox" autocomplete="off"/>
-            <span class="checkbox"></span>
-          </label>
-          <div class="ddb-colors flex"></div>
-          <div class="ddb-title"></div>
-          <div class="ddb-main-section"></div>
-          <div class="ddb-main-date"></div>
-          <div class="ddb-icons flex">
-            {% include svg/primer.svg %}
-            {% include svg/discord.svg %}
-          </div>
-        </div>
-        <div class="sub hidden flex">
-          <div class="ddb-controls flex-column">
-            <a class="ddb-edit btn" href="">
-              {% include svg/edit.svg %}
-              <span class="ddb-status">
-              </span>
-            </a>
-            <div class="ddb-comments">
-            </div>
-            <span class="ddb-username"></span>
-          </div>
-          <div class="ddb-links flex-column">
-            <a class="ddb-discord btn" target="_blank">{% include svg/discord-logo.svg %} <span class="ddb-discord-title"></span></a>
-            <ul class="ddb-commanders">
-            </ul>
-            <ul class="ddb-decklists">
-            </ul>
-          </div>
-          <div class="ddb-info flex-column">
-            <div class="ddb-section flex">
-            </div>
-            <div class="ddb-description">
-            </div>
-            <div class="ddb-updates flex">
-              <span class="ddb-date"></span>
-            </div>
-          </div>
-        </div>
-      </li>
     </ul>
-    
+
   </div>
-  
+
   <script src="/console/scripts/account.js"></script>
   <script src="/console/scripts/console.js"></script>
 </body>
