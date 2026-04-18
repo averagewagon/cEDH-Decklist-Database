@@ -52,7 +52,11 @@ async function readDecks() {
   };
   const result = await sendToDDB(body);
   if (result.success) {
-    id("db-json").value = result.data;
+    try {
+      id("db-json").value = JSON.stringify(JSON.parse(result.data), null, 2);
+    } catch (e) {
+      id("db-json").value = result.data;
+    }
   } else {
     console.error(result.message);
     if (result.data) {
