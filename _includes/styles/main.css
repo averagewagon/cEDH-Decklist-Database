@@ -1,15 +1,10 @@
-/* Advertisement Size Adjustment */
-@media (min-width: 1201px) { 
+@media (min-width: 1201px) {
   #content {
     overflow: hidden;
   }
-  
+
   #aside {
     position: absolute;
-  }
-  
-  #advertisement {
-    margin-top: 16px;
   }
 }
 
@@ -24,22 +19,7 @@
     height: auto !important;
     min-width: 0 !important;
   }
-  
-  #advertisement {
-    height: auto !important;
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 10;
-  }
-  
-  #advertisement {
-    background-color: var(--darker);
-  }
-  
+
   #database-controls {
     flex-wrap: wrap;
   }

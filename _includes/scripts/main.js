@@ -15,7 +15,6 @@ const COLOR_ORDER = [
 
 // Initialization function
 function init() {
-  prepareAd();
   sortTable();
   id("db-sort").addEventListener("change", sortTable);
   id("db-search").addEventListener("change", applyFilters);
@@ -36,21 +35,6 @@ function init() {
     item.classList.toggle("filter-active");
     applyFilters();
   }));
-}
-
-function prepareAd() {
-  if (window.innerWidth > 1200) {
-    id("desktop-ad").classList.add("adsbygoogle");
-    id("mobile-ad").classList.add("hidden");
-  } else {
-    id("desktop-ad").classList.add("hidden");
-    id("mobile-ad").classList.add("adsbygoogle");
-  }
-  try {
-    (adsbygoogle = window.adsbygoogle || []).push({});
-  } catch (error) {
-    console.log("Adblocker detected");
-  }
 }
 
 function mobileSearchInput() {
