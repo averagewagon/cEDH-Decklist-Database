@@ -25,10 +25,7 @@ async function readDecks() {
   };
   const result = await sendToDDB(body);
   if (result.success) {
-    const json = JSON.stringify(JSON.parse(result.data), null, 2);
-    id("db-json").textContent = json;
-    const blob = new Blob([json], { type: "application/json" });
-    id("db-download").href = URL.createObjectURL(blob);
+    id("db-json").value = result.data;
   } else {
     console.error(result.message);
     if (result.data) {
