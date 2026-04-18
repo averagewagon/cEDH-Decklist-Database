@@ -13,7 +13,34 @@ async function init() {
       showLoad();
     });
     await Promise.all([deckRead, reqRead]);
+    id("delete-old-submissions").addEventListener("click", deleteOldSubmissions);
     hideLoad();
+  }
+}
+
+async function deleteOldSubmissions() {
+  const date = id("delete-cutoff").value;
+  if (!date) {
+    alert("Please pick a cutoff date first.");
+    return;
+  }
+  const warning = "This will permanently delete every submitted deck that was last updated before " + date + ".\n\nThere is no way to recover them afterward.\n\nAre you absolutely sure?";
+  if (!confirm(warning)) {
+    return;
+  }
+  const cutoff = new Date(date + "T00:00:00.000Z").toISOString();
+  const body = {
+    "jwt": get("jwt"),
+    "method": "DELETE_OLD_SUBMISSIONS",
+    "cutoff": cutoff
+  };
+  const result = await sendToDDB(body);
+  if (result.success) {
+    alert(result.message);
+    await readDecks();
+  } else {
+    console.error(result.message);
+    alert("There was an error while deleting old submissions:\n" + result.message);
   }
 }
 
